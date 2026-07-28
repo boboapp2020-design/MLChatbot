@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ML Expert AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════════════
+   TOKENS  —  ธีมสว่างเป็นค่าเริ่มต้นตามแบบ UI.png
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#f4f7fd;             /* พื้นหลังหน้าสนทนา */
+  --surface:#ffffff;        /* sidebar / การ์ด */
+  --card:#ffffff;
+  --soft:#f7f9fd;           /* พื้นอ่อนในการ์ด */
+  --raised:#eef3fb;         /* hover */
+  --line:#e6ecf6;
+  --line2:#d6e0ef;
+  /* คอนทราสต์วัดจริงบนพื้น --bg แล้วให้ผ่าน WCAG AA (≥4.5:1)
+     --tx3 เดิม #71809a ได้แค่ 3.72:1 บนพื้นหน้าสนทนา จึงเข้มขึ้นเป็น 4.69:1 */
+  --tx:#0f1b2d; --tx2:#44546e; --tx3:#617087;
+  --ac:#1d5fd8; --ac2:#164ec0; --acg:#e8f0ff;
+  --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444;
+  --r-xs:8px; --r-sm:10px; --r:14px; --r-lg:18px; --r-xl:22px;
+  --sh-sm:0 1px 2px rgba(23,43,77,.06);
+  --sh:0 6px 20px -8px rgba(23,43,77,.14);
+  --sh-lg:0 24px 56px -20px rgba(23,43,77,.24);
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Consolas,monospace;
+  --stream:820px;
+  --ease:cubic-bezier(.32,.72,.35,1);
+}
+:root[data-theme="dark"]{
+  --bg:#0a0f1a; --surface:#101828; --card:#141c2b; --soft:#18202f; --raised:#1d2839;
+  --line:rgba(150,175,215,.12); --line2:rgba(150,175,215,.22);
+  --tx:#eef2fa; --tx2:#b3c0d4; --tx3:#8593ab;   /* tx3 = 5.71:1 บน --surface */
+  --ac:#6294ff; --ac2:#8fb4ff; --acg:rgba(98,148,255,.14);
+  --sh-sm:0 1px 2px rgba(0,0,0,.3);
+  --sh:0 10px 28px -12px rgba(0,0,0,.5);
+  --sh-lg:0 26px 60px -22px rgba(0,0,0,.62);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Inter','Noto Sans Thai',-apple-system,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);color:var(--tx);font-size:15px;line-height:1.6;
+  overflow:hidden;
+
+  /* ── ความคมชัดของตัวหนังสือ ────────────────────────────────────
+     ธีมสว่างใช้ subpixel rendering (ไม่ใส่ -webkit-font-smoothing)
+     เพราะ antialiased ทำให้ตัวอักษรบางและซีดลงบน Windows
+     ส่วนธีมมืดต้องใช้ antialiased ไม่งั้นขอบตัวอักษรจะมีสีเหลื่อม */
+  text-rendering:optimizeLegibility;
+  font-synthesis:none;
+  -webkit-text-size-adjust:100%;
+  font-variant-ligatures:none;      /* กันตัวอักษรไทยเชื่อมกันผิดรูป */
+}
+:root[data-theme="dark"] body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+/* เส้น SVG คมขึ้น: ล็อกให้ stroke ไม่ถูกย่อตามการ scale และเปิด geometric precision */
+svg{shape-rendering:geometricPrecision;vector-effect:non-scaling-stroke}
+
+/* ตัวเลข/โค้ดใช้ตัวเลขความกว้างเท่ากัน อ่านง่ายและไม่ขยับตอนสตรีม */
+.conf-v,.ref-sc,.room-kb,.room-badge,.meta,.trace-in,.top-tx .sub code,.pal-item span{
+  font-variant-numeric:tabular-nums;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:none;background:none}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px;border-radius:6px}
+*{scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:9px;border:2.5px solid transparent;background-clip:content-box}
+::selection{background:var(--acg)}
+svg{display:block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ══════════════════════════════════════════════════════════════════
+   SHELL
+   ══════════════════════════════════════════════════════════════════ */
+.app{display:grid;grid-template-columns:300px minmax(0,1fr);height:100dvh}
+.scrim{position:fixed;inset:0;z-index:55;display:none;background:rgba(15,27,48,.42);backdrop-filter:blur(3px)}
+.scrim.on{display:block}
+
+/* ── SIDEBAR ─────────────────────────────────────────────────────── */
+.side{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+
+.brand{display:flex;align-items:center;gap:12px;padding:18px 18px 14px}
+.logo{
+  width:44px;height:44px;border-radius:13px;flex:none;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,#1e3a8a 0%,#122a63 55%,#0f1f4d 100%);
+  display:grid;place-items:center;box-shadow:0 6px 16px -6px rgba(30,58,138,.55);
+}
+.logo b{font-size:16px;font-weight:800;color:#fff;letter-spacing:-.6px;line-height:1}
+.logo .leaf{position:absolute;top:6px;right:6px;width:12px;height:12px;color:#4ade80}
+.brand-tx h1{font-size:15.5px;font-weight:750;letter-spacing:-.3px;line-height:1.2}
+.brand-tx p{font-size:11px;color:var(--tx3);margin-top:1px}
+
+.searchbox{margin:2px 16px 8px;position:relative}
+.searchbox input{
+  width:100%;padding:9px 42px 9px 34px;border-radius:11px;
+  background:var(--soft);border:1px solid var(--line);outline:none;font-size:12.8px;transition:.16s;
+}
+.searchbox input:focus{border-color:var(--ac);background:var(--surface);box-shadow:0 0 0 3px var(--acg)}
+.searchbox .si{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--tx3)}
+.kbd{
+  position:absolute;right:9px;top:50%;transform:translateY(-50%);font-family:var(--mono);
+  font-size:9.5px;color:var(--tx3);background:var(--surface);border:1px solid var(--line);
+  border-radius:5px;padding:2px 5px;pointer-events:none;
+}
+
+.rooms{flex:1;overflow-y:auto;padding:0 10px 8px;min-height:0}
+.grp{
+  font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--tx3);
+  padding:10px 8px 6px;display:flex;justify-content:space-between;align-items:center;
+}
+.room{
+  display:flex;align-items:flex-start;gap:11px;width:100%;text-align:left;
+  padding:9px 11px;border-radius:12px;transition:background .15s;position:relative;
+}
+.room:hover{background:var(--raised)}
+.room.on{background:var(--acg)}
+.room.on::before{
+  content:'';position:absolute;left:0;top:9px;bottom:9px;width:3px;
+  border-radius:0 3px 3px 0;background:var(--ac);
+}
+.room-ic{width:34px;height:34px;border-radius:11px;flex:none;display:grid;place-items:center}
+.room-ic svg{width:20px;height:20px}
+.room-tx{flex:1;min-width:0;padding-top:1px}
+.room-tx b{display:block;font-size:13px;font-weight:650;line-height:1.4;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.room-tx span{display:block;font-size:11.5px;color:var(--tx3);line-height:1.45;margin-top:1px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.room.on .room-tx b{color:var(--ac2)}
+.room-r{display:flex;flex-direction:column;align-items:flex-end;gap:5px;flex:none;padding-top:2px}
+.room-time{font-size:10px;color:var(--tx3);white-space:nowrap}
+.room-badge{
+  min-width:19px;height:19px;padding:0 6px;border-radius:99px;background:var(--ac);color:#fff;
+  font-size:10px;font-weight:700;font-family:var(--mono);display:grid;place-items:center;
+}
+.room-kb{font-size:10.5px;font-family:var(--mono);color:var(--tx3)}
+.room-kb.zero{opacity:.35}
+.empty-search{padding:22px 14px;text-align:center;font-size:12.5px;color:var(--tx3)}
+
+.showall{
+  margin:6px 16px 10px;width:calc(100% - 32px);padding:9px;border-radius:11px;
+  background:var(--soft);border:1px solid var(--line);font-size:12.4px;font-weight:600;
+  color:var(--tx2);transition:.15s;display:flex;align-items:center;justify-content:center;gap:7px;
+}
+.showall:hover{background:var(--raised);color:var(--tx)}
+
+.side-foot{padding:11px 14px;border-top:1px solid var(--line);display:flex;align-items:center;gap:10px}
+.ava{
+  width:36px;height:36px;border-radius:11px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(145deg,#93c5fd,#3b82f6);color:#fff;font-size:13px;font-weight:700;
+}
+.side-foot .who{flex:1;min-width:0}
+.side-foot .who b{display:block;font-size:12.6px;font-weight:650;line-height:1.3}
+.side-foot .who span{display:block;font-size:10.8px;color:var(--tx3)}
+.fbtn{width:31px;height:31px;border-radius:9px;display:grid;place-items:center;
+  color:var(--tx3);transition:.15s;flex:none}
+.fbtn:hover{background:var(--raised);color:var(--tx)}
+.fbtn svg{width:16px;height:16px}
+
+/* ── MAIN ────────────────────────────────────────────────────────── */
+.main{display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--bg);position:relative}
+
+.top{
+  height:66px;flex:none;display:flex;align-items:center;gap:12px;padding:0 22px;
+  border-bottom:1px solid var(--line);background:var(--surface);z-index:6;
+}
+.burger{display:none;width:34px;height:34px;border-radius:var(--r-sm);place-items:center;color:var(--tx2)}
+.burger:hover{background:var(--raised)}
+.top-id{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+.top-ic{width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;position:relative}
+.top-ic svg{width:24px;height:24px}
+.top-ic::after{
+  content:'';position:absolute;right:-1px;bottom:-1px;width:11px;height:11px;border-radius:50%;
+  background:var(--ok);border:2.5px solid var(--surface);
+}
+.top-tx{min-width:0}
+.top-tx b{display:block;font-size:16px;font-weight:700;letter-spacing:-.3px;line-height:1.25;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-tx .sub{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--tx3);margin-top:1px;flex-wrap:wrap}
+.top-tx .sub code{font-family:var(--mono);font-size:11px}
+.online{display:inline-flex;align-items:center;gap:5px;color:var(--ok);font-weight:600}
+.online i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:block}
+
+.top-tools{display:flex;gap:8px;align-items:center;flex:none}
+.icb{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;color:var(--tx2);
+  border:1px solid var(--line);background:var(--surface);transition:.15s}
+.icb:hover{background:var(--raised);color:var(--tx);border-color:var(--line2)}
+.icb svg{width:17px;height:17px}
+.status{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:11px;
+  font-size:12px;font-weight:600;color:var(--tx2);background:var(--surface);border:1px solid var(--line);
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--tx3);flex:none}
+.dot.on{background:var(--ok)}
+.dot.warn{background:var(--warn)}
+.lang{display:flex;gap:6px}
+.lang button{
+  padding:8px 15px;border-radius:11px;font-size:12px;font-weight:650;color:var(--tx2);
+  border:1px solid var(--line);background:var(--surface);transition:.15s;
+}
+.lang button:hover{background:var(--raised)}
+.lang button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+
+/* ── STREAM ──────────────────────────────────────────────────────── */
+.chat{flex:1;overflow-y:auto;overflow-x:hidden;padding:26px 24px 8px;scroll-behavior:smooth;position:relative}
+.wrap{max-width:var(--stream);margin:0 auto;display:flex;flex-direction:column;gap:20px}
+
+/* empty state */
+.hero{padding:6vh 0 10px;animation:rise .45s var(--ease);text-align:center}
+.hero-ic{width:74px;height:74px;border-radius:22px;display:grid;place-items:center;margin:0 auto 18px}
+.hero-ic svg{width:36px;height:36px}
+.hero h2{font-size:24px;font-weight:750;letter-spacing:-.5px;margin-bottom:8px}
+.hero .lede{color:var(--tx2);font-size:14px;max-width:520px;margin:0 auto;line-height:1.7}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:99px;
+  background:var(--surface);border:1px solid var(--line);font-size:11.2px;color:var(--tx2)}
+.starters{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:26px;text-align:left}
+.starter{
+  display:flex;align-items:center;gap:11px;padding:14px 15px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--line);font-size:13.2px;color:var(--tx2);
+  transition:.18s var(--ease);line-height:1.45;box-shadow:var(--sh-sm);
+}
+.starter:hover{border-color:var(--ac);color:var(--tx);transform:translateY(-2px);box-shadow:var(--sh)}
+.starter .si{width:30px;height:30px;border-radius:9px;flex:none;display:grid;place-items:center}
+.starter .si svg{width:16px;height:16px}
+
+/* ── MESSAGES ────────────────────────────────────────────────────── */
+.msg{animation:rise .3s var(--ease)}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ผู้ใช้ = ฟองชิดขวา + avatar */
+.msg.u{display:flex;justify-content:flex-end;gap:12px;align-items:flex-start}
+.msg.u .ubub{
+  max-width:74%;background:var(--acg);border:1px solid #d5e4ff;
+  border-radius:16px 16px 4px 16px;padding:12px 16px;font-size:14.4px;line-height:1.6;
+}
+:root[data-theme="dark"] .msg.u .ubub{border-color:color-mix(in srgb,var(--ac) 30%,transparent)}
+.msg.u .stamp{display:flex;align-items:center;justify-content:flex-end;gap:5px;
+  font-size:10.5px;color:var(--tx3);margin-top:5px}
+.msg.u .stamp svg{width:12px;height:12px;color:var(--ac)}
+
+/* ผู้ช่วย = avatar + การ์ดขาว */
+.msg.a{display:flex;gap:12px;align-items:flex-start}
+.a-ava{width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh-sm)}
+.a-ava svg{width:21px;height:21px}
+.a-card{
+  flex:1;min-width:0;background:var(--surface);border:1px solid var(--line);
+  border-radius:16px;padding:16px 18px;box-shadow:var(--sh-sm);
+}
+.a-head{display:flex;align-items:center;gap:9px;margin-bottom:11px;flex-wrap:wrap}
+.a-head b{font-size:14px;font-weight:700;letter-spacing:-.15px}
+.chipm{font-size:10.5px;font-weight:650;padding:2.5px 9px;border-radius:7px;
+  background:var(--acg);color:var(--ac2)}
+.a-head .t{font-size:11px;color:var(--tx3);font-family:var(--mono)}
+.a-acts{margin-left:auto;display:flex;gap:3px;opacity:0;transition:opacity .16s}
+.msg.a:hover .a-acts{opacity:1}
+.act{width:27px;height:27px;border-radius:8px;display:grid;place-items:center;color:var(--tx3);transition:.15s}
+.act:hover{background:var(--raised);color:var(--tx)}
+.act svg{width:14px;height:14px}
+
+/* routing hint */
+.hint-move{
+  display:flex;align-items:center;gap:10px;padding:11px 14px;margin-bottom:13px;border-radius:12px;
+  font-size:12.5px;color:var(--tx2);background:#fffbeb;border:1px solid #fde68a;
+}
+:root[data-theme="dark"] .hint-move{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.3)}
+.hint-move button{margin-left:auto;flex:none;padding:6px 13px;border-radius:9px;
+  font-size:11.8px;font-weight:650;background:var(--warn);color:#3b2606;transition:.15s}
+.hint-move button:hover{filter:brightness(1.08)}
+
+/* RAG trace bar */
+.trace{margin-bottom:14px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--soft)}
+.trace summary{
+  padding:11px 14px;font-size:12.6px;font-weight:600;color:var(--ac2);cursor:pointer;
+  display:flex;align-items:center;gap:9px;list-style:none;transition:.15s;
+}
+.trace summary::-webkit-details-marker{display:none}
+.trace summary .sp{width:16px;height:16px;flex:none}
+.trace summary .cv{margin-left:auto;width:15px;height:15px;transition:transform .2s;color:var(--tx3)}
+.trace[open] summary .cv{transform:rotate(180deg)}
+.trace summary:hover{background:var(--raised)}
+.trace-in{padding:11px 14px 13px;font-size:11.6px;font-family:var(--mono);color:var(--tx2);
+  line-height:1.95;border-top:1px solid var(--line);background:var(--surface)}
+.trace-in .k{color:var(--tx3);display:inline-block;min-width:96px}
+.qq{display:inline-block;background:var(--soft);padding:2px 8px;border-radius:6px;
+  margin:2px 5px 2px 0;font-size:10.5px;border:1px solid var(--line)}
+
+/* info rows (ตามแบบการ์ดสรุปใน UI.png) */
+.info{border:1px solid var(--line);border-radius:13px;overflow:hidden;margin:14px 0}
+.info-row{display:flex;align-items:flex-start;gap:13px;padding:13px 15px;border-bottom:1px solid var(--line)}
+.info-row:last-of-type{border-bottom:none}
+.info-ic{width:20px;height:20px;flex:none;color:var(--tx3);margin-top:1px}
+.info-k{font-size:13px;font-weight:600;color:var(--tx2);width:132px;flex:none}
+.info-v{font-size:13px;color:var(--tx);flex:1;min-width:0;line-height:1.6}
+.info-act{
+  width:100%;padding:12px;background:var(--acg);color:var(--ac2);font-size:13px;font-weight:650;
+  display:flex;align-items:center;justify-content:center;gap:9px;transition:.15s;border-top:1px solid var(--line);
+}
+.info-act:hover{filter:brightness(.97)}
+.info-act svg{width:16px;height:16px}
+
+/* prose */
+.prose{font-size:14.8px;line-height:1.75;color:var(--tx)}
+.prose > :first-child{margin-top:0}
+.prose h2{font-size:16px;font-weight:750;margin:20px 0 10px;display:flex;align-items:center;gap:10px;letter-spacing:-.3px}
+.prose h2::before{content:'';width:3.5px;height:17px;border-radius:3px;background:var(--ac);flex:none}
+.prose h3{font-size:14.4px;font-weight:650;margin:16px 0 6px}
+.prose p{margin:10px 0}
+.prose ul,.prose ol{margin:10px 0;padding-left:22px}
+.prose li{margin:5px 0}
+.prose li::marker{color:var(--tx3)}
+.prose strong{font-weight:650}
+.prose code{font-family:var(--mono);font-size:12.5px;background:var(--soft);
+  padding:2px 6.5px;border-radius:6px;border:1px solid var(--line)}
+.prose pre{background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;overflow-x:auto;margin:12px 0}
+.prose pre code{background:none;border:none;padding:0;font-size:12.3px;line-height:1.68}
+.prose table{width:100%;border-collapse:separate;border-spacing:0;margin:13px 0;font-size:13.2px;
+  display:block;overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.prose th,.prose td{border-bottom:1px solid var(--line);padding:9px 13px;text-align:left}
+.prose tr:last-child td{border-bottom:none}
+.prose th{background:var(--soft);font-weight:650;font-size:12.3px;color:var(--tx2);white-space:nowrap}
+.prose blockquote{border-left:3px solid var(--ac);padding:2px 0 2px 14px;margin:12px 0;color:var(--tx2)}
+.prose hr{border:none;border-top:1px solid var(--line);margin:18px 0}
+.caret{display:inline-block;width:2px;height:1.05em;background:var(--ac);
+  vertical-align:-2px;margin-left:2px;animation:blink 1.05s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+
+.cite{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;
+  padding:0 4px;border-radius:5px;background:var(--acg);color:var(--ac2);border:1px solid #cfe0ff;
+  font-size:9.5px;font-weight:700;font-family:var(--mono);vertical-align:super;margin:0 2px;
+  cursor:pointer;transition:.15s}
+:root[data-theme="dark"] .cite{border-color:color-mix(in srgb,var(--ac) 36%,transparent)}
+.cite:hover{background:var(--ac);color:#fff}
+
+/* citations */
+.refs{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.refs-h{font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--tx3);
+  margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.ref{display:flex;gap:11px;padding:10px 13px;border-radius:11px;background:var(--soft);
+  border:1px solid var(--line);margin-bottom:6px;transition:.16s}
+.ref:hover{border-color:var(--line2);background:var(--raised)}
+.ref.hl{border-color:var(--ac);box-shadow:0 0 0 3px var(--acg)}
+.ref-n{width:20px;height:20px;border-radius:6px;flex:none;margin-top:1px;background:var(--acg);
+  color:var(--ac2);font-size:10px;font-weight:700;font-family:var(--mono);display:grid;place-items:center}
+.ref-b{flex:1;min-width:0}
+.ref-t{font-size:12.9px;font-weight:600;line-height:1.4}
+.ref-m{font-size:10.8px;color:var(--tx3);margin-top:3px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{font-size:9.4px;font-weight:700;padding:2px 7px;border-radius:5px;background:var(--raised);
+  color:var(--tx2);letter-spacing:.4px}
+.ref-sc{font-size:10.4px;font-family:var(--mono);color:var(--tx3);flex:none;align-self:center}
+
+/* confidence */
+.conf{margin-top:13px;padding:13px 15px;border-radius:13px;background:var(--soft);border:1px solid var(--line)}
+.conf-r{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.conf-l{font-size:10.5px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;color:var(--tx3)}
+.conf-i{width:16px;height:16px;border-radius:50%;display:grid;place-items:center;font-size:9.5px;
+  font-weight:700;color:var(--tx3);border:1px solid var(--line2);cursor:pointer;transition:.15s;flex:none}
+.conf-i:hover{background:var(--ac);color:#fff;border-color:transparent}
+.conf-v{margin-left:auto;font-size:17px;font-weight:750;font-family:var(--mono);letter-spacing:-.5px}
+.bar{height:6px;border-radius:4px;background:var(--raised);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px;transition:width .7s var(--ease)}
+.conf-n{font-size:11.4px;color:var(--tx3);margin-top:8px;line-height:1.6}
+.meta{display:flex;flex-wrap:wrap;gap:14px;margin-top:11px;font-size:10.8px;color:var(--tx3);font-family:var(--mono)}
+
+/* thinking */
+.think{display:flex;align-items:center;gap:10px;color:var(--tx3);font-size:13.3px;padding:3px 0}
+.think i{width:6px;height:6px;border-radius:50%;background:var(--ac);animation:pulse 1.25s infinite}
+.think i:nth-child(2){animation-delay:.17s}
+.think i:nth-child(3){animation-delay:.34s}
+@keyframes pulse{0%,60%,100%{opacity:.22;transform:scale(.72)}30%{opacity:1;transform:scale(1.06)}}
+
+.jump{position:absolute;bottom:14px;left:50%;transform:translateX(-50%) translateY(6px);
+  display:none;align-items:center;gap:7px;padding:8px 16px;border-radius:99px;background:var(--surface);
+  border:1px solid var(--line2);box-shadow:var(--sh);font-size:12.2px;font-weight:600;color:var(--tx2);
+  z-index:8;transition:.2s var(--ease)}
+.jump.on{display:flex;transform:translateX(-50%) translateY(0)}
+.jump:hover{color:var(--ac2);border-color:var(--ac)}
+
+/* ── COMPOSER ────────────────────────────────────────────────────── */
+.foot{flex:none;padding:6px 24px 16px}
+.comp-w{max-width:var(--stream);margin:0 auto}
+.comp{
+  background:var(--surface);border:1.5px solid var(--ac);border-radius:16px;
+  box-shadow:0 0 0 4px var(--acg);transition:.2s;
+}
+.comp:not(:focus-within){border-color:var(--line2);box-shadow:var(--sh-sm)}
+.comp-top{display:flex;gap:10px;align-items:flex-end;padding:12px 12px 6px 18px}
+.comp textarea{flex:1;background:none;border:none;outline:none;resize:none;
+  font-size:14.6px;line-height:1.6;max-height:170px;padding:4px 0}
+.comp textarea::placeholder{color:var(--tx3)}
+.send{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:linear-gradient(145deg,#3b82f6,#2563eb);color:#fff;transition:.18s var(--ease);
+  box-shadow:0 5px 14px -5px rgba(37,99,235,.6)}
+.send svg{width:17px;height:17px}
+.send:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.08)}
+.send:disabled{opacity:.32;cursor:not-allowed;box-shadow:none}
+.send.stop{background:linear-gradient(145deg,#f87171,#dc2626)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:2px 12px 12px 18px}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:10px;
+  background:var(--surface);border:1px solid var(--line);font-size:12.2px;font-weight:550;
+  color:var(--tx2);transition:.15s;
+}
+.chip:hover{border-color:var(--ac);color:var(--ac2);background:var(--acg)}
+.chip svg{width:14px;height:14px}
+.hint{max-width:var(--stream);margin:9px auto 0;padding:0 4px;font-size:11px;color:var(--tx3);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ── OVERLAYS ────────────────────────────────────────────────────── */
+.ov{position:fixed;inset:0;background:rgba(15,27,48,.5);backdrop-filter:blur(5px);
+  display:none;z-index:100;padding:20px}
+:root[data-theme="dark"] .ov{background:rgba(4,8,17,.7)}
+.ov.on{display:grid;place-items:center}
+.ov.pal.on{place-items:start center;padding-top:11vh}
+.modal{background:var(--surface);border:1px solid var(--line);border-radius:20px;width:100%;
+  max-width:560px;max-height:84dvh;overflow-y:auto;box-shadow:var(--sh-lg);animation:pop .22s var(--ease)}
+@keyframes pop{from{opacity:0;transform:scale(.96) translateY(10px)}to{opacity:1;transform:none}}
+.mh{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;position:sticky;top:0;background:var(--surface);z-index:2}
+.mh h3{font-size:15.5px;font-weight:700;letter-spacing:-.2px}
+.mb{padding:20px 22px}
+.mf{padding:14px 22px;border-top:1px solid var(--line);display:flex;gap:9px;justify-content:flex-end;
+  position:sticky;bottom:0;background:var(--surface)}
+.fld{margin-bottom:17px}
+.fld label{display:block;font-size:12.5px;font-weight:650;margin-bottom:7px}
+.fld small{display:block;font-size:11px;color:var(--tx3);margin-top:6px;line-height:1.6}
+.fld input,.fld select{width:100%;padding:10px 13px;border-radius:11px;background:var(--soft);
+  border:1px solid var(--line);outline:none;font-size:13.2px;transition:.15s}
+.fld input:focus,.fld select:focus{border-color:var(--ac);background:var(--surface);box-shadow:0 0 0 3px var(--acg)}
+.fld input[type=password]{font-family:var(--mono)}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{display:flex;gap:12px;padding:13px 15px;border-radius:13px;background:var(--soft);
+  border:1px solid var(--line);cursor:pointer;transition:.16s}
+.opt:hover{border-color:var(--line2)}
+.opt.on{border-color:var(--ac);background:var(--acg)}
+.opt input{margin-top:3px;accent-color:var(--ac);flex:none}
+.opt b{display:block;font-size:13.2px;font-weight:650;margin-bottom:1px}
+.opt span{font-size:11.4px;color:var(--tx3);line-height:1.55}
+.btn{padding:10px 20px;border-radius:11px;font-size:13px;font-weight:650;transition:.16s}
+.btn.p{background:linear-gradient(145deg,#3b82f6,#2563eb);color:#fff;box-shadow:0 5px 14px -6px rgba(37,99,235,.5)}
+.btn.p:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn.s{background:var(--soft);border:1px solid var(--line);color:var(--tx2)}
+.btn.s:hover{background:var(--raised);color:var(--tx)}
+.note{padding:12px 14px;border-radius:11px;font-size:11.8px;line-height:1.65;margin-bottom:16px;
+  background:#fffbeb;border:1px solid #fde68a;color:var(--tx2)}
+:root[data-theme="dark"] .note{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.3)}
+.note b{color:#b45309}
+:root[data-theme="dark"] .note b{color:var(--warn)}
+
+.exp h4{font-size:13.2px;font-weight:700;margin:16px 0 6px}
+.exp h4:first-child{margin-top:0}
+.exp p{font-size:13px;color:var(--tx2);line-height:1.7;margin:7px 0}
+.exp table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.3px;margin:9px 0;
+  border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.exp th,.exp td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line)}
+.exp tr:last-child td{border-bottom:none}
+.exp th{background:var(--soft);font-weight:650;font-size:11.6px;color:var(--tx2)}
+.exp code{font-family:var(--mono);font-size:11.6px;background:var(--soft);padding:2px 6px;
+  border-radius:5px;border:1px solid var(--line)}
+.formula{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:13px 15px;
+  font-family:var(--mono);font-size:11.7px;line-height:1.95;color:var(--tx2);margin:10px 0}
+
+/* palette */
+.pal-box{background:var(--surface);border:1px solid var(--line);border-radius:18px;width:100%;
+  max-width:540px;box-shadow:var(--sh-lg);overflow:hidden;animation:pop .18s var(--ease)}
+.pal-in{display:flex;align-items:center;gap:11px;padding:15px 18px;border-bottom:1px solid var(--line)}
+.pal-in svg{width:17px;height:17px;color:var(--tx3);flex:none}
+.pal-in input{flex:1;background:none;border:none;outline:none;font-size:14.5px}
+.pal-list{max-height:46dvh;overflow-y:auto;padding:8px}
+.pal-item{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:9px 11px;
+  border-radius:11px;transition:background .12s}
+.pal-item.sel{background:var(--acg)}
+.pal-item b{font-size:13.2px;font-weight:600;flex:1;min-width:0}
+.pal-item span{font-size:10.6px;color:var(--tx3);font-family:var(--mono)}
+.pal-foot{padding:10px 18px;border-top:1px solid var(--line);font-size:10.6px;color:var(--tx3);
+  display:flex;gap:15px;font-family:var(--mono)}
+
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(70px);
+  padding:11px 20px;border-radius:99px;background:var(--tx);color:var(--surface);
+  box-shadow:var(--sh);font-size:12.6px;font-weight:600;z-index:200;
+  transition:transform .28s var(--ease),opacity .28s;opacity:0;pointer-events:none}
+.toast.on{transform:translateX(-50%) translateY(0);opacity:1}
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
+@media (max-width:1000px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;inset:0 auto 0 0;width:298px;z-index:60;transform:translateX(-100%);
+    transition:transform .26s var(--ease);box-shadow:var(--sh-lg)}
+  .side.open{transform:none}
+  .burger{display:grid}
+  .chat{padding:20px 16px 6px}
+  .foot{padding:4px 14px 14px}
+  .status,.top-tx .sub{display:none}
+  .top{height:60px;padding:0 14px}
+}
+@media (max-width:600px){
+  .lang{display:none}
+  .hint span:last-child{display:none}
+  .msg.u .ubub{max-width:86%}
+  .starters{grid-template-columns:1fr}
+  .info-k{width:100px;font-size:12.3px}
+  .chips .chip:nth-child(n+3){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;
+    scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <aside class="side" id="side">
+    <div class="brand">
+      <div class="logo"><b>ML</b>
+        <svg class="leaf" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 4 4 8 4 13c0 3 2 6 5 7 0-6 2-10 6-13-2 4-3 8-3 13 4-1 8-5 8-11 0-3-3-6-8-7z"/></svg>
+      </div>
+      <div class="brand-tx"><h1>ML Expert AI</h1><p data-i18n="tagline">ผู้ช่วยอัจฉริยะโรงงานน้ำตาล</p></div>
+    </div>
+
+    <div class="searchbox">
+      <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="qFilter" type="text" data-ph="searchExpert" placeholder="ค้นหาผู้เชี่ยวชาญ..." autocomplete="off">
+      <span class="kbd">⌘K</span>
+    </div>
+
+    <div class="rooms" id="rooms"></div>
+    <button class="showall" id="btnShowAll"></button>
+
+    <div class="side-foot">
+      <div class="ava">DM</div>
+      <div class="who"><b data-i18n="userName">ผู้ใช้งาน Demo</b><span data-i18n="userOrg">โรงงานน้ำตาล</span></div>
+      <button class="fbtn" id="btnCfg" title="ตั้งค่า">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      </button>
+      <button class="fbtn" id="btnClear" title="ล้างห้องนี้">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg>
+      </button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="top">
+      <button class="burger" id="burger" aria-label="เมนู">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:20px;height:20px">
+          <path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <div class="top-id">
+        <div class="top-ic" id="topIc"></div>
+        <div class="top-tx">
+          <b id="topName">—</b>
+          <div class="sub"><code id="topId">—</code> · <span id="topRole">ผู้เชี่ยวชาญ</span> ·
+            <span class="online"><i></i><span data-i18n="ready">พร้อมให้บริการ</span></span></div>
+        </div>
+      </div>
+      <div class="top-tools">
+        <button class="icb" id="btnTheme" title="สลับธีม"></button>
+        <span class="status"><span class="dot" id="dot"></span><span id="modeLabel">Demo</span></span>
+        <div class="lang">
+          <button data-lang="th" class="on">ไทย</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="lo">ລາວ</button>
+        </div>
+        <button class="icb" id="btnPal" title="ค้นหาผู้เชี่ยวชาญ (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+            <path d="M9 4a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3 3H6a3 3 0 1 0 3-3z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="chat" id="chat">
+      <div class="wrap" id="wrap" aria-live="polite"></div>
+      <button class="jump" id="jump">↓ <span data-i18n="jumpLatest">ไปข้อความล่าสุด</span></button>
+    </div>
+
+    <div class="foot">
+      <div class="comp-w">
+        <div class="comp">
+          <div class="comp-top">
+            <textarea id="input" rows="1" placeholder="พิมพ์คำถาม..."></textarea>
+            <button class="send" id="btnSend" disabled aria-label="ส่ง">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12 2-12 2z"/></svg>
+            </button>
+          </div>
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="hint">
+          <span data-i18n="hintKb">ตอบจากคลังความรู้ของโรงงานเท่านั้น พร้อมอ้างอิงทุกคำตอบ</span>
+          <span>Enter ส่ง · Shift+Enter ขึ้นบรรทัด</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="ov pal" id="pal">
+  <div class="pal-box">
+    <div class="pal-in">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palIn" type="text" placeholder="ไปที่ผู้เชี่ยวชาญ..." autocomplete="off">
+    </div>
+    <div class="pal-list" id="palList"></div>
+    <div class="pal-foot"><span>↑↓ เลื่อน</span><span>↵ เลือก</span><span>esc ปิด</span></div>
+  </div>
+</div>
+
+<div class="ov" id="ovConf">
+  <div class="modal">
+    <div class="mh"><h3>ความมั่นใจ (Confidence) คืออะไร</h3><button class="fbtn" data-close>✕</button></div>
+    <div class="mb exp" id="confBody"></div>
+    <div class="mf"><button class="btn p" data-close>เข้าใจแล้ว</button></div>
+  </div>
+</div>
+
+<div class="ov" id="ov">
+  <div class="modal">
+    <div class="mh"><h3>ตั้งค่าระบบ</h3><button class="fbtn" data-close>✕</button></div>
+    <div class="mb">
+      <div class="fld">
+        <label>โหมดการทำงาน</label>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="mode" value="offline">
+            <div><b>Demo — ไม่ใช้ API</b><span>เดินท่อ RAG จริงในเบราว์เซอร์ (ค้นคลัง + จัดอันดับ + คิดความมั่นใจ) แต่ไม่เรียก LLM</span></div></label>
+          <label class="opt"><input type="radio" name="mode" value="direct">
+            <div><b>ต่อ Anthropic โดยตรง</b><span>ค้นคลังในเบราว์เซอร์ แล้วให้ Claude ตอบจริง — ใช้ทดสอบในเครื่องเท่านั้น</span></div></label>
+          <label class="opt"><input type="radio" name="mode" value="supabase">
+            <div><b>Production — ผ่าน Supabase</b><span>Edge Function ทำ router + pgvector + rerank + ตอบ API key อยู่ฝั่งเซิร์ฟเวอร์</span></div></label>
+        </div>
+      </div>
+      <div id="grpDirect" style="display:none">
+        <div class="note"><b>⚠ คำเตือน</b> — โหมดนี้ส่ง API key จากเบราว์เซอร์โดยตรง เก็บใน localStorage ของเครื่องนี้ ใช้เฉพาะทดสอบบนเครื่องตัวเอง</div>
+        <div class="fld"><label>Anthropic API Key</label>
+          <input type="password" id="cfgAnthropic" placeholder="sk-ant-api03-…" autocomplete="off">
+          <small>รับได้ที่ console.anthropic.com → API Keys</small></div>
+        <div class="fld"><label>โมเดลที่ใช้ตอบ</label>
+          <select id="cfgModel">
+            <option value="claude-opus-5">Claude Opus 5 — คุณภาพสูงสุด</option>
+            <option value="claude-sonnet-5">Claude Sonnet 5 — สมดุลราคา/คุณภาพ</option>
+            <option value="claude-haiku-4-5">Claude Haiku 4.5 — เร็วและถูกที่สุด</option>
+          </select></div>
+      </div>
+      <div id="grpSupa" style="display:none">
+        <div class="fld"><label>Supabase Project URL</label>
+          <input type="text" id="cfgUrl" placeholder="https://xxxxx.supabase.co" autocomplete="off"></div>
+        <div class="fld"><label>Supabase Anon Key</label>
+          <input type="password" id="cfgAnon" placeholder="eyJhbGciOi…" autocomplete="off">
+          <small>ใช้ anon key เท่านั้น — ห้ามใส่ service_role key ในหน้าเว็บ</small></div>
+      </div>
+    </div>
+    <div class="mf"><button class="btn s" data-close>ยกเลิก</button><button class="btn p" id="btnSave">บันทึก</button></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="../kb/chunks.js"></script>
+<script src="../kb/personas.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   ตัวดักข้อผิดพลาด — ต้องอยู่บนสุดก่อนโค้ดอื่นทั้งหมด
+   ถ้าสคริปต์พังกลางทาง โค้ดที่เหลือจะไม่ทำงานและหน้าจอจะว่างเปล่า
+   จึงต้องแสดงให้เห็นว่าพังตรงไหน แทนที่จะปล่อยให้เดา
+   ══════════════════════════════════════════════════════════════════ */
+window.addEventListener('error', ev=>{
+  if(document.getElementById('bootErr')) return;
+  const msg=String(ev.message||ev.error||'').slice(0,240)
+    .replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const where=ev.filename?` (${ev.filename.split('/').pop()}:${ev.lineno})`:'';
+  document.body.insertAdjacentHTML('beforeend',
+   `<div id="bootErr" style="position:fixed;left:50%;bottom:20px;transform:translateX(-50%);
+      max-width:600px;padding:13px 17px;border-radius:12px;z-index:300;font-size:12.5px;line-height:1.6;
+      background:#fef2f2;border:1px solid #fecaca;color:#991b1b;
+      box-shadow:0 12px 32px -12px rgba(0,0,0,.3);font-family:system-ui,sans-serif">
+      <b>หน้าเว็บโหลดไม่สมบูรณ์</b><br>${msg}${where}
+    </div>`);
+});
+
+/* ══════════════════════════════════════════════════════════════════
+   ICON SET — ไอคอนเส้น 15 ตัวตาม ICON.png
+   ══════════════════════════════════════════════════════════════════ */
+/* stroke-width 2 ให้เส้นคมกว่า 1.8 เพราะตกลงบนเส้น pixel พอดีที่ขนาด 18-24px */
+const S=(p,f)=>`<svg viewBox="0 0 24 24" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const ICONS={
+  /* ต้นอ้อย */
+  cane:S('<path d="M12 21V9"/><path d="M12 12C12 8 9 5 5 5c0 4 3 7 7 7z"/><path d="M12 10c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M9 21h6"/>'),
+  /* เฟือง (การหีบ) */
+  crushing:S('<circle cx="9.5" cy="9.5" r="3.2"/><path d="M9.5 3.4v1.6M9.5 14v1.6M3.4 9.5h1.6M14 9.5h1.6M5.2 5.2l1.1 1.1M12.7 12.7l1.1 1.1M13.8 5.2l-1.1 1.1M6.3 12.7l-1.1 1.1"/><circle cx="16.5" cy="16.5" r="2.4"/><path d="M16.5 12.6v1.2M16.5 19.2v1.2M12.6 16.5h1.2M19.2 16.5h1.2"/>'),
+  /* หม้อต้ม + ไอ (การต้มน้ำอ้อย) */
+  clarification:S('<path d="M4 11h16v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M2 11h20"/><path d="M9 7c0-1 1-1.4 1-2.4S9 3 9 3M13 7c0-1 1-1.4 1-2.4S13 3 13 3M17 7c0-1 1-1.4 1-2.4S17 3 17 3"/>'),
+  /* ถังระเหย */
+  evaporation:S('<rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6h6v2"/><path d="M4 12h2M18 12h2M4 16h2M18 16h2"/><path d="M10 3.5c0-.8.8-1 .8-1.8M14 3.5c0-.8.8-1 .8-1.8"/>'),
+  /* หม้อเคี่ยว */
+  panboiling:S('<path d="M5 10h14v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M19 12h2v3h-2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 3.5V2"/>'),
+  /* ใบพัดปั่น */
+  centrifugal:S('<circle cx="12" cy="12" r="8.5"/><path d="M12 12c0-3.5 2-5.5 5-5.5-1 3-2.5 5-5 5.5z"/><path d="M12 12c-3.5 0-5.5-2-5.5-5 3 1 5 2.5 5.5 5z"/><path d="M12 12c0 3.5-2 5.5-5 5.5 1-3 2.5-5 5-5.5z"/><path d="M12 12c3.5 0 5.5 2 5.5 5-3-1-5-2.5-5.5-5z"/>'),
+  /* ฟลาสก์ (ห้องแล็บ) */
+  quality:S('<path d="M9.5 3v5.5L4.6 17a2.2 2.2 0 0 0 1.9 3.3h11a2.2 2.2 0 0 0 1.9-3.3L14.5 8.5V3"/><path d="M8.5 3h7"/><path d="M7.2 14h9.6"/>'),
+  /* ใบไม้ + หยดน้ำ (บำบัดน้ำ) */
+  etreatment:S('<path d="M20 4C10 4 4 9 4 16c0 2.2 1.3 4 4 4 8 0 12-6 12-16z"/><path d="M8 20c1.5-5 4.5-8.5 9-11"/>'),
+  /* สายฟ้า (โรงไฟฟ้า) */
+  powerplant:S('<path d="M13.5 2 4 13.5h6.5L10 22l9.5-11.5H13z"/>'),
+  /* โล่ + เช็ก (ความปลอดภัย) */
+  safety:S('<path d="M12 2.5 4.5 5.6v6c0 4.6 3.1 8.8 7.5 10 4.4-1.2 7.5-5.4 7.5-10v-6z"/><path d="m9 12 2.2 2.2L15.4 10"/>'),
+  /* คลิปบอร์ด + เช็ก (คุณภาพ & มาตรฐาน) */
+  foodsafety:S('<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4"/><path d="m8.6 10.5 1.4 1.4 2.6-2.6M8.6 15.5l1.4 1.4 2.6-2.6"/><path d="M15 10.5h1.6M15 15.5h1.6"/>'),
+  /* ประแจ (บำรุงรักษา) */
+  maintenance:S('<path d="M15.5 3.5a5.5 5.5 0 0 0-5 7.7L3.6 18a2 2 0 0 0 2.8 2.8l6.8-6.9a5.5 5.5 0 0 0 6.9-7.4l-3 3-2.9-.8-.8-2.9 3-3a5.5 5.5 0 0 0-1-.3z"/>'),
+  /* รถเข็น (จัดซื้อ & คลัง) */
+  warehouse:S('<circle cx="9.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/><path d="M2.5 3.5h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.3a1.6 1.6 0 0 0 1.6-1.3L21 7.5H6"/>'),
+  /* กลุ่มคน (HR) */
+  hr:S('<circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9.5" r="2.4"/><path d="M16 14.4a5 5 0 0 1 5.5 4.6"/>'),
+  /* กราฟแท่ง + ลูกศร (วิเคราะห์ข้อมูล) */
+  dashboard:S('<path d="M3.5 20.5h17"/><rect x="5" y="12" width="3.2" height="7" rx="1"/><rect x="10.4" y="9" width="3.2" height="10" rx="1"/><rect x="15.8" y="5" width="3.2" height="14" rx="1"/><path d="m5 8 4-4 3 2.5L20 2"/><path d="M16.5 2H20v3.4"/>'),
+};
+
+/* ══════════════════════════════════════════════════════════════════
+   ผู้เชี่ยวชาญ 15 คน (ตาม ICON.png)
+   ══════════════════════════════════════════════════════════════════ */
+const MODULES=[
+ {id:'cane',th:'ผู้เชี่ยวชาญอ้อย',en:'Cane Expert',lo:'ຜູ້ຊ່ຽວຊານອ້ອຍ',c:'#22c55e',bg:'#dcfce7',
+  dTh:'ให้คำแนะนำการปลูกอ้อยและการจัดการไร่',dEn:'Cane planting and farm management',
+  kw:['อ้อย','พันธุ์','ปลูก','ตอ','ไว้ตอ','ปุ๋ย','ดิน','โรค','แมลง','วัชพืช','แปลง','ไร่','เก็บเกี่ยว','ccs','ความหวาน','ตันต่อไร่','ไฟไหม้','ใบอ้อย','ratoon','variety','soil','fertilizer','disease','pest','yield','harvest','ความสุกแก่','ท่อนพันธุ์','งอก']},
+ {id:'crushing',th:'การหีบอ้อย',en:'Milling Expert',lo:'ການຫີບອ້ອຍ',c:'#3b82f6',bg:'#dbeafe',
+  dTh:'เชี่ยวชาญกระบวนการหีบและการสกัดน้ำอ้อย',dEn:'Milling and juice extraction',
+  kw:['หีบ','ลูกหีบ','mill','milling','tandem','ใบมีด','knife','shredder','imbibition','น้ำอิ่ม','extraction','ชานอ้อย','bagasse','fiber','preparation index','pi','roll','hydraulic','แรงดัน','carrier','อุดตัน','choke','สกัด']},
+ {id:'clarification',th:'การต้มน้ำอ้อย',en:'Boiling Expert',lo:'ການຕົ້ມນ້ຳອ້ອຍ',c:'#38bdf8',bg:'#e0f2fe',
+  dTh:'ควบคุมคุณภาพน้ำอ้อยและการตกตะกอน',dEn:'Juice quality control and clarification',
+  kw:['ทำใส','clarifier','clarification','ปูน','lime','ph','flocculant','โพลิเมอร์','mud','ตะกอน','filter press','sulphitation','defecation','turbidity','ขุ่น','น้ำอ้อยรวม','mixed juice','juice heater','settling','ตกตะกอน','ล้น','overflow','ต้มน้ำอ้อย']},
+ {id:'evaporation',th:'การระเหย',en:'Evaporation Expert',lo:'ການລະເຫີຍ',c:'#8b5cf6',bg:'#ede9fe',
+  dTh:'เชี่ยวชาญหม้อต้มระเหยและการเข้มข้น',dEn:'Evaporator operation and concentration',
+  kw:['ระเหย','evaporator','mee','multiple effect','steam economy','ไอน้ำ','vapour','vapor','bleeding','scale','ตะกรัน','condensate','คอนเดนเสท','vacuum','สุญญากาศ','brix','ไซรัป','syrup','heat transfer','htc','bpe','แฟลช','flash','กับดักไอน้ำ','trap']},
+ {id:'panboiling',th:'หม้อเคี่ยว',en:'Vacuum Pan Expert',lo:'ໝໍ້ຕົ້ມ',c:'#f43f5e',bg:'#ffe4e6',
+  dTh:'ควบคุมการเคี่ยวและคุณภาพน้ำเชื่อม',dEn:'Pan boiling and syrup quality',
+  kw:['หม้อเคี่ยว','เคี่ยว','vacuum pan','strike','seed','เชื้อ','graining','ผลึก','crystal','ตกผลึก','supersaturation','false grain','ผลึกปลอม','massecuite','แม่เหลว','mother liquor','crystallizer','exhaustion','boiling curve']},
+ {id:'centrifugal',th:'การปั่น',en:'Centrifuge Expert',lo:'ການປັ່ນ',c:'#f97316',bg:'#ffedd5',
+  dTh:'เชี่ยวชาญการปั่นน้ำตาลและการลดความชื้น',dEn:'Centrifuging and moisture reduction',
+  kw:['ปั่น','centrifugal','เครื่องปั่น','basket','ตะกร้า','ตะแกรง','screen','wash water','น้ำล้าง','steam wash','purging','molasses','กากน้ำตาล','ผลึกแตก','breakage','cycle time','affination','น้ำตาลชื้น']},
+ {id:'quality',th:'ห้องปฏิบัติการ',en:'Lab & Analysis Expert',lo:'ຫ້ອງທົດລອງ',c:'#14b8a6',bg:'#ccfbf1',
+  dTh:'วิเคราะห์คุณภาพน้ำตาลและวัตถุดิบ',dEn:'Sugar and raw material analysis',
+  kw:['คุณภาพ','แล็บ','lab','pol','brix','purity','ความบริสุทธิ์','สี','color','icumsa','ความชื้น','moisture','เถ้า','ash','conductivity','reducing','รีดิวซ์','มอก','spec','สเปก','dextran','starch','so2','ซัลเฟอร์','grain size','particle','caking','จับตัวเป็นก้อน','ผลวิเคราะห์','ปฏิบัติการ']},
+ {id:'etreatment',th:'ระบบบำบัดน้ำ',en:'E-Treatment Expert',lo:'ລະບົບບຳບັດນ້ຳ',c:'#4ade80',bg:'#dcfce7',
+  dTh:'ดูแลระบบบำบัดน้ำเสียและสิ่งแวดล้อม',dEn:'Wastewater treatment and environment',
+  kw:['บำบัดน้ำเสีย','wastewater','น้ำทิ้ง','bod','cod','บ่อบำบัด','สิ่งแวดล้อม','environment','effluent','aeration','เติมอากาศ','บ่อผึ่ง','คุณภาพน้ำทิ้ง','มลพิษ','recycle water','น้ำหมุนเวียน','iso14001']},
+ {id:'powerplant',th:'โรงไฟฟ้าชีวมวล',en:'Power Plant Expert',lo:'ໂຮງໄຟຟ້າຊີວະມວນ',c:'#eab308',bg:'#fef9c3',
+  dTh:'เชี่ยวชาญระบบผลิตไฟฟ้าจากชีวมวล',dEn:'Biomass power generation',
+  kw:['หม้อไอน้ำ','boiler','กังหัน','turbine','generator','เครื่องกำเนิดไฟฟ้า','superheater','economizer','deaerator','feed water','น้ำป้อน','blowdown','excess air','ไอเสีย','flue gas','gcv','cogeneration','trip','condenser','โรงไฟฟ้า','เชื้อเพลิง','ประสิทธิภาพหม้อไอน้ำ','ผลิตไฟฟ้า']},
+ {id:'safety',th:'ความปลอดภัย',en:'Safety Expert',lo:'ຄວາມປອດໄພ',c:'#2563eb',bg:'#dbeafe',
+  dTh:'ให้คำแนะนำด้านความปลอดภัยและอาชีวอนามัย',dEn:'Safety and occupational health',
+  kw:['ความปลอดภัย','safety','อุบัติเหตุ','accident','ppe','อุปกรณ์ป้องกัน','loto','lockout','tagout','confined space','ที่อับอากาศ','safety valve','วาล์วนิรภัย','ตรวจสอบตามกฎหมาย','กฎหมาย','ใบอนุญาต','อาชีวอนามัย','occupational','ดับเพลิง','fire','jsa','permit to work','งานเสี่ยง','near miss']},
+ {id:'foodsafety',th:'คุณภาพ & มาตรฐาน',en:'QA & Standards Expert',lo:'ຄຸນນະພາບ & ມາດຕະຖານ',c:'#7c3aed',bg:'#ede9fe',
+  dTh:'ระบบคุณภาพ มาตรฐาน และการตรวจติดตาม',dEn:'Quality systems, standards and audits',
+  kw:['fssc','iso22000','iso 22000','iso9001','iso14001','haccp','prp','oprp','gmp','smeta','halal','kosher','audit','ตรวจประเมิน','car','ncr','ข้อบกพร่อง','corrective','ccp','จุดวิกฤต','traceability','สอบกลับ','recall','เรียกคืน','allergen','สิ่งแปลกปลอม','ความปลอดภัยอาหาร','มาตรฐาน']},
+ {id:'maintenance',th:'บำรุงรักษาเครื่องจักร',en:'Maintenance Expert',lo:'ບຳລຸງຮັກສາເຄື່ອງຈັກ',c:'#3b82f6',bg:'#dbeafe',
+  dTh:'ให้คำแนะนำการบำรุงรักษาและแก้ไขปัญหาเครื่องจักร',dEn:'Machinery maintenance and troubleshooting',
+  kw:['ซ่อมบำรุง','maintenance','แบริ่ง','bearing','vibration','การสั่น','alignment','ตั้งศูนย์','หล่อลื่น','lubrication','เกียร์','gearbox','ปั๊ม','pump','มอเตอร์','motor','cavitation','overload','thermography','insulation','megger','หม้อแปลง','transformer','pm','predictive','ร้อน','เสียงดัง','oil analysis']},
+ {id:'warehouse',th:'จัดซื้อ & คลังสินค้า',en:'Procurement Expert',lo:'ຈັດຊື້ & ຄັງສິນຄ້າ',c:'#f97316',bg:'#ffedd5',
+  dTh:'จัดการจัดซื้อ วัตถุดิบ และคลังสินค้า',dEn:'Procurement, materials and warehouse',
+  kw:['คลัง','warehouse','สต็อก','stock','inventory','จัดเก็บ','storage','fifo','fefo','บาร์โค้ด','barcode','pallet','กระสอบ','stock take','ตรวจนับ','shelf life','aging','ระบายอากาศ','fumigation','จัดซื้อ','procurement','ผู้ขาย','vendor','purchase order','วัตถุดิบ']},
+ {id:'hr',th:'ทรัพยากรบุคคล',en:'HR Expert',lo:'ຊັບພະຍາກອນບຸກຄົນ',c:'#22c55e',bg:'#dcfce7',
+  dTh:'กฎหมายแรงงาน พัฒนาบุคลากร และสวัสดิการ',dEn:'Labour law, people development, welfare',
+  kw:['บุคลากร','พนักงาน','hr','human resource','ทรัพยากรบุคคล','สวัสดิการ','ฝึกอบรม','training','ประเมินผล','แรงงาน','กฎหมายแรงงาน','สรรหา','recruitment','โครงสร้างองค์กร','กะทำงาน','shift','ot','ค่าจ้าง','competency','สมรรถนะ']},
+ {id:'dashboard',th:'การวิเคราะห์ข้อมูล',en:'Data & BI Expert',lo:'ການວິເຄາະຂໍ້ມູນ',c:'#8b5cf6',bg:'#ede9fe',
+  dTh:'วิเคราะห์ข้อมูลและสร้างรายงานเชิงลึก',dEn:'Data analysis and reporting',
+  kw:['kpi','oee','recovery','bhr','benchmark','เทียบ','dashboard','รายงาน','daily report','แนวโน้ม','trend','anomaly','ผิดปกติ','forecast','พยากรณ์','undetermined','สูญเสีย','downtime','time efficiency','availability','steam % cane','สรุปผู้บริหาร','ประสิทธิภาพรวม','วิเคราะห์ข้อมูล']},
+];
+
+const I18N={
+ th:{tagline:'ผู้ช่วยอัจฉริยะโรงงานน้ำตาล',newChat:'เริ่มบทสนทนาใหม่',searchExpert:'ค้นหาผู้เชี่ยวชาญ...',
+  experts:'บทสนทนา',jumpLatest:'ไปข้อความล่าสุด',ready:'พร้อมให้บริการ',expert:'ผู้เชี่ยวชาญ',
+  userName:'ผู้ใช้งาน Demo',userOrg:'โรงงานน้ำตาล',showAll:'ดูทั้งหมด',showLess:'ย่อรายการ',
+  hintKb:'ตอบจากคลังความรู้ของโรงงานเท่านั้น พร้อมอ้างอิงทุกคำตอบ',ph:'ถาม',
+  thinking:'กำลังค้นคลังความรู้',refs:'เอกสารอ้างอิง',conf:'ความมั่นใจ',chunks:'หัวข้อ',
+  skillLoaded:'ฝังความเชี่ยวชาญแล้ว',
+  copied:'คัดลอกแล้ว',cleared:'ล้างห้องแล้ว',moveTo:'ย้ายไป',suggest:'คำถามนี้น่าจะตรงกับ',
+  cSource:'อ้างอิงแหล่งข้อมูล',cFile:'แนบไฟล์',cAnalyze:'วิเคราะห์ข้อมูล',cSummary:'สรุปคำตอบ',
+  trace:'ค้นหาข้อมูล (RAG trace)',viewAll:'ดูแหล่งข้อมูลทั้งหมด',
+  rExpert:'ผู้เชี่ยวชาญ',rFrom:'ค้นหาข้อมูลจาก',rDocs:'เอกสารที่พบ',
+  heroP:'ห้องนี้ตอบเฉพาะเรื่องในความเชี่ยวชาญของตัวเอง ค้นจากเอกสารในคลังความรู้ พร้อมระบุที่มาและระดับความมั่นใจทุกคำตอบ'},
+ en:{tagline:'Smart assistant for sugar factories',newChat:'New conversation',searchExpert:'Search experts...',
+  experts:'Conversations',jumpLatest:'Jump to latest',ready:'Ready',expert:'Expert',
+  userName:'Demo User',userOrg:'Sugar Factory',showAll:'Show all',showLess:'Show less',
+  hintKb:'Answers come only from the factory knowledge base, always cited',ph:'Ask',
+  thinking:'Searching knowledge base',refs:'References',conf:'Confidence',chunks:'topics',
+  skillLoaded:'Expertise loaded',
+  copied:'Copied',cleared:'Room cleared',moveTo:'Move to',suggest:'This looks like a question for',
+  cSource:'Cite sources',cFile:'Attach file',cAnalyze:'Analyse data',cSummary:'Summarise',
+  trace:'Knowledge retrieval (RAG trace)',viewAll:'View all sources',
+  rExpert:'Expert',rFrom:'Retrieved from',rDocs:'Documents found',
+  heroP:'This room answers only within its own expertise, grounded in the knowledge base, with sources and a confidence score on every answer.'},
+ lo:{tagline:'ຜູ້ຊ່ວຍອັດສະລິຍະໂຮງງານນ້ຳຕານ',newChat:'ເລີ່ມສົນທະນາໃໝ່',searchExpert:'ຄົ້ນຫາຜູ້ຊ່ຽວຊານ...',
+  experts:'ການສົນທະນາ',jumpLatest:'ໄປຂໍ້ຄວາມຫຼ້າສຸດ',ready:'ພ້ອມໃຫ້ບໍລິການ',expert:'ຜູ້ຊ່ຽວຊານ',
+  userName:'ຜູ້ໃຊ້ Demo',userOrg:'ໂຮງງານນ້ຳຕານ',showAll:'ເບິ່ງທັງໝົດ',showLess:'ຫຍໍ້',
+  hintKb:'ຕອບຈາກຄັງຄວາມຮູ້ຂອງໂຮງງານເທົ່ານັ້ນ ພ້ອມອ້າງອີງ',ph:'ຖາມ',
+  thinking:'ກຳລັງຄົ້ນຫາ',refs:'ເອກະສານອ້າງອີງ',conf:'ຄວາມໝັ້ນໃຈ',chunks:'ຫົວຂໍ້',
+  skillLoaded:'ຝັງຄວາມຊ່ຽວຊານແລ້ວ',
+  copied:'ສຳເນົາແລ້ວ',cleared:'ລຶບແລ້ວ',moveTo:'ຍ້າຍໄປ',suggest:'ຄຳຖາມນີ້ໜ້າຈະກົງກັບ',
+  cSource:'ອ້າງອີງແຫຼ່ງຂໍ້ມູນ',cFile:'ແນບໄຟລ໌',cAnalyze:'ວິເຄາະຂໍ້ມູນ',cSummary:'ສະຫຼຸບ',
+  trace:'ຄົ້ນຫາຂໍ້ມູນ (RAG trace)',viewAll:'ເບິ່ງແຫຼ່ງຂໍ້ມູນທັງໝົດ',
+  rExpert:'ຜູ້ຊ່ຽວຊານ',rFrom:'ຄົ້ນຫາຈາກ',rDocs:'ເອກະສານທີ່ພົບ',
+  heroP:'ຫ້ອງນີ້ຕອບສະເພາະເລື່ອງໃນຄວາມຊ່ຽວຊານຂອງຕົນ ຈາກເອກະສານໃນຄັງຄວາມຮູ້'},
+};
+
+const STARTERS={
+ cane:{th:['CCS ต่ำกว่าปีที่แล้ว สาเหตุที่เป็นไปได้','โรคใบขาวระบาดทั้งแปลง จัดการยังไง','ไว้ตอปีที่ 3 คุ้มไหม'],
+   en:['CCS lower than last season — possible causes?','White leaf disease across the plot','Is a third ratoon worth keeping?']},
+ crushing:{th:['Extraction ต่ำกว่าเป้า ควรไล่ตรวจอะไรก่อน','imbibition % fiber ควรตั้งเท่าไร','Pol % bagasse สูง แก้ยังไง'],
+   en:['Extraction below target — what to check first?','What imbibition % fiber should I run?','Pol % bagasse is high — how to fix?']},
+ clarification:{th:['clarifier ตกตะกอนไม่ดี น้ำใสขุ่น','pH น้ำอ้อยคุมไม่นิ่ง','mud loss สูงผิดปกติ'],
+   en:['Poor settling, cloudy clear juice','Juice pH keeps drifting','Mud loss unusually high']},
+ evaporation:{th:['Steam economy ต่ำ ตรวจอะไรก่อน','ตะกรันใน evaporator สังเกตจากอะไร','สุญญากาศไม่ดี ผลกระทบอะไรบ้าง'],
+   en:['Low steam economy — where to start?','How do I detect evaporator scaling?','Poor vacuum — what are the effects?']},
+ panboiling:{th:['เกิด false grain ในหม้อเคี่ยว แก้ยังไง','ผลึกโตช้า strike time ยาว','คุม supersaturation ยังไง'],
+   en:['False grain in the pan — how to fix?','Slow crystal growth, long strike','How do I control supersaturation?']},
+ centrifugal:{th:['น้ำตาลชื้นหลังปั่น','สีน้ำตาลสูงหลังปั่น เพิ่มน้ำล้างดีไหม','ผลึกแตกจากอะไรได้บ้าง'],
+   en:['Wet sugar after purging','High colour after centrifuging','What causes crystal breakage?']},
+ quality:{th:['สีน้ำตาลสูงขึ้น แต่ Pol ปกติ','ความชื้นเกินสเปก ตรวจจุดไหน','ค่า ash สูง มาจากไหนได้บ้าง'],
+   en:['Colour rising but Pol normal','Moisture out of spec — where to check?','High ash — where does it come from?']},
+ etreatment:{th:['ค่า BOD น้ำทิ้งเกินมาตรฐาน','ระบบเติมอากาศควรตั้งเท่าไร','ลดภาระ BOD จากต้นทางยังไง'],
+   en:['Effluent BOD above limit','What aeration rate should I run?','Reducing BOD load at source']},
+ powerplant:{th:['ประสิทธิภาพหม้อไอน้ำตก ตรวจอะไรก่อน','boiler trip วิเคราะห์ยังไง','ชานอ้อยชื้น กระทบอะไรบ้าง'],
+   en:['Boiler efficiency dropped — where to start?','How to analyse a boiler trip','Wet bagasse — what does it affect?']},
+ safety:{th:['งานที่อับอากาศต้องเตรียมอะไรบ้าง','ขั้นตอน LOTO ก่อนซ่อมชุดลูกหีบ','สอบสวนอุบัติเหตุยังไงให้ถึงสาเหตุจริง'],
+   en:['Confined space entry — what is required?','LOTO before mill maintenance','Investigating an accident to real root cause']},
+ foodsafety:{th:['เขียน CAR จาก NC ยังไงให้ผ่าน','CCP กับ OPRP ต่างกันยังไง','เตรียม audit FSSC 22000'],
+   en:['How to write a CAR that passes','CCP vs OPRP — what is the difference?','Preparing for an FSSC 22000 audit']},
+ maintenance:{th:['แบริ่งปั๊มร้อนผิดปกติ วินิจฉัยยังไง','vibration มอเตอร์สูง เกิน ISO 10816 ไหม','ปั๊มเกิด cavitation แก้ยังไง'],
+   en:['Pump bearing running hot — how to diagnose?','High motor vibration vs ISO 10816','Pump cavitation — how to fix?']},
+ warehouse:{th:['น้ำตาลจับตัวเป็นก้อนในคลัง','ทำ FIFO ให้บังคับได้จริงยังไง','ควบคุมความชื้นในคลังยังไง'],
+   en:['Sugar caking in the warehouse','How to enforce FIFO in practice','Controlling warehouse humidity']},
+ hr:{th:['จัดกะช่วงหีบให้ถูกกฎหมายแรงงานยังไง','วางแผนฝึกอบรมช่วงนอกฤดู','ประเมินสมรรถนะพนักงานเดินเครื่อง'],
+   en:['Legal shift planning during crushing season','Off-season training plan','Assessing operator competency']},
+ dashboard:{th:['ทำไม recovery ต่ำ','undetermined loss สูงผิดปกติ','สรุปผลผลิตให้ผู้บริหาร'],
+   en:['Why is recovery low?','Undetermined loss unusually high','Executive summary of production']},
+};
+
+/* ══════════════════════════════════════════════════════════════════
+   STATE
+   ══════════════════════════════════════════════════════════════════ */
+const KB=window.SUGAR_KB||[];
+const CFG=Object.assign({mode:'offline',anthropic:'',model:'claude-opus-5',url:'',anon:'',
+  lang:'th',theme:'light',room:'cane'},JSON.parse(localStorage.getItem('mlx_cfg')||'{}'));
+let ROOMS=JSON.parse(localStorage.getItem('mlx_rooms')||'{}');
+let busy=false,filter='',palSel=0,palItems=[],abortCtl=null,showAll=false;
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const T=k=>(I18N[CFG.lang]||I18N.th)[k]||k;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const saveCfg=()=>localStorage.setItem('mlx_cfg',JSON.stringify(CFG));
+const pruneRooms=()=>{for(const k of Object.keys(ROOMS)) if(!ROOMS[k]?.length) delete ROOMS[k]};
+const saveRooms=()=>{pruneRooms();localStorage.setItem('mlx_rooms',JSON.stringify(ROOMS))};
+const mod=id=>MODULES.find(m=>m.id===id);
+const modName=m=>CFG.lang==='en'?m.en:CFG.lang==='lo'?(m.lo||m.th):m.th;
+const modDesc=m=>CFG.lang==='en'?m.dEn:m.dTh;
+const room=()=>ROOMS[CFG.room]||(ROOMS[CFG.room]=[]);
+const iconOf=(m,size)=>`<span style="color:${m.c};display:grid;place-items:center;width:100%;height:100%">${ICONS[m.id]||ICONS.dashboard}</span>`;
+const hhmm=ts=>{const d=new Date(ts||Date.now());return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
+
+/* ══════════════════════════════════════════════════════════════════
+   RETRIEVAL
+   ══════════════════════════════════════════════════════════════════ */
+function tokenize(text){
+  const s=text.toLowerCase(),out=[];
+  for(const m of s.matchAll(/[a-z][a-z0-9]+/g)) out.push(m[0]);
+  for(const m of s.matchAll(/\d+(?:\.\d+)?%?/g)) out.push(m[0]);
+  for(const m of s.matchAll(/[฀-໿]+/g)){
+    const w=m[0];
+    if(w.length<=4){if(w.length>=2) out.push(w);continue}
+    for(let i=0;i<=w.length-4;i++) out.push(w.slice(i,i+4));
+  }
+  return out;
+}
+const IDX=(()=>{
+  const df=new Map(),docs=[];let total=0;
+  for(const c of KB){
+    const tf=new Map();
+    for(const t of tokenize(c.section+' '+c.content)) tf.set(t,(tf.get(t)||0)+1);
+    for(const t of tf.keys()) df.set(t,(df.get(t)||0)+1);
+    const len=[...tf.values()].reduce((a,b)=>a+b,0);
+    total+=len;docs.push({tf,len});
+  }
+  const stop=new Set(),cut=KB.length*.30;
+  for(const [t,n] of df) if(n>cut) stop.add(t);
+  return {df,docs,stop,avg:total/(KB.length||1),N:KB.length||1};
+})();
+const IDF_CAP=Math.log(1+(IDX.N-3+.5)/(3+.5));
+
+/* n-gram ที่คร่อมรอยต่อคำไทยไม่มีในเอกสารใดเลย แต่ได้ IDF สูงสุดเพราะหายาก
+   ต้องตัดออกจากตัวหาร ไม่งั้นกดคะแนนความมั่นใจลงถาวร */
+function queryWeights(query,topN=12){
+  const all=[...new Set(tokenize(query))].filter(t=>!IDX.stop.has(t));
+  if(!all.length) return {terms:[],w:new Map(),wTotal:0,grounding:0};
+  const isLatin=t=>/^[a-z0-9]/.test(t);
+  let massAll=0,massFound=0;const latin=[],thai=[];
+  for(const t of all){
+    const n=IDX.df.get(t)||0;
+    const idf=Math.min(IDF_CAP,Math.log(1+(IDX.N-n+.5)/(n+.5)));
+    massAll+=idf;
+    if(n===0) continue;
+    massFound+=idf;
+    if(isLatin(t)) latin.push([t,idf]); else if(n>=2) thai.push([t,idf]);
+  }
+  latin.sort((a,b)=>b[1]-a[1]);thai.sort((a,b)=>b[1]-a[1]);
+  const scored=[...latin,...thai].slice(0,topN);
+  return {terms:scored.map(([t])=>t),w:new Map(scored),
+    wTotal:scored.reduce((a,[,v])=>a+v,0),grounding:massAll?massFound/massAll:0};
+}
+function setCoverage(query,hits){
+  const {terms,w,wTotal,grounding}=queryWeights(query);
+  if(!wTotal) return 0;
+  const inSet=t=>hits.some(h=>IDX.docs[h.idx]?.tf.has(t));
+  let covered=0,latinT=0,latinC=0;
+  for(const t of terms){
+    const hit=inSet(t);
+    if(hit) covered+=w.get(t);
+    if(/^[a-z0-9]/.test(t)){latinT+=w.get(t);if(hit) latinC+=w.get(t)}
+  }
+  const mixed=covered/wTotal,latin=latinT>0?latinC/latinT:0;
+  return Math.max(mixed,latin*.92)*Math.sqrt(grounding);
+}
+function bm25(query,modules,k=20){
+  const {terms:q,w,wTotal,grounding}=queryWeights(query);
+  if(!q.length||wTotal<=0) return [];
+  const ground=Math.sqrt(grounding),k1=1.4,b=.72,hits=[];
+  for(let i=0;i<KB.length;i++){
+    if(modules?.length&&!modules.includes(KB[i].module)) continue;
+    const d=IDX.docs[i];let s=0,covered=0;
+    for(const t of q){
+      const f=d.tf.get(t);if(!f) continue;
+      covered+=w.get(t);
+      s+=w.get(t)*(f*(k1+1))/(f+k1*(1-b+b*d.len/IDX.avg));
+    }
+    if(s<=0) continue;
+    let cov=(covered/wTotal)*ground;
+    const sec=KB[i].section.toLowerCase();
+    for(const t of q) if(t.length>3&&sec.includes(t)){s*=1.18;cov=Math.min(1,cov*1.10);break}
+    hits.push({i,s,cov});
+  }
+  hits.sort((a,b)=>b.s-a.s);
+  return hits.slice(0,k).map(h=>({...KB[h.i],idx:h.i,score:h.s,sim:h.cov}));
+}
+function kwHit(ql,kw){
+  const k=kw.toLowerCase();
+  if(/^[a-z0-9][a-z0-9 .%&]*$/.test(k)){
+    const e=k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    return new RegExp(`(^|[^a-z0-9])${e}([^a-z0-9]|$)`).test(ql);
+  }
+  return ql.includes(k);
+}
+const kwScoreOf=(ql,m)=>m.kw.reduce((s,k)=>s+(kwHit(ql,k)?(k.length>=6?3:k.length>=4?2:1):0),0);
+
+function bestModuleFor(question){
+  const ql=question.toLowerCase(),byMod={},total={};
+  for(const h of bm25(question,null,45)) (byMod[h.module]||=[]).push(h.sim);
+  for(const m of MODULES){
+    const top=(byMod[m.id]||[]).slice(0,3);
+    const ev=top.length?top.reduce((a,b)=>a+b,0)/top.length:0;
+    total[m.id]=kwScoreOf(ql,m)+ev*5;
+  }
+  const ranked=Object.entries(total).sort((a,b)=>b[1]-a[1]);
+  return {id:ranked[0][0],score:ranked[0][1],kw:Math.max(...MODULES.map(m=>kwScoreOf(ql,m)))};
+}
+function confidenceOf(hits,query,kw=1){
+  if(!hits.length) return 0;
+  const setCov=query?setCoverage(query,hits):hits[0].sim;
+  const top1=hits[0].sim;
+  const agree=Math.min(1,new Set(hits.map(h=>h.doc_code)).size/3);
+  let raw=.55*setCov+.30*top1+.15*agree;
+  if(kw===0) raw*=.45; else raw+=Math.min(.12,kw*.015);
+  return Math.min(.97,Math.max(0,raw));
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MARKDOWN
+   ══════════════════════════════════════════════════════════════════ */
+function md(src){
+  const blocks=[];
+  let s=esc(src).replace(/```(\w*)\n([\s\S]*?)```/g,(_,l,c)=>{
+    blocks.push(`<pre><code>${c.replace(/\n$/,'')}</code></pre>`);return `  ${blocks.length-1}  `});
+  s=s.replace(/`([^`\n]+)`/g,'<code>$1</code>')
+     .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
+     .replace(/(?<![\w*])\*([^*\n]+)\*(?![\w*])/g,'<em>$1</em>')
+     .replace(/\[(\d+)\]/g,'<sup class="cite" data-n="$1">$1</sup>');
+  const lines=s.split('\n'),out=[];let list=null,tbl=null;
+  const closeList=()=>{if(list){out.push(`</${list}>`);list=null}};
+  const closeTbl=()=>{
+    if(!tbl) return;
+    const [head,...rows]=tbl;
+    out.push('<table><thead><tr>'+head.map(h=>`<th>${h}</th>`).join('')+'</tr></thead><tbody>'+
+      rows.map(r=>'<tr>'+r.map(c=>`<td>${c}</td>`).join('')+'</tr>').join('')+'</tbody></table>');
+    tbl=null;
+  };
+  for(const raw of lines){
+    const ln=raw.trimEnd();
+    if(/^\s* \d+ \s*$/.test(ln)){closeList();closeTbl();out.push(ln.trim());continue}
+    if(/^\s*\|.*\|\s*$/.test(ln)){
+      if(/^[\s|:-]+$/.test(ln)) continue;
+      closeList();
+      const cells=ln.trim().slice(1,-1).split('|').map(c=>c.trim());
+      if(!tbl) tbl=[cells]; else tbl.push(cells);
+      continue;
+    }
+    closeTbl();
+    if(!ln.trim()){closeList();continue}
+    let m;
+    if((m=ln.match(/^(#{1,4})\s+(.+)$/))){closeList();
+      const lv=Math.min(4,Math.max(2,m[1].length));out.push(`<h${lv}>${m[2]}</h${lv}>`);continue}
+    if(/^\s*([-*•])\s+/.test(ln)){
+      if(list!=='ul'){closeList();out.push('<ul>');list='ul'}
+      out.push(`<li>${ln.replace(/^\s*[-*•]\s+/,'')}</li>`);continue}
+    if(/^\s*\d+[.)]\s+/.test(ln)){
+      if(list!=='ol'){closeList();out.push('<ol>');list='ol'}
+      out.push(`<li>${ln.replace(/^\s*\d+[.)]\s+/,'')}</li>`);continue}
+    if(/^\s*&gt;\s?/.test(ln)){closeList();out.push(`<blockquote>${ln.replace(/^\s*&gt;\s?/,'')}</blockquote>`);continue}
+    if(/^\s*(---+|___+)\s*$/.test(ln)){closeList();out.push('<hr>');continue}
+    closeList();out.push(`<p>${ln}</p>`);
+  }
+  closeList();closeTbl();
+  return out.join('\n').replace(/ (\d+) /g,(_,i)=>blocks[+i]);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   RENDER
+   ══════════════════════════════════════════════════════════════════ */
+const kbCount={};
+for(const c of KB) kbCount[c.module]=(kbCount[c.module]||0)+1;
+
+const VISIBLE=8;
+function renderRooms(){
+  const f=filter.trim().toLowerCase();
+  let list=MODULES.filter(m=>!f||modName(m).toLowerCase().includes(f)||m.id.includes(f)
+    ||m.kw.some(k=>k.toLowerCase().includes(f)));
+  const total=list.length;
+  const collapsed=!f&&!showAll&&total>VISIBLE;
+  if(collapsed){
+    // ห้องที่มีบทสนทนาแล้วต้องเห็นเสมอ แม้จะย่อรายการ
+    const active=list.filter(m=>ROOMS[m.id]?.length);
+    const rest=list.filter(m=>!ROOMS[m.id]?.length);
+    list=[...active,...rest].slice(0,Math.max(VISIBLE,active.length));
+  }
+  const el=$('#rooms');
+  if(!total){el.innerHTML=`<div class="empty-search">ไม่พบผู้เชี่ยวชาญที่ตรงกับ "${esc(filter)}"</div>`;
+    $('#btnShowAll').style.display='none';return}
+  el.innerHTML=`<div class="grp"><span>${T('experts')}</span><span>${list.length}/${MODULES.length}</span></div>`+
+    list.map(m=>{
+      const msgs=ROOMS[m.id]||[];
+      const lastU=[...msgs].reverse().find(x=>x.role==='user');
+      const sub=lastU?esc(lastU.content.slice(0,40)):esc(modDesc(m));
+      const cnt=msgs.filter(x=>x.role==='user').length;
+      const n=kbCount[m.id]||0;
+      const time=msgs.length?hhmm(msgs[msgs.length-1].ts):'';
+      return `<button class="room ${m.id===CFG.room?'on':''}" data-room="${m.id}">
+        <div class="room-ic" style="background:${m.bg}">${iconOf(m)}</div>
+        <div class="room-tx"><b>${esc(modName(m))}</b><span>${sub}</span></div>
+        <div class="room-r">${time?`<span class="room-time">${time}</span>`:''}
+          ${cnt?`<span class="room-badge">${cnt}</span>`:`<span class="room-kb ${n?'':'zero'}">${n}</span>`}</div>
+      </button>`;
+    }).join('');
+  const btn=$('#btnShowAll');
+  btn.style.display=(f||total<=VISIBLE)?'none':'flex';
+  btn.textContent=showAll?T('showLess'):`${T('showAll')} (${MODULES.length})`;
+}
+
+function renderTop(){
+  const m=mod(CFG.room);
+  $('#topIc').style.background=m.bg;
+  $('#topIc').innerHTML=iconOf(m);
+  $('#topName').textContent=modName(m);
+  $('#topId').textContent=m.id;
+  $('#topRole').textContent=T('expert');
+  $('#input').placeholder=`${T('ph')}${modName(m)}...`;
+  document.title=`${modName(m)} · ML Expert AI`;
+}
+
+function renderChips(){
+  const c=[['cSource','<path d="M6 4h9l3 3v13H6z"/><path d="M15 4v3h3"/><path d="M9 12h6M9 16h4"/>'],
+    ['cFile','<path d="M20 11.5 12.5 19a4.6 4.6 0 0 1-6.5-6.5l8-8a3 3 0 0 1 4.3 4.3l-8 8a1.5 1.5 0 0 1-2.1-2.1l7.3-7.3"/>'],
+    ['cAnalyze','<path d="M3 20h18"/><rect x="5" y="11" width="3" height="7" rx="1"/><rect x="10.5" y="7" width="3" height="11" rx="1"/><rect x="16" y="13" width="3" height="5" rx="1"/>'],
+    ['cSummary','<path d="M4 6h16M4 12h10M4 18h13"/><circle cx="18.5" cy="18" r="2.5"/>']];
+  $('#chips').innerHTML=c.map(([k,p])=>
+    `<button class="chip" data-chip="${k}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${p}</svg>${T(k)}</button>`).join('');
+  $$('#chips .chip').forEach(b=>b.onclick=()=>chipAction(b.dataset.chip));
+}
+function chipAction(k){
+  const map={cSource:'อ้างอิงแหล่งข้อมูลให้ครบทุกประเด็นในคำตอบล่าสุด',
+    cAnalyze:'ช่วยวิเคราะห์ข้อมูลนี้: ',cSummary:'สรุปคำตอบล่าสุดให้สั้นที่สุดเป็นข้อๆ'};
+  if(k==='cFile'){toast('การแนบไฟล์จะเปิดใช้ในเฟสถัดไป');return}
+  $('#input').value=map[k]||'';$('#input').focus();autosize();
+}
+
+function heroHTML(){
+  const m=mod(CFG.room);
+  const st=(STARTERS[m.id]||{})[CFG.lang==='en'?'en':'th']||(STARTERS[m.id]||{}).th||[];
+  const n=kbCount[m.id]||0;
+  return `<div class="hero">
+    <div class="hero-ic" style="background:${m.bg}">${iconOf(m)}</div>
+    <h2>${esc(modName(m))}</h2>
+    <p class="lede">${esc(modDesc(m))} — ${T('heroP')}</p>
+    <div class="hero-meta">
+      <span class="pill">📚 ${n} ${T('chunks')}</span>
+      ${PERSONAS[m.id]?`<span class="pill" style="color:var(--ok)" title="ฝังวิธีคิดและกรอบการวินิจฉัยเฉพาะทางไว้แล้ว">✓ ${T('skillLoaded')}</span>`:''}
+      <span class="pill" style="font-family:var(--mono)">${m.id}</span>
+      ${n<8?`<span class="pill" style="color:var(--warn)">⚠ คลังยังบาง</span>`:''}
+    </div>
+    <div class="starters">${st.map(q=>
+      `<button class="starter" data-q="${esc(q)}">
+        <span class="si" style="background:${m.bg}">${iconOf(m)}</span><span>${esc(q)}</span></button>`).join('')}</div>
+  </div>`;
+}
+
+function renderRoom(){
+  const msgs=room(),wrap=$('#wrap');
+  if(!msgs.length){wrap.innerHTML=heroHTML();$$('.starter').forEach(b=>b.onclick=()=>ask(b.dataset.q));return}
+  wrap.innerHTML=msgs.map(m=>m.role==='user'?userHTML(m):assistantHTML(m)).join('');
+  bindAll(wrap);
+  requestAnimationFrame(()=>{$('#chat').scrollTop=$('#chat').scrollHeight});
+}
+
+function userHTML(m){
+  return `<div class="msg u">
+    <div class="ubub"><div>${md(m.content)}</div>
+      <div class="stamp">${hhmm(m.ts)}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+          <path d="m4 12.5 4.5 4.5L20 6"/></svg></div></div>
+    <div class="ava" style="width:42px;height:42px;border-radius:13px">DM</div></div>`;
+}
+
+function assistantHTML(m){
+  const mm=mod(m.meta?.module||CFG.room);
+  return `<div class="msg a">
+    <div class="a-ava" style="color:${mm.c}">${iconOf(mm)}</div>
+    <div class="a-card">
+      <div class="a-head"><b>${esc(modName(mm))}</b>
+        <span class="chipm">${esc(m.meta?.model||'Demo')}</span>
+        <span class="t">${hhmm(m.ts)}</span>
+        <div class="a-acts"><button class="act" data-copy="${esc(m.content)}" title="คัดลอก">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+            <rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg></button></div></div>
+      ${m.meta?.suggest?suggestHTML(m.meta.suggest):''}
+      ${m.meta?.trace?traceHTML(m.meta.trace):''}
+      <div class="prose">${md(m.content)}</div>
+      ${m.meta?.info?infoHTML(m.meta.info):''}
+      ${refsHTML(m.meta?.citations,m.meta?.confidence)}
+      ${m.meta?.latency?`<div class="meta"><span>⏱ ${(m.meta.latency/1000).toFixed(1)}s</span></div>`:''}
+    </div></div>`;
+}
+
+function suggestHTML(s){
+  const m=mod(s);
+  return `<div class="hint-move">💡 ${T('suggest')} <b style="color:${m.c}">${esc(modName(m))}</b>
+    <button data-move="${s}">${T('moveTo')} →</button></div>`;
+}
+
+function traceHTML(tr){
+  const q=(tr.queries||[]).map(x=>`<span class="qq">${esc(x)}</span>`).join('');
+  const row=(k,v)=>v?`<div><span class="k">${k}</span>${esc(v)}</div>`:'';
+  return `<details class="trace"><summary>
+    <svg class="sp" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.6L19.5 9l-4.4 3.4 1.4 5.6L12 15l-4.5 3 1.4-5.6L4.5 9l5.6-1.4z"/></svg>
+    ${T('trace')}
+    <svg class="cv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+    </summary><div class="trace-in">
+    ${row('expert',tr.module)}${row('scope',tr.scope)}
+    ${q?`<div><span class="k">queries</span>${q}</div>`:''}
+    ${row('retrieved',tr.retrieved!=null?`${tr.retrieved} chunks`:'')}
+    ${row('sources',tr.sources!=null?`${tr.sources} เอกสาร`:'')}
+    ${tr.note?`<div style="color:var(--warn);margin-top:5px">⚠ ${esc(tr.note)}</div>`:''}
+  </div></details>`;
+}
+
+function infoHTML(info){
+  const ic={p:'<circle cx="12" cy="8" r="3.4"/><path d="M5 20a7 7 0 0 1 14 0"/>',
+    c:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    d:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/>'};
+  const row=(k,label,val)=>`<div class="info-row">
+    <svg class="info-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">${ic[k]}</svg>
+    <span class="info-k">${label}</span><span class="info-v">${val}</span></div>`;
+  return `<div class="info">
+    ${row('p',T('rExpert'),`<b>${esc(info.expert)}</b> <span style="color:var(--tx3);font-family:var(--mono)">(${esc(info.id)})</span>`)}
+    ${row('c',T('rFrom'),`คลังความรู้ <b>${info.hits}</b> แหล่ง<br><span style="color:var(--tx2)">จาก <b>${info.total}</b> หัวข้อของผู้เชี่ยวชาญนี้</span>`)}
+    ${row('d',T('rDocs'),`<b>${info.docs}</b> ฉบับ`)}
+    <button class="info-act" data-viewall>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <path d="m12 3 9 4.5-9 4.5-9-4.5z"/><path d="m3 12 9 4.5L21 12"/><path d="m3 16.5 9 4.5 9-4.5"/></svg>
+      ${T('viewAll')}</button></div>`;
+}
+
+function refsHTML(cites,conf){
+  let h='';
+  if(cites?.length){
+    h+=`<div class="refs" id="refsBlock"><div class="refs-h">📚 ${T('refs')} (${cites.length})</div>`+
+      cites.map(c=>`<div class="ref" data-n="${c.n}">
+        <div class="ref-n">${c.n}</div>
+        <div class="ref-b"><div class="ref-t">${esc(c.doc_title)}</div>
+          <div class="ref-m"><span class="tag">${esc(c.doc_type)}</span>
+            ${c.outside?`<span class="tag" style="background:#fef3c7;color:#b45309">นอกความเชี่ยวชาญ</span>`:''}
+            <span>${esc(c.doc_code)}</span> · <span>${esc(c.page_ref)}</span></div></div>
+        <div class="ref-sc">${Math.round(c.score*100)}%</div></div>`).join('')+`</div>`;
+  }
+  if(conf!=null){
+    const p=Math.round(conf*100);
+    const col=conf>=.8?'var(--ok)':conf>=.55?'var(--warn)':'var(--bad)';
+    const note=conf>=.8?'หลักฐานชัดเจน สอดคล้องกันหลายแหล่ง'
+      :conf>=.55?'ตอบได้ แต่ควรตรวจสอบกับเอกสารต้นฉบับก่อนนำไปใช้'
+      :'หลักฐานในคลังไม่เพียงพอ — ระบบจะไม่สรุปคำตอบ';
+    h+=`<div class="conf"><div class="conf-r"><span class="conf-l">${T('conf')}</span>
+      <button class="conf-i" data-conf-info title="ความมั่นใจคำนวณจากอะไร">?</button>
+      <span class="conf-v" style="color:${col}">${p}%</span></div>
+      <div class="bar"><i style="width:${p}%;background:${col}"></i></div>
+      <div class="conf-n">${note}</div></div>`;
+  }
+  return h;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   ASK
+   ══════════════════════════════════════════════════════════════════ */
+async function ask(text){
+  const q=(text??$('#input').value).trim();
+  if(!q||busy) return;
+  $('#input').value='';autosize();
+  busy=true;$('#btnSend').disabled=true;
+
+  const msgs=room();
+  msgs.push({role:'user',content:q,ts:Date.now()});
+  saveRooms();renderRooms();
+
+  const wrap=$('#wrap');
+  if($('.hero')) wrap.innerHTML='';
+  wrap.insertAdjacentHTML('beforeend',userHTML({content:q,ts:Date.now()}));
+
+  const mm=mod(CFG.room),id='a'+Date.now();
+  wrap.insertAdjacentHTML('beforeend',`<div class="msg a" id="${id}">
+    <div class="a-ava" style="color:${mm.c}">${iconOf(mm)}</div>
+    <div class="a-card"><div class="a-head"><b>${esc(modName(mm))}</b>
+      <span class="chipm" id="${id}-mt">…</span><span class="t">${hhmm()}</span></div>
+      <div class="slot-sug"></div><div class="slot-trace"></div>
+      <div class="slot-body"><div class="think"><i></i><i></i><i></i><span>${T('thinking')}…</span></div></div>
+      <div class="slot-info"></div><div class="slot-refs"></div></div></div>`);
+  const el=$('#'+id);
+  scrollDown(true);
+
+  try{
+    const out=CFG.mode==='supabase'?await askSupabase(q,el):await askLocal(q,el);
+    msgs.push({role:'assistant',content:out.text,meta:out.meta,ts:Date.now()});
+    saveRooms();renderRooms();
+  }catch(e){
+    const m=String(e).slice(0,300);
+    el.querySelector('.slot-body').innerHTML=
+      `<div class="prose"><p style="color:var(--bad)"><strong>เกิดข้อผิดพลาด:</strong> ${esc(m)}</p></div>`;
+    msgs.push({role:'assistant',content:'เกิดข้อผิดพลาด: '+m,meta:{},ts:Date.now()});
+    saveRooms();
+  }finally{busy=false;autosize();scrollDown()}
+}
+
+/* ── SYSTEM PROMPT ────────────────────────────────────────────────
+   ใช้ persona เต็มรูปแบบที่ดึงมาจาก SKILL.md ของสกิลจริง (kb/personas.js)
+   ถ้าไฟล์ไม่มี ให้ถอยไปใช้คำอธิบายย่อในตาราง MODULES เพื่อไม่ให้แอปพัง */
+const PERSONAS = window.ML_PERSONAS || {};
+function buildSystem(m){
+  const langLine = CFG.lang==='en' ? 'Respond in English.'
+    : CFG.lang==='lo' ? 'ຕອບເປັນພາສາລາວ'
+    : 'ตอบเป็นภาษาไทย ใส่ศัพท์อังกฤษในวงเล็บเมื่อใช้ครั้งแรก';
+
+  const full = PERSONAS[m.id];
+  if(full) return `${full}\n\n**ภาษา** — ${langLine}`;
+
+  return `คุณคือ${m.th} ที่ปรึกษาอาวุโสในโรงงานน้ำตาล
+ขอบเขต: ${m.dTh}
+
+${langLine}
+
+**ตอบจากเอกสารอ้างอิงที่ให้มาเท่านั้น**
+- ทุกข้อความเชิงเทคนิคต้องมีเลขอ้างอิง [1] [2] กำกับท้ายประโยค
+- ถ้าเอกสารไม่พอตอบ ให้บอกตรงๆ ว่า "คลังความรู้ยังไม่มีข้อมูลส่วนนี้"
+  แล้วระบุว่าต้องการเอกสารใดเพิ่ม ห้ามเติมความรู้ทั่วไปมากลบช่องว่าง
+- ถ้าเอกสารขัดแย้งกัน ให้ชี้ให้เห็น อย่าเลือกข้างเงียบๆ
+- ห้ามเดาตัวเลข สเปก หรือค่ามาตรฐานที่ไม่ปรากฏในเอกสาร
+
+**รูปแบบ** — ตอบตรงคำถามก่อนใน 2-3 บรรทัด แล้วค่อยขยาย
+ห้ามใส่หัวข้อ "เอกสารอ้างอิง" หรือ "ความมั่นใจ" ท้ายคำตอบ — ระบบสร้างให้เอง`;
+}
+
+function retrieveForRoom(q){
+  let hits=bm25(q,[CFG.room],20),toppedUp=false;
+  if(hits.length<4){
+    const have=new Set(hits.map(h=>h.id));
+    const extra=bm25(q,null,20).filter(h=>!have.has(h.id)).map(h=>({...h,outside:true,sim:h.sim*.82}));
+    if(extra.length){toppedUp=true;hits=[...hits,...extra].sort((a,b)=>b.sim-a.sim)}
+  }
+  return {hits:hits.slice(0,6),toppedUp};
+}
+
+async function askLocal(q,el){
+  const {hits,toppedUp}=retrieveForRoom(q);
+  const best=bestModuleFor(q);
+  const suggest=(best.id!==CFG.room&&best.score>2.2)?best.id:null;
+  const conf=confidenceOf(hits,q,best.kw);
+  const m=mod(CFG.room);
+  const docs=new Set(hits.map(h=>h.doc_code)).size;
+
+  const cites=hits.map((h,i)=>({n:i+1,doc_code:h.doc_code,doc_title:h.doc_title,doc_type:h.doc_type,
+    section:h.section,page_ref:h.page_ref,score:h.sim,outside:!!h.outside}));
+  const trace={module:CFG.room,scope:'เฉพาะความเชี่ยวชาญของห้องนี้',queries:[q],
+    retrieved:hits.length,sources:docs,
+    note:toppedUp?'คลังของผู้เชี่ยวชาญนี้ยังบาง — ดึงเอกสารจากด้านอื่นมาเสริม':null};
+  const info={expert:modName(m),id:m.id,hits:hits.length,total:kbCount[m.id]||0,docs};
+
+  if(suggest) el.querySelector('.slot-sug').innerHTML=suggestHTML(suggest);
+  el.querySelector('.slot-trace').innerHTML=traceHTML(trace);
+  $('#'+el.id+'-mt').textContent=CFG.mode==='offline'?'Demo':CFG.model;
+
+  const meta={module:CFG.room,citations:cites,confidence:conf,trace,suggest,
+    model:CFG.mode==='offline'?'Demo':CFG.model};
+
+  if(conf<.55){
+    const txt=hits.length===0
+      ?`ไม่พบเอกสารที่เกี่ยวข้องในคลังความรู้ของ **${modName(m)}**\n\n`+
+       `ระบบตอบเฉพาะจากเอกสารของโรงงาน จึงยังตอบคำถามนี้ไม่ได้\n\n`+
+       (suggest?`ลองย้ายไปถาม **${modName(mod(suggest))}** ดูครับ\n\n`:'')+
+       `**ต้องเพิ่มเข้าคลัง:** SOP / Work Instruction / คู่มือเครื่อง ที่เกี่ยวกับหัวข้อนี้`
+      :`พบเอกสารที่พอเกี่ยวข้อง ${hits.length} รายการ แต่หลักฐานยังไม่หนักแน่นพอจะสรุป `+
+       `(ความมั่นใจ ${Math.round(conf*100)}% ต่ำกว่าเกณฑ์ 55%)\n\n`+
+       (suggest?`คำถามนี้อาจตรงกับ **${modName(mod(suggest))}** มากกว่า\n\n`:'')+
+       `ดูรายการเอกสารด้านล่าง หรือถามให้เจาะจงขึ้น เช่น ระบุอุปกรณ์ ค่าที่วัดได้ หรือช่วงเวลา`;
+    el.querySelector('.slot-body').innerHTML=`<div class="prose">${md(txt)}</div>`;
+    el.querySelector('.slot-refs').innerHTML=refsHTML(cites,conf);
+    bindAll(el);
+    return {text:txt,meta};
+  }
+
+  if(CFG.mode==='offline'){
+    const txt=`## โหมด Demo — ยังไม่ได้เรียก LLM\n\nระบบดึงข้อมูลจากฐานความรู้สำหรับคำถามนี้แล้ว`+
+      ` เอกสารด้านล่างคือ context ทั้งหมดที่โมเดลจะได้เห็น ไม่มีการโหลดคลังทั้งก้อน\n\n`+
+      `**เปิดโหมดตอบจริง:** ปุ่มตั้งค่า → *ต่อ Anthropic โดยตรง* แล้วใส่ API key\n\n`+
+      `> ${esc(hits[0].content.slice(0,300)).replace(/\n/g,' ')}…\n`+
+      `> — ${esc(hits[0].doc_title)} · ${esc(hits[0].page_ref)}`;
+    meta.info=info;
+    el.querySelector('.slot-body').innerHTML=`<div class="prose">${md(txt)}</div>`;
+    el.querySelector('.slot-info').innerHTML=infoHTML(info);
+    el.querySelector('.slot-refs').innerHTML=refsHTML(cites,conf);
+    bindAll(el);
+    return {text:txt,meta};
+  }
+
+  if(!CFG.anthropic) throw new Error('ยังไม่ได้ใส่ Anthropic API key — เปิดหน้าตั้งค่า');
+
+  const ctx=hits.map((h,i)=>`[${i+1}] ${h.doc_title} (${h.doc_code}) — ${h.page_ref}\n${h.content}`)
+    .join('\n\n════════════════════\n\n');
+  const system = buildSystem(m);
+
+  const hist=room().slice(-7,-1).map(x=>({role:x.role,content:x.content.slice(0,4000)}));
+  const payload={model:CFG.model,max_tokens:8000,stream:true,
+    system:[{type:'text',text:system,cache_control:{type:'ephemeral'}}],
+    messages:[...hist,{role:'user',
+      content:`เอกสารอ้างอิงจากคลังความรู้:\n\n${ctx}\n\n════════════════════\n\nคำถาม: ${q}`}]};
+  if(CFG.model!=='claude-haiku-4-5') payload.output_config={effort:'medium'};
+
+  abortCtl=new AbortController();
+  $('#btnSend').classList.add('stop');$('#btnSend').disabled=false;
+
+  let answer='';
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',signal:abortCtl.signal,
+      headers:{'content-type':'application/json','x-api-key':CFG.anthropic,
+        'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify(payload)});
+    if(!res.ok) throw new Error(`Anthropic ${res.status} — ${(await res.text()).slice(0,260)}`);
+    const bodySlot=el.querySelector('.slot-body');
+    bodySlot.innerHTML='<div class="prose"></div>';
+    const prose=bodySlot.querySelector('.prose');
+    const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
+    while(true){
+      const {done,value}=await reader.read();if(done) break;
+      buf+=dec.decode(value,{stream:true});
+      const lines=buf.split('\n');buf=lines.pop()||'';
+      for(const line of lines){
+        if(!line.startsWith('data: ')) continue;
+        const p=line.slice(6).trim();if(!p||p==='[DONE]') continue;
+        let ev;try{ev=JSON.parse(p)}catch{continue}
+        if(ev.type==='content_block_delta'&&ev.delta?.type==='text_delta'){
+          answer+=ev.delta.text;
+          prose.innerHTML=md(answer)+'<span class="caret"></span>';scrollDown();
+        }else if(ev.type==='message_delta'&&ev.delta?.stop_reason==='refusal'){
+          answer+='\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_';
+        }
+      }
+    }
+    prose.innerHTML=md(answer);
+  }catch(e){
+    if(e.name==='AbortError') answer+='\n\n_(หยุดโดยผู้ใช้)_'; else throw e;
+  }finally{abortCtl=null;$('#btnSend').classList.remove('stop')}
+
+  el.querySelector('.slot-refs').innerHTML=refsHTML(cites,conf);
+  bindAll(el);
+  return {text:answer,meta};
+}
+
+async function askSupabase(q,el){
+  if(!CFG.url||!CFG.anon) throw new Error('ยังไม่ได้ตั้งค่า Supabase — เปิดหน้าตั้งค่า');
+  const hist=room().slice(-7,-1).map(x=>({role:x.role,content:x.content.slice(0,4000)}));
+  const res=await fetch(`${CFG.url.replace(/\/$/,'')}/functions/v1/ask`,{
+    method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${CFG.anon}`},
+    body:JSON.stringify({question:q,lang:CFG.lang,history:hist,module_hint:CFG.room,
+      force_module:CFG.room})});   // ห้องนี้เลือกผู้เชี่ยวชาญไว้แล้ว ไม่ต้องให้ router เดาใหม่
+  if(!res.ok) throw new Error(`Edge Function ${res.status} — ${(await res.text()).slice(0,260)}`);
+  const bodySlot=el.querySelector('.slot-body');
+  let answer='',meta={module:CFG.room,model:'Opus 5'};
+  const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
+  while(true){
+    const {done,value}=await reader.read();if(done) break;
+    buf+=dec.decode(value,{stream:true});
+    const parts=buf.split('\n\n');buf=parts.pop()||'';
+    for(const part of parts){
+      const ev=/event:\s*(\w+)/.exec(part)?.[1],dt=/data:\s*(.+)/s.exec(part)?.[1];
+      if(!ev||!dt) continue;
+      let d;try{d=JSON.parse(dt)}catch{continue}
+      if(ev==='meta'){
+        meta={...meta,citations:d.citations,confidence:d.confidence,
+          trace:{module:CFG.room,scope:'pgvector + full-text (hybrid)',queries:d.router?.queries,
+            retrieved:d.retrieved,sources:d.citations?new Set(d.citations.map(c=>c.doc_code)).size:0}};
+        el.querySelector('.slot-trace').innerHTML=traceHTML(meta.trace);
+        $('#'+el.id+'-mt').textContent='Opus 5';
+        bodySlot.innerHTML='<div class="prose"></div>';
+      }else if(ev==='delta'){
+        answer+=d.text;
+        (bodySlot.querySelector('.prose')||bodySlot).innerHTML=md(answer)+'<span class="caret"></span>';
+        scrollDown();
+      }else if(ev==='done'){
+        meta.latency=d.latency_ms;
+        const pr=bodySlot.querySelector('.prose');if(pr) pr.innerHTML=md(answer);
+        el.querySelector('.slot-refs').innerHTML=refsHTML(meta.citations,meta.confidence);
+      }
+    }
+  }
+  bindAll(el);
+  return {text:answer,meta};
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   BINDINGS
+   ══════════════════════════════════════════════════════════════════ */
+function bindAll(scope){
+  scope.querySelectorAll('.cite').forEach(c=>c.onclick=()=>{
+    const holder=c.closest('.a-card')||scope;
+    const r=holder.querySelector(`.ref[data-n="${c.dataset.n}"]`);if(!r) return;
+    holder.querySelectorAll('.ref').forEach(x=>x.classList.remove('hl'));
+    r.classList.add('hl');r.scrollIntoView({block:'center',behavior:'smooth'});
+    setTimeout(()=>r.classList.remove('hl'),2200);
+  });
+  scope.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{
+    navigator.clipboard?.writeText(b.dataset.copy);toast(T('copied'))});
+  scope.querySelectorAll('[data-move]').forEach(b=>b.onclick=()=>{
+    const target=b.dataset.move;
+    const last=[...room()].reverse().find(x=>x.role==='user');
+    switchRoom(target);
+    if(last) setTimeout(()=>ask(last.content),120);
+  });
+  scope.querySelectorAll('[data-conf-info]').forEach(b=>b.onclick=openConf);
+  scope.querySelectorAll('[data-viewall]').forEach(b=>b.onclick=()=>{
+    const card=b.closest('.a-card');
+    const refs=card?.querySelector('.refs');
+    if(refs) refs.scrollIntoView({block:'center',behavior:'smooth'});
+  });
+}
+
+function switchRoom(id){
+  if(!mod(id)) return;
+  CFG.room=id;saveCfg();
+  renderRooms();renderTop();renderRoom();
+  closeSide();$('#input').focus();
+}
+
+/* scroll / toast */
+const nearBottom=()=>{const c=$('#chat');return c.scrollHeight-c.scrollTop-c.clientHeight<110};
+function scrollDown(force){const c=$('#chat');if(force||nearBottom()) requestAnimationFrame(()=>{c.scrollTop=c.scrollHeight})}
+$('#chat')?.addEventListener('scroll',()=>{$('#jump')?.classList.toggle('on',!nearBottom())});
+$('#jump')?.addEventListener('click',()=>scrollDown(true));
+let toastT;
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('on');
+  clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),1800)}
+
+/* confidence explainer */
+function openConf(){
+  $('#confBody').innerHTML=`
+<p>ความมั่นใจ <b>ไม่ใช่</b> ความมั่นใจของ AI ในคำตอบตัวเอง — LLM ประเมินตัวเองไม่ได้ และมักตอบ 95% เสมอไม่ว่าจะถูกหรือผิด</p>
+<p>ที่นี่คือ <b>คะแนนคุณภาพหลักฐาน</b> ที่ระบบคำนวณจากเอกสารที่ค้นเจอ ก่อนที่ AI จะเริ่มเขียนคำตอบด้วยซ้ำ
+ตอบคำถามว่า "เอกสารในคลังครอบคลุมสิ่งที่ถามมากพอจะตอบได้ไหม"</p>
+<h4>คำนวณจาก 3 ส่วน</h4>
+<div class="formula">confidence = 0.55 × <b>coverage</b>&nbsp;&nbsp;ครอบคลุมสาระคำถามกี่ส่วน
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ 0.30 × <b>top1</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เอกสารที่ดีที่สุดตรงแค่ไหน
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ 0.15 × <b>agreement</b>&nbsp;มาจากกี่เอกสารที่ต่างกัน</div>
+<h4>ระดับที่ใช้ตัดสิน</h4>
+<table><tr><th>ช่วง</th><th>ความหมาย</th></tr>
+<tr><td style="color:var(--ok)"><b>80–97%</b></td><td>หลักฐานชัด สอดคล้องกันหลายแหล่ง ใช้ได้เลย</td></tr>
+<tr><td style="color:#b45309"><b>55–79%</b></td><td>ตอบได้ แต่ควรเปิดเอกสารต้นฉบับยืนยันก่อนใช้</td></tr>
+<tr><td style="color:var(--bad)"><b>ต่ำกว่า 55%</b></td><td>ระบบ<b>ไม่ตอบ</b> — บอกตรงๆ ว่าคลังยังไม่มีข้อมูล</td></tr></table>
+<h4>ทำไมถึงไม่มีวันได้ 100%</h4>
+<p>ระบบตั้งเพดานไว้ที่ <code>97%</code> โดยตั้งใจ เพราะ 100% หมายถึง "ไม่มีทางผิดเลย"
+ซึ่งไม่จริงสำหรับระบบที่ค้นเอกสารมาตอบ — เอกสารอาจเก่า อาจขัดแย้งกัน หรืออาจตีความได้หลายทาง
+การแสดง 100% จะทำให้คนเลิกตรวจสอบ ซึ่งอันตรายกว่าการยอมรับว่ามีความไม่แน่นอน</p>
+<h4>อยากให้คะแนนสูงขึ้น ทำได้จริง 3 ทาง</h4>
+<table><tr><th>วิธี</th><th>ผลที่ได้</th></tr>
+<tr><td><b>เพิ่มเอกสารจริงเข้าคลัง</b><br><span style="color:var(--tx3);font-size:11.5px">SOP, WI, คู่มือเครื่อง, P&amp;ID</span></td>
+<td>ได้ผลมากที่สุด ตอนนี้บางผู้เชี่ยวชาญมีเอกสารน้อยมาก คะแนนจึงตันอยู่ที่ 45–70%</td></tr>
+<tr><td><b>ถามให้เจาะจง</b><br><span style="color:var(--tx3);font-size:11.5px">ระบุอุปกรณ์ ค่าที่วัดได้ ช่วงเวลา</span></td>
+<td>"แบริ่งปั๊มป้อนน้ำ P-201 ร้อน 85°C" ได้คะแนนสูงกว่า "ปั๊มมีปัญหา" มาก</td></tr>
+<tr><td><b>ถามในห้องที่ถูก</b></td>
+<td>ระบบค้นเฉพาะคลังของผู้เชี่ยวชาญห้องนั้น ถามผิดห้องคะแนนตกทันที (ระบบจะเตือนและเสนอย้ายห้องให้)</td></tr></table>
+<p style="color:var(--tx3);font-size:12px;margin-top:14px">เปิดโหมด Production ผ่าน Supabase จะได้ pgvector ค้นเชิงความหมายเพิ่ม
+ช่วยคำถามที่ใช้คำต่างจากในเอกสารได้ดีขึ้นอีก</p>`;
+  $('#ovConf').classList.add('on');
+}
+
+/* command palette */
+function openPal(){$('#pal').classList.add('on');$('#palIn').value='';palSel=0;renderPal();
+  setTimeout(()=>$('#palIn').focus(),30)}
+function renderPal(){
+  const f=$('#palIn').value.trim().toLowerCase();
+  palItems=MODULES.filter(m=>!f||modName(m).toLowerCase().includes(f)||m.id.includes(f)
+    ||m.kw.some(k=>k.toLowerCase().includes(f)));
+  if(palSel>=palItems.length) palSel=Math.max(0,palItems.length-1);
+  $('#palList').innerHTML=palItems.length?palItems.map((m,i)=>
+    `<button class="pal-item ${i===palSel?'sel':''}" data-i="${i}">
+      <span class="room-ic" style="background:${m.bg}">${iconOf(m)}</span>
+      <b>${esc(modName(m))}</b><span>${kbCount[m.id]||0}</span></button>`).join('')
+    :`<div class="empty-search">ไม่พบ</div>`;
+  $$('#palList .pal-item').forEach(b=>b.onclick=()=>{
+    switchRoom(palItems[+b.dataset.i].id);$('#pal').classList.remove('on')});
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   WIRING
+   ══════════════════════════════════════════════════════════════════ */
+function autosize(){
+  const t=$('#input');
+  t.style.height='auto';t.style.height=Math.min(170,t.scrollHeight)+'px';
+  $('#btnSend').disabled=busy?!abortCtl:!t.value.trim();
+}
+function applyMode(){
+  const map={offline:['Demo',''],
+    direct:[CFG.anthropic?'Anthropic':'ไม่มี key',CFG.anthropic?'on':'warn'],
+    supabase:[(CFG.url&&CFG.anon)?'Supabase':'ยังไม่ตั้งค่า',(CFG.url&&CFG.anon)?'on':'warn']};
+  const [l,c]=map[CFG.mode]||map.offline;
+  $('#modeLabel').textContent=l;$('#dot').className='dot '+c;
+}
+function applyLang(){
+  document.documentElement.lang=CFG.lang;
+  $$('[data-i18n]').forEach(e=>e.textContent=T(e.dataset.i18n));
+  $$('[data-ph]').forEach(e=>e.placeholder=T(e.dataset.ph));
+  $$('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===CFG.lang));
+  renderRooms();renderTop();renderRoom();renderChips();
+}
+const SUN='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+const MOON='<path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/>';
+function applyTheme(){
+  document.documentElement.dataset.theme=CFG.theme;
+  $('#btnTheme').innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">${CFG.theme==='dark'?MOON:SUN}</svg>`;
+}
+const toggleGroups=m=>{$('#grpDirect').style.display=m==='direct'?'':'none';
+  $('#grpSupa').style.display=m==='supabase'?'':'none'};
+
+/* ผูก event แบบปลอดภัย — ถ้า element ถูกลบออกจาก HTML จะข้ามไปเงียบๆ
+   ไม่โยน TypeError จนสคริปต์ทั้งไฟล์หยุดทำงาน (เคยเกิดจริงตอนลบปุ่มออก
+   แล้วลืมลบ handler ทำให้ sidebar ว่างทั้งแถบ) */
+function on(sel,evt,fn){
+  const el=typeof sel==='string'?$(sel):sel;
+  if(!el){ console.warn('[ML] ไม่พบ element สำหรับผูก event:',sel); return null; }
+  el.addEventListener(evt,fn); return el;
+}
+
+on('#input','input',autosize);
+on('#input','keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask()}});
+on('#btnSend','click',()=>{if(abortCtl){abortCtl.abort();return}ask()});
+on('#btnTheme','click',()=>{CFG.theme=CFG.theme==='dark'?'light':'dark';saveCfg();applyTheme()});
+on('#btnPal','click',openPal);
+on('#qFilter','input',e=>{filter=e.target.value;renderRooms()});
+on('#btnShowAll','click',()=>{showAll=!showAll;renderRooms()});
+on('#btnClear','click',()=>{ROOMS[CFG.room]=[];saveRooms();renderRooms();renderRoom();toast(T('cleared'))});
+on('#btnCfg','click',()=>{
+  $$('input[name=mode]').forEach(r=>{r.checked=r.value===CFG.mode;r.closest('.opt').classList.toggle('on',r.checked)});
+  $('#cfgAnthropic').value=CFG.anthropic;$('#cfgModel').value=CFG.model;
+  $('#cfgUrl').value=CFG.url;$('#cfgAnon').value=CFG.anon;
+  toggleGroups(CFG.mode);$('#ov').classList.add('on');
+});
+on('#btnSave','click',()=>{
+  CFG.mode=$('input[name=mode]:checked')?.value||'offline';
+  CFG.anthropic=$('#cfgAnthropic').value.trim();CFG.model=$('#cfgModel').value;
+  CFG.url=$('#cfgUrl').value.trim();CFG.anon=$('#cfgAnon').value.trim();
+  saveCfg();applyMode();$('#ov').classList.remove('on');toast('บันทึกแล้ว');
+});
+$$('input[name=mode]').forEach(r=>r.onchange=()=>{
+  $$('input[name=mode]').forEach(x=>x.closest('.opt').classList.toggle('on',x.checked));
+  toggleGroups(r.value)});
+$$('.lang button').forEach(b=>b.onclick=()=>{CFG.lang=b.dataset.lang;saveCfg();applyLang()});
+$$('[data-close]').forEach(b=>b.onclick=()=>b.closest('.ov').classList.remove('on'));
+$$('.ov').forEach(o=>o.onclick=e=>{if(e.target===o)o.classList.remove('on')});
+document.addEventListener('click',e=>{const r=e.target.closest('[data-room]');if(r) switchRoom(r.dataset.room)});
+document.addEventListener('keydown',e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPal();return}
+  if(e.key==='Escape'){$$('.ov.on').forEach(o=>o.classList.remove('on'));closeSide();return}
+  if($('#pal').classList.contains('on')){
+    if(e.key==='ArrowDown'){e.preventDefault();palSel=Math.min(palItems.length-1,palSel+1);renderPal()}
+    else if(e.key==='ArrowUp'){e.preventDefault();palSel=Math.max(0,palSel-1);renderPal()}
+    else if(e.key==='Enter'){e.preventDefault();
+      if(palItems[palSel]){switchRoom(palItems[palSel].id);$('#pal').classList.remove('on')}}
+  }
+});
+on('#palIn','input',()=>{palSel=0;renderPal()});
+const openSide=()=>{$('#side')?.classList.add('open');$('#scrim')?.classList.add('on')};
+const closeSide=()=>{$('#side')?.classList.remove('open');$('#scrim')?.classList.remove('on')};
+on('#burger','click',openSide); on('#scrim','click',closeSide);
+
+/* ══════════════════════════════════════════════════════════════════
+   BOOT
+   รายชื่อผู้เชี่ยวชาญมาจาก MODULES ซึ่งเป็นข้อมูลคงที่ในไฟล์นี้
+   ไม่ได้ขึ้นกับคลังความรู้ จึงต้องวาด UI ให้ครบเสมอ
+   แม้ chunks.js จะโหลดไม่สำเร็จ ผู้ใช้ก็ยังเห็นห้องและสลับห้องได้
+   ══════════════════════════════════════════════════════════════════ */
+function boot(){
+  if(!mod(CFG.room)) CFG.room='cane';
+  applyTheme(); applyMode(); applyLang(); autosize();
+  if(!KB.length) showKbWarning();
+}
+
+function showKbWarning(){
+  if($('#kbWarn')) return;
+  $('#wrap').insertAdjacentHTML('afterbegin',
+   `<div id="kbWarn" class="hint-move" style="margin-bottom:18px">
+      <span>⚠</span>
+      <div style="flex:1">
+        <b>ยังไม่ได้โหลดคลังความรู้</b> — ผู้เชี่ยวชาญยังตอบไม่ได้จนกว่าจะโหลดสำเร็จ<br>
+        <span style="font-size:11.5px;color:var(--tx3)">
+          ไม่พบข้อมูลใน <code>kb/chunks.js</code> — ถ้ายังไม่เคยสร้าง ให้รัน
+          <code>powershell -ExecutionPolicy Bypass -File scripts\\build-kb.ps1</code>
+          ถ้าสร้างแล้วให้กด Ctrl+F5 ซ้ำอีกครั้ง (ไฟล์มีขนาดใหญ่ อาจโหลดไม่ทันในครั้งแรก)
+        </span>
+      </div>
+      <button onclick="location.reload()">โหลดใหม่</button>
+    </div>`);
+}
+
+boot();
+</script>
+</body>
+</html>
