@@ -450,6 +450,8 @@ svg{display:block}
   border:1px solid var(--line);outline:none;font-size:13.2px;transition:.15s}
 .fld input:focus,.fld select:focus{border-color:var(--ac);background:var(--surface);box-shadow:0 0 0 3px var(--acg)}
 .fld input[type=password]{font-family:var(--mono)}
+.btn-row{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
+.btn-row .btn{flex:1;min-width:150px}
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{display:flex;gap:12px;padding:13px 15px;border-radius:13px;background:var(--soft);
   border:1px solid var(--line);cursor:pointer;transition:.16s}
@@ -649,25 +651,30 @@ svg{display:block}
           <label class="opt"><input type="radio" name="mode" value="offline">
             <div><b>Demo — ไม่ใช้ API</b><span>เดินท่อ RAG จริงในเบราว์เซอร์ (ค้นคลัง + จัดอันดับ + คิดความมั่นใจ) แต่ไม่เรียก LLM</span></div></label>
           <label class="opt"><input type="radio" name="mode" value="direct">
-            <div><b>ต่อ Anthropic โดยตรง</b><span>ค้นคลังในเบราว์เซอร์ แล้วให้ Claude ตอบจริง — ใช้ทดสอบในเครื่องเท่านั้น</span></div></label>
+            <div><b>ต่อ AI โดยตรง</b><span>ค้นคลังในเบราว์เซอร์ แล้วส่งให้ AI ตอบจริง — เลือกผู้ให้บริการได้ มีทั้งแบบฟรีและเสียเงิน</span></div></label>
           <label class="opt"><input type="radio" name="mode" value="supabase">
             <div><b>Production — ผ่าน Supabase</b><span>Edge Function ทำ router + pgvector + rerank + ตอบ API key อยู่ฝั่งเซิร์ฟเวอร์</span></div></label>
         </div>
       </div>
       <div id="grpDirect" style="display:none">
         <div class="note"><b>⚠ คำเตือน</b> — โหมดนี้ส่ง API key จากเบราว์เซอร์โดยตรง เก็บใน localStorage ของเครื่องนี้ ใช้เฉพาะทดสอบบนเครื่องตัวเอง</div>
-        <div class="fld"><label>Anthropic API Key</label>
-          <input type="password" id="cfgAnthropic" placeholder="sk-ant-api03-…" autocomplete="off">
-          <small>รับได้ที่ console.anthropic.com → API Keys</small></div>
+        <div class="fld"><label>ผู้ให้บริการ</label>
+          <select id="cfgProv"></select>
+          <small id="provNote"></small></div>
+        <div class="fld" id="fldBase" style="display:none"><label>Base URL (รูปแบบ OpenAI)</label>
+          <input type="text" id="cfgBase" placeholder="https://api.example.com/v1" autocomplete="off">
+          <small>ต้องมี endpoint /chat/completions ต่อท้าย</small></div>
+        <div class="fld"><label>API Key</label>
+          <input type="password" id="cfgKey" placeholder="" autocomplete="off">
+          <small id="keyHint"></small></div>
         <div class="fld"><label>โมเดลที่ใช้ตอบ</label>
-          <select id="cfgModel">
-            <option value="claude-opus-5">Claude Opus 5 — คุณภาพสูงสุด</option>
-            <option value="claude-sonnet-5">Claude Sonnet 5 — สมดุลราคา/คุณภาพ</option>
-            <option value="claude-haiku-4-5">Claude Haiku 4.5 — เร็วและถูกที่สุด</option>
-          </select></div>
-        <div class="fld">
-          <button class="btn s" id="btnTest" type="button">ทดสอบการเชื่อมต่อ</button>
-          <small id="testOut">ยิงคำขอสั้นๆ ไปที่ Anthropic เพื่อดูว่า key และโมเดลใช้ได้จริง</small>
+          <select id="cfgModel"></select>
+          <div class="btn-row">
+            <button class="btn s" id="btnModels" type="button">โหลดรายชื่อโมเดล</button>
+            <button class="btn s" id="btnTest" type="button">ทดสอบการเชื่อมต่อ</button>
+          </div>
+          <small id="testOut">รายชื่อด้านบนเป็นค่าตั้งต้น — ผู้ให้บริการเปลี่ยนชื่อรุ่นบ่อย
+            กด "โหลดรายชื่อโมเดล" เพื่อดึงรายการจริง แล้วกด "ทดสอบ" ก่อนใช้</small>
         </div>
       </div>
       <div id="grpSupa" style="display:none">
@@ -868,8 +875,12 @@ const STARTERS={
    STATE
    ══════════════════════════════════════════════════════════════════ */
 const KB=window.SUGAR_KB||[];
-const CFG=Object.assign({mode:'offline',anthropic:'',model:'claude-opus-5',url:'',anon:'',
-  lang:'th',theme:'light',room:'cane'},JSON.parse(localStorage.getItem('mlx_cfg')||'{}'));
+const CFG=Object.assign({mode:'offline',provider:'anthropic',keys:{},models:{},customBase:'',
+  url:'',anon:'',lang:'th',theme:'light',room:'cane'},
+  JSON.parse(localStorage.getItem('mlx_cfg')||'{}'));
+// ย้ายค่าเดิมสมัยที่รองรับ Anthropic เจ้าเดียว ไม่งั้นผู้ใช้เก่าต้องใส่ key ใหม่
+if(CFG.anthropic){CFG.keys.anthropic=CFG.keys.anthropic||CFG.anthropic;delete CFG.anthropic}
+if(CFG.model){CFG.models.anthropic=CFG.models.anthropic||CFG.model;delete CFG.model}
 let ROOMS=JSON.parse(localStorage.getItem('mlx_rooms')||'{}');
 let busy=false,filter='',palSel=0,palItems=[],abortCtl=null,showAll=false;
 
@@ -1329,44 +1340,170 @@ function retrieveForRoom(q){
   return {hits:hits.slice(0,6),toppedUp};
 }
 
-/* ── การเรียก Anthropic API ─────────────────────────────────────────
-   Haiku 4.5 เป็นรุ่นก่อน 4.6 ยังไม่รองรับ adaptive thinking / effort
-   ส่งไปจะได้ 400 กลับมา จึงต้องแยกออกจากรุ่นใหม่ */
-const adaptiveOK = m => m!=='claude-haiku-4-5';
+/* ══════════════════════════════════════════════════════════════════
+   ผู้ให้บริการ LLM — เลือกได้หลายเจ้า
+   ------------------------------------------------------------------
+   ทุกเจ้ายกเว้น Anthropic ใช้รูปแบบเดียวกับ OpenAI (/chat/completions)
+   จึงเขียนตัวเรียกแค่ 2 แบบก็ครอบได้ทั้งหมด
+   ทดสอบแล้วว่าทั้ง 6 เจ้ายอมให้เรียกจากเบราว์เซอร์ตรง (CORS ผ่าน)
 
-const AN_HEADERS = () => ({
-  'content-type':'application/json',
-  'x-api-key':CFG.anthropic,
-  'anthropic-version':'2023-06-01',
-  'anthropic-dangerous-direct-browser-access':'true'
-});
+   ชื่อโมเดลด้านล่างเป็นค่าตั้งต้นเท่านั้น — ผู้ให้บริการเปลี่ยนชื่อรุ่นบ่อยมาก
+   จึงมีปุ่ม "โหลดรายชื่อโมเดล" ดึงรายการจริงจาก API มาแทน
+   ══════════════════════════════════════════════════════════════════ */
+const PROVIDERS={
+  anthropic:{
+    label:'Anthropic (Claude)', kind:'anthropic',
+    base:'https://api.anthropic.com/v1', keyUrl:'console.anthropic.com',
+    hint:'sk-ant-api03-…', free:'',
+    note:'คุณภาพภาษาไทยและการอ้างอิงดีที่สุดในกลุ่ม',
+    models:[{id:'claude-opus-5',name:'Opus 5 — คุณภาพสูงสุด',price:'$5 / $25'},
+            {id:'claude-sonnet-5',name:'Sonnet 5 — สมดุล',price:'$3 / $15'},
+            {id:'claude-haiku-4-5',name:'Haiku 4.5 — เร็วและถูก',price:'$1 / $5'}]},
+  gemini:{
+    label:'Google Gemini', kind:'openai',
+    base:'https://generativelanguage.googleapis.com/v1beta/openai',
+    keyUrl:'aistudio.google.com/apikey', hint:'AIza…',
+    free:'มีโควตาฟรี ~250–1,000 คำถาม/วัน ไม่ต้องผูกบัตร',
+    note:'ตัวเลือกฟรีที่ภาษาไทยดีที่สุด เหมาะเริ่มต้นที่สุด',
+    models:[{id:'gemini-3.6-flash',name:'Gemini 3.6 Flash',price:'มีโควตาฟรี'},
+            {id:'gemini-3.5-flash-lite',name:'Gemini 3.5 Flash-Lite — ถูกสุด',price:'$0.30 / $2.50'},
+            {id:'gemini-2.5-flash',name:'Gemini 2.5 Flash',price:'มีโควตาฟรี'}]},
+  groq:{
+    label:'Groq', kind:'openai',
+    base:'https://api.groq.com/openai/v1', keyUrl:'console.groq.com/keys',
+    hint:'gsk_…', free:'ฟรี ~14,400 คำถาม/วัน ไม่ต้องผูกบัตร',
+    note:'เร็วที่สุดและโควตาฟรีเยอะสุด แต่ภาษาไทยสู้ Gemini ไม่ได้',
+    models:[{id:'qwen/qwen3-32b',name:'Qwen 3 32B — ไทยดีสุดในกลุ่มนี้',price:'ฟรี'},
+            {id:'llama-3.3-70b-versatile',name:'Llama 3.3 70B',price:'ฟรี'},
+            {id:'llama-3.1-8b-instant',name:'Llama 3.1 8B — เร็วสุด',price:'$0.05 / $0.08'}]},
+  openrouter:{
+    label:'OpenRouter (รวมทุกเจ้า)', kind:'openai',
+    base:'https://openrouter.ai/api/v1', keyUrl:'openrouter.ai/keys',
+    hint:'sk-or-v1-…', free:'มีโมเดลลงท้าย :free ใช้ฟรี',
+    note:'key เดียวเรียกได้หลายร้อยโมเดล เหมาะกับการลองเทียบ',
+    models:[{id:'google/gemma-4-31b-it:free',name:'Gemma 4 31B (ฟรี)',price:'ฟรี'},
+            {id:'qwen/qwen3.7-flash',name:'Qwen 3.7 Flash — ไทยดี',price:'ถูกมาก'},
+            {id:'deepseek/deepseek-v4-flash',name:'DeepSeek V4 Flash — ถูกสุด',price:'~$0.14 / $0.28'}]},
+  deepseek:{
+    label:'DeepSeek', kind:'openai',
+    base:'https://api.deepseek.com', keyUrl:'platform.deepseek.com',
+    hint:'sk-…', free:'',
+    note:'ราคาถูกที่สุดในกลุ่มที่เสียเงิน ภาษาไทยพอใช้',
+    models:[{id:'deepseek-chat',name:'DeepSeek Chat',price:'~$0.14 / $0.28'},
+            {id:'deepseek-reasoner',name:'DeepSeek Reasoner — คิดก่อนตอบ',price:'สูงกว่าเล็กน้อย'}]},
+  custom:{
+    label:'อื่นๆ (ระบุ URL เอง)', kind:'openai',
+    base:'', keyUrl:'', hint:'API key ของเจ้านั้น', free:'',
+    note:'ใส่ base URL ที่รองรับรูปแบบ OpenAI เช่น Together, Mistral, Ollama',
+    models:[]}
+};
+
+const prov    = p => PROVIDERS[p||CFG.provider] || PROVIDERS.anthropic;
+const keyOf   = p => (CFG.keys  ||{})[p||CFG.provider] || '';
+const modelOf = p => (CFG.models||{})[p||CFG.provider] || prov(p).models[0]?.id || '';
+const baseOf  = p => ((p||CFG.provider)==='custom' ? (CFG.customBase||'') : prov(p).base).replace(/\/$/,'');
+
+/* Haiku 4.5 เป็นรุ่นก่อน 4.6 ยังไม่รองรับ adaptive thinking / effort
+   ส่งไปจะได้ 400 กลับมา จึงต้องแยกออกจากรุ่นใหม่ */
+const adaptiveOK = m => m.startsWith('claude-') && m!=='claude-haiku-4-5';
+
+function headersFor(p,key){
+  const P=prov(p);
+  if(P.kind==='anthropic') return {'content-type':'application/json','x-api-key':key,
+    'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'};
+  const h={'content-type':'application/json','authorization':`Bearer ${key}`};
+  // OpenRouter ขอให้ระบุที่มาของคำขอ ไม่ใส่บางโมเดลฟรีจะถูกปฏิเสธ
+  if((p||CFG.provider)==='openrouter'){h['HTTP-Referer']=location.origin;h['X-Title']='ML Expert AI'}
+  return h;
+}
 
 // ข้อความ error ดิบจาก API อ่านยากสำหรับผู้ใช้ทั่วไป แปลเป็นสิ่งที่ทำต่อได้
-function anErr(status,body){
-  const detail=(()=>{try{return JSON.parse(body).error?.message||''}catch{return body.slice(0,200)}})();
+function anErr(status,body,p){
+  const P=prov(p);
+  let detail='';
+  try{const j=JSON.parse(body);detail=j.error?.message||j.detail||j.message||''}catch{detail=body.slice(0,200)}
   const map={
-    400:'คำขอผิดรูปแบบ — มักเกิดจากโมเดลไม่รองรับตัวเลือกที่ส่งไป',
-    401:'API key ไม่ถูกต้องหรือถูกเพิกถอน — ตรวจที่ console.anthropic.com → API Keys',
-    403:'key นี้ไม่มีสิทธิ์เรียกโมเดลที่เลือก — ลองเปลี่ยนโมเดล หรือตรวจสิทธิ์ของ workspace',
-    404:'ไม่พบโมเดลที่ระบุ — ชื่อโมเดลอาจสะกดผิด',
-    429:'เรียกถี่เกินโควตา — รอสักครู่แล้วลองใหม่ หรือตรวจยอดเครดิตใน Billing',
-    500:'ฝั่ง Anthropic ขัดข้องชั่วคราว — ลองใหม่อีกครั้ง',
-    529:'ระบบ Anthropic รับคำขอเต็ม — รอสักครู่แล้วลองใหม่'
+    400:'คำขอผิดรูปแบบ — มักเกิดจากชื่อโมเดลผิด หรือโมเดลไม่รองรับตัวเลือกที่ส่งไป',
+    401:`API key ไม่ถูกต้องหรือถูกเพิกถอน — ตรวจที่ ${P.keyUrl||'หน้าจัดการ key ของผู้ให้บริการ'}`,
+    402:'เครดิตหมด — ต้องเติมเงินหรือเปลี่ยนไปใช้โมเดลฟรี',
+    403:'key นี้ไม่มีสิทธิ์เรียกโมเดลที่เลือก — ลองเปลี่ยนโมเดล',
+    404:'ไม่พบโมเดลที่ระบุ — กด "โหลดรายชื่อโมเดล" เพื่อดูว่ามีรุ่นไหนให้ใช้บ้าง',
+    413:'คำถามและเอกสารรวมกันยาวเกินที่โมเดลรับได้ — ลองถามให้สั้นลง',
+    429:'ใช้เกินโควตาหรือเรียกถี่เกินไป — รอสักครู่แล้วลองใหม่'+(P.free?` (โควตาฟรี: ${P.free})`:''),
+    500:'ฝั่งผู้ให้บริการขัดข้องชั่วคราว — ลองใหม่อีกครั้ง',
+    503:'ผู้ให้บริการรับคำขอเต็ม — รอสักครู่แล้วลองใหม่',
+    529:'ผู้ให้บริการรับคำขอเต็ม — รอสักครู่แล้วลองใหม่'
   };
   return new Error(`${map[status]||`เรียก API ไม่สำเร็จ (${status})`}${detail?`\n\n${detail}`:''}`);
 }
 
-// เรียกสั้นๆ เพื่อพิสูจน์ว่า key ใช้ได้จริงก่อนถามคำถามแรก
-async function testAnthropic(key,model){
-  const p={model,max_tokens:16,messages:[{role:'user',content:'ตอบว่า OK'}]};
-  // ปิดการคิดในการทดสอบให้ถูกที่สุด — type:disabled ใช้ได้เมื่อ effort ไม่เกิน high
-  if(adaptiveOK(model)){p.thinking={type:'disabled'};p.output_config={effort:'low'}}
-  const res=await fetch('https://api.anthropic.com/v1/messages',{
-    method:'POST',
-    headers:{...AN_HEADERS(),'x-api-key':key},
-    body:JSON.stringify(p)});
-  if(!res.ok) throw anErr(res.status,await res.text());
-  return (await res.json()).usage||{};
+/* สร้าง request ให้ตรงรูปแบบของแต่ละเจ้า
+   Anthropic แยก system ออกจาก messages ส่วนฝั่ง OpenAI เอา system เป็นข้อความแรก */
+function buildReq({p,model,system,messages,maxTok,stream}){
+  const P=prov(p);
+  if(P.kind==='anthropic'){
+    const body={model,max_tokens:maxTok,stream,
+      system:[{type:'text',text:system,cache_control:{type:'ephemeral'}}],messages};
+    if(adaptiveOK(model)){body.thinking={type:'adaptive',display:'summarized'};
+      body.output_config={effort:'medium'}}
+    return {url:`${baseOf(p)}/messages`,body};
+  }
+  return {url:`${baseOf(p)}/chat/completions`,
+    body:{model,max_tokens:maxTok,stream,
+      messages:[{role:'system',content:system},...messages]}};
+}
+
+/* อ่านสตรีมของทั้งสองรูปแบบด้วยตัวเดียว
+   คืนค่าผ่าน callback: onText(ข้อความ) / onThink() / onStop(เหตุผล) */
+async function readStream(res,kind,cb){
+  const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
+  while(true){
+    const {done,value}=await reader.read();if(done) break;
+    buf+=dec.decode(value,{stream:true});
+    const lines=buf.split('\n');buf=lines.pop()||'';
+    for(const line of lines){
+      if(!line.startsWith('data: ')) continue;
+      const raw=line.slice(6).trim();if(!raw||raw==='[DONE]') continue;
+      let ev;try{ev=JSON.parse(raw)}catch{continue}
+      if(kind==='anthropic'){
+        const d=ev.delta;
+        if(ev.type==='content_block_delta'&&d?.type==='text_delta') cb.onText(d.text);
+        else if(ev.type==='content_block_delta'&&d?.type==='thinking_delta') cb.onThink();
+        else if(ev.type==='message_delta'&&d?.stop_reason) cb.onStop(d.stop_reason);
+        else if(ev.type==='error') throw new Error(ev.error?.message||'สตรีมขาดกลางคัน');
+      }else{
+        const ch=ev.choices?.[0];if(!ch) {if(ev.error) throw new Error(ev.error.message);continue}
+        // โมเดลตระกูลคิดก่อนตอบส่ง reasoning_content มาก่อนเนื้อคำตอบจริง
+        if(ch.delta?.reasoning_content) cb.onThink();
+        if(ch.delta?.content) cb.onText(ch.delta.content);
+        if(ch.finish_reason) cb.onStop(ch.finish_reason==='length'?'max_tokens':ch.finish_reason);
+      }
+    }
+  }
+}
+
+// เรียกสั้นๆ เพื่อพิสูจน์ว่า key + โมเดล ใช้ได้จริงก่อนถามคำถามแรก
+async function testProvider(p,key,model){
+  const P=prov(p);
+  const {url,body}=buildReq({p,model,system:'ตอบสั้นที่สุด',
+    messages:[{role:'user',content:'ตอบว่า OK'}],maxTok:16,stream:false});
+  // ปิดการคิดตอนทดสอบให้ถูกที่สุด — type:disabled ใช้ได้เมื่อ effort ไม่เกิน high
+  if(P.kind==='anthropic'&&adaptiveOK(model)){body.thinking={type:'disabled'};
+    body.output_config={effort:'low'}}
+  const res=await fetch(url,{method:'POST',headers:headersFor(p,key),body:JSON.stringify(body)});
+  if(!res.ok) throw anErr(res.status,await res.text(),p);
+  const j=await res.json();
+  const u=j.usage||{};
+  return {in:u.input_tokens??u.prompt_tokens??0, out:u.output_tokens??u.completion_tokens??0};
+}
+
+// ดึงรายชื่อโมเดลจริงจากผู้ให้บริการ ดีกว่าฝังชื่อไว้ตายตัวเพราะรุ่นเปลี่ยนบ่อย
+async function listModels(p,key){
+  const res=await fetch(`${baseOf(p)}/models`,{headers:headersFor(p,key)});
+  if(!res.ok) throw anErr(res.status,await res.text(),p);
+  const j=await res.json();
+  const arr=j.data||j.models||[];
+  return arr.map(m=>m.id||m.name).filter(Boolean).sort();
 }
 
 async function askLocal(q,el){
@@ -1386,10 +1523,11 @@ async function askLocal(q,el){
 
   if(suggest) el.querySelector('.slot-sug').innerHTML=suggestHTML(suggest);
   el.querySelector('.slot-trace').innerHTML=traceHTML(trace);
-  $('#'+el.id+'-mt').textContent=CFG.mode==='offline'?'Demo':CFG.model;
+  const modelLabel=CFG.mode==='offline'?'Demo':CFG.mode==='supabase'?'Supabase':modelOf();
+  $('#'+el.id+'-mt').textContent=modelLabel;
 
   const meta={module:CFG.room,citations:cites,confidence:conf,trace,suggest,
-    model:CFG.mode==='offline'?'Demo':CFG.model};
+    model:modelLabel};
 
   if(conf<.55){
     const txt=hits.length===0
@@ -1410,7 +1548,8 @@ async function askLocal(q,el){
   if(CFG.mode==='offline'){
     const txt=`## โหมด Demo — ยังไม่ได้เรียก LLM\n\nระบบดึงข้อมูลจากฐานความรู้สำหรับคำถามนี้แล้ว`+
       ` เอกสารด้านล่างคือ context ทั้งหมดที่โมเดลจะได้เห็น ไม่มีการโหลดคลังทั้งก้อน\n\n`+
-      `**เปิดโหมดตอบจริง:** ปุ่มตั้งค่า → *ต่อ Anthropic โดยตรง* แล้วใส่ API key\n\n`+
+      `**เปิดโหมดตอบจริง:** ปุ่มตั้งค่า → *ต่อ AI โดยตรง* → เลือกผู้ให้บริการ แล้วใส่ API key\n`+
+      `(Google Gemini และ Groq มีโควตาให้ใช้ฟรี ไม่ต้องผูกบัตร)\n\n`+
       `> ${esc(hits[0].content.slice(0,300)).replace(/\n/g,' ')}…\n`+
       `> — ${esc(hits[0].doc_title)} · ${esc(hits[0].page_ref)}`;
     meta.info=info;
@@ -1421,65 +1560,46 @@ async function askLocal(q,el){
     return {text:txt,meta};
   }
 
-  if(!CFG.anthropic) throw new Error('ยังไม่ได้ใส่ Anthropic API key — เปิดหน้าตั้งค่า');
+  const P=prov(),key=keyOf(),model=modelOf();
+  if(!key) throw new Error(`ยังไม่ได้ใส่ API key ของ ${P.label} — เปิดหน้าตั้งค่า`);
+  if(!model) throw new Error('ยังไม่ได้เลือกโมเดล — เปิดหน้าตั้งค่า');
+  if(!baseOf()) throw new Error('ยังไม่ได้ใส่ base URL ของผู้ให้บริการ — เปิดหน้าตั้งค่า');
 
   const ctx=hits.map((h,i)=>`[${i+1}] ${h.doc_title} (${h.doc_code}) — ${h.page_ref}\n${h.content}`)
     .join('\n\n════════════════════\n\n');
   const system = buildSystem(m);
 
   const hist=room().slice(-7,-1).map(x=>({role:x.role,content:x.content.slice(0,4000)}));
-  const payload={model:CFG.model,max_tokens:16000,stream:true,
-    system:[{type:'text',text:system,cache_control:{type:'ephemeral'}}],
-    messages:[...hist,{role:'user',
-      content:`เอกสารอ้างอิงจากคลังความรู้:\n\n${ctx}\n\n════════════════════\n\nคำถาม: ${q}`}]};
-  // Opus 5 / Sonnet 5 คิดก่อนตอบ (adaptive) — ช่วยเรื่องวินิจฉัยที่ต้องเชื่อมหลายเอกสาร
   // max_tokens ครอบทั้งส่วนคิดและส่วนตอบ จึงต้องเผื่อไว้มากกว่าความยาวคำตอบจริง
-  if(adaptiveOK(CFG.model)){
-    payload.thinking={type:'adaptive',display:'summarized'};
-    payload.output_config={effort:'medium'};
-  }
+  const {url,body}=buildReq({model,system,maxTok:16000,stream:true,
+    messages:[...hist,{role:'user',
+      content:`เอกสารอ้างอิงจากคลังความรู้:\n\n${ctx}\n\n════════════════════\n\nคำถาม: ${q}`}]});
 
   abortCtl=new AbortController();
   $('#btnSend').classList.add('stop');$('#btnSend').disabled=false;
 
   let answer='';
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',signal:abortCtl.signal,
-      headers:AN_HEADERS(),
-      body:JSON.stringify(payload)});
+    const res=await fetch(url,{method:'POST',signal:abortCtl.signal,
+      headers:headersFor(null,key),body:JSON.stringify(body)});
     if(!res.ok) throw anErr(res.status,await res.text());
     const bodySlot=el.querySelector('.slot-body');
     // ช่วงที่โมเดลกำลังคิด ยังไม่มีข้อความออกมา ถ้าไม่บอกอะไรเลยจะดูเหมือนค้าง
     bodySlot.innerHTML='<div class="think reason"><i></i><i></i><i></i>'+
       '<span>กำลังวิเคราะห์เอกสาร…</span></div><div class="prose"></div>';
-    const think=bodySlot.querySelector('.think');
+    let think=bodySlot.querySelector('.think');
     const prose=bodySlot.querySelector('.prose');
-    const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
-    while(true){
-      const {done,value}=await reader.read();if(done) break;
-      buf+=dec.decode(value,{stream:true});
-      const lines=buf.split('\n');buf=lines.pop()||'';
-      for(const line of lines){
-        if(!line.startsWith('data: ')) continue;
-        const p=line.slice(6).trim();if(!p||p==='[DONE]') continue;
-        let ev;try{ev=JSON.parse(p)}catch{continue}
-        const d=ev.delta;
-        if(ev.type==='content_block_delta'&&d?.type==='text_delta'){
-          if(think) think.remove();
-          answer+=d.text;
-          prose.innerHTML=md(answer)+'<span class="caret"></span>';scrollDown();
-        }else if(ev.type==='content_block_delta'&&d?.type==='thinking_delta'){
-          if(think) think.querySelector('span').textContent='กำลังคิด…';
-        }else if(ev.type==='message_delta'&&d?.stop_reason==='refusal'){
-          answer+='\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_';
-        }else if(ev.type==='message_delta'&&d?.stop_reason==='max_tokens'){
-          answer+='\n\n_(คำตอบยาวเกินโควตา ถูกตัดกลางคัน — ลองถามให้แคบลง)_';
-        }else if(ev.type==='error'){
-          throw new Error(ev.error?.message||'สตรีมขาดกลางคัน');
-        }
-      }
-    }
+    await readStream(res,P.kind,{
+      onText:t=>{
+        if(think){think.remove();think=null}
+        answer+=t;
+        prose.innerHTML=md(answer)+'<span class="caret"></span>';scrollDown();
+      },
+      onThink:()=>{if(think) think.querySelector('span').textContent='กำลังคิด…'},
+      onStop:r=>{
+        if(r==='refusal') answer+='\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_';
+        else if(r==='max_tokens') answer+='\n\n_(คำตอบยาวเกินโควตา ถูกตัดกลางคัน — ลองถามให้แคบลง)_';
+      }});
     if(think) think.remove();
     prose.innerHTML=md(answer);
   }catch(e){
@@ -1636,7 +1756,7 @@ function autosize(){
 }
 function applyMode(){
   const map={offline:['Demo',''],
-    direct:[CFG.anthropic?'Anthropic':'ไม่มี key',CFG.anthropic?'on':'warn'],
+    direct:[keyOf()?prov().label.split(' ')[0]:'ไม่มี key',keyOf()?'on':'warn'],
     supabase:[(CFG.url&&CFG.anon)?'Supabase':'ยังไม่ตั้งค่า',(CFG.url&&CFG.anon)?'on':'warn']};
   const [l,c]=map[CFG.mode]||map.offline;
   $('#modeLabel').textContent=l;$('#dot').className='dot '+c;
@@ -1674,31 +1794,100 @@ on('#btnPal','click',openPal);
 on('#qFilter','input',e=>{filter=e.target.value;renderRooms()});
 on('#btnShowAll','click',()=>{showAll=!showAll;renderRooms()});
 on('#btnClear','click',()=>{ROOMS[CFG.room]=[];saveRooms();renderRooms();renderRoom();toast(T('cleared'))});
+/* ── หน้าตั้งค่าฝั่งผู้ให้บริการ ────────────────────────────────────── */
+// key และโมเดลเก็บแยกรายเจ้า สลับกลับไปมาได้โดยไม่ต้องกรอกใหม่
+let provSel=CFG.provider;
+
+function fillModels(list){
+  const sel=$('#cfgModel'),cur=CFG.models[provSel]||'';
+  const P=prov(provSel);
+  sel.innerHTML='';
+  if(list){
+    list.forEach(id=>sel.add(new Option(id,id)));
+    if(!list.includes(cur)&&cur) sel.add(new Option(`${cur} (ที่ตั้งไว้)`,cur));
+  }else{
+    P.models.forEach(m=>sel.add(new Option(`${m.name} — ${m.price}`,m.id)));
+    if(cur&&!P.models.some(m=>m.id===cur)) sel.add(new Option(`${cur} (ที่ตั้งไว้)`,cur));
+  }
+  if(!sel.options.length) sel.add(new Option('— กดโหลดรายชื่อโมเดล —',''));
+  sel.value=cur||sel.options[0].value;
+}
+
+function renderProv(){
+  const P=prov(provSel);
+  $('#cfgKey').value=CFG.keys[provSel]||'';
+  $('#cfgKey').placeholder=P.hint||'';
+  $('#keyHint').textContent=P.keyUrl?`รับ key ได้ที่ ${P.keyUrl}`:'ใส่ key ของผู้ให้บริการที่เลือก';
+  $('#provNote').textContent=[P.free,P.note].filter(Boolean).join(' · ');
+  $('#provNote').style.color=P.free?'var(--ok)':'';
+  $('#fldBase').style.display=provSel==='custom'?'':'none';
+  $('#cfgBase').value=CFG.customBase||'';
+  fillModels(null);
+  $('#testOut').style.color='';
+  $('#testOut').textContent='รายชื่อด้านบนเป็นค่าตั้งต้น — กด "โหลดรายชื่อโมเดล" '+
+    'เพื่อดึงรายการจริงจากผู้ให้บริการ แล้วกด "ทดสอบ" ก่อนใช้';
+}
+
 on('#btnCfg','click',()=>{
   $$('input[name=mode]').forEach(r=>{r.checked=r.value===CFG.mode;r.closest('.opt').classList.toggle('on',r.checked)});
-  $('#cfgAnthropic').value=CFG.anthropic;$('#cfgModel').value=CFG.model;
+  const ps=$('#cfgProv');
+  if(!ps.options.length) Object.entries(PROVIDERS).forEach(([k,v])=>ps.add(new Option(v.label,k)));
+  provSel=CFG.provider;ps.value=provSel;renderProv();
   $('#cfgUrl').value=CFG.url;$('#cfgAnon').value=CFG.anon;
   toggleGroups(CFG.mode);$('#ov').classList.add('on');
 });
+on('#cfgProv','change',e=>{
+  // เก็บสิ่งที่พิมพ์ไว้ของเจ้าเดิมก่อนสลับ ไม่งั้นพิมพ์ key แล้วสลับไปมาจะหาย
+  CFG.keys[provSel]=$('#cfgKey').value.trim();
+  if($('#cfgModel').value) CFG.models[provSel]=$('#cfgModel').value;
+  provSel=e.target.value;renderProv();
+});
+
+on('#btnModels','click',async e=>{
+  const out=$('#testOut'),btn=e.currentTarget,key=$('#cfgKey').value.trim();
+  if(!key){out.style.color='var(--bad)';out.textContent='ต้องใส่ API key ก่อนจึงจะดึงรายชื่อโมเดลได้';return}
+  CFG.keys[provSel]=key;CFG.customBase=$('#cfgBase').value.trim();
+  btn.disabled=true;out.style.color='';out.textContent='กำลังดึงรายชื่อ…';
+  try{
+    const list=await listModels(provSel,key);
+    if(!list.length) throw new Error('ผู้ให้บริการไม่ได้คืนรายชื่อโมเดลมา');
+    fillModels(list);
+    out.style.color='var(--ok)';
+    out.textContent=`พบ ${list.length} โมเดล — เลือกจากรายการด้านบนได้เลย`;
+  }catch(err){
+    out.style.color='var(--bad)';
+    out.textContent=String(err.message||err).split('\n')[0];
+    console.error('[ML] ดึงรายชื่อโมเดลไม่สำเร็จ:',err);
+  }finally{btn.disabled=false}
+});
+
 on('#btnTest','click',async e=>{
   const out=$('#testOut'),btn=e.currentTarget;
-  const key=$('#cfgAnthropic').value.trim(),model=$('#cfgModel').value;
+  const key=$('#cfgKey').value.trim(),model=$('#cfgModel').value;
   if(!key){out.style.color='var(--bad)';out.textContent='ยังไม่ได้ใส่ API key';return}
+  if(!model){out.style.color='var(--bad)';out.textContent='ยังไม่ได้เลือกโมเดล';return}
+  // testProvider อ่าน base URL จาก CFG จึงต้องเซฟค่าที่พิมพ์ไว้ก่อนยิง
+  CFG.keys[provSel]=key;CFG.models[provSel]=model;CFG.customBase=$('#cfgBase').value.trim();
+  if(provSel==='custom'&&!CFG.customBase){
+    out.style.color='var(--bad)';out.textContent='ยังไม่ได้ใส่ base URL';return}
   btn.disabled=true;out.style.color='';out.textContent='กำลังทดสอบ…';
   try{
-    const u=await testAnthropic(key,model);
+    const u=await testProvider(provSel,key,model);
     out.style.color='var(--ok)';
-    out.textContent=`เชื่อมต่อสำเร็จ — ${model} ตอบกลับแล้ว `+
-      `(ใช้ ${u.input_tokens||0} token เข้า / ${u.output_tokens||0} ออก)`;
+    out.textContent=`เชื่อมต่อสำเร็จ — ${model} ตอบกลับแล้ว (ใช้ ${u.in} token เข้า / ${u.out} ออก)`;
   }catch(err){
     out.style.color='var(--bad)';
     out.textContent=String(err.message||err).split('\n')[0];
     console.error('[ML] ทดสอบ API ไม่ผ่าน:',err);
   }finally{btn.disabled=false}
 });
+
 on('#btnSave','click',()=>{
   CFG.mode=$('input[name=mode]:checked')?.value||'offline';
-  CFG.anthropic=$('#cfgAnthropic').value.trim();CFG.model=$('#cfgModel').value;
+  CFG.provider=provSel;
+  CFG.keys[provSel]=$('#cfgKey').value.trim();
+  if($('#cfgModel').value) CFG.models[provSel]=$('#cfgModel').value;
+  CFG.customBase=$('#cfgBase').value.trim();
   CFG.url=$('#cfgUrl').value.trim();CFG.anon=$('#cfgAnon').value.trim();
   saveCfg();applyMode();$('#ov').classList.remove('on');toast('บันทึกแล้ว');
 });
