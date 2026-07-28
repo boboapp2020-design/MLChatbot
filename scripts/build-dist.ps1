@@ -57,6 +57,29 @@ function Protect-Script([string]$js) { return $js -replace '</script', '<\/scrip
 $inline = "<script>`n" + (Protect-Script $chunks) + "`n</script>`n" +
           "<script>`n" + (Protect-Script $personas) + "`n</script>"
 
+# ── ฝังโลโก้ถ้ามีไฟล์ LOGO.png ───────────────────────────────────────
+# ต้องฝังเป็น data URI เพราะไฟล์ผลลัพธ์ต้องใช้ได้เดี่ยวๆ ไม่พึ่งไฟล์ข้างนอก
+$logoFile = Get-ChildItem -LiteralPath $Root -Filter 'LOGO.*' -File -ErrorAction SilentlyContinue |
+            Where-Object { $_.Extension -match '^\.(png|jpg|jpeg|webp|svg)$' } |
+            Select-Object -First 1
+if ($logoFile) {
+  $mime = switch ($logoFile.Extension.ToLower()) {
+    '.png'  { 'image/png' }   '.jpg' { 'image/jpeg' }  '.jpeg' { 'image/jpeg' }
+    '.webp' { 'image/webp' }  '.svg' { 'image/svg+xml' }
+  }
+  $b64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($logoFile.FullName))
+  $dataUri = "data:$mime;base64,$b64"
+  $html = $html -replace '(<img id="logoImg"[^>]*?)src=""([^>]*?)\shidden>', "`$1src=`"$dataUri`"`$2>"
+  $lk = [math]::Round($logoFile.Length / 1KB, 0)
+  Write-Host ("  ฝังโลโก้: {0} ({1:N0} KB)" -f $logoFile.Name, $lk) -ForegroundColor Cyan
+  if ($logoFile.Length -gt 400KB) {
+    Write-Host "  เตือน: โลโก้ใหญ่กว่า 400 KB จะทำให้หน้าเว็บโหลดช้าลงโดยไม่จำเป็น" -ForegroundColor Yellow
+    Write-Host "         ย่อเหลือประมาณ 256x256 px ก่อนจะดีกว่า" -ForegroundColor Yellow
+  }
+} else {
+  Write-Host "  ไม่พบ LOGO.png ที่รากโปรเจกต์ — ใช้โลโก้ตัวอักษรเดิม" -ForegroundColor DarkGray
+}
+
 $pattern = '<script src="\.\./kb/chunks\.js"></script>\s*<script src="\.\./kb/personas\.js"></script>'
 if ($html -notmatch $pattern) {
   Write-Host "`nไม่พบแท็ก <script src=...> ที่คาดไว้ใน web\index.html" -ForegroundColor Red
