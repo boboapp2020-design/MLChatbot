@@ -88,6 +88,9 @@ $FileMap = @(
   @{ Path='sugar-qc-brain\references\standards-and-training.md';   Module='quality'; Type='STANDARD'; Title='มาตรฐานและวิธีวิเคราะห์';                      Code='QC-STD' }
   @{ Path='sugar-qc-brain\references\cheat-sheet.md';         Module='quality';     Type='FAQ';      Title='สรุปค่ามาตรฐานและ pattern วินิจฉัย';             Code='QC-CHEAT' }
 
+  # สกิลจัดซื้อ — ห้องจัดซื้อ/คลังเดิมมีความรู้ของตัวเองแค่ 14 ท่อน ต้องยืมจากคนอื่นทุกคำถาม
+  @{ Path='procurement-management\SKILL.md';                  Module='warehouse';   Type='BOOK';     Title='งานจัดซื้อ PR-PO และการบริหารผู้ขาย';            Code='PROC-FRAME' }
+
   @{ Path='motor-expert\SKILL.md';                            Module='maintenance'; Type='BOOK';     Title='กรอบการวินิจฉัยมอเตอร์และระบบไฟฟ้า';             Code='MTR-FRAME' }
   @{ Path='motor-expert\references\failure-modes.md';         Module='maintenance'; Type='MANUAL';   Title='รูปแบบความเสียหายของมอเตอร์';                    Code='MTR-FAIL' }
   @{ Path='motor-expert\references\standards-thresholds.md';  Module='maintenance'; Type='STANDARD'; Title='เกณฑ์มาตรฐานการสั่นและฉนวน (ISO/NEMA/IEEE)';     Code='MTR-STD' }

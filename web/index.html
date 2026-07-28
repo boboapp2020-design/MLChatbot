@@ -1373,14 +1373,18 @@ ${langLine}
 ห้ามใส่หัวข้อ "เอกสารอ้างอิง" หรือ "ความมั่นใจ" ท้ายคำตอบ — ระบบสร้างให้เอง`;
 }
 
+/* เดิมดึงเอกสารนอกห้องต่อเมื่อในห้องหาได้ไม่ถึง 4 ท่อน
+   ปัญหาคือ "ได้ครบ 4" ไม่ได้แปลว่า "ตรงคำถาม" — ห้องจัดซื้อมีเอกสาร PR-PO ครบ 6 ท่อน
+   จึงไม่ยอมไปดึงเรื่องการเก็บน้ำตาลที่ดีกว่าซึ่งอยู่ห้องอื่น ความมั่นใจเลยตก 76% -> 30%
+   แก้เป็นพิจารณาเอกสารนอกห้องด้วยเสมอ แต่หักคะแนน 18%
+   ถ้าเอกสารในห้องตรงจริงก็ยังชนะอยู่ดี ถ้าไม่ตรงก็ปล่อยให้ของที่ดีกว่าขึ้นมา */
 function retrieveForRoom(q){
-  let hits=bm25(q,[CFG.room],20),toppedUp=false;
-  if(hits.length<4){
-    const have=new Set(hits.map(h=>h.id));
-    const extra=bm25(q,null,20).filter(h=>!have.has(h.id)).map(h=>({...h,outside:true,sim:h.sim*.82}));
-    if(extra.length){toppedUp=true;hits=[...hits,...extra].sort((a,b)=>b.sim-a.sim)}
-  }
-  return {hits:hits.slice(0,6),toppedUp};
+  const inRoom=bm25(q,[CFG.room],20);
+  const have=new Set(inRoom.map(h=>h.id));
+  const outside=bm25(q,null,20).filter(h=>!have.has(h.id))
+    .map(h=>({...h,outside:true,sim:h.sim*.82}));
+  const hits=[...inRoom,...outside].sort((a,b)=>b.sim-a.sim).slice(0,6);
+  return {hits,toppedUp:hits.some(h=>h.outside)};
 }
 
 /* ══════════════════════════════════════════════════════════════════

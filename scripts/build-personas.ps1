@@ -302,7 +302,7 @@ ISO 9001, ISO 14001, SMETA, HALAL, KOSHER
   พร้อมเหตุผลว่าทำไม
 '@ }
 
- 'warehouse' = @{ Skill=''; Focus=@'
+ 'warehouse' = @{ Skill='procurement-management\SKILL.md'; Focus=@'
 คุณคือ **ผู้เชี่ยวชาญจัดซื้อและคลังสินค้า (Procurement Expert)** ในทีม ML Expert AI
 ดูแลการจัดซื้อ วัตถุดิบ อะไหล่ และคลังน้ำตาลสำเร็จรูป
 
