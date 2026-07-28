@@ -653,6 +653,10 @@ svg{display:block}
             <option value="claude-sonnet-5">Claude Sonnet 5 — สมดุลราคา/คุณภาพ</option>
             <option value="claude-haiku-4-5">Claude Haiku 4.5 — เร็วและถูกที่สุด</option>
           </select></div>
+        <div class="fld">
+          <button class="btn s" id="btnTest" type="button">ทดสอบการเชื่อมต่อ</button>
+          <small id="testOut">ยิงคำขอสั้นๆ ไปที่ Anthropic เพื่อดูว่า key และโมเดลใช้ได้จริง</small>
+        </div>
       </div>
       <div id="grpSupa" style="display:none">
         <div class="fld"><label>Supabase Project URL</label>
@@ -1304,6 +1308,46 @@ function retrieveForRoom(q){
   return {hits:hits.slice(0,6),toppedUp};
 }
 
+/* ── การเรียก Anthropic API ─────────────────────────────────────────
+   Haiku 4.5 เป็นรุ่นก่อน 4.6 ยังไม่รองรับ adaptive thinking / effort
+   ส่งไปจะได้ 400 กลับมา จึงต้องแยกออกจากรุ่นใหม่ */
+const adaptiveOK = m => m!=='claude-haiku-4-5';
+
+const AN_HEADERS = () => ({
+  'content-type':'application/json',
+  'x-api-key':CFG.anthropic,
+  'anthropic-version':'2023-06-01',
+  'anthropic-dangerous-direct-browser-access':'true'
+});
+
+// ข้อความ error ดิบจาก API อ่านยากสำหรับผู้ใช้ทั่วไป แปลเป็นสิ่งที่ทำต่อได้
+function anErr(status,body){
+  const detail=(()=>{try{return JSON.parse(body).error?.message||''}catch{return body.slice(0,200)}})();
+  const map={
+    400:'คำขอผิดรูปแบบ — มักเกิดจากโมเดลไม่รองรับตัวเลือกที่ส่งไป',
+    401:'API key ไม่ถูกต้องหรือถูกเพิกถอน — ตรวจที่ console.anthropic.com → API Keys',
+    403:'key นี้ไม่มีสิทธิ์เรียกโมเดลที่เลือก — ลองเปลี่ยนโมเดล หรือตรวจสิทธิ์ของ workspace',
+    404:'ไม่พบโมเดลที่ระบุ — ชื่อโมเดลอาจสะกดผิด',
+    429:'เรียกถี่เกินโควตา — รอสักครู่แล้วลองใหม่ หรือตรวจยอดเครดิตใน Billing',
+    500:'ฝั่ง Anthropic ขัดข้องชั่วคราว — ลองใหม่อีกครั้ง',
+    529:'ระบบ Anthropic รับคำขอเต็ม — รอสักครู่แล้วลองใหม่'
+  };
+  return new Error(`${map[status]||`เรียก API ไม่สำเร็จ (${status})`}${detail?`\n\n${detail}`:''}`);
+}
+
+// เรียกสั้นๆ เพื่อพิสูจน์ว่า key ใช้ได้จริงก่อนถามคำถามแรก
+async function testAnthropic(key,model){
+  const p={model,max_tokens:16,messages:[{role:'user',content:'ตอบว่า OK'}]};
+  // ปิดการคิดในการทดสอบให้ถูกที่สุด — type:disabled ใช้ได้เมื่อ effort ไม่เกิน high
+  if(adaptiveOK(model)){p.thinking={type:'disabled'};p.output_config={effort:'low'}}
+  const res=await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{...AN_HEADERS(),'x-api-key':key},
+    body:JSON.stringify(p)});
+  if(!res.ok) throw anErr(res.status,await res.text());
+  return (await res.json()).usage||{};
+}
+
 async function askLocal(q,el){
   const {hits,toppedUp}=retrieveForRoom(q);
   const best=bestModuleFor(q);
@@ -1363,11 +1407,16 @@ async function askLocal(q,el){
   const system = buildSystem(m);
 
   const hist=room().slice(-7,-1).map(x=>({role:x.role,content:x.content.slice(0,4000)}));
-  const payload={model:CFG.model,max_tokens:8000,stream:true,
+  const payload={model:CFG.model,max_tokens:16000,stream:true,
     system:[{type:'text',text:system,cache_control:{type:'ephemeral'}}],
     messages:[...hist,{role:'user',
       content:`เอกสารอ้างอิงจากคลังความรู้:\n\n${ctx}\n\n════════════════════\n\nคำถาม: ${q}`}]};
-  if(CFG.model!=='claude-haiku-4-5') payload.output_config={effort:'medium'};
+  // Opus 5 / Sonnet 5 คิดก่อนตอบ (adaptive) — ช่วยเรื่องวินิจฉัยที่ต้องเชื่อมหลายเอกสาร
+  // max_tokens ครอบทั้งส่วนคิดและส่วนตอบ จึงต้องเผื่อไว้มากกว่าความยาวคำตอบจริง
+  if(adaptiveOK(CFG.model)){
+    payload.thinking={type:'adaptive',display:'summarized'};
+    payload.output_config={effort:'medium'};
+  }
 
   abortCtl=new AbortController();
   $('#btnSend').classList.add('stop');$('#btnSend').disabled=false;
@@ -1376,12 +1425,14 @@ async function askLocal(q,el){
   try{
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',signal:abortCtl.signal,
-      headers:{'content-type':'application/json','x-api-key':CFG.anthropic,
-        'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      headers:AN_HEADERS(),
       body:JSON.stringify(payload)});
-    if(!res.ok) throw new Error(`Anthropic ${res.status} — ${(await res.text()).slice(0,260)}`);
+    if(!res.ok) throw anErr(res.status,await res.text());
     const bodySlot=el.querySelector('.slot-body');
-    bodySlot.innerHTML='<div class="prose"></div>';
+    // ช่วงที่โมเดลกำลังคิด ยังไม่มีข้อความออกมา ถ้าไม่บอกอะไรเลยจะดูเหมือนค้าง
+    bodySlot.innerHTML='<div class="think reason"><i></i><i></i><i></i>'+
+      '<span>กำลังวิเคราะห์เอกสาร…</span></div><div class="prose"></div>';
+    const think=bodySlot.querySelector('.think');
     const prose=bodySlot.querySelector('.prose');
     const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
     while(true){
@@ -1392,14 +1443,23 @@ async function askLocal(q,el){
         if(!line.startsWith('data: ')) continue;
         const p=line.slice(6).trim();if(!p||p==='[DONE]') continue;
         let ev;try{ev=JSON.parse(p)}catch{continue}
-        if(ev.type==='content_block_delta'&&ev.delta?.type==='text_delta'){
-          answer+=ev.delta.text;
+        const d=ev.delta;
+        if(ev.type==='content_block_delta'&&d?.type==='text_delta'){
+          if(think) think.remove();
+          answer+=d.text;
           prose.innerHTML=md(answer)+'<span class="caret"></span>';scrollDown();
-        }else if(ev.type==='message_delta'&&ev.delta?.stop_reason==='refusal'){
+        }else if(ev.type==='content_block_delta'&&d?.type==='thinking_delta'){
+          if(think) think.querySelector('span').textContent='กำลังคิด…';
+        }else if(ev.type==='message_delta'&&d?.stop_reason==='refusal'){
           answer+='\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_';
+        }else if(ev.type==='message_delta'&&d?.stop_reason==='max_tokens'){
+          answer+='\n\n_(คำตอบยาวเกินโควตา ถูกตัดกลางคัน — ลองถามให้แคบลง)_';
+        }else if(ev.type==='error'){
+          throw new Error(ev.error?.message||'สตรีมขาดกลางคัน');
         }
       }
     }
+    if(think) think.remove();
     prose.innerHTML=md(answer);
   }catch(e){
     if(e.name==='AbortError') answer+='\n\n_(หยุดโดยผู้ใช้)_'; else throw e;
@@ -1596,6 +1656,22 @@ on('#btnCfg','click',()=>{
   $('#cfgAnthropic').value=CFG.anthropic;$('#cfgModel').value=CFG.model;
   $('#cfgUrl').value=CFG.url;$('#cfgAnon').value=CFG.anon;
   toggleGroups(CFG.mode);$('#ov').classList.add('on');
+});
+on('#btnTest','click',async e=>{
+  const out=$('#testOut'),btn=e.currentTarget;
+  const key=$('#cfgAnthropic').value.trim(),model=$('#cfgModel').value;
+  if(!key){out.style.color='var(--bad)';out.textContent='ยังไม่ได้ใส่ API key';return}
+  btn.disabled=true;out.style.color='';out.textContent='กำลังทดสอบ…';
+  try{
+    const u=await testAnthropic(key,model);
+    out.style.color='var(--ok)';
+    out.textContent=`เชื่อมต่อสำเร็จ — ${model} ตอบกลับแล้ว `+
+      `(ใช้ ${u.input_tokens||0} token เข้า / ${u.output_tokens||0} ออก)`;
+  }catch(err){
+    out.style.color='var(--bad)';
+    out.textContent=String(err.message||err).split('\n')[0];
+    console.error('[ML] ทดสอบ API ไม่ผ่าน:',err);
+  }finally{btn.disabled=false}
 });
 on('#btnSave','click',()=>{
   CFG.mode=$('input[name=mode]:checked')?.value||'offline';
