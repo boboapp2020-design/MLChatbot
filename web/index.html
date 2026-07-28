@@ -704,7 +704,7 @@ svg{display:block}
     <div class="mb">
       <div class="fld">
         <input type="password" id="pinIn" inputmode="numeric" maxlength="12"
-          placeholder="• • • • " autocomplete="off" style="text-align:center;
+          autocomplete="off" style="text-align:center;
           font-size:22px;letter-spacing:9px;font-family:var(--mono)">
         <small id="pinErr">เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ</small>
       </div>
@@ -1838,7 +1838,7 @@ on('#btnClear','click',()=>{ROOMS[CFG.room]=[];saveRooms();renderRooms();renderR
    ══════════════════════════════════════════════════════════════════ */
 const PIN_SALT='mlx-expert-ai-v1:';
 const PIN_HASH='3e436baec04575f71781f866c3b3c1ec50c70660d62382205b0f464e525a78fa';
-let pinOK=false;                 // ปลดล็อกแล้วในรอบนี้ (รีเฟรชแล้วต้องใส่ใหม่)
+// ไม่จำสถานะปลดล็อกไว้เลย — ปิดหน้าตั้งค่าแล้วเปิดใหม่ต้องใส่รหัสทุกครั้ง
 let pinFails=0, pinLockUntil=0;
 
 async function hashPin(pin){
@@ -1875,7 +1875,7 @@ async function tryUnlock(){
   if(!val){err.style.color='var(--bad)';err.textContent='ยังไม่ได้ใส่ PIN';return}
   const h=await hashPin(val);
   if(h===PIN_HASH||h===PIN_HASH_FNV){
-    pinOK=true;pinFails=0;
+    pinFails=0;
     $('#pinIn').value='';$('#ovPin').classList.remove('on');
     openCfg();
   }else{
@@ -1922,7 +1922,6 @@ function renderProv(){
 }
 
 on('#btnCfg','click',()=>{
-  if(pinOK){ openCfg(); return; }
   $('#pinIn').value='';
   $('#pinErr').style.color='';
   $('#pinErr').textContent='เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ';
