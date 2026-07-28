@@ -458,15 +458,6 @@ svg{display:block}
 .fld input[type=password]{font-family:var(--mono)}
 .btn-row{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
 .btn-row .btn{flex:1;min-width:150px}
-.pin-box{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:15px 16px}
-.pin-state{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:10px;
-  background:var(--card);border:1px solid var(--line);font-size:12.2px;margin-bottom:9px}
-.pin-state.on{border-color:color-mix(in srgb,var(--ok) 45%,transparent)}
-.pin-state b{font-weight:700}
-/* จุดกุญแจบนปุ่มเฟือง บอกว่าตอนนี้ล็อกอยู่โดยไม่ต้องเปิดเข้าไปดู */
-.fbtn.locked{position:relative}
-.fbtn.locked::after{content:'';position:absolute;top:-1px;right:-1px;width:8px;height:8px;
-  border-radius:50%;background:var(--ok);border:2px solid var(--card)}
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{display:flex;gap:12px;padding:13px 15px;border-radius:13px;background:var(--soft);
   border:1px solid var(--line);cursor:pointer;transition:.16s}
@@ -662,19 +653,6 @@ svg{display:block}
   <div class="modal">
     <div class="mh"><h3>ตั้งค่าระบบ</h3><button class="fbtn" data-close>✕</button></div>
     <div class="mb">
-      <!-- วางไว้บนสุด เพราะเป็นสิ่งที่ผู้ดูแลต้องตั้งก่อนปล่อยให้คนอื่นใช้ -->
-      <div class="fld pin-box">
-        <label>🔒 PIN ล็อกหน้าตั้งค่า</label>
-        <div class="pin-state" id="pinState"></div>
-        <input type="password" id="cfgPin" inputmode="numeric" maxlength="12"
-          placeholder="ตั้ง PIN ใหม่ (4–12 หลัก)" autocomplete="new-password">
-        <div class="btn-row">
-          <button class="btn p" id="btnPinSet" type="button">บันทึก PIN</button>
-          <button class="btn s" id="btnPinOff" type="button">เอา PIN ออก</button>
-        </div>
-        <small id="pinOut">ตั้งแล้วคนอื่นจะเปิดหน้านี้ไม่ได้ แต่ยังใช้แชทได้ตามปกติ</small>
-      </div>
-
       <div class="fld">
         <label>โหมดการทำงาน</label>
         <div class="opts">
@@ -1849,18 +1827,17 @@ on('#qFilter','input',e=>{filter=e.target.value;renderRooms()});
 on('#btnShowAll','click',()=>{showAll=!showAll;renderRooms()});
 on('#btnClear','click',()=>{ROOMS[CFG.room]=[];saveRooms();renderRooms();renderRoom();toast(T('cleared'))});
 /* ══════════════════════════════════════════════════════════════════
-   PIN ล็อกหน้าตั้งค่า
+   รหัสผ่านหน้าตั้งค่า
    ------------------------------------------------------------------
+   กดปุ่มเฟือง -> ต้องใส่รหัสก่อนถึงจะเปิดหน้าตั้งค่าได้
    จุดประสงค์: ให้คนอื่นใช้แชทได้ แต่เปลี่ยน API key ไม่ได้
 
-   ข้อจำกัดที่ต้องรู้: แอปนี้ทำงานในเบราว์เซอร์ล้วน คนที่เปิด DevTools เป็น
-   ยังอ่าน key จาก localStorage ได้อยู่ดีไม่ว่าจะมี PIN หรือไม่
-   PIN นี้กัน "คนทั่วไปเผลอไปแก้" ไม่ใช่ระบบความปลอดภัยจริง
-   ถ้าต้องการกันจริงต้องย้าย key ไปฝั่งเซิร์ฟเวอร์ (โหมด Supabase)
-
-   เก็บเป็นค่าแฮชไม่ใช่ตัวเลขตรงๆ อย่างน้อยเปิดดู localStorage แล้วไม่เห็น PIN
+   เก็บเป็นค่าแฮชไม่ใช่ตัวเลขตรงๆ เปิดดูซอร์สจะไม่เห็นรหัสโดยตรง
+   (แต่ผู้ที่ตั้งใจจริงยังหาทางข้ามได้ เพราะโค้ดทั้งหมดอยู่ในเบราว์เซอร์
+    ถ้าต้องการกันจริงต้องย้าย key ไปฝั่งเซิร์ฟเวอร์ = โหมด Supabase)
    ══════════════════════════════════════════════════════════════════ */
 const PIN_SALT='mlx-expert-ai-v1:';
+const PIN_HASH='3e436baec04575f71781f866c3b3c1ec50c70660d62382205b0f464e525a78fa';
 let pinOK=false;                 // ปลดล็อกแล้วในรอบนี้ (รีเฟรชแล้วต้องใส่ใหม่)
 let pinFails=0, pinLockUntil=0;
 
@@ -1870,24 +1847,15 @@ async function hashPin(pin){
     const buf=await crypto.subtle.digest('SHA-256',data);
     return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
   }
-  // เบราว์เซอร์เก่าที่ไม่มี WebCrypto — อ่อนกว่ามากแต่ยังดีกว่าเก็บเป็นตัวเลขเปล่า
+  // WebCrypto ใช้ได้เฉพาะ https / localhost / file
+  // ถ้าเปิดผ่าน http ธรรมดาจะไม่มี crypto.subtle จึงต้องมีทางสำรอง
   let h=2166136261;
   for(const b of data){h^=b;h=Math.imul(h,16777619)}
   return 'fnv'+(h>>>0).toString(16);
 }
-
-const pinSet = () => !!CFG.pinHash;
-
-function renderPinState(){
-  const btn=$('#btnCfg');
-  if(btn){btn.classList.toggle('locked',pinSet());
-    btn.title=pinSet()?'ตั้งค่า (ล็อกด้วย PIN)':'ตั้งค่า'}
-  const el=$('#pinState');if(!el) return;
-  el.classList.toggle('on',pinSet());
-  el.innerHTML=pinSet()
-    ? '<b style="color:var(--ok)">🔒 เปิดใช้อยู่</b> — ต้องใส่ PIN ทุกครั้งที่เปิดหน้านี้'
-    : '<b style="color:var(--tx3)">🔓 ยังไม่ได้ตั้ง</b> — ตอนนี้ใครก็เปิดหน้าตั้งค่าได้';
-}
+// ต้องเป็นค่าคงที่ที่คำนวณไว้ล่วงหน้า ห้ามคำนวณจากรหัสจริงตอนรัน
+// ไม่งั้นตัวเลขรหัสจะโผล่อยู่ในซอร์สโค้ดให้เห็นตรงๆ (เคยพลาดมาแล้ว)
+const PIN_HASH_FNV='fnv9a57337a';
 
 // เปิดหน้าตั้งค่าจริงๆ (เรียกหลังผ่าน PIN แล้ว)
 function openCfg(){
@@ -1896,9 +1864,6 @@ function openCfg(){
   if(!ps.options.length) Object.entries(PROVIDERS).forEach(([k,v])=>ps.add(new Option(v.label,k)));
   provSel=CFG.provider;ps.value=provSel;renderProv();
   $('#cfgUrl').value=CFG.url;$('#cfgAnon').value=CFG.anon;
-  $('#cfgPin').value='';renderPinState();
-  $('#pinOut').style.color='';
-  $('#pinOut').textContent='ตั้งแล้วคนอื่นจะเปิดหน้านี้ไม่ได้ แต่ยังใช้แชทได้ตามปกติ';
   toggleGroups(CFG.mode);$('#ov').classList.add('on');
 }
 
@@ -1908,7 +1873,8 @@ async function tryUnlock(){
   if(wait>0){err.style.color='var(--bad)';
     err.textContent=`ใส่ผิดหลายครั้ง — รออีก ${wait} วินาที`;return}
   if(!val){err.style.color='var(--bad)';err.textContent='ยังไม่ได้ใส่ PIN';return}
-  if(await hashPin(val)===CFG.pinHash){
+  const h=await hashPin(val);
+  if(h===PIN_HASH||h===PIN_HASH_FNV){
     pinOK=true;pinFails=0;
     $('#pinIn').value='';$('#ovPin').classList.remove('on');
     openCfg();
@@ -1956,36 +1922,16 @@ function renderProv(){
 }
 
 on('#btnCfg','click',()=>{
-  if(pinSet()&&!pinOK){
-    $('#pinIn').value='';
-    $('#pinErr').style.color='';
-    $('#pinErr').textContent='เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ';
-    $('#ovPin').classList.add('on');
-    setTimeout(()=>$('#pinIn').focus(),80);
-    return;
-  }
-  openCfg();
+  if(pinOK){ openCfg(); return; }
+  $('#pinIn').value='';
+  $('#pinErr').style.color='';
+  $('#pinErr').textContent='เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ';
+  $('#ovPin').classList.add('on');
+  setTimeout(()=>$('#pinIn').focus(),80);
 });
 on('#btnPinGo','click',tryUnlock);
 on('#pinIn','keydown',e=>{if(e.key==='Enter'){e.preventDefault();tryUnlock()}});
 
-on('#btnPinSet','click',async()=>{
-  const out=$('#pinOut'),v=$('#cfgPin').value.trim();
-  if(!/^\d{4,12}$/.test(v)){out.style.color='var(--bad)';
-    out.textContent='PIN ต้องเป็นตัวเลข 4–12 หลัก';return}
-  CFG.pinHash=await hashPin(v);saveCfg();
-  pinOK=true;$('#cfgPin').value='';renderPinState();
-  out.style.color='var(--ok)';
-  out.textContent='ตั้ง PIN แล้ว — ครั้งต่อไปที่เปิดหน้านี้ต้องใส่ PIN';
-});
-
-on('#btnPinOff','click',()=>{
-  const out=$('#pinOut');
-  if(!pinSet()){out.style.color='';out.textContent='ยังไม่ได้ตั้ง PIN ไว้';return}
-  delete CFG.pinHash;saveCfg();renderPinState();
-  out.style.color='var(--warn)';
-  out.textContent='เอา PIN ออกแล้ว — ตอนนี้ใครก็เปิดหน้าตั้งค่าได้';
-});
 on('#cfgProv','change',e=>{
   // เก็บสิ่งที่พิมพ์ไว้ของเจ้าเดิมก่อนสลับ ไม่งั้นพิมพ์ key แล้วสลับไปมาจะหาย
   CFG.keys[provSel]=$('#cfgKey').value.trim();
@@ -2072,7 +2018,6 @@ on('#burger','click',openSide); on('#scrim','click',closeSide);
 function boot(){
   if(!mod(CFG.room)) CFG.room='cane';
   applyTheme(); applyMode(); applyLang(); autosize();
-  renderPinState();          // ให้จุดกุญแจบนปุ่มเฟืองขึ้นตั้งแต่เปิดแอป
   if(!KB.length) showKbWarning();
 }
 
