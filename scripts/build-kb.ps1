@@ -438,6 +438,31 @@ $docs      = New-Object System.Collections.ArrayList
 $docNo     = 0
 $skipped   = @()
 
+# ── เอกสารที่วางเพิ่มเองโดยไม่ได้แก้ $SupportMap ────────────────────
+# ให้การเพิ่มความรู้เป็นแค่ "วางไฟล์ .txt แล้วรันสคริปต์" ไม่ต้องมาแก้โค้ด
+# ตั้ง NoBias ไว้ เพราะไม่รู้ว่าเอกสารเป็นของสถานีไหน ปล่อยให้ keyword ตัดสินรายท่อน
+# ตั้งชื่อไฟล์ให้สื่อความหมาย เพราะชื่อไฟล์จะกลายเป็นชื่อเอกสารที่โชว์ในคำตอบ
+$mapped = $SupportMap | ForEach-Object { $_.File }
+$auto = @()
+if (Test-Path $SupportRoot) {
+  $auto = Get-ChildItem -LiteralPath $SupportRoot -Filter '*.txt' -File |
+          Where-Object { $_.Name -notin $mapped -and $_.Name -notlike '~*' -and $_.Name -ne 'probe.txt' }
+}
+$autoNo = 0
+foreach ($f in $auto) {
+  $autoNo++
+  $base = [IO.Path]::GetFileNameWithoutExtension($f.Name)
+  # โค้ดเอกสารไปโชว์ในรายการอ้างอิง ต้องสั้นและอ่านออก
+  # ตัดคำไทยกลางคำแล้วอ่านไม่รู้เรื่อง จึงใช้เฉพาะตัวอักษรละติน/ตัวเลข
+  # ถ้าชื่อไฟล์เป็นไทยล้วนก็ใช้เลขลำดับแทน ส่วนชื่อเต็มไปอยู่ที่ Title อยู่แล้ว
+  $latin = [regex]::Matches($base,'[A-Za-z0-9]+') | ForEach-Object { $_.Value }
+  $code = if ($latin) { (($latin -join '-').ToUpper()) } else { "DOC-$autoNo" }
+  if ($code.Length -gt 14) { $code = $code.Substring(0,14).Trim('-') }
+  $SupportMap += @{ File=$f.Name; Module='dashboard'; Type='DOC'; Plain=$true; NoBias=$true
+                    Title=$base; Code=$code }
+  Write-Host ("  พบเอกสารใหม่ที่ยังไม่ได้ลงทะเบียน: {0}  (code {1})" -f $f.Name, $code) -ForegroundColor Cyan
+}
+
 # รวมสองแหล่ง: สกิล + เอกสารจริง
 $Sources = @()
 foreach ($e in $FileMap)    { $Sources += @{ Root=$SkillsRoot;  Path=$e.Path; Entry=$e } }

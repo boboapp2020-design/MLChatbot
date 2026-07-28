@@ -1106,7 +1106,10 @@ function md(src){
 const kbCount={};
 for(const c of KB) kbCount[c.module]=(kbCount[c.module]||0)+1;
 
-const VISIBLE=8;
+// เดิมย่อเหลือ 8 คน ทำให้ผู้ใช้เข้าใจว่าแอปมีผู้เชี่ยวชาญแค่ 8 คน
+// (โรงไฟฟ้าชีวมวลอยู่ลำดับที่ 9 จึงถูกซ่อนและถูกนึกว่าไม่มี)
+// แสดงครบทุกคนตั้งแต่แรก แถบข้างเลื่อนได้อยู่แล้ว
+const VISIBLE=MODULES.length;
 function renderRooms(){
   const f=filter.trim().toLowerCase();
   let list=MODULES.filter(m=>!f||modName(m).toLowerCase().includes(f)||m.id.includes(f)
