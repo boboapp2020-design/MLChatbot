@@ -150,6 +150,35 @@ confidence = 0.55 × coverage    ครอบคลุมสาระของ�
 
 ---
 
+## เชื่อมกับ GitHub
+
+repo ถูกตั้งค่าไว้แล้ว (commit แรกเสร็จ, `.gitignore` กัน PDF 130 MB ที่เกินลิมิต GitHub)
+เหลือแค่ผูกกับ repo บน GitHub
+
+**ครั้งแรก — ทำครั้งเดียว**
+1. สร้าง repo เปล่าที่ https://github.com/new (อย่าติ๊ก *Add a README*)
+2. ผูก remote:
+```bash
+powershell -ExecutionPolicy Bypass -File scripts\sync-github.ps1 -Remote https://github.com/USER/REPO.git
+```
+3. ถ้า push แล้วขึ้นว่าล็อกอินไม่ผ่าน ให้เปิด PowerShell ของคุณเองแล้วรัน `git push -u origin main`
+   จะมีหน้าเบราว์เซอร์ให้ล็อกอิน GitHub — ทำครั้งเดียว Windows จะจำไว้
+
+**ครั้งต่อไป**
+```bash
+powershell -ExecutionPolicy Bypass -File scripts\sync-github.ps1 -Message "แก้ไอคอน"
+powershell -ExecutionPolicy Bypass -File scripts\sync-github.ps1 -Rebuild   # สร้างคลังใหม่ก่อน push
+powershell -ExecutionPolicy Bypass -File scripts\sync-github.ps1 -DryRun    # ดูว่าจะ push อะไร
+```
+
+สคริปต์จะ**ตรวจไฟล์เกิน 95 MB ให้ก่อน push** และยกเลิกให้ถ้าเจอ
+เพราะ GitHub ปฏิเสธทั้ง commit ถ้ามีไฟล์เกิน 100 MB
+
+> ⚠️ `.gitignore` กัน `.env` และไฟล์ที่มีคำว่า secret/key ไว้แล้ว
+> แต่ **อย่าใส่ API key ลงในไฟล์ใดๆ ในโปรเจกต์** — ใส่ผ่านหน้าตั้งค่าของแอปเท่านั้น
+
+---
+
 ## โครงสร้างโปรเจกต์
 
 ```
