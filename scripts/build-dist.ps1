@@ -66,19 +66,19 @@ if ($html -notmatch $pattern) {
 $out = [regex]::Replace($html, $pattern, { param($m) $inline })
 
 # ── เขียนออก ─────────────────────────────────────────────────────────
-$dist = Join-Path $Root 'dist'
-if (-not (Test-Path $dist)) { New-Item -ItemType Directory -Path $dist | Out-Null }
-$target = Join-Path $dist 'index.html'
+# ต้องวางที่ "ราก" ของ repo เท่านั้น เพราะ GitHub Pages เสิร์ฟ index.html จากรากไซต์
+# ถ้าเก็บไว้ในโฟลเดอร์ย่อย เว็บจะยังเสิร์ฟไฟล์เดิมและดูเหมือนแก้ไม่ขึ้น
+$target = Join-Path $Root 'index.html'
 
 # UTF-8 ไม่มี BOM — BOM ทำให้บาง static host ส่ง header ผิดและขึ้นอักขระประหลาด
 [System.IO.File]::WriteAllText($target, $out, (New-Object Text.UTF8Encoding($false)))
 
 # .nojekyll กัน GitHub Pages เอา Jekyll มาประมวลผลไฟล์ก่อนเสิร์ฟ
-[System.IO.File]::WriteAllText((Join-Path $dist '.nojekyll'), '')
+[System.IO.File]::WriteAllText((Join-Path $Root '.nojekyll'), '')
 
 $mb = [math]::Round((Get-Item -LiteralPath $target).Length / 1MB, 2)
-Write-Host "`nสร้างเสร็จ: dist\index.html  ($mb MB)" -ForegroundColor Green
+Write-Host "`nสร้างเสร็จ: index.html  ($mb MB)" -ForegroundColor Green
 Write-Host "  คลังความรู้ $nChunks ท่อน · ผู้เชี่ยวชาญ $nPers คน · ไม่ต้องพึ่งไฟล์อื่น" -ForegroundColor DarkGray
-Write-Host "`nอัปไฟล์นี้ไฟล์เดียวขึ้น GitHub ทับ index.html เดิมได้เลย" -ForegroundColor Yellow
+Write-Host "`npush ขึ้น GitHub แล้ว Pages จะเสิร์ฟไฟล์นี้ทันที" -ForegroundColor Yellow
 
 if ($Open) { Start-Process $target }
