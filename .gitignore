@@ -33,3 +33,8 @@ desktop.ini
 node_modules/
 .vscode/
 .idea/
+
+# ── ไฟล์ที่สร้างจากไฟล์อื่น ────────────────────────────────────────────
+# 003_parts เป็นการแบ่ง 003_seed_kb.sql ออกเป็นชิ้นๆ สร้างใหม่ได้ตลอด
+# ด้วย scripts\split-sql.ps1 ไม่ต้องเก็บซ้ำใน repo (5 MB)
+supabase/migrations/003_parts/

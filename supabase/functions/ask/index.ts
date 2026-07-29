@@ -15,10 +15,15 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 // ── ค่าคงที่ ──────────────────────────────────────────────────────────
-const ANTHROPIC_URL   = 'https://api.anthropic.com/v1/messages';
-const MODEL_ROUTER    = 'claude-haiku-4-5';
-const MODEL_RERANK    = 'claude-haiku-4-5';
-const MODEL_ANSWER    = 'claude-opus-5';
+// ชื่อโมเดลตั้งทับได้ด้วย secret เพราะแต่ละเจ้าใช้ชื่อคนละแบบ
+// และผู้ให้บริการเปลี่ยนชื่อรุ่นบ่อย ไม่ควรฝังตายในโค้ด
+const DEFAULT_MODELS: Record<string, { router: string; rerank: string; answer: string }> = {
+  anthropic:  { router: 'claude-haiku-4-5',  rerank: 'claude-haiku-4-5',  answer: 'claude-opus-5' },
+  gemini:     { router: 'gemini-3.5-flash-lite', rerank: 'gemini-3.5-flash-lite', answer: 'gemini-3.6-flash' },
+  groq:       { router: 'llama-3.1-8b-instant',  rerank: 'llama-3.1-8b-instant',  answer: 'qwen/qwen3-32b' },
+  openrouter: { router: 'google/gemma-4-31b-it:free', rerank: 'google/gemma-4-31b-it:free', answer: 'qwen/qwen3.7-flash' },
+  deepseek:   { router: 'deepseek-chat',     rerank: 'deepseek-chat',     answer: 'deepseek-chat' },
+};
 const EMBED_MODEL     = 'voyage-3';
 
 const RETRIEVE_K      = 20;   // ดึงมาก่อน rerank
@@ -31,8 +36,9 @@ const CORS = {
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
 };
 
-const ANTHROPIC_KEY = Deno.env.get('ANTHROPIC_API_KEY') ?? '';
-const VOYAGE_KEY    = Deno.env.get('VOYAGE_API_KEY') ?? '';
+// รับได้ทั้ง LLM_API_KEY (ชื่อใหม่) และ ANTHROPIC_API_KEY (ของเดิม ไม่ต้องแก้ถ้าใช้ Claude อยู่)
+const LLM_KEY    = Deno.env.get('LLM_API_KEY') ?? Deno.env.get('ANTHROPIC_API_KEY') ?? '';
+const VOYAGE_KEY = Deno.env.get('VOYAGE_API_KEY') ?? '';
 
 const supabase = createClient(
   Deno.env.get('SUPABASE_URL')!,
@@ -67,34 +73,111 @@ interface Chunk {
 
 
 // =====================================================================
-//  เรียก Anthropic API
+//  เรียก LLM — รองรับหลายผู้ให้บริการ
+//  ---------------------------------------------------------------------
+//  ทุกเจ้ายกเว้น Anthropic ใช้รูปแบบเดียวกับ OpenAI (/chat/completions)
+//  จึงเขียนตัวเรียกแค่ 2 แบบก็ครอบได้หมด
+//  เลือกด้วย secret ชื่อ LLM_PROVIDER — ไม่ตั้งก็ใช้ anthropic ตามเดิม
 // =====================================================================
-async function anthropic(body: Record<string, unknown>, betas: string[] = []) {
-  const headers: Record<string, string> = {
-    'content-type':      'application/json',
-    'x-api-key':         ANTHROPIC_KEY,
-    'anthropic-version': '2023-06-01',
-  };
-  if (betas.length) headers['anthropic-beta'] = betas.join(',');
+const PROVIDER_BASE: Record<string, string> = {
+  anthropic:  'https://api.anthropic.com/v1',
+  gemini:     'https://generativelanguage.googleapis.com/v1beta/openai',
+  groq:       'https://api.groq.com/openai/v1',
+  openrouter: 'https://openrouter.ai/api/v1',
+  deepseek:   'https://api.deepseek.com',
+};
 
-  const res = await fetch(ANTHROPIC_URL, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify(body),
-  });
+const PROVIDER  = (Deno.env.get('LLM_PROVIDER') ?? 'anthropic').toLowerCase();
+const IS_CLAUDE = PROVIDER === 'anthropic';
+const LLM_BASE  = (Deno.env.get('LLM_BASE_URL') ?? PROVIDER_BASE[PROVIDER] ?? '').replace(/\/$/, '');
 
+const M = DEFAULT_MODELS[PROVIDER] ?? DEFAULT_MODELS.anthropic;
+const MODEL_ROUTER = Deno.env.get('MODEL_ROUTER') ?? M.router;
+const MODEL_RERANK = Deno.env.get('MODEL_RERANK') ?? M.rerank;
+const MODEL_ANSWER = Deno.env.get('MODEL_ANSWER') ?? M.answer;
+
+interface LlmReq {
+  model:      string;
+  system:     string;
+  messages:   { role: string; content: string }[];
+  maxTokens:  number;
+  stream?:    boolean;
+  schema?:    Record<string, unknown>;   // ขอผลลัพธ์เป็น JSON ตามโครงที่กำหนด
+  effort?:    'low' | 'medium' | 'high';
+  cacheSystem?: boolean;
+}
+
+async function callLLM(r: LlmReq, betas: string[] = []) {
+  let url: string, headers: Record<string, string>, body: Record<string, unknown>;
+
+  if (IS_CLAUDE) {
+    url = `${LLM_BASE}/messages`;
+    headers = {
+      'content-type':      'application/json',
+      'x-api-key':         LLM_KEY,
+      'anthropic-version': '2023-06-01',
+    };
+    if (betas.length) headers['anthropic-beta'] = betas.join(',');
+    body = {
+      model: r.model, max_tokens: r.maxTokens, stream: r.stream ?? false,
+      system: r.cacheSystem
+        ? [{ type: 'text', text: r.system, cache_control: { type: 'ephemeral' } }]
+        : r.system,
+      messages: r.messages,
+    };
+    if (r.schema) body.output_config = { format: { type: 'json_schema', schema: r.schema } };
+    else if (r.effort) body.output_config = { effort: r.effort };
+  } else {
+    url = `${LLM_BASE}/chat/completions`;
+    headers = { 'content-type': 'application/json', 'authorization': `Bearer ${LLM_KEY}` };
+    // OpenRouter ขอให้ระบุที่มาของคำขอ ไม่ใส่บางโมเดลฟรีจะถูกปฏิเสธ
+    if (PROVIDER === 'openrouter') {
+      headers['HTTP-Referer'] = Deno.env.get('SITE_URL') ?? 'https://ml-expert-ai.local';
+      headers['X-Title'] = 'ML Expert AI';
+    }
+    body = {
+      model: r.model, max_tokens: r.maxTokens, stream: r.stream ?? false,
+      messages: [{ role: 'system', content: r.system }, ...r.messages],
+    };
+    if (r.schema) {
+      body.response_format = {
+        type: 'json_schema',
+        json_schema: { name: 'result', strict: true, schema: r.schema },
+      };
+    }
+  }
+
+  const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`Anthropic ${res.status}: ${text.slice(0, 500)}`);
+    throw new Error(`${PROVIDER} ${res.status}: ${text.slice(0, 500)}`);
   }
   return res;
 }
 
+// ดึงข้อความจากคำตอบแบบไม่สตรีม — โครงสร้างต่างกันคนละแบบ
 function firstText(msg: any): string {
-  for (const b of msg.content ?? []) {
-    if (b.type === 'text') return b.text;
+  if (Array.isArray(msg.content)) {                    // Anthropic
+    for (const b of msg.content) if (b.type === 'text') return b.text;
+    return '';
   }
-  return '';
+  return msg.choices?.[0]?.message?.content ?? '';     // OpenAI-compatible
+}
+
+// อ่านสตรีมของทั้งสองรูปแบบ
+function parseDelta(ev: any): { text?: string; stop?: string; usage?: any } {
+  if (IS_CLAUDE) {
+    if (ev.type === 'content_block_delta' && ev.delta?.type === 'text_delta') return { text: ev.delta.text };
+    if (ev.type === 'message_delta') return { stop: ev.delta?.stop_reason, usage: ev.usage };
+    if (ev.type === 'message_start')  return { usage: ev.message?.usage };
+    return {};
+  }
+  const ch = ev.choices?.[0];
+  return {
+    text:  ch?.delta?.content ?? undefined,
+    stop:  ch?.finish_reason === 'length' ? 'max_tokens' : (ch?.finish_reason ?? undefined),
+    usage: ev.usage,
+  };
 }
 
 
@@ -130,35 +213,31 @@ ${catalog}
 - needs_kb = false เฉพาะเมื่อเป็นการทักทาย ขอบคุณ หรือถามว่าระบบทำอะไรได้
 - complexity: simple = ถามนิยาม/สูตร, moderate = อธิบายหลักการ, complex = วินิจฉัยปัญหา/วิเคราะห์ข้อมูล`;
 
-  const res = await anthropic({
+  const res = await callLLM({
     model:      MODEL_ROUTER,
-    max_tokens: 1024,
-    system:     [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }],
+    maxTokens:  1024,
+    system,
+    cacheSystem: true,
     messages: [{
       role: 'user',
       content: `${convo ? `บทสนทนาก่อนหน้า:\n${convo}\n\n` : ''}คำถามล่าสุด: ${question}`,
     }],
-    output_config: {
-      format: {
-        type: 'json_schema',
-        schema: {
-          type: 'object',
-          properties: {
-            intent:     { type: 'string', description: 'สรุปเจตนาผู้ใช้ 1 ประโยค' },
-            modules:    { type: 'array', items: { type: 'string' } },
-            department: { type: ['string', 'null'] },
-            process:    { type: ['string', 'null'] },
-            equipment:  { type: ['string', 'null'] },
-            doc_types:  { type: 'array', items: { type: 'string' } },
-            queries:    { type: 'array', items: { type: 'string' } },
-            complexity: { type: 'string', enum: ['simple', 'moderate', 'complex'] },
-            needs_kb:   { type: 'boolean' },
-          },
-          required: ['intent', 'modules', 'queries', 'complexity', 'needs_kb',
-                     'department', 'process', 'equipment', 'doc_types'],
-          additionalProperties: false,
-        },
+    schema: {
+      type: 'object',
+      properties: {
+        intent:     { type: 'string', description: 'สรุปเจตนาผู้ใช้ 1 ประโยค' },
+        modules:    { type: 'array', items: { type: 'string' } },
+        department: { type: ['string', 'null'] },
+        process:    { type: ['string', 'null'] },
+        equipment:  { type: ['string', 'null'] },
+        doc_types:  { type: 'array', items: { type: 'string' } },
+        queries:    { type: 'array', items: { type: 'string' } },
+        complexity: { type: 'string', enum: ['simple', 'moderate', 'complex'] },
+        needs_kb:   { type: 'boolean' },
       },
+      required: ['intent', 'modules', 'queries', 'complexity', 'needs_kb',
+                 'department', 'process', 'equipment', 'doc_types'],
+      additionalProperties: false,
     },
   });
 
@@ -235,38 +314,33 @@ async function rerank(question: string, chunks: Chunk[]): Promise<Chunk[]> {
     .join('\n\n---\n\n');
 
   try {
-    const res = await anthropic({
-      model:      MODEL_RERANK,
-      max_tokens: 512,
+    const res = await callLLM({
+      model:     MODEL_RERANK,
+      maxTokens: 512,
       system: 'คุณคือตัวจัดอันดับความเกี่ยวข้องของเอกสาร ให้คะแนน 0-10 ว่าท่อนเอกสารนั้น' +
               'ช่วยตอบคำถามได้จริงแค่ไหน เอกสารที่พูดถึงหัวข้อเดียวกันแต่ไม่ตอบคำถามให้คะแนนต่ำ',
       messages: [{
         role: 'user',
         content: `คำถาม: ${question}\n\nท่อนเอกสาร:\n\n${listing}`,
       }],
-      output_config: {
-        format: {
-          type: 'json_schema',
-          schema: {
-            type: 'object',
-            properties: {
-              scores: {
-                type: 'array',
-                items: {
-                  type: 'object',
-                  properties: {
-                    index: { type: 'integer' },
-                    score: { type: 'integer' },
-                  },
-                  required: ['index', 'score'],
-                  additionalProperties: false,
-                },
+      schema: {
+        type: 'object',
+        properties: {
+          scores: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                index: { type: 'integer' },
+                score: { type: 'integer' },
               },
+              required: ['index', 'score'],
+              additionalProperties: false,
             },
-            required: ['scores'],
-            additionalProperties: false,
           },
         },
+        required: ['scores'],
+        additionalProperties: false,
       },
     });
 
@@ -370,10 +444,15 @@ Deno.serve(async (req) => {
         status: 400, headers: { ...CORS, 'content-type': 'application/json' },
       });
     }
-    if (!ANTHROPIC_KEY) {
-      return new Response(JSON.stringify({ error: 'ยังไม่ได้ตั้ง ANTHROPIC_API_KEY ใน Edge Function secrets' }), {
-        status: 500, headers: { ...CORS, 'content-type': 'application/json' },
-      });
+    if (!LLM_KEY) {
+      return new Response(JSON.stringify({
+        error: `ยังไม่ได้ตั้ง LLM_API_KEY ใน Edge Function secrets (ผู้ให้บริการที่เลือก: ${PROVIDER})`,
+      }), { status: 500, headers: { ...CORS, 'content-type': 'application/json' } });
+    }
+    if (!LLM_BASE) {
+      return new Response(JSON.stringify({
+        error: `ไม่รู้จักผู้ให้บริการ "${PROVIDER}" — ตั้ง LLM_BASE_URL เองถ้าใช้เจ้าอื่น`,
+      }), { status: 500, headers: { ...CORS, 'content-type': 'application/json' } });
     }
 
     // โหลดทะเบียนโมดูล
@@ -472,22 +551,20 @@ Deno.serve(async (req) => {
         let usage: any = {};
 
         try {
-          const res = await anthropic({
-            model:      MODEL_ANSWER,
-            max_tokens: 8000,
-            stream:     true,
-            // Opus 5: thinking เปิดโดยปริยาย ควบคุมความลึกด้วย effort
-            output_config: { effort: router.complexity === 'complex' ? 'high' : 'medium' },
-            // safety classifier ปฏิเสธ -> ให้ระบบส่งต่อโมเดลสำรองเองในคอลเดียว
-            fallbacks: 'default',
-            system: [
-              { type: 'text', text: system, cache_control: { type: 'ephemeral' } },
-            ],
+          const res = await callLLM({
+            model:     MODEL_ANSWER,
+            maxTokens: 8000,
+            stream:    true,
+            system,
+            cacheSystem: true,
+            // Claude: thinking เปิดโดยปริยาย คุมความลึกด้วย effort
+            // เจ้าอื่นไม่มีพารามิเตอร์นี้ callLLM จะข้ามให้เอง
+            effort: router.complexity === 'complex' ? 'high' : 'medium',
             messages: [
               ...history.slice(-6).map((h: any) => ({ role: h.role, content: h.content })),
               { role: 'user', content: userContent },
             ],
-          }, ['server-side-fallback-2026-07-01']);
+          });
 
           const reader = res.body!.getReader();
           const dec = new TextDecoder();
@@ -509,16 +586,13 @@ Deno.serve(async (req) => {
               let ev: any;
               try { ev = JSON.parse(payload); } catch { continue; }
 
-              if (ev.type === 'content_block_delta' && ev.delta?.type === 'text_delta') {
-                answer += ev.delta.text;
-                send('delta', { text: ev.delta.text });
-              } else if (ev.type === 'message_delta') {
-                if (ev.usage) usage = { ...usage, ...ev.usage };
-                if (ev.delta?.stop_reason === 'refusal') {
-                  send('delta', { text: '\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_' });
-                }
-              } else if (ev.type === 'message_start') {
-                usage = { ...usage, ...(ev.message?.usage ?? {}) };
+              const d = parseDelta(ev);
+              if (d.text) { answer += d.text; send('delta', { text: d.text }); }
+              if (d.usage) usage = { ...usage, ...d.usage };
+              if (d.stop === 'refusal') {
+                send('delta', { text: '\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_' });
+              } else if (d.stop === 'max_tokens') {
+                send('delta', { text: '\n\n_(คำตอบยาวเกินโควตา ถูกตัดกลางคัน)_' });
               }
             }
           }
