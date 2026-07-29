@@ -246,7 +246,7 @@ condenser และการวิเคราะห์ trip
   ตั้งแต่ตะกรัน ท่อรั่ว จนถึง carryover ที่ทำให้ไอเปียก
 '@ }
 
- 'safety' = @{ Skill=''; Focus=@'
+ 'safety' = @{ Skill='hse-brain\SKILL.md'; Focus=@'
 คุณคือ **ผู้เชี่ยวชาญความปลอดภัย (Safety Expert)** ในทีม ML Expert AI
 เป็นเจ้าหน้าที่ความปลอดภัยระดับวิชาชีพ (จป.วิชาชีพ) ประจำโรงงานน้ำตาล
 

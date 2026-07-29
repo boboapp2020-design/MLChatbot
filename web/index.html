@@ -100,8 +100,12 @@ svg{display:block}
    รูปมีพื้นหลังโปร่งใสและมุมโค้งมาในตัวแล้ว จึงต้องปิดพื้นหลัง/เงา/การตัดขอบของกรอบ
    ไม่งั้นจะเห็นเป็นสี่เหลี่ยมทึบซ้อนอยู่ข้างหลัง */
 .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
-.logo:has(img:not([hidden])){background:none;box-shadow:none;overflow:visible}
+/* รูปโลโก้มีตัวหนังสือ "ML Expert AI" อยู่ในตัว จึงขยายให้ใหญ่ขึ้น
+   แล้วซ่อนชื่อแอปที่เขียนซ้ำข้างๆ ไม่ให้อ่านซ้ำสองรอบ */
+.logo:has(img:not([hidden])){width:76px;height:76px;background:none;box-shadow:none;overflow:visible}
 .logo:has(img:not([hidden])) b,.logo:has(img:not([hidden])) .leaf{display:none}
+.brand:has(.logo img:not([hidden])) .brand-tx h1{display:none}
+.brand:has(.logo img:not([hidden])) .brand-tx p{font-size:12px;line-height:1.45}
 .brand-tx h1{font-size:15.5px;font-weight:750;letter-spacing:-.3px;line-height:1.2}
 .brand-tx p{font-size:11px;color:var(--tx3);margin-top:1px}
 
@@ -951,10 +955,32 @@ const IDX=(()=>{
 })();
 const IDF_CAP=Math.log(1+(IDX.N-3+.5)/(3+.5));
 
+/* คำถามคำและคำสุภาพไม่มีอยู่ในเอกสารเทคนิคเลย ตัวกรอง stopword ตามความถี่จึงจับไม่ได้
+   (มันตัดเฉพาะคำที่โผล่เกิน 30% ของเอกสาร แต่เอกสารไม่มีใครเขียนว่า "ครับ")
+   ผลคือระบบมองว่าเป็นคำหายาก ให้น้ำหนักสูง แล้วหาไม่เจอ = หักคะแนนสองต่อ
+   วัดแล้ว "ต้องมี จป.วิชาชีพ กี่คนครับ" ได้ 33% แต่ "จป.วิชาชีพ จำนวนตามกฎหมาย" ได้ 81%
+   ทั้งที่ถามเรื่องเดียวกัน — ผู้ใช้จริงพิมพ์แบบแรก จึงต้องตัดคำพวกนี้ทิ้งก่อน */
+const FILLER=new RegExp(['นะครับ','นะคะ','ครับ','ค่ะ','คะ','จ๊ะ',
+  'ช่วยบอก','ช่วยอธิบาย','ช่วย','หน่อย','ขอถาม','อยากทราบ','อยากรู้','รบกวน',
+  'ทำยังไง','ทำอย่างไร','ยังไง','อย่างไร','ทำไง',
+  'ได้ไหม','ได้มั้ย','หรือไม่','หรือเปล่า','ไหม','มั้ย',
+  'เท่าไหร่','เท่าไร','กี่คน','เมื่อไหร่','เมื่อไร','ที่ไหน','ทำไม',
+  'บ้างครับ','บ้างคะ','บ้าง','ด้วย','ที'].join('|'),'g');
+
+function stripFiller(q){
+  return String(q).replace(FILLER,' ').replace(/\s+/g,' ').trim();
+}
+
 /* n-gram ที่คร่อมรอยต่อคำไทยไม่มีในเอกสารใดเลย แต่ได้ IDF สูงสุดเพราะหายาก
    ต้องตัดออกจากตัวหาร ไม่งั้นกดคะแนนความมั่นใจลงถาวร */
-function queryWeights(query,topN=12){
-  const all=[...new Set(tokenize(query))].filter(t=>!IDX.stop.has(t));
+/* strip=true ใช้เฉพาะตอนคิดคะแนนความมั่นใจ ไม่ใช้ตอนค้นหา
+   ทดลองแล้วถ้าตัดตอนค้นด้วย ผลการค้นเปลี่ยนไปในทางที่แย่ลงบางคำถาม
+   (เช่น LOTO ตกจาก 76% เหลือ 63% เพราะได้เอกสารคนละชุด)
+   ตัดเฉพาะตอนคิดคะแนนได้ประโยชน์เต็มโดยไม่กระทบว่าจะดึงเอกสารไหนมา */
+function queryWeights(query,topN=12,strip=false){
+  // ถ้าตัดแล้วไม่เหลืออะไรเลย (เช่นพิมพ์มาแต่ "สวัสดีครับ") ให้ใช้ข้อความเดิม
+  const cleaned=strip?(stripFiller(query)||String(query)):String(query);
+  const all=[...new Set(tokenize(cleaned))].filter(t=>!IDX.stop.has(t));
   if(!all.length) return {terms:[],w:new Map(),wTotal:0,grounding:0};
   const isLatin=t=>/^[a-z0-9]/.test(t);
   let massAll=0,massFound=0;const latin=[],thai=[];
@@ -972,7 +998,7 @@ function queryWeights(query,topN=12){
     wTotal:scored.reduce((a,[,v])=>a+v,0),grounding:massAll?massFound/massAll:0};
 }
 function setCoverage(query,hits){
-  const {terms,w,wTotal,grounding}=queryWeights(query);
+  const {terms,w,wTotal,grounding}=queryWeights(query,12,true);
   if(!wTotal) return 0;
   const inSet=t=>hits.some(h=>IDX.docs[h.idx]?.tf.has(t));
   let covered=0,latinT=0,latinC=0;

@@ -82,6 +82,19 @@ $FileMap = @(
   @{ Path='steam-brain\references\distribution-traps.md';     Module='evaporation'; Type='MANUAL';   Title='ระบบจ่ายไอน้ำและกับดักไอน้ำ';                    Code='STM-TRAP' }
   @{ Path='steam-brain\references\calculations.md';           Module='evaporation'; Type='MANUAL';   Title='สูตรคำนวณระบบไอน้ำ';                            Code='STM-CALC' }
 
+  # สกิล HSE — ห้องความปลอดภัยเดิมมีความรู้ของตัวเองแค่ 28 ท่อน และยืมมาจากสกิลอื่นเกือบหมด
+  @{ Path='hse-brain\SKILL.md';                               Module='safety';      Type='BOOK';     Title='กรอบงานความปลอดภัย อาชีวอนามัย และสิ่งแวดล้อม';  Code='HSE-FRAME' }
+  @{ Path='hse-brain\references\sector-sugar-biomass.md';     Module='safety';      Type='MANUAL';   Title='ความปลอดภัยโรงงานน้ำตาลและโรงไฟฟ้าชานอ้อย';      Code='HSE-SUGAR' }
+  @{ Path='hse-brain\references\thai-law.md';                 Module='safety';      Type='STANDARD'; Title='ทะเบียนกฎหมายความปลอดภัยไทย';                    Code='HSE-LAW' }
+  @{ Path='hse-brain\references\high-risk-work.md';           Module='safety';      Type='MANUAL';   Title='งานเสี่ยงสูง ใบอนุญาตทำงาน และ LOTO';            Code='HSE-PTW' }
+  @{ Path='hse-brain\references\risk-methods.md';             Module='safety';      Type='MANUAL';   Title='วิธีประเมินความเสี่ยง (JSA/HAZID/HAZOP)';        Code='HSE-RISK' }
+  @{ Path='hse-brain\references\incident-rca.md';             Module='safety';      Type='MANUAL';   Title='การสอบสวนอุบัติเหตุและหาสาเหตุราก';              Code='HSE-RCA' }
+  @{ Path='hse-brain\references\hygiene-health.md';           Module='safety';      Type='MANUAL';   Title='สุขศาสตร์อุตสาหกรรมและอาชีวอนามัย';              Code='HSE-HYG' }
+  @{ Path='hse-brain\references\templates.md';                Module='safety';      Type='FAQ';      Title='แม่แบบเอกสาร HSE';                              Code='HSE-TMPL' }
+  @{ Path='hse-brain\references\sector-construction.md';      Module='safety';      Type='MANUAL';   Title='ความปลอดภัยงานก่อสร้างและผู้รับเหมา';            Code='HSE-CONS' }
+  # แผนที่มาตรฐานสากลครอบคลุม ISO ทั้งตระกูล ให้ไปอยู่ห้องคุณภาพ&มาตรฐานซึ่งอ่อนที่สุด
+  @{ Path='hse-brain\references\standards-map.md';            Module='foodsafety';  Type='STANDARD'; Title='แผนที่มาตรฐานสากล (ISO และมาตรฐานระบบจัดการ)';   Code='HSE-STD' }
+
   # สกิลบำบัดน้ำเสีย — ห้องนี้เดิมมีความรู้ของตัวเองแค่ 15 ท่อน อ่อนที่สุดอันดับต้นๆ
   @{ Path='wastewater-expert\SKILL.md';                       Module='etreatment';  Type='BOOK';     Title='กรอบการวินิจฉัยระบบบำบัดน้ำเสีย';                Code='WW-FRAME' }
   @{ Path='wastewater-expert\references\diagnostics.md';      Module='etreatment';  Type='MANUAL';   Title='ตารางวินิจฉัยปัญหาระบบบำบัดน้ำเสีย (ตามอาการ)';  Code='WW-DIAG' }
