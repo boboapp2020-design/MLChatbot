@@ -1107,10 +1107,17 @@ function confidenceOf(hits,query,kw=1){
 /* ══════════════════════════════════════════════════════════════════
    MARKDOWN
    ══════════════════════════════════════════════════════════════════ */
+/* ตัวคั่นชั่วคราวสำหรับบล็อกโค้ด ต้องเป็นอักขระที่ไม่มีทางปรากฏในข้อความจริง
+   เดิมใช้ " เลข " (ช่องว่างขนาบตัวเลข) ซึ่งชนกับประโยคปกติเต็มๆ
+   "มาจาก 3 แหล่งหลัก" จึงกลายเป็น "มาจากundefinedแหล่งหลัก"
+   เพราะตอนคืนค่าไปหยิบ blocks[3] ที่ไม่มีอยู่จริง
+   ใช้อักขระเขต Private Use (U+E000) แทน ผู้ใช้พิมพ์ไม่ได้และโมเดลไม่สร้าง */
+const MD_MARK='';
 function md(src){
   const blocks=[];
   let s=esc(src).replace(/```(\w*)\n([\s\S]*?)```/g,(_,l,c)=>{
-    blocks.push(`<pre><code>${c.replace(/\n$/,'')}</code></pre>`);return `  ${blocks.length-1}  `});
+    blocks.push(`<pre><code>${c.replace(/\n$/,'')}</code></pre>`);
+    return `${MD_MARK}${blocks.length-1}${MD_MARK}`});
   s=s.replace(/`([^`\n]+)`/g,'<code>$1</code>')
      .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
      .replace(/(?<![\w*])\*([^*\n]+)\*(?![\w*])/g,'<em>$1</em>')
@@ -1150,7 +1157,7 @@ function md(src){
     closeList();out.push(`<p>${ln}</p>`);
   }
   closeList();closeTbl();
-  return out.join('\n').replace(/ (\d+) /g,(_,i)=>blocks[+i]);
+  return out.join('\n').replace(/(\d+)/g,(_,i)=>blocks[+i]??'');
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -1729,11 +1736,35 @@ async function askLocal(q,el){
   return {text:answer,meta};
 }
 
+/* ค่าที่ส่งเป็น HTTP header ต้องเป็น ASCII เท่านั้น
+   ถ้ามีอักขระไทยหรืออักขระพิเศษปนมาตอนคัดลอก fetch จะโยน
+   "String contains non ISO-8859-1 code point" ซึ่งอ่านแล้วไม่รู้เลยว่าต้องแก้ตรงไหน
+   จึงต้องดักตั้งแต่ต้นและบอกให้ชัดว่าเป็นที่ค่าไหน */
+const badChars = s => [...String(s)].filter(c=>c.charCodeAt(0)>126);
+function checkSupabaseCfg(){
+  // ตัด / ท้าย URL ให้เอง เป็นความผิดพลาดที่เกิดบ่อยและแก้ให้ได้ ไม่ต้องกวนผู้ใช้
+  const url=(CFG.url||'').trim().replace(/\/+$/,''), key=(CFG.anon||'').trim();
+  if(!url||!key) throw new Error('ยังไม่ได้ตั้งค่า Supabase — เปิดหน้าตั้งค่า');
+  const bk=badChars(key);
+  if(bk.length) throw new Error(
+    `Anon Key มีอักขระที่ใช้ไม่ได้ปนอยู่ ${bk.length} ตัว (เช่น "${bk[0]}")\n\n`+
+    `มักเกิดจากคัดลอกมาไม่ครบหรือติดตัวอักษรอื่นมาด้วย\n`+
+    `แก้: เปิดตั้งค่า → ลบค่าเดิมทั้งหมด → คัดลอก anon key ใหม่จาก Supabase → Settings → API Keys`);
+  const bu=badChars(url);
+  if(bu.length) throw new Error(`Project URL มีอักขระที่ใช้ไม่ได้ปนอยู่ (เช่น "${bu[0]}") — ใส่ใหม่อีกครั้ง`);
+  if(!/^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(url)) throw new Error(
+    `Project URL ผิดรูปแบบ: "${url}"\n\nต้องเป็นแบบ https://xxxxx.supabase.co (ไม่มี / ต่อท้าย ไม่มี path)`);
+  if(!/^ey[A-Za-z0-9_.-]+$/.test(key)) throw new Error(
+    'Anon Key ผิดรูปแบบ — ต้องขึ้นต้นด้วย "ey" และยาวหลายร้อยตัวอักษร\n\n'+
+    'ระวังคัดลอกผิดช่อง: ต้องใช้ anon public ไม่ใช่ service_role');
+  return {url,key};
+}
+
 async function askSupabase(q,el){
-  if(!CFG.url||!CFG.anon) throw new Error('ยังไม่ได้ตั้งค่า Supabase — เปิดหน้าตั้งค่า');
+  const {url:sbUrl,key:sbKey}=checkSupabaseCfg();
   const hist=room().slice(-7,-1).map(x=>({role:x.role,content:x.content.slice(0,4000)}));
-  const res=await fetch(`${CFG.url.replace(/\/$/,'')}/functions/v1/ask`,{
-    method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${CFG.anon}`},
+  const res=await fetch(`${sbUrl}/functions/v1/ask`,{
+    method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${sbKey}`},
     body:JSON.stringify({question:q,lang:CFG.lang,history:hist,module_hint:CFG.room,
       force_module:CFG.room})});   // ห้องนี้เลือกผู้เชี่ยวชาญไว้แล้ว ไม่ต้องให้ router เดาใหม่
   if(!res.ok) throw new Error(`Edge Function ${res.status} — ${(await res.text()).slice(0,260)}`);
@@ -1756,6 +1787,9 @@ async function askSupabase(q,el){
         $('#'+el.id+'-mt').textContent='Opus 5';
         bodySlot.innerHTML='<div class="prose"></div>';
       }else if(ev==='delta'){
+        // ถ้า event ไม่มีฟิลด์ text การบวกตรงๆ จะได้คำว่า "undefined"
+        // ไปแทรกกลางคำตอบ ซึ่งผู้ใช้เห็นแล้วงงว่ามาจากไหน (เจอมาแล้วจริง)
+        if(typeof d.text!=='string'){ console.warn('[ML] delta ไม่มีข้อความ:',d); continue }
         answer+=d.text;
         (bodySlot.querySelector('.prose')||bodySlot).innerHTML=md(answer)+'<span class="caret"></span>';
         scrollDown();
@@ -2076,7 +2110,19 @@ on('#btnSave','click',()=>{
   CFG.keys[provSel]=$('#cfgKey').value.trim();
   if($('#cfgModel').value) CFG.models[provSel]=$('#cfgModel').value;
   CFG.customBase=$('#cfgBase').value.trim();
-  CFG.url=$('#cfgUrl').value.trim();CFG.anon=$('#cfgAnon').value.trim();
+  // ลบช่องว่าง ขึ้นบรรทัดใหม่ และอักขระที่มองไม่เห็นซึ่งมักติดมาตอนคัดลอก
+  CFG.url =$('#cfgUrl') .value.replace(/[\s​-‍﻿]/g,'');
+  CFG.anon=$('#cfgAnon').value.replace(/[\s​-‍﻿]/g,'');
+
+  // ตรวจก่อนบันทึก จะได้รู้ตรงนี้เลย ไม่ต้องไปเจอ error ตอนถามคำถาม
+  if(CFG.mode==='supabase'){
+    try{ checkSupabaseCfg() }
+    catch(err){
+      const m=String(err.message||err);
+      alert('บันทึกไม่ได้\n\n'+m);
+      return;
+    }
+  }
   saveCfg();applyMode();$('#ov').classList.remove('on');toast('บันทึกแล้ว');
 });
 $$('input[name=mode]').forEach(r=>r.onchange=()=>{
