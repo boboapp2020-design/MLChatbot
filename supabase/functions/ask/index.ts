@@ -56,6 +56,7 @@ interface RouterResult {
   queries:     string[];
   complexity:  'simple' | 'moderate' | 'complex';
   needs_kb:    boolean;
+  in_scope:    boolean;
 }
 
 interface Chunk {
@@ -211,6 +212,11 @@ ${catalog}
   ใส่ศัพท์เทคนิคเฉพาะทางที่น่าจะปรากฏในเอกสาร (เช่น "imbibition % fiber", "pol % bagasse")
   ไม่ใช่แค่ทวนคำถามเดิม
 - needs_kb = false เฉพาะเมื่อเป็นการทักทาย ขอบคุณ หรือถามว่าระบบทำอะไรได้
+- in_scope = คำถามนี้เกี่ยวกับโรงงานน้ำตาลหรืองานในโรงงานหรือไม่
+  true  = เรื่องอ้อย กระบวนการผลิต เครื่องจักร คุณภาพ ความปลอดภัย สิ่งแวดล้อม
+          พลังงาน บุคลากร จัดซื้อ หรือการทักทาย/ถามความสามารถของระบบ
+  false = เรื่องอื่นทั้งหมด เช่น ทำอาหาร กีฬา ดวง หุ้น เขียนโปรแกรม แปลเพลง
+          ให้ตอบ false แม้คำถามจะสุภาพหรือดูไม่มีพิษภัย
 - complexity: simple = ถามนิยาม/สูตร, moderate = อธิบายหลักการ, complex = วินิจฉัยปัญหา/วิเคราะห์ข้อมูล`;
 
   const res = await callLLM({
@@ -234,8 +240,9 @@ ${catalog}
         queries:    { type: 'array', items: { type: 'string' } },
         complexity: { type: 'string', enum: ['simple', 'moderate', 'complex'] },
         needs_kb:   { type: 'boolean' },
+        in_scope:   { type: 'boolean' },
       },
-      required: ['intent', 'modules', 'queries', 'complexity', 'needs_kb',
+      required: ['intent', 'modules', 'queries', 'complexity', 'needs_kb', 'in_scope',
                  'department', 'process', 'equipment', 'doc_types'],
       additionalProperties: false,
     },
@@ -249,6 +256,8 @@ ${catalog}
   parsed.modules = (parsed.modules ?? []).filter((m) => valid.has(m));
   if (parsed.modules.length === 0) parsed.modules = ['dashboard'];
   if (!parsed.queries?.length) parsed.queries = [question];
+  // โมเดลเก่าหรือคำตอบที่ไม่มีฟิลด์นี้ ให้ถือว่าอยู่ในขอบเขต แล้วไปตกที่ด่านความมั่นใจแทน
+  if (typeof parsed.in_scope !== 'boolean') parsed.in_scope = true;
 
   return parsed;
 }
@@ -479,7 +488,12 @@ Deno.serve(async (req) => {
     }
     const tRetrieve = Date.now();
 
-    const confidence = router.needs_kb ? computeConfidence(chunks) : 1;
+    // นอกขอบเขต = ความมั่นใจศูนย์เสมอ ไม่ว่า router จะบอกว่าต้องใช้คลังหรือไม่
+    // เดิมถ้า needs_kb=false จะได้ 1 ทันทีแล้วไปตอบจากความรู้ทั่วไปโดยไม่มีเอกสาร
+    // ซึ่งขัดกับหลักการของระบบที่ต้องตอบจากคลังของโรงงานเท่านั้น
+    const confidence = !router.in_scope ? 0
+                     : router.needs_kb  ? computeConfidence(chunks)
+                     : 1;
     const primary    = modules.find((m: any) => m.id === router.modules[0]) as any;
 
     const citations = chunks.map((c, i) => ({
@@ -519,6 +533,19 @@ Deno.serve(async (req) => {
           retrieved: chunks.length,
           timing: { router_ms: tRouter - t0, retrieval_ms: tRetrieve - tRouter },
         });
+
+        // คำถามนอกขอบเขตโรงงาน — ปฏิเสธตั้งแต่ต้น ไม่เรียก LLM เลย
+        // ประหยัดค่า API ด้วย เพราะไม่ต้องส่งอะไรไปให้โมเดลตอบ
+        if (!router.in_scope) {
+          send('delta', { text:
+            'คำถามนี้อยู่นอกขอบเขตของระบบครับ\n\n' +
+            'ML Expert AI ตอบเฉพาะเรื่องที่เกี่ยวกับโรงงานน้ำตาล — อ้อย กระบวนการผลิต ' +
+            'เครื่องจักร คุณภาพ ความปลอดภัย สิ่งแวดล้อม พลังงาน และงานสนับสนุน ' +
+            'โดยอ้างอิงจากเอกสารในคลังความรู้ของโรงงานเท่านั้น' });
+          send('done', { out_of_scope: true, latency_ms: Date.now() - t0 });
+          controller.close();
+          return;
+        }
 
         // หลักฐานไม่พอ — ตอบตามกติกา ไม่เรียก LLM ให้เดา
         if (router.needs_kb && confidence < MIN_CONFIDENCE) {
