@@ -1779,7 +1779,9 @@ async function askSupabase(q,el){
       force_module:CFG.room})});   // ห้องนี้เลือกผู้เชี่ยวชาญไว้แล้ว ไม่ต้องให้ router เดาใหม่
   if(!res.ok) throw new Error(`Edge Function ${res.status} — ${(await res.text()).slice(0,260)}`);
   const bodySlot=el.querySelector('.slot-body');
-  let answer='',meta={module:CFG.room,model:'Opus 5'};
+  // อย่าเขียนชื่อโมเดลตายตัว — ฝั่งเซิร์ฟเวอร์เปลี่ยนผู้ให้บริการได้
+  // เคยเขียน 'Opus 5' ไว้แล้วป้ายแสดงผิดเมื่อสลับไปใช้ Gemini
+  let answer='',meta={module:CFG.room,model:'Supabase'};
   const reader=res.body.getReader(),dec=new TextDecoder();let buf='';
   while(true){
     const {done,value}=await reader.read();if(done) break;
@@ -1790,11 +1792,13 @@ async function askSupabase(q,el){
       if(!ev||!dt) continue;
       let d;try{d=JSON.parse(dt)}catch{continue}
       if(ev==='meta'){
+        // ใช้ชื่อโมเดลที่เซิร์ฟเวอร์บอกมาจริง ถ้าเซิร์ฟเวอร์รุ่นเก่าไม่ส่งมาก็ใช้ค่าเดิม
         meta={...meta,citations:d.citations,confidence:d.confidence,
+          model:d.model||meta.model,
           trace:{module:CFG.room,scope:'pgvector + full-text (hybrid)',queries:d.router?.queries,
             retrieved:d.retrieved,sources:d.citations?new Set(d.citations.map(c=>c.doc_code)).size:0}};
         el.querySelector('.slot-trace').innerHTML=traceHTML(meta.trace);
-        $('#'+el.id+'-mt').textContent='Opus 5';
+        $('#'+el.id+'-mt').textContent=meta.model;
         bodySlot.innerHTML='<div class="prose"></div>';
       }else if(ev==='delta'){
         // ถ้า event ไม่มีฟิลด์ text การบวกตรงๆ จะได้คำว่า "undefined"

@@ -531,6 +531,10 @@ Deno.serve(async (req) => {
           citations,
           confidence,
           retrieved: chunks.length,
+          // บอกว่าใช้โมเดลอะไรตอบจริง ฝั่งหน้าเว็บเคยเขียนตายตัวว่า Opus 5
+          // พอเปลี่ยนผู้ให้บริการเป็น Gemini ป้ายจึงแสดงผิด
+          model:    MODEL_ANSWER,
+          provider: PROVIDER,
           timing: { router_ms: tRouter - t0, retrieval_ms: tRetrieve - tRouter },
         });
 
