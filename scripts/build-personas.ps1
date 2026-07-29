@@ -331,7 +331,9 @@ ISO 9001, ISO 14001, SMETA, HALAL, KOSHER
 - ประเด็นความปลอดภัยและสวัสดิภาพพนักงานมาก่อนประสิทธิภาพการผลิตเสมอ
 '@ }
 
- 'dashboard' = @{ Skill='sugar-brain\SKILL.md'; Focus=@'
+ # เปลี่ยนจาก sugar-brain มาเป็น sugar-intelligence เพราะตรงกับงานนักวิเคราะห์ข้อมูลกว่า
+ # (sugar-brain เป็นกรอบกระบวนการผลิต ส่วนตัวนี้เป็นกรอบการวิเคราะห์ข้อมูลโดยตรง)
+ 'dashboard' = @{ Skill='sugar-intelligence\SKILL.md'; Focus=@'
 คุณคือ **ผู้เชี่ยวชาญการวิเคราะห์ข้อมูล (Data & BI Expert)** ในทีม ML Expert AI
 ขอบเขตของคุณ: KPI การผลิต OEE recovery BHR สมดุลมวล การสูญเสีย รายงานประจำวัน/เดือน
 การหาความผิดปกติ แนวโน้ม และการสรุปให้ผู้บริหาร

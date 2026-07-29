@@ -82,6 +82,16 @@ $FileMap = @(
   @{ Path='steam-brain\references\distribution-traps.md';     Module='evaporation'; Type='MANUAL';   Title='ระบบจ่ายไอน้ำและกับดักไอน้ำ';                    Code='STM-TRAP' }
   @{ Path='steam-brain\references\calculations.md';           Module='evaporation'; Type='MANUAL';   Title='สูตรคำนวณระบบไอน้ำ';                            Code='STM-CALC' }
 
+  # สกิลนักวิเคราะห์ข้อมูล — ห้องนี้เดิมมีแค่ 57 ท่อน และไม่มีนิยาม KPI ที่ใช้อ้างอิงได้
+  @{ Path='sugar-intelligence\SKILL.md';                      Module='dashboard';   Type='BOOK';     Title='กรอบการวิเคราะห์ข้อมูลโรงงานน้ำตาล';             Code='SI-FRAME' }
+  @{ Path='sugar-intelligence\references\kpi.md';             Module='dashboard';   Type='STANDARD'; Title='KPI โรงงานน้ำตาล — นิยาม เป้าหมาย และการตีความ';  Code='SI-KPI' }
+  @{ Path='sugar-intelligence\references\rootcause.md';       Module='dashboard';   Type='MANUAL';   Title='การหาสาเหตุรากด้วยข้อมูล (สมดุลซูโครส/5 Why)';   Code='SI-RCA' }
+  @{ Path='sugar-intelligence\references\statistics.md';      Module='dashboard';   Type='MANUAL';   Title='สถิติอุตสาหกรรมและแผนภูมิควบคุม (SPC)';          Code='SI-STAT' }
+  @{ Path='sugar-intelligence\references\plausibility.md';    Module='dashboard';   Type='MANUAL';   Title='ตรวจความสมเหตุสมผลของข้อมูลก่อนวิเคราะห์';       Code='SI-CHECK' }
+  @{ Path='sugar-intelligence\references\economics.md';       Module='dashboard';   Type='MANUAL';   Title='การตีมูลค่าเป็นเงินและจัดลำดับความสำคัญ';        Code='SI-ECON' }
+  @{ Path='sugar-intelligence\references\datasources.md';     Module='dashboard';   Type='MANUAL';   Title='การอ่านข้อมูลจากระบบต่างๆ ในโรงงาน';             Code='SI-DATA' }
+  @{ Path='sugar-intelligence\references\ml.md';              Module='dashboard';   Type='MANUAL';   Title='Machine Learning กับข้อมูลโรงงานน้ำตาล';         Code='SI-ML' }
+
   # สกิล HSE — ห้องความปลอดภัยเดิมมีความรู้ของตัวเองแค่ 28 ท่อน และยืมมาจากสกิลอื่นเกือบหมด
   @{ Path='hse-brain\SKILL.md';                               Module='safety';      Type='BOOK';     Title='กรอบงานความปลอดภัย อาชีวอนามัย และสิ่งแวดล้อม';  Code='HSE-FRAME' }
   @{ Path='hse-brain\references\sector-sugar-biomass.md';     Module='safety';      Type='MANUAL';   Title='ความปลอดภัยโรงงานน้ำตาลและโรงไฟฟ้าชานอ้อย';      Code='HSE-SUGAR' }
@@ -385,6 +395,12 @@ function Test-NoiseChunk {
   if ($Head -match '^\s*(สารบัญ|Table of Contents|Contents)\b') { return $true }
   # สารบัญแบบ Markdown ที่ไม่ได้ตั้งหัวข้อว่าสารบัญ — ดูจากลิงก์ข้ามหัวข้อ
   if (([regex]::Matches($Text,'\]\(#')).Count -ge 4) { return $true }
+
+  # ตารางบอกว่า "ไฟล์ไหนเปิดอ่านเมื่อไร" เป็นคำสั่งนำทางสำหรับตัว AI เอง
+  # ไม่ใช่ความรู้ของโรงงาน แต่อัดชื่อหัวข้อไว้แน่นจนไปแย่งอันดับเอกสารจริง
+  # (เจอใน sugar-intelligence ขึ้นอันดับ 1 ของคำถามเรื่องอ่านข้อมูลจาก SCADA)
+  if (([regex]::Matches($Text,'references[/\\][a-z_-]+\.md')).Count -ge 3) { return $true }
+  if ($Head -match '^\s*(ไฟล์ประกอบ|ไฟล์อ้างอิง|แผนที่ไฟล์|Knowledge Base|ไฟล์อ้างอิงในสกิลนี้)') { return $true }
 
   # ดัชนีท้ายเล่ม: "VLC sugar 364,483-485,489" -> ตัวเลขหนาแน่นผิดปกติ
   $digits = ([regex]::Matches($Text,'\d')).Count
