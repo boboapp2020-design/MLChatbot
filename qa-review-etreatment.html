@@ -1,0 +1,510 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ตรวจร่างคำถาม-คำตอบ · ระบบบำบัดน้ำ</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f7fc;--card:#fff;--soft:#f7f9fd;--raised:#eef2f9;--line:#e3e9f4;--line2:#cfd9ea;
+ --tx:#0f1b2d;--tx2:#44546e;--tx3:#617087;--ac:#2563eb;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;
+ --mono:ui-monospace,"Cascadia Mono",Consolas,monospace;--sh:0 10px 30px -18px rgba(20,40,80,.4)}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0f1a;--card:#141c2b;--soft:#18202f;--raised:#1d2839;
+ --line:rgba(150,175,215,.14);--line2:rgba(150,175,215,.26);--tx:#eef2fa;--tx2:#b3c0d4;--tx3:#8593ab;
+ --ac:#6294ff;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--sh:0 10px 30px -14px rgba(0,0,0,.6)}}
+body{font-family:"Segoe UI Variable Text","Segoe UI",system-ui,"Noto Sans Thai",sans-serif;
+ background:var(--bg);color:var(--tx);line-height:1.65;padding:22px 16px 80px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto}
+h1{font-size:23px;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.sub{color:var(--tx3);font-size:13px;margin-top:4px}
+.note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--warn);
+ border-radius:11px;padding:13px 16px;font-size:12.8px;color:var(--tx2);margin:16px 0}
+.note b{color:var(--tx)}
+
+.bar{position:sticky;top:0;z-index:9;background:var(--bg);padding:12px 0;margin:14px 0 8px;
+ border-bottom:1px solid var(--line)}
+.tally{display:flex;gap:8px;flex-wrap:wrap;font-size:12.5px;font-weight:650}
+.tally span{padding:6px 12px;border-radius:9px;background:var(--card);border:1px solid var(--line)}
+.tools{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
+.btn{font-family:inherit;font-size:12.5px;font-weight:650;padding:8px 14px;border-radius:9px;
+ border:1px solid var(--line2);background:var(--card);color:var(--tx2);cursor:pointer}
+.btn:hover{border-color:var(--ac);color:var(--ac)}
+.btn.p{background:var(--ac);color:#fff;border-color:transparent}
+
+h2{font-size:15px;font-weight:750;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h2 em{font-style:normal;font-size:12px;font-weight:600;color:var(--tx3)}
+
+.qa{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px;
+ margin-bottom:11px;box-shadow:var(--sh)}
+.qa.ok{border-color:color-mix(in srgb,var(--ok) 50%,transparent)}
+.qa.edit{border-color:color-mix(in srgb,var(--warn) 55%,transparent)}
+.qa.drop{border-color:color-mix(in srgb,var(--bad) 45%,transparent);opacity:.62}
+.qh{display:flex;gap:10px;align-items:flex-start}
+.num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--tx3);
+ background:var(--raised);padding:2px 7px;border-radius:6px;flex:none;margin-top:2px}
+.qt{flex:1;font-size:14.5px;font-weight:700;line-height:1.45}
+.ans{font-size:13.2px;color:var(--tx2);margin:10px 0 0;padding-left:2px}
+.ans p{margin:7px 0}
+.ans ul,.ans ol{margin:7px 0 7px 20px}
+.ans li{margin:3px 0}
+.ans table{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.2px;display:block;overflow-x:auto}
+.ans th,.ans td{border:1px solid var(--line);padding:5px 9px;text-align:left;white-space:nowrap}
+.ans th{background:var(--raised);font-weight:700}
+.ans code{font-family:var(--mono);font-size:.9em;background:var(--raised);padding:1px 5px;border-radius:4px}
+.ans strong{color:var(--tx)}
+
+.src{font-size:11.3px;color:var(--tx3);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.src b{font-family:var(--mono);color:var(--ac)}
+.flag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px;margin-left:6px}
+.flag.gen{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.flag.other{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+
+.vote{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap}
+.vote button{font-family:inherit;font-size:12px;font-weight:650;padding:6px 13px;border-radius:8px;
+ border:1px solid var(--line2);background:var(--soft);color:var(--tx2);cursor:pointer}
+.vote button.on[data-v=ok]{background:var(--ok);color:#fff;border-color:transparent}
+.vote button.on[data-v=edit]{background:var(--warn);color:#fff;border-color:transparent}
+.vote button.on[data-v=drop]{background:var(--bad);color:#fff;border-color:transparent}
+.vote input{flex:1;min-width:190px;font-family:inherit;font-size:12.3px;padding:6px 11px;
+ border-radius:8px;border:1px solid var(--line);background:var(--soft);color:var(--tx);outline:none}
+.vote input:focus{border-color:var(--ac)}
+
+footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--tx3);line-height:1.8}
+@media(max-width:640px){body{padding:16px 12px 70px}h1{font-size:19px}.qt{font-size:13.5px}}
+</style>
+
+<div class="wrap">
+<h1>ตรวจร่างคำถาม-คำตอบ — ระบบบำบัดน้ำ</h1>
+<div class="sub">25 ข้อ ร่างจากคลังความรู้จริง · ทุกข้อมีเอกสารอ้างอิงกำกับ</div>
+
+<div class="note">
+<b>วิธีใช้</b> — อ่านแล้วกดปุ่มตัดสินแต่ละข้อ ถ้าเลือก "ต้องแก้" ให้พิมพ์สั้นๆ ว่าแก้อะไร
+เสร็จแล้วกด <b>คัดลอกผลสรุป</b> แล้ววางกลับมาในแชท ผมจะเอาไปปรับวิธีร่างสำหรับห้องที่เหลือ<br><br>
+<b>⚠️ จุดที่ต้องตรวจหนักที่สุดคือตัวเลข</b> — ป้าย <span class="flag gen">ค่าทั่วไป</span>
+คือค่าจากตำรา ไม่ใช่ของโรงงานคุณ · ป้าย <span class="flag other">โรงงานอื่น</span>
+คือค่าจากโรงงานตัวอย่างในเอกสาร (มิตรกาฬสินธุ์) ซึ่งอาจต่างจากที่คุณใช้
+</div>
+
+<div class="bar">
+  <div class="tally">
+    <span id="tOk" style="color:var(--ok)">ใช้ได้ 0</span>
+    <span id="tEdit" style="color:var(--warn)">ต้องแก้ 0</span>
+    <span id="tDrop" style="color:var(--bad)">ทิ้ง 0</span>
+    <span id="tLeft">ยังไม่ตัดสิน 25</span>
+  </div>
+  <div class="tools">
+    <button class="btn p" id="copy">คัดลอกผลสรุป</button>
+    <button class="btn" onclick="window.print()">พิมพ์ / PDF</button>
+    <button class="btn" id="reset">ล้างที่เลือก</button>
+  </div>
+</div>
+
+<div id="out"></div>
+
+<footer>
+<b>สิ่งที่อยากรู้จากการตรวจครั้งนี้</b><br>
+1. กี่ข้อใช้ได้เลย · กี่ข้อต้องแก้ตัวเลข · กี่ข้อทิ้ง<br>
+2. คำถามที่พนักงานถามจริงบ่อยๆ แต่ไม่มีใน 25 ข้อนี้ มีอะไรบ้าง<br>
+3. ความยาวคำตอบพอดีไหม สั้นไป/ยาวไป<br><br>
+สิ่งที่เลือกไว้เก็บในเบราว์เซอร์เครื่องนี้ ปิดแล้วเปิดใหม่ไม่หาย
+</footer>
+</div>
+
+<script>
+const CATS=[
+ ['มาตรฐานและกฎหมาย','สิ่งที่ต้องรู้เพื่อไม่ให้ผิดกฎหมาย'],
+ ['ปัญหาหน้างานที่พบบ่อย','อาการที่คนเดินระบบเห็นแล้วต้องแก้'],
+ ['ฤดูหีบและนอกฤดู','ปัญหาเฉพาะของโรงงานน้ำตาลที่อุตสาหกรรมอื่นไม่มี'],
+ ['การคำนวณและค่าควบคุม','สูตรและเกณฑ์ที่ใช้ประจำ'],
+ ['แหล่งน้ำเสียและการจัดการต้นทาง','แก้ที่ต้นทางถูกกว่าขยายบ่อ']
+];
+
+const QA=[
+// ── 1. มาตรฐานและกฎหมาย ──────────────────────────────────
+{c:0,q:'น้ำทิ้งโรงงานน้ำตาลต้องมีค่า BOD ไม่เกินเท่าไร',
+ a:`<p><strong>ไม่เกิน 20 mg/L</strong> ตามประกาศกระทรวงอุตสาหกรรม พ.ศ. 2560 ข้อ 5.6</p>
+<p>สิ่งที่ต้องเข้าใจคู่กัน: น้ำเสียโรงงานน้ำตาลดิบก่อนเข้าระบบมี BOD ระดับ
+<strong>หลักพัน mg/L</strong> การจะออกที่ 20 mg/L แปลว่าระบบต้องกำจัดได้
+<strong>เกิน 98–99%</strong> ไม่ใช่ระบบที่ออกแบบมาพอผ่านวันตรวจ</p>
+<p><strong>ห้ามอ้างค่าเก่า</strong> ประกาศ พ.ศ. 2539 ที่เคยให้ BOD 60 · SS 150 · COD 400
+<strong>ยกเลิกไปแล้ว</strong></p>`,
+ s:'WW-LAW ข้อ 5.6 และข้อ 2'},
+
+{c:0,q:'โรงงานน้ำตาลมีมาตรฐานน้ำทิ้งเฉพาะของตัวเองไหม',
+ a:`<p><strong>ไม่มี</strong> — ใช้มาตรฐานทั่วไปเหมือนโรงงานอุตสาหกรรมอื่น</p>
+<p>ประเภทที่มีมาตรฐานเฉพาะออกตามข้อ 9 มีแค่ ฟอก/ขัด/เคลือบสีหนังสัตว์ · ผลิตเยื่อและกระดาษ ·
+ผลิตน้ำจืดจากน้ำทะเล · และสถานประกอบการขนาดเล็กบางประเภท</p>
+<p>แปลว่าเราไม่มีข้อผ่อนปรนใดๆ ทั้งที่ลักษณะน้ำเสียยากกว่าหลายอุตสาหกรรม</p>`,
+ s:'WW-LAW ข้อ 2'},
+
+{c:0,q:'ค่ามาตรฐานน้ำทิ้งมีอะไรบ้าง ขอครบทุกตัว',
+ a:`<table><tr><th>พารามิเตอร์</th><th>ค่ามาตรฐาน</th></tr>
+<tr><td>pH</td><td>5.5 – 9.0</td></tr>
+<tr><td>อุณหภูมิ</td><td>≤ 40 °C</td></tr>
+<tr><td>สี</td><td>≤ 300 ADMI</td></tr>
+<tr><td>TDS</td><td>≤ 3,000 mg/L</td></tr>
+<tr><td>TSS</td><td>≤ 50 mg/L</td></tr>
+<tr><td>BOD</td><td>≤ 20 mg/L</td></tr>
+<tr><td>COD</td><td>≤ 120 mg/L</td></tr>
+<tr><td>ซัลไฟด์</td><td>≤ 1 mg/L</td></tr>
+<tr><td>น้ำมันและไขมัน</td><td>≤ 5 mg/L</td></tr>
+<tr><td>TKN</td><td>≤ 100 mg/L</td></tr></table>
+<p>โลหะหนัก: Zn ≤ 5.0 · Cu ≤ 2.0 · Mn ≤ 5.0 · Pb ≤ 0.2 · Cd ≤ 0.03 · Hg ≤ 0.005 mg/L</p>
+<p><strong>TDS เป็นตัวเดียวที่มีข้อผ่อนปรน</strong> — ถ้าแหล่งน้ำรับมี TDS เกิน 3,000 อยู่แล้ว
+น้ำทิ้งเกินค่าในแหล่งน้ำได้ไม่เกิน 5,000 mg/L</p>`,
+ s:'WW-LAW ตารางข้อ 5 และ 5.16'},
+
+{c:0,q:'เจือจางน้ำทิ้งให้ค่าผ่านมาตรฐานได้ไหม',
+ a:`<p><strong>ไม่ได้ ผิดกฎหมาย</strong> ประกาศระบุห้ามใช้วิธีเจือจาง (dilution) เพื่อให้ผ่านมาตรฐานไว้ชัดเจน</p>
+<p>การเก็บตัวอย่างเป็นแบบจ้วง (grab) ณ จุดระบายทุกจุดที่เป็นตัวแทนน้ำทิ้งของโรงงาน
+ไม่ใช่เฉพาะจุดสุดท้าย</p>`,
+ s:'WW-LAW เงื่อนไขสำคัญ'},
+
+{c:0,q:'น้ำหล่อเย็นที่ปนน้ำตาล ถือเป็นน้ำทิ้งด้วยไหม',
+ a:`<p><strong>ใช่</strong> ต้องเข้ามาตรฐานเดียวกันทุกข้อ</p>
+<p>จุดที่โรงงานน้ำตาลและโรงไฟฟ้ามักพลาดคือ <strong>อุณหภูมิ ≤ 40 °C</strong>
+เพราะน้ำจาก condenser และ cooling tower blowdown ออกมาร้อนกว่านั้น</p>
+<p>ทางแก้คือคุม sugar content ในน้ำหมุนเวียนให้ต่ำและระบายความร้อนก่อนปล่อย
+ไม่ใช่ปล่อยตรง</p>`,
+ s:'WW-LAW ข้อ 2 นัยเชิงปฏิบัติ'},
+
+// ── 2. ปัญหาหน้างาน ──────────────────────────────────────
+{c:1,q:'บ่อบำบัดส่งกลิ่นเหม็น ตรวจอะไรก่อน',
+ a:`<p><strong>ความปลอดภัยก่อน:</strong> กลิ่นไข่เน่าคือ H₂S ที่ความเข้มข้นสูงจะ<strong>ดมไม่ได้กลิ่น</strong>
+ห้ามลงไปใกล้ผิวน้ำหรือที่อับอากาศโดยไม่วัดก๊าซก่อน</p>
+<p><strong>แยกชนิดกลิ่นก่อน เพราะสาเหตุคนละเรื่อง</strong></p>
+<table><tr><th>กลิ่น</th><th>บ่งชี้</th><th>สาเหตุที่พบบ่อย</th></tr>
+<tr><td>เปรี้ยว/หมัก</td><td>VFA สะสม</td><td>โหลดน้ำตาลเกินกำลังบ่อไร้อากาศ</td></tr>
+<tr><td>ไข่เน่า</td><td>sulfate reduction</td><td>ซัลเฟตจาก boiler blowdown / น้ำดิบ</td></tr>
+<tr><td>เหม็นเน่า</td><td>ขาดออกซิเจน</td><td>เครื่องเติมอากาศเสีย / ตะกอนสะสมก้นบ่อ</td></tr>
+<tr><td>แอมโมเนีย</td><td>ย่อยโปรตีน</td><td>สงสัยน้ำเสียโรงครัวปนเข้ามา</td></tr></table>
+<p><strong>ลำดับตรวจ:</strong> VFA และ alkalinity → pH → sulfate ในน้ำเข้า → DO →
+นับเครื่องเติมอากาศที่เดินจริง → ระดับตะกอนก้นบ่อ</p>
+<p><strong>แก้ที่ราก:</strong> เกือบทุกครั้งคือมีน้ำตาลรั่วจากกระบวนการ ต้องหาให้เจอว่าจุดไหน</p>`,
+ s:'WW-DIAG A1'},
+
+{c:1,q:'ตะกอนไม่จม SVI สูง เกิดจากอะไร',
+ a:`<p><strong>นิยาม:</strong> SVI &gt; 150 mL/g ตะกอนจมช้า ไหลออกไปกับน้ำทิ้ง ทำให้ TSS และ BOD เกิน</p>
+<p><strong>สาเหตุเรียงตามความน่าจะเป็นในโรงงานน้ำตาล</strong></p>
+<ol>
+<li><strong>ขาดสารอาหาร N และ P</strong> — สาเหตุอันดับต้นๆ ที่คนมองข้ามมากที่สุด
+น้ำเสียน้ำตาลแทบไม่มี N และ P เลย ต้องตรวจว่า BOD:N:P ถึง 100:5:1 ไหม</li>
+<li><strong>F/M ต่ำเกินไป</strong> (&lt; 0.05) พบมากตอนเดินนอกฤดู</li>
+<li><strong>DO ต่ำ</strong> (&lt; 0.5 mg/L ต่อเนื่อง)</li>
+<li><strong>pH ต่ำ</strong> ส่งเสริมเชื้อรา</li>
+<li>น้ำตาลย่อยง่ายเข้าแบบ complete-mix โดยไม่มี selector</li>
+</ol>
+<p><strong>วิธีแยกแยะที่เร็วที่สุด:</strong> ส่องกล้อง 100x–400x ดูว่ามีเส้นใย (filament)
+ยื่นออกจาก floc ไหม — <strong>ถ้าไม่มีเส้นใยแต่ SVI สูง แปลว่าขาด N/P ชัดเจน</strong></p>`,
+ s:'WW-DIAG C1'},
+
+{c:1,q:'BOD ขาออกเกินมาตรฐาน ไล่หาสาเหตุยังไง',
+ a:`<p><strong>ไล่ย้อนจากปลายทางไปต้นทางเสมอ</strong> อย่าเริ่มที่การขยายบ่อ</p>
+<ol>
+<li><strong>ตรวจความน่าเชื่อถือของค่าก่อน</strong> — จุดเก็บตัวอย่างถูกไหม วิธีวิเคราะห์ถูกไหม
+เทียบกับ trend ย้อนหลัง ค่าเดี่ยวที่กระโดดมักเป็นปัญหาการวัด</li>
+<li><strong>ตะกอนหลุดไปกับน้ำทิ้งหรือเปล่า</strong> — ถ้า TSS เกินด้วย ปัญหาอยู่ที่การตกตะกอน
+ไม่ใช่การย่อยสลาย (ดูข้อ SVI)</li>
+<li><strong>ประสิทธิภาพบ่อ</strong> — HRT พอไหม เครื่องเติมอากาศเดินครบไหม MLSS เท่าไร</li>
+<li><strong>ภาระที่รับเข้า</strong> — BOD load ต้นทางเพิ่มขึ้นไหม</li>
+<li><strong>หาจุดรั่ว</strong> — โหลดที่เพิ่มมาจากไหนในกระบวนการ</li>
+</ol>
+<p><strong>แก้ที่ต้นทางมักถูกกว่าขยายบ่อหลายเท่า</strong></p>`,
+ s:'WW-DIAG D1 · WW-FRAME'},
+
+{c:1,q:'DO ต่ำทั้งที่เปิดเครื่องเติมอากาศเต็มที่แล้ว',
+ a:`<p>แปลว่าความต้องการออกซิเจนสูงกว่าที่เครื่องจ่ายได้ ให้ไล่ 3 ทาง</p>
+<ol>
+<li><strong>โหลดเข้าเกิน</strong> — BOD load เพิ่มขึ้นจริงหรือไม่ เทียบกับกำลังของเครื่อง</li>
+<li><strong>เครื่องจ่ายได้ไม่เต็มกำลัง</strong> — หัวกระจายอากาศอุดตัน สายพานหย่อน
+ใบพัดสึก ระดับน้ำสูงกว่าที่ออกแบบ</li>
+<li><strong>วัดผิด</strong> — หัววัด DO ไม่ได้สอบเทียบ หรือวัดจุดเดียวในบ่อที่ผสมไม่ทั่ว</li>
+</ol>
+<p><strong>ตรวจง่ายที่สุดก่อน:</strong> สอบเทียบหัววัด แล้ววัดหลายจุดในบ่อ
+ถ้าค่าต่างกันมากแปลว่าปัญหาอยู่ที่การผสม ไม่ใช่ปริมาณอากาศ</p>`,
+ s:'WW-DIAG C3'},
+
+{c:1,q:'TSS ขาออกเกินมาตรฐาน แก้ยังไง',
+ a:`<p>TSS เกินเกือบทั้งหมดมาจาก<strong>ตะกอนหลุดจากถังตกตะกอน</strong> ไม่ใช่จากน้ำเข้า</p>
+<ul>
+<li><strong>ตะกอนฟูไม่จม</strong> → ดูเรื่อง SVI และการขาด N/P</li>
+<li><strong>อัตราไหลล้นผิวสูงเกิน</strong> (Surface Overflow Rate) → ลดอัตราไหลหรือเพิ่มพื้นที่</li>
+<li><strong>ตะกอนลอยเป็นแพ</strong> → เกิด denitrification ในถังตกตะกอน ต้องดึงตะกอนออกถี่ขึ้น</li>
+<li><strong>ระดับ sludge blanket สูง</strong> → RAS/WAS ไม่พอ</li>
+</ul>
+<p>วัด SV30 และคำนวณ SVI ก่อนตัดสินใจ จะรู้ทันทีว่าเป็นปัญหาตะกอนหรือปัญหาไฮดรอลิก</p>`,
+ s:'WW-DIAG D2 · C1 · C4'},
+
+{c:1,q:'อุณหภูมิน้ำทิ้งเกิน 40 องศา ทำยังไง',
+ a:`<p>เป็นข้อที่โรงงานน้ำตาลและโรงไฟฟ้าพลาดบ่อยที่สุด เพราะมองข้ามสายน้ำร้อน</p>
+<p><strong>ต้นตอที่พบบ่อย</strong></p>
+<ul>
+<li>น้ำจาก condenser / barometric water — ออกมา 40–55 °C</li>
+<li>Cooling tower blowdown</li>
+<li>Boiler blowdown</li>
+<li>Condensate ที่ไม่ได้นำกลับใช้</li>
+</ul>
+<p><strong>แนวทางเรียงตามความคุ้ม</strong></p>
+<ol>
+<li>นำ condensate กลับใช้เป็นน้ำป้อนหม้อไอน้ำ (ได้ทั้งลดความร้อนและประหยัดน้ำ)</li>
+<li>ทำ heat recovery จาก blowdown</li>
+<li>หมุนเวียนน้ำ condenser ผ่าน spray pond หรือ cooling tower</li>
+<li>ผสมกับสายน้ำเย็นก่อนปล่อย — ทำได้แต่ต้องระวังไม่ให้กลายเป็นการเจือจางเพื่อเลี่ยงมาตรฐานอื่น</li>
+</ol>`,
+ s:'WW-DIAG D4 · WW-LAW ข้อ 2'},
+
+{c:1,q:'ตะกอนลอยขึ้นผิวน้ำในบ่อตกตะกอน',
+ a:`<p><strong>แยกให้ออกก่อนว่าเป็นแบบไหน เพราะสาเหตุคนละเรื่อง</strong></p>
+<ul>
+<li><strong>ลอยเป็นแพหนา มีฟองก๊าซ</strong> → denitrification ในถังตกตะกอน
+ไนเตรตถูกเปลี่ยนเป็นก๊าซไนโตรเจนดันตะกอนขึ้น → แก้โดยดึงตะกอนออกเร็วขึ้น ลดเวลาค้างในถัง</li>
+<li><strong>ลอยฟูกระจาย ไม่มีฟอง</strong> → sludge bulking → ดูเรื่อง SVI และ N/P</li>
+<li><strong>ลอยเป็นฝ้ามัน</strong> → น้ำมันหล่อลื่นจากร่องลูกหีบเล็ดลอดมา → ต้องมี oil separator ต้นทาง</li>
+</ul>`,
+ s:'WW-DIAG A2 · C4'},
+
+{c:1,q:'ค่าสีน้ำทิ้งเข้มเกิน 300 ADMI',
+ a:`<p>สีในน้ำเสียโรงงานน้ำตาลมาจากสารประกอบที่เกิดจากความร้อนและปฏิกิริยาในกระบวนการ
+(melanoidin, caramel) ซึ่ง<strong>ระบบชีวภาพกำจัดได้น้อยมาก</strong></p>
+<p><strong>ลำดับที่ควรทำ</strong></p>
+<ol>
+<li><strong>ลดที่ต้นทางก่อน</strong> — หาสายน้ำที่มีสีเข้มที่สุดแล้วแยกหรือลดปริมาณ
+มักเป็นน้ำล้างหม้อกรองและน้ำจากสถานีเคี่ยว</li>
+<li>ตกตะกอนด้วยสารเคมี (coagulation) — ได้ผลปานกลาง มีค่าใช้จ่ายสารเคมีและตะกอนเพิ่ม</li>
+<li>ดูดซับด้วยถ่านกัมมันต์ หรือกระบวนการออกซิเดชัน — ได้ผลดีแต่แพง</li>
+</ol>
+<p>ควรวัดสีแยกรายสายน้ำก่อน จะได้รู้ว่าคุ้มที่จะแก้ตรงไหน</p>`,
+ s:'WW-DIAG D5'},
+
+// ── 3. ฤดูกาล ────────────────────────────────────────────
+{c:2,q:'ระบบล่มทุกครั้งตอนเปิดหีบ ป้องกันยังไง',
+ a:`<p><strong>เป็นปัญหาที่พบซ้ำทุกปีในโรงงานน้ำตาล และป้องกันได้</strong></p>
+<p><strong>กลไก:</strong> นอกฤดูระบบแทบไม่มีโหลด จุลินทรีย์ลดจำนวนลงมาก
+พอเปิดหีบโหลดกระโดดจากเกือบศูนย์ไปเต็มพิกัดในไม่กี่วัน มวลจุลินทรีย์ที่เหลือรับไม่ไหว
+→ VFA สะสม → ระบบเป็นกรด → ล่ม</p>
+<p><strong>ล่มแล้วต้องใช้เวลาฟื้น 4–8 สัปดาห์ ซึ่งกินไปเกือบครึ่งฤดูหีบ</strong></p>
+<p><strong>ป้องกัน — ต้องเริ่มก่อนเปิดหีบ 4–6 สัปดาห์</strong></p>
+<ul>
+<li>เลี้ยงเชื้อล่วงหน้า เพิ่มโหลดแบบขั้นบันได <strong>ไม่เกิน 20–25% ต่อสัปดาห์</strong></li>
+<li>สะสม alkalinity ให้ถึงเป้าก่อนโหลดจริงมา</li>
+<li>ซ่อมเครื่องเติมอากาศ ปั๊ม ท่อ ให้เสร็จ<strong>ก่อน</strong>เปิดหีบ ไม่ใช่ระหว่างหีบ</li>
+<li>ใช้ equalization tank กระจายโหลดให้สม่ำเสมอ</li>
+<li><strong>วัด VFA/ALK ทุกวัน</strong>ใน 4 สัปดาห์แรกของฤดู ไม่ใช่สัปดาห์ละครั้ง</li>
+</ul>`,
+ s:'WW-DIAG E1'},
+
+{c:2,q:'นอกฤดูหีบ ดูแลจุลินทรีย์ในระบบยังไงไม่ให้ตาย',
+ a:`<p><strong>ปัญหา:</strong> ไม่มีโหลด จุลินทรีย์กินตัวเอง (endogenous decay) มวลลดลงเรื่อยๆ
+พอเปิดหีบก็เจอปัญหาระบบล่ม</p>
+<p><strong>แนวทาง</strong></p>
+<ul>
+<li><strong>ป้อนโหลดขั้นต่ำต่อเนื่อง</strong> — ใช้กากน้ำตาลเจือจาง น้ำเสียโรงครัว/บ้านพัก
+หรือน้ำเสียที่เก็บไว้ในบ่อ equalization ทยอยป้อน</li>
+<li>รักษาระดับน้ำในบ่อ อย่าให้แห้ง</li>
+<li>ถ้าปล่อยให้ตายไปเลย ต้องวางงบและเวลาสำหรับ reseed ก่อนเปิดหีบ</li>
+</ul>
+<p><strong>การป้อนโหลดขั้นต่ำถูกกว่าการ reseed ใหม่มาก</strong> — ควรทำเป็นแผนประจำปี
+ไม่ใช่ตัดสินใจตอนใกล้เปิดหีบ</p>`,
+ s:'WW-DIAG E2'},
+
+{c:2,q:'น้ำตาลในน้ำทิ้งพุ่งสูงผิดปกติ',
+ a:`<p>แปลว่ามีน้ำตาลรั่วเข้าสายน้ำเสีย ซึ่งเป็นทั้งการสูญเสียผลผลิตและภาระของระบบบำบัด
+<strong>ต้องหาให้เจอ ไม่ใช่แค่เพิ่มการเติมอากาศ</strong></p>
+<p><strong>จุดที่ต้องไล่ตรวจ</strong></p>
+<ul>
+<li>Condensate จากหม้อระเหยและหม้อเคี่ยว — มี entrainment น้ำตาลติดไปกับไอไหม</li>
+<li>น้ำ condenser / barometric — ปนน้ำตาลจากหม้อเคี่ยว</li>
+<li>ร่องลูกหีบและจุดล้างพื้น — ล้างน้ำตาลหกลงรางหรือเปล่า</li>
+<li>ถังและปั๊มที่รั่วซึม</li>
+</ul>
+<p><strong>วิธีหาเร็วที่สุด:</strong> วัด sugar content แยกรายจุดไล่ย้อนขึ้นไป
+จุดที่ค่ากระโดดคือจุดที่รั่ว</p>`,
+ s:'WW-DIAG E3 · WW-BASE ข้อ 3'},
+
+{c:2,q:'ฝนตกหนักน้ำท่วมบ่อบำบัด ทำยังไง',
+ a:`<p><strong>ป้องกันสำคัญกว่าแก้</strong> — น้ำฝนที่ไหลเข้าระบบทำให้ HRT สั้นลงกะทันหัน
+ตะกอนถูกชะออก และเจือจางสารอาหารจนจุลินทรีย์เสียสมดุล</p>
+<p><strong>ป้องกัน</strong></p>
+<ul>
+<li><strong>แยกน้ำฝนออกจากระบบให้มากที่สุด</strong> — ทำรางระบายน้ำฝนแยกจากรางน้ำเสีย</li>
+<li>ทำคันกั้นรอบบ่อ ไม่ให้น้ำผิวดินไหลเข้า</li>
+<li>เผื่อ freeboard ของบ่อไว้สำหรับฝนหนัก</li>
+</ul>
+<p><strong>เมื่อเกิดแล้ว</strong> ลดอัตราไหลเข้าระบบ เฝ้าดู MLSS และ SVI ใกล้ชิด
+อย่าเพิ่งดึงตะกอนออกเพราะมวลจุลินทรีย์อาจถูกชะไปมากแล้ว</p>`,
+ s:'WW-DIAG E4'},
+
+// ── 4. คำนวณและค่าควบคุม ─────────────────────────────────
+{c:3,q:'BOD : N : P ควรเป็นเท่าไร แล้วต้องเติมอะไร',
+ a:`<p><strong>อัตราส่วนที่จุลินทรีย์ต้องการคือ 100 : 5 : 1</strong></p>
+<p>แต่น้ำเสียโรงงานน้ำตาลมักได้แค่ <strong>100 : 1 : 0.2</strong> หรือแย่กว่านั้น
+เพราะเป็นคาร์บอนเกือบล้วน</p>
+<p><strong>ผลที่ตามมาเมื่อขาด</strong> ตะกอนไม่จับตัว (viscous bulking) ·
+ประสิทธิภาพต่ำกว่าที่ควร · ระบบตอบสนองต่อโหลดช้า
+<strong>และคนมักไปโทษเรื่องอื่นเพราะไม่ได้วัด N/P</strong></p>
+<p><strong>วิธีแก้</strong></p>
+<ul>
+<li>เติม urea เป็นแหล่ง N</li>
+<li>เติม DAP หรือกรดฟอสฟอริก เป็นแหล่ง P</li>
+<li>ใช้น้ำเสียโรงครัว/บ้านพักเป็นแหล่ง N ฟรี</li>
+</ul>
+<p><strong>คำนวณโดสจาก BOD load ที่เข้าจริง ไม่ใช่ตั้งค่าคงที่ทั้งฤดู</strong>
+เพราะโหลดผันผวนตามการหีบ</p>`,
+ s:'WW-SUGAR ข้อ 3.1 · WW-CALC ข้อ 8'},
+
+{c:3,q:'SVI คำนวณยังไง ค่าเท่าไรถือว่าปกติ',
+ a:`<p><strong>SVI (Sludge Volume Index)</strong> คือปริมาตรที่ตะกอน 1 กรัมกินหลังตกตะกอน 30 นาที</p>
+<p><code>SVI (mL/g) = SV30 (mL/L) ÷ MLSS (g/L)</code></p>
+<p><strong>ตัวอย่าง</strong> SV30 = 300 mL/L, MLSS = 3,000 mg/L = 3 g/L
+→ SVI = 300 ÷ 3 = <strong>100 mL/g</strong></p>
+<table><tr><th>SVI (mL/g)</th><th>ความหมาย</th></tr>
+<tr><td>&lt; 80</td><td>ตะกอนจมเร็ว อาจแน่นเกินไป (pin floc)</td></tr>
+<tr><td>80 – 150</td><td>ปกติ</td></tr>
+<tr><td>&gt; 150</td><td>bulking ตะกอนฟู เสี่ยงหลุดไปกับน้ำทิ้ง</td></tr></table>
+<p><strong>วัด SV30 ทุกวัน</strong>เป็นตัวเตือนล่วงหน้าที่ถูกที่สุด — เห็นแนวโน้มก่อน TSS จะเกิน</p>`,
+ s:'WW-CALC ข้อ 3'},
+
+{c:3,q:'HRT คำนวณยังไง',
+ a:`<p><strong>HRT (Hydraulic Retention Time)</strong> คือเวลาที่น้ำอยู่ในบ่อโดยเฉลี่ย</p>
+<p><code>HRT = ปริมาตรบ่อ (m³) ÷ อัตราการไหล (m³/วัน)</code></p>
+<p><strong>ตัวอย่าง</strong> บ่อ 5,000 m³ รับน้ำ 1,000 m³/วัน → HRT = 5 วัน</p>
+<p><strong>ข้อควรระวัง</strong></p>
+<ul>
+<li>ค่านี้เป็น<strong>ทฤษฎี</strong> ของจริงมักน้อยกว่า เพราะมีการลัดวงจร (short-circuiting)
+และตะกอนสะสมกินปริมาตรบ่อไป</li>
+<li>ถ้าสงสัยว่าลัดวงจร ให้ทำ tracer test</li>
+<li><strong>ต้องวัดระดับตะกอนก้นบ่อเป็นระยะ</strong> บ่อที่ใช้มา 10 ปีอาจเหลือปริมาตรจริงไม่ถึงครึ่ง</li>
+</ul>`,
+ s:'WW-CALC ข้อ 2'},
+
+{c:3,q:'VFA กับ Alkalinity ควรคุมที่อัตราส่วนเท่าไร',
+ a:`<p>สำหรับ<strong>บ่อไร้อากาศ</strong> เกณฑ์สากลคือ <strong>VFA/ALK &lt; 0.33</strong>
+หรือพูดอีกแบบคือ alkalinity ควรเป็นอย่างน้อย 3 เท่าของ VFA</p>
+<table><tr><th>VFA/ALK</th><th>สถานะ</th><th>ต้องทำอะไร</th></tr>
+<tr><td>&lt; 0.33</td><td>ปกติ</td><td>เฝ้าดูตามปกติ</td></tr>
+<tr><td>0.33 – 0.5</td><td>เริ่มเสียสมดุล</td><td>ลดโหลด เติม alkalinity วัดถี่ขึ้น</td></tr>
+<tr><td>&gt; 0.5</td><td>กำลังเป็นกรด</td><td>ลดโหลดทันที เติม alkalinity เร่งด่วน</td></tr></table>
+<p><strong>ข้อควรระวัง</strong> เกณฑ์นี้ใช้กับบ่อไร้อากาศเป็นหลัก
+การเอาไปใช้กับบ่อเติมอากาศหรือบ่อปรับสภาพ<strong>ไม่ค่อยมีความหมายทางกระบวนการ</strong></p>
+<p><span class="flag other">โรงงานอื่น</span> โรงงานตัวอย่างในเอกสารคุมที่ TVA &lt; 500 ppm ·
+Alkaline &gt; 1,500 ppm · TVA:Alk &gt; 1:3 — <strong>ต้องตรวจว่าโรงงานเราใช้เกณฑ์เดียวกันไหม</strong></p>`,
+ s:'WW-DIAG B1 · WW-BASE ข้อ 3'},
+
+// ── 5. แหล่งน้ำเสีย ──────────────────────────────────────
+{c:4,q:'น้ำเสียในโรงงานน้ำตาลมาจากจุดไหนบ้าง',
+ a:`<table><tr><th>แหล่ง</th><th>BOD (mg/L)</th><th>ลักษณะเด่น</th></tr>
+<tr><td>ร่องลูกหีบ</td><td>500 – 3,000</td><td>น้ำตาล เศษชานอ้อย น้ำมันหล่อลื่น</td></tr>
+<tr><td>น้ำล้างหม้อกรอง/ทำใส</td><td>1,000 – 5,000</td><td>SS สูงมาก ปูนขาว pH แปรปรวน</td></tr>
+<tr><td>Condensate</td><td>20 – 500</td><td>ร้อน สะอาดถ้าไม่มี entrainment</td></tr>
+<tr><td>Condenser / barometric</td><td>50 – 800</td><td>ร้อน 40–55 °C ปนน้ำตาล</td></tr>
+<tr><td>Boiler blowdown</td><td>ต่ำ</td><td>TDS สูงมาก ด่าง ร้อน</td></tr>
+<tr><td>น้ำล้าง regeneration</td><td>ต่ำ</td><td>TDS สูงสุดในโรงงาน pH สุดขั้ว</td></tr>
+<tr><td>น้ำล้างพื้น</td><td>200 – 2,000</td><td>ผันผวนสูง มีทราย/ดิน</td></tr>
+<tr><td>โรงครัว/บ้านพัก</td><td>200 – 500</td><td>มี N และ P</td></tr></table>
+<p><span class="flag gen">ค่าทั่วไป</span> ค่ารวมก่อนเข้าระบบ:
+BOD 800 – 3,000 · COD 1,500 – 6,000 mg/L · COD/BOD 1.5 – 2</p>`,
+ s:'WW-SUGAR ข้อ 1 และ 2'},
+
+{c:4,q:'สายน้ำไหนที่ต้องแยกออกจากระบบชีวภาพ',
+ a:`<p>มี 3 สายที่<strong>ห้ามปล่อยเข้าระบบชีวภาพรวม</strong> เพราะทำให้ระบบพัง</p>
+<ol>
+<li><strong>Boiler blowdown</strong> — TDS สูงมาก ด่างจัด ร้อน
+→ แยกสาย ทำ heat recovery</li>
+<li><strong>น้ำล้าง regeneration ของเรซิน (IX)</strong> — TDS สูงสุดในโรงงาน pH สุดขั้ว
+→ แยกบ่อเฉพาะ (บ่อน้ำเกลือ/บ่อโซดาไฟ) ปรับสภาพก่อน</li>
+<li><strong>Cooling tower blowdown</strong> — มีสารชีวฆ่า (biocide)
+<strong>ซึ่งเป็นพิษต่อจุลินทรีย์ในระบบโดยตรง</strong></li>
+</ol>
+<p>และควรแยก<strong>น้ำฝน</strong>ออกให้มากที่สุด เพราะปริมาณมหาศาลตอนฝนตกจะชะระบบ</p>`,
+ s:'WW-SUGAR ข้อ 2 และ 5'},
+
+{c:4,q:'น้ำเสียจากโรงครัวและบ้านพัก ควรแยกทิ้งไหม',
+ a:`<p><strong>ไม่ควรแยกทิ้ง — ควรเอาเข้าระบบ</strong></p>
+<p>เพราะน้ำเสียโรงงานน้ำตาล<strong>ขาดไนโตรเจนและฟอสฟอรัสอย่างรุนแรง</strong>
+ส่วนน้ำเสียโรงครัวและบ้านพักมี N และ P อยู่แล้ว
+จึงเป็น<strong>แหล่งสารอาหารฟรี</strong>ที่ช่วยให้ตะกอนจับตัวดีขึ้น</p>
+<p>เป็นตัวอย่างที่ดีของการมองน้ำเสียเป็นทรัพยากรแทนที่จะเป็นภาระ —
+แต่ต้องคำนวณว่าปริมาณ N ที่ได้พอกับ BOD load ไหม ถ้าไม่พอก็ยังต้องเติม urea เสริม</p>`,
+ s:'WW-SUGAR ข้อ 2 และ 3.1'},
+
+{c:4,q:'Condensate ควรนำกลับมาใช้ตรงไหน',
+ a:`<p><strong>นำกลับใช้เป็นน้ำป้อนหม้อไอน้ำได้ ถ้า sugar content ต่ำพอ</strong>
+เป็นการ reuse ที่คุ้มที่สุดในโรงงาน เพราะได้ทั้งน้ำสะอาดและความร้อน</p>
+<p><span class="flag other">โรงงานอื่น</span> ค่าควบคุม sugar content ของโรงงานตัวอย่างในเอกสาร</p>
+<table><tr><th>จุด</th><th>ค่าควบคุม</th></tr>
+<tr><td>Condensate จาก EVAP 1</td><td>&lt; 50 ppm</td></tr>
+<tr><td>Condensate จาก EVAP 2</td><td>&lt; 100 ppm</td></tr>
+<tr><td>Condenser water</td><td>&lt; 200 ppm</td></tr>
+<tr><td>น้ำเสีย (บ่อรวม)</td><td>&lt; 300 ppm</td></tr></table>
+<p><strong>ต้องตรวจว่าโรงงานเราใช้เกณฑ์เท่าไร</strong> — ถ้า sugar content สูงเกิน
+ห้ามส่งเข้าหม้อไอน้ำเพราะจะเกิดตะกรันและ carryover</p>`,
+ s:'WW-SUGAR ข้อ 4 · WW-BASE ข้อ 3'},
+];
+
+const KEY='mlx_qa_review_etreatment';
+const st=JSON.parse(localStorage.getItem(KEY)||'{}');
+
+function render(){
+  let h='';
+  CATS.forEach((c,ci)=>{
+    const list=QA.map((q,i)=>({q,i})).filter(x=>x.q.c===ci);
+    if(!list.length) return;
+    h+=`<h2>${c[0]} <em>· ${c[1]} · ${list.length} ข้อ</em></h2>`;
+    list.forEach(({q,i})=>{
+      const v=st[i]?.v||'';
+      h+=`<div class="qa ${v}" id="q${i}">
+        <div class="qh"><span class="num">${String(i+1).padStart(2,'0')}</span>
+          <div class="qt">${q.q}</div></div>
+        <div class="ans">${q.a}</div>
+        <div class="src">📎 อ้างอิง: <b>${q.s}</b></div>
+        <div class="vote">
+          <button data-i="${i}" data-v="ok"   class="${v==='ok'?'on':''}">✅ ใช้ได้</button>
+          <button data-i="${i}" data-v="edit" class="${v==='edit'?'on':''}">✏️ ต้องแก้</button>
+          <button data-i="${i}" data-v="drop" class="${v==='drop'?'on':''}">❌ ทิ้ง</button>
+          <input data-n="${i}" placeholder="แก้อะไร (ถ้ามี)" value="${(st[i]?.n||'').replace(/"/g,'&quot;')}">
+        </div></div>`;
+    });
+  });
+  document.getElementById('out').innerHTML=h;
+  document.querySelectorAll('.vote button').forEach(b=>b.onclick=()=>{
+    const i=b.dataset.i;
+    st[i]=st[i]||{};
+    st[i].v = st[i].v===b.dataset.v ? '' : b.dataset.v;
+    save(); paint(i);
+  });
+  document.querySelectorAll('.vote input').forEach(inp=>inp.oninput=()=>{
+    const i=inp.dataset.n; st[i]=st[i]||{}; st[i].n=inp.value; save();
+  });
+  tally();
+}
+function paint(i){
+  const card=document.getElementById('q'+i), v=st[i]?.v||'';
+  card.className='qa '+v;
+  card.querySelectorAll('.vote button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+  tally();
+}
+function save(){localStorage.setItem(KEY,JSON.stringify(st))}
+function tally(){
+  const c={ok:0,edit:0,drop:0};
+  Object.values(st).forEach(x=>{if(x.v)c[x.v]++});
+  document.getElementById('tOk').textContent='ใช้ได้ '+c.ok;
+  document.getElementById('tEdit').textContent='ต้องแก้ '+c.edit;
+  document.getElementById('tDrop').textContent='ทิ้ง '+c.drop;
+  document.getElementById('tLeft').textContent='ยังไม่ตัดสิน '+(QA.length-c.ok-c.edit-c.drop);
+}
+document.getElementById('copy').onclick=()=>{
+  const c={ok:[],edit:[],drop:[]};
+  QA.forEach((q,i)=>{const v=st[i]?.v; if(v) c[v].push({n:i+1,q:q.q,note:st[i].n||''})});
+  let t=`ผลตรวจร่าง Q&A ห้องระบบบำบัดน้ำ (${QA.length} ข้อ)\n`;
+  t+=`ใช้ได้ ${c.ok.length} · ต้องแก้ ${c.edit.length} · ทิ้ง ${c.drop.length}\n\n`;
+  if(c.edit.length){t+='ต้องแก้:\n'+c.edit.map(x=>`  ${x.n}. ${x.q}${x.note?' → '+x.note:''}`).join('\n')+'\n\n'}
+  if(c.drop.length){t+='ทิ้ง:\n'+c.drop.map(x=>`  ${x.n}. ${x.q}${x.note?' → '+x.note:''}`).join('\n')+'\n\n'}
+  if(c.ok.length){t+='ใช้ได้: ข้อ '+c.ok.map(x=>x.n).join(', ')+'\n'}
+  navigator.clipboard.writeText(t).then(()=>{
+    const b=document.getElementById('copy'); const o=b.textContent;
+    b.textContent='คัดลอกแล้ว ✓'; setTimeout(()=>b.textContent=o,1600);
+  });
+};
+document.getElementById('reset').onclick=()=>{
+  if(!confirm('ล้างที่เลือกทั้งหมด?'))return;
+  for(const k of Object.keys(st))delete st[k]; save(); render();
+};
+render();
+</script>
