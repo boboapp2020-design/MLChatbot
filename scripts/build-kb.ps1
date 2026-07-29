@@ -82,6 +82,15 @@ $FileMap = @(
   @{ Path='steam-brain\references\distribution-traps.md';     Module='evaporation'; Type='MANUAL';   Title='ระบบจ่ายไอน้ำและกับดักไอน้ำ';                    Code='STM-TRAP' }
   @{ Path='steam-brain\references\calculations.md';           Module='evaporation'; Type='MANUAL';   Title='สูตรคำนวณระบบไอน้ำ';                            Code='STM-CALC' }
 
+  # สกิลบำบัดน้ำเสีย — ห้องนี้เดิมมีความรู้ของตัวเองแค่ 15 ท่อน อ่อนที่สุดอันดับต้นๆ
+  @{ Path='wastewater-expert\SKILL.md';                       Module='etreatment';  Type='BOOK';     Title='กรอบการวินิจฉัยระบบบำบัดน้ำเสีย';                Code='WW-FRAME' }
+  @{ Path='wastewater-expert\references\diagnostics.md';      Module='etreatment';  Type='MANUAL';   Title='ตารางวินิจฉัยปัญหาระบบบำบัดน้ำเสีย (ตามอาการ)';  Code='WW-DIAG' }
+  @{ Path='wastewater-expert\references\thai-regulations.md'; Module='etreatment';  Type='STANDARD'; Title='กฎหมายและมาตรฐานสิ่งแวดล้อมไทย';                 Code='WW-LAW' }
+  @{ Path='wastewater-expert\references\sugar-wastewater.md'; Module='etreatment';  Type='BOOK';     Title='น้ำเสียโรงงานน้ำตาล — แหล่งกำเนิดและลักษณะ';     Code='WW-SUGAR' }
+  @{ Path='wastewater-expert\references\calculations.md';     Module='etreatment';  Type='MANUAL';   Title='สูตรคำนวณวิศวกรรมน้ำเสีย';                       Code='WW-CALC' }
+  @{ Path='wastewater-expert\references\plant-baseline.md';   Module='etreatment';  Type='MANUAL';   Title='ระบบรายงานคุณภาพน้ำของโรงงานน้ำตาลไทย';          Code='WW-BASE' }
+  @{ Path='wastewater-expert\references\authoritative-sources.md'; Module='etreatment'; Type='BOOK'; Title='แหล่งอ้างอิงมาตรฐานวิศวกรรมสิ่งแวดล้อม';       Code='WW-REF' }
+
   @{ Path='sugar-qc-brain\SKILL.md';                          Module='quality';     Type='BOOK';     Title='กรอบการวินิจฉัยคุณภาพน้ำตาล';                    Code='QC-FRAME' }
   @{ Path='sugar-qc-brain\references\parameters-and-specs.md';Module='quality';     Type='STANDARD'; Title='พารามิเตอร์คุณภาพและเกณฑ์สเปก (ICUMSA/มอก.56)';  Code='QC-SPEC' }
   @{ Path='sugar-qc-brain\references\diagnostic-decision-tree.md'; Module='quality'; Type='MANUAL';  Title='Decision Tree วินิจฉัยผลวิเคราะห์';              Code='QC-TREE' }
@@ -353,9 +362,16 @@ function Test-NoiseChunk {
   <#  ตำราวิชาการมีดัชนีท้ายเล่มและบรรณานุกรมยาวมาก
       ส่วนนี้ไม่มีความรู้ให้ตอบคำถาม มีแต่ชื่อ-ปี-เลขหน้า
       ถ้าปล่อยเข้าคลังจะไปแย่งอันดับกับเนื้อหาจริง และทำให้ citation ไร้ประโยชน์  #>
-  param([string]$Text)
+  param([string]$Text, [string]$Head = '')
   $len = $Text.Length
   if ($len -lt 40) { return $true }
+
+  # สารบัญของเอกสาร: มีแต่รายชื่อหัวข้อ ไม่มีคำตอบอยู่เลย
+  # แต่ดันติดอันดับบ่อยเพราะอัดคำสำคัญไว้หนาแน่นกว่าเนื้อหาจริง
+  # แล้วไปกินช่องอ้างอิง 1 ใน 6 ช่อง ทั้งที่เปิดไปก็ไม่เจออะไร
+  if ($Head -match '^\s*(สารบัญ|Table of Contents|Contents)\b') { return $true }
+  # สารบัญแบบ Markdown ที่ไม่ได้ตั้งหัวข้อว่าสารบัญ — ดูจากลิงก์ข้ามหัวข้อ
+  if (([regex]::Matches($Text,'\]\(#')).Count -ge 4) { return $true }
 
   # ดัชนีท้ายเล่ม: "VLC sugar 364,483-485,489" -> ตัวเลขหนาแน่นผิดปกติ
   $digits = ([regex]::Matches($Text,'\d')).Count
@@ -502,7 +518,7 @@ foreach ($src in $Sources) {
   $dropped = 0
   foreach ($p in $pieces) {
     if ([string]::IsNullOrWhiteSpace($p.Body)) { continue }
-    if (Test-NoiseChunk -Text $p.Body) { $dropped++; continue }
+    if (Test-NoiseChunk -Text $p.Body -Head $p.Head) { $dropped++; continue }
 
     $section = if ($p.Head) { $p.Head } else { $entry.Title }
     $bias    = if ($entry.NoBias) { 0 } else { 3 }

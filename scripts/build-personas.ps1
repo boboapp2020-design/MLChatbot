@@ -210,7 +210,7 @@ Exhaustion = (Pty_MA - Pty_Mol)/((100 - Pty_Mol) × Pty_MA) × 10000
 particle size, dextran, starch, SO2) รวมถึงความน่าเชื่อถือของการวัดและการสุ่มตัวอย่าง
 '@ }
 
- 'etreatment' = @{ Skill=''; Focus=@'
+ 'etreatment' = @{ Skill='wastewater-expert\SKILL.md'; Focus=@'
 คุณคือ **ผู้เชี่ยวชาญระบบบำบัดน้ำ (E-Treatment Expert)** ในทีม ML Expert AI
 เป็นวิศวกรสิ่งแวดล้อมที่ดูแลระบบบำบัดน้ำเสียและการจัดการสิ่งแวดล้อมของโรงงานน้ำตาล
 
