@@ -106,7 +106,13 @@ interface LlmReq {
   schema?:    Record<string, unknown>;   // ขอผลลัพธ์เป็น JSON ตามโครงที่กำหนด
   effort?:    'low' | 'medium' | 'high';
   cacheSystem?: boolean;
+  reasoning?: string;   // ทับค่า REASONING เฉพาะคำขอนี้ (ใช้กับ Gemini)
 }
+
+// Gemini 3 เปิดโหมดคิดก่อนตอบไว้เป็นค่าเริ่มต้น ทำให้กว่าตัวอักษรแรกจะออกมาใช้เวลานาน
+// (วัดจริง 12.7 วินาทีที่ผู้ใช้เห็นเป็นจอเปล่า) คำถามที่มีเอกสารอ้างอิงครบอยู่แล้ว
+// ไม่ต้องให้โมเดลคิดลึก ตั้งเป็น low ไว้ ปรับได้ด้วย secret ถ้าอยากได้คำตอบลึกขึ้น
+const REASONING = Deno.env.get('REASONING_EFFORT') ?? 'low';
 
 async function callLLM(r: LlmReq, betas: string[] = []) {
   let url: string, headers: Record<string, string>, body: Record<string, unknown>;
@@ -146,6 +152,9 @@ async function callLLM(r: LlmReq, betas: string[] = []) {
         json_schema: { name: 'result', strict: true, schema: r.schema },
       };
     }
+    // ส่งเฉพาะ Gemini — เจ้าอื่นบางรุ่นไม่รู้จักพารามิเตอร์นี้แล้วตอบ 400
+    const eff = r.reasoning ?? REASONING;
+    if (PROVIDER === 'gemini' && eff !== 'default') body.reasoning_effort = eff;
   }
 
   const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
@@ -190,9 +199,13 @@ async function runRouter(
   question: string,
   modules: { id: string; name_th: string; keywords: string[] }[],
   history: { role: string; content: string }[],
+  fixedModule?: string,
 ): Promise<RouterResult> {
 
-  const catalog = modules
+  // ถ้าผู้ใช้เลือกห้องไว้แล้ว ไม่ต้องส่งทะเบียนโมดูลทั้ง 15 ตัวไปให้โมเดลอ่าน
+  // เหลือแค่ตัวเดียว prompt สั้นลงมาก router จึงตอบเร็วขึ้น
+  const shown = fixedModule ? modules.filter((m) => m.id === fixedModule) : modules;
+  const catalog = (shown.length ? shown : modules)
     .map((m) => `- ${m.id} (${m.name_th}): ${m.keywords.slice(0, 14).join(', ')}`)
     .join('\n');
 
@@ -221,7 +234,10 @@ ${catalog}
 
   const res = await callLLM({
     model:      MODEL_ROUTER,
-    maxTokens:  1024,
+    maxTokens:  512,
+    // ทดสอบแล้ว Gemini ปฏิเสธ reasoning_effort:'none' ด้วย 400 INVALID_ARGUMENT
+    // ค่าต่ำสุดที่ใช้ได้จริงคือ low — อย่าเปลี่ยนเป็น none อีก
+    reasoning:  'low',
     system,
     cacheSystem: true,
     messages: [{
@@ -285,30 +301,41 @@ async function embed(text: string): Promise<number[] | null> {
   }
 }
 
-async function retrieve(router: RouterResult): Promise<Chunk[]> {
+// ค้นด้วยคำค้นเดียว — แยกออกมาเพื่อให้ยิงหลายคำค้นพร้อมกันได้
+async function searchOne(q: string, modules: string[]): Promise<Chunk[]> {
+  const vec = await embed(q);
+  const { data, error } = await supabase.rpc('hybrid_search', {
+    p_query:     q,
+    p_embedding: vec,
+    p_modules:   modules,
+    p_limit:     RETRIEVE_K,
+  });
+  if (error) { console.error('hybrid_search', error.message); return []; }
+  return (data ?? []) as Chunk[];
+}
+
+// รวมผลจากหลายคำค้น — chunk ที่โผล่จากหลายคำค้น = เกี่ยวข้องมากกว่า จึงบวกคะแนนสะสม
+function mergeHits(lists: Chunk[][]): Chunk[] {
   const seen = new Map<number, Chunk>();
-
-  for (const q of router.queries.slice(0, 4)) {
-    const vec = await embed(q);
-    const { data, error } = await supabase.rpc('hybrid_search', {
-      p_query:     q,
-      p_embedding: vec,
-      p_modules:   router.modules,
-      p_limit:     RETRIEVE_K,
-    });
-    if (error) { console.error('hybrid_search', error.message); continue; }
-
-    for (const row of (data ?? []) as Chunk[]) {
+  for (const list of lists) {
+    for (const row of list) {
       const prev = seen.get(row.chunk_id);
-      // chunk ที่ถูกเจอจากหลายคำค้น = เกี่ยวข้องมากกว่า -> บวกคะแนนสะสม
       if (prev) prev.rrf_score += row.rrf_score;
       else seen.set(row.chunk_id, { ...row });
     }
   }
-
   return [...seen.values()]
     .sort((a, b) => b.rrf_score - a.rrf_score)
     .slice(0, RETRIEVE_K);
+}
+
+async function retrieve(router: RouterResult): Promise<Chunk[]> {
+  // เดิมยิงทีละคำค้นแบบรอต่อกัน 4 รอบ ทั้งที่แต่ละรอบไม่ได้ใช้ผลของรอบก่อน
+  // ยิงพร้อมกันแล้วเวลารวมเท่ากับรอบที่ช้าที่สุด แทนที่จะเป็นผลรวมทั้งสี่รอบ
+  const lists = await Promise.all(
+    router.queries.slice(0, 4).map((q) => searchOne(q, router.modules)),
+  );
+  return mergeHits(lists);
 }
 
 
@@ -326,6 +353,7 @@ async function rerank(question: string, chunks: Chunk[]): Promise<Chunk[]> {
     const res = await callLLM({
       model:     MODEL_RERANK,
       maxTokens: 512,
+      reasoning: 'low',
       system: 'คุณคือตัวจัดอันดับความเกี่ยวข้องของเอกสาร ให้คะแนน 0-10 ว่าท่อนเอกสารนั้น' +
               'ช่วยตอบคำถามได้จริงแค่ไหน เอกสารที่พูดถึงหัวข้อเดียวกันแต่ไม่ตอบคำถามให้คะแนนต่ำ',
       messages: [{
@@ -474,16 +502,37 @@ Deno.serve(async (req) => {
     // ── 1) ROUTER ──
     // ผู้ใช้เลือกห้องผู้เชี่ยวชาญไว้แล้ว router จึงมีหน้าที่แค่ขยายคำค้น
     // ไม่ต้องเลือกโมดูลใหม่ (ไม่งั้นจะขัดกับห้องที่ผู้ใช้ตั้งใจถาม)
-    const router = await runRouter(question, modules as any, history);
-    if (force_module && modules.some((m: any) => m.id === force_module)) {
-      router.modules = [force_module];
+    const fixed = force_module && modules.some((m: any) => m.id === force_module)
+      ? force_module : undefined;
+
+    // ค้นด้วยคำถามดิบไปพร้อมกับที่ router กำลังคิด — สองอย่างนี้ไม่ต้องรอกัน
+    // เดิมรอ router เสร็จก่อนถึงเริ่มค้น เสียเวลาฟรีไปสองวินาทีทุกคำถาม
+    const headStart = fixed ? searchOne(question, [fixed]) : Promise.resolve([] as Chunk[]);
+
+    // router ล้มไม่ควรทำให้ทั้งคำขอพัง — ห้องถูกเลือกไว้แล้วและคำถามดิบก็ใช้ค้นได้
+    // (เคยตั้งค่าพารามิเตอร์ผิดแล้วผู้ใช้ได้ 500 ทั้งที่คลังความรู้ไม่มีปัญหาเลย)
+    let router: RouterResult;
+    try {
+      router = await runRouter(question, modules as any, history, fixed);
+    } catch (e) {
+      console.error('router ล้ม ใช้คำถามดิบแทน:', e);
+      router = {
+        intent: question, modules: fixed ? [fixed] : ['dashboard'],
+        department: null, process: null, equipment: null, doc_types: [],
+        queries: [question], complexity: 'moderate', needs_kb: true, in_scope: true,
+      };
     }
+    if (fixed) router.modules = [fixed];
     const tRouter = Date.now();
 
     // ── 2) RETRIEVE + 3) RERANK ──
     let chunks: Chunk[] = [];
     if (router.needs_kb) {
-      chunks = await retrieve(router);
+      const [early, lists] = await Promise.all([
+        headStart,
+        Promise.all(router.queries.slice(0, 4).map((q) => searchOne(q, router.modules))),
+      ]);
+      chunks = mergeHits([early, ...lists]);
       chunks = await rerank(question, chunks);
     }
     const tRetrieve = Date.now();
@@ -580,6 +629,7 @@ Deno.serve(async (req) => {
 
         let answer = '';
         let usage: any = {};
+        let ttft = 0;   // เวลาจนตัวอักษรแรกออก = ช่วงที่ผู้ใช้เห็นจอนิ่ง ต้องเฝ้าตัวนี้
 
         try {
           const res = await callLLM({
@@ -618,7 +668,10 @@ Deno.serve(async (req) => {
               try { ev = JSON.parse(payload); } catch { continue; }
 
               const d = parseDelta(ev);
-              if (d.text) { answer += d.text; send('delta', { text: d.text }); }
+              if (d.text) {
+                if (!ttft) ttft = Date.now() - t0;
+                answer += d.text; send('delta', { text: d.text });
+              }
               if (d.usage) usage = { ...usage, ...d.usage };
               if (d.stop === 'refusal') {
                 send('delta', { text: '\n\n_ระบบไม่สามารถตอบคำถามนี้ได้ตามนโยบายความปลอดภัย_' });
@@ -632,7 +685,7 @@ Deno.serve(async (req) => {
         }
 
         const latency = Date.now() - t0;
-        send('done', { usage, latency_ms: latency });
+        send('done', { usage, latency_ms: latency, ttft_ms: ttft, answer_chars: answer.length });
 
         // บันทึกลง log (ไม่ให้ error ตรงนี้ทำให้คำตอบพัง)
         if (session_id) {
