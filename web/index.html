@@ -1410,14 +1410,34 @@ async function ask(text){
   const el=$('#'+id);
   scrollDown(true);
 
+  /* ตาข่ายกันสุดท้าย — แปล error ดิบของเบราว์เซอร์เป็นภาษาที่บอกได้ว่าต้องทำอะไรต่อ
+     สำคัญกับ error เรื่อง header เพราะข้อความเดิมไม่บอกเลยว่าปัญหาอยู่ที่ API key */
+  function explainError(e){
+    const raw=String(e?.message||e);
+    if(/ISO-8859-1|non ISO|code point/i.test(raw)){
+      const where = CFG.mode==='supabase' ? 'Supabase Anon Key' : `API key ของ ${prov().label}`;
+      return `**${where} มีอักขระที่ใช้ไม่ได้ปนอยู่**\n\n`+
+        `ค่าที่ส่งเป็น HTTP header ต้องเป็นตัวอักษรอังกฤษและตัวเลขเท่านั้น `+
+        `แต่ค่าที่บันทึกไว้มีตัวอักษรไทยหรืออักขระที่มองไม่เห็นปนมา\n\n`+
+        `**วิธีแก้**\n`+
+        `1. เปิดตั้งค่า (รหัส 1302)\n`+
+        `2. ลบค่าในช่องนั้นให้หมด กด Ctrl+A แล้ว Delete\n`+
+        `3. คัดลอกใหม่ด้วย**ปุ่ม copy** ของผู้ให้บริการ อย่าลากเลือกด้วยเมาส์\n`+
+        `4. กดบันทึก — ถ้ายังมีอักขระเสีย ระบบจะเตือนทันที`;
+    }
+    if(/Failed to fetch|NetworkError|ERR_/i.test(raw))
+      return `**เชื่อมต่อไม่ได้**\n\nตรวจอินเทอร์เน็ต หรือ URL ในหน้าตั้งค่า\n\n\`${esc(raw)}\``;
+    return raw.slice(0,400);
+  }
+
   try{
     const out=CFG.mode==='supabase'?await askSupabase(q,el):await askLocal(q,el);
     msgs.push({role:'assistant',content:out.text,meta:out.meta,ts:Date.now()});
     saveRooms();renderRooms();
   }catch(e){
-    const m=String(e).slice(0,300);
+    const m=explainError(e);
     el.querySelector('.slot-body').innerHTML=
-      `<div class="prose"><p style="color:var(--bad)"><strong>เกิดข้อผิดพลาด:</strong> ${esc(m)}</p></div>`;
+      `<div class="prose"><p style="color:var(--bad)"><strong>เกิดข้อผิดพลาด</strong></p>${md(m)}</div>`;
     msgs.push({role:'assistant',content:'เกิดข้อผิดพลาด: '+m,meta:{},ts:Date.now()});
     saveRooms();
   }finally{busy=false;autosize();scrollDown()}
@@ -1532,7 +1552,22 @@ const baseOf  = p => ((p||CFG.provider)==='custom' ? (CFG.customBase||'') : prov
    ส่งไปจะได้ 400 กลับมา จึงต้องแยกออกจากรุ่นใหม่ */
 const adaptiveOK = m => m.startsWith('claude-') && m!=='claude-haiku-4-5';
 
+/* ค่าที่ใส่ใน HTTP header ต้องเป็น ASCII ล้วน
+   API key ที่คัดลอกมาแล้วติดอักขระไทยหรืออักขระที่มองไม่เห็น จะทำให้ fetch โยน
+   "String contains non ISO-8859-1 code point" ซึ่งไม่บอกเลยว่าปัญหาอยู่ที่ key
+   ต้องดักทุกเส้นทางที่ส่ง header ไม่ใช่เฉพาะโหมด Supabase (เคยแก้ไม่ครบมาแล้ว) */
+function assertHeaderSafe(value,label){
+  const bad=[...String(value)].filter(c=>c.charCodeAt(0)>126);
+  if(bad.length) throw new Error(
+    `${label} มีอักขระที่ใช้ไม่ได้ปนอยู่ ${bad.length} ตัว (เช่น "${bad[0]}")\n\n`+
+    `มักเกิดจากคัดลอกแล้วติดตัวอักษรอื่นมาด้วย\n`+
+    `แก้: เปิดตั้งค่า → ลบค่าเดิมให้หมด → คัดลอกใหม่ด้วยปุ่ม copy ของผู้ให้บริการ ` +
+    `(อย่าลากเลือกเอง)`);
+  return String(value);
+}
+
 function headersFor(p,key){
+  assertHeaderSafe(key, `API key ของ ${prov(p).label}`);
   const P=prov(p);
   if(P.kind==='anthropic') return {'content-type':'application/json','x-api-key':key,
     'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'};
@@ -2107,7 +2142,16 @@ on('#btnTest','click',async e=>{
 on('#btnSave','click',()=>{
   CFG.mode=$('input[name=mode]:checked')?.value||'offline';
   CFG.provider=provSel;
-  CFG.keys[provSel]=$('#cfgKey').value.trim();
+  // API key ห้ามมีอักขระนอก ASCII เพราะจะส่งเป็น HTTP header
+  // ล้างช่องว่างและอักขระที่มองไม่เห็นทิ้ง แล้วเตือนถ้ายังมีตัวที่ใช้ไม่ได้เหลือ
+  const rawKey=$('#cfgKey').value.replace(/[\s​-‍﻿]/g,'');
+  const badKey=[...rawKey].filter(c=>c.charCodeAt(0)>126);
+  if(badKey.length){
+    alert(`บันทึกไม่ได้\n\nAPI key มีอักขระที่ใช้ไม่ได้ปนอยู่ ${badKey.length} ตัว (เช่น "${badKey[0]}")\n\n`+
+          'ลบค่าเดิมให้หมดแล้วคัดลอกใหม่ด้วยปุ่ม copy ของผู้ให้บริการ อย่าลากเลือกด้วยเมาส์');
+    return;
+  }
+  CFG.keys[provSel]=rawKey;
   if($('#cfgModel').value) CFG.models[provSel]=$('#cfgModel').value;
   CFG.customBase=$('#cfgBase').value.trim();
   // ลบช่องว่าง ขึ้นบรรทัดใหม่ และอักขระที่มองไม่เห็นซึ่งมักติดมาตอนคัดลอก
