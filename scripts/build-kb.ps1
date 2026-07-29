@@ -478,14 +478,15 @@ $SupportMap  = @(
 
   # ── งานตรวจติดตามภายใน (IQA) — เอกสารจริงของโรงงาน ──────────────
   # สร้างด้วย scripts\build-iqa-corpus.ps1 จากไฟล์งาน Internal Audit
-  # บังคับเข้าห้องคุณภาพ & มาตรฐาน (ไม่ตั้ง NoBias) เพราะเป็นงานของห้องนี้ชัดเจน
+  # บังคับเข้าห้อง foodsafety ซึ่งแสดงชื่อว่า "คุณภาพ & มาตรฐาน" ในแอป
+  # ระวังสับสน โมดูล quality คือ "ห้องปฏิบัติการ" คนละห้องกัน
   # ถ้าปล่อยให้ keyword ตัดสิน คำถามตรวจของแผนกหม้อต้ม/ลูกหีบจะกระจายไปห้องอื่น
   # แล้วห้องคุณภาพจะยังว่างเหมือนเดิม
-  @{ File='IQA-เช็คลิสต์ตรวจติดตามภายใน.txt'; Module='quality'; Type='CHECKLIST'; Force=$true
+  @{ File='IQA-เช็คลิสต์ตรวจติดตามภายใน.txt'; Module='foodsafety'; Type='CHECKLIST'; Force=$true
      Title='เช็คลิสต์ตรวจติดตามภายใน 21 แผนก (ของโรงงาน)'; Code='IQA-CL' }
-  @{ File='IQA-เกณฑ์ตัดสินผลตรวจ.txt'; Module='quality'; Type='STANDARD'; Force=$true
+  @{ File='IQA-เกณฑ์ตัดสินผลตรวจ.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
      Title='เกณฑ์ตัดสินผลตรวจ C/NC/B ตาม ISO 19011:2018'; Code='IQA-JUDGE' }
-  @{ File='IQA-บทเรียนจากรายงานตรวจจริง.txt'; Module='quality'; Type='RECORD'; Force=$true
+  @{ File='IQA-บทเรียนจากรายงานตรวจจริง.txt'; Module='foodsafety'; Type='RECORD'; Force=$true
      Title='บทเรียนจากรายงานตรวจติดตามภายในของจริง'; Code='IQA-LESSON' }
 
   # ── มาตรฐานความปลอดภัยอาหาร ────────────────────────────────────
