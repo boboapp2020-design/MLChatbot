@@ -116,13 +116,13 @@ code{font-family:var(--mono);font-size:.92em;background:var(--raised);padding:1p
 <div class="wrap">
 <header>
   <h1>ML Expert AI — แผนพัฒนาความรู้ผู้เชี่ยวชาญ</h1>
-  <div class="sub">วัดจริงจากคลังความรู้ 2,216 ท่อน · ผู้เชี่ยวชาญ 15 คน · ข้อมูล ณ 28 ก.ค. 2569</div>
+  <div class="sub">วัดจริงจากคลังความรู้ 2,338 ท่อน · ผู้เชี่ยวชาญ 15 คน · ข้อมูล ณ 29 ก.ค. 2569</div>
 </header>
 
 <div class="cards">
   <div class="kpi"><div class="v">15</div><div class="l">ผู้เชี่ยวชาญทั้งหมด</div></div>
-  <div class="kpi"><div class="v" style="color:var(--ok)">9</div><div class="l">พร้อมใช้งานจริง</div></div>
-  <div class="kpi"><div class="v" style="color:var(--warn)">3</div><div class="l">คลังบาง ต้องเสริม</div></div>
+  <div class="kpi"><div class="v" style="color:var(--ok)">10</div><div class="l">พร้อมใช้งานจริง</div></div>
+  <div class="kpi"><div class="v" style="color:var(--warn)">2</div><div class="l">คลังบาง ต้องเสริม</div></div>
   <div class="kpi"><div class="v" style="color:var(--bad)">3</div><div class="l">แทบไม่มีคลังของตัวเอง</div></div>
   <div class="kpi"><div class="v" style="color:var(--bad)">1%</div><div class="l">เอกสารจริงของโรงงาน</div></div>
 </div>
@@ -130,14 +130,14 @@ code{font-family:var(--mono);font-size:.92em;background:var(--raised);padding:1p
 <h2>ความรู้ในระบบมาจากไหน</h2>
 <div class="h2sub">แยกตามแหล่งที่มาของทุกท่อนความรู้ในคลัง</div>
 <div class="srcbar">
-  <div style="width:76%;background:#64748b">ตำราวิชาการ 76%</div>
-  <div style="width:14%;background:#8b5cf6">สกิล AI 14%</div>
+  <div style="width:72%;background:#64748b">ตำราวิชาการ 72%</div>
+  <div style="width:19%;background:#8b5cf6">สกิล AI 19%</div>
   <div style="width:8%;background:#0ea5e9">เว็บคุณ 8%</div>
   <div style="width:2%;background:#dc2626" title="เอกสารโรงงาน 1%"></div>
 </div>
 <div class="srclegend">
-  <span><i style="background:#64748b"></i>ตำราวิชาการ — 1,692 ท่อน จาก 6 เล่ม</span>
-  <span><i style="background:#8b5cf6"></i>สกิล AI ติดเครื่อง — 318 ท่อน</span>
+  <span><i style="background:#64748b"></i>ตำราวิชาการ — 1,691 ท่อน จาก 6 เล่ม</span>
+  <span><i style="background:#8b5cf6"></i>สกิล AI ติดเครื่อง — 441 ท่อน (เพิ่ม Wastewater Expert)</span>
   <span><i style="background:#0ea5e9"></i>เว็บ MLSugartech — 182 ท่อน</span>
   <span><i style="background:#dc2626"></i><b>เอกสารจริงของโรงงาน — 24 ท่อน จาก 1 ฉบับ</b></span>
 </div>
@@ -176,49 +176,49 @@ code{font-family:var(--mono);font-size:.92em;background:var(--raised);padding:1p
 
 <script>
 const DATA=[
- {id:"panboiling",th:"หม้อเคี่ยว",en:"Vacuum Pan",c:"#f43f5e",n:210,d:8,conf:83,lv:"g",
+ {id:"panboiling",th:"หม้อเคี่ยว",en:"Vacuum Pan",c:"#f43f5e",n:211,d:9,conf:88,lv:"g",
   gap:"คลังแน่นและตรงเรื่อง ขาดเพียงค่าเดินเครื่องจริงของหม้อเคี่ยวแต่ละลูกในโรงงาน",
   t:[["SOP การเคี่ยวแต่ละ strike (A/B/C)",2],["กราฟ supersaturation ที่ใช้จริง",1],["ประวัติ seeding และขนาดผลึกเป้าหมาย",1]]},
- {id:"clarification",th:"การต้มน้ำอ้อย",en:"Clarification",c:"#38bdf8",n:241,d:7,conf:82,lv:"g",
+ {id:"clarification",th:"การต้มน้ำอ้อย",en:"Clarification",c:"#38bdf8",n:249,d:9,conf:84,lv:"g",
   gap:"ทฤษฎีครบ ขาดเกณฑ์ควบคุมและผลวิเคราะห์จริงของโรงงาน",
   t:[["SOP การทำใสและเกณฑ์ pH ของโรงงาน",2],["อัตราการใช้ปูนและ SO₂ ย้อนหลัง",1],["ผลวิเคราะห์ turbidity รายกะ",1]]},
- {id:"evaporation",th:"การระเหย",en:"Evaporation",c:"#8b5cf6",n:211,d:14,conf:82,lv:"g",
+ {id:"evaporation",th:"การระเหย",en:"Evaporation",c:"#8b5cf6",n:213,d:16,conf:82,lv:"g",
   gap:"แหล่งอ้างอิงหลากหลายที่สุดกลุ่มหนึ่ง ขาดข้อมูลชุดหม้อระเหยของโรงงานเอง",
   t:[["ผังชุดหม้อระเหยและ heat balance",2],["ประวัติการล้างสเกลและรอบเวลา",1],["บันทึกอุณหภูมิ/ความดันแต่ละ effect",1]]},
- {id:"maintenance",th:"บำรุงรักษาเครื่องจักร",en:"Maintenance",c:"#3b82f6",n:133,d:8,conf:78,lv:"g",
+ {id:"maintenance",th:"บำรุงรักษาเครื่องจักร",en:"Maintenance",c:"#3b82f6",n:130,d:8,conf:79,lv:"g",
   gap:"มีสกิล motor-expert เต็มรูปแบบ ขาดทะเบียนเครื่องจักรและประวัติซ่อมจริง",
   t:[["ทะเบียนเครื่องจักรและสเปกมอเตอร์",2],["ประวัติซ่อมย้อนหลัง 3 ปี",2],["ผลวัด vibration/ฉนวน ล่าสุด",1],["แผน PM ประจำปี",1]]},
- {id:"powerplant",th:"โรงไฟฟ้าชีวมวล",en:"Power Plant",c:"#eab308",n:381,d:15,conf:77,lv:"g",
+ {id:"powerplant",th:"โรงไฟฟ้าชีวมวล",en:"Power Plant",c:"#eab308",n:392,d:21,conf:77,lv:"g",
   gap:"แหล่งอ้างอิงมากที่สุดใน 15 คน (15 แหล่ง) มีคู่มือหม้อไอน้ำจริงแล้ว ขาดข้อมูลกังหันและสัญญาขายไฟ",
   t:[["คู่มือเดินเครื่องกังหันไอน้ำ",2],["สัญญาซื้อขายไฟและเงื่อนไข",1],["บันทึกคุณภาพน้ำหม้อไอน้ำรายวัน",2],["ข้อมูลเชื้อเพลิงชานอ้อย (ความชื้น/ค่าความร้อน)",1]]},
- {id:"centrifugal",th:"การปั่น",en:"Centrifuge",c:"#f97316",n:147,d:5,conf:74,lv:"g",
+ {id:"centrifugal",th:"การปั่น",en:"Centrifuge",c:"#f97316",n:149,d:6,conf:73,lv:"g",
   gap:"คลังพอใช้แต่มาจากแค่ 5 แหล่ง — น้อยที่สุดในกลุ่มเขียว",
   t:[["SOP การปั่นและ wash water",2],["สเปกตะแกรงและรอบเปลี่ยน",1],["ผล purity ของ molasses ย้อนหลัง",1]]},
- {id:"dashboard",th:"การวิเคราะห์ข้อมูล",en:"Data & BI",c:"#8b5cf6",n:55,d:9,conf:74,lv:"y",
+ {id:"dashboard",th:"การวิเคราะห์ข้อมูล",en:"Data & BI",c:"#8b5cf6",n:57,d:11,conf:73,lv:"y",
   gap:"มีกรอบวิเคราะห์แต่ <b>ไม่มีข้อมูลผลผลิตจริง</b> จึงเทียบอะไรไม่ได้เลย",
   t:[["รายงานผลผลิตรายวัน/รายกะ ย้อนหลัง 1-2 ฤดู",3],["Recovery และ BHR รายวัน",3],["สมดุลมวลน้ำตาลของฤดูที่ผ่านมา",2],["KPI และเป้าหมายที่ผู้บริหารใช้จริง",1]]},
- {id:"cane",th:"ผู้เชี่ยวชาญอ้อย",en:"Cane",c:"#22c55e",n:133,d:11,conf:73,lv:"g",
+ {id:"cane",th:"ผู้เชี่ยวชาญอ้อย",en:"Cane",c:"#22c55e",n:135,d:13,conf:77,lv:"g",
   gap:"สกิล cane-brain ครบทั้งโรค แมลง ดิน ปุ๋ย ขาดข้อมูลแปลงในเขตส่งเสริมของโรงงาน",
   t:[["ข้อมูลแปลงและพันธุ์ในเขตส่งเสริม",2],["ผล CCS รายแปลงย้อนหลัง",2],["ราคาอ้อยขั้นต้น/ขั้นสุดท้ายปีล่าสุด",1]]},
- {id:"quality",th:"ห้องปฏิบัติการ",en:"Lab & Analysis",c:"#14b8a6",n:214,d:13,conf:73,lv:"g",
+ {id:"quality",th:"ห้องปฏิบัติการ",en:"Lab & Analysis",c:"#14b8a6",n:217,d:16,conf:73,lv:"g",
   gap:"มีสกิล QC ครบพร้อม decision tree ขาดสเปกลูกค้าและผลวิเคราะห์จริง",
   t:[["สเปกน้ำตาลของลูกค้าแต่ละราย",3],["ผลวิเคราะห์รายกะย้อนหลัง 1 ฤดู",2],["วิธีวิเคราะห์ภายในห้องแล็บ (WI)",2],["บันทึกการสอบเทียบเครื่องมือ",1]]},
- {id:"safety",th:"ความปลอดภัย",en:"Safety",c:"#2563eb",n:23,d:10,conf:71,lv:"y",
+ {id:"safety",th:"ความปลอดภัย",en:"Safety",c:"#2563eb",n:28,d:14,conf:75,lv:"r",
   gap:"มีแค่ 23 ท่อน และเป็นเนื้อหาที่ยืมมาจากสกิลอื่นเกือบทั้งหมด",
   t:[["JSA ทุกจุดเสี่ยงในโรงงาน",3],["Permit to Work ทุกประเภท",3],["รายงานอุบัติเหตุย้อนหลัง 3 ปี",2],["กฎความปลอดภัยและ PPE Matrix",2],["แผนฉุกเฉินและจุดรวมพล",1]]},
- {id:"warehouse",th:"จัดซื้อ & คลังสินค้า",en:"Procurement",c:"#f97316",n:31,d:4,conf:71,lv:"y",
+ {id:"warehouse",th:"จัดซื้อ & คลังสินค้า",en:"Procurement",c:"#f97316",n:31,d:4,conf:72,lv:"y",
   gap:"เพิ่งต่อสกิล procurement-management เข้าไป (14→31 ท่อน) แต่<b>ยังไม่มีความรู้เรื่องคลังน้ำตาล</b>",
   t:[["SOP คลังน้ำตาลและการควบคุมความชื้น",3],["เกณฑ์ FIFO/FEFO ที่บังคับใช้จริง",2],["รายการอะไหล่วิกฤตและจุดสั่งซื้อ",2],["ประวัติ supplier และผลประเมิน",1]]},
- {id:"etreatment",th:"ระบบบำบัดน้ำ",en:"E-Treatment",c:"#4ade80",n:15,d:3,conf:69,lv:"r",
-  gap:"<b>15 ท่อนจาก 3 แหล่ง</b> — ตอบได้ด้วยการยืมจากคนอื่นเกือบทั้งหมด",
-  t:[["คู่มือเดินระบบบำบัดน้ำเสีย",3],["ผลวิเคราะห์น้ำทิ้งย้อนหลัง",3],["ใบอนุญาตและเงื่อนไขจากกรมโรงงาน",2],["มาตรฐานน้ำทิ้งจากกรมควบคุมมลพิษ",1]]},
- {id:"crushing",th:"การหีบอ้อย",en:"Milling",c:"#3b82f6",n:405,d:11,conf:68,lv:"y",
+ {id:"etreatment",th:"ระบบบำบัดน้ำ",en:"E-Treatment",c:"#4ade80",n:100,d:10,conf:78,lv:"g",
+  gap:"<b>ยกระดับแล้ว 15 → 100 ท่อน</b> จากสกิล Wastewater Expert (กฎหมายไทย ตารางวินิจฉัยตามอาการ สูตรคำนวณ) เหลือแค่ค่าจริงของบ่อบำบัดโรงงาน",
+  t:[["ผลวิเคราะห์น้ำทิ้งย้อนหลัง 1-2 ฤดู",3],["ผังบ่อบำบัดและปริมาตรจริงแต่ละบ่อ",2],["ใบอนุญาตและเงื่อนไขจากกรมโรงงาน",2],["บันทึก MLSS / DO / SV30 รายวัน",2]]},
+ {id:"crushing",th:"การหีบอ้อย",en:"Milling",c:"#3b82f6",n:406,d:12,conf:75,lv:"g",
   gap:"<b>คลังใหญ่ที่สุด (405 ท่อน) แต่คะแนนต่ำ</b> เพราะเนื้อหาเกือบทั้งหมดมาจากตำราสแกน OCR คุณภาพต่ำ — ปริมาณไม่เท่ากับคุณภาพ",
   t:[["SOP การหีบและตั้งค่าลูกหีบ",3],["ค่า imbibition ที่ใช้จริงและเหตุผล",2],["ผล pol in bagasse รายกะ",2],["ประวัติการเปลี่ยน/กลึงลูกหีบ",1]]},
- {id:"foodsafety",th:"คุณภาพ & มาตรฐาน",en:"QA & Standards",c:"#7c3aed",n:9,d:5,conf:67,lv:"r",
+ {id:"foodsafety",th:"คุณภาพ & มาตรฐาน",en:"QA & Standards",c:"#7c3aed",n:13,d:9,conf:77,lv:"r",
   gap:"<b>เหลือ 9 ท่อน — น้อยเป็นอันดับ 2</b> ทั้งที่เป็นงานที่ต้องอ้างอิงเอกสารแม่นที่สุด",
   t:[["เอกสารระบบ GMP / HACCP / FSSC 22000",3],["ผล audit และ CAR/PAR ย้อนหลัง",3],["มอก. 56 ฉบับล่าสุด (สมอ.)",2],["ICUMSA Methods Book",2],["ทะเบียนเอกสารคุณภาพทั้งระบบ",1]]},
- {id:"hr",th:"ทรัพยากรบุคคล",en:"HR",c:"#22c55e",n:8,d:4,conf:66,lv:"r",
+ {id:"hr",th:"ทรัพยากรบุคคล",en:"HR",c:"#22c55e",n:7,d:3,conf:68,lv:"r",
   gap:"<b>8 ท่อน น้อยที่สุดในระบบ</b> และไม่มีเอกสารของฝ่ายบุคคลเลยสักฉบับ",
   t:[["ระเบียบข้อบังคับการทำงาน",3],["โครงสร้างกะช่วงหีบและ OT",2],["Training Matrix และแผนอบรม",2],["JD ทุกตำแหน่งในสายผลิต",2],["มาตรฐานอาชีพ TPQI สาขาน้ำตาล",1]]},
 ];
