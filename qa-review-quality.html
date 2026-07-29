@@ -1,0 +1,725 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ตรวจร่างคำถาม-คำตอบ · ห้องปฏิบัติการ</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f7fc;--card:#fff;--soft:#f7f9fd;--raised:#eef2f9;--line:#e3e9f4;--line2:#cfd9ea;
+ --tx:#0f1b2d;--tx2:#44546e;--tx3:#617087;--ac:#2563eb;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;
+ --mono:ui-monospace,"Cascadia Mono",Consolas,monospace;--sh:0 10px 30px -18px rgba(20,40,80,.4)}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0f1a;--card:#141c2b;--soft:#18202f;--raised:#1d2839;
+ --line:rgba(150,175,215,.14);--line2:rgba(150,175,215,.26);--tx:#eef2fa;--tx2:#b3c0d4;--tx3:#8593ab;
+ --ac:#6294ff;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--sh:0 10px 30px -14px rgba(0,0,0,.6)}}
+body{font-family:"Segoe UI Variable Text","Segoe UI",system-ui,"Noto Sans Thai",sans-serif;
+ background:var(--bg);color:var(--tx);line-height:1.65;padding:22px 16px 80px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto}
+h1{font-size:23px;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.sub{color:var(--tx3);font-size:13px;margin-top:4px}
+.note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--warn);
+ border-radius:11px;padding:13px 16px;font-size:12.8px;color:var(--tx2);margin:16px 0}
+.note b{color:var(--tx)}
+.bar{position:sticky;top:0;z-index:9;background:var(--bg);padding:12px 0;margin:14px 0 8px;border-bottom:1px solid var(--line)}
+.tally{display:flex;gap:8px;flex-wrap:wrap;font-size:12.5px;font-weight:650}
+.tally span{padding:6px 12px;border-radius:9px;background:var(--card);border:1px solid var(--line)}
+.tools{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
+.btn{font-family:inherit;font-size:12.5px;font-weight:650;padding:8px 14px;border-radius:9px;
+ border:1px solid var(--line2);background:var(--card);color:var(--tx2);cursor:pointer}
+.btn:hover{border-color:var(--ac);color:var(--ac)}
+.btn.p{background:var(--ac);color:#fff;border-color:transparent}
+h2{font-size:15px;font-weight:750;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h2 em{font-style:normal;font-size:12px;font-weight:600;color:var(--tx3)}
+.qa{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px;
+ margin-bottom:11px;box-shadow:var(--sh)}
+.qh{display:flex;gap:10px;align-items:flex-start}
+.num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--tx3);
+ background:var(--raised);padding:2px 7px;border-radius:6px;flex:none;margin-top:2px}
+.qt{flex:1;font-size:14.5px;font-weight:700;line-height:1.45}
+
+/* ── แถบตัดสิน อยู่บนสุดใต้คำถาม เห็นทันทีไม่ต้องเลื่อนหา ── */
+.vote{display:flex;gap:7px;margin:11px 0 4px;flex-wrap:wrap;align-items:center}
+.vote label{font-family:inherit;font-size:12.5px;font-weight:700;padding:7px 15px;border-radius:8px;
+ border:1px solid var(--line2);background:var(--soft);color:var(--tx2);cursor:pointer;user-select:none}
+.vote input{position:absolute;opacity:0;width:0;height:0}
+.vote input:checked+span{}
+.vote label:has(input[value=ok]:checked){background:var(--ok);color:#fff;border-color:transparent}
+.vote label:has(input[value=edit]:checked){background:var(--warn);color:#fff;border-color:transparent}
+.vote label:has(input[value=drop]:checked){background:var(--bad);color:#fff;border-color:transparent}
+.vote .nt{flex:1;min-width:180px;font-family:inherit;font-size:12.3px;padding:7px 11px;
+ border-radius:8px;border:1px solid var(--line);background:var(--soft);color:var(--tx);outline:none}
+.vote .nt:focus{border-color:var(--ac)}
+.qa:has(input[value=ok]:checked){border-color:color-mix(in srgb,var(--ok) 50%,transparent)}
+.qa:has(input[value=edit]:checked){border-color:color-mix(in srgb,var(--warn) 55%,transparent)}
+.qa:has(input[value=drop]:checked){border-color:color-mix(in srgb,var(--bad) 45%,transparent);opacity:.62}
+
+.ans{font-size:13.2px;color:var(--tx2);margin-top:10px;border-top:1px solid var(--line);padding-top:11px}
+.ans p{margin:7px 0}
+.ans ul,.ans ol{margin:7px 0 7px 20px}
+.ans li{margin:3px 0}
+.ans table{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.2px;display:block;overflow-x:auto}
+.ans th,.ans td{border:1px solid var(--line);padding:5px 9px;text-align:left;white-space:nowrap}
+.ans th{background:var(--raised);font-weight:700}
+.ans code{font-family:var(--mono);font-size:.9em;background:var(--raised);padding:1px 5px;border-radius:4px}
+.ans strong{color:var(--tx)}
+.ans pre{background:var(--raised);padding:10px 13px;border-radius:9px;overflow-x:auto;
+ font-family:var(--mono);font-size:11.8px;line-height:1.7;margin:9px 0}
+.src{font-size:11.3px;color:var(--tx3);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.src b{font-family:var(--mono);color:var(--ac)}
+.flag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px;margin-left:6px}
+.flag.gen{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.flag.chk{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--tx3);line-height:1.8}
+@media(max-width:640px){body{padding:16px 12px 70px}h1{font-size:19px}.qt{font-size:13.5px}
+ .vote label{padding:9px 16px;font-size:13px}}
+</style>
+
+<div class="wrap">
+<h1>ตรวจร่างคำถาม-คำตอบ — ห้องปฏิบัติการ</h1>
+<div class="sub">25 ข้อ ร่างจากคลังความรู้จริง · ทุกข้อมีเอกสารอ้างอิงกำกับ</div>
+
+<div class="note">
+<b>ปุ่มตัดสินอยู่ใต้คำถามแต่ละข้อทันที</b> — กด ✅ / ✏️ / ❌ ได้เลยไม่ต้องเลื่อนลงไปหา
+(รอบที่แล้วผมวางปุ่มไว้ล่างสุดใต้คำตอบยาวๆ เลยหาไม่เจอ ขอโทษครับ)<br><br>
+<b>⚠️ ตรวจตัวเลขให้หนัก</b> — ป้าย <span class="flag gen">ค่าทั่วไป</span> คือค่าอ้างอิงสากล
+· ป้าย <span class="flag chk">ต้องยืนยัน</span> คือค่าที่ต้องเปิด มอก. 56 ฉบับปัจจุบัน
+หรือสเปกลูกค้ามายืนยัน ห้ามใช้ค่าจำ
+</div>
+
+<div class="bar">
+  <div class="tally">
+    <span id="tOk" style="color:var(--ok)">ใช้ได้ 0</span>
+    <span id="tEdit" style="color:var(--warn)">ต้องแก้ 0</span>
+    <span id="tDrop" style="color:var(--bad)">ทิ้ง 0</span>
+    <span id="tLeft">ยังไม่ตัดสิน 25</span>
+  </div>
+  <div class="tools">
+    <button class="btn p" id="copy">คัดลอกผลสรุป</button>
+    <button class="btn" onclick="window.print()">พิมพ์ / PDF</button>
+    <button class="btn" id="reset">ล้างที่เลือก</button>
+  </div>
+</div>
+
+<h2>ค่าพื้นฐานและการคำนวณ <em>· สิ่งที่ต้องตอบได้ทันที · 5 ข้อ</em></h2>
+
+<div class="qa" data-i="1"><div class="qh"><span class="num">01</span>
+<div class="qt">Pol กับ Brix ต่างกันยังไง</div></div>
+<div class="vote">
+<label><input type="radio" name="v1" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v1" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v1" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="1" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>Brix</strong> = ของแข็งที่ละลายน้ำได้<strong>ทั้งหมด</strong> วัดด้วยรีแฟรกโตมิเตอร์
+— รวมทั้งซูโครสและสิ่งที่ไม่ใช่ซูโครส</p>
+<p><strong>Pol</strong> = ปริมาณ<strong>ซูโครส</strong>โดยประมาณ วัดด้วยโพลาริมิเตอร์
+จากการหมุนระนาบแสงโพลาไรซ์</p>
+<p>ทั้งคู่ต้องวัดที่ <strong>20 °C</strong> ถึงจะเทียบกันได้</p>
+<p><strong>ความต่างของสองค่าคือแก่นของงาน QC</strong></p>
+<pre>Non-sucrose (%) = Brix − Pol
+Purity (%)      = Pol / Brix × 100</pre>
+<p><strong>กฎที่ใช้ตรวจความผิดพลาดได้ทันที: Pol ต้องไม่มากกว่า Brix</strong>
+ถ้าเจอ Pol &gt; Brix หรือ Purity &gt; 100 แปลว่าวัดผิดแน่นอน ไม่ใช่กระบวนการผิด</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 1 และ 5 · QC-TREE ขั้นที่ 0</b></div></div>
+
+<div class="qa" data-i="2"><div class="qh"><span class="num">02</span>
+<div class="qt">Purity คำนวณยังไง ค่าบอกอะไรเรา</div></div>
+<div class="vote">
+<label><input type="radio" name="v2" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v2" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v2" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="2" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<pre>Purity (%) = Pol / Brix × 100</pre>
+<p>บอกว่า<strong>ในของแข็งที่ละลายอยู่ทั้งหมด เป็นซูโครสกี่เปอร์เซ็นต์</strong></p>
+<p><strong>Purity ต่ำผิดปกติ</strong> แปลว่ามีสิ่งที่ไม่ใช่น้ำตาลเยอะ ซึ่งชี้ได้ 2 ทาง</p>
+<ul>
+<li><strong>การทำบริสุทธิ์ไม่ดี</strong> — ดูที่สถานีทำใสและการล้างผลึก</li>
+<li><strong>อ้อยคุณภาพต่ำมาตั้งแต่ต้น</strong> — อ้อยค้าง อ้อยไหม้ ปนดิน</li>
+</ul>
+<p><strong>วิธีแยกว่าเป็นทางไหน:</strong> ถ้า Purity ตกทุกจุดตั้งแต่น้ำอ้อยดิบ = ปัญหาต้นน้ำ
+ถ้าตกเฉพาะช่วงกลางกระบวนการ = ปัญหาที่หน่วยผลิตนั้น</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 5 · QC-TREE กลุ่ม A4</b></div></div>
+
+<div class="qa" data-i="3"><div class="qh"><span class="num">03</span>
+<div class="qt">Safety Factor คืออะไร ใช้ทำอะไร</div></div>
+<div class="vote">
+<label><input type="radio" name="v3" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v3" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v3" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="3" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p>เครื่องมือคลาสสิกประเมินว่า<strong>น้ำตาลทรายดิบจะเก็บได้นานแค่ไหนโดยไม่เสื่อม</strong></p>
+<pre>SF = Moisture (%) / (100 − Pol (%))</pre>
+<table><tr><th>ค่า SF</th><th>ความหมาย</th></tr>
+<tr><td>≤ 0.25</td><td>ปลอดภัย เก็บได้นาน</td></tr>
+<tr><td>0.25 – 0.30</td><td>เฝ้าระวัง</td></tr>
+<tr><td>&gt; 0.30</td><td>เสี่ยงเสื่อม เกิด caking และจุลินทรีย์</td></tr></table>
+<p><strong>หลักคิด:</strong> ความชื้นที่เท่ากันอันตรายไม่เท่ากัน — น้ำตาลที่ Pol ต่ำ
+(มี non-pol เยอะ) จะอันตรายกว่าที่ความชื้นเดียวกัน เพราะความชื้นนั้นไปอยู่ในฟิล์มน้ำเชื่อม
+รอบผลึกซึ่งจุลินทรีย์ใช้ได้</p>
+<p><span class="flag gen">ค่าทั่วไป</span> ใช้กับน้ำตาลทรายดิบเป็นหลัก</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 5</b></div></div>
+
+<div class="qa" data-i="4"><div class="qh"><span class="num">04</span>
+<div class="qt">ดัชนีที่นักวิเคราะห์ควรคำนวณประจำมีอะไรบ้าง</div></div>
+<div class="vote">
+<label><input type="radio" name="v4" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v4" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v4" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="4" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<pre>Purity (%)      = Pol / Brix × 100
+Non-sucrose (%) = Brix − Pol
+Safety Factor   = Moisture% / (100 − Pol%)
+RS / Ash ratio  = Reducing sugars / Ash
+Color transfer  = Color ผลิตภัณฑ์ / Color น้ำเลี้ยง</pre>
+<p><strong>สองตัวท้ายมีประโยชน์แต่คนไม่ค่อยใช้</strong></p>
+<ul>
+<li><strong>RS/Ash</strong> ช่วยแยกว่าปัญหาเป็น inversion (RS ขึ้นอย่างเดียว)
+หรือเถ้าปนเปื้อน (Ash ขึ้นอย่างเดียว)</li>
+<li><strong>Color transfer</strong> บอกว่าผลึกพาสีจากน้ำเลี้ยงมาเท่าไร
+ถ้าสูงให้ไปคุมที่หม้อเคี่ยวและการล้างในหม้อปั่น</li>
+</ul>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 5</b></div></div>
+
+<div class="qa" data-i="5"><div class="qh"><span class="num">05</span>
+<div class="qt">ทำไมต้องวัดที่ 20 องศาเซลเซียส</div></div>
+<div class="vote">
+<label><input type="radio" name="v5" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v5" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v5" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="5" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p>เพราะทั้งดัชนีหักเหแสง (Brix) และการหมุนระนาบแสง (Pol)
+<strong>เปลี่ยนตามอุณหภูมิ</strong> วิธีมาตรฐาน ICUMSA จึงกำหนดที่ 20 °C</p>
+<p><strong>ถ้าไม่คุมอุณหภูมิ</strong> ค่าที่ได้จะเทียบกับสเปกไม่ได้ และเทียบระหว่างกะไม่ได้ด้วย
+— ปัญหานี้มักโผล่มาเป็น "ค่ากระโดดโดยไม่มีเหตุผล" ซึ่งจริงๆ เป็นปัญหาห้องแล็บ ไม่ใช่กระบวนการ</p>
+<p><strong>ในทางปฏิบัติ:</strong> ถ้าเครื่องมีระบบชดเชยอุณหภูมิอัตโนมัติต้องตรวจว่าทำงานจริง
+ถ้าไม่มีต้องปรับตัวอย่างให้ถึง 20 °C ก่อนวัดทุกครั้ง</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 1 · QC-TREE ขั้นที่ 0</b></div></div>
+
+<h2>อ่านค่าผิดปกติแล้วหาสาเหตุ <em>· หัวใจของงาน QC · 8 ข้อ</em></h2>
+
+<div class="qa" data-i="6"><div class="qh"><span class="num">06</span>
+<div class="qt">ค่าผิดปกติ ต้องทำอะไรก่อนเป็นอันดับแรก</div></div>
+<div class="vote">
+<label><input type="radio" name="v6" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v6" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v6" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="6" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ตรวจว่าค่านั้นเชื่อถือได้ก่อน อย่าเพิ่งโทษกระบวนการ</strong></p>
+<ol>
+<li><strong>เป็นไปได้ทางกายภาพไหม</strong> — Pol &gt; Brix หรือ Purity &gt; 100 = วัดผิดแน่นอน</li>
+<li><strong>การชักตัวอย่างและเตรียมตัวอย่างถูกไหม</strong> — เป็นตัวแทนจริงไหม เจือจางถูกไหม
+อุณหภูมิ 20 °C ไหม</li>
+<li><strong>เครื่องมือสอบเทียบล่าสุดเมื่อไร</strong> — โพลาริมิเตอร์ สเปกโตรโฟโตมิเตอร์ pH meter</li>
+<li><strong>เทียบกับแนวโน้มและกะก่อนหน้า ไม่ใช่ดูค่าเดี่ยว</strong></li>
+</ol>
+<p><strong>ค่าที่พุ่งขึ้นครั้งเดียวโดดๆ มักเป็นปัญหาห้องแล็บมากกว่าปัญหากระบวนการ</strong>
+ถ้าสงสัยให้สั่งตรวจซ้ำและสอบเทียบก่อนแจ้งฝ่ายผลิต</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE ขั้นที่ 0</b></div></div>
+
+<div class="qa" data-i="7"><div class="qh"><span class="num">07</span>
+<div class="qt">สีสูง เถ้าสูง Purity ตก พร้อมกัน — สาเหตุอยู่ตรงไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v7" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v7" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v7" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="7" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>รูปแบบนี้ชี้ไปที่สถานีทำใส (Clarification) ค่อนข้างชัด</strong></p>
+<p><strong>จุดตรวจเรียงตามลำดับ</strong></p>
+<ul>
+<li><strong>pH น้ำอ้อยหลังเติมปูน</strong> — เป้าประมาณ 7.0 – 7.2 <span class="flag gen">ค่าทั่วไป</span></li>
+<li>อัตราการจ่ายปูนและความสม่ำเสมอ</li>
+<li>อุณหภูมิและเวลาพักในถังใส (retention time)</li>
+<li>ชนิดและอัตราการจ่าย flocculant</li>
+<li>สภาพชั้นโคลน มีโคลนลอยไหม</li>
+<li>ประสิทธิภาพหม้อกรอง</li>
+</ul>
+<p><strong>ทำไมสามค่าขึ้นพร้อมกัน:</strong> เมื่อทำใสไม่ดี สิ่งที่ไม่ใช่น้ำตาลผ่านไปหมด
+ทั้งสารสี สารอนินทรีย์ (เถ้า) และของแข็งอื่น จึงเห็นทั้งสามค่าไปทางเดียวกัน</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม A1</b></div></div>
+
+<div class="qa" data-i="8"><div class="qh"><span class="num">08</span>
+<div class="qt">สีสูงอย่างเดียว เถ้าปกติ แปลว่าอะไร</div></div>
+<div class="vote">
+<label><input type="radio" name="v8" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v8" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v8" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="8" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>สีเกิดจากความร้อนในกระบวนการ ไม่ใช่จากการทำใส</strong>
+เพราะถ้าเป็นปัญหาทำใส เถ้าจะขึ้นตามมาด้วย</p>
+<p><strong>ต้องไปดูที่หม้อระเหยและหม้อเคี่ยว</strong></p>
+<ul>
+<li><strong>อุณหภูมิและสุญญากาศของหม้อระเหย</strong> — ร้อนเกินทำให้เกิดสี</li>
+<li><strong>ตะกรันในหม้อ</strong> — ทำให้เกิดจุดร้อนเฉพาะที่ (overheating)</li>
+<li><strong>เวลาที่น้ำเชื่อมค้างในระบบ</strong> — ยิ่งนานยิ่งเกิดสี</li>
+<li><strong>pH น้ำเชื่อม</strong> — ด่างเกินเร่งการเกิดสี (alkaline degradation)</li>
+<li>สีของน้ำเชื่อมที่ป้อนเข้ามาสูงอยู่แล้วหรือเปล่า</li>
+</ul>
+<p>กลไกคือปฏิกิริยา caramelization และ Maillard ซึ่งเร่งด้วยความร้อน เวลา และ pH</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม A2</b></div></div>
+
+<div class="qa" data-i="9"><div class="qh"><span class="num">09</span>
+<div class="qt">เถ้าสูงอย่างเดียว สีพอใช้ ต้องดูตรงไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v9" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v9" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v9" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="9" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ชี้ไปที่หม้อปั่น (ล้างผลึกไม่พอ) หรือการปนเปื้อนจากการกระเด็น</strong></p>
+<p><strong>จุดตรวจ</strong></p>
+<ul>
+<li><strong>ปริมาณและแรงดันน้ำล้าง</strong> ในหม้อปั่น</li>
+<li><strong>เวลาปั่นและความหนาของชั้นเค้ก</strong> — เค้กหนาเกินล้างไม่ทั่ว</li>
+<li><strong>Entrainment ในหม้อระเหย</strong> — น้ำเชื่อมกระเด็นข้ามไปกับไอ</li>
+<li>คุณภาพของ magma หรือเชื้อผลึก</li>
+</ul>
+<p><strong>เหตุผล:</strong> เถ้าคือสารอนินทรีย์ที่อยู่ในน้ำเลี้ยงรอบผลึก
+ถ้าล้างไม่พอมันจะติดไปกับผลึก โดยที่สีอาจยังปกติเพราะสารสีถูกกำจัดไปแล้วตั้งแต่ทำใส</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม A3</b></div></div>
+
+<div class="qa" data-i="10"><div class="qh"><span class="num">10</span>
+<div class="qt">น้ำตาลรีดิวซ์สูงขึ้น pH ต่ำลง เกิดอะไรขึ้น</div></div>
+<div class="vote">
+<label><input type="radio" name="v10" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v10" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v10" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="10" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>Inversion — ซูโครสถูกย่อยเป็นกลูโคสและฟรุกโตส</strong> ซึ่งเป็นการสูญเสียผลผลิตโดยตรง</p>
+<p><strong>เกิดจาก 3 อย่างพร้อมกัน: กรด + ความร้อน + เวลานาน</strong></p>
+<p><strong>จุดตรวจ</strong></p>
+<ul>
+<li>pH ทุกสถานี — หม้อระเหย หม้อเคี่ยว ถังพักน้ำเชื่อม</li>
+<li>อุณหภูมิและเวลาที่น้ำเชื่อมค้างในแต่ละจุด</li>
+<li><strong>จุดที่น้ำเชื่อมค้างนานผิดปกติ และท่อตัน (dead legs)</strong></li>
+</ul>
+<p><strong>ถ้ามีกลิ่นหมักหรือกลิ่นแอลกอฮอล์ด้วย</strong> แปลว่าไม่ใช่แค่ปฏิกิริยาเคมี
+แต่มีจุลินทรีย์ร่วมด้วย ให้ไปดูสุขาภิบาลไลน์ การล้างเครื่องระหว่างกะ และค่า dextran</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม B1 และ B2</b></div></div>
+
+<div class="qa" data-i="11"><div class="qh"><span class="num">11</span>
+<div class="qt">Dextran สูง บอกอะไร แล้วกระทบอะไรบ้าง</div></div>
+<div class="vote">
+<label><input type="radio" name="v11" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v11" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v11" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="11" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>Dextran เป็นตัวชี้วัดว่าอ้อยเสียหรือค้างนานก่อนเข้าหีบ</strong>
+เกิดจากจุลินทรีย์ (เช่น Leuconostoc) เปลี่ยนซูโครสเป็นสายพอลิเมอร์</p>
+<p><strong>ผลกระทบที่ตามมา</strong></p>
+<ul>
+<li><strong>ผลึกยาวผิดรูป</strong> — dextran ไปเกาะด้านใดด้านหนึ่งของผลึก ทำให้โตไม่สมมาตร</li>
+<li><strong>กรองยากขึ้น</strong> (filterability แย่ลง) กระทบทั้งโรงงานเราและโรงกลั่นปลายทาง</li>
+<li><strong>ความหนืดสูงขึ้น</strong> ทำให้ปั่นแยกยาก</li>
+<li>ค่า Pol ที่วัดได้อาจสูงกว่าความจริง เพราะ dextran หมุนแสงไปทางเดียวกับซูโครส</li>
+</ul>
+<p><strong>แก้ที่ต้นทาง:</strong> ลดเวลาอ้อยค้าง จัดคิวรถ ควบคุมอ้อยไฟไหม้
+— แก้ที่ปลายทางแพงกว่าและได้ผลน้อยกว่ามาก</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม B3 · QC-SPEC ข้อ 4</b></div></div>
+
+<div class="qa" data-i="12"><div class="qh"><span class="num">12</span>
+<div class="qt">Purity ตกทุกจุดตั้งแต่น้ำอ้อยดิบ แปลว่าอะไร</div></div>
+<div class="vote">
+<label><input type="radio" name="v12" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v12" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v12" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="12" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ปัญหาอยู่ที่ต้นน้ำ ไม่ใช่ในโรงงาน</strong> — ถ้าเป็นปัญหาหน่วยผลิตใดหน่วยหนึ่ง
+ค่าจะตกเฉพาะช่วงหลังหน่วยนั้น ไม่ใช่ตกตั้งแต่จุดแรก</p>
+<p><strong>สาเหตุที่ต้องไล่</strong></p>
+<ul>
+<li>คุณภาพอ้อยและค่า CCS ที่รับเข้ามา</li>
+<li><strong>เวลาอ้อยค้างก่อนหีบ</strong> — ตัวแปรที่กระทบมากที่สุดและคุมได้</li>
+<li>สัดส่วนอ้อยไฟไหม้</li>
+<li>การปนเปื้อนดินและกาบใบ</li>
+<li>ค่า dextran เพื่อยืนยันว่าอ้อยเสียจริง</li>
+</ul>
+<p><strong>สิ่งที่ห้ามทำ:</strong> อย่าไปปรับตั้งเครื่องในโรงงานเพื่อชดเชย
+เพราะจะทำให้เสียสมดุลของกระบวนการโดยที่แก้ต้นเหตุไม่ได้</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม A4</b></div></div>
+
+<div class="qa" data-i="13"><div class="qh"><span class="num">13</span>
+<div class="qt">SO₂ เกินเกณฑ์ ต้องทำยังไง</div></div>
+<div class="vote">
+<label><input type="radio" name="v13" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v13" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v13" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="13" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>เรื่องนี้เป็นประเด็นความปลอดภัยอาหาร ต้องมาก่อนเรื่องประสิทธิภาพเสมอ</strong></p>
+<p>SO₂ ตกค้างเกินเกณฑ์กระทบทั้งสุขภาพผู้บริโภคและการยอมรับของลูกค้า</p>
+<p><strong>จุดตรวจ</strong></p>
+<ul>
+<li>อัตราการจ่าย SO₂ ที่สถานีฟอกซัลไฟต์</li>
+<li>pH หลังการฟอก</li>
+<li>ความสม่ำเสมอของการจ่าย — จ่ายเป็นช่วงหรือต่อเนื่อง</li>
+</ul>
+<p><span class="flag chk">ต้องยืนยัน</span> <strong>เกณฑ์ตัวเลขต้องใช้ มอก. 56 ฉบับปัจจุบัน
+และสเปกของลูกค้าแต่ละรายเป็นตัวตัดสิน</strong> ห้ามใช้ค่าจำ เพราะเกณฑ์ต่างกันตามชั้นคุณภาพ
+และลูกค้าบางรายเข้มกว่ากฎหมาย</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม A5 · QC-STD</b></div></div>
+
+<h2>เกรดและสเปกน้ำตาล <em>· ตอบลูกค้าและฝ่ายขาย · 4 ข้อ</em></h2>
+
+<div class="qa" data-i="14"><div class="qh"><span class="num">14</span>
+<div class="qt">ICUMSA 45 กับ ICUMSA 100 ต่างกันยังไง</div></div>
+<div class="vote">
+<label><input type="radio" name="v14" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v14" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v14" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="14" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ตัวเลขคือค่าสีสูงสุดที่ยอมรับได้ หน่วย IU — ยิ่งต่ำยิ่งขาว</strong></p>
+<table><tr><th>เกรด</th><th>สี (IU)</th><th>Pol (%)</th><th>ใช้ทำอะไร</th></tr>
+<tr><td>ICUMSA 45</td><td>≤ 45</td><td>≥ 99.80</td><td>ทรายขาวบริสุทธิ์ เครื่องดื่ม/ยา</td></tr>
+<tr><td>ICUMSA 100</td><td>≤ 100</td><td>≥ 99.5–99.7</td><td>ทรายขาว อุตสาหกรรมอาหาร</td></tr>
+<tr><td>ICUMSA 150</td><td>≤ 150</td><td>≥ 99.0</td><td>ทรายขาว / plantation white</td></tr>
+<tr><td>200–600</td><td>200–600</td><td>97.5–99.0</td><td>วัตถุดิบโรงกลั่น</td></tr>
+<tr><td>ดิบ 600–1200</td><td>600–1200+</td><td>~97.0–98.5</td><td>ป้อนโรงกลั่น ไม่บริโภคตรง</td></tr>
+<tr><td>VHP</td><td>สีน้ำตาล</td><td>99.0–99.5</td><td>ดิบพอลสูง ป้อนโรงกลั่น</td></tr></table>
+<p><span class="flag gen">ค่าทั่วไป</span> เป็นเกณฑ์ทางการค้าสากล
+<strong>สเปกที่ผูกพันจริงคือสัญญากับลูกค้าแต่ละราย</strong></p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 2</b></div></div>
+
+<div class="qa" data-i="15"><div class="qh"><span class="num">15</span>
+<div class="qt">มอก. 56 กำหนดอะไรบ้าง</div></div>
+<div class="vote">
+<label><input type="radio" name="v15" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v15" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v15" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="15" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>มอก. 56 คือมาตรฐานน้ำตาลทรายขาวของไทย</strong> แบ่งเป็นชนิดและชั้นคุณภาพ</p>
+<ul>
+<li><strong>น้ำตาลทรายขาวบริสุทธิ์ (refined)</strong> — สีต่ำสุด Pol สูงสุด
+น้ำตาลรีดิวซ์ เถ้า และความชื้นต่ำสุด</li>
+<li><strong>น้ำตาลทรายขาว (plantation white) ชั้น 1 / 2 / 3</strong> —
+เกณฑ์สี เถ้า น้ำตาลรีดิวซ์ ความชื้น ยอมสูงขึ้นตามชั้น</li>
+</ul>
+<p><span class="flag chk">ต้องยืนยัน</span> <strong>ตัวเลขเกณฑ์แต่ละชั้นเปลี่ยนตามฉบับปรับปรุง
+ห้ามใช้ค่าจำ</strong> ต้องเปิด มอก. 56 ฉบับปัจจุบันจาก สมอ. หรือใช้สเปกลูกค้าเป็นตัวตัดสิน</p>
+<p>ผมจงใจไม่ใส่ตัวเลขในข้อนี้ เพราะการจำตัวเลขผิดในงานมาตรฐานอันตรายกว่าไม่รู้</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 3 · QC-STD ข้อ 2</b></div></div>
+
+<div class="qa" data-i="16"><div class="qh"><span class="num">16</span>
+<div class="qt">ลูกค้าขอสเปกเข้มกว่ากฎหมาย ต้องยึดอันไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v16" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v16" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v16" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="16" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ยึดอันที่เข้มกว่าเสมอ</strong></p>
+<p>กฎหมายและ มอก. คือ<strong>เพดานล่าง</strong> ที่ห้ามต่ำกว่า
+ส่วนสัญญากับลูกค้าคือ<strong>ข้อผูกพันทางธุรกิจ</strong> ที่อาจเข้มกว่า</p>
+<p><strong>สิ่งที่ห้องแล็บควรทำ</strong></p>
+<ul>
+<li>ทำ<strong>ทะเบียนสเปกแยกรายลูกค้า</strong> ไม่ใช้เกณฑ์เดียวกันหมด</li>
+<li>ตั้ง<strong>ค่าเตือนภายใน (internal alert) ให้เข้มกว่าสเปกจริงเล็กน้อย</strong>
+จะได้มีเวลาแก้ก่อนหลุด ไม่ใช่รู้ตอนเกินแล้ว</li>
+<li>ระบุในรายงานทุกครั้งว่ากำลังเทียบกับเกณฑ์ของใคร</li>
+</ul>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-FRAME Guardrails · QC-STD</b></div></div>
+
+<div class="qa" data-i="17"><div class="qh"><span class="num">17</span>
+<div class="qt">น้ำตาลดิบกับ VHP ต่างกันยังไง</div></div>
+<div class="vote">
+<label><input type="radio" name="v17" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v17" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v17" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="17" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p>ต่างกันที่<strong>ค่า Pol</strong> เป็นหลัก</p>
+<table><tr><th>ชนิด</th><th>Pol (%)</th><th>ลักษณะ</th></tr>
+<tr><td>น้ำตาลทรายดิบทั่วไป</td><td>~97.0 – 98.5</td><td>สี 600–1200+ IU</td></tr>
+<tr><td>VHP (Very High Pol)</td><td>99.0 – 99.5</td><td>สีน้ำตาล แต่บริสุทธิ์กว่ามาก</td></tr></table>
+<p><strong>ทำไม VHP ถึงมีค่ากว่า:</strong> โรงกลั่นปลายทางใช้พลังงานและสารเคมีน้อยลง
+เพราะมีสิ่งเจือปนให้กำจัดน้อยกว่า จึงยอมจ่ายแพงกว่า</p>
+<p><strong>ทั้งสองชนิดไม่ใช่สินค้าบริโภคโดยตรง</strong> เป็นวัตถุดิบป้อนโรงกลั่น</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-SPEC ข้อ 2</b></div></div>
+
+<h2>ความน่าเชื่อถือของผลวิเคราะห์ <em>· กันการวินิจฉัยจากข้อมูลผิด · 4 ข้อ</em></h2>
+
+<div class="qa" data-i="18"><div class="qh"><span class="num">18</span>
+<div class="qt">เจอค่า Purity เกิน 100 ต้องทำยังไง</div></div>
+<div class="vote">
+<label><input type="radio" name="v18" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v18" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v18" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="18" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>เป็นไปไม่ได้ทางกายภาพ = วัดผิดแน่นอน</strong> เพราะซูโครสเป็นส่วนหนึ่งของของแข็งทั้งหมด
+Pol จึงมากกว่า Brix ไม่ได้</p>
+<p><strong>สาเหตุที่พบบ่อย</strong></p>
+<ul>
+<li>เจือจางผิดสัดส่วนระหว่าง Pol กับ Brix</li>
+<li>อุณหภูมิตัวอย่างไม่ใช่ 20 °C</li>
+<li>เครื่องมือตัวใดตัวหนึ่งไม่ได้สอบเทียบ</li>
+<li>สลับตัวอย่างหรือบันทึกผิดช่อง</li>
+<li>ตัวอย่างมี dextran สูง ทำให้ Pol อ่านสูงเกินจริง</li>
+</ul>
+<p><strong>ต้องตรวจซ้ำก่อนรายงาน อย่าส่งค่านี้ออกไป</strong>
+เพราะถ้าฝ่ายผลิตเอาไปปรับเครื่องจะเสียหายหนักกว่าเดิม</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE ขั้นที่ 0</b></div></div>
+
+<div class="qa" data-i="19"><div class="qh"><span class="num">19</span>
+<div class="qt">ค่าพุ่งขึ้นครั้งเดียวโดดๆ ควรเชื่อไหม</div></div>
+<div class="vote">
+<label><input type="radio" name="v19" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v19" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v19" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="19" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>อย่าเพิ่งเชื่อ — ค่าเดี่ยวที่กระโดดมักเป็นปัญหาห้องแล็บมากกว่ากระบวนการ</strong></p>
+<p>เพราะกระบวนการผลิตมีความเฉื่อย การเปลี่ยนแปลงจริงมักค่อยเป็นค่อยไปและเห็นเป็นแนวโน้ม
+ไม่ใช่กระโดดครั้งเดียวแล้วกลับปกติ</p>
+<p><strong>สิ่งที่ควรทำ</strong></p>
+<ol>
+<li>ตรวจซ้ำจากตัวอย่างเดิม</li>
+<li>ถ้าได้ค่าเดิมอีก ให้เก็บตัวอย่างใหม่แล้ววัด</li>
+<li>ดูค่าข้างเคียงว่าไปทางเดียวกันไหม — ถ้าสีขึ้นจริงเถ้าควรขยับด้วยในบางรูปแบบ</li>
+<li>ถ้ายืนยันแล้วค่อยแจ้งฝ่ายผลิต พร้อมบอกว่าตรวจซ้ำแล้ว</li>
+</ol>
+<p><strong>การรายงานค่าผิดทำให้ฝ่ายผลิตเสียความเชื่อถือในห้องแล็บ</strong>
+ซึ่งกู้คืนยากกว่าการรอตรวจซ้ำอีกหนึ่งรอบ</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE ขั้นที่ 0 · QC-FRAME</b></div></div>
+
+<div class="qa" data-i="20"><div class="qh"><span class="num">20</span>
+<div class="qt">เครื่องมือต้องสอบเทียบบ่อยแค่ไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v20" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v20" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v20" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="20" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><span class="flag chk">ต้องยืนยัน</span> <strong>ความถี่ที่ถูกต้องต้องมาจากระเบียบของห้องแล็บเราเอง
+ตามกรอบ ISO/IEC 17025</strong> ไม่มีตัวเลขสากลตัวเดียวที่ใช้ได้กับทุกที่</p>
+<p><strong>หลักการที่ใช้กำหนดความถี่</strong></p>
+<ul>
+<li>ความสำคัญของค่าที่วัดต่อการตัดสินใจและต่อสัญญาลูกค้า</li>
+<li>ความเสถียรของเครื่องมือแต่ละตัวจากประวัติที่ผ่านมา</li>
+<li>ความถี่ในการใช้งาน</li>
+<li>คำแนะนำของผู้ผลิตเครื่อง</li>
+</ul>
+<p><strong>สิ่งที่ควรทำทุกวันไม่ว่าความถี่สอบเทียบเป็นเท่าไร</strong> คือการตรวจสอบด้วย
+สารมาตรฐาน (check standard) ก่อนเริ่มกะ ถ้าค่าเพี้ยนจะรู้ทันทีไม่ต้องรอรอบสอบเทียบ</p>
+<p><strong>ต้องเก็บบันทึกทุกครั้ง</strong> เพราะเป็นหลักฐานที่ผู้ตรวจประเมินจะขอดู</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-STD ข้อ 3 · QC-TREE ขั้นที่ 0</b></div></div>
+
+<div class="qa" data-i="21"><div class="qh"><span class="num">21</span>
+<div class="qt">ชักตัวอย่างยังไงให้เป็นตัวแทนจริง</div></div>
+<div class="vote">
+<label><input type="radio" name="v21" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v21" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v21" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="21" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ตัวอย่างที่ไม่เป็นตัวแทนทำให้ทุกอย่างหลังจากนั้นไร้ความหมาย
+ต่อให้เครื่องมือแม่นแค่ไหนก็ตาม</strong></p>
+<p><strong>หลักที่ต้องรักษา</strong></p>
+<ul>
+<li><strong>จุดเก็บต้องเป็นจุดที่ผสมดีแล้ว</strong> ไม่ใช่มุมถังหรือจุดที่ไหลนิ่ง</li>
+<li><strong>เวลาที่เก็บต้องเป็นตัวแทนของช่วงเวลานั้น</strong> — ถ้าค่าผันผวนตามการเดินเครื่อง
+ต้องเก็บแบบผสมรวม (composite) ไม่ใช่จ้วงครั้งเดียว</li>
+<li><strong>ภาชนะสะอาดและปิดสนิท</strong> โดยเฉพาะตัวอย่างที่จะวัดน้ำตาลรีดิวซ์
+เพราะจุลินทรีย์ทำให้ค่าเปลี่ยนระหว่างรอวัด</li>
+<li><strong>ส่งถึงห้องแล็บเร็วที่สุด</strong> ถ้าค้างนานต้องบันทึกเวลาไว้ด้วย</li>
+</ul>
+<p><strong>ควรมีขั้นตอนการชักตัวอย่างเป็นลายลักษณ์อักษรและอบรมคนเก็บ</strong>
+เพราะส่วนใหญ่คนเก็บตัวอย่างไม่ใช่คนวิเคราะห์</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE ขั้นที่ 0 · QC-STD ข้อ 3</b></div></div>
+
+<h2>ความชื้น กายภาพ และการเก็บรักษา <em>· ปัญหาที่โผล่ตอนส่งของ · 4 ข้อ</em></h2>
+
+<div class="qa" data-i="22"><div class="qh"><span class="num">22</span>
+<div class="qt">ความชื้นสูง ต้องไปดูตรงไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v22" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v22" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v22" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="22" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p>ความชื้นเป็นปัญหา<strong>กลุ่มกายภาพ</strong> จึงชี้ไปคนละทางกับปัญหาสีหรือเถ้า</p>
+<p><strong>ไล่ตามลำดับนี้</strong></p>
+<ol>
+<li><strong>หม้อปั่น</strong> — เวลาปั่นและการสลัดน้ำพอไหม</li>
+<li><strong>เครื่องอบ</strong> — อุณหภูมิลมร้อน ปริมาณลม เวลาที่อยู่ในเครื่อง</li>
+<li><strong>เครื่องทำเย็นและ conditioning</strong> — ถ้าน้ำตาลยังร้อนตอนบรรจุ
+ความชื้นจะเคลื่อนไปรวมกันภายหลังแล้วจับตัวเป็นก้อน</li>
+<li><strong>สภาพคลังและการบรรจุ</strong> — ความชื้นสัมพัทธ์ในคลัง การควบแน่นบนผิวกระสอบ</li>
+</ol>
+<p><strong>จุดที่คนมองข้ามบ่อยที่สุดคือข้อ 3</strong> — น้ำตาลร้อนเข้ากระสอบ
+ทำให้เกิดการเคลื่อนย้ายความชื้นและ caking ในภายหลัง ทั้งที่ตอนวัดค่าผ่าน</p>
+<p>ควรคำนวณ Safety Factor ควบคู่ไปด้วย ไม่ดูความชื้นตัวเดียว</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม C · QC-SPEC ข้อ 4 และ 5</b></div></div>
+
+<div class="qa" data-i="23"><div class="qh"><span class="num">23</span>
+<div class="qt">น้ำตาลจับตัวเป็นก้อนในคลัง สาเหตุมาจากไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v23" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v23" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v23" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="23" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>ต้องตรวจสองทางเสมอ อย่าสรุปที่คลังอย่างเดียว</strong></p>
+<p><strong>ทางที่ 1 — น้ำตาลเข้าคลังไม่ได้สเปกตั้งแต่แรก</strong></p>
+<ul>
+<li>ความชื้นสูงเกิน หรือ Safety Factor เกิน 0.30</li>
+<li><strong>อุณหภูมิตอนบรรจุสูงเกิน</strong> — สาเหตุที่คนมองข้ามมากที่สุด</li>
+<li>ขนาดผลึกไม่สม่ำเสมอ มีผงละเอียดปน</li>
+</ul>
+<p><strong>ทางที่ 2 — สภาพแวดล้อมในคลัง</strong></p>
+<ul>
+<li>ความชื้นสัมพัทธ์สูง</li>
+<li>การระบายอากาศไม่ดี เกิดการควบแน่น</li>
+<li>อุณหภูมิแกว่งระหว่างกลางวันกลางคืน</li>
+</ul>
+<p><strong>กลไก:</strong> น้ำตาลร้อนเข้ากระสอบทำให้ความชื้นเคลื่อนตัวไปสะสมที่ผิวนอกเมื่อเย็นลง
+แล้วละลายผิวผลึกและตกผลึกใหม่เชื่อมผลึกติดกัน</p>
+<p>เรื่องนี้โยงกลับไปที่<strong>สถานีปั่นและเครื่องอบ</strong> ไม่ใช่ความผิดของคลังอย่างเดียว</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม C · QC-SPEC ข้อ 4</b></div></div>
+
+<div class="qa" data-i="24"><div class="qh"><span class="num">24</span>
+<div class="qt">ขนาดผลึกไม่สม่ำเสมอ CV สูง แก้ที่ไหน</div></div>
+<div class="vote">
+<label><input type="radio" name="v24" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v24" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v24" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="24" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>CV สูงแปลว่าคุมการตกผลึกไม่ดี ต้องไปแก้ที่หม้อเคี่ยว</strong></p>
+<p><strong>จุดตรวจ</strong></p>
+<ul>
+<li><strong>การควบคุม supersaturation</strong> — ถ้าเลยเขตปลอดภัยจะเกิดผลึกใหม่ (false grain)
+ปนกับผลึกที่กำลังโตอยู่</li>
+<li><strong>การใส่เชื้อผลึก (seeding)</strong> — ปริมาณ ขนาด และจังหวะที่ใส่</li>
+<li>อัตราการป้อนน้ำเลี้ยงและความสม่ำเสมอ</li>
+<li>การกวนและการกระจายความร้อนในหม้อ</li>
+</ul>
+<p><strong>ผลกระทบที่ตามมา</strong> — ผงละเอียดทำให้ปั่นแยกยาก ล้างไม่ทั่ว (เถ้าจะสูงตาม)
+และเวลาเก็บจะจับตัวเป็นก้อนง่ายกว่า</p>
+<p><strong>ถ้าผลึกละเอียดเกินไปทั้งล็อต</strong> ให้ดูว่าเกิด false grain หรือคุม MA
+(ขนาดเฉลี่ย) ไม่ได้ตามเป้า</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม C · QC-SPEC ข้อ 4</b></div></div>
+
+<div class="qa" data-i="25"><div class="qh"><span class="num">25</span>
+<div class="qt">ความขุ่นสูง มีสิ่งไม่ละลายปน มาจากอะไร</div></div>
+<div class="vote">
+<label><input type="radio" name="v25" value="ok">✅ ใช้ได้</label>
+<label><input type="radio" name="v25" value="edit">✏️ ต้องแก้</label>
+<label><input type="radio" name="v25" value="drop">❌ ทิ้ง</label>
+<input class="nt" data-n="25" placeholder="แก้อะไร (ถ้ามี)"></div>
+<div class="ans">
+<p><strong>เป็นปัญหากลุ่มกายภาพ ชี้ไปที่การกรองและการปนเปื้อนเชิงกล</strong></p>
+<p><strong>สาเหตุที่ต้องไล่</strong></p>
+<ul>
+<li><strong>การกรองไม่ดี</strong> — หม้อกรองรั่ว ผ้ากรองขาด ตัวกรองอุดตันจนน้ำลัด</li>
+<li><strong>แป้ง (starch)</strong> จากอ้อยอ่อนหรืออ้อยยอด — ไม่ละลายและกรองยาก</li>
+<li><strong>Floc</strong> ที่เกิดหลังละลาย — มักเป็นสารพอลิแซ็กคาไรด์หรือโปรตีนตกค้าง</li>
+<li>การปนเปื้อนเชิงกล — สนิม ทราย เศษวัสดุจากไลน์</li>
+</ul>
+<p><strong>เรื่องนี้ลูกค้าอุตสาหกรรมเครื่องดื่มซีเรียสมาก</strong>
+เพราะทำให้เครื่องดื่มขุ่นและอุดตันตัวกรองของเขา ควรถือเป็นข้อร้องเรียนระดับสูงเสมอ</p>
+<p><strong>วิธีแยกแยะเร็ว:</strong> ละลายน้ำตาลแล้วกรองผ่านกระดาษกรอง
+ดูสิ่งที่ค้างบนกระดาษด้วยกล้อง จะบอกได้ว่าเป็นแป้ง floc หรือของแข็งเชิงกล</p>
+</div>
+<div class="src">📎 อ้างอิง: <b>QC-TREE กลุ่ม C · QC-SPEC ข้อ 4</b></div></div>
+
+<footer>
+<b>สิ่งที่อยากรู้จากการตรวจครั้งนี้</b><br>
+1. กี่ข้อใช้ได้เลย · กี่ข้อต้องแก้ตัวเลข · กี่ข้อทิ้ง<br>
+2. คำถามที่ลูกน้องหรือฝ่ายผลิตถามบ่อย แต่ไม่มีใน 25 ข้อนี้<br>
+3. ความยาวคำตอบพอดีไหม<br><br>
+สิ่งที่เลือกไว้เก็บในเบราว์เซอร์เครื่องนี้ ปิดแล้วเปิดใหม่ไม่หาย
+</footer>
+</div>
+
+<script>
+// การ์ดทั้งหมดเขียนเป็น HTML ตรงๆ ไม่ได้สร้างด้วย JS
+// ถ้าสคริปต์ไม่ทำงาน ยังอ่านและกดเลือกได้ (ใช้ radio ปกติ) แค่ไม่จำค่าและไม่นับยอด
+const KEY='mlx_qa_review_quality', N=25;
+const st=JSON.parse(localStorage.getItem(KEY)||'{}');
+
+function tally(){
+  const c={ok:0,edit:0,drop:0};
+  document.querySelectorAll('.vote input[type=radio]:checked').forEach(r=>c[r.value]++);
+  tOk.textContent='ใช้ได้ '+c.ok; tEdit.textContent='ต้องแก้ '+c.edit;
+  tDrop.textContent='ทิ้ง '+c.drop; tLeft.textContent='ยังไม่ตัดสิน '+(N-c.ok-c.edit-c.drop);
+}
+// คืนค่าที่เคยเลือกไว้
+for(const [k,v] of Object.entries(st)){
+  if(k.startsWith('n')){const el=document.querySelector(`.nt[data-n="${k.slice(1)}"]`); if(el) el.value=v}
+  else {const el=document.querySelector(`input[name="v${k}"][value="${v}"]`); if(el) el.checked=true}
+}
+tally();
+document.addEventListener('change',e=>{
+  if(e.target.matches('.vote input[type=radio]')){
+    st[e.target.name.slice(1)]=e.target.value;
+    localStorage.setItem(KEY,JSON.stringify(st)); tally();
+  }
+});
+document.addEventListener('input',e=>{
+  if(e.target.matches('.nt')){st['n'+e.target.dataset.n]=e.target.value;
+    localStorage.setItem(KEY,JSON.stringify(st))}
+});
+copy.onclick=async()=>{
+  const g={ok:[],edit:[],drop:[]};
+  document.querySelectorAll('.qa').forEach(card=>{
+    const i=card.dataset.i;
+    const r=card.querySelector('input[type=radio]:checked'); if(!r) return;
+    g[r.value].push({n:i,q:card.querySelector('.qt').textContent,
+      note:card.querySelector('.nt').value.trim()});
+  });
+  let t=`ผลตรวจร่าง Q&A ห้องปฏิบัติการ (${N} ข้อ)\n`;
+  t+=`ใช้ได้ ${g.ok.length} · ต้องแก้ ${g.edit.length} · ทิ้ง ${g.drop.length}\n\n`;
+  if(g.edit.length) t+='ต้องแก้:\n'+g.edit.map(x=>`  ${x.n}. ${x.q}${x.note?' → '+x.note:''}`).join('\n')+'\n\n';
+  if(g.drop.length) t+='ทิ้ง:\n'+g.drop.map(x=>`  ${x.n}. ${x.q}${x.note?' → '+x.note:''}`).join('\n')+'\n\n';
+  if(g.ok.length) t+='ใช้ได้: ข้อ '+g.ok.map(x=>x.n).join(', ')+'\n';
+  let ok=false;
+  try{ await navigator.clipboard.writeText(t); ok=true }catch{
+    const ta=document.createElement('textarea'); ta.value=t;
+    ta.style.cssText='position:fixed;left:-9999px'; document.body.appendChild(ta);
+    ta.select(); ok=document.execCommand('copy'); ta.remove();
+  }
+  const o=copy.textContent;
+  copy.textContent = ok ? 'คัดลอกแล้ว ✓' : 'คัดลอกไม่ได้ — ลากเลือกเอา';
+  setTimeout(()=>copy.textContent=o,1800);
+};
+reset.onclick=()=>{
+  if(!confirm('ล้างที่เลือกทั้งหมด?')) return;
+  localStorage.removeItem(KEY);
+  document.querySelectorAll('.vote input[type=radio]').forEach(r=>r.checked=false);
+  document.querySelectorAll('.nt').forEach(n=>n.value='');
+  tally();
+};
+</script>

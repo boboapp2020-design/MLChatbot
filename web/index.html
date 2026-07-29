@@ -285,11 +285,19 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
 .chipm{font-size:10.5px;font-weight:650;padding:2.5px 9px;border-radius:7px;
   background:var(--acg);color:var(--ac2)}
 .a-head .t{font-size:11px;color:var(--tx3);font-family:var(--mono)}
-.a-acts{margin-left:auto;display:flex;gap:3px;opacity:0;transition:opacity .16s}
+/* เดิมตั้ง opacity:0 โผล่เฉพาะตอนเอาเมาส์ชี้
+   บนมือถือไม่มีการชี้ ปุ่มจึงมองไม่เห็นและกดไม่ได้เลย
+   เปลี่ยนเป็นจางไว้แต่เห็นตลอด แล้วเข้มขึ้นตอนชี้ */
+.a-acts{margin-left:auto;display:flex;gap:3px;opacity:.55;transition:opacity .16s}
 .msg.a:hover .a-acts{opacity:1}
-.act{width:27px;height:27px;border-radius:8px;display:grid;place-items:center;color:var(--tx3);transition:.15s}
+.act{width:27px;height:27px;border-radius:8px;display:grid;place-items:center;color:var(--tx3);
+  transition:.15s;cursor:pointer;background:none;border:0;padding:0}
 .act:hover{background:var(--raised);color:var(--tx)}
 .act svg{width:14px;height:14px}
+/* ปุ่มคัดลอกในฟองคำถามของผู้ใช้ */
+.ucopy{width:22px;height:22px;border-radius:6px;margin-right:2px}
+.ucopy svg{width:12px;height:12px}
+@media(hover:none){.a-acts{opacity:.8}.act{width:32px;height:32px}.ucopy{width:26px;height:26px}}
 
 /* routing hint */
 .hint-move{
@@ -1233,7 +1241,11 @@ function renderRoom(){
 function userHTML(m){
   return `<div class="msg u">
     <div class="ubub"><div>${md(m.content)}</div>
-      <div class="stamp">${hhmm(m.ts)}
+      <div class="stamp">
+        <button class="act ucopy" data-copy="${esc(m.content)}" title="คัดลอกคำถาม">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+            <rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+        </button>${hhmm(m.ts)}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
           <path d="m4 12.5 4.5 4.5L20 6"/></svg></div></div>
     <div class="ava" style="width:42px;height:42px;border-radius:13px">DM</div></div>`;
@@ -1355,7 +1367,11 @@ async function ask(text){
   wrap.insertAdjacentHTML('beforeend',`<div class="msg a" id="${id}">
     <div class="a-ava" style="color:${mm.c}">${iconOf(mm)}</div>
     <div class="a-card"><div class="a-head"><b>${esc(modName(mm))}</b>
-      <span class="chipm" id="${id}-mt">…</span><span class="t">${hhmm()}</span></div>
+      <span class="chipm" id="${id}-mt">…</span><span class="t">${hhmm()}</span>
+      <div class="a-acts"><button class="act" data-copy title="คัดลอกคำตอบ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+          <rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+      </button></div></div>
       <div class="slot-sug"></div><div class="slot-trace"></div>
       <div class="slot-body"><div class="think"><i></i><i></i><i></i><span>${T('thinking')}…</span></div></div>
       <div class="slot-info"></div><div class="slot-refs"></div></div></div>`);
@@ -1742,8 +1758,6 @@ function bindAll(scope){
     r.classList.add('hl');r.scrollIntoView({block:'center',behavior:'smooth'});
     setTimeout(()=>r.classList.remove('hl'),2200);
   });
-  scope.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{
-    navigator.clipboard?.writeText(b.dataset.copy);toast(T('copied'))});
   scope.querySelectorAll('[data-move]').forEach(b=>b.onclick=()=>{
     const target=b.dataset.move;
     const last=[...room()].reverse().find(x=>x.role==='user');
@@ -2037,6 +2051,29 @@ $$('input[name=mode]').forEach(r=>r.onchange=()=>{
 $$('.lang button').forEach(b=>b.onclick=()=>{CFG.lang=b.dataset.lang;saveCfg();applyLang()});
 $$('[data-close]').forEach(b=>b.onclick=()=>b.closest('.ov').classList.remove('on'));
 $$('.ov').forEach(o=>o.onclick=e=>{if(e.target===o)o.classList.remove('on')});
+/* ปุ่มคัดลอก — ผูกแบบ delegation ที่ document
+   เพราะการ์ดคำตอบสดถูกสร้างก่อนที่ bindAll จะทำงาน ถ้าผูกทีละปุ่มจะกดไม่ติดระหว่างที่ยังตอบอยู่
+   และอ่านข้อความจาก DOM ตอนกด แทนที่จะฝังไว้ใน attribute
+   (ตอนสร้างการ์ดยังไม่รู้คำตอบ และการฝังทำให้ HTML ใหญ่ขึ้นเป็นสองเท่าโดยไม่จำเป็น) */
+async function copyText(txt){
+  if(!txt) return false;
+  try{ await navigator.clipboard.writeText(txt); return true }catch{}
+  // เบราว์เซอร์เก่าหรือหน้าที่ไม่ใช่ secure context ใช้ clipboard API ไม่ได้
+  try{
+    const ta=document.createElement('textarea');
+    ta.value=txt; ta.style.cssText='position:fixed;left:-9999px;top:0';
+    document.body.appendChild(ta); ta.select();
+    const ok=document.execCommand('copy'); ta.remove(); return ok;
+  }catch{ return false }
+}
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('[data-copy]'); if(!b) return;
+  // ต้องเจาะจง .prose เท่านั้น — เคยเขียน querySelector('.prose,div') แล้วได้หัวการ์ด
+  // ("ผู้เชี่ยวชาญอ้อย Demo 10:55") เพราะ querySelector คืนตัวแรกตามลำดับในเอกสาร
+  const txt=b.dataset.copy
+    || b.closest('.a-card')?.querySelector('.prose')?.innerText.trim() || '';
+  toast(await copyText(txt) ? T('copied') : 'คัดลอกไม่สำเร็จ — ลองลากเลือกข้อความแล้วกด Ctrl+C');
+});
 document.addEventListener('click',e=>{const r=e.target.closest('[data-room]');if(r) switchRoom(r.dataset.room)});
 document.addEventListener('keydown',e=>{
   if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPal();return}

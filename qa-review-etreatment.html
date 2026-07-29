@@ -40,7 +40,7 @@ h2 em{font-style:normal;font-size:12px;font-weight:600;color:var(--tx3)}
 .num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--tx3);
  background:var(--raised);padding:2px 7px;border-radius:6px;flex:none;margin-top:2px}
 .qt{flex:1;font-size:14.5px;font-weight:700;line-height:1.45}
-.ans{font-size:13.2px;color:var(--tx2);margin:10px 0 0;padding-left:2px}
+.ans{font-size:13.2px;color:var(--tx2);margin:11px 0 0;padding-top:11px;border-top:1px solid var(--line)}
 .ans p{margin:7px 0}
 .ans ul,.ans ol{margin:7px 0 7px 20px}
 .ans li{margin:3px 0}
@@ -56,7 +56,7 @@ h2 em{font-style:normal;font-size:12px;font-weight:600;color:var(--tx3)}
 .flag.gen{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
 .flag.other{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
 
-.vote{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap}
+.vote{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap;align-items:center}
 .vote button{font-family:inherit;font-size:12px;font-weight:650;padding:6px 13px;border-radius:8px;
  border:1px solid var(--line2);background:var(--soft);color:var(--tx2);cursor:pointer}
 .vote button.on[data-v=ok]{background:var(--ok);color:#fff;border-color:transparent}
@@ -449,17 +449,19 @@ function render(){
     h+=`<h2>${c[0]} <em>· ${c[1]} · ${list.length} ข้อ</em></h2>`;
     list.forEach(({q,i})=>{
       const v=st[i]?.v||'';
+      // ปุ่มตัดสินต้องอยู่ใต้คำถามทันที ไม่ใช่ล่างสุดใต้คำตอบยาวๆ
+      // เดิมวางไว้ล่างสุดแล้วผู้ใช้หาไม่เจอ เพราะต้องเลื่อนผ่านตารางและรายการยาว
       h+=`<div class="qa ${v}" id="q${i}">
         <div class="qh"><span class="num">${String(i+1).padStart(2,'0')}</span>
           <div class="qt">${q.q}</div></div>
-        <div class="ans">${q.a}</div>
-        <div class="src">📎 อ้างอิง: <b>${q.s}</b></div>
         <div class="vote">
           <button data-i="${i}" data-v="ok"   class="${v==='ok'?'on':''}">✅ ใช้ได้</button>
           <button data-i="${i}" data-v="edit" class="${v==='edit'?'on':''}">✏️ ต้องแก้</button>
           <button data-i="${i}" data-v="drop" class="${v==='drop'?'on':''}">❌ ทิ้ง</button>
           <input data-n="${i}" placeholder="แก้อะไร (ถ้ามี)" value="${(st[i]?.n||'').replace(/"/g,'&quot;')}">
-        </div></div>`;
+        </div>
+        <div class="ans">${q.a}</div>
+        <div class="src">📎 อ้างอิง: <b>${q.s}</b></div></div>`;
     });
   });
   document.getElementById('out').innerHTML=h;
