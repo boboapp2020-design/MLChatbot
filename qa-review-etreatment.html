@@ -14,6 +14,10 @@ body{font-family:"Segoe UI Variable Text","Segoe UI",system-ui,"Noto Sans Thai",
 .wrap{max-width:940px;margin:0 auto}
 h1{font-size:23px;font-weight:800;letter-spacing:-.4px;line-height:1.25}
 .sub{color:var(--tx3);font-size:13px;margin-top:4px}
+.pagenav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pagenav a{display:inline-block;padding:7px 13px;border-radius:9px;font-size:13px;font-weight:600;
+  text-decoration:none;color:var(--tx2);background:var(--soft);border:1px solid var(--line)}
+.pagenav a:hover{background:var(--raised);color:var(--tx);border-color:var(--line2)}
 .note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--warn);
  border-radius:11px;padding:13px 16px;font-size:12.8px;color:var(--tx2);margin:16px 0}
 .note b{color:var(--tx)}
@@ -73,6 +77,11 @@ footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-si
 <div class="wrap">
 <h1>ตรวจร่างคำถาม-คำตอบ — ระบบบำบัดน้ำ</h1>
 <div class="sub">25 ข้อ ร่างจากคลังความรู้จริง · ทุกข้อมีเอกสารอ้างอิงกำกับ</div>
+<nav class="pagenav">
+  <a href="index.html">💬 แชท</a>
+  <a href="roadmap.html">🗺️ แผนพัฒนา</a>
+  <a href="qa-review-quality.html">🔬 รีวิวคำถาม — ห้องปฏิบัติการ</a>
+</nav>
 
 <div class="note">
 <b>วิธีใช้</b> — อ่านแล้วกดปุ่มตัดสินแต่ละข้อ ถ้าเลือก "ต้องแก้" ให้พิมพ์สั้นๆ ว่าแก้อะไร

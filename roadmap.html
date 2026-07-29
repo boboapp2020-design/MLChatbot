@@ -27,6 +27,12 @@ header{margin-bottom:26px}
 h1{font-size:26px;font-weight:800;letter-spacing:-.5px;line-height:1.25}
 .sub{color:var(--tx3);font-size:13.5px;margin-top:5px}
 
+/* แถบลิงก์ข้ามหน้า — เดิมหน้ารีวิวคำถามไม่มีทางเข้าเลย ต้องจำ URL เอง */
+.pagenav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pagenav a{display:inline-block;padding:7px 13px;border-radius:9px;font-size:13px;font-weight:600;
+  text-decoration:none;color:var(--tx2);background:var(--soft);border:1px solid var(--line)}
+.pagenav a:hover{background:var(--raised);color:var(--tx);border-color:var(--line2)}
+
 /* ── สรุปภาพรวม ─────────────────────────────── */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:22px 0}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:15px 17px;box-shadow:var(--sh)}
@@ -117,6 +123,11 @@ code{font-family:var(--mono);font-size:.92em;background:var(--raised);padding:1p
 <header>
   <h1>ML Expert AI — แผนพัฒนาความรู้ผู้เชี่ยวชาญ</h1>
   <div class="sub">วัดจริงจากคลังความรู้ 2,606 ท่อน · ผู้เชี่ยวชาญ 15 คน · ข้อมูล ณ 29 ก.ค. 2569 (เย็น)</div>
+  <nav class="pagenav">
+    <a href="index.html">💬 แชท</a>
+    <a href="qa-review-etreatment.html">📝 รีวิวคำถาม — ระบบบำบัดน้ำ (25 ข้อ)</a>
+    <a href="qa-review-quality.html">🔬 รีวิวคำถาม — ห้องปฏิบัติการ (25 ข้อ)</a>
+  </nav>
 </header>
 
 <div class="cards">

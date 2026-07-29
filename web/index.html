@@ -170,6 +170,10 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
 }
 .showall:hover{background:var(--raised);color:var(--tx)}
 
+.side-links{padding:8px 10px 2px;display:flex;flex-direction:column;gap:2px}
+.side-links a{display:block;padding:7px 10px;border-radius:8px;font-size:12.4px;font-weight:600;
+  color:var(--tx3);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.side-links a:hover{background:var(--raised);color:var(--tx)}
 .side-foot{padding:11px 14px;border-top:1px solid var(--line);display:flex;align-items:center;gap:10px}
 .ava{
   width:36px;height:36px;border-radius:11px;flex:none;display:grid;place-items:center;
@@ -584,6 +588,14 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
 
     <div class="rooms" id="rooms"></div>
     <button class="showall" id="btnShowAll"></button>
+
+    <!-- ทางเข้าหน้าอื่น — เดิมสร้างหน้าแผนพัฒนากับหน้ารีวิวคำถามไว้แต่ไม่มีลิงก์ไปถึง
+         ผู้ใช้ต้องจำ URL เอง ซึ่งไม่มีทางจำได้ -->
+    <div class="side-links">
+      <a href="roadmap.html">🗺️ แผนพัฒนาความรู้</a>
+      <a href="qa-review-etreatment.html">📝 รีวิวคำถาม · บำบัดน้ำ</a>
+      <a href="qa-review-quality.html">🔬 รีวิวคำถาม · ห้องปฏิบัติการ</a>
+    </div>
 
     <div class="side-foot">
       <div class="ava">DM</div>
