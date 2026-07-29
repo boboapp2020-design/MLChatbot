@@ -475,6 +475,26 @@ $SupportMap  = @(
   # NoBias เพราะครอบคลุมหลายสถานี ให้ keyword ตัดสินรายหัวข้อ
   @{ File='MLSugartech.txt'; Module='dashboard'; Type='BOOK'; NoBias=$true
      Title='ML SugarTech — คลังความรู้วิศวกรรมน้ำตาล'; Code='MLST' }
+
+  # ── งานตรวจติดตามภายใน (IQA) — เอกสารจริงของโรงงาน ──────────────
+  # สร้างด้วย scripts\build-iqa-corpus.ps1 จากไฟล์งาน Internal Audit
+  # บังคับเข้าห้องคุณภาพ & มาตรฐาน (ไม่ตั้ง NoBias) เพราะเป็นงานของห้องนี้ชัดเจน
+  # ถ้าปล่อยให้ keyword ตัดสิน คำถามตรวจของแผนกหม้อต้ม/ลูกหีบจะกระจายไปห้องอื่น
+  # แล้วห้องคุณภาพจะยังว่างเหมือนเดิม
+  @{ File='IQA-เช็คลิสต์ตรวจติดตามภายใน.txt'; Module='quality'; Type='CHECKLIST'; Force=$true
+     Title='เช็คลิสต์ตรวจติดตามภายใน 21 แผนก (ของโรงงาน)'; Code='IQA-CL' }
+  @{ File='IQA-เกณฑ์ตัดสินผลตรวจ.txt'; Module='quality'; Type='STANDARD'; Force=$true
+     Title='เกณฑ์ตัดสินผลตรวจ C/NC/B ตาม ISO 19011:2018'; Code='IQA-JUDGE' }
+  @{ File='IQA-บทเรียนจากรายงานตรวจจริง.txt'; Module='quality'; Type='RECORD'; Force=$true
+     Title='บทเรียนจากรายงานตรวจติดตามภายในของจริง'; Code='IQA-LESSON' }
+
+  # ── มาตรฐานความปลอดภัยอาหาร ────────────────────────────────────
+  @{ File='FSSC22000-v6-ข้อกำหนด.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
+     Title='FSSC 22000 version 6 — ข้อกำหนด'; Code='FSSC-V6' }
+  @{ File='FSSC22000-v6-ภาคผนวก.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
+     Title='FSSC 22000 version 6 — ภาคผนวก 2'; Code='FSSC-ANX2' }
+  @{ File='GHPs-PRP-โปรแกรมพื้นฐาน.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
+     Title='โปรแกรมพื้นฐานด้านสุขลักษณะ (PRPs/GHPs)'; Code='PRP' }
 )
 if ($IncludeRein) {
   $SupportMap += @{ File='Peter Rein - Cane sugar enginnering.txt'; Module='crushing'; Type='BOOK'
@@ -550,10 +570,18 @@ foreach ($src in $Sources) {
     if (Test-NoiseChunk -Text $p.Body -Head $p.Head) { $dropped++; continue }
 
     $section = if ($p.Head) { $p.Head } else { $entry.Title }
-    $bias    = if ($entry.NoBias) { 0 } else { 3 }
-    # ให้น้ำหนักหัวข้อมากกว่าเนื้อหา — หัวข้อบอกได้ตรงกว่าว่า chunk พูดเรื่องอะไร
-    $module  = Get-ModuleScore -Text ($section + ' ' + $section + ' ' + $p.Body) `
-                               -DefaultModule $entry.Module -Bias $bias
+
+    if ($entry.Force) {
+      # เอกสารบางฉบับรู้แน่ว่าเป็นของห้องไหน ไม่ต้องให้ keyword เดา
+      # เช่นเช็คลิสต์ตรวจติดตามภายในที่มีชื่อแผนกหม้อต้ม/ลูกหีบอยู่เต็มไปหมด
+      # ถ้าปล่อยให้ keyword ตัดสิน ท่อนความรู้จะกระจายไปห้องผลิตทั้งที่เป็นงานตรวจ
+      $module = $entry.Module
+    } else {
+      $bias   = if ($entry.NoBias) { 0 } else { 3 }
+      # ให้น้ำหนักหัวข้อมากกว่าเนื้อหา — หัวข้อบอกได้ตรงกว่าว่า chunk พูดเรื่องอะไร
+      $module = Get-ModuleScore -Text ($section + ' ' + $section + ' ' + $p.Body) `
+                                -DefaultModule $entry.Module -Bias $bias
+    }
     $pageRef = if ($p.Part -gt 0) { "$section (ตอนที่ $($p.Part))" } else { $section }
 
     [void]$allChunks.Add([pscustomobject]@{

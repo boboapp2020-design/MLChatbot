@@ -1,0 +1,320 @@
+# โปรแกรมพื้นฐานด้านสุขลักษณะ (PRPs / GHPs)
+
+  ISO/TS 22002-1
+(Prerequisite Programmes on Food Safety)
+ IQA Auditor Guideline --     PRP (ISO/TS 22002-1)   4   
+
+
+
+4.1 � 4.3 5.1 � 5.7 6.1 � 6.5 7.1 � 7.4 8.1 � 8.7 9.1 � 9.3 10.1 � 10.4 11.1 � 11.5 12.1 � 12.6 13.1 � 13.8 14.1 � 14.3 15 � 15.2 16.1 � 16.3 17
+
+     (//)                  (Rework)         /  
+
+IQA Auditor Guideline --   |  ISO/TS 22002-1
+
+ 1
+
+ 4.1�4.3 --   
+
+/  
+ (Compliant)
+  (NC)
+ 
+
+Layout  , Building Maintenance Record
+     
+   
+   //? :  ? ? ?
+
+ 
+ 4.1 q      ?
+ 4.2 q     ?
+ 4.3 q    ?
+
+ 5.1�5.7 --    
+
+/  
+   (Compliant)
+  (NC)
+ 
+
+Plant Layout, Zoning Map, Process Flow
+  Cross-contamination  Zoning
+     Cross-contamination
+ Layout/Zoning Map   Process Flow   Raw/Finished  ?   Cross-contamination  ?
+
+ 
+ 5.1 q     ?
+ 5.2 q       ?
+ 5.3
+
+IQA Auditor Guideline --   |  ISO/TS 22002-1
+
+ 2
+
+q      ? q        ? q      ?
+ 5.4 q        ?
+ 5.5 q        ?
+ 5.7 q      ?
+
+ 6.1�6.5 --   (//)
+
+/ 
+  (Compliant)
+   (NC)
+ 
+
+Water Test Report, Air Quality Record, Utility Maintenance
+    
+   
+ (  3 )    : "     ?" 
+
+ 
+ 6.1 q     ? q      ?
+ 6.2 q       ? q        ?
+       ?
+q       ?
+ 6.3 q   ? q     
+    
+ 6.5 q    ? q       ?
+
+IQA Auditor Guideline --   |   ISO/TS 22002-1
+
+ 3
+
+ 7.1�7.4 -- 
+
+/  
+ (Compliant)
+  (NC)
+ 
+
+Waste Management Plan, Waste Disposal Record
+     
+ 
+  : "   ?  ?"    
+
+  
+ 7.1 q    ?
+ 7.2 q     ?
+ 7.3 q      ? q     ?
+ 7.4 q      ? q    
+
+ 8.1�8.7 -- 
+
+/ 
+ (Compliant)
+   (NC)
+ 
+
+Equipment List, Maintenance Plan, Cleaning Record
+  Food Grade  
+     
+  2-3  : ?  /?  PM Plan : " PM     ?"
+
+  
+ 8.1 q      ?
+
+IQA Auditor Guideline --  |   ISO/TS 22002-1
+
+ 4
+
+ 8.2 q        ?
+ 8.4 q     ?
+ 8.5 q  ?
+ 8.6 q      ? q       ? q      ?
+ 8.7 q   ? q     ?
+
+ 9.1�9.3 --  
+
+/  
+  (Compliant)
+  (NC)
+ 
+
+Incoming Inspection Record, COA, Storage Record
+    FIFO
+     
+   : " ? ?"    + COA  : FIFO ?
+
+  
+ 9.1 q       ? q         ?  
+ 9.2 q       ? q  ? q      ?
+ 9.3 q   ? q    ? q       ? q   COA (Certificate of Analysis)   ?
+
+IQA Auditor Guideline --    |  ISO/TS 22002-1
+
+ 5
+
+ 10.1�10.4 --   
+
+/ 
+   (Compliant)
+  (NC)
+ 
+
+Cross-contamination Prevention Plan, Allergen Control
+  
+    
+: " Cross-contamination  ?"  : "  ? ?"  Metal Detector/X-ray
+
+  
+ 10.1 q     ? q   
+ 10.2 q    ?
+ 10.3 q      ?
+ 10.4 q             ? q        ?
+
+ 11.1�11.5 -- 
+
+/ 
+ (Compliant)
+   (NC)
+ 
+
+CIP Record, Cleaning Schedule, Swab Test
+   
+     
+ Cleaning Schedule     Swab Test : " CIP ?     ? "
+
+ 
+
+IQA Auditor Guideline --   |  ISO/TS 22002-1
+
+ 6
+
+ 11.1 q     ?
+ 11.2 q       ?
+ 11.3 q   ? q      ?
+ 11.4 q     CIP ?
+ 11.5 q    ?
+
+ 12.1�12.6 --   
+
+/  
+   (Compliant)
+  (NC)
+ 
+
+Pest Control Record, Contract, Trend Analysis
+    
+     
+ /    Trend Analysis : "   ?"
+
+ 
+ 12.1 q  ? q      ?
+ 12.2 q      ?
+ 12.3 q      ? q       ?
+ 12.5 q       ? q    ?
+ 12.6
+
+IQA Auditor Guideline --   |   ISO/TS 22002-1
+
+ 7
+
+q         ?
+
+ 13.1�13.8 --   
+
+/   
+  (Compliant)
+   (NC)
+ 
+
+Personal Hygiene Policy, Training Record, Inspection Record
+     
+       
+    :  //  ?   : "   ?"
+
+ 
+ 13.1 q        ?
+ 13.2 q        ? q       ?
+ 13.3 q     ?
+ 13.4 q        ? q     
+ 13.5 q    ?
+ 13.6 q      ?
+ 13.7 q      ?
+ 13.8 q   ?
+
+ 14.1�14.3 --  (Rework)
+IQA Auditor Guideline --    |  ISO/TS 22002-1
+
+ 8
+
+/  
+  (Compliant)
+    (NC)
+ 
+
+Rework Procedure, Rework Record
+   Rework    
+    Rework   
+: " Rework    ?"    : "Rework  ?  Lot ?  ?"
+
+   
+ 14.1 q      (Rework) ?
+ 14.2 q Rework     ? q    Rework  ? q   Rework ?
+ 14.3 q      Rework    ? q    Rework   ? q        Rework  ?
+
+ 15�15.2 --  
+
+/ 
+  (Compliant)
+   (NC)
+ 
+
+Recall Plan, Mock Recall Record
+    
+  
+: " ?"   : "     ?   ? "
+
+  
+ 15 q  ? q    ? q     ?
+ 15.1 q          ?
+
+IQA Auditor Guideline --    |  ISO/TS 22002-1
+
+ 9
+
+ 15.2 q  ?
+
+ 16.1�16.3 -- 
+
+/  
+  (Compliant)
+   (NC)
+ 
+
+Storage Condition Record, Transport Inspection
+    
+  
+   :     : "   ?"   
+
+  
+ 16.1 q     ? q       ?
+ 16.2 q   (stacking)   ? q     ? q       FIFO/FEFO ? q      FIFO/FEFO  ? q       ? q         ?
+ 16.3 q  Container    ? q    ?
+
+ 17 --    /    
+
+/  
+  (Compliant)
+  (NC)
+
+Label Review Record, Customer Communication          
+
+IQA Auditor Guideline --   |  ISO/TS 22002-1
+
+ 10
+
+ 
+
+   2-3  : ?   ?  ?   
+
+ 
+ 17 q        ? q        ? q     ? q    ?
+
+IQA Auditor Guideline --   |  ISO/TS 22002-1
+
+ 11
+
+

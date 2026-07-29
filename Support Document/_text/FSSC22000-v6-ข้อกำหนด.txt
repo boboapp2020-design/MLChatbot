@@ -1,0 +1,1699 @@
+# FSSC 22000 version 6 — ข้อกำหนดของโครงการรับรอง
+
+FSSC 22000 SCHEME FOOD SAFETY MANAGEMENT
+SYSTEM CERTIFICATION
+
+FSSC 22000 Version 6.0 | April 2023
+www.fssc.com
+
+0 of 77
+
+Version 6.0 | April 2023
+
+COPYRIGHT
+Copyright � 2023, Foundation FSSC
+All rights reserved. No part of this publication may be reproduced or published in any form, by means of printed matters, photocopy, microfilm, recording, or any other method or technology, without written approval by the Foundation FSSC.
+Foundation FSSC Leonardo da Vinciplein 60 5223 DR Den Bosch, The Netherlands Phone +31 183 645028 Website: www.fssc.com Email: questions@fssc.com
+TRANSLATIONS
+Please be aware that in the case of translations of the FSSC 22000 Scheme documents, the English version is the official and binding version.
+
+FSSC 22000 Version 6.0 | April 2023
+
+1 of 77
+
+GENERAL CONTENTS
+
+INTRODUCTION
+
+3
+
+PART 1 SCHEME OVERVIEW
+
+5
+
+PART 2 REQUIREMENTS FOR ORGANIZATION TO BE AUDITED
+
+15
+
+PART 3 REQUIREMENTS FOR THE CERTIFICATION PROCESS
+
+26
+
+PART 4 REQUIREMENTS FOR CERTIFICATION BODIES
+
+47
+
+PART 5 REQUIREMENTS FOR ACCREDITATION BODIES
+
+62
+
+APPENDIX 1: DEFINITIONS
+
+67
+
+APPENDIX 2: NORMATIVE REFERENCES
+
+76
+
+FSSC 22000 Version 6.0 | April 2023
+
+2 of 77
+
+Introduction
+INTRODUCTION
+With a growing world population, there is an increasing need for affordable, safe, and good quality food products. To fulfill this need, FSSC 22000 provides a trusted brand assurance platform to the food industry. Key in this mission is the availability of the FSSC 22000 certification Scheme for food safety management systems. This document contains the new Version 6.0 of the FSSC 22000 Scheme published in April 2023. The main factors that initiated the development of this version have been:
+� Incorporating the requirements of ISO 22003-1:2022 � Strengthening the requirements to support organizations in their contributions to meeting
+the Sustainable Development Goals (SDGs) � Editorial changes and amendments as part of continuous improvement
+ABOUT THE SCHEME
+The Scheme consists of five Parts and two Appendices that are bundled in this document. Furthermore, there are five Annexes. All these documents also contain mandatory Scheme requirements. Lastly, there are guidance documents on several topics to provide additional support. All documents can be downloaded for free from the FSSC website.
+HOW THE SCHEME IS ORGANIZED
+PART 1 SCHEME OVERVIEW
+This part describes the Scheme context and details including its certification scopes.
+PART 2 REQUIREMENTS FOR ORGANIZATIONS TO BE AUDITED
+This part describes the Scheme requirements against which licensed Certification Bodies shall audit the Food Safety Management System of the organization in order to achieve or maintain certification for FSSC 22000.
+PART 3 REQUIREMENTS FOR THE CERTIFICATION PROCESS
+This part describes the requirements for the execution of the certification process to be conducted by licensed Certification Bodies.
+PART 4 REQUIREMENTS FOR CERTIFICATION BODIES
+This part describes the requirements for licensed Certification Bodies that provide Scheme certification services to organizations.
+PART 5 REQUIREMENTS FOR ACCREDITATION BODIES
+This part describes the requirements for recognized Accreditation Bodies that provide accreditation services to licensed Certification Bodies.
+
+FSSC 22000 Version 6.0 | April 2023
+
+3 of 77
+
+Introduction
+APPENDIX 1 DEFINITIONS
+This appendix contains definitions for terms that have been used throughout all the Scheme documents.
+APPENDIX 2 NORMATIVE REFERENCES
+This appendix contains all references that have been used throughout all the Scheme documents.
+ANNEXES
+There are five Annexes that are mandatory and necessary for proper implementation of the Scheme:
+� Annex 1 CB Certificate scope statements � Annex 2 CB Audit report requirements � Annex 3 CB Certificate templates � Annex 4 AB Accreditation certificate � Annex 5 CB Requirements for the use of information and communication technology
+(ICT)
+ADDENDA
+Foundation FSSC has voluntary Addenda and Modules that can be undertaken together with FSSC 22000 certification audits. Refer to the FSSC website for details on the Addenda and Modules currently offered by the Foundation, including the related conditions and requirements.
+
+FSSC 22000 Version 6.0 | April 2023
+
+4 of 77
+
+PART 1 SCHEME OVERVIEW
+
+FSSC 22000 Version 6.0 | April 2023
+
+5 of 77
+
+Part 1 | Scheme Overview
+CONTENTS PART 1 SCHEME OVERVIEW
+
+1
+1.1 1.2 1.3
+2
+2.1 2.2
+3
+3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8
+
+Introduction .................................................................................................................. 7
+The Scheme ................................................................................................................................. 7 Ownership and Governance ..................................................................................................... 7 Language ..................................................................................................................................... 7
+Features ......................................................................................................................... 8
+Aim and Objectives..................................................................................................................... 8 Nature of the Scheme ................................................................................................................ 8
+Scope .............................................................................................................................. 9
+Handling of Plants (Category B) .............................................................................................. 11 Food Manufacturing (Category C) .......................................................................................... 11 Animal Feed Production (Category D) .................................................................................... 12 Catering (Category E)................................................................................................................12 Trading, Retail, Wholesale and E-commerce (Category F) ................................................... 12 Transport and Storage (Category G) ...................................................................................... 13 Production of Food Packaging and Packaging Materials (Category I) ............................... 13 Production of Biochemicals (Category K)...............................................................................14
+
+FSSC 22000 Version 6.0 | April 2023
+
+6 of 77
+
+Part 1 | Scheme Overview
+1 INTRODUCTION
+1.1 THE SCHEME
+The FSSC 22000 certification scheme (hereafter the Scheme) outlines the requirements for the audit and certification of food safety management systems of organizations in the food supply chain. The certificate confirms that the organization's management system is in conformance with the Scheme requirements.
+The Scheme is based on the publicly available standards/technical specifications:
+� ISO 22000:2018 requirements for any organization in the food chain; � Relevant prerequisite programs (PRPs) based on technical specifications for the sector
+(e.g., ISO/TS 22002-x; PAS xyz); and � FSSC 22000 Additional Requirements as determined by our stakeholders.
+When the Foundation decides that updates or changes to the Scheme are necessary, requirements for communication and implementation will be published separately.
+The Scheme provides a voluntary certification model that can be applied across various sectors in the food supply chain. Where sector-specific prerequisite programs (PRPs) have been developed and accepted, these form part of the normative documents of the Scheme. The food chain category description used by this Scheme is defined according to ISO 22003-1:2022 (see Chapter 3).
+As of February 2010, the Scheme has been benchmarked and recognized by the Global Food Safety Initiative (GFSI) confirming global food industry recognition and acceptance.
+As of March 2021, the Scheme has been endorsed as a sub-scope of the IAF MLA which is a demonstration of the technical rigor and consistency of the Scheme.
+1.2 OWNERSHIP AND GOVERNANCE
+The Foundation FSSC (hereafter the Foundation) retains the ownership and the copyright of all Scheme related documentation and also holds the agreements for all involved Certification Bodies and Accreditation Bodies.
+The Foundation's Statutes contain additional provisions and requirements regarding the ownership of and governance over the Foundation and the Scheme. These Statutes are publicly available in the Register of the Chamber of Commerce in Gorinchem, the Netherlands, under number 64112403. Such additional provisions and requirements are part of the Scheme in as far as they may relate to the rights and obligations of direct and indirect stakeholders in the Scheme.
+1.3 LANGUAGE
+English is the official and valid version of the Scheme.
+
+FSSC 22000 Version 6.0 | April 2023
+
+7 of 77
+
+Part 1 | Scheme Overview
+2 FEATURES
+2.1 AIM AND OBJECTIVES
+The aim of the Scheme is to ensure that it continuously meets international food industry requirements resulting in a certification that assures that organizations provide safe food to their customers.
+The specific Scheme objectives are to:
+a) Provide recognition for organizations that have demonstrated compliance to the Scheme requirements by establishing and maintaining an accurate and reliable public register of certified organizations;
+b) Promote the accurate application, recognition, and general acceptance of food safety management systems within the Consumer Goods industry;
+c) Provide information on and support for the auditing and certification of food safety management systems within the scope of the Scheme;
+d) Create impact through setting public goals linked to the UN Sustainable Development Goals.
+The Foundation endeavors to achieve these objectives by:
+a) Entering into agreements with strategic partners; b) Providing governance and oversight of certification through the Foundation's Integrity
+Program; c) Providing continued support to our licensed partners through training, knowledge
+management and data sharing; d) Managing and taking appropriate action in events that could bring the Foundation into
+disrepute or impact the Foundation's business continuity, certification and/or brand integrity; e) Supporting other organizations that strive to achieve similar or partially similar objectives as those mentioned in Article 2.1.
+2.2 NATURE OF THE SCHEME
+The Scheme provides an independent ISO-based Scheme for third party auditing and certification.
+The Scheme:
+a) Incorporates ISO standards, sector specific technical specifications for PRPs, market driven additional requirements as well as statutory and regulatory requirements;
+b) Is recognized by the Global Food Safety Initiative; c) Allows the integration with ISO-based management system standards such as those for
+quality, environmental, health and safety etc.; d) Is governed by a non-profit Foundation and managed by an independent Board of
+Stakeholders; e) Increases transparency throughout the food supply chain by maintaining an "FSSC 22000
+Register of certified organizations" which is publicly available.
+
+FSSC 22000 Version 6.0 | April 2023
+
+8 of 77
+
+Part 1 | Scheme Overview
+
+3 SCOPE
+The Scheme is intended for the audit and certification of organizations for the following food chain (sub)categories as set out in Table 1 and is aligned with the categories as defined in ISO 220031:2022.
+
+Table 1. Overview of (Sub)Categories
+Category Subcategory Description Example of included activities and products
+
+Normative Documents
+
+B
+
+BIII
+
+C
+
+C0
+
+CI
+
+C
+
+CII
+
+CIII
+
+Pre-process handling of plant products
+
+Activities on harvested plants that do not transform the product from original whole form, including horticultural products and hydrophytes for food. These include cleaning, washing, rinsing, fluming, sorting, grading, trimming, bundling, cooling, hydro-cooling, waxing, drenching, aeration, preparing for storage or processing, packing, repacking, staging, storing, and loading.
+
+ISO 22000:2018 ISO/TS 22002-1:2009 FSSC 22000 Additional requirements
+
+Animal � Primary conversion
+
+Conversion of animal carcasses intended for further processing including lairage, slaughter, evisceration, bulk chilling, bulk freezing, bulk storage of animals and game gutting, bulk freezing of fish and storage of game.
+
+ISO 22000:2018, ISO/TS 22002-1:2009 FSSC 22000 Additional requirements
+
+Processing of perishable animal products
+
+Processing and packaging including fish, fish products, seafood, meat, eggs, and dairy requiring chilled or frozen temperature control.
+Processing pet food from animal products only.
+
+ISO 22000:2018, ISO/TS 22002-1:2009, FSSC 22000 Additional requirements
+
+Processing of perishable plant-based products
+Processing of perishable animal and plant products (mixed products)
+
+Processing and packaging including fruits and fresh juices, vegetables, grains, nuts, pulses, frozen waterbased products, plant-based meat, and dairy substitutes.
+Processing pet food from plant products only.
+Processing and packaging including pizza, lasagna, sandwiches, dumplings, and ready-to-eat meals. Includes off-site catering kitchens. Includes products of industrial kitchens not offered for immediate consumption.
+Processing perishable pet food from mixed products.
+
+ISO 22000:2018, ISO/TS 22002-1:2009, FSSC 22000 Additional requirements
+ISO 22000:2018, ISO/TS 22002-1:2009, FSSC 22000 Additional requirements
+
+FSSC 22000 Version 6.0 | April 2023
+
+9 of 77
+
+Part 1 | Scheme Overview
+
+Category Subcategory Description
+
+Example of included activities and Normative Documents products
+
+CIV
+
+D
+
+D
+
+E
+
+E
+
+F
+
+FI
+
+F
+
+FII
+
+G
+
+G
+
+Processing of ambient stable products
+
+Processing and packaging of products stored and sold at ambient temperature including canned foods, biscuits, snacks, oil, drinking water, beverages, pasta, flour, sugar, and food-grade salt.
+Processing ambient stable pet food.
+
+ISO 22000:2018, ISO/TS 22002-1:2009, FSSC 22000 Additional requirements
+
+Processing of feed and animal food
+
+Processing feed material intended for food and non-food producing animals not kept in households, e.g., meal from grain, oilseeds, byproducts of food production.
+Processing feed mixtures, with or without additives, intended for foodproducing animals, e.g. premixes, medicated feed, compound feeds.
+
+ISO 22000:2018, ISO/TS 22002-6:2016, FSSC 22000 Additional requirements
+
+Catering / food service
+
+Open exposed food activities such as cooking, mixing, and blending, preparation of components and products for on-site direct consumer consumption or take away. Examples include restaurants, hotels, food trucks, institutions, workplaces (school or factory cafeteria), including retail with onsite preparation (e.g., rotisserie chicken). Includes reheating of food, event catering, coffee shops and pubs.
+
+ISO 22000:2018, ISO/TS 22002-2:2013, FSSC 22000 Additional requirements
+
+Retail /Wholesale/ E-commerce
+
+Storage and provision of finished products to customers and consumers (retail outlets, shops, wholesalers). Includes minor processing activities, e.g., slicing, portioning, reheating.
+
+ISO 22000:2018, BSI/PAS 221:2013, FSSC 22000 Additional requirements
+
+Brokering /Trading /E-commerce
+
+Buying and selling products on its own account without physical handling or as an agent for others of any item that enters the food chain.
+
+ISO 22000:2018, FSSC 22000 Additional requirements
+
+Transport and storage services
+
+Storage facilities and distribution vehicles for perishable food and feed where temperature integrity shall be maintained. Storage facilities and distribution vehicles for ambient stable food and feed. Relabelling/repackaging excluding open exposed product materials.
+Storage facilities and distribution vehicles for food packaging material.
+
+ISO 22000:2018, ISO/TS 22002-5:2019, FSSC 22000 Additional requirements
+
+FSSC 22000 Version 6.0 | April 2023
+
+10 of 77
+
+Part 1 | Scheme Overview
+
+Category Subcategory Description
+
+Example of included activities and Normative Documents products
+
+I
+
+I
+
+K
+
+K
+
+Production of packaging material.
+
+Production of packaging material in contact with food, feed, and animal food. May include packaging produced onsite for use in processing.
+
+ISO 22000:2018, ISO/TS 22002-4:2013, FSSC 22000 Additional requirements
+
+Production of Bio/chemicals
+
+Production of food and feed processing aids, additives (e.g., flavorings, vitamins), gases and minerals.
+Production of bio-cultures and enzymes.
+
+ISO 22000:2018, ISO/TS 22002-1:2009, FSSC 22000 Additional requirements
+
+3.1 HANDLING OF PLANTS (CATEGORY B)
+Food chain subcategory BIII refers to the handling of plants that do not transform the product from the original whole form e.g., fruit and vegetable packhouses, where only minimal processing which does not alter the form of the product may occur such as washing, sorting, grading, trimming, waxing, drenching, etc. Processing such as cutting and dicing, which changes the form of the product, is excluded from subcategory BIII and is included under subcategory CII.
+3.2 FOOD MANUFACTURING (CATEGORY C)
+Food chain category C involves the following food processing activities:
+a) C0: Conversion of animal carcasses including processes such as lairage, slaughter, evisceration, bulk chilling & freezing, bulk storage.
+b) CI: Processing of perishable animal products. Processing and packaging of animal products including fish, seafood, meat, poultry, eggs, dairy requiring chilled or frozen temperature control and processing of pet food from animal products only.
+c) CII: Processing and packaging of perishable plant-based products including fruits and fresh juices, vegetables, grains, nuts, and pulses, frozen water-based products (e.g., ice), plantbased meat and dairy substitutes and the processing of pet food from plant products only.
+d) CIII: Processing of perishable animal and plant products (mixed products) including pizza, lasagna, sandwiches, dumplings, ready-to-eat meals, and pet food from mixed (animal and plant) products. Off-site catering kitchens, and products of industrial kitchens that are not offered for immediate consumption.
+e) CIV: Processing of ambient stable products. Production of food products from any source that is stored and sold at ambient temperature, including canned foods, biscuits, bread, snacks, oil, drinking water, beverages, pasta, flour, sugar, food-grade salt, and ambient stable pet food.
+Foods for special dietary needs and food for special medical purposes, where legally classified as food within the country of manufacture, may be included under food chain category C. If the product is classified as a pharmaceutical or medical product under the legislation then it is outside the scope of FSSC 22000 certification.
+
+FSSC 22000 Version 6.0 | April 2023
+
+11 of 77
+
+Part 1 | Scheme Overview
+3.3 ANIMAL FEED PRODUCTION (CATEGORY D)
+Food chain category D covers the production of animal feed:
+a) Processing of feed material intended for food and non-food producing animals not kept in households, e.g., meal from grain, oilseeds, by-products of food production.
+b) Processing of feed mixtures, with or without additives, intended for food-producing animals, e.g., premixes, medicated feed, compound feeds.
+3.4 CATERING (CATEGORY E)
+Food chain category E applies when the catering service is delivered directly to consumers. The food is prepared for on-site consumption or take away.
+Examples include:
+� Units that serve food directly to the consumer or offer food for immediate consumption, e.g., restaurants, hotels, cafeterias and onboard passenger service;
+� Catering sites handling foods with direct serving to consumers, e.g., canteens, coffee shops, food trucks and event catering.
+3.5 TRADING, RETAIL, WHOLESALE AND E-COMMERCE (CATEGORY F)
+Food chain category FI applies to retail and wholesale activities, and related E-commerce activities.
+� Retail is defined as selling goods to the final customer (i.e., consumer), in small quantities for consumption and not for the purpose of resale. Retailers shall have physical buildings and facilities (i.e., shops, warehouses).
+� Wholesale is defined as the buying of goods from manufacturers or other sellers and selling of goods to other businesses such as retailers, industries, and occasionally end consumers.
+� The retailer or wholesaler may offer internet sales or deliveries (E-commerce) that may be included in the scope only when linked to the physical location but not as a stand-alone activity.
+� Wholesalers always take ownership of the products and activities may include food, feed and/or packaging products for food and feed.
+� For both retail and wholesale, minor processing activities that only serve to give preprepared food a final processing step may be included (e.g., reheating of ready to eat foods, cutting or portioning of meat or fish).
+Food chain category FII applies to Food brokering, trading, and E-commerce activities.
+� Food brokering and trading is the buying and selling of products on its own account without physically handling, or as an agent for others, of any item that enters the food chain.
+� Food E-commerce is the buying and selling of food products over an electronic network (internet) without physical handling.
+
+FSSC 22000 Version 6.0 | April 2023
+
+12 of 77
+
+Part 1 | Scheme Overview
+3.6 TRANSPORT AND STORAGE (CATEGORY G)
+Food chain category G applies to third-party logistics service providers who physically store and/or transport food, feed, or food/feed packaging materials, regardless of legal product ownership. It may include additional activities such as re-packing or relabeling of packed products, freezing and thawing activities.
+Manufacturers, caterers, or retailers/wholesalers that only store and/or transport their own product(s) and do not provide a service to others shall be audited under the category linked to their production activities.
+Manufacturers, caterers, or retailers/wholesalers who also provide storage and/or transport activities to organizations other than their own site, shall also require category G in addition to the relevant manufacturing category. Other organizations also refer to subsidiaries or sister companies.
+3.7 PRODUCTION OF FOOD PACKAGING AND PACKAGING MATERIALS (CATEGORY I)
+Food chain category I covers packaging (including plastic, carton, paper, metal, glass, wood and other materials) that includes the production of food/feed packaging, food/feed packaging materials and intermediate products for:
+a) Direct food contact surfaces or materials (i.e., physically touching the food or in contact with headspace) that will be in contact with the food during normal use of the food packaging, including labels and food desiccants with direct food contact and/or;
+b) Indirect food contact surfaces or materials that are not in direct contact with the food during normal use of the food packaging, but there is the possibility for substances to be transferred into the food, including labels applied to primary packaging.
+c) Closing packaging materials such as tape, plastic strips, or other can be included in Category I when the manufacturer can prove that it will be applied to a food or feed primary packaging material;
+d) Disposable tableware can only be certified when it is sold together (and as part of) the food product. Examples are spoons that are packed with yoghurt, forks or chopsticks packed with ready-to-eat food. The intended use, including that it is sold together (and as part of) the food product, shall be clearly specified in the scope statement. Disposable tableware that is intended for domestic (home) use is outside the scope of certification.
+e) Napkins/serviettes can only be certified where they are supplied specifically for use in food service. This intended use shall be clearly specified in the scope statement.
+f) Packaging materials, such as aluminum foil, baking paper and plastic wrap, which are intended to be used in the preparation of foodstuffs within the food industry may be certified, in which case the scope statement shall indicate that it is for use within the food industry. Packaging materials of this nature that are not for use within the food industry or are intended for domestic (home) use, are excluded from the scope of FSSC 22000 certification.
+g) Packaging activities limited to (inline) unfolding of packaging, blowing of bottle preforms, printing etc. are not considered as food packaging activities and are included in the food scope of certification and therefore category I does not apply.
+h) The in-line production of primary packaging, such as bottles using resin to produce a preform and followed by the blowing of bottles, is considered a packaging activity and shall additionally be covered by the packaging scope. Therefore, category I shall apply.
+
+FSSC 22000 Version 6.0 | April 2023
+
+13 of 77
+
+Part 1 | Scheme Overview
+i) Packaging material used for personal care, pharmaceutical products or other non-food uses are outside the scope of the Scheme.
+3.8 PRODUCTION OF BIO/CHEMICALS (CATEGORY K)
+Food chain category K involves the production of Chemical and Bio-Chemical products and applies to the production of food and feed additives, vitamins, minerals, bio-cultures, flavorings, enzymes, gases, and processing aids.
+Food supplements, where legally classified as food within the country of manufacture, may be included under food chain category K. If the product is classified as a pharmaceutical or medical product under the legislation, then it is outside the scope of FSSC 22000 certification.
+
+FSSC 22000 Version 6.0 | April 2023
+
+14 of 77
+
+PART 2 REQUIREMENTS
+FOR ORGANIZATIONS
+TO BE AUDITED
+
+FSSC 22000 Version 6.0 | April 2023
+
+15 of 77
+
+Part 2 | Requirements for Organization to be Audited
+CONTENTS PART 2 REQUIREMENTS FOR ORGANIZATIONS TO BE AUDITED
+
+1
+2
+2.1 2.2 2.3 2.4 2.5
+
+Purpose ........................................................................................................................ 17
+Requirements.............................................................................................................. 17
+General ...................................................................................................................................... 17 Scheme Changes and Interpretation......................................................................................17 ISO 22000 .................................................................................................................................. 17 Prerequisite Programs ............................................................................................................. 17 FSSC 22000 Additional Requirements .................................................................................... 18
+
+FSSC 22000 Version 6.0 | April 2023
+
+16 of 77
+
+Part 2 | Requirements for Organization to be Audited
+1 PURPOSE
+This part describes the Scheme requirements against which licensed Certification Bodies shall audit the Food Safety Management System of the organization to achieve or maintain certification for FSSC 22000.
+2 REQUIREMENTS
+2.1 GENERAL
+Organizations shall develop, implement, and maintain all the requirements outlined below and shall be audited by a licensed Certification Body in order to receive a valid FSSC 22000 certificate.
+The audit requirements for FSSC 22000 certification consist of: 1) ISO 22000:2018 Food Safety Management System requirements; 2) Sector specific prerequisite program (PRPs) requirements (ISO/TS 22002-x series or other specified PRP standard) and; 3) FSSC 22000 Additional requirements.
+2.2 SCHEME CHANGES AND INTERPRETATION
+The Board of Stakeholders (BoS) Decision list is a document which contains decisions applicable to FSSC 22000 Scheme. The decisions overrule or provide further clarification on existing Scheme rules and shall be implemented and applied within the defined transition period. The decision list is dynamic and can be adjusted by the BoS when deemed necessary.
+The Foundation publishes interpretation articles related to Scheme requirements that include further clarification on requirements and the application and/or implementation thereof. Certification bodies and Certified Organizations need to adhere to these interpretation articles as applicable. It is the responsibility of the FSSC 22000 contact person to keep up to date with the interpretation articles and communicate it to the relevant parties within the CB or to Certified Organizations as appropriate.
+2.3 ISO 22000
+The requirements for the development, implementation, and maintenance of the Food Safety Management System (FSMS) are laid down in the standard ISO 22000:2018 "Food safety management systems - Requirements for any organization in the food chain".
+2.4 PREREQUISITE PROGRAMS
+The Scheme specifies mandatory application of technical specifications detailing the pre-requisite programs (PRPs) as referenced in clause 8.2 of ISO 22000:2018, with the exception of sub-category FII. These PRP requirements are specified in the ISO/TS 22002-x series and/or the BSI/PAS 221 standards. Refer to Part 1, Table 1 of the Scheme.
+
+FSSC 22000 Version 6.0 | April 2023
+
+17 of 77
+
+Part 2 | Requirements for Organization to be Audited
+
+2.5 FSSC 22000 ADDITIONAL REQUIREMENTS
+2.5.1 MANAGEMENT OF SERVICES AND PURCHASED MATERIALS (ALL FOOD CHAIN CATEGORIES)
+a) In addition to clause 7.1.6 of ISO 22000:2018, the organization shall ensure that where laboratory analysis services are used for the verification and/or validation of food safety, these shall be conducted by a competent laboratory (including both internal and external laboratories as applicable) that has the capability to produce precise and repeatable test results using validated test methods and best practices (e.g. successful participation in proficiency testing programs, regulatory approved programs or accreditation to international standards such as ISO 17025).
+b) For food chain categories C, D, I, FII, G and K, the following additional requirement applies to ISO 22000:2018 clause 7.1.6: The organization shall have a documented procedure for procurement in emergency situations to ensure that products still conform to specified requirements and the supplier has been evaluated.
+c) For food chain categories C0, CI, CIII and CIV: In addition to ISO/TS 22002-1:2009 clause 9.2, the organization shall have a policy for the procurement of animals, fish and seafood that are subject to control of prohibited substances (e.g., pharmaceuticals, veterinary medicines, heavy metals, and pesticides);
+d) For food chain categories C, D, I, FII, G and K, the following additional requirement applies: The organization shall establish, implement, and maintain a review process for raw material and finished product specifications to ensure continued compliance with food safety, quality, legal and customer requirements.
+e) For food chain category I, in addition to clause 7.1.6 of ISO 22000:2018, the organization shall establish criteria related to the use of recycled packaging as a raw material input into the production of finished packaging material and ensure that relevant legal and customer requirements are being met.
+2.5.2 PRODUCT LABELING AND PRINTED MATERIALS (ALL FOOD CHAIN CATEGORIES)
+a) In addition to clause 8.5.1.3 of ISO 22000:2018, the organization shall ensure that finished products are labelled according to all applicable statutory and regulatory requirements in the country of intended sale, including allergen and customer specific requirements.
+b) Where a product is unlabeled, all relevant product information shall be made available to ensure the safe use of the food by the customer or consumer.
+c) Where a claim (e.g., allergen, nutritional, method of production, chain of custody, raw material status, etc.) is made on the product label or packaging, the organization shall maintain evidence of validation to support the claim and shall have verification systems in place, including traceability and mass balance, to ensure product integrity is maintained.
+d) For food chain category I, artwork management and print control procedures shall be established and implemented to ensure the printed material meets applicable customer and legal requirements. The procedure shall address the following as a minimum:
+i. Approval of artwork standard or master sample; ii. Process to manage changes to artwork and print specifications, and to manage
+obsolete artwork and printing materials; iii. Approval of each print run against the agreed standard or master sample; iv. Process to detect and identify printing errors during the run; v. Process to ensure effective segregation of differing print variants; and
+
+FSSC 22000 Version 6.0 | April 2023
+
+18 of 77
+
+Part 2 | Requirements for Organization to be Audited
+vi. Process to account for any unused printed product.
+2.5.3 FOOD DEFENSE (ALL FOOD CHAIN CATEGORIES)
+2.5.3.1 THREAT ASSESSMENT
+The organization shall: a) Conduct and document the food defense threat assessment, based on a defined methodology, to identify and evaluate potential threats linked to the processes and products within the scope of the organization; and b) Develop and implement appropriate mitigation measures for significant threats.
+2.5.3.2 PLAN
+a) The organization shall have a documented food defense plan, based on the threat assessment, specifying the mitigation measures and verification procedures.
+b) The food defense plan shall be implemented and supported by the organization's FSMS. c) The plan shall comply with applicable legislation, cover the processes and products within
+the scope of the organization and be kept up to date. d) For food chain category FII, in addition to the above, the organization shall ensure that
+their suppliers have a food defense plan in place.
+2.5.4 FOOD FRAUD MITIGATION (ALL FOOD CHAIN CATEGORIES)
+2.5.4.1 VULNERABILITY ASSESSMENT
+The organization shall: a) Conduct and document the food fraud vulnerability assessment, based on a defined methodology, to identify and assess potential vulnerabilities; and b) Develop and implement appropriate mitigation measures for significant vulnerabilities. The assessment shall cover the processes and products within the scope of the organization.
+2.5.4.2 PLAN
+a) The organization shall have a documented food fraud mitigation plan, based on the output of the vulnerability assessment, specifying the mitigation measures and verification procedures.
+b) The food fraud mitigation plan shall be implemented and supported by the organization's FSMS.
+c) The plan shall comply with the applicable legislation, cover the processes and products within the scope of the organization and be kept up to date.
+d) For food chain category FII, in addition to the above, the organization shall ensure that their suppliers have a food fraud mitigation plan in place.
+
+FSSC 22000 Version 6.0 | April 2023
+
+19 of 77
+
+Part 2 | Requirements for Organization to be Audited
+
+2.5.5 LOGO USE (ALL FOOD CHAIN CATEGORIES)
+a) Certified organizations shall use the FSSC 22000 logo only for marketing activities such as the organization's printed matter, website, and other promotional material.
+b) In case of using the logo, the certified organization shall request a copy of the latest FSSC logo from their Certification Body, and comply with the following specifications:
+
+Color Green Grey
+
+PMS
+348 U 60% black
+
+CMYK
+82/25/76/7 0/0/0/60
+
+RGB
+33/132/85 135/136/138
+
+#
+218455 87888a
+
+Use of the logo in black and white is permitted when all other text and images are in black and white.
+c) The certified organization is not allowed to use the FSSC 22000 logo, any statement or make reference to its certified status on:
+
+i. a product; ii. its labelling; iii. its packaging (primary, secondary or any other form); iv. certificates of analysis or certificates of conformance (CoA's or CoC's); v. in any other manner that implies FSSC 22000 approves a product, process, or
+service and vi. where exclusions to the scope of certification apply.
+
+2.5.6 MANAGEMENT OF ALLERGENS (ALL FOOD CHAIN CATEGORIES)
+The organization shall have a documented allergen management plan that includes:
+a) A list of all the allergens handled on site, including in raw materials and finished products; b) Risk assessment covering all potential sources of allergen cross-contamination; c) Identification and implementation of control measures to reduce or eliminate the risk of
+cross-contamination, based on the outcome of the risk assessment; and d) Validation and verification of these control measures shall be implemented and
+maintained as documented information. Where more than one product is produced in the same production area that have different allergen profiles, verification testing shall be conducted at a frequency based on risk, e.g., surface testing, air sampling and/or product testing; e) Precautionary or warning labels shall only be used where the outcome of the risk assessment identifies allergen cross-contamination as a risk to the consumer, even though all the necessary control measures have been effectively implemented. Applying warning labels does not exempt the organization from implementing the necessary allergen control measures or undertaking verification testing; f) All personnel shall receive training in allergen awareness and specific training on allergen control measures associated with their area of work; g) The allergen management plan shall be reviewed at least annually, and following any significant change that impacts food safety, a public recall or a product withdrawal by the organization as a result of an allergen/s, or when trends in industry show contamination of similar products relating to allergens. The review shall include an evaluation of the effectiveness of existing control measures and the need for additional measures. Verification data shall be trended and used as input for the review. h) For Food Chain Category D: Where there is no allergen-related legislation for the country of sale pertaining to animal feed, this section of the Scheme requirements may be indicated as `Not Applicable,' unless a claim relating to an allergen status has been made on the animal feed.
+
+FSSC 22000 Version 6.0 | April 2023
+
+20 of 77
+
+Part 2 | Requirements for Organization to be Audited
+2.5.7 ENVIRONMENTAL MONITORING (FOOD CHAIN CATEGORIES BIII, C, I & K)
+The organization shall have in place: a) A risk-based environmental monitoring program for the relevant pathogens, spoilage, and indicator organisms; b) A documented procedure for the evaluation of the effectiveness of all controls on preventing contamination from the manufacturing environment and this shall include, at a minimum, the evaluation of microbiological controls present; and shall comply with legal and customer requirements. c) Data of the environmental monitoring activities, including regular trend analysis; and d) The environmental monitoring program shall be reviewed for continued effectiveness and suitability, at least annually, and more often if required, including when the following triggers occur:
+i. Significant changes related to products, processes, or legislation; ii. When no positive testing results have been obtained over an extended period of
+time; iii. Trend in out of specification microbiological results, related to both intermediate
+and finished products, linked to environmental monitoring; iv. A repeat detection of pathogens during routine environmental monitoring; and v. When there are alerts, recalls or withdrawals relating to product/s produced by the
+organization.
+2.5.8 FOOD SAFETY AND QUALITY CULTURE (ALL FOOD CHAIN CATEGORIES)
+a) In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organizations' commitment to cultivating a positive food safety and quality culture, senior management shall establish, implement, and maintain a food safety and quality culture objective(s) as part of the management system. The following elements shall be addressed as a minimum:
+� Communication, � Training, � Employee feedback and engagement, and � Performance measurement of defined activities covering all sections of the
+organization impacting on food safety and quality.
+b) The objective(s) shall be supported by a documented food safety and quality culture plan, with targets and timelines and included in the management review and continuous improvement processes of the management system.
+
+FSSC 22000 Version 6.0 | April 2023
+
+21 of 77
+
+Part 2 | Requirements for Organization to be Audited
+
+2.5.9 QUALITY CONTROL (ALL FOOD CHAIN CATEGORIES)
+a) The organization shall:
+i. In addition to, and aligned with, clauses 5.2 and 6.2 of ISO 22000:2018, establish, implement, and maintain a quality policy and quality objectives.
+ii. Establish, implement and maintain quality parameters in line with finished product specifications, for all products and/or product groups within the scope of certification, including product release that addresses quality control and testing.
+iii. In addition to, and aligned with, clauses 9.1 and 9.3 of ISO 22000:2018, undertake analysis and evaluation of the results of the quality control parameters, as defined under 2.5.9 (a)(ii) above, and include it as an input for the management review; and
+iv. In addition to, and aligned with, clause 9.2 of ISO 22000:2018, include quality elements as defined in this clause, within the scope of the internal audit.
+b) Quantity control procedures, including for unit, weight, and volume, shall be established, and implemented, to ensure products meet the applicable customer and legal requirements. This shall include a program for calibration and verification of equipment used for quality and quantity control.
+c) Line start-up and change-over procedures shall be established and implemented to ensure products, including packaging and labelling, meet applicable customer and legal requirements. This shall include having controls in place to ensure labelling and packaging from the previous run have been removed from the line.
+2.5.10 TRANSPORT, STORAGE AND WAREHOUSING (ALL FOOD CHAIN CATEGORIES)
+a) The organization shall establish, implement, and maintain a procedure and specified stock rotation system that includes FEFO principles in conjunction with the FIFO requirements.
+b) For food chain category C0, in addition to ISO/TS 22002-1:2009 clause 16.2, the organization shall have specified requirements in place that define post-slaughter time and temperature in relation to chilling or freezing of the products.
+c) For food chain category FI, in addition to BSI/PAS 221:2013 clause 9.3, the organization shall ensure that product is transported and delivered under conditions which minimize the potential for contamination.
+d) Where transport tankers are used, the following shall apply in addition to clause 8.2.4 of ISO 22000:2018: i. Organizations that use tankers for transportation of their final product shall have a documented risk-based plan to address transport tank cleaning. It shall consider potential sources of cross-contamination, and appropriate control measures, including cleaning validation. Measures shall be in place to assess cleanliness of the tanker at the point of reception of the empty tanker, prior to loading. ii. For organizations receiving raw material in tankers, the following shall be included in the supplier agreement as a minimum to ensure product safety and prevent cross-contamination: tanker cleaning validation, restrictions linked to prior use and applicable control measures relevant to the product being transported.
+2.5.11 HAZARD CONTROL AND MEASURES FOR PREVENTING CROSSCONTAMINATION (ALL FOOD CHAIN CATEGORIES, EXCLUDING FII)
+a) For food chain categories BIII, C and I, the following additional requirement applies to ISO 22000:2018 clause 8.5.1.3: The organization shall have specific requirements in place
+
+FSSC 22000 Version 6.0 | April 2023
+
+22 of 77
+
+Part 2 | Requirements for Organization to be Audited
+where packaging is used to impart or provide a functional effect on food (e.g., shelf-life extension). b) For food chain category C0, the following requirement applies in addition to ISO/TS 220021:2009 clause 10.1: The organization shall have specified requirements for an inspection process at lairage and/or at evisceration to ensure animals are fit for human consumption; c) For food chain category D, the following requirement applies in addition to ISO/TS 220026:2016 clause 4.7: The organization shall have in place procedures to manage the use of ingredients/additives that contain components that can have an adverse animal health impact. d) For all food chain categories, excluding FII, the following requirements relating to foreign matter management apply, in addition to clause 8.2.4 (h) of ISO 22000:2018:
+i. The organization shall have a risk assessment in place to determine the need and type of foreign body detection equipment required. Where the organization deems no foreign body detection equipment is necessary, justification shall be maintained as documented information. Foreign body detection equipment includes equipment such as magnets, metal detectors, X-ray equipment, filters, and sieves.
+ii. A documented procedure shall be in place for the management and use of the equipment selected.
+iii. The organization shall have controls in place for foreign matter management including procedures for the management of all breakages linked to potential physical contamination (e.g., metal, ceramic, hard plastic).
+2.5.12 PRP VERIFICATION (FOOD CHAIN CATEGORIES BIII, C, D, G, I & K)
+The following additional requirement applies to ISO 22000:2018 clause 8.8.1:
+� The organization shall establish, implement, and maintain routine (e.g., monthly) site inspections/PRP checks to verify that the site (internal and external), production environment and processing equipment are maintained in a suitable condition to ensure food safety. The frequency and content of the site inspections/PRP checks shall be based on risk with defined sampling criteria and linked to the relevant technical specification.
+2.5.13 PRODUCT DESIGN AND DEVELOPMENT (FOOD CHAIN CATEGORIES BIII, C, D, E, F, I & K)
+A product design and development procedure shall be established, implemented, and maintained for new products and changes to product or manufacturing processes to ensure safe and legal products are produced. This shall include the following:
+a) Evaluation of the impact of the change on the FSMS taking into account any new food safety hazards (incl. allergens) introduced and updating the hazard analysis accordingly,
+b) Consideration of the impact on the process flow for the new product and existing products and processes,
+c) Resource and training needs, d) Equipment and maintenance requirements, e) The need to conduct production and shelf-life trials to validate product formulation and
+processes are capable of producing a safe product and meet customer requirements. A process for on-going shelf-life verification shall be in place, at a frequency based on risk. f) Where a ready-to-cook product is produced, the cooking instructions provided on the product label or packaging shall be validated to ensure food safety is maintained.
+
+FSSC 22000 Version 6.0 | April 2023
+
+23 of 77
+
+Part 2 | Requirements for Organization to be Audited
+
+2.5.14 HEALTH STATUS (FOOD CHAIN CATEGORY D)
+In addition to ISO/TS 22002-6 clause 4.10.1, the organization shall have a procedure to ensure that the health of personnel does not have an adverse effect on the feed production operations. Subject to legal restrictions in the country of operation, employees shall undergo a medical screening prior to employment in feed contact operations, unless documented hazards or medical assessment indicates otherwise. Additional medical examinations, where permitted, shall be carried out as required and at intervals defined by the organization.
+2.5.15 EQUIPMENT MANAGEMENT (ALL FOOD CHAIN CATEGORIES, EXCLUDING FII)
+In addition to clause 8.2.4 of ISO 22000:2018, the organization shall: a) Have a documented purchase specification in place, which addresses hygienic design, applicable legal and customer requirements, and the intended use of the equipment, including product handled. The supplier shall provide evidence of meeting the purchase specification prior to installation. b) Establish and implement a risk-based change management process for new equipment and/or any changes to existing equipment, which shall be adequately documented including evidence of successful commissioning. Possible effects on existing systems shall be assessed and adequate control measures determined and implemented.
+2.5.16 FOOD LOSS AND WASTE (ALL FOOD CHAIN CATEGORIES, EXCLUDING I)
+In addition to clause 8 of ISO 22000:2018, the organization shall: a) Have a documented policy and objectives detailing the organization's strategy to reduce food loss and waste within their organization and the related supply chain. b) Have controls in place to manage products donated to not-for-profit organizations, employees, and other organizations; and ensure that these products are safe to consume. c) Manage surplus products or by-products intended as animal feed/food to prevent contamination of these products. d) These processes shall comply with the applicable legislation, be kept up to date, and not have a negative impact on food safety.
+2.5.17 COMMUNICATION REQUIREMENTS (ALL FOOD CHAIN CATEGORIES)
+In addition to clause 8.4.2 of ISO 22000:2018, the organization shall inform the certification body within 3 working days of the commencement of the events or situations below and implement suitable measures as part of their emergency preparedness and response process:
+a) Serious events that impact the FSMS, legality and/or the integrity of the certification including situations that pose a threat to food safety, or certification integrity as a result of a Force majeure, natural or man-made disasters (e.g., war, strike, terrorism, crime, flood, earthquake, malicious computer hacking, etc.);
+b) Serious situations where the integrity of the certification is at risk and/or where the Foundation can be brought into disrepute. These include, but are not limited to: � Public food safety events (e.g., public recalls, withdrawals, calamities, food safety outbreaks, etc.); � Actions imposed by regulatory authorities as a result of a food safety issue(s), where additional monitoring or forced shutdown of production is required; � Legal proceedings, prosecutions, malpractice, and negligence; and
+
+FSSC 22000 Version 6.0 | April 2023
+
+24 of 77
+
+Part 2 | Requirements for Organization to be Audited
+
+� Fraudulent activities and corruption.
+2.5.18 REQUIREMENTS FOR ORGANIZATION WITH MULTI-SITE CERTIFICATION (FOOD CHAIN CATEGORIES E, F & G)
+2.5.18.1 CENTRAL FUNCTION
+a) The management of the central function shall ensure that sufficient resources are available, and that roles, responsibilities and requirements are clearly defined for management, internal auditors, technical personnel reviewing internal audits and other key personnel involved in the FSMS.
+2.5.18.2 INTERNAL AUDIT REQUIREMENTS
+In addition to clause 9.2 of ISO 22000:2018, the organization shall adhere to the following requirements relating to internal audits:
+a) An internal audit procedure and program shall be established by the central function covering the management system, central function, and all sites. Internal auditors shall be independent from the areas they audit and be assigned by the central function to ensure impartiality at site level.
+b) The management system, centralized function and all sites shall be audited at least annually or more frequently based on a risk assessment; and the effectiveness of corrective action shall be demonstrated.
+c) Internal auditors shall meet at least the following requirements, and this shall be assessed by the CB annually as part of the audit:
+Work experience: 2 years' full-time work experience in the food industry including at least 1 year in the organization. Education: completion of a higher education course or in the absence of a formal course, have at least 5 years work experience in the food production or manufacturing, transport, and storage, retailing, inspection, or enforcement areas. Training:
+i. For FSSC 22000 internal audits, the lead auditor shall have successfully completed a FSMS, QMS or FSSC 22000 Lead Auditor Course of 40 hours.
+ii. Other auditors in the internal audit team shall have successfully completed an internal auditor course of 16 hours covering audit principles, practices, and techniques. The training may be provided by the qualified internal Lead Auditor or through an external training provider.
+iii. FSSC Scheme training covering at least ISO 22000, the relevant prerequisite programs based on the technical specification for the sector (e.g., ISO/TS 22002-x; PAS-xyz) and the FSSC additional requirements � minimum 8 hours.
+d) Internal audit reports shall be subject to a technical review by the central function, including addressing the non-conformities resulting from the internal audit. Technical reviewers shall be impartial, have the ability to interpret and apply the FSSC normative documents (at least ISO 22000, the relevant ISO/TS 22002-x; PAS-xyz and the FSSC additional requirements) and have knowledge of the organizations processes and systems.
+e) Internal auditors and technical reviewers shall be subject to annual performance monitoring and calibration. Any follow-up actions identified shall be suitably actioned in a timely and appropriate manner by the Central function.
+
+FSSC 22000 Version 6.0 | April 2023
+
+25 of 77
+
+PART 3 REQUIREMENTS
+FOR THE CERTIFICATION
+PROCESS
+
+FSSC 22000 Version 6.0 | April 2023
+
+26 of 77
+
+Part 3 | Requirements for the Certification Process
+CONTENTS PART 3 REQUIREMENTS FOR THE CERTIFICATION PROCESS
+
+1
+2
+3
+4
+4.1 4.2 4.3 4.4
+5
+5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.8 5.9 5.10
+6
+6.1 6.2 6.3
+7
+7.1 7.2 7.3
+8
+8.1 8.2 8.3 8.4
+
+Purpose ........................................................................................................................ 28
+General......................................................................................................................... 28
+Resources .................................................................................................................... 28
+Contract Process ......................................................................................................... 28
+Application ................................................................................................................................ 28 Scope.......................................................................................................................................... 28 Audit time including Audit Duration.......................................................................................28 Contract ..................................................................................................................................... 30
+Planning and Managing Audits ................................................................................. 31
+General ...................................................................................................................................... 31 Multiple functions across more than one site.......................................................................32 Multi-site certification .............................................................................................................. 34 Unannounced audits ............................................................................................................... 37 Use of information and communication technology ........................................................... 38 Transfer of certification ........................................................................................................... 38 Upgrade audits ......................................................................................................................... 38 Transition audits ...................................................................................................................... 39 Allocation of audit team .......................................................................................................... 39 Management of serious events ............................................................................................... 39
+Audit Documentation ................................................................................................ 40
+Written audit report ................................................................................................................. 40 Nonconformities ....................................................................................................................... 41 Additional audit documentation ............................................................................................ 42
+Certification Decision Process .................................................................................. 43
+General ...................................................................................................................................... 43 Certificate design and content ................................................................................................ 43 Certificate suspension or withdrawal or scope reduction ................................................... 44
+Assurance Platform Data and Documentation.......................................................45
+Data ownership ........................................................................................................................ 45 Data upload requirements ...................................................................................................... 45 Data quality control ................................................................................................................. 45 Assurance Platform .................................................................................................................. 46
+
+FSSC 22000 Version 6.0 | April 2023
+
+27 of 77
+
+Part 3 | Requirements for the Certification Process
+1 PURPOSE
+This Part states the requirements for the execution of the certification process to be conducted by licensed Certification Bodies (CBs).
+
+2 GENERAL
+The CB shall manage its certification management system according to the requirements of ISO/IEC 17021-1:2015, ISO 22003-1:2022, and the FSSC 22000 requirements including any FSSC Board of Stakeholder decisions and other mandatory documents published by the Foundation.
+The CB shall control all Scheme related documentation and records according to its own procedures.
+The CB shall have procedures of certification that confirm the compliance of the certified organizations to that of the Scheme and the accreditation requirements.
+
+3 RESOURCES
+The CB shall provide sufficient resources to enable the reliable supply of its FSSC 22000 certification service.
+
+4 CONTRACT PROCESS
+4.1 APPLICATION
+The CB shall collect and document the information from the applicant organization in an application form which details the minimum information as required in the ISO/IEC 17021-1 and ISO 22003-1:2022, and additional Scheme requirements.
+4.2 SCOPE
+The CB shall assess the scope proposed by the organization on the application form and review it against the requirements of ISO 22003-1:2022 and the requirements of the Scheme.
+4.3 AUDIT TIME INCLUDING AUDIT DURATION
+The CB shall calculate the audit time including the audit duration based on the information gathered from the organization's application and follow the requirements of ISO/IEC 17021-1 and ISO 22003-1, with the below specific/additional FSSC 22000 requirements:
+a) The duration of an audit day normally is eight (8) hours and only includes effective auditing time. In exceptional circumstances an audit day may be longer than 8 hours but shall never exceed ten (10) hours and then only in accordance with the relevant International Labor Organization (ILO) and national legislative requirements;
+
+FSSC 22000 Version 6.0 | April 2023
+
+28 of 77
+
+Part 3 | Requirements for the Certification Process
+
+b) The audit duration calculation for FSSC 22000 shall be documented by the CB, including justifications for reduction or addition of time based on the minimum audit duration;
+c) The audit duration shall be stated in auditor working hours indicating the effective audit duration based on the audit plan. Deviations to the audit durations and audit plan shall be recorded in the audit report (including motivations);
+d) The audit duration shall only apply to FSSC 22000 qualified auditors and not to other team members(s) not assigned as an auditor (e.g., technical experts, interpreters, observers, witnessors and trainee auditors);
+e) Where the FSSC 22000 audit is undertaken in combination or integrated with other food safety audits as a combined audit, the audit duration stated in the report shall be of the total combined audit and be aligned with the audit plan. Total audit duration is then longer than for FSSC 22000 alone and shall be sufficient to ensure that all the FSSC 22000 requirements are being covered. This is considered as an increase in audit duration and the reason for this shall be justified in the audit report.
+f) A minimum of 50% of the total audit duration shall be spent on auditing the operational food safety planning and the implementation of PRPs and control measures. This includes time spent auditing the facilities, conducting the traceability exercise(s) and reviewing the relevant records. Operational food safety planning does not include activities related to FSMS development, training, internal audit, management review and improvement.
+g) The CB shall provide the audit duration and audit time determination to the organization and make it available to its AB and The Foundation.
+4.3.1 BASIC AUDIT DURATION CALCULATION (SINGLE SITE)
+The total audit duration/site audit time (for a single site) is defined as Ds + TFSSC where:
+a) Ds = (TD + TH + TFTE) which is the total audit duration calculated according to ISO 220031:2022; and
+b) TFSSC shall be calculated as follows:
+i. 1.0 auditor day (8 working hours) when the company has less than 250 FTE and 1 or 2 HACCP studies.
+ii. 1.5 auditor day (12 working hours) when the organization has 250 FTE or more; or 3 HACCP studies or more.
+When properly documented and justified, a reduction of the Ds audit duration can be made in accordance with ISO 22003-1:2022, Annex B. The reduction in Ds audit duration can never be more than 0.25 auditor day (2 working hours) and the Ds cannot be reduced below 1 day. The reduction cannot be applied to the TFSSC.
+Preparation and reporting time shall be in addition to the audit duration � the below refers to the minimum time to be allocated:
+a) At least 0.25 auditor day (2 working hours) for audit preparation. b) At least 1.0 auditor day (8 working hours) for audit reporting.
+Where more than one food chain category is included in the scope of certification, additional reporting time may be required, based on the audit complexity.
+If after the calculation the result is a decimal number, the exact hours may be used or where rounding is applied to the number of days, this shall be rounded upwards to the nearest half day (e.g., 5.3 audit days becomes 5.5 audit days).
+
+FSSC 22000 Version 6.0 | April 2023
+
+29 of 77
+
+Part 3 | Requirements for the Certification Process
+An interpreter may be added to the audit team to support members of the audit team. The interpreter shall be assigned by the CB and be independent of the organization audited. Where an interpreter is required to support the audit team, the audit duration of the relevant audit or audit part (in cases where the interpreter is not present for the full audit duration), shall be increased with at least 20% to allow for the translation process.
+4.3.2 SURVEILLANCE AND RECERTIFICATION AUDITS
+For surveillance and recertification audits, the basic audit duration shall be calculated as follows:
+a) Surveillance audits: (one-third of Ds) + TFSSC, plus any other additional audit time (as per �5.2 below).
+b) Recertification audits: (two-thirds of Ds) + TFSSC, plus any other additional audit time (as per �5.2 below).
+Additional or special audits may be performed in addition to the regular surveillance or recertification audits � but never as a replacement. These additional (special) audits shall be documented and uploaded to the Assurance Platform as special audits.
+4.3.3 MINIMUM AUDIT DURATION
+For all audit types (initial, surveillance, recertification), the following minimum audit duration principles apply:
+a) The minimum Ds is 1 day (8 working hours). b) The minimum basic FSSC 22000 audit duration is then 2 days (refer 4.3.1 b) for all food
+chain categories; c) The minimum audit duration shall always be respected, except where the exemption
+below applies. d) Basic audit duration is the minimum duration for a single site and does not include
+additional time i.e., for off-site activities.
+The following exemption applies to the minimum audit durations:
+i. For organizations that have simple processes, less than 20 FTE and maximum 1 HACCP study, further reductions are allowed to a minimum audit duration of 1.5 days for all audit types.
+ii. For subcategory FII, a minimum audit duration of 1.5 days may be applied for all audit types.
+Where the exemption above is applied, the CB shall ensure that the audit duration allows for an effective audit based on audit objectives, scope and specific audit needs and covering the full FSSC 22000 requirements.
+4.4 CONTRACT
+A certification contract shall be in place between the CB and the organization applying for certification, detailing the scope of the certification, and referring to all relevant Scheme requirements.
+This contract shall detail or have reference to the legally enforceable certification agreement between the CB and the organization which shall include, but are not limited to:
+
+FSSC 22000 Version 6.0 | April 2023
+
+30 of 77
+
+Part 3 | Requirements for the Certification Process
+1) Ownership of the certificate and the audit report content shall be held by the CB; 2) Conditions under which the certification contract can be terminated; 3) Conditions under which the certificate can be used by the certified organization; 4) Terms of confidentiality in relation to information gathered by the CB during the
+certification process; 5) The certified organization allows the CB to share information relating to the certification
+and auditing process with the Foundation, their Accreditation Body, the IAF, GFSI and governmental authorities when required; 6) The certified organization allows the CB and Foundation FSSC to share information regarding their certification status with external parties; 7) Procedures for nonconformity management; 8) Procedures for complaints and appeals; 9) Inclusion of information on the certified status of the organization on the FSSC 22000 website and in the Assurance Platform; 10) Cooperation in, and acceptance of witness assessments by the CB, AB and/or the Foundation when requested; 11) Communication obligations of certified organizations to the CB within 3 working days related to the following:
+a. Any significant changes that affect the compliance with the Scheme requirements and obtain advice of the CB in cases where there is doubt over the significance of a change;
+b. Serious events that impact the FSMS, legality and/or the integrity of the certification, including situations that pose a threat to food safety or certification integrity as a result of Force majeure, natural or man-made disasters (e.g., war, strike, terrorism, crime, flood, earthquake, malicious computer hacking, etc.);
+c. Serious situations where the integrity of the certification is at risk and/or where the Foundation can be brought into disrepute. These include, but are not limited to: � Public food safety events (e.g., public recalls, withdrawals, calamities, food safety outbreaks, etc.); � Actions imposed by regulatory authorities as a result of a food safety issue(s), where additional monitoring or forced shutdown of production is required; � Legal proceedings, prosecutions, malpractice, and negligence; and � Fraudulent activities and corruption.
+d. Changes to organization name, contact address and site details; e. Changes to organization (e.g., legal, commercial, organizational status or
+ownership) and management (e.g., key managerial, decision-making, or technical staff); f. Major changes to the food safety management system, scope of operations and product categories covered by the certified management system (e.g. new products, new processing lines, etc.); g. Any other change that renders the information on the certificate inaccurate.
+
+5 PLANNING AND MANAGING AUDITS
+5.1 GENERAL
+1) The 3-year certification cycle (ISO/IEC 17021-1 �9.1.3) shall be respected.
+
+FSSC 22000 Version 6.0 | April 2023
+
+31 of 77
+
+Part 3 | Requirements for the Certification Process
+2) The CB shall perform the stage 1 and stage 2 audits for initial certification according to the requirements of ISO/IEC 17021-1 and ISO 22003-1. The interval between stage 1 and stage 2 audits shall not be longer than 6 months. The Stage 1 shall be repeated if a longer interval is needed.
+3) Any part of the FSMS that is audited during the Stage 1 audit, and determined to be fully implemented, effective and in conformity with requirements, does not necessarily need to be re-audited during Stage 2. In this case, the audit report includes these findings and clearly states that conformity has been established during the Stage 1 of the audit.
+4) Surveillance audits shall be conducted within the calendar year as per the requirements of ISO/IEC 17021-1, to ensure that the organization's management system continues to fulfil the Scheme requirements and that certification integrity is maintained. The date of the first surveillance audit, after the initial certification, shall not exceed 12 months from the initial certification decision date, otherwise the certification shall be suspended.
+5) Each surveillance audit is a full system audit and shall cover all the Scheme requirements. 6) Recertification audits shall take place in a timely manner, preferably at least three (3)
+months prior to the expiry date of the certificate, allowing enough time for the certification process to be completed prior to the expiry of the certificate. Where the certificate expires prior to the recertification activities being undertaken, the CB can restore certification within 6 months, provided that the outstanding recertification activities are completed, otherwise a full initial certification audit (Stage 1 and Stage 2) shall be conducted. Recertification audits are full system audits against the Scheme requirements. 7) Where a certified organization moves to another location, at least a Stage 2 audit shall be conducted, resulting in the start of a new 3-year certification cycle. 8) General:
+a. Audits shall be carried out at the premises of the organization in accordance with the audit duration calculated, and shall be conducted over a continuous number of days (excluding weekends when it is not a working day and public holidays). Where the ICT Audit Approach is utilized, the requirements of Annex 5 apply.
+b. It is the organization's responsibility to communicate any local holidays or shutdowns in a timely manner to facilitate audit scheduling.
+c. The CB shall have a process for determining the audit timing, including seasonal activities where relevant, to allow for auditing the organization operating on a representative number of product lines and/or activities covered by the scope of certification.
+d. The audit shall be carried out in a mutually agreed language. An interpreter may be added to the team by the CB to support members of the audit team.
+e. The CB is expected to operate with discretion in case of emergencies (e.g., fire, major catastrophic event, another audit on-going).
+5.2 MULTIPLE FUNCTIONS ACROSS MORE THAN ONE SITE
+5.2.1 HEAD OFFICE FUNCTIONS
+1) In all cases where functions pertinent to the certification of the site (such as procurement, product development, supplier approval, quality assurance etc.) are controlled by a Head Office (part of the same legal entity or part of the same larger organization), the Scheme requires that these functions be audited and included in the certification of the site, including interviewing the personnel described in the FSMS as having the (delegated) authority and responsibility for these functions. This Head Office audit shall be documented.
+
+FSSC 22000 Version 6.0 | April 2023
+
+32 of 77
+
+Part 3 | Requirements for the Certification Process
+
+2) Where it is not possible to audit these functions and access information during the site audit, a separate head office audit shall be conducted prior to the site audit. The subsequent audit at the site(s) shall include confirmation that the requirements set out by the Head Office are appropriately incorporated into site-specific documents and implemented in practice. It might be necessary to follow up on certain topics with the Head office during the site audit, in which case the Head office shall make the information available.
+3) The site audit report shall include which FSMS functions and/or processes have been audited at the Head Office, including the information, and supporting objective evidence gathered relating to the Head office functions.
+4) Where the same Head office is linked to more than one site, the following applies:
+a. The Head office audit is conducted before the site audits within a time frame of 12 months from the site audits, but typically as close to the site audits as possible.
+b. A separate audit report is generated for the Head office that shall be uploaded to the FSSC Assurance Platform together with each site audit report;
+5) Every site linked to the head office shall have a separate audit, audit report and certificate. 6) The Head office functions shall be audited at every audit type (initial, surveillance,
+recertification). The audit may be conducted onsite, or remotely based on a feasibility assessment and in accordance with the requirements of Annex 5. 7) Nonconformities identified at the Head office shall be dealt with as set out in section 6.2 of this Part. 8) The Head Office cannot receive a separate certificate as the functions/process audited are part of the site's audit. The Head Office is referenced on the site certificate, regardless of whether assessed as part of the site audit or as a separate audit, and shall indicate which FSMS functions and/or processes have been managed at the Head office. Wording such as: "This audit included the following central FSMS processes managed by (name and location of Head Office): (describe FSMS processes managed at the Head Office)", may be used.
+5.2.1.1 HEAD OFFICE AUDIT DURATION
+a) For organizations where some functions pertinent to the certification are controlled by a Head Office separate to the site(s), and where these functions are audited separate to the site (prior to the site audit), the minimum audit duration of the Head office shall be 0.5 auditor day (4 working hours). Depending on the nature, complexity (including the number of sites linked to the Head office) and extent of these functions, more time shall be added. In all instances the audit duration shall be appropriate to allow for the relevant functions to be fully assessed.
+b) Where the Head Office functions are assessed as part of and at the same time as the audit at the site, no additional audit time is required.
+c) A maximum of 20% audit duration reduction can be allowed for each of the single sites linked to the off-site Head Office. The 20% reduction is only applied to the minimum audit duration (Ds) of the site as per ISO 22003-1:2022, Annex B.
+d) Additional time is required for the planning and report writing of the head office audits and is not included in the basic site audit duration.
+5.2.2 OFF-SITE ACTIVITIES
+1) Where one manufacturing, processing or service process is split across more than one physical address, these locations may be covered in one audit provided that the different addresses are part of the same legal entity and under the same FSMS. This is limited to two sites (main site and satellite site) or to organizations with a campus style set-up
+
+FSSC 22000 Version 6.0 | April 2023
+
+33 of 77
+
+Part 3 | Requirements for the Certification Process
+(multiple facilities at one location that is part of the same organization). These sites are required to be in the same country and the audit must be delivered in a continuous manner that is in accordance with the audit duration calculated. 2) Storage facilities at another location shall also be included in the same audit provided they are part of the same legal entity and under the same FSMS. Storage facilities are limited to those only used for, and directly linked to the storage of the site's products. Where activities or services are provided for other customers (including sister companies), separate certification will be required for these off-site storage facilities. 3) The certificate shall include the audited locations with activities per location (on the certificate or as an Annex to the certificate) � refer Annex 3. 4) The audit report shall clearly reflect what was audited at each location included in the certification, include a sufficient level of detail (objective evidence) in the summary sections, and allow audit findings to be identified as site specific.
+5.2.2.1 OFF-SITE ACTIVITY AUDIT DURATION
+a) Off-site manufacturing activities: Where off-site manufacturing, processing or service activities take place, a 50% audit time reduction of Ds may be applied for the satellite site OR the parameters (e.g., FTE, HACCP studies) of the satellite site shall be included in the main site audit duration calculation as specified in �4.3. Additional time shall be added for travelling between sites and is therefore not included in the audit duration.
+b) Off-site storage and cross docking: At least 0.25 auditor day (2 working hours) additional audit time shall be added to the FSSC 22000 audit duration for each off-site storage or cross docking facility. Transshipment is not covered in this requirement.
+5.3 MULTI-SITE CERTIFICATION
+5.3.1 GENERAL
+a) A multi-site organization is an organization having an identified central function at which certain FSMS activities are planned, controlled or managed, and a network of sites at which such activities are fully or partially carried out, as per ISO 22003-1:2022 clause 9.1.5.2.
+b) A multi-site organization does not need to be a unique legal entity, in which case all sites shall have a legal or contractual link with the central function of the organization and be subject to a single management system, which is laid down, established and subject to continuous oversight, surveillance and internal audits by the central function.
+c) Multi-site certification (including sampling) is only allowed for the following food chain (sub)categories:
+� E � Catering � FI � Retail/wholesale � FII - Brokering/Trading/E-commerce � G � Storage and distribution
+d) When applying multi-site certification all requirements of IAF MD 1 shall be met, except:
+i. Paragraph 6.1.3 (size of sample). This IAF MD 1 paragraph shall be replaced by the ISO 22003-1:2022 sampling regime paragraph 9.1.5.4; except that the following calculation shall be utilized for Food Chain Categories E, F and G:
+For organizations with 20 sites or fewer, all sites shall be audited. For organizations with more than 20 sites, the minimum number of sites to be sampled shall be 20
+
+FSSC 22000 Version 6.0 | April 2023
+
+34 of 77
+
+Part 3 | Requirements for the Certification Process
+plus the square root of the total number of other sites, rounded up to the next whole number: y = 20 + (x � 20).
+ii. Paragraph 7.3: Calculating audit duration:
+Central Function: The central function audit duration shall be calculated based on Ds, using the Table in Annex B of ISO 22003-1:2022. The calculation of the Ds is based on:
+� FTE: the number of FTE of the central function that is responsible for, and involved in, the central function activities.
+� Food Chain category: if there are multiple categories or subcategories, use the category or subcategory with the highest TD value to determine the DS.
+� Number of HACCP studies: use the number of different HACCP studies within the multisite organization.
+The central function audit duration shall always be calculated separately from the site audits, regardless of whether the central function is based at a site or not. The audit duration of the central function shall be equal to or greater than Ds for all audit types (initial, surveillance and recertification) and cannot be less than 1.0 auditor day in all instances. TFSSC is not required to be added to the central function audit duration.
+Sites: Audit duration for sites are calculated individually, based on the specific parameters linked to that site. A maximum of 50% audit duration reduction can be allowed for each of the sites belonging to the multi-site organization. The 50% reduction is only applied to the minimum audit duration (Ds) as per ISO 220031:2022, Annex B, Table B.1;
+Site audit duration:
+� Initial audit = (50% of Ds) + TFSSC � Surveillance audits = [1/3rd of (50% of Ds)] + TFSSC � Recertification audits = [2/3rd of (50% of Ds)] + TFSSC
+The audit duration for a site cannot be below 1.5 auditor day for all audit types (initial, surveillance and recertification) and all applicable Food Chain Categories.
+e) Audit duration excludes preparation and report writing time. It is required that additional time is added for the central function and each of the sites for audit preparation and report writing.
+f) During the Stage 1 audit, the Central Function shall be audited as a minimum - it is not required to include sites in the Stage 1 audit. Although not required, it is recommended to include some of the sites to determine readiness for the Stage 2 audit. If a site is not audited during the Stage 1 audit, then the full initial audit duration shall be applied at the Stage 2 duration for that site.
+g) For subsequent audits, the central function shall be audited at least annually and before the CB audits of the (sampled) sites. In exceptional cases, a small number of the (sample) sites may be audited prior to the audit of the central function. The site audits shall be conducted as close to the central function audit as possible, but always within 12 months of the central function audit.
+
+FSSC 22000 Version 6.0 | April 2023
+
+35 of 77
+
+Part 3 | Requirements for the Certification Process
+
+h) Separate reports may be produced for the Central function and each of the sites respectively. Alternatively, one audit report may be produced for the multi-site organization, including the central function information, containing specific information about each site audited and complying with the content of Annex 2. The summary sections of the audit report shall clearly reflect what was audited at each site with supporting objective evidence.
+i) The certificate shall be a group certificate issued to the multi-site organization. It is not allowed to issue certificates to individual sites in the case of multi-site certification.
+5.3.2 SAMPLING METHODOLOGY
+a) For organizations with 20 sites or fewer, all sites shall be audited. b) For organizations with more than 20 sites and that meets the sampling criteria, the
+sampling requirements as set out in ISO 22003-1:2022, paragraph 9.1.5 apply, except for the sampling methodology (calculation), where the Scheme requirement in 5.3.1 (d) in this document apply. c) In addition to (b): where sampling is allowed, the CB shall ensure that all sites are audited over the course of the initial certification cycle (Initial, surveillance, surveillance) and subsequent certification cycle respectively (recertification, surveillance, surveillance). Therefore, the sample size might need to be increased to meet this requirement, but can never be lower than what is defined in (b). d) The methodology sets the minimum sample sizes, and therefore based on the risk categories, complexity and performance of the sites, an increase in the sample size might be required. e) Where sites are added to the group, an audit is required before adding them to the certificate, either as a special audit (scope extension) or as part of the regular audit. f) Once every 3 years, the regular audit shall be conducted fully unannounced as set out in Part 3, section 5.4.1, including the central function and the (sampled) site audits.
+5.3.3 REQUIREMENTS FOR THE CENTRAL FUNCTION
+a) The central function shall hold the contract with the CB and request to include multi-site sampling as part of the application process should they wish to include it.
+b) It is the responsibility of the central function to ensure management commitment to the FSMS and have sufficient resources and technical capacity in place to support the system and the internal audit program. The central function shall be impartial from the sites (e.g., have different/ dedicated employees, governance, management etc.).
+c) It might be necessary to follow up on certain topics with the Central function during or after a site audit, in which case the responsible individual/s at the Central function shall make the information available.
+d) The central function shall take responsibility for coordinating, addressing, and closing out of nonconformities raised at site level in conjunction with the relevant sites. Failure of the central function or any of the sites to meet the Scheme requirements shall result in the whole organization, including the central function and all sites, not gaining certification. Where certification has previously been in place, this shall initiate the CB process to suspend or withdraw the certification.
+5.3.4 NONCONFORMITY MANAGEMENT
+Nonconformities raised at multi-site organizations shall follow the requirements of the Scheme (refer Part 3, section 6.2) as well as those in IAF MD1, section 7.7 and ISO 22003-1:2022, section 9.1.5, with the following specific requirements in addition:
+
+FSSC 22000 Version 6.0 | April 2023
+
+36 of 77
+
+Part 3 | Requirements for the Certification Process
+a) Where a critical nonconformity is identified, the certificate of the multi-site organization shall be suspended within 3 working days of issuing the critical nonconformity, regardless of whether the central function audit or site audits have been completed.
+b) Where a major nonconformity is identified and the audit takes more than 28 calendar days to complete (central function and site audits), the organization shall provide a corrective action plan including any temporary measures or controls necessary to mitigate the risk until the nonconformity can be closed. If no corrective action plan is provided within 28 days, the certificate shall be suspended.
+c) The timeline for closure of nonconformities starts at the end of the audit � after completion of the central function audit and all the site audits.
+5.4 UNANNOUNCED AUDITS
+5.4.1 FREQUENCY
+1) The CB shall ensure that for each certified organization at least one surveillance audit is undertaken unannounced after the initial certification audit and within each three (3) year period thereafter.
+2) The initial certification audit (stage 1 and stage 2) cannot be performed unannounced. 3) The organization, once certified, can voluntarily choose to conduct all audits (surveillance
+and recertification) as unannounced audits.
+5.4.2 EXECUTION
+1) The CB determines the date of the unannounced audit as part of the audit program. 2) The site shall not be notified in advance of the date of the unannounced audit and the
+audit plan shall not be shared until the opening meeting. In exceptional cases where specific visa or security restrictions apply, contact with the certified organization may be needed as part of the visa application process. However, in these exceptional cases, the exact dates of the unannounced audit shall not be confirmed, only a time window, which is typically 30 days. 3) The unannounced audit takes place during normal operational working hours with consideration of all shifts, where applicable. 4) Blackout days may be agreed in advance between the CB and the certified organization. 5) The audit will start with an inspection of the production facilities and premises commencing within 1 hour after the auditor has arrived on site. In case of multiple buildings at the site the auditor shall, based on the risk, decide which buildings/facilities shall be inspected in which order. 6) All Scheme requirements shall be assessed including production or service processes in operation. Where parts of the audit plan cannot be audited, an (announced) follow-up audit shall be scheduled within 28 calendar days, whilst still meeting the calendar year requirement. 7) The CB decides which of the surveillance audits shall be chosen for the unannounced audit taking into consideration the requirement that unannounced audits shall be conducted at least once every 3 years and adhering to the calendar year requirement. 8) If the certified organization refuses to participate in the unannounced audit, the certificate shall be suspended within 3 working days of the date of refusal. The CB shall withdraw the certificate if the unannounced audit is not conducted within a six-month timeframe from the date of suspension.
+
+FSSC 22000 Version 6.0 | April 2023
+
+37 of 77
+
+Part 3 | Requirements for the Certification Process
+
+9) The audit of separate Head offices controlling certain FSMS processes pertinent to certification separate to the site(s) (see 5.2.1) shall be announced. Where Head Office activities are part of a site audit, it shall be unannounced.
+10) Secondary sites (off-site activities) and off-site storage, warehouses and distribution facilities shall also be audited during the unannounced audit.
+
+5.5 USE OF INFORMATION AND COMMUNICATION TECHNOLOGY
+Information and Communication Technology (ICT) may be used as a remote auditing tool during regular FSSC 22000 audits with the following applications and meeting the applicable requirements of IAF MD4:
+1) For conducting interviews and reviewing policies, procedures, or records as part of the onsite audit; as well as head office functions where appropriate.
+2) When utilizing the ICT Audit Approach as set out in Annex 5. 3) For full remote audits, in the case of a serious event, where the requirements in the Full
+Remote Audit Addendum are met. 4) For category FII, the regular surveillance audits may be conducted as full remote audits.
+The requirements in the Full Remote Audit Addendum shall be met, with the exception that it is not limited to circumstances linked to a serious event.
+
+5.6 TRANSFER OF CERTIFICATION
+The transfer of certification is defined as the recognition of an existing and valid management system certification, granted by one accredited certification body, (the "issuing certification body"), by another accredited certification body, (the "accepting certification body") for the purpose of issuing its own certification. The requirements for the transfer of accredited certification as per IAF MD2 shall be followed.
+The accepting/new CB needs to determine the eligibility of certification for transfer. Only existing, valid, and accredited FSSC 22000 certificates may be transferred. It is not possible to transfer expired or suspended certificates. The accepting CB shall conduct a pre-transfer review to determine if the certificate may be transferred. This review shall be conducted by means of a documentation review, and where identified as needed, a pre-transfer visit may be conducted to confirm the validity of the certification. The pre-transfer visit is not an audit. The pre-transfer review shall be uploaded to the Assurance Platform as part of the transfer. The transfer process, including the issuance of the certificate, shall be completed before the expiry of the current certificate.
+
+5.7 UPGRADE AUDITS
+The Foundation will issue instructions when upgrade audits are required. This typically occurs when there is a significant change to the Scheme requirements e.g., a Version change.
+The CB shall:
+1) Follow the upgrade requirements as issued by the Foundation; 2) Ensure all staff and auditors are familiar with the upgrade process; 3) Additional audit duration shall be recalculated and advised to the clients where applicable; 4) Following the successful upgrade audit (including closure of nonconformities) the
+certificate will be re-issued when required as part of the upgrade requirements.
+
+FSSC 22000 Version 6.0 | April 2023
+
+38 of 77
+
+Part 3 | Requirements for the Certification Process
+5.8 TRANSITION AUDITS
+1) Transition audits to FSSC 22000 certification are where an organization holding existing accredited certification to ISO 22000 or a GFSI recognized certification program wants to transition (move) to FSSC 22000 certification. In order to qualify for a transition audit, the existing certification shall still be valid at the time of the transition audit and have an equivalent scope of certification.
+2) The valid ISO 22000 or equivalent GFSI recognized certificate does not have to be issued by the CB undertaking the transition audit.
+3) Transition audits are the start of a new certification cycle and shall therefore be a Stage 2 audit.
+4) The minimum audit duration of the transition audit shall be (two-thirds of Ds) + TFSSC and shall meet the minimum audit duration requirements in �4.3. A Stage 1 audit may be performed at the discretion of the CB.
+5) A successful transition audit shall result in an FSSC 22000 certificate with a validity of three (3) years.
+5.9 ALLOCATION OF AUDIT TEAM
+1) All audit team members shall meet the competence requirements set out by the Foundation in Part 4 of the Scheme.
+2) The audit team shall have the combined competence for the food chain sub-categories supporting the scope of the audit and following the requirements of ISO/IEC 17021-1 and ISO 22003-1.
+3) An auditor is not allowed to perform more than two 3-year certification cycles at the same certified organization either as lead auditor or co-auditor. If an auditor starts auditing within a certification cycle, he/she will be rotated out after six (6) years. The auditor shall be rotated out for a minimum of one (1) regular FSSC 22000 audit (excluding Stage 1, follow-up and special audits) before being allowed to conduct FSSC 22000 audits at the applicable organization again.
+5.10 MANAGEMENT OF SERIOUS EVENTS
+1) The CB shall have a process to review planned audits when a serious event affects a certified organization, and the audit cannot be performed as planned.
+2) The CB shall assess the risks of continuing certification and establish a documented policy and process, outlining the steps it will take in the event a certified organization is affected by a serious event to ensure the integrity of certification is maintained. The minimum content of the risk assessment shall cover the aspects listed in IAF ID3, section 3.
+3) The outcome of the Risk Assessment and planned actions shall be recorded. Deviations from the audit program and their justification for changes shall be recorded. CBs shall establish in consultation with certified organizations a reasonable planned course of action.
+4) In cases where the regular surveillance audit cannot take place within the calendar year as a result of a serious event, an exemption shall be requested from the Foundation for approval, or the certificate shall be suspended.
+5) In the case of a serious event, a full remote audit may be conducted if the conditions as set out in the Full Remote Audit Addendum are met. Where a full remote audit has been conducted, the audit delivery method shall be referenced on the certificate, as per the requirements of Annex 3.
+
+FSSC 22000 Version 6.0 | April 2023
+
+39 of 77
+
+Part 3 | Requirements for the Certification Process
+6 AUDIT DOCUMENTATION
+6.1 WRITTEN AUDIT REPORT
+The CB shall provide a written report for each audit.
+a) The audit report is to be treated confidentially by the CB but shall be made available to the relevant Authorities when requested and after approval of the organization.
+b) The audit report shall confirm that all Scheme requirements are assessed, reported on and a statement of (non) conformity given. Furthermore, it shall conform to all relevant requirements of ISO/IEC 17021-1.
+c) The mandatory audit reports issued by the Foundation shall be used. The minimum content and reporting requirements as set out in Annex 2 of the Scheme shall be met when completing the audit report.
+d) Both the procedural and operational conditions of the FSMS shall be verified to assess the effectiveness of the FSMS meeting the Scheme requirements and reported.
+e) In exceptional cases, certain requirements can be deemed not applicable (N/A). Where a requirement is deemed to be N/A then suitable justification shall be recorded in the relevant section of the audit report. Note: this applies only to those clauses in the audit report that have the option to select N/A; all other clauses shall be assessed in full.
+f) Exclusions from scope shall be assessed and justified in the audit report, in accordance with the requirements as per Annex 1.
+g) Deviations from the audit plan shall be justified and documented accordingly in the audit report.
+h) The audit duration calculation shall be uploaded in the FSSC Assurance Platform as a separate document for each audit, including the formula and the calculation details for all audits (initial certification, surveillance and recertification). Where off-site activities are applicable, this shall be specifically indicated and included in the audit duration calculation. Multisite certification shall include the calculation for the Central Function and each of the sites.
+i) Auditors shall report all nonconformities (NCs) at all audits. For each nonconformity (NC), a clear concise statement of the requirement, the NC statement, grade of the NC and the objective evidence shall be recorded in the audit report.
+j) The CB's nonconformity report shall meet the content requirements in Annex 2. A copy of the nonconformity report shall be provided to the organization at the closing meeting; and shall be uploaded to the Assurance Platform as a separate document for each audit.
+k) A Head Office report shall contain as a minimum a summary of the functions performed, objective evidence of documents reviewed, interviews conducted, and the NCs found at the Head Office. This report shall be uploaded to each site on the Assurance Platform that this Head Office is linked to. At each site audit the implementation of the corrective actions shall be verified and reported.
+l) The full FSSC 22000 audit report shall be sent to the (certified) organization within 2 weeks of the certification decision for all audits conducted.
+m) It is the Foundation's requirement that audit reports are written in English. Where an organization requests the report to be written in the language the audit was conducted in (if other than English), this is allowed based on mutual agreement between the CB and the organization. However, the mandatory fields for upload in the Assurance Platform shall always be completed in English. In all instances where CBs are translating audit reports, the CB shall have verification procedures in place to ensure the translations are accurate.
+
+FSSC 22000 Version 6.0 | April 2023
+
+40 of 77
+
+Part 3 | Requirements for the Certification Process
+
+6.2 NONCONFORMITIES
+In accordance with the definitions in the Scheme and as defined below, the CB is required to apply these criteria as a reference against which to determine the level of nonconformities for findings. There are three nonconformity grading levels:
+a) Minor nonconformity; b) Major nonconformity; c) Critical nonconformity.
+
+Nonconformities shall always be written to the most relevant Scheme requirement linked to the specific audit criteria in ISO 22000:2018; the specified PRP standard or the FSSC 22000 Additional Requirement.
+
+Nonconformities raised at a Head Office audit are assumed to have an impact on the equivalent procedures applicable to all sites. Corrective actions shall therefore address issues of communication across the certified sites and appropriate actions for impacted sites. Such nonconformities and corrective actions shall be clearly identified in the relevant section of the site audit report and shall be cleared in accordance with the CB procedures before issuing the site certificate or completing the certification decision.
+
+The Scheme does not allow "Opportunities for Improvement".
+
+6.2.1 MINOR NONCONFORMITY
+A minor nonconformity shall be issued when the finding does not affect the capability of the management system to achieve the intended results:
+
+1) The organization shall provide the CB with objective evidence of the correction, evidence of an investigation into causative factors, exposed risks, and the proposed corrective action plan (CAP);
+2) The CB shall review the corrective action plan and the evidence of correction and approve it when acceptable. The CB approval shall be completed within 28 calendar days after the last day of the audit. Exceeding this timeframe shall result in a suspension of the certificate, or in the case of an initial audit, the Stage 2 audit shall be repeated within maximum 6 months of the last day of the previous Stage 2 audit;
+3) Corrective action(s) (CA) shall be implemented by the organization within the timeframe agreed with the CB;
+4) The effectiveness of implementation of the corrective action plan shall be reviewed, at the latest, at the next scheduled audit. Failure to address a minor nonconformity from the previous audit could lead to a major nonconformity being raised at the next scheduled audit.
+6.2.2 MAJOR NONCONFORMITY
+A major nonconformity shall be issued when the finding affects the capability of the management system to achieve the intended results, or a legislative noncompliance linked to quality:
+
+1) The organization shall provide the CB with objective evidence of an investigation into causative factors, exposed risks, and evidence of effective implementation;
+2) The CB shall review the corrective action plan and conduct an on-site follow-up audit to verify the implementation of the CA to close the major nonconformity. In cases where documentary evidence is sufficient to close out the major nonconformity, the CB may
+
+FSSC 22000 Version 6.0 | April 2023
+
+41 of 77
+
+Part 3 | Requirements for the Certification Process
+
+decide to perform a desk review. This follow-up shall be done within 28 calendar days from the last day of the audit; 3) The major nonconformity shall be closed by the CB within 28 calendar days from the last day of the audit. When the major cannot be closed in this timeframe, the certificate shall be suspended; 4) Where completion of corrective actions might take more time in specific instances, the CAP shall include any temporary measures or controls necessary to mitigate the risk until the permanent corrective action is implemented. Supporting evidence of the temporary measures or controls shall be submitted to the CB for review and acceptance within 28 calendar days from the last day of the audit. 5) If a major non-conformity is raised at the Stage 2 audit, the nonconformity shall be closed by the CB within 28 calendar days from the last day of the audit. Where completion of corrective actions might take more time, the Corrective Action Plan (CAP) shall include the temporary measures or controls necessary to mitigate the risk until the permanent corrective action is implemented. Evidence of these temporary measures shall be submitted and accepted by the CB within 28 calendar days from the last day of the audit. Based on this information, a certification decision shall be taken. In addition, where temporary measures are accepted, the CB shall agree a suitable timeframe with the organization, to verify the effective implementation of the permanent corrective action, but not later than 6 months after the last day of the audit. In any event, where the 28 calendar days after the last day of the audit is exceeded e.g., not closing the major nonconformity or non-acceptance of the evidence of the temporary measures, the full Stage 2 audit shall be repeated.
+6.2.3 CRITICAL NONCONFORMITY
+A critical nonconformity is issued when there is a significant failure in the management system, a situation with direct adverse food safety impact and no appropriate action is being observed or when food safety legality and/or certification integrity is at stake:
+1) When a critical nonconformity is raised at a certified organization the certificate shall be suspended within 3 working days of being issued, for a maximum period of six (6) months;
+2) When a critical nonconformity is issued during an audit, the organization shall provide the CB with objective evidence of an investigation into causative factors, exposed risks, and the proposed CAP. This shall be provided to the CB within 14 calendar days after the audit;
+3) A separate audit shall be conducted by the CB between six (6) weeks to six (6) months after the regular audit to verify the effective implementation of the corrective actions. This audit shall be a full on-site audit (with a minimum on-site duration of one day). After a successful follow-up audit, the certificate and the current audit cycle will be restored, and the next audit shall take place as originally planned (the follow-up audit is additional and does not replace an annual audit). This follow-up audit shall be documented, and the report uploaded as part of the audit documentation linked to the audit where the critical NC was raised;
+4) The certificate shall be withdrawn when the critical nonconformity is not effectively resolved within the six (6) month timeframe;
+5) When a critical NC is raised at an initial certification audit, the audit is failed, and the full certification audit shall be repeated.
+
+6.3 ADDITIONAL AUDIT DOCUMENTATION
+In addition to the written audit report and the regular audit documentation, the following mandatory documentation is required:
+
+FSSC 22000 Version 6.0 | April 2023
+
+42 of 77
+
+Part 3 | Requirements for the Certification Process
+1) An attendance register (or similar document) that confirms the actual presence of the auditor(s) and organization representatives during the audit. This document shall:
+� Be signed by a representative of the organization being audited and the lead auditor;
+� Indicate the start time, lunch break duration and end time of each day and � Be uploaded as part of the mandatory audit documentation in the FSSC Assurance
+Platform for each audit.
+2) A signed integrity declaration by the senior representative of the organization and the auditor(s) confirming that all of the below has been met:
+a. No actual or perceived conflict of interest exists, to ensure the impartiality of the audit;
+b. The integrity of the audit or the audit process has not been compromised in any way and
+c. The audit was conducted in an ethical manner.
+7 CERTIFICATION DECISION PROCESS
+7.1 GENERAL
+1) CBs shall conduct a technical review for all audits in line with the requirements of ISO/IEC 17021:2015 and to:
+a. Confirm the audit team held the relevant competency; b. Verify the correct audit duration was delivered; c. Agree with the audit report content and outcome, including meeting the minimum
+level of documented evidence as required by Annex 2; and d. Agree with the NC's (objective evidence and grading) and effectiveness of
+corrections and corrective actions and/or plans.
+2) Any actions required as a result of the technical review shall be addressed, followed by the CB making a decision on the certification status of the organization (e.g., grant certification, maintain certification, suspend, or withdraw).
+3) The CB shall keep documented information of technical reviews, any review queries and resulting certification decisions relating to the audit. The names of those conducting the review and certification decision and corresponding dates of review/decisions made, shall be recorded. Note: not all decisions may lead to issuing a new certificate.
+4) The maximum certificate validity period is 3 years from the date of initial certification decision, with subsequent 3-year cycles.
+5) The certificate in the FSSC Assurance Platform shall be an accurate reflection of the current certification status and scope of the organization.
+7.2 CERTIFICATE DESIGN AND CONTENT
+1) The CB shall issue FSSC 22000 certificates in accordance with the requirements of ISO/IEC 17021-1, ISO 22003-1:2022, the scope of certification and certificate templates set out by the Foundation (see Annex 1 and Annex 3).
+
+FSSC 22000 Version 6.0 | April 2023
+
+43 of 77
+
+Part 3 | Requirements for the Certification Process
+2) The certificate shall be in English and match with the certificate in the Assurance Platform and the details on the public register. It is possible to include a translation of the scope statement following the English statement on the certificate. Refer to the requirements set out in Annex 3 where copies of certificates are being issued in other languages.
+3) The FSSC 22000 logo shall be used by the CB on its certificates. 4) Head Office details shall be included, where applicable. 5) Where applicable Off site and Multi-site locations shall be listed, (including name, address,
+and activities); details may be provided in an Annex to the certificate. 6) The Certified Organizations Identification Code (COID) and the QR code supplied through
+the FSSC Assurance Platform shall be included. 7) Dates on the certificates shall be as follows:
+a. Certificate decision date: date at which a new decision is made after a certification or recertification audit (excluding regular surveillance audits). New certificate decision dates are also required in situations such as version changes of the Scheme and/or scope extensions/reductions. In these cases, the valid until date remains unchanged;
+b. Initial certification date (i.e., the certification decision date linked to the initial audit). This is a fixed date that is maintained as long as the organization is linked to the CB and holds a valid FSSC 22000 certificate. In the case of a transfer (see Part 3, �5.3), the initial certification date is the certification decision date of the transfer linked to the new CB. In addition, the accepting CB may quote the organization's initial certification date on the certification documents with the indication that the organization was certified by a different certification body before a certain date.
+c. Issue date: date certificate is issued to the client; or re-issue date when a new certificate is issued (e.g., because of version change, scope extension etc.);
+d. Valid until date: certificate expiry date (e.g., original certification decision date plus 3 years minus 1 day for the initial cycle).
+7.3 CERTIFICATE SUSPENSION OR WITHDRAWAL OR SCOPE REDUCTION
+1) Suspension: the CB shall suspend certification when a critical nonconformity is issued and/or there is evidence that the certified organization is either unable or unwilling to establish and maintain conformity with Scheme requirements.
+2) Withdrawal: the CB shall withdraw a certificate when:
+a. The status of suspension cannot be lifted within six (6) months; b. The organization ceases its FSSC 22000 certification activities; c. Any other situation where the integrity of the certificate or audit process is severely
+compromised.
+3) Scope reduction: When the CB has evidence that the certified organization holds a certificate where the scope is not an accurate reflection of the management system for example due to changes at locations or the control of the organization, the CB shall reduce the certification scope accordingly. The CB shall not exclude activities, processes, products, or services from the scope of certification when those activities, processes, products, or services can have an influence on the food safety of the end products as defined in the scope of certification.
+4) Certificates may be suspended or withdrawn by The Foundation or by the CB upon instruction by the Foundation, as a result of CB noncompliance to Scheme requirements or termination of a CB license with the Foundation.
+
+FSSC 22000 Version 6.0 | April 2023
+
+44 of 77
+
+Part 3 | Requirements for the Certification Process
+7.3.1 ACTION UPON SUSPENSION OR WITHDRAWAL AND SCOPE REDUCTION
+1) In case of suspension or withdrawal, the organizations' management system certification is invalid. The CB shall complete the following actions within 3 working days after the certification decision for suspension or withdrawal has been made: a. Change the status of the certified organization in the Assurance Platform and its own system and shall take any other measures it deems appropriate; b. Inform the organization in writing of the suspension or withdrawal decision, including the reason for the suspension or withdrawal and resulting actions required from the organization; c. Instruct the organization to take appropriate steps in order to inform its interested parties.
+2) In case of scope reduction, the organizations' management system certification is invalid beyond the revised certification scope statement. The CB shall complete the following actions within 3 working days after the certification decision has been made: a. Change the scope of the certified organization in the FSSC 22000 database and its own system and shall take any other measures it deems appropriate; b. Inform the organization in writing of the scope change; c. Instruct the organization to take appropriate steps in order to inform its interested parties.
+
+8 ASSURANCE PLATFORM DATA AND DOCUMENTATION
+
+8.1 DATA OWNERSHIP
+a) A (certified) organization is the owner of an audit report, whilst the CB is responsible for the report content and related data.
+b) A (certified) organization is the certificate holder, not the owner. The CB is the owner of the certificate and responsible for the certificate content and related data.
+8.2 DATA UPLOAD REQUIREMENTS
+For all audit types, the required data and documentation shall be entered in the Assurance Platform at the latest 28 calendar days after the certification decision with a maximum of 2 months after the last day of the audit. The mandatory data in the Assurance Platform shall be entered in English.
+8.3 DATA QUALITY CONTROL
+The CB shall have a data quality control process in place that provides assurance for CB Assurance Platform Data Quality. The quality parameters include the following as a minimum:
+a) Completeness: All the mandatory data has been registered in the Assurance Platform; b) Timeliness: All the data has been registered in the Assurance Platform within the required
+timelines; c) Validity: The registered data values meet the Scheme requirements; d) Accuracy: The data is a true representation of the actual facts relating to the complete
+audit and the certification process;
+
+FSSC 22000 Version 6.0 | April 2023
+
+45 of 77
+
+Part 3 | Requirements for the Certification Process
+e) Consistency: The registered data in the Assurance Platform is a true representation of the data stored in the CBs internal system(s).
+8.4 ASSURANCE PLATFORM
+a) Each (certified) organization is allocated a unique code in the Assurance Platform that is linked to the organization, namely the Certified Organization Identification Code (COID). The COID stays with the organization to ensure traceability, also in the event of a transfer. The CB shall communicate the COID to the organization once generated in the Assurance Platform, and to the accepting CB when requested in the case of a transfer.
+b) When requested by the certified organization, CBs shall provide the Certified Organization access to the associated Organization Profile, Audit and Certification data registered in the FSSC Assurance Platform in a timely manner, using the available functionality.
+c) CBs shall ensure that Certified Organization access is only granted to authorized individual(s).
+
+FSSC 22000 Version 6.0 | April 2023
+
+46 of 77
+
+PART 4 REQUIREMENTS FOR CERTIFICATION
+BODIES
+
+FSSC 22000 Version 6.0 | April 2023
+
+47 of 77
+
+Part 4 | Requirements for Certification Bodies
+CONTENTS PART 4 REQUIREMENTS FOR CERTIFICATION BODIES
+
+1
+2
+2.1 2.2 2.3
+3
+3.1 3.2 3.3 3.4 3.5
+
+Purpose ........................................................................................................................ 49
+Relation with the Foundation ................................................................................... 49
+Licensing .................................................................................................................................... 49 Engagement .............................................................................................................................. 52 Integrity Program ..................................................................................................................... 53
+Competence ................................................................................................................ 55
+General ...................................................................................................................................... 55 Technical Reviewer and Certification decision maker .......................................................... 55 Technical Expert........................................................................................................................55 Witnessor ................................................................................................................................... 56 Auditor Qualification Process ................................................................................................. 56
+
+FSSC 22000 Version 6.0 | April 2023
+
+48 of 77
+
+Part 4 | Requirements for Certification Bodies
+1 PURPOSE
+This Part contains the requirements for certification bodies (CBs) who wish to provide Scheme certification services to organizations.
+Where the term "Scheme Requirements" is used, this refers to the FSSC 22000 Scheme requirements, ISO/IEC 17021-1, ISO 22003-1:2022, and Board of Stakeholders (BoS) decision list.
+
+2 RELATION WITH THE FOUNDATION
+2.1 LICENSING
+1) As a prerequisite for the license application, the CB shall hold a valid ISO/IEC 17021-1:2015 and ISO 22003-1:2022 accreditation for ISO 22000.
+2) For the Scheme Requirements, the FSSC 22000 accreditation shall cover the applicable food chain categories and sub-categories in which it supplies its FSSC 22000 certification services.
+3) The CB shall provide the Foundation with information and documentation related to its accreditation to the Scheme when requested.
+4) The Foundation is entitled to request information from the Accreditation Body related to the CB accreditation.
+5) The CB may hold more than one accreditation for FSSC 22000 for the main location which shall be covered by a single FSSC license.
+6) In case the CB has multiple locations holding their own FSSC 22000 accreditation, the Foundation shall be informed about the additional accreditations as part of the initial application and subsequently when changes occur. These locations with their own accreditations will form part of the main license and will be included in the IP Assessment Program of the licensed CB. Any costs associated with related additional IP activities will be for the CBs account.
+7) Alternatively, the CB may opt to have a separate FSSC license with the Foundation for each accredited location, which will be subject to its own IP activities and costs.
+2.1.1 LICENSE APPLICATION PROCESS
+1) CBs shall apply to obtain a license with the Foundation to be eligible to perform valid and recognized FSSC 22000 Scheme certification activities. Licenses are issued to specified CB office location(s) as requested in the license application form. In the case of outsourcing of any certification related activities this shall also be described in the application.
+2) A license may cover multiple Food Chain Categories for FSSC 22000, and related Addendums where applicable.
+3) By signing the License Agreement, the CB commits to the implementation of all Scheme requirements and any other obligations outlined in the license agreement.
+2.1.2 LICENSES
+2.1.2.1 LICENSE AGREEMENT (PROVISIONAL STATUS)
+1) The CB shall submit an application to the Foundation specifying the food chain categories and sub-categories, as per Part 1, Table 1 of the Scheme, which they wish to provide
+
+FSSC 22000 Version 6.0 | April 2023
+
+49 of 77
+
+Part 4 | Requirements for Certification Bodies
+certification services in. As part of the application, the CB shall submit the relevant documentation required by the Integrity Program as part of the on-boarding process. 2) Upon review of the information and successful completion of the applicable stages of the Foundation's Integrity Program, the CB shall be granted a license with provisional status and be listed as provisionally approved in the FSSC 22000 CB list on the FSSC website. 3) The CB shall then proceed with the extension of their ISO/IEC 17021-1 accreditation to include FSSC 22000 with an AB accepted by the Foundation, and submit the written confirmation of acceptance of the application to the Foundation in a timely manner. 4) The provisional status allows a CB to use the Scheme for unaccredited certification once authorization has been received from the Foundation as per the Integrity Program onboarding process requirements. Unaccredited certificates shall be registered on the Assurance Platform. After accreditation has been obtained, these unaccredited certificates may be replaced with an accredited certificate either immediately or following the next certification audit and in accordance with the specific AB requirements. 5) The provisional status of the license is valid for twelve (12) months from the date of signature by the Foundation and within this period of time the CB shall:
+a. Achieve accreditation from an AB accepted by the Foundation for FSSC 22000 for the categories and sub-categories covered in the license agreement. If accreditation is not achieved within the required timeline, the provisional license will be terminated and already issued certificates shall be withdrawn. Refer to Part 5 of the Scheme for more detail on the FSSC 22000 requirements relating to the accreditation process;
+b. Have at least five (5) certified or audited organizations registered on the Assurance Platform.
+c. Successfully complete the applicable stages of the Integrity Program on-boarding process.
+2.1.2.2 LICENSE AGREEMENT (FULL STATUS)
+After the criteria under 2.1.2.1 have been met, the CB shall submit to the Foundation: a) A copy of its accreditation certificate to ISO/IEC 17021-1 and ISO 22003-1 for FSSC 22000, covering the categories and sub-categories in the license agreement; b) A copy of its AB assessment reports (office and witness assessments).
+Upon successful completion of the applicable Integrity Program stages, the Foundation shall issue a new license agreement and/or update the status of the license agreement of the CB listed on the FSSC website and in the Assurance Platform.
+2.1.3 LICENSE MAINTENANCE
+In order to maintain its license, the CB shall: a) Have at least fifty (50) certificates registered in the Assurance Platform with a minimum of one for each licensed food chain category. For new CBs, this shall be achieved within 36 months of receiving the full license. b) Comply with all the requirements of the FSSC 22000 certification Scheme for CBs; c) Meet the financial obligations to the Foundation.
+2.1.4 LICENSE EXTENSION
+1) The CB shall submit an application to the Foundation specifying the food chain subcategories (or category if no subcategory) for which it requests an extension of the existing license.
+
+FSSC 22000 Version 6.0 | April 2023
+
+50 of 77
+
+Part 4 | Requirements for Certification Bodies
+2) The CB shall be granted a provisional status for the new sub-category (or category if no subcategory) following a successful review, registered in the Assurance Platform and displayed in the approved FSSC 22000 CB list on the FSSC website.
+3) The CB may only apply to the AB for accreditation after the provisional license has been granted by the Foundation for the extension to scope. The CB shall share with the Foundation the written AB confirmation of acceptance to start the accreditation process.
+4) The provisional status allows a CB to issue unaccredited certification for the new subcategory (or category if no subcategory). Unaccredited certificates shall be registered on the Assurance Platform. After accreditation, these certificates may be replaced with an accredited certificate if in compliance with the specific AB requirements.
+5) The provisional status of the license is valid for 12 months from the date of signature by the Foundation and within this period of time the CB must achieve accreditation from an AB accepted by the Foundation for the (sub)-categories linked to the scope extension.
+6) At least one certificate shall be listed in the Assurance Platform for the new category within the timelines defined.
+2.1.5 SUSPENSION, TERMINATION AND REDUCTION
+The Foundation has the right to suspend, terminate or limit the scope of a CB's license agreement. Reasons include, but are not limited to:
+1) Accreditation not achieved within 12 months from the date of the provisional license being granted;
+2) Termination of the accreditation; 3) Not meeting the minimum number of certificates specified by the Foundation; 4) Sanction committee decision; 5) Non-payment of the fee to the Foundation; 6) Repetitive noncompliance with the Scheme requirements; 7) Noncompliance with the Integrity Program or components there-of; 8) Situations where the Foundation might be brought into disrepute and/or the integrity of
+the certification might be at risk; 9) Contractual breaches.
+2.1.5.1 SUSPENSION
+1) The conditions applicable to suspensions are defined in the Foundation's Integrity Program Sanction Policy.
+2) When a CB's license is suspended by the Foundation, the Foundation will determine the extent to which the CB will be allowed to maintain its auditing and certification activities for a defined period of time. The Foundation will publish suspensions on the FSSC website, and the Accreditation Body will be notified.
+3) The Foundation will restore the suspended license when the CB has demonstrated that the issue which resulted in the suspension has been resolved and the conditions for lifting the suspension have been met.
+4) Failure to resolve the issues that resulted in the suspension in a time established by the Foundation shall result in termination or reduction of the scope of the license as per the Integrity Program Sanction Policy.
+2.1.5.2 TERMINATION
+1) When a CB's license is terminated by the Foundation, the CB cannot apply for a new license within the time frame as defined by the Foundation in the termination documentation.
+
+FSSC 22000 Version 6.0 | April 2023
+
+51 of 77
+
+Part 4 | Requirements for Certification Bodies
+2) The CB shall agree with the Foundation the transfer of its certified organizations following the requirements outlined in the license agreement.
+2.2 ENGAGEMENT
+2.2.1 COMMUNICATION
+1) The CB shall appoint a FSSC 22000 contact person who is competent in the Scheme requirements and maintains contact with the Foundation. The official language for contact with the Foundation is English, therefore, the CB shall appoint the necessary resources (e.g., translator or interpreter), as needed.
+2) This person shall be accountable for all aspects of the FSSC 22000 Scheme implementation and ensure that the following responsibilities are defined and implemented within the CB: a. Appoint a contact person for the FSSC 22000 IT systems; b. Appoint a responsible person for managing the Integrity Program; c. Appoint a representative to attend mandatory FSSC related event/s; d. Keep up to date with the Scheme developments including IT developments; e. Managing of other additional information required by the Foundation; f. Communicate new information, requirements, interpretations, or changes to the Scheme to the relevant parties involved within one month, unless specified otherwise by the Foundation.
+3) The CB shall assign responsibility for the development, implementation and maintenance of the CBs quality system relating to the FSSC 22000 Scheme. This designated employee shall also have the responsibility for reporting on the performance of the quality system for the purposes of management review and continuous improvement.
+The CB shall communicate the following to the Foundation within 3 working days:
+1) Changes on the FSSC 22000 accreditation status: e.g., scope extension or scope reduction, suspension, or withdrawal, and extension of validity of accreditation certificate, together with a written communication to the Foundation about the circumstances leading to this, and any delays in obtaining accreditation that could impact the license;
+2) Any significant changes in its ownership, legal status, management personnel, structure, or constitution that (potentially) impact the CB management of the Scheme in a timely manner;
+3) Any situation, possible conflict or problem that could result in bringing the Foundation or GFSI into disrepute;
+4) After notification by a certified organization of any public recall resulting in death and/or hospitalization or generating significant media coverage;
+5) After notification by the certified organization of serious situations and/or serious events where the integrity of the FSSC 22000 certification is compromised as described in Part 3. Note: whilst all serious events need to be reported to the CB by the certified organization, only those serious events where certification integrity is compromised shall be reported to the Foundation. The CB shall manage all serious events in accordance with Part 3, Section 5.10.
+2.2.2 RESPONSIBILITIES
+1) The CB shall cooperate with all requests from the Foundation to report information regarding all aspects of the performance and integrity of the Scheme.
+
+FSSC 22000 Version 6.0 | April 2023
+
+52 of 77
+
+Part 4 | Requirements for Certification Bodies
+2) In case the range of CB certification services offered is wider than those accredited, the CB shall ensure that the limits and scope of the accreditation shall be made clear and publicly available. Any ambiguity in relation to the scope of services offered by the CB for the Scheme shall be resolved with the Foundation, and certification services that are outside the scope of the accreditation, shall be distinguished from those that are accredited.
+3) The CB is responsible for the full application of these Scheme requirements and shall be prepared to demonstrate compliance at any time with all these requirements.
+4) The CB shall adhere to the requirements for the use of the FSSC 22000 logo, as detailed under Part 2, Section 2.5.5 of the Scheme. The FSSC 22000 logo may only be used by FSSC 22000 licensed CBs.
+5) The CB commits to operating in accordance with the FSSC Code of Ethics, which is publicly available on the FSSC website.
+6) The CB shall participate in mandatory FSSC, harmonization and calibration events as defined by The Foundation, and shall share the applicable information to all relevant staff.
+7) The CB shall participate in the Integrity Program. 8) The CB shall inform its AB(s) on any changes in the license status (e.g., reduced, extended,
+suspended, etc.) made by the Foundation. 9) The CB shall share information concerning the certified organization with the Foundation,
+GFSI and governmental authorities when required by law. 10) The CB shall take appropriate steps to assess the situation and have procedures in place
+to ensure the integrity of certification is maintained after a serious event, serious situation, and/or food safety incident notification and maintain records to support the decision made. 11) The CB shall ensure that all Scheme-related data in the Assurance Platform is complete, up to date, accurate and meets the Scheme requirements. 12) An annual performance report shall be submitted by the CB to the Foundation with the minimum content as specified and communicated by the Foundation.
+2.3 INTEGRITY PROGRAM
+1) The CB shall participate in the Integrity Program which is the Foundation's system of ongoing monitoring. This program covers all activities of its licensed CBs to ensure compliance with all Scheme requirements. The CB shall provide any documentation requested by the Foundation for the Integrity Program within the required timelines.
+2) The monitoring activities include but are not limited to:
+a. Desk reviews of audit documentation, certificates, auditor competence and Assurance Platform data quality and registration;
+b. Auditor assessment and registration in the Assurance Platform; c. Office assessments on the CBs management system, their operations and
+documentation to demonstrate compliance to the Scheme requirements; d. Witnessed audits; e. Performance measured through agreed key performance indicators and
+components of the Integrity program; f. Compliance breaches and their effective resolution; g. Complaints and serious events.
+3) The frequency, duration and scope of the Integrity Program monitoring activities can be increased based on risk and performance trends.
+Further information on sanctions, the escalation protocol, as well as conditions for suspensions and terminations can be found in the Integrity Program Sanction Policy.
+
+FSSC 22000 Version 6.0 | April 2023
+
+53 of 77
+
+Part 4 | Requirements for Certification Bodies
+2.3.1 NONCONFORMITY
+1) The Foundation's Integrity Program defines a "nonconformity" as any breach of Scheme, Integrity Program and/or The Foundation's requirements.
+2) Nonconformities ("NCs") requiring a response from the CB shall be raised by the Foundation in response to: a. Any discrepancy raised by the Integrity Program; b. Feedback from users of the Scheme; c. Feedback from Certified organizations; d. Feedback from Accreditation Bodies; e. Feedback from Governmental authorities; f. Feedback from the media; and g. Any other feedback deemed credible.
+2.3.2 FOLLOW-UP
+1) When a nonconformity is received, the CB shall: a. Record and manage the nonconformity in its internal system, b. Respond in the set timeframe and act to: i. Restore conformity (i.e., implement corrections and provide evidence of implementation); ii. Investigate to identify the causal factors (root cause); iii. Perform an impact analysis; iv. Provide a documented Corrective Action Plan (CAP) detailing the nonconformity, grading, root cause analysis, correction, results of the impact analysis, planned corrective action, responsible person(s), due dates, measures of effectiveness and date closed.
+2) Then: a. Take corrective actions to manage the identified causal factors so that the risks exposed by recurrence are reduced to an acceptable level, provide objective evidence of implementation; b. Use the opportunity to investigate how else and where else a similar nonconformity could occur; c. Take preventive action to manage these causal factors so that the risks exposed by occurrence are similarly reduced to an acceptable level.
+3) Failure to meet the deadlines for nonconformities will result in the Integrity Program Sanction Policy being initiated.
+2.3.3 SANCTIONS
+1) CBs that persistently fail to conform to the requirements of the Scheme, put the integrity of the Scheme at risk, or bring the Foundation into disrepute, shall be investigated by the Foundation as per the Integrity Program Sanction Policy.
+2) Sanctions against non-compliant CBs could include, but are not limited to: a. Suspension of the license to issue certifications under the Scheme until discrepancies have been satisfactorily corrected; b. Termination of the license to issue certifications under the Scheme.
+The CB shall respond to the sanctions as indicated in the sanction notification. Details are provided in the Integrity Program Sanction Policy.
+
+FSSC 22000 Version 6.0 | April 2023
+
+54 of 77
+
+Part 4 | Requirements for Certification Bodies
+3 COMPETENCE
+3.1 GENERAL
+1) The CB shall follow the requirements described in Annex C of ISO 22003-1:2022 for defining the competences required to conduct the activities of application review and audit duration calculation, audit team selection, audit planning activities, technical review, and certification decision.
+2) There shall be a documented process for initial and ongoing competency review of all these functions. Records of training and competency reviews shall be maintained.
+3.2 TECHNICAL REVIEWER AND CERTIFICATION DECISION MAKER
+3.2.1 TECHNICAL REVIEWER
+The technical reviewer shall meet the same requirements as set out below for the certification decision maker but is not required to have food safety management system auditing experience. The technical review and certification decision functions may be separate, or the technical review and certification decision may be made by the same individual where the competency requirements are being met.
+3.2.2 CERTIFICATION DECISION MAKER
+1) Those making the decision to issue, maintain, extend, or reduce scope, suspend, or withdraw a certificate for registration in the FSSC 22000 Register of certified organizations shall have the following demonstrable competencies; a. Meet the requirements of Annex C of ISO 22003-1:2022; b. Knowledge of the FSSC 22000 Scheme requirements; c. Knowledge of food safety management systems and the ability to assess them.
+3.3 TECHNICAL EXPERT
+1) When deemed necessary a technical expert can be assigned to the audit team to cover competency at (sub)category level.
+2) The CB shall have in place a procedure for approval of technical experts who shall have demonstrable experience in the (sub)category supporting the scope of the audit. The technical expert shall always operate under the direction of a qualified FSSC 22000 auditor and their time does not count towards audit duration.
+3) Where a technical expert is used, the CB shall ensure that the technical expert is registered on the Assurance Platform as part of the audit team, with the role of technical expert. The technical expert shall meet the requirements for subcategory approval, as defined under section 3.5.3 below as a minimum.
+4) Where a technical expert is used, the CB shall ensure that at least one auditor in the team has a qualification in the category.
+5) For the (sub)categories BIII, D, E, F, G and K, where the requirements of 3.3 (4) above cannot be met, at least one auditor in the audit team shall have a qualification in category C.
+6) In all instances, the CB shall ensure that the audit team meets the qualification requirements linked to the scope of the (certified) organization.
+
+FSSC 22000 Version 6.0 | April 2023
+
+55 of 77
+
+Part 4 | Requirements for Certification Bodies
+3.4 WITNESSOR
+1) The witnessed audit shall be conducted by an FSSC 22000 qualified auditor, an auditor qualified for a GFSI recognized certification program that can demonstrate competence in the FSSC 22000 Scheme requirements, or by a CB FSSC 22000 technical certification person of equivalent competence and experience (e.g., FSSC 22000 Technical reviewer, FSSC 22000 Scheme Manager, etc.).
+2) Witnessors shall be assessed and qualified by the CB as suitable to undertake witness audits.
+3) The witnessor shall have received training in witness audit techniques. 4) The witnessor shall play no active part in the audit. 5) Witnessors shall have, as a minimum, the equivalent competency of the function being
+evaluated (see ISO 22003-1:2022 Annex C). A witnessor may be supported by a technical expert where needed, in which case the technical expert may not participate in the audit. 6) A witness audit performed by the CB can only be substituted by an Accreditation Body (AB) witnessed audit if it is the first witness audit under a provisional license. This includes provisional licenses where the CB applies for an extension to scope for FSSC 22000.
+3.5 AUDITOR QUALIFICATION PROCESS
+The CB shall have a system and documented procedures for selecting, training, evaluating, (re) qualification and maintenance of qualification of the auditor, taking into account the requirements of ISO/IEC 17021-1:2015, ISO 22003-1:2022 Annex C, and the additional FSSC 22000 requirements as detailed below.
+3.5.1 INITIAL TRAINING AND EXPERIENCE
+The CB shall ensure that auditors, including auditors transferring from other CBs, meet the following initial training and experience requirements:
+1) Work Experience
+a. Experience in the food or associated industry including at least 2 years' full-time work, taking an active role in quality assurance or food safety functions in production or manufacturing and retailing, food safety auditing and/or food safety inspection or enforcement that is covered within the scope of the Scheme. Food safety or quality consultancy experience in a food or associated industry can be used to meet a maximum of six (6) months of the work experience requirement. The number of man-days of consultancy provided shall be equivalent to the duration allocated towards work experience.
+2) Education
+a. Education: A degree in a food related or bioscience discipline or has successfully completed a food related or bioscience higher education course.
+3) Training
+Successful completion of each of the following courses, including an exam:
+a. Lead Auditor Course for FSMS or QMS � minimum 40 hours; b. HACCP training � minimum 16 hours;
+
+FSSC 22000 Version 6.0 | April 2023
+
+56 of 77
+
+Part 4 | Requirements for Certification Bodies
+c. ISO 22000 Standard (current version) � minimum 8 hours (if not included as part of Lead Auditor Training Course);
+d. Food defense training � minimum 2 hours, covering food defense threat assessment methodology and possible mitigation measures;
+e. Food fraud training � minimum 2 hours, covering food fraud vulnerability assessment methodology and possible mitigation measures;
+f. FSSC 22000 Scheme requirements (including Parts 1 - 4 and Annexes 1, 2 and 5); g. Training in accreditation requirements (ISO 22003-1:2022 and ISO/IEC 17021-1) as
+applicable to the auditing processes of the CB. If included as part of the Lead Auditor Training Course, this shall be clearly specified in the course curriculum or syllabus; h. Training in the relevant PRP standard/s � minimum 3 hours per PRP standard.
+4) Other
+a. Audits: a minimum of ten (10) audit days consisting of at least five (5) third-party food safety certification audits that cover elements of FSMS, HACCP and PRP requirements in the relevant industry sector. The five (5) audits shall include at least two (2) FSSC 22000 audits under supervision of a FSSC 22000 qualified auditor and one (1) FSSC 22000 witness audit. Where an already qualified FSSC 22000 auditor moves from another CB, the two (2) audits under supervision are not required, only the FSSC 22000 witness audit.
+b. For Category I: a primary qualification, a degree or higher certificate in packaging technology and a relevant certificate in food technology, food hygiene or related science subject OR a primary qualification in food technology, food safety/ hygiene or related science subject and successful completion of a training course (minimum 30 hours plus certificate) in packaging technology that meets the requirements defined by WPO Packaging. This training shall include the following topics as a minimum and documented evidence thereof shall be available: i. Basics of packaging principles and concepts; ii. Packaging legislation, standards, and regulations; iii. Packaging materials manufacturing; iv. Specifics to packaging of food/feed products; v. Quality/food safety control and testing; vi. Printing processes and printing inks; vii. Packaging recycling and viii. Design of packaging materials.
+3.5.2 INITIAL ASSESSMENT AND APPROVAL
+1) The CB shall complete the following prior to the initial qualification/approval of the auditor:
+a. provide supervised training in relevant food safety audits; b. conduct an FSSC 22000 witnessed audit of the auditor to confirm competence is
+attained; and c. document the sign-off of the satisfactory completion of the training program and
+witnessed audit. 2) Supervised training in food safety audits are audits whereby the trainee auditor conducts
+part or the entire audit under the supervision of an FSSC 22000 qualified auditor in the sub-category. The FSSC 22000 qualified auditor may not audit other sections whilst supervising the trainee auditor.
+
+FSSC 22000 Version 6.0 | April 2023
+
+57 of 77
+
+Part 4 | Requirements for Certification Bodies
+
+3) The witnessed audit shall be at FSSC 22000 Stage 2, surveillance, or recertification audit. Stand-alone Stage 1, Follow-Up and Special Audits cannot be used as witness audits.
+4) The initial witness audit shall be a solo witness audit, where the auditor being witnessed conducts the full FSSC 22000 audit. Where a solo witness audit is not possible, an audit team audit may be utilized, if all of the following conditions are being met:
+a. The auditor being witnessed shall have the role of lead auditor; b. The auditor being witnessed shall hold at least one of the (sub)category code(s) for
+the audit and shall audit the relevant HACCP study, product specific aspects, as well as auditing the relevant production processes; c. A restriction is applied to the number of audit team members: the audit team shall only be made up of the auditor being witnessed and one (1) co-auditor.
+5) A witness audit assessment report shall be completed by the witnessor to confirm performance, including but not limited to:
+a. The knowledge and skills as set out in Annex C of ISO 22003-1:2022 Table C.1, for auditing and leading the audit team;
+b. An assessment of knowledge of the application of the FSSC 22000 Scheme requirements; and
+c. An assessment of knowledge of the applicable laws and regulations.
+6) Already qualified FSSC 22000 auditors moving from another CB shall always be subject to a witness audit by the new CB as part of the approval process. Where the new CB deems remote witnessing to be sufficiently robust, the new CB may use ICT to conduct the witness audit remotely to approve the FSSC 22000 auditor, subject to a feasibility assessment and only if the objectives of the witness audit can be met. Refer to Annex 5 for more information.
+7) All FSSC 22000 auditors (including auditors in training) shall be registered in the FSSC Assurance Platform in accordance with the instructions of the Foundation.
+3.5.3 ASSIGNMENT OF SUBCATEGORIES (INITIAL AND EXTENSION)
+1) Auditors shall be approved/qualified for at least one (sub)category (see Part 1 table 1) prior to, or at the same time the initial auditor approval is granted.
+2) Auditors shall be approved/qualified per subcategory or category where no subcategory exists (see Part 1 table 1), where the CB shall demonstrate that the auditor complies with the following requirements:
+a. Experience: i. Six (6) months' work experience in the subcategory. Where food safety or quality consultancy work is used to demonstrate work experience, the number of man-days shall add up to six months, OR ii. Five (5) audits against a GFSI approved or recognized standard, Dutch HACCP or ISO 22000 in the subcategory as a qualified auditor OR
+iii. Five (5) audits against a GFSI approved or recognized standard, Dutch HACCP or ISO 22000 in the subcategory as a trainee under the supervision of a qualified auditor for the subcategory, OR
+iv. A combination of the above. b. demonstrated specific competence in the subcategory. c. meeting the CB's own competency criteria for the subcategory.
+3) The CB shall have defined competency criteria for each subcategory to ensure knowledge of products, processes, practices and applicable laws and regulations of the relevant
+
+FSSC 22000 Version 6.0 | April 2023
+
+58 of 77
+
+Part 4 | Requirements for Certification Bodies
+subcategory. Competence across the whole subcategory, or category where no subcategory exists, shall be demonstrated. Where (sub)categories have a broad range of products with different technologies, e.g., CIV or I, the CB shall further split these up in their system based on defined criteria. It shall be clear for which parts of the (sub)category the auditor is qualified for, and this evidence shall be uploaded to the auditor register on the Assurance Platform. 4) For already approved FSSC 22000 auditors, the following may be used to extend an auditor's (sub)categories, as an alternative to 3.5.3 (2) above:
+a. Auditors qualified for category C may be approved for Category G; and auditors qualified for sub-category CIII may be approved for Category E. This is subject to the following: i. Successful completion of the related PRP training (refer Part 3, Section 3.5.1(3)(g)), and ii. The CB undertaking an evaluation of the auditor's competency for the (sub)category in line with the competency requirements detailed within Table C.1 of ISO 22003-1:2022 and using an evaluation method or combination of evaluation methods as detailed under Annex B of ISO/IEC 17021-1:2015.
+b. Existing FSSC 22000 Auditors qualified for at least one (sub)-category, may extend their approval to Category FII, following the CB's evaluation of the auditor's competency for the sub-category in line with the competency requirements detailed within Table C.1 of ISO 22003-1:2022, and using an evaluation method or combination of evaluation methods as detailed under Annex B of ISO/IEC 170211:2015.
+5) It remains the responsibility of the CB to demonstrate competence in a subcategory, or category where no subcategories exist.
+3.5.4 MAINTENANCE OF AUDITOR QUALIFICATION
+3.5.4.1 AUDITS
+1) Each auditor shall perform at least five (5) FSSC 22000 audits at different organizations each calendar year, either as a lead or co-auditor. In this context, stand-alone stage 1 audits and special audits do not count. In the first year of approval, the minimum number of FSSC 22000 audits required shall be determined on a pro-rata basis, and the number shall always be rounded upwards to the next whole number.
+2) In the event when the requirement in (1) cannot be met, the CB shall ensure that the auditor has performed at least five (5) audits against an approved GFSI scheme (post-farm gate only) of which at least one (1) FSSC 22000 audit either as a lead or co-auditor. The CB shall mark this auditor in the Assurance Platform as working under a temporary exemption arrangement with an appropriate justification. The exemption shall be allowed for a maximum of 12 months. An exemption can be applied in the following cases:
+a. long term sickness of the auditor b. extended leave (e.g., maternity, paternity, sabbatical) c. lack of clients in the region/country* d. due to a serious event
+* For lack of clients, the temporary exemption cannot be applied for more than one year for the same auditor.
+
+FSSC 22000 Version 6.0 | April 2023
+
+59 of 77
+
+Part 4 | Requirements for Certification Bodies
+3) In case an auditor has demonstrated he/she performed FSSC 22000 audits for another licensed CB, these are also allowed to be included. The CB shall register these audits onto the Assurance Platform.
+3.5.4.2 ONGOING TRAINING
+1) Auditors shall attend any relevant annual training, including those specified by the Foundation (e.g., harmonization or calibration events), conferences, seminars and/or network meetings in order to keep up to date with Scheme requirements, normative documents, industry sector best practices, food safety and technological developments.
+2) Auditors shall have access to and be able to apply relevant laws and regulations. The CB shall maintain written records of all relevant training undertaken.
+3.5.4.3 WITNESSED AUDIT
+1) At least one (1) FSSC 22000 witnessed audit shall be conducted every three (3) years by the CB to confirm acceptable auditor performance prior to the requalification of the auditor. The witness audit shall be conducted at an FSSC 22000 audit (Stage 2, Surveillance or Recertification). Stand-alone Stage 1, Follow-Up and Special Audits cannot be used as witness audits.
+2) The same requirements apply for the 3-yearly witness audit as set out in Part 4, Section 3.5.2.4 and 3.5.2.5 above.
+3) The 3-yearly witness audit shall:
+a. Be conducted during the course of each 3-year requalification cycle and prior to the requalification anniversary date; and
+b. Never be more than 3 years from the last witness audit date.
+3.5.4.4 AUDITOR REQUALIFICATION
+1) The overall auditor's performance shall be evaluated every three (3) years in order to confirm the continued competence of the auditor. The following aspects shall be evaluated by the appointed supervisor of the CB as part of the requalification process:
+a. The auditor's audit log; b. The auditor's training log; and c. The result of the 3-yearly witness audit.
+2) The first requalification is due 3 years (36 months) from the date of the initial auditor qualification. This date is referred to as the requalification anniversary date and is a fixed date that sets the cycle for all future requalification cycles. For subsequent requalification, the requalification anniversary date is based on the below: � Initial qualification date + 3 years + 3 years etc. � The actual requalification shall be conducted within a 3-month window before the 3year anniversary date but does not change the subsequent requalification anniversary date.
+3) The evaluation shall consider the auditor's overall performance, including complaints from clients or other external or internal parties.
+4) Documented sign-off of the satisfactory completion of the entire requalification process shall be uploaded in the Assurance Platform.
+Note: Only one witnessed audit is required, irrespective of the number of categories/ subcategories that the auditor is qualified in.
+
+FSSC 22000 Version 6.0 | April 2023
+
+60 of 77
+
+Part 4 | Requirements for Certification Bodies
+3.5.4.5 RE-QUALIFICATION OF DISQUALIFIED AUDITORS
+1) If an auditor is disqualified due to not meeting Scheme requirements, the CB can re-qualify the auditor by:
+a. Providing additional training or calibration, as a minimum on the latest updates and changes in the FSSC 22000 Scheme;
+b. The auditor undertaking a successful witness audit; and c. Providing any additional training or calibration needed, based on the outcome of
+the witness audit.
+2) Following a successful witness audit, the CB shall produce a new sign-off document. The CB is responsible for ensuring that the auditor meets the competency criteria in ISO 220031:2022 and the current version of the Scheme.
+3) The Re-qualification approval document must be uploaded to the auditor register on the Assurance Platform, including a comment that it is to reinstate a previously disqualified auditor.
+
+FSSC 22000 Version 6.0 | April 2023
+
+61 of 77
+
+PART 5 REQUIREMENTS
+FOR ACCREDITATION
+BODIES
+
+FSSC 22000 Version 6.0 | April 2023
+
+62 of 77
+
+Part 5 | Requirements for Accreditation Bodies
+CONTENTS PART 5 REQUIREMENTS FOR ACCREDITATION BODIES
+
+1
+1.1 1.2
+2
+2.1 2.2 2.3
+
+Purpose ........................................................................................................................ 64
+IAF Membership ........................................................................................................................ 64 Communication and Responsibilities.....................................................................................64
+Accreditation............................................................................................................... 64
+License Agreement....................................................................................................................64 Accreditation Process ............................................................................................................... 65 Integrity Program ..................................................................................................................... 66
+
+FSSC 22000 Version 6.0 | April 2023
+
+63 of 77
+
+Part 5 | Requirements for Accreditation Bodies
+1 PURPOSE
+This Part specifies the requirements against which the Foundation will accept Accreditation Bodies (ABs) that provide accreditation services to licensed Certification Bodies.
+1.1 IAF MEMBERSHIP
+1) ABs providing accreditation to CBs for FSSC 22000 certification shall be a current member of the International Accreditation Forum (IAF) and:
+a. Be a signatory to the IAF Multilateral Recognition Arrangement (MLA) for Food Safety Management Systems (FSMS) to cover FSSC 22000 accreditation services; and
+b. Be a signatory to the IAF MLA for FSSC 22000 to cover FSSC 22000 accreditation services.
+1.2 COMMUNICATION AND RESPONSIBILITIES
+1) The AB shall sign the cooperation agreement with the Foundation, committing to information sharing and adherence to the Scheme requirements.
+2) The AB shall appoint a primary and secondary contact person for communication with the Foundation.
+3) The AB shall notify the Foundation in a timely manner of any changes in contact persons, its ownership, legal status, or any other issues that are relevant for accreditation. Changes in the IAF MLA status of the AB shall be communicated to the Foundation within 3 working days.
+4) The AB shall participate in harmonization and calibration events as defined by The Foundation, including the annual FSSC event.
+5) Communication on changes to the Scheme requirements and other related information shared with the ABs by The Foundation, shall be shared by the AB with all its assessors for the Scheme and records of such training shall be retained.
+6) The AB shall inform the Foundation without undue delay in case the accreditation status of the CB changes (e.g., granted, extension, reduction, re-instate, suspension or withdrawal).
+7) Upon request, the AB shall cooperate with the Foundation in relation to investigations into the performance of its accredited CBs, including but not limited to complaints and integrity issues.
+8) Upon request, the AB shall share with the Foundation information on the performance of their CBs.
+9) The AB commits to operate in accordance with the FSSC Code of Ethics, which is publicly available on the FSSC website.
+2 ACCREDITATION
+2.1 LICENSE AGREEMENT
+1) The AB shall verify that the CB has a (provisional) license agreement with the Foundation to provide certification to FSSC 22000, for a predefined ISO 22003-1:2022 food chain subcategory (or category if no subcategory) as set out in Annex 4.
+
+FSSC 22000 Version 6.0 | April 2023
+
+64 of 77
+
+Part 5 | Requirements for Accreditation Bodies
+2) The AB shall not issue an accreditation certificate for a category or sub-category where no (provisional) license with the Foundation has been granted, this includes scope extensions to new sub-categories (or category if no subcategory).
+2.2 ACCREDITATION PROCESS
+2.2.1 GENERAL
+1) The AB shall issue a confirmation of application for accreditation to FSSC 22000 Scheme including the detailed scope to the applicant CB.
+2) The AB shall issue a confirmation of declining an application for accreditation including the detailed scope to the applicant CB and reason for denying the application.
+3) The accreditation process shall cover all Scheme requirements applicable to the scope of accreditation.
+4) Only after approval from the Foundation, the CB is allowed to provide FSSC 22000 audits under its provisional license with a qualified FSSC 22000 auditor. At least one of these audits shall be witnessed by the AB and at least one complete FSSC 22000 certification file shall be reviewed over the course of the initial accreditation process.
+5) Office assessment reports of the CB shall be shared with the Foundation within 2 months from the last day of the office assessment.
+6) Interim changes to Scheme requirements are communicated to the AB via the FSSC 22000 BoS Decision list (published on the FSSC website).
+2.2.2 SCOPE OF ACCREDITATION
+1) The scope of accreditation shall be clearly defined and be part of the accreditation certificate issued by the AB as defined below and summarized in Annex 4 to this part:
+a. FSSC 22000 (Food Safety Management System Certification) - Relevant applicable (sub)version.
+b. Normative documents (latest version linked to the Scheme) for providing certification: i. ISO 22000; ii. Sector specific PRPs; iii. Additional FSSC 22000 requirements.
+c. Food chain clusters, categories and sub-categories as indicated in Annex A of ISO 22003-1:2022; and
+d. Key activities and locations (owned and subcontracted) are covered under the accreditation, including critical locations where applicable.
+2) Accreditation shall be granted to the requirements of ISO/IEC 17021-1:2015, ISO 22003-1:2022 and requirements for certification bodies of the FSSC 22000 Scheme.
+3) The accreditation certificate shall include the initial accreditation date and valid until/expiry date.
+2.2.3 WITNESSED AUDITS
+1) The witnessed audits shall meet the requirements for witnessing activities for the Accreditation of Management Systems Certification Bodies as set out in section 7.5.6 of IAF MD 16:2015 with the below FSSC 22000 Scheme specific requirements:
+
+FSSC 22000 Version 6.0 | April 2023
+
+65 of 77
+
+Part 5 | Requirements for Accreditation Bodies
+a. Initial and scope extension assessments shall require at least one (1) FSSC 22000 witnessed audit of each category (as defined in ISO 22003-1:2022) detailed on the provisional or full CB license agreement;
+b. The AB shall conduct FSSC 22000 witnessed audits covering all categories included in the CB accreditation scope during the AB accreditation cycle.
+c. Witness audits shall always be for the full duration of the FSSC 22000 audit and covering all applicable Scheme requirements relevant to the audit.
+d. For the CB to be awarded initial accreditation, the witness audit by the AB shall be conducted at a full system audit (e.g., initial audit (at least Stage 2) or at a transition audit). Subsequent witness audits may be conducted at a surveillance audit. In all instances, the full duration of the FSSC 22000 audit shall be witnessed by the AB.
+e. The initial witnessed audit shall be conducted onsite; subsequent witnessing may be conducted onsite or remotely. Where subsequent witnessed audits are conducted remotely, this shall be based on a feasibility assessment, ensuring the ICT is appropriate to observe the complete audit and that the objectives of the witness audit can be met. The requirements of IAF MD4 shall be met where the AB utilizes ICT.
+f. The AB assessor/assessment team shall have the appropriate competence and have detailed knowledge of the FSSC 22000 Scheme.
+g. Witnessed audit reports shall be shared with the Foundation within 2 months from the last day of the witness audit.
+2.3 INTEGRITY PROGRAM
+1) The Foundation provides the AB access to all relevant CB outcomes of its Integrity Program and complaints management system related to ISO/IEC 17021-1:2015. The AB shall consider the content of this information during its annual CB assessments.
+2) ABs are invited to attend, on a voluntary basis, and subject to the CBs agreement, the Integrity Program office assessments undertaken by the Foundation for its licensed CBs.
+3) The Foundation shall inform the AB on suspensions or terminations of its licensed CBs and vice versa.
+
+FSSC 22000 Version 6.0 | April 2023
+
+66 of 77
+
+APPENDIX 1 DEFINITIONS
+
+FSSC 22000 Version 6.0 | April 2023
+
+Version 5: Draft
+67 of 77
+
+Appendix 1 | Definitions
+
+APPENDIX 1: DEFINITIONS
+The following definitions apply to the terminology used in all Scheme documentation. Unless indicated in this Appendix, the terms, and definitions in the normative documents (ISO 22000:2018 and sector specific PRP standards) applies, supported by those in ISO/IEC 17021-1 and ISO 220031:2022.
+ACCREDITATION
+Third-party attestation related to a conformity assessment body conveying formal demonstration of its competence to carry out specific conformity assessment tasks (ISO/IEC 17011:2017).
+ACCREDITATION BODY
+Authoritative body that performs accreditation (ISO/IEC 17011:2017).
+ACCREDITATION CERTIFICATE
+Formal document or a set of documents, stating that accreditation has been granted for the defined scope (ISO/IEC 17011:2004).
+ACCREDITATION SYMBOL
+Symbol issued by an accreditation body to be used by accredited conformity assessment bodies to indicate they are accredited (ISO/IEC 17011:2017).
+ACTIVE MATERIALS AND ARTICLES
+Materials and articles that are intended to extend the shelf-life or to maintain or improve the condition of packaged food; they are designed to deliberately incorporate components that would release or absorb substances into or from the packaged food or the environment surrounding the food. Examples are oxygen absorbers and desiccants.
+ADVISORY COMMITTEE
+A representative group of stakeholders, appointed by the Foundation, who advise the Board of Stakeholders on the technical content of the Schemes.
+AGENT/BROKER
+An organization or individual that does not own but trades any type of food, feed and/or packaging. Such activities exclude production, storage, and any physical handling of the product; they can be performed under specific customer requirements or not (GFSI v2020.1).
+AUDIT
+Systematic, independent, documented process for obtaining evidence and assessing it objectively to determine the extent to which specified Scheme requirements are fulfilled.
+APPEAL
+Request for reconsideration of a decision made on a lodged complaint, as a result of a suspension or license termination.
+
+FSSC 22000 Version 6.0 | April 2023
+
+68 of 77
+
+Appendix 1 | Definitions
+ASSURANCE PLATFORM
+Main digital platform provided by the Foundation, supporting key Scheme processes and data exchange needs.
+ASSURANCE PLATFORM DATA
+A piece of information that describes a Scheme related Fact that can be a collection of characters and numbers, representing human readable and understandable text, and/or files and attachments.
+AUDITOR
+Person who conducts an audit (ISO/IEC 17021-1:2015).
+BLACK-OUT DAYS
+Time periods shared by the certified organization with the certification body to avoid periods of extreme inconvenience during which the organization would find it difficult to participate fully in an unannounced audit and/or there is no production.
+BOARD OF STAKEHOLDERS
+Group of representatives appointed by the Scheme's stakeholders who are responsible for oversight including all certification and accreditation requirements.
+CERTIFICATION
+Process by which licensed certification bodies provide assurance that the food safety management system and its implementation by the audited organization comply with Scheme requirements.
+CERTIFICATION BODY
+Organization providing audit and certification services (ISO/IEC 17021-1:2015).
+CERTIFICATION DECISION
+Granting, continuing, expanding, or reducing the scope, suspending, re-instating, withdrawing, or refusing certification by a Certification Body (GFSI v7.2:2018).
+CERTIFICATION DECISION DATE
+Date on which the certification decision is taken.
+CERTIFICATION SCHEME
+Conformity assessment system related to management systems to which the same specified requirements, specific rules and procedures apply (ISO/IEC 17021-1:2015).
+CERTIFICATE SUSPENSION
+Declaration of certificate status as temporarily invalid.
+
+FSSC 22000 Version 6.0 | April 2023
+
+69 of 77
+
+Appendix 1 | Definitions
+CERTIFICATE WITHDRAWAL
+Final inactivation of a certificate following a Certification decision.
+CLEANING PROGRAM
+The program established for the removal of soil, food, dirt, grease, or other extraneous matter to ensure that processing equipment and the environment are maintained in a hygienic condition. The methods applied include, but are not limited to, both sanitation and disinfection.
+COMPETENCE
+Ability to apply knowledge and skills to achieve intended results (ISO/IEC 17021-1:2015).
+COMPLAINT
+Expression of dissatisfaction made to an organization, related to its product or service, or the complaints-handling process itself, where a response or resolution is explicitly or implicitly expected (ISO 9000:2015).
+CORRECTION
+Action taken to eliminate the identified nonconformity.
+CORRECTIVE ACTION
+Action taken to eliminate the cause (s) of a nonconformity and to prevent recurrence.
+CRITICAL NONCONFORMITY
+Circumstance where there is a significant failure in the management system, a situation with direct adverse food safety impact and no appropriate action is being observed or when food safety legality and/or certification integrity is at stake.
+CROSS DOCKING
+Process by which goods (food, feed, animal food and packaging) are unloaded, sorted, consolidated, loaded, and shipped to the next destination (ISO/TS 22002-5:2019).
+DATA OWNERSHIP
+The act of having legal rights and complete control over a single piece or set of data elements. It defines and provides information about the rightful owner of data assets and the acquisition, use and distribution policy implemented by the data owner.
+DISINFECTION
+Reduction, by means of biological or chemical agents and/or physical methods in the number of viable microorganisms on surfaces, in water or air to a level that does not compromise food safety and/or suitability (CXC 1-1969).
+
+FSSC 22000 Version 6.0 | April 2023
+
+70 of 77
+
+Appendix 1 | Definitions
+ENVIRONMENTAL MONITORING
+A program for the evaluation of the effectiveness of controls on preventing contamination from the site environment.
+
+FEED
+Single or multiple product(s), whether processed, semi-processed or raw, which is intended to be fed to food producing animals (GFSI v2020.1; ISO 22000:2018).
+
+FOOD
+Substance (ingredient), whether processed, semi-processed or raw, which is intended for consumption, and includes drink, chewing gum and any substance which has been used in the manufacture, preparation or treatment of "food" but does not include cosmetics or tobacco or substances (ingredients) used only as drugs (GFSI v2020.1; ISO 22000:2018). Food is intended for consumption by humans and animals, and includes feed and animal food: -- feed is intended to be fed to food-producing animals; -- animal food is intended to be fed to non-food-producing animals, such as pets.
+
+FOOD ADDITIVE
+Any substance not normally consumed as a food by itself and not normally used as a typical ingredient of the food, whether or not it has nutritive value, the intentional addition of which to food for a technological (including organoleptic) purpose in the manufacture, processing, preparation, treatment, packing, packaging, transport or holding of such food results, or may be reasonably expected to result, (directly or indirectly) in it or its by-products becoming a component of or otherwise affecting the characteristics of such foods. The term does not include contaminants, or substances added to food for maintaining or improving nutritional qualities (CODEX STAN 192-1995).
+
+FOOD DEFENSE
+The process to ensure the security of food, food ingredients, feed, or food packaging from all forms of intentional malicious attack including ideologically motivated attack leading to contamination or unsafe product (GFSI v2020.1).
+
+FOOD FRAUD
+A collective term encompassing the deliberate and intentional substitution, addition, tampering or misrepresentation of food, food ingredients, feed, food packaging or labelling, product information or false or misleading statements made about a product for economic gain that could impact consumer health (GFSI 2020.1).
+
+FOOD LOSS AND WASTE
+Food loss occurs before the food reaches the consumer as a result of issues in the supply chain (production, processing, storage, and distribution phases). Food waste refers to food that is fit for consumption, but consciously discarded at the retail or consumption levels. In the context of the FSSC 22000 Scheme, food loss and waste only relate to food � it does not include packaging material wastage.
+
+FSSC 22000 Version 6.0 | April 2023
+
+71 of 77
+
+Appendix 1 | Definitions
+FOOD SAFETY CULTURE
+Shared values, beliefs and norms that affect mindset and behavior toward food safety in, across and throughout an organization (GFSI 2020.1).
+FOOD SAFETY MANAGEMENT SYSTEM (FSMS)
+Set of interrelated or interacting elements of an organization to establish policies and objectives and processes to achieve food safety management system objectives (ISO 22003-1:2022).
+FOUNDATION FSSC
+The legal owner of the FSSC Certification Schemes.
+FOLLOW-UP AUDIT
+An additional audit to a regular audit for which an extra visit is required when the audit could not be completed in the planned time and/or the audit plan could not be realized completely. As a follow-up is part of a regular audit, it shall be completed within a short timeframe from the main audit. A follow-up audit also includes the on-site close out of nonconformities.
+FSSC LOGO
+Logo issued by the Foundation which can be used by licensed CBs and certified organizations in accordance with FSSC 22000 Scheme requirements.
+GFSI APPROVED STANDARDS
+Standards deemed to be technically equivalent by GFSI. Technical Equivalence is a category of GFSI benchmarking process dedicated to government-owned standards. It acknowledges the equivalence of the standard's content to the relevant scope(s) of the GFSI Benchmarking Requirements Part III. The updated list of GFSI approved standards can be found on the GFSI website: https://mygfsi.com/how-to-implement/technical-equivalence/
+GFSI RECOGNIZED STANDARDS
+Standards that have been successfully benchmarked against the GFSI benchmarking requirements. The updated list of GFSI recognized standards can be found on the GFSI website: https://mygfsi.com/how-to-implement/recognition/
+HACCP STUDY
+Hazard analysis for a family of products/processes/services with similar hazards and similar processes and technology (e.g., production, packaging, storage or implementation of services) (ISO 22003-1:2022).
+HYGIENIC DESIGN
+Design and engineering (materials and fabrication) of equipment and premises that are easily cleanable assuring the food is safe and suitable for human consumption (EHEDG Glossary, Version 2020/08.G04).
+
+FSSC 22000 Version 6.0 | April 2023
+
+72 of 77
+
+Appendix 1 | Definitions
+
+MANUFACTURING/PROCESSING
+Transformation of raw materials, by physical, microbiological, or chemical means, into a final product.
+
+MAJOR NONCONFORMITY
+Nonconformity that negatively affects the capability of the management system to achieve the intended results, or a legislative noncompliance linked to quality.
+
+MINOR NONCONFORMITY
+Nonconformity that does not affect the capability of the management system to achieve the intended results (ISO/IEC 17021-1:2015).
+OUTSOURCE
+Arrangement where an external organization performs part of an organization's function or process (ISO 22000:2018).
+ORGANIZATION
+Legal entity that has its own functions, with responsibilities, authorities, and relationships to comply with the Scheme requirements and that could cover multiple sites.
+
+PERISHABLE PRODUCT
+Products that lose their quality, or are likely to spoil over a specified time, even when handled correctly throughout the supply chain, therefore requiring temperature control during storage and/or transportation to prevent damage, spoilage, and contamination.
+PRODUCT
+Output that is a result of a process. A product can be a service (ISO 22000:2018).
+
+PRODUCT RECALL
+The removal by a supplier of a product from the supply chain that has been deemed to be unsafe and has been sold to the end consumer or is with retailers or caterers and is available for sale (GFSI 2020.1).
+
+PRODUCT WITHDRAWAL
+The removal of a product by a supplier from the supply chain that has been deemed to be unsafe, which has not been placed on the market for purchase by the end consumer (GFSI 2020.1).
+
+PROCESS
+Set of interrelated or interacting activities which transform inputs to outputs (ISO 22000:2018).
+
+QUALITY MANAGEMENT SYSTEM
+Set of interrelated or interacting elements to establish policy and objectives and to achieve those objectives, used to direct and control an organization with regard to quality.
+
+FSSC 22000 Version 6.0 | April 2023
+
+73 of 77
+
+Appendix 1 | Definitions
+RAW MATERIAL
+Commodities, parts, or substances that are assembled or processed to form a final product.
+REWORK
+The process of re-manufacturing semi-final and final products, to obtain a final product that complies with the customer requirements. It can also refer to material in a processed or semiprocessed state that is intended to be re-used in subsequent manufacturing steps.
+RISK
+Effect of uncertainty (ISO 22000:2018).
+SANCTION COMMITTEE
+Committee that decides on possible sanctions based upon information provided by the Foundation in case of unacceptable CB performance.
+SANITATION
+All actions dealing with cleaning or maintaining hygienic conditions in an establishment, ranging from cleaning and/or sanitizing of specific equipment to periodic cleaning activities throughout the establishment (including building, structural, and grounds cleaning activities) (ISO/TS 220021:2009).
+SCHEME
+Set of rules and procedures that defines the objects of conformity assessment, identifies the specified requirements for the object of conformity assessment and provides the methodology for performing conformity assessment.
+SCOPE
+Extent and boundaries applicable of e.g., audit, certification, accreditation, or Scheme activity (ISO 9000:2015).
+SERIOUS EVENT
+A circumstance beyond the control of the organization, commonly referred to as "Force Majeure" or "act of God" (IAF ID3:2011) that prevents a planned audit from taking place. Examples include war, strike, riot, political instability, geopolitical tension, terrorism, crime, pandemic, flooding, earthquake, malicious computer hacking, other natural or man-made disasters.
+SITE
+A permanent location where a facility carries out work or activity. A site may have off-site activities in the context of the Scheme requirements that are included as part of the FSMS, e.g., head office, off-site manufacturing, and off-site storage.
+
+FSSC 22000 Version 6.0 | April 2023
+
+74 of 77
+
+Appendix 1 | Definitions
+SPECIAL AUDITS
+Audits at certified organizations that are performed on top of, or in addition to, the annual surveillance/re-certification audits.
+TABLEWARE
+Disposable Consumer good products that come in contact with food and food packaging materials.
+THREAT
+Susceptibility or exposure to a food defense act (such as sabotage, malicious tampering, disgruntled employee, terrorist act, etc.) which is regarded as a gap or deficiency that could impact consumer health if not addressed.
+UNANNOUNCED AUDIT
+Audit that is conducted at the facility of the certified organization without prior notification of the audit date.
+VULNERABILITY
+Susceptibility or exposure to all types of food fraud, which is regarded as a gap or deficiency that could impact consumer health if not addressed.
+WITNESSED AUDIT (AB)
+An activity performed by a competent AB assessor, whereby the performance of the CAB is assessed through the observation of the CAB carrying out conformity assessment activities within its scope of accreditation (clause 3.25 of ISO/IEC 17011). The AB observes, without interfering or influencing, a complete FSSC 22000 audit performed by a CB auditor/audit team.
+WITNESSED AUDIT (CB)
+An activity performed by a competent CB witnessor, whereby the performance of the CB auditor is observed and evaluated, without interfering or influencing, at a complete FSSC 22000 audit performed by the CB auditor.
+
+FSSC 22000 Version 6.0 | April 2023
+
+75 of 77
+
+APPENDIX 2 REFERENCES
+
+FSSC 22000 Version 6.0 | April 2023
+
+76 of 77
+
+Appendix 2 | References
+APPENDIX 2: NORMATIVE REFERENCES
+� BSI/PAS 221:2013 Prerequisite programs for food safety in food retail - Specification � GFSI Benchmarking Requirements (latest version) � IAF MD 1 Audit and Certification of a Management System Operated by a Multi-Site
+Organization (latest version) � IAF MD 2 Transfer of Accredited Certification of Management Systems (latest version) � IAF ID 3 Management of Extraordinary Events or Circumstances Affecting ABs, CABs, and
+Certified Organizations � IAF MD 4 The Use of Information and Communication Technology (ICT) for
+Auditing/Assessment Purposes (latest version) � IAF MD 11 Application of ISO/IEC 17021-1 for Audits of Integrated Management Systems
+(latest version) � IAF MD 16 Application of ISO/IEC 17011 for the Accreditation of Food Safety Management
+System (FSMS) Certification Bodies (latest version) � IAF MD 20 Generic Competence for AB Assessors: Application to ISO/IEC 17011 (latest
+version) � ISO 9001:2015 Quality management systems � Requirements � ISO 22000:2018 Food safety management systems � Requirements for any organization in
+the food chain � ISO/IEC 17021-1:2015 Conformity assessment � Requirements for bodies providing audit
+and certification of management systems. � ISO 22003-1:2022 Food safety - Part 1: Requirements for bodies providing audit and
+certification of food safety management systems. � ISO/IEC 17011:2017 Conformity assessment � General requirements for accreditation
+bodies accrediting conformity assessment bodies. � ISO 19011:2018 Guidelines for auditing management systems � ISO/TS 22002-1:2009 Prerequisite programs on food safety � Part 1: Food manufacturing � ISO/TS 22002-2:2013 Prerequisite programs on food safety � Part 2: Catering � ISO/TS 22002-4:2013 Prerequisite programs on food safety � Part 4: Food packaging
+manufacturing � ISO/TS 22002-5:2019 Prerequisite programs on food safety � Part 5: Transport and storage � ISO/TS 22002-6:2016 Prerequisite programs on food safety � Part 6: Feed and animal food
+production � FSSC 22000 Integrity Program documentation � FSSC Code of Ethics � FSSC Full Remote Audit Addendum
+
+FSSC 22000 Version 6.0 | April 2023
+
+77 of 77
+
+

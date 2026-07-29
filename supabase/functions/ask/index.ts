@@ -107,6 +107,7 @@ interface LlmReq {
   effort?:    'low' | 'medium' | 'high';
   cacheSystem?: boolean;
   reasoning?: string;   // ทับค่า REASONING เฉพาะคำขอนี้ (ใช้กับ Gemini)
+  timeoutMs?: number;   // ยอมรอผู้ให้บริการนานสุดเท่าไร ก่อนเลิกแล้วบอกผู้ใช้
 }
 
 // Gemini 3 เปิดโหมดคิดก่อนตอบไว้เป็นค่าเริ่มต้น ทำให้กว่าตัวอักษรแรกจะออกมาใช้เวลานาน
@@ -157,10 +158,29 @@ async function callLLM(r: LlmReq, betas: string[] = []) {
     if (PROVIDER === 'gemini' && eff !== 'default') body.reasoning_effort = eff;
   }
 
-  const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+  // ถ้าผู้ให้บริการค้างไม่ตอบ Supabase จะฆ่าฟังก์ชันทิ้งที่ 150 วินาที
+  // ผู้ใช้ได้ HTTP 546 ที่ไม่บอกอะไรเลย ตั้งเวลาเองแล้วโยน error ที่อ่านรู้เรื่องแทน
+  const ac = new AbortController();
+  const timeoutMs = r.timeoutMs ?? 60000;
+  const timer = setTimeout(() => ac.abort(), timeoutMs);
+  let res: Response;
+  try {
+    res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body), signal: ac.signal });
+  } catch (e) {
+    if ((e as Error).name === 'AbortError') {
+      throw new Error(`${PROVIDER} ไม่ตอบกลับภายใน ${timeoutMs / 1000} วินาที ` +
+        `— มักเกิดจากโควตาของผู้ให้บริการเต็ม หรือระบบของเขาขัดข้อง`);
+    }
+    throw e;
+  } finally {
+    clearTimeout(timer);
+  }
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`${PROVIDER} ${res.status}: ${text.slice(0, 500)}`);
+    const hint = res.status === 429
+      ? ' — โควตาของผู้ให้บริการเต็มแล้ว รอให้รอบโควตารีเซ็ต หรือเปลี่ยนไปใช้เจ้าอื่น'
+      : '';
+    throw new Error(`${PROVIDER} ${res.status}${hint}: ${text.slice(0, 400)}`);
   }
   return res;
 }
@@ -235,6 +255,7 @@ ${catalog}
   const res = await callLLM({
     model:      MODEL_ROUTER,
     maxTokens:  512,
+    timeoutMs:  25000,
     // ทดสอบแล้ว Gemini ปฏิเสธ reasoning_effort:'none' ด้วย 400 INVALID_ARGUMENT
     // ค่าต่ำสุดที่ใช้ได้จริงคือ low — อย่าเปลี่ยนเป็น none อีก
     reasoning:  'low',
@@ -343,7 +364,7 @@ async function retrieve(router: RouterResult): Promise<Chunk[]> {
 //  ขั้นที่ 3 — RE-RANK  (Top 20 -> Top 6)
 // =====================================================================
 async function rerank(question: string, chunks: Chunk[]): Promise<Chunk[]> {
-  if (chunks.length <= CONTEXT_K) return chunks;
+  if (chunks.length <= CONTEXT_K) return fallbackScores(chunks);
 
   const listing = chunks
     .map((c, i) => `[${i}] ${c.doc_code} · ${c.section}\n${c.content.slice(0, 420)}`)
@@ -353,6 +374,7 @@ async function rerank(question: string, chunks: Chunk[]): Promise<Chunk[]> {
     const res = await callLLM({
       model:     MODEL_RERANK,
       maxTokens: 512,
+      timeoutMs: 25000,
       reasoning: 'low',
       system: 'คุณคือตัวจัดอันดับความเกี่ยวข้องของเอกสาร ให้คะแนน 0-10 ว่าท่อนเอกสารนั้น' +
               'ช่วยตอบคำถามได้จริงแค่ไหน เอกสารที่พูดถึงหัวข้อเดียวกันแต่ไม่ตอบคำถามให้คะแนนต่ำ',
@@ -392,8 +414,17 @@ async function rerank(question: string, chunks: Chunk[]): Promise<Chunk[]> {
 
   } catch (e) {
     console.error('rerank failed, ใช้ลำดับเดิม:', e);
-    return chunks.slice(0, CONTEXT_K);
+    return fallbackScores(chunks.slice(0, CONTEXT_K));
   }
+}
+
+// similarity ที่ได้จากฐานข้อมูลเป็น 0 เมื่อไม่มี embedding (ไม่ได้ตั้ง VOYAGE_KEY)
+// ปกติ rerank เป็นตัวเติมคะแนนให้ แต่ถ้า rerank ล้ม คะแนนจะเป็นศูนย์ทั้งชุด
+// ความมั่นใจจึงตกต่ำกว่าเกณฑ์แล้วระบบปฏิเสธตอบ ทั้งที่หาเอกสารที่ถูกต้องเจอแล้ว
+// กรณีนี้ให้ประมาณคะแนนจากลำดับของ RRF แทน ดีกว่าทิ้งคำตอบทั้งคำถาม
+function fallbackScores(chunks: Chunk[]): Chunk[] {
+  if (chunks.some((c) => (c.similarity || 0) > 0)) return chunks;
+  return chunks.map((c, i) => ({ ...c, similarity: Math.max(0.5, 0.85 - i * 0.05) }));
 }
 
 
@@ -426,14 +457,15 @@ function buildAnswerSystem(persona: string, complexity: string, lang: string) {
     ? 'ຕອບເປັນພາສາລາວ (ຖ້າບໍ່ແນ່ໃຈຄຳສັບເຕັກນິກ ໃຫ້ວົງເລັບພາສາອັງກິດໄວ້).'
     : 'ตอบเป็นภาษาไทย ใส่ศัพท์อังกฤษในวงเล็บเมื่อใช้ครั้งแรก';
 
+  // เดิมบังคับ 5 หัวข้อกับคำถามวินิจฉัย ทำให้คำตอบยาว 4,000 ตัวอักษร
+  // ใช้เวลาพิมพ์อย่างเดียว 7 วินาที เหลือ 3 หัวข้อและสั่งให้กระชับ
   const shape = complexity === 'complex'
-    ? `ใช้โครงนี้ (ข้ามหัวข้อที่ไม่เกี่ยวได้):
-## สรุป
-## คำอธิบาย
-## สาเหตุที่เป็นไปได้ (เรียงตามความน่าจะเป็น)
-## สิ่งที่ควรทำ
-## การป้องกันไม่ให้เกิดซ้ำ`
-    : `ตอบตรงคำถามก่อนใน 2-3 บรรทัด แล้วค่อยขยายความ
+    ? `ใช้โครงนี้ สั้นๆ (ข้ามหัวข้อที่ไม่เกี่ยวได้):
+## สาเหตุที่เป็นไปได้
+เรียงตามความน่าจะเป็น ข้อละ 1-2 บรรทัด ไม่เกิน 4 ข้อ
+## ตรวจอะไรก่อน
+## สิ่งที่ควรทำ`
+    : `ตอบตรงคำถามใน 2-3 บรรทัด แล้วขยายความเท่าที่จำเป็น
 ไม่ต้องใส่หัวข้อ "สาเหตุ/การป้องกัน" ถ้าคำถามไม่ได้ถามถึงปัญหา`;
 
   return `${persona}
@@ -451,10 +483,16 @@ ${langLine}
 **รูปแบบ**
 ${shape}
 
+**ความยาว — สำคัญ**
+ผู้ใช้บอกว่าคำตอบยาวเกินและรอนาน ให้ตอบ**ไม่เกิน 250 คำ**
+- เอาเฉพาะสิ่งที่เอาไปทำต่อได้ทันที ตัดคำอธิบายพื้นฐานที่วิศวกรรู้อยู่แล้วออก
+- ข้อละ 1-2 บรรทัด ไม่ต้องขยายความทุกข้อ
+- ถ้าเรื่องใหญ่จริงจนย่อไม่ได้ ให้ตอบส่วนที่สำคัญที่สุดก่อน
+  แล้วปิดท้ายบรรทัดเดียวว่ายังมีประเด็นอะไรให้ถามต่อได้
+
 **สิ่งที่ห้ามทำ**
 - ห้ามใส่หัวข้อ "เอกสารอ้างอิง" หรือ "Confidence" ท้ายคำตอบ — ระบบสร้างให้เอง
-- ห้ามเดาตัวเลข สเปก หรือค่ามาตรฐานที่ไม่ปรากฏในเอกสาร
-- อย่าเขียนยาวเกินจำเป็น ผู้อ่านคือวิศวกรที่ต้องเอาไปใช้ต่อทันที`;
+- ห้ามเดาตัวเลข สเปก หรือค่ามาตรฐานที่ไม่ปรากฏในเอกสาร`;
 }
 
 function buildContext(chunks: Chunk[]) {
@@ -635,7 +673,12 @@ Deno.serve(async (req) => {
         try {
           const res = await callLLM({
             model:     MODEL_ANSWER,
+            // ห้ามลดต่ำกว่านี้เพื่อบังคับให้ตอบสั้น — max_tokens ครอบโควตาการคิดของโมเดลด้วย
+            // เคยลดเหลือ 2600 แล้วบางครั้งโมเดลใช้โควตาไปกับการคิดจนหมด
+            // ส่งข้อความกลับมา 0 ตัวอักษร ผู้ใช้เห็นการ์ดเปล่า
+            // คุมความยาวด้วยคำสั่งใน system prompt แทน
             maxTokens: 8000,
+            timeoutMs: 75000,
             stream:    true,
             system,
             cacheSystem: true,

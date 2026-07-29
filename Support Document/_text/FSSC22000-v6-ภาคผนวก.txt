@@ -1,0 +1,2565 @@
+# FSSC 22000 version 6 — ภาคผนวก 2 ข้อกำหนดเพิ่มเติม
+
+0 1.
+
+FOOD SAFETY SYSTEM CERTIFICATION
+
+ANNEX 2: CB AUDIT REPORT REQUIREMENTS
+
+FSSC 22000 Version 6 | April 2023
+
+0 of 47
+
+Version 6 | April 2023
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+INTRODUCTION
+This document has been developed to ensure a high caliber of audit reporting and sets out the minimum requirements and expectations in terms of the content and the level of detail required in FSSC 22000 audit reports.
+CBs shall only use the mandatory FSSC 22000 audit reports provided by the Foundation. The completed audit report shall clearly demonstrate that the FSSC 22000 Scheme requirements have been addressed by the organization and meet the ISO/IEC 17021-1:2015 as well as the GFSI requirements.
+This Annex shall:
+1. Be used by all Integrity Program Assessors to determine CB conformance with FSSC 22000 audit reporting requirements;
+2. Be used by all CBs to train their auditors and personnel involved in the review and certification decision process on the content requirements of the audit report, to ensure a robust certification process.
+ISO/IEC 17021-1:2015, clause 9.4.8.2 and 9.4.5.1 requires: "the audit report shall provide an accurate, concise and clear record of the audit to enable an informed certification decision to be made". In addition, it also requires "audit findings (audit findings summarizing conformity and detailing nonconformity), reference to evidence and conclusions, consistent with the requirements of the type of audit" shall be included.
+GFSI Version 2020.1 Part 2 � 5.17: The Certification Program Owner shall ensure that the audit report contains evidence that all the specified requirements of the Certification Program related to the GFSI scope(s) of recognition have been evaluated during the audit and clearly express the outcome of the evaluation.
+This document details the minimum audit report content that is required to be included in audit reports.
+In the case of multi-site certification, separate report(s) may be produced for the Central function (similar to a head office report), including a consolidated nonconformity report and reports for each of the sites, respectively, in which case the site reports shall meet the content requirements as set out in this Annex.
+Alternatively, one audit report may be produced for the multi-site organization, including the Central function information, in which case specific information about each site audited is required and complies with the content of this Annex. The summary sections of the audit report shall clearly reflect what was audited at each site with supporting objective evidence to show that the Scheme requirements were audited at each site. The minimum content of the Central functions shall include a description of the centralized functions, including details on internal audits, how this is managed and controlled by the group, and the competency of the internal auditors. The requirements referenced in the FSSC 22000 Additional requirement 2.5.18 shall be included in the Central function section of the report.
+
+FSSC 22000 Version 6 | April 2023
+
+1 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+INSTRUCTIONS
+1. This document sets out the minimum requirements in each section of the audit report. For the clauses of ISO 22000, the relevant PRP/s, and the additional FSSC 22000 requirements, it explains the minimum content required to be documented in each section.
+2. The text in blue font represents an overview of what is expected to be detailed in the audit report, it is not intended to be an exhaustive list and the auditor(s) need to demonstrate that all requirements of the clause(s) have been assessed supported by objective evidence and suitable audit trails.
+3. Checklists � summary section per clause shall contain:
+a) An overview of the section, including evidence assessed to demonstrate compliance or non-compliance to the clauses in the section.
+b) Checklist summaries shall be sufficiently detailed to allow insight and an overview and not be oversimplified, or just indicate "conformance with the requirements was noted" or any other vague descriptions of similar effect.
+4. In relation to nonconformities raised, the following shall apply:
+a. Nonconformities shall not be reported against more than one clause within FSSC 22000; b. The nonconformity shall always be written to the most specific clause and not be grouped
+unless a systemic issue is identified, in which case the expectation is that in most cases the nonconformity is raised to a higher grade i.e., a major. c. Nonconformities shall reference the objective evidence to justify the nonconformity and clearly identify why the requirement is not being met; d. The Nonconformity Report issued by the CB shall meet the content requirements of section 3.3 of this Annex. The CBs Nonconformity report shall be uploaded to the Assurance Platform for each audit.
+5. In exceptional cases, certain requirements can be deemed not applicable (N/A). Where a requirement is deemed to be N/A then suitable justification shall be recorded in the relevant section of the audit report. Note: this only applies to those clauses in the audit report that have the option to select N/A; all other clauses shall be audited in full.
+6. Where Design and Development is permitted to be added to the scope of the certificate as per the requirements of Annex 1, Section 3, then particular attention shall be paid to documenting what was audited, including the interface of the process with the FSMS. This includes detailing the design and development process in the audit plan, the audit program, and the audit report.
+7. Where ICT is used during an audit, the details of the type of ICT used and which clauses/departments were audited using ICT must be clearly indicated in the audit report and the audit plan and meet the requirements in Annex 5.
+8. CBs are required to issue the full FSSC audit report as supplied by The Foundation, the content of which meets the requirements of this Annex, to clients for all certification audits including surveillance audits. The full audit report consists of the audit checklists for ISO 22000:2018, the relevant PRP standard/s and the additional FSSC 22000 requirements.
+9. As per ISO/IEC 17021-1, the audit report must be provided to the organization. Annexes provided to the organization shall include the nonconformity report, audit plan, and the audit program.
+10. The complete audit pack shall be uploaded into the Assurance Platform along with attachments in PDF including the final audit report, audit plan, audit program, integrity declaration, attendance register and nonconformity reports. Supporting audit documentation shall be uploaded as a zipped file to facilitate uploading into the Assurance Platform. It is not required to upload supporting evidence for closure of nonconformities into the Assurance
+
+FSSC 22000 Version 6 | April 2023
+
+2 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Platform. The mandatory fields and nonconformity details for upload in the Assurance Platform shall always be completed in English.
+Notes:
+1) This Annex is designed for food manufacturing audits, and the ISO/TS 22002-1:2009 PRP checklist is used in this example. It applies to Food Chain Categories BIII, C and K.
+2) For Food Chain Categories A, D, E, FI, G or I the level of detail in the summary sections for the relevant PRP standard shall be aligned with what is reflected in this Annex, even though the content will vary depending on the PRP standard.
+3) In all cases, verify the latest FSSC 22000 BoS decision list available on the FSSC website to ensure all audit requirements are covered and reflected in the audit report.
+4) Audit attachments: when uploading scans of documents, these must be legible and of good quality.
+
+FSSC 22000 Version 6 | April 2023
+
+3 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+STAGE 1 AUDIT REPORT 1. ORGANIZATION DETAILS
+1.1 ORGANIZATION PROFILE
+
+Registered legal name COID Legal or official company registration number Location/Address
+Technical contact person
+Commercial/marketing contact person
+General description of audited organization
+Overview of seasonal activities
+
+Name of organization to be certified
+FSSC Certified Organization Identification code
+Applicable reference to legal registration (such as a business registration number)
+Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available)
+Full name: Function/Job role: Email address:
+Full name: Function/Job role: Email address:
+Brief history of company for example, how long in business, purpose built/prior use, main markets (local/international) Overview of products produced/services provided, main processes, number of processing lines, organizational structure including relationship with Head Office or off-site activities where relevant; Level of complexity and risk regarding food safety. **No marketing jargon to be included**
+Describe what seasonal activities are conducted. (For example: � Processing of stone fruit September - October � Processing of root vegetables March � October) Indicate "None" if not applicable
+
+1.2 HEAD OFFICE (WHERE APPLICABLE)
+
+Registered legal name
+
+Name of Head office to be included in the certification
+
+Location/Address of Head Full physical address (or other unique identification of site
+
+office
+
+location i.e., GPS, GLN etc. where a physical address is not
+
+available)
+
+Date of head office audit
+
+Duration of head office audit (in hours)
+
+Number of sites
+
+Number of sites included under the head office functions
+
+FSSC 22000 Version 6 | April 2023
+
+4 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Description of Head office functions
+
+Describe which functions are conducted at Head Office that are common to the certified sites. For example: procurement, human resource management, etc.
+Indicate if the head office is a separate audit or whether conducted as part of the site audit(s). A separate head office report shall always be generated where the head office is connected to more than one site.
+
+1.3 OFF-SITE ACTIVITIES (WHERE APPLICABLE)
+
+Site name Location(s)/Address
+Date of off-site activity audit/s Duration of off-site activity audit/s (in hours) Activities at location/s
+
+Name of off-site facility/premises
+Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available)
+
+Describe the activities that are conducted at an off-site location, where they are under the same legal entity and same FSMS (refer FSSC 22000 Scheme requirements Part 3, section 5.2.2). For example:
+
+a)
+
+Off-site storage
+
+b)
+
+Off-site manufacturing
+
+c)
+
+Cross-docking
+
+1.4 MULTI-SITES (WHERE APPLICABLE)
+
+Registered legal name of Name of the group to be certified the Group
+
+Legal or official company Applicable reference to legal registration (such as a business
+
+registration number
+
+registration number)
+
+Location/Address of multi-site organization
+
+Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available)
+
+Date of Central Functions audit
+
+Duration of Central Functions audit (in hours)
+
+Overview of Central Functions
+
+Also, refer to FSSC 22000 Additional Requirement 2.5.18
+
+Number of sites in the group
+
+Number of sites included in the group certification
+
+FSSC 22000 Version 6 | April 2023
+
+5 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+List of sites included, with addresses, date/s of audit and activity (scope)
+
+2. AUDIT DETAILS
+
+CB Name and office location (if different from main CB) Accredited by Audit language Audit objectives Audit criteria
+Audit Delivery
+Audit dates Audit Duration Stage 1
+
+CB and office name if local office
+Indicate the name of the Accreditation Body here or unaccredited in the case of a provisional license Language audit conducted in � if translator is used provide detail Reference ISO 22003-1:2022 � 9.3.2 Normative documents i.e., ISO 22000:2018, the specific PRP standard/s and the FSSC 22000 additional requirements (Version 6); Defined processes and documentation of the management system of the organization; Legal and regulatory requirements and customer requirements ICT Audit approach/Full On-site/Full remote audit Detail the extent of ICT use as applicable. Start and end date DD/MM/YYYY In hours, for example 8 hours (1 MD = 8 hours)
+
+2.1 AUDIT SCOPE
+
+Food chain (sub)-category
+
+Food chain (sub)-categories supporting the scope statement (multiple food chain categories may be applicable, see Scheme Part 1, Table 1)
+
+Scope statement
+
+Scope statement as per Annex 1 requirements. Where exclusions are applicable, the exclusion shall be included in the scope statement (also on the certificate as well as on the Assurance Platform)
+
+Exclusions (when appropriate and detailed)
+
+Describe the exclusions from the scope and provide adequate justification to support the scope exclusion in accordance with the requirements of Annex 1.
+
+Verification of the scope statement
+
+Confirm that the scope statement is an accurate reflection of the organization's activities
+
+2.2 AUDIT PLAN
+
+Deviation from audit plan:
+
+Describe deviations to the audit plan and their reasons where applicable
+
+FSSC 22000 Version 6 | April 2023
+
+6 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+2.3 AUDIT TEAM
+
+Name Auditor name
+
+Function
+
+Audit delivery method
+
+Includes lead auditor, auditor, translators, technical expert, witnessor, trainees, observers
+
+i.e., remote/onsite
+
+Date(s)
+
+Time (in hours)
+
+DD/MM/YYYY e.g., 8 hours
+
+Note: The table shall be completed per audit date and per audit team member in the case of an audit team and reflect the actual time spent auditing. Where this differs from the audit plan, the justification shall be recorded under deviation from audit plan � 2.2
+
+FSSC 22000 Version 6 | April 2023
+
+7 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+3. AUDIT RESULTS
+
+3.1 OVERVIEW OF CLIENTS' PREPAREDNESS FOR STAGE 2
+
+Management system documentation including the ability to meet statutory, regulatory and customer requirements Client's site-specific conditions (environment; equipment and processes) Organizational planning and control Status with regard to:
+a) Key performance b) Processes c) Objectives d) Operation of
+management system
+Operational planning and control including an overview of PRPs, HACCP system and level of controls established
+Internal Audit
+
+Overview of clients FSMS, level of documentation established and applicable legislative and customer requirements, including level of implementation. Detail relevant regulatory approvals/authorizations reviewed, relating to compliance with regulatory aspects.
+Summary description of site environment and any external risks.
+Short list of principle processes and key equipment used.
+ISO 22000 clauses 4, 5, 6, 7
+Status with regard to key performance, processes, objectives, and operation of management system.
+Detail if the FSMS is designed to achieve the organizations food safety policy, and that the FSMS has arrangements in place to communicate internally and externally.
+Confirm whether the organization has implemented externally developed elements of the FSMS. If so, whether it is suitable for the organization, developed in conformity to requirements of ISO 22000, relevant PRP standard, and FSSC additional requirements, and is kept up to date.
+ISO 22000 clause 8
+Provide an overview of the HACCP system, by including a summary of:
+� PRPs appropriate to the business, � Significant food safety hazards identified and their
+type, � Methodologies used to conduct the hazard assessment
+and the selection and categorization of control measures (OPRP and CCP), � Overview of OPRP(s) and CCP(s), including their action criteria/critical limits, monitoring systems, and corrective actions for breach of action criteria/critical limits, � Validation process implementation and results, � Verification activities implementation status, � General description of the level of implementation of the hazard control plan, and � Detail the sites controls over any outsourced processes.
+ISO 22000 clause 9
+Confirm if a full internal audit has been conducted with dates, general overview of procedure/system, outcomes, effectiveness etc.
+
+FSSC 22000 Version 6 | April 2023
+
+8 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Management Review
+
+ISO 22000 clause 9
+Confirm if a Management Review has been conducted, indicate date of review, and effectiveness including the input and output requirements.
+
+Review for Stage 2 Preparedness
+
+Allocation of resources
+
+Confirm if audit duration is appropriate or whether additional time is required.
+
+Planning needs
+
+Detail any particular planning required for Stage 2 (i.e., certain activities taking place during shifts or at different times or locations as applicable).
+
+3.2 AREAS OF CONCERN
+
+Number Requirement
+
+(#)
+
+reference
+
+(standard)
+
+1
+
+Example:
+
+ISO22000: 2018
+
+Clause
+Example 7.1.6
+
+Finding details
+Detail issue with relation to requirement and provide objective evidence.
+
+3.3 AUDIT CONCLUSION
+
+Stage 1 audit to be repeated Proceed to Stage 2 audit
+
+Disclaimer: Auditing is based on a sampling process of the available information at the time of the audit.
+
+FSSC 22000 Version 6 | April 2023
+
+9 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+STAGE 2 AUDIT REPORT
+
+1. ORGANIZATION DETAILS
+
+1.1 ORGANIZATION PROFILE
+
+Registered legal name COID Legal or official company registration number Location/Address
+Technical contact person
+Commercial/marketing contact person
+General description of audited organization
+Significant changes since the previous audit Seasonal activities
+
+Name of organization to be certified.
+FSSC Certified Organization Identification code
+Applicable reference to legal registration (such as a business registration number).
+Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available).
+Full name: Function/Job role: Email address:
+Full name: Function/Job role: Email address:
+Brief history of company for example, how long in business, purpose built/prior use, main markets (local/international). Overview of products produced/services provided, main processes, number of processing lines, organizational structure including relationship with Head Office or off-site activities where relevant; Level of complexity and risk regarding food safety. **No marketing jargon to be included**
+Identify any key changes to the organization since the previous audit.
+Describe what seasonal activities are conducted. (For example: � Processing of stone fruit September � October � Processing of root vegetables March � October) Indicate "None" if not applicable
+
+FSSC 22000 Version 6 | April 2023
+
+10 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+1.2 HEAD OFFICE (WHERE APPLICABLE)
+
+Registered legal name
+
+Name of Head office to be included in the certification.
+
+Location/Address of Head Full physical address (or other unique identification of site
+
+office
+
+location i.e., GPS, GLN etc. where a physical address is not
+
+available).
+
+Date of head office audit
+
+Duration of head office audit (in hours)
+
+Number of sites
+
+Number of sites included under the head office functions.
+
+Overview of Head office functions
+
+Describe which functions are conducted at Head Office that are common to the certified sites. For example: procurement, human resource management, etc.
+Indicate if the head office is a separate audit or whether conducted as part of the site audit(s). A separate head office report shall always be generated where the head office is connected to more than one site.
+
+1.3 OFF-SITE ACTIVITIES (WHERE APPLICABLE)
+
+Site name Location(s)/Address
+Date of off-site activity audit/s Duration of off-site activity audit/s (in hours) Activities at location/s
+
+Name of off-site facility/premises Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available).
+Describe the activities that are conducted at an off-site location, where they are under the same legal entity and same FSMS (refer FSSC 22000 Scheme requirements Part 3, section 5.2.2). For example:
+a) Off-site storage b) Off-site manufacturing c) Cross-docking
+
+1.4 MULTI-SITES (WHERE APPLICABLE)
+
+Registered legal name of the Group
+Legal or official company registration number
+
+Name of the group to be certified
+Applicable reference to legal registration (such as a business registration number)
+
+FSSC 22000 Version 6 | April 2023
+
+11 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Location/Address of multi-site organization
+
+Full physical address (or other unique identification of site location i.e., GPS, GLN etc. where a physical address is not available)
+
+Date of Central Functions audit
+
+Duration of Central Functions audit (in hours)
+
+Overview of Central Functions
+
+Also, refer to FSSC 22000 Additional Requirement 2.5.18
+
+Number of sites in the group
+
+Number of sites included in the group certification
+
+List of sites included, with addresses, date/s of audit and activity (scope)
+
+2. AUDIT DETAILS
+
+CB Name and office location (if different from main CB)
+
+CB and office name if local office
+
+Accredited by
+
+Indicate the name of the Accreditation Body here or unaccredited in the case of a provisional license
+
+Audit language
+
+Language audit conducted in � if translator is used provide detail
+
+Audit objectives
+
+Reference ISO17021-1 � 9.3.1.3
+
+Audit criteria
+
+Normative documents i.e., ISO 22000: 2018, the specific PRP standard/s and the FSSC 22000 additional requirements (Version 6);
+Defined processes and documentation of the management system of the organization;
+Legal and regulatory requirements and customer requirements
+
+Audit type
+
+Stage 2, surveillance, transition, recertification
+
+Announced/Unannounced
+
+Audit complexity
+
+Standalone FSSC 22000 audit Combined/Integrated with another standard. Provide details:
+
+Audit delivery
+
+ICT Audit approach/Full On-site/Full remote audit Detail the extent of ICT used during the audit as applicable
+
+Audit dates
+
+Audit start date Audit end date
+
+FSSC 22000 Version 6 | April 2023
+
+12 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Audit Duration
+
+In hours, for example 8 hours (1 MD = 8 hours)
+
+Deviation from audit duration
+
+Provide justification where audit duration differs from calculated duration
+
+Addendums included as part of the audit
+
+Indicate Addendum and audit duration if applicable
+
+Product recalls since the previous audit (food safety)
+
+Yes/No If yes, provide details.
+
+Product withdrawals since the previous audit (food safety)
+
+Yes/No If yes, provide details.
+
+2.1 AUDIT SCOPE
+
+Food chain (sub)-category
+
+Food chain (sub)-categories supporting the scope statement (multiple food chain categories may be applicable, see Scheme Part 1, Table 1
+
+Scope statement
+
+Scope statement as per Annex 1 requirements. Where exclusions are applicable, the exclusion shall be included in the scope statement (also on the certificate as well as on the Assurance Platform)
+
+Exclusions (when appropriate, including justification)
+
+Describe the exclusions from the scope and provide adequate justification to support the scope exclusion in accordance with the requirements of Annex 1.
+
+Verification of the scope statement
+
+Confirm that the scope statement is an accurate reflection of the organization's activities
+
+2.2 AUDIT PROGRAM AND PLAN
+
+Deviation from audit program
+
+Describe issues impacting the audit program and their reasons. If none, state "None"
+
+Deviation from audit plan Describe deviations to the audit plan and their reasons where applicable
+
+FSSC 22000 Version 6 | April 2023
+
+13 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+2.3 AUDIT TEAM
+
+Name
+
+Function
+
+Audit delivery
+
+Date(s)
+
+Time (in hours)
+
+Auditor name
+
+Includes lead auditor, auditor, translators, technical expert, witnessor, trainees, observers
+
+i.e., remote/onsite
+
+DD/MM/YYYY i.e., 8 hours
+
+Note: The table shall be completed per audit date and per audit team member in the case of an audit team and reflect the actual time spent auditing. Where this differs from the audit plan, the justification shall be recorded under deviation from audit plan section � 2.2
+
+2.4 PREVIOUS AUDIT
+
+2.4.1 AUDIT DETAILS PREVIOUS AUDIT
+
+Audit type
+Announced / Unannounced
+Audit date/s
+CB conducting previous audit if different to current CB
+Actions taken on NCs raised at previous audit
+
+Stage 1, Stage 2, Surveillance, Recertification, Transition
+DD/MM/YYYY In case of a transfer, indicate the name of the previous CB
+Provide comments on the organization's ability to determine the root causes of any previously identified nonconformities, as appropriate, and on the effectiveness of the actions it has taken to correct such situations and prevent their recurrence. It should also comment on the sufficiency of the organization's formal processes for corrective action.
+
+FSSC 22000 Version 6 | April 2023
+
+14 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+3. AUDIT RESULTS
+
+3.1 EXECUTIVE SUMMARY
+
+Audit summary
+
+High level summary � aimed at senior management of organization to understand how the FSMS is performing and what actions they need to take to address any shortfalls.
+Provide a statement on the conformity and the effectiveness of the management system together with a summary of the evidence relating to:
+a) The capability of the management system to meet applicable requirements, food safety objectives and expected outcomes; � b) Progress the organization has made against its objectives since the last audit (however, for an initial certification, this section may need to acknowledge that the organization had not yet developed sufficient history of such achievement for auditing purposes) � c) Significant food safety issues that senior management need to be aware of (major/critical findings; trends in recalls etc.) � d) The internal audit and management review process; � e) Detail outcome of previous audit results � f) For recertification audit � indicate how the FSMS has evolved over the three-year cycle
+The structure of the executive summary should follow the order of the main report.
+
+Confirmation that audit objectives have been fulfilled
+
+Positive statement: do not leave blank. If an objective was not met, indicate why
+
+Unresolved issues
+
+Record any unresolved issues (for example disagreement on findings, finding ratings etc.) resulting from the audit.
+
+3.2 SUMMARY OF AUDIT FINDINGS
+
+# Critical nonconformities # Major nonconformities # Minor nonconformities
+
+FSSC 22000 Version 6 | April 2023
+
+15 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+3.3 NONCONFORMITIES
+
+CRITICAL NONCONFORMITIES
+
+# Requirement
+
+NC statement
+
+Reference
+
+(incl objective evidence)
+
+(std., clause)
+
+1 For example: Provide a clear statement
+
+ISO 22000:2018
+
+of the deviation to the requirement.
+
+�7.1
+
+Provide detailed objective
+
+evidence.
+
+Indicate potential or actual impact on food safety.
+
+2
+
+Date of suspension: DD/MM/YYYY
+
+Root Cause Analysis (determine why it arose)
+
+Corrective Action Plan
+(action to prevent repeat; person responsible, due date
+for completion)
+
+Correction
+(to address the immediate issue)
+
+Acceptance of correction, CAP,
+and evidence
+(auditor and date)
+
+Completed by client
+
+Completed by client
+
+Completed by client
+
+Auditor name and date of acceptance of Root cause analysis, CAP, and correction
+
+Follow-up Audit Date of follow-up audit: DD/MM/YYYY Objective Evidence reviewed to close out the NC: Provide detail of evidence reviewed to address and close out the NC.
+
+Result of Follow-up audit:
+
+Lift suspension and reinstate certificate/withdraw certificate
+
+FSSC 22000 Version 6 | April 2023
+
+16 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+MAJOR NONCONFORMITIES
+
+# Requirement Reference (std., clause)
+
+NC statement (incl objective
+evidence)
+
+Root Cause Analysis
+(determine why it arose)
+
+Corrective Action Plan
+(action to prevent repeat; person
+responsible; due date for completion)
+
+Correction
+(to address the immediate issue) & corrective action
+taken
+(to prevent repeat)
+
+1 For example: ISO 22000:2018 �7.1
+
+Provide a clear statement of the deviation to the requirement.
+Provide detailed objective evidence.
+Indicate potential or actual impact on food safety.
+
+Completed by client
+
+Completed by client Completed by client
+
+2
+
+3
+
+4
+
+Onsite close out: Yes/No
+
+Follow-up onsite audit date (where applicable)
+
+DD/MM/YYYY
+
+Objective Evidence Reviewed (to close out the NC)
+Indicate evidence reviewed to close the NC i.e., document name and number
+
+Acceptance of correction, CAP, corrective action
+taken and evidence
+(auditor and date)
+Auditor name and date of acceptance of Root cause analysis, CAP, correction, corrective action taken including objective evidence
+
+FSSC 22000 Version 6 | April 2023
+
+17 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+MINOR NONCONFORMITIES
+
+# Requirement Reference (std., clause)
+
+NC statement (incl objective
+evidence)
+
+Root Cause Analysis
+(determine why it arose)
+
+Corrective Action Plan
+(action to prevent repeat; person
+responsible; due date for completion)
+
+Correction
+(to address the immediate issue)
+
+Objective Evidence Reviewed
+(relating to the correction)
+
+Acceptance of correction and
+CAP
+(auditor and date)
+
+1 For example: ISO 22000:2018 �7.1
+
+Provide a clear statement of the deviation to the requirement.
+Provide detailed objective evidence.
+
+Completed by client
+
+Completed by client
+
+Completed by client
+
+Indicate evidence reviewed for the correction i.e., document name and number
+
+Auditor name and date of acceptance of Root cause analysis, CAP, correction, and objective evidence
+
+2 3 4
+
+The auditor shall obtain written acknowledgement of the nonconformities from the organization at the end of the audit.
+
+FSSC 22000 Version 6 | April 2023
+
+18 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+3.4 AUDIT RECOMMENDATION
+
+Initial certification granted Certification maintained Re-certification granted
+
+Yes
+
+No
+
+Yes
+
+No
+
+Yes
+
+No
+
+Not applicable Not applicable Not applicable
+
+3.5 AUDIT DURATION
+
+On-site audit time calculation � refer Table B.1 in ISO 22003-1:2022 and V6 Part 3, clause 4.3, 5.2 and 5.3
+
+Number of HACCP studies (linked to product groups)
+
+Indicate the number of HACCP studies � linked to the product group
+
+Number of employees (FTE)
+(Used for audit duration calculation to determine TFTE)
+
+FTE = total number of employees including seasonal workers + non-production staff having an impact on food safety; however, where shifts with similar activities apply, then FTE = number of employees on main shift including seasonal workers and non-production staff having an impact on food safety
+
+Number of shifts
+
+Description of activities per shift if Where activities are different across shifts, provide short
+
+different from main shift
+
+overview of activities per shift
+
+Audit preparation time (in hours) E.g., 2 hours
+
+Audit reporting time (in hours)
+
+E.g., 8 hours
+
+In addition to completing the above mandatory fields, the audit duration calculation shall be uploaded in the FSSC Assurance Platform as a separate document for each audit. The audit duration calculator that is uploaded to the Assurance Platform shall include the formula, and the calculation with all the steps, for the initial certification audit, surveillance audit and the recertification audit.
+Disclaimer: Auditing is based on a sampling process of the available information at the time of the audit.
+
+FSSC 22000 Version 6 | April 2023
+
+19 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+4. CHECKLISTS
+Note: Although the checklists are not recorded to sub-sub clause level in all instances, it is required that where nonconformances are identified, these shall be raised against the relevant sub-sub clause, where applicable and indicated as such in the nonconformity summary section of the report and the CB nonconformity record supplied to the organization.
+4.1 ISO 22000:2018
+
+ISO 22000:2018
+
+Conform Grade
+
+If No � detail NC NC#
+
+Clause 4
+
+Requirement
+
+Yes No Minor/Major/
+
+Critical
+
+Context of the organization
+
+4.1
+
+Understanding the
+
+organization and its context
+
+4.2
+
+Understanding the needs
+
+and expectations of
+
+interested parties
+
+4.3
+
+Determining the scope of the
+
+food safety management
+
+system
+
+4.4
+
+Food safety management
+
+system
+
+Summary:
+Provide an overview of the context of the organization including examples of internal and external issues identified (positive and negative factors) that impact the ability of the FSMS in achieving its intended results and how this aligns with continual improvement of the FSMS. This section can be cross-referenced with ISO 22000:2018 clause 6.1.2. Detail what mechanisms are in place to stay up to date and meet relevant statutory, regulatory and customer requirements relating to food safety. Summarize the status of any governmental or regulatory inspection findings where relevant and include any significant changes to legislation which impacts the FSMS and whether the site has effectively adopted the changes.
+
+ISO 22000:2018
+
+Conform Grade
+
+If No � detail NC NC#
+
+Clause Requirement
+
+5
+
+Leadership
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+5.1
+
+Leadership and commitment
+
+5.2
+
+Policy
+
+5.2.1
+
+Establishing the food safety policy
+
+5.2.2
+
+Communicating the food safety policy
+
+FSSC 22000 Version 6 | April 2023
+
+20 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+5.3
+
+Organizational roles,
+
+responsibilities, and
+
+authorities
+
+5.3.1
+
+Top management shall ensure that responsibilities and authorities for relevant roles are assigned, communicated, and understood within the organization
+
+5.3.2
+
+The food safety team leader shall be responsible for: a) d)
+
+5.3.3
+
+All persons shall have responsibility to report problem(s) with regards to the FSMS to identified person(s)
+
+Summary:
+Provide an overview including objective evidence assessed:
+a) Leadership and commitment of top management with respect to the FSMS, including evidence that the food safety policy and objectives have been established by top management, communicated and are compatible with the strategic direction of the organization and have been integrated into the FSMS;
+b) Confirmation that organization has sufficient resources available to maintain the FSMS and are being supported by top management; responsibilities and authority for relevant roles have been established and communicated including responsibility for the FSMS, the food safety team and the FS team leader (incl. job description for food safety team leader meets requirements)
+c) Detail reporting mechanisms of the team to top management and how all staff can report food safety issues. How does the organization make the policy available to each individual worker � linked to food safety culture;
+d) How continual improvement is promoted within the organization
+The summary shall include confirmation that an interview was held with top management, including who was interviewed.
+
+ISO 22000:2018 Clause Requirement
+
+6 6.1
+6.1.1
+
+Planning
+Actions to address risks and opportunities
+When planning for the FSMS, the organization shall consider the issues referred to in 4.1 and the requirements in 4.2 and 4.3
+
+Conform Grade
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+If No � detail NC NC #
+
+FSSC 22000 Version 6 | April 2023
+
+21 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+and determine the risks and opportunities that need to be addressed to: a) - d)
+
+6.1.2
+
+The organization shall plan: a) - b)
+
+6.1.3
+
+The actions taken by the organization to address risks and opportunities shall be proportionate to: a) - c)
+
+6.2
+
+Objectives of the food safety
+
+management system and
+
+planning to achieve them
+
+6.2.1
+
+The organization shall establish objectives for the FSMS at relevant functions and levels. The objectives of the FSMS shall: a) - f)
+
+6.2.2
+
+When planning how to achieve its objectives for the FSMS, the organization shall determine: a) - e)
+
+6.3
+
+Planning of changes
+
+Summary:
+Provide an overview of how risks and opportunities are identified and addressed (including actions) relating to the performance and effectiveness of the FSMS and how the effectiveness of the actions will be evaluated.
+That objectives have been established and are SMART; describing the monitoring and review process and communication process (internal and external) with examples to illustrate.
+How changes within the FSMS are dealt with, including how the organization plans for changes. Whether the organization applied the process approach when implementing changes, taking into account the PDCA principles. Provide examples of significant changes that have taken place since the previous audit, how they were managed and the effect on the operational FSMS, if applicable.
+
+ISO 22000:2018
+
+Conform Grade
+
+If No � detail NC NC #
+
+Clause Requirement
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+7
+
+Support
+
+7.1
+
+Resources
+
+7.1.1
+
+General
+
+7.1.2
+
+People
+
+7.1.3
+
+Infrastructure
+
+7.1.4
+
+Work environment
+
+FSSC 22000 Version 6 | April 2023
+
+22 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+7.1.5
+
+Externally developed elements of the FSMS
+
+This clause may be indicated as N/A where there are no externally developed elements of the FSMS
+
+7.1.6
+
+Control of externally provided processes, products, or services
+
+7.2
+
+Competence
+
+7.3
+
+Awareness
+
+7.4
+
+Communication
+
+7.4.1
+
+General
+
+7.4.2
+
+External communication
+
+7.4.3
+
+Internal communication
+
+7.5
+
+Documented information
+
+7.5.1
+
+General
+
+7.5.2
+
+Creating and updating
+
+7.5.3
+
+Control of documented information
+
+7.5.3.1
+
+Documented information required by the FSMS and by this document shall be controlled to ensure: a) - b)
+
+7.5.3.2
+
+For the control of documented information, the organization shall address the following activities as applicable: a) - d)
+
+Summary:
+Provide an overview including objective evidence assessed:
+Resources; Competence & Awareness
+Detail whether the organization has assessed their resource needs and has sufficient resources in place to support the FSMS. Provide an overview including confirmation that defined and documented competence requirements are available for all personnel conducting work under the organization's control that affects its food safety performance and effectiveness of the FSMS, incl. records of training. For external experts, details of requirements, competency, and scope of work (may be identified in contract). Provide an overview of the food safety team (multidisciplinary, disciplines/areas covered). Detailed evidence of competency for the food safety team and personnel that are responsible for the operation of the hazard control plan.
+Control of externally provided processes, products or services
+Detail which externally provided elements, processes (incl. outsourced processes), products or services are present. How is the impact on food safety assessed, criteria for control (selection, evaluation, monitoring and re-evaluation) determined, communication managed, and effectiveness verified?
+
+FSSC 22000 Version 6 | April 2023
+
+23 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Internal and External Communication Detail the mechanisms for internal and external communication and how the effectiveness of communication is measured and reinforced. Documented information Provide an overview of the document control system, including creating, updating, storage and retention of documents (internal and external) and records; back-up systems for electronic systems and access controls.
+
+ISO 22000:2018
+
+Conform Grade
+
+Clause Requirement
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+8
+
+Operation
+
+8.1
+
+Operational planning and
+
+control
+
+8.2
+
+Prerequisite programs (PRPs)
+
+8.2.1
+
+The organization shall establish, implement, maintain and update PRPs to facilitate the prevention and/or reduction of contaminants (incl food safety hazards) in the products, product processing and work environment
+
+8.2.2
+
+The PRPs shall be: a) - d)
+
+8.2.3
+
+When selecting and/or establishing PRPs, the organization shall ensure that applicable statutory, regulatory, and mutually agreed customer requirements are identified. The organization should consider: a) - b)
+
+8.2.4
+
+When establishing PRPs the organization shall consider: a) - l)
+
+8.3
+
+Traceability system
+
+8.4
+
+Emergency preparedness
+
+and response
+
+8.4.1
+
+General
+
+8.4.2
+
+Handling of emergencies and incidents
+
+If No � detail NC NC #
+
+FSSC 22000 Version 6 | April 2023
+
+24 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+8.5 8.5.1 8.5.1.1 8.5.1.2
+8.5.1.3 8.5.1.4 8.5.1.5 8.5.1.5.1 8.5.1.5.2 8.5.1.5.3 8.5.2 8.5.2.1 8.5.2.2
+8.5.2.2.1
+8.5.2.2.2
+
+Hazard control
+Preliminary steps to enable hazard analysis
+General
+Characteristics of raw materials, ingredients, and product contact materials
+Characteristics of end products
+Intended use
+Flow diagrams and description of processes
+Preparation of the flow diagrams
+On-site confirmation of the flow diagrams
+Description of processes and process environment
+Hazard analysis
+General
+Hazard identification and determination of acceptable levels
+The organization shall identify and document all food safety hazards that are reasonably expected to occur in relation to the type of product, type of process and process environment. The identification shall be based on: a) -e)
+The organization shall identify step(s) (e.g., receiving raw materials, processing, distribution and delivery) at which each food safety hazard can be present, be introduced, increase of persist. When identifying hazards, the organization shall consider: a) - c)
+
+FSSC 22000 Version 6 | April 2023
+
+25 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+8.5.2.2.3
+8.5.2.3 8.5.2.4 8.5.2.4.1
+8.5.2.4.2 8.5.3 8.5.4
+
+The organization shall determine the acceptable level in the end product of each food safety hazard identified, whenever possible. When determining acceptable levels, the organization shall: a) - c)
+Hazard assessment
+Selection and categorization of control measure(s)
+Based on the hazard assessment, the organization shall select an appropriate control measure or combination of control measures that will be capable of preventing or reducing the identified significant food safety hazard to defined acceptable levels
+In addition, for each control measure, the systematic approach shall include an assessment of the feasibility of: a) - c)
+Validation of control measure(s) and combination of control measures
+Hazard control plan (HACCP/OPRP plan)
+
+8.5.4.1 8.5.4.2 8.5.4.3 8.5.4.4 8.5.4.5 8.6
+
+General
+Determination of critical limits and action criteria
+Monitoring systems at CCPs and for OPRPs
+Actions when critical limits or action criteria are not met
+Implementation of the hazard control plan
+Updating the information specifying the PRPs and the hazard control plan
+
+FSSC 22000 Version 6 | April 2023
+
+26 of 47
+
+This clause may be indicated as N/A where there are no CCP(s) or OPRP(s)
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+8.7 8.8 8.8.1 8.8.2 8.9 8.9.1 8.9.2 8.9.2.1
+8.9.2.2
+8.9.2.3
+8.9.2.4
+8.9.3 8.9.4 8.9.4.1 8.9.4.2 8.9.4.3 8.9.5
+
+Control of monitoring and measuring
+Verification related to PRPs and the hazard control plan
+Verification
+Analysis of results of verification activities
+Control of product and process nonconformities
+General
+Corrections
+The organization shall ensure that when critical limits at CCPs and/or action criteria for OPRPs are not met, the products affected are identified and controlled with regard to their use and release
+When critical limits at CCPs are not met, affected products shall be identified and handled as potentially unsafe products (see 8.9.4)
+Where action criteria for an OPRP are not met, the following shall be carried out: a) - c)
+Documented information shall be retained to describe corrections made on nonconforming products and processes, including a) - c)
+Corrective actions
+Handling of potentially unsafe products
+General
+Evaluation for release
+Disposition of nonconforming products
+Withdrawal/recall
+
+FSSC 22000 Version 6 | April 2023
+
+27 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Summary:
+Provide an overview of Operational planning and control including how actions determined in 6.1 have been implemented and how the organization manages the consequences of any unintended changes. Detail the controls in place for any subcontracted or outsourced processes.
+Prerequisite Programs (PRPs): Do not list all the individual PRP documents here. Reference in this summary section that the details relating to PRPs are reflected in the relevant PRP checklist (ISO/TS 22002x as applicable). Comment on the effectiveness of the implementation and verification of PRP's across the site in a general sense.
+Traceability System: Define how the organization ensures traceability (one up- one down principle) and that it meets any relevant legislative and customer requirements. Reference the frequency of traceability testing (incl. mass balance) and when the last test was conducted and which product. Detail the traceability exercise conducted by the auditor during this audit and report results (detail product tested, whether speed of completion was in accordance with the organizations procedures, and the outcome of test/mass balance). Where the organization undertakes rework, define how traceability is maintained.
+Emergency preparedness and response: Detail the document that addresses the management of potential emergency situations. Detail if there have been any emergency situations since the last audit, how the organization handled these, including actions taken and whether requirements were met. Document the frequency (e.g., annually), date, nature and outcome of the periodic test and any changes to the procedures following the occurrence of any incident, emergency situations or tests. Detail whether the procedure addresses the management of interruptions of essential services including for example the disruption of water, electricity, or refrigeration supply.
+Hazard control: Brief overview of preliminary information collected, including product descriptions, intended use and vulnerable groups. Reference the flowcharts, indicate when the flowcharts were last updated and if they have been revised following changes to the process. Reference flowchart/s verified during audit by the auditor and whether the requirement has been met.
+Confirmation that the relevant types of hazards (chemical, physical, microbiological, allergens) have been considered in the hazard analysis. Describe the methodology used to assess significant hazards, control measures and determining OPRPs and CCPs. Confirm that all CCPs and OPRPs have been validated and the effectiveness there-of. Complete the below table and add additional rows if needed.
+
+Auditor verification of CCP(s) and OPRP(s)*
+
+CCP#/ OPRP#
+
+Description of process Critical limits or action Monitoring procedure, correction,
+
+step:
+
+criteria
+
+and corrective action
+
+E.g., CCP 1
+
+E.g., Heat treatment
+
+E.g., 121�C for 3 E.g., Monitoring: XX
+
+minutes
+
+Correction: XX
+
+Corrective action: XX
+
+*All CCPs and OPRPs are required to be verified by the auditor during the audit. Where a line is not operational at the time of the audit, and physical verification cannot be undertaken, the records shall still be verified.
+Detail the CCP(s) and OPRP(s) records checked as part of the audit.
+
+FSSC 22000 Version 6 | April 2023
+
+28 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Where packaging is used to impart or provide a functional effect on food (e.g., shelf-life extension) the organization has specified requirements in place. **Reference may be made to the FSSC additional requirement 2.5.11 to avoid duplication.
+HACCP review � detail process and when last update was made and how this ties back to the management review.
+Control of monitoring and measuring: Detail the processes in place for control of monitoring and measuring equipment.
+Verification related to PRPs and the hazard control plan: Detail verification activities undertaken, and detail documented evidence sampled including testing results of end product samples.
+Control of product and process nonconformities: where the critical limits or action criteria have not been met since the last audit, detail if the procedure was followed and if the effectiveness of corrective actions was verified. Document examples there-of. Detail how the organization prevents potentially unsafe products from entering the food chain and positive release procedure. Detail examples of nonconforming products that have occurred since the last audit and the actions taken based on records reviewed. Establish whether an effective recall system has been implemented and shall include the details of the last mock recall conducted and the effectiveness thereof. Document any actual withdrawals/recalls since last audit, the outcome and how this was reviewed, and any amendments made as a result of the recall/withdrawal. Further details on recalls in ISO/TS 22002-1: clause 15.
+
+ISO 22000:2018
+
+Conform Grade
+
+If No � detail NC NC #
+
+Clause Requirement
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+9
+
+Performance evaluation
+
+9.1
+
+Monitoring, measuring,
+
+analysis and evaluation
+
+9.1.1
+
+General
+
+9.1.2
+
+Analysis and evaluation
+
+9.2
+
+Internal audit
+
+9.2.1
+
+The organization shall conduct internal audits at planned intervals to provide information on whether the FSMS conforms to: a) - b)
+
+9.2.2
+
+The organization shall a) - g)
+
+9.3
+
+Management review
+
+9.3.1
+
+General
+
+9.3.2
+
+Management review input
+
+9.3.3
+
+Management review output
+
+Summary:
+Monitoring, measuring, analysis and evaluation: Detail what is monitored/measured and whether the requirements of 9.1 are met in support of the evaluation and performance of the FSMS. Provide an overview of the analysis of information from the monitoring and measuring activities, including the results and trends of verification activities related to PRPs, the Hazard control plan and internal and external
+
+FSSC 22000 Version 6 | April 2023
+
+29 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+audits. Confirmation that analysis achieves 9.1.2 a-e and is used as an input for management review and updating the FSMS.
+Internal audit: Provide an overview of the internal audit program, including frequency, competency and impartiality of internal auditors and how corrective actions are dealt with. The audit program shall confirm that the frequency of internal audits is based on risk, in accordance with 9.2.1 (a). Indicate whether the audit program includes all aspects of FSSC 22000 (ISO 22000, PRP's, FSSC 22000 part 2 and BoS decisions as applicable) as part of the audit criteria and is sufficiently reflected in the internal audit reports. Detail records of internal audit reports sampled. Indicate status of corrective actions for NCs identified during internal audits (link to improvement), follow-up actions/verification and escalation mechanisms should NCs not be addressed, or audit program falls behind.
+Management review: Provide an overview of the management review process and its effectiveness including frequency of meetings (minimum once per annum) and participation of senior management (goes to leadership). Reference any significant issues raised at the management review (internal/external risks/opportunities, and significant changes planned/occurred) and whether the organization is effectively handling these issues. Provide an overview of the output of the management review and any changes to the FSMS, Food Safety Policy, and/or objectives, and any resource requirements. Indicate whether all aspects (inputs, 9.3.2 and outputs, 9.3.3) are addressed in the documented information retained as evidence of the results of the management reviews e.g., agenda and meeting minutes, and detail the date of the last Management Review. Confirm that suitable decisions and actions have been taken to ensure continual improvement and maintenance of the FSMS in line with the Scheme, as a result of the output of the management review.
+
+ISO 22000:2018
+
+Conform Grade
+
+If No � detail NC NC #
+
+Clause Requirement
+
+Yes
+
+No
+
+Minor/Major/ Critical
+
+10
+
+Improvement
+
+10.1
+
+Nonconformity and corrective action
+
+10.1.1
+
+When a nonconformity occurs, the organization shall: a) - e)
+
+10.1.2
+
+The organization shall retain documented information as evidence of: a) - b)
+
+10.2
+
+Continual improvement
+
+10.3
+
+Update of the food management system
+
+Summary:
+Provide an overview of the nonconformity and corrective action system, including customer complaints. Detail how corrective actions are handled incl. root cause, whether similar NCs exist, implementing correction, and corrective action, follow-up/verification (review effectiveness of CA). Detail the NCs/CAs sampled during the audit.
+Describe mechanisms or actions taken by management to ensure continual improvement relating to the suitability, adequacy and effectiveness of the FSMS.
+Updating the FSMS � confirm that FSMS is continually updated and how this is monitored and achieved taking into consideration the requirements in 10.3.
+
+FSSC 22000 Version 6 | April 2023
+
+30 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+4.2 ISO/TS 22002-1:2009
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+4
+
+Construction and layout of buildings
+
+4.1
+
+General requirements
+
+4.2
+
+Environment
+
+4.3
+
+Locations of establishments
+
+NC #
+
+Summary:
+General Requirements: Describe types of buildings (i.e., production, offices, storage, workshops, warehousing etc.), their state of repair and any updates or changes.
+Environment: Describe what activities take place in adjacent areas to the site (i.e., industrial units, open paddocks etc.), and whether risks have been considered. Detail the last review date and outcome of the effectiveness of measures to protect against potential contamination.
+Location of establishment: Describe site boundaries (fencing, adjacent buildings etc.). Access details can be referred to clause 18.2 of the Food PRP to avoid duplication. Comment on general maintenance of site (vegetation, roads, yards, parking areas, and standing water).
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+5
+
+Layout of premises and workspace
+
+5.1
+
+General requirements
+
+5.2
+
+Internal design, layout, and
+
+traffic patterns
+
+5.3
+
+Internal structures and
+
+fittings
+
+5.4
+
+Location of equipment
+
+5.5
+
+Laboratory facilities
+
+5.6
+
+Temporary or mobile
+
+premises and vending
+
+machines
+
+5.7
+
+Storage of food, packaging
+
+materials, ingredients, and
+
+non-food chemicals
+
+Summary:
+Comment on adequacy of design, layout, equipment, and traffic patterns with respect to impact on food safety, including facilitating cleaning and maintenance activities. Zoning (physical separation of raw from processed areas), materials and human flow patterns mapped.
+
+FSSC 22000 Version 6 | April 2023
+
+31 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Comment on the maintenance of floors, walls, ceilings, overhead structures, drains, and other internal structures and fittings. Indicate if there is standing water (i.e., drains not sufficient) and risk to product from potential broken windows (glass, dust, insects etc.) and roof vents/fans etc. Comment on whether doors were closed or screened when not used. Where Laboratory facilities are present on the site, document location and if micro/chemical testing conducted and risks controlled. Detail how in-line/on-line testing facilities are controlled. Where there are any temporary or mobile structures, vending machines used, detail how the hazards are assessed and controlled. Provide an overview of the storage of raw materials (incl. bulk), ingredients, intermediate products, packaging materials, finished products, and non-food chemicals, and how the organization meets the requirements. Detail the temperature controls in place for chilled or frozen storage areas.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+6
+
+Utilities � air, water, energy
+
+6.1
+
+General requirements
+
+6.2
+
+Water supply
+
+6.3
+
+Boiler chemicals
+
+6.4
+
+Air quality and ventilation
+
+6.5
+
+Compressed air and other
+
+gases
+
+6.6
+
+Lighting
+
+Summary:
+Water supply: Detail the water type (potable, non-potable), their use (e.g., ingredient, ice, steam, cleaning, hand washing, etc.), their source (i.e., municipal, bore water, in-house treated water plants) and controls in place. Indicate if quality (incl. chemical) and microbiological specifications for water (various uses) are defined and if water meets specifications (type of testing, frequency, results) and any legislative requirements that might apply. Detail examples of records looked at.
+Where Boiler chemicals are used, provide information on approval for use, storage, security measures and any areas of concern where steam comes in direct contact with product.
+Air quality and ventilation: Detail if air is used as an ingredient or is in direct product contact, how the organization ensures such air meets requirements (testing, specifications, quality monitoring program etc. document records reviewed). Detail records of maintenance of air systems including air filter replacement program. Indicate whether adequate ventilation was in place.
+Provide an overview of compressed air and other gases if used (type, purpose etc.) If used, and is in contact with product, equipment etc. detail approved sources, use, and controls in place including if filtered.
+Comment if there is sufficient lighting in all areas (production, storage etc.) to facilitate hygienic operations; if light fixtures are suitably protected, and where UV lights are in use.
+
+FSSC 22000 Version 6 | April 2023
+
+32 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+7
+
+Waste disposal
+
+7.1
+
+General requirements
+
+7.2
+
+Containers for waste and
+
+inedible or hazardous
+
+substances
+
+7.3
+
+Waste management and
+
+removal
+
+7.4
+
+Drains and drainage
+
+Summary:
+Provide an overview of the waste management system in place and if any hazardous substances have to be removed, how this is managed and controlled including destruction/removal.
+Where trademarked materials are discarded or destroyed how the risk of re-use is being managed. Verify contract with waste removal company, and records of destruction.
+Drains � comment on their design, location, direction of flow, capacity and appropriate for the size of the premises.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+8
+
+Equipment suitability, cleaning, and maintenance
+
+8.1
+
+General requirements
+
+8.2
+
+Hygienic design
+
+8.3
+
+Product contact surfaces
+
+8.4
+
+Temperature control and
+
+monitoring equipment
+
+8.5
+
+Cleaning plant, utensils,
+
+and equipment
+
+8.6
+
+Preventive and corrective
+
+maintenance
+
+Summary:
+Provide a general overview of the suitability of equipment, product contact surfaces and hygienic design requirements including the general condition of equipment. Where temperature control and monitoring equipment are in use, comment on thermal process equipment regarding type, monitoring and temperature control measures, also in terms of meeting product specifications (temp gradient and holding conditions). Detail the plant, utensil and equipment cleaning frequencies (refer to procedure/cleaning schedule, suitability of cleaning equipment etc.). Provide an overview of the preventive and corrective maintenance program, including how corrective maintenance is carried out and temporary fixes are addressed. Indicate if lubricants are used and if they are food grade. Detail
+
+FSSC 22000 Version 6 | April 2023
+
+33 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+whether the site had post-maintenance cleaning procedures in place. Detail documented evidence of maintenance sampled, including training of maintenance personnel.
+
+ISO/TS 22002-1:2009
+
+Conform
+
+Grade
+
+Clause Requirement
+
+Yes No
+
+9
+
+Management of purchased materials
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+9.1
+
+General requirements
+
+9.2
+
+Selection and management
+
+of suppliers
+
+9.3
+
+Incoming material
+
+requirements (raw/
+
+ingredients/ packaging)
+
+Summary:
+Provide an overview of the supplier approval program including supplier risk assessment, and how this is controlled, monitored, and reviewed to ensure suppliers meet the specified requirements.
+Has requirements for incoming materials been established including delivery vehicle inspection and incoming materials inspection requirements and frequency and how to deal with non-compliances (including dealing with and identification of products on hold or rejected, and prevention of unintended use). Where bulk receiving lines are present, these shall be identified, capped, and locked and approval/discharge systems in place.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+10
+
+Measures for prevention of cross contamination
+
+10.1 General requirements
+
+10.2
+
+Microbiological cross contamination
+
+10.3 Allergen management
+
+10.4 Physical contamination
+
+Summary:
+Microbiological cross-contamination: Describe separation measures taken, zoning, access controls and traffic patterns as applicable.
+Allergen management: Detail if there are allergens in the product(s) and which ones are present, if there are none indicate such. Reference specific training including allergen awareness training. Where allergen declarations are made (on label or accompanying documentation), are these verified and validated and meeting any specific legislative/customer requirements. Detail cleaning, line change-over practices/product sequencing and how rework is addressed. **Reference may be made to the FSSC additional requirements for allergen management to avoid duplication.
+
+FSSC 22000 Version 6 | April 2023
+
+34 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Physical contamination: Detail brittle (glass/hard plastic) material inspections and breakage procedures in place. Detail any breakage records sampled. **Reference may be made to the FSSC additional requirements for foreign matter management to avoid duplication.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+11
+
+Cleaning and sanitizing
+
+11.1 General requirements
+
+11.2
+
+Cleaning and sanitizing agents and tools
+
+11.3
+
+Cleaning and sanitizing programs
+
+11.4
+
+Cleaning in place (CIP) systems
+
+11.5
+
+Monitoring sanitation effectiveness
+
+Summary:
+Provide an overview of the cleaning and sanitation procedure/program, including whether it is suitable/appropriate to the relevant processes (incl. cleaning agents and tools), what validation of methods has been conducted and what monitoring is in place to check the effectiveness of cleaning.
+Where CIP systems are used, provide detail on the CIP program including parameters and monitoring measures and requirements. Confirm lines are separated from active product lines.
+Detail records reviewed to demonstrate parameters are met.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+12
+
+Pest Control
+
+12.1 General requirements
+
+12.2 Pest control programs
+
+12.3 Preventing access
+
+12.4 Harborage and infestations
+
+12.5 Monitoring and detection
+
+12.6 Eradication
+
+Summary:
+Describe pest control program and how it covers the requirements of this section. Reference the pest control contract when external companies are being used, licensing of operators, approved chemicals used, monitoring frequency and how follow up actions are monitored and implemented � also referencing
+
+FSSC 22000 Version 6 | April 2023
+
+35 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+where eradication has been required and related action taken. Detail any trends identified in pest activity and how this was addressed.
+
+ISO/TS 22002-1:2009
+
+Conform
+
+Grade
+
+Clause Requirement
+
+Yes No N/A
+
+13
+
+Personnel hygiene and employee facilities
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+13.1 General requirements
+
+13.2
+
+Personnel hygiene facilities and toilets
+
+13.3
+
+Staff canteens and designated eating areas
+
+13.4
+
+Workwear and protective clothing
+
+13.5 Health status
+
+13.6 Illness and injuries
+
+13.7 Personal cleanliness
+
+13.8 Personal behavior
+
+Summary:
+Detail the procedure on personal hygiene for employees, visitors, and contractors and how this is implemented and managed. Comment on level of implementation and personal behavior of employees, also linked to internal communication of the procedures/policies.
+Comment on whether the number and location of hygiene facilities (incl. hand washing, drying, and sanitizing facilities, etc.) and toilets are adequate, and whether they meet requirements. Detail if there are designated eating areas, located away from production/packing/storage areas. Where there are catering facilities on site, detail how hygienic conditions are maintained, and controls in place for storage, cooking and holding incl. temperature.
+Workwear and protective clothing - detail type of workwear and protective clothing used and how it is used/maintained/laundered (incl. frequency), specific requirements for different zones i.e., high-risk areas where relevant, and glove management as appropriate.
+Health status � describe the company system used (e.g., medicals) and how illnesses and injuries (incl. wounds/burns/cuts) are reported and managed.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+14 14.1 14.2
+14.3
+
+Rework General requirements Storage, identification, and traceability Rework usage
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+FSSC 22000 Version 6 | April 2023
+
+36 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Summary:
+Where an organization has rework, detail how these requirements are met in terms of storage, identification, and traceability. Detail how rework is recorded when used and records reviewed. Indicate if specifications for rework use are followed.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC #
+
+15
+
+Product Recall Procedures
+
+15.1 General requirements
+
+15.2 Product recall requirements
+
+Summary:
+Describe the process/procedure the organization has to manage a recall situation. Indicate whether the site has a list of key contacts in place. Where an actual recall occurred, provide details, actions taken, whether public warnings were considered and indicate whether similar products or products produced under the same conditions were evaluated. ** Reference may be made to clause 8.9.5 of ISO 22000:2018 to avoid duplication.
+
+ISO/TS 22002-1:2009 Clause Requirement
+
+Conform
+
+Grade
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+16
+
+Warehousing
+
+16.1 General requirements
+
+16.2 Warehousing requirements
+
+16.3
+
+Vehicles, conveyances, and containers
+
+Summary:
+Provide an overview of warehousing activities on the site and how requirements in the standard are met, including FIFO, FEFO, temperature & humidity requirements and any specific product or storage requirements. Where controlled atmosphere is used, how it is monitored (testing, frequency, records etc.)
+Detail areas for waste materials, chemicals and nonconforming materials if not covered in cl. 5.7 and 7.3 of ISO/TS 22002-1.
+Vehicles, conveyances and containers: summary and extent to which these are used, how it is managed and maintained (cleanliness, state of repair, etc.), including control over contracted vehicles, and specific temperature and/or humidity requirements.
+
+ISO/TS 22002-1:2009
+
+Conform
+
+Grade
+
+Clause Requirement
+
+Yes
+
+No
+
+N/A
+
+Minor/Major/ Critical
+
+17
+
+Product information/consumer awareness
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+FSSC 22000 Version 6 | April 2023
+
+37 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+17.1
+
+Product information and consumer awareness
+
+Summary:
+Document the sample(s) reviewed (labels, packaging, websites, and advertisements) and report on whether information was presented to consumers in such a way as to enable them to make informed choices.
+
+ISO/TS 22002-1:2009
+
+Conform
+
+Grade
+
+Clause Requirement
+
+Yes No N/A
+
+18
+
+Food defense, biovigilance and bioterrorism
+
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+18.1 General requirements
+
+18.2 Access controls
+
+Summary: Food defense: can refer to Additional FSSC 22000 requirements to reduce duplication in report. Access controls: Provide an overview of access control measures, site security and any reported breaches.
+
+4.3 FSSC 22000 ADDITIONAL REQUIREMENTS
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.1
+
+Management of services and purchased materials (All Food Chain Categories)
+
+Summary:
+Detail which testing is being conducted by external or internal laboratories, which laboratories are used for verification/validation of food safety elements, and how they are competent and have the capability to conduct the analysis (i.e., ISO17025). Where a laboratory does not have ISO 17025, document how they meet the competency/capability requirements e.g., proficiency testing programs, regulatory approved programs.
+Describe the process followed in the case of procurement under emergency situations to ensure that products still conform to specified requirements and the supplier has been evaluated, including reference to the documented procedure. Detail if any instance of emergency use of non-approved suppliers has occurred since the previous audit (date, supplier, material) and confirm if procedure was followed effectively.
+
+FSSC 22000 Version 6 | April 2023
+
+38 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Where animals, fish and seafood are procured that are subject to control of prohibited substances (e.g., pharmaceuticals, veterinary medicines, heavy metals, and pesticides), describe how the organization has included this in their supplier approval process and the controls established; Provide an overview of the review process for product specifications (raw material and finished product) to ensure continued compliance with food safety, quality, legal and customer requirements with examples. Food chain category I only: provide an overview of criteria established for the use of recycled packaging material as a raw material input into the production of finished packaging material, meeting legal and customer requirements.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.2
+
+Product Labelling and Printed Materials (All Food Chain Categories)
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+Summary:
+Detail site relevant legislation for final product labelling in the country of intended sale. Provide an overview of the system followed to ensure correct and accurate labelling, meeting both legislative and customer requirements and requirements around allergen labelling where applicable. Document which product labels were reviewed and whether the samples meet requirements. In the case of bulk or unlabeled products � describe the labelling process or method of communication on product information to ensure the safe use of the food by the customer or consumer.
+Where claims are made on product label or packaging, detail evidence of validations and verifications in place to ensure product integrity is maintained incl. traceability and mass balance. Also, reference evidence sampled such as:
+� A valid certificate supporting e.g., Halal, Kosher, or Organic claims, etc.; � Laboratory testing results (meeting the requirements of 2.5.1 and which conform to legal
+requirements) for nutritional content claims, such as high in omega 3 fatty acids, etc.
+Food chain category I only: provide overview of artwork management and print control procedures in place to ensure printed materials meet customer and legal requirements.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.3
+
+Food Defense (All Food Chain Categories)
+
+2.5.3.1 Threat Assessment
+
+2.5.3.2 Plan
+
+Summary:
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+FSSC 22000 Version 6 | April 2023
+
+39 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Reference procedure that addresses this requirement and detail: a) Confirmation that a threat assessment has been conducted using a defined methodology and relevant threats addressed - both internal and external threats and control measures are suitable/sufficient. b) The significant threats identified, as well as the mitigation measures implemented incl. verification procedures. c) Any relevant legislation (e.g., Food Defense Acts) and the organization's conformance to it. If there are no legislative requirements, then note this fact. d) Training and communication strategy for employees and site security measures e) Food chain category FII only: confirmation that the supplier(s) had a food defense plan in place.
+Statement on effectiveness of implementation of Food Defense Plan, that it is supported by the organization's FSMS and how kept up to date.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.4
+
+Food Fraud Mitigation (All Food Chain Categories)
+
+2.5.4.1 Vulnerability Assessment
+
+2.5.4.2 Plan
+
+Summary:
+Reference procedure that addresses this requirement. Detail
+a) Confirmation that food fraud vulnerability assessment has been conducted using a defined methodology, breadth of assessment (supply chain and not only at site level) and relevant vulnerabilities addressed, and control measures are suitable/sufficient.
+b) The significant vulnerabilities, as well as the mitigation measures implemented incl. verification procedures.
+c) Any relevant legislation and the organization's conformance to it. If there are no legislative requirements, then note this fact.
+d) Food chain category FII only: confirmation that the supplier(s) had a food fraud mitigation plan in place.
+Statement on effectiveness of implementation of Food Fraud Plan and that it is included in the performance evaluation of the FSMS.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.5
+
+Logo use (All Food Chain Categories)
+
+Summary:
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+FSSC 22000 Version 6 | April 2023
+
+40 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+Where the logo is used, document how/where it is used and confirm it is used correctly.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.6
+
+Management of allergens (All Food Chain Categories)
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/ Critical
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+Summary:
+Reference allergen management plan and detail which allergens are present. Confirm whether the site had a list of all the allergens handled including for raw materials and finished products. Confirm that the allergen risk assessment covers all potential sources, including cross contamination.
+Detail control measures used to prevent cross-contamination including storage, production and potential cross contamination and training of personnel. Where there are allergens on site that are out of scope (included in products that are excluded from scope, or not part of the scope of FSSC 22000 certification), detail type and whether the potential risks and cross contamination is controlled in relation to the products included in the scope of certification.
+Detail evidence of validation and verification of control measures including testing (where necessary). Detail whether precautionary or warning labels are used and whether it is in accordance with the requirement. Indicate the date of the last review of the allergen management plan including trending of verification data.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.7
+
+Environmental monitoring
+(Food Chain Categories BIII, C, I & K)
+
+Conform
+
+Grade If No � detail NC
+
+NC#
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+This clause may only be indicated as N/A for FCC A, D, E, F, and G
+
+Summary:
+Provide evidence that the organization has implemented a risk-based environmental monitoring program, covering the relevant pathogen, spoilage, and indicator organisms, supported by a documented procedure for the evaluation of the effectiveness of all controls on preventing contamination from the manufacturing environment.
+The environmental monitoring program shall include as a minimum, the evaluation of microbiological controls present and provide evidence that the organization collects and analyses data of the environmental monitoring activities including regular trend analysis. Describe what monitoring activities are undertaken (microbiological), frequency, general overview of results of testing (trend analysis etc.) and corrective actions or adjustments to the program as needed. Indicate the date of the last annual review of the environmental monitoring program, as well as any reviews due to triggers that have occurred.
+Please note that this is not a section on cleaning � Cleaning is covered in PRP clause 11.
+
+FSSC 22000 Version 6 | April 2023
+
+41 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.8
+
+Food safety and quality culture (All Food Chain Categories)
+
+Summary:
+Provide an overview of how food safety and quality culture objectives are addressed within the organization with specific reference to communication, training, employee feedback and engagement, and performance measurement of defined activities, covering all sections of the organization impacting on food safety and quality.
+Reference the food safety and quality culture plan, including confirmation that the organization has set targets and timelines, and that food safety and quality culture has been addressed in the management review for continuous improvement.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.9
+
+Quality control (All Food Chain Categories)
+
+Summary:
+� Reference the quality policy and confirm that the organization has defined measurable quality objectives.
+� Confirmation that quality control parameters have been defined for finished product specifications and include example/s verified during the audit.
+� Provide an overview of the product release procedure addressing quality control and testing. � Provide overview of analysis and evaluation of the results of quality control parameters as well as
+whether it was included as an input to the management review. � Detail how quality aspects as per the requirements of 2.5.9 have been included in the internal audit
+program. � Reference quality control procedures and documented evidence (records) sampled for unit, weight,
+and volume control. � Reference line start-up and change-over procedures and documented evidence (records) sampled,
+including addressing that labelling and packaging from previous runs have been removed from the line(s).
+
+FSSC 22000 Version 6 | April 2023
+
+42 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.10
+
+Transport, storage, and warehousing (all Food Chain Categories)
+
+Summary:
+a) Provide an overview of the specified stock rotation system that includes FEFO principles in conjunction with the FIFO requirements.
+b) Food chain category C0 only: Where slaughtering is applicable and relevant, what controls are in place linked to post-slaughter time and temperature in relation to chilling or freezing of the products?
+c) Food chain category FI only: Provide an overview of the transport and delivery services involved. Detail conditions/systems that are aimed at minimizing potential contamination during transport and delivery.
+d) Detail whether the organization uses transport tankers for their final product or receives raw materials in tankers. If so, provide an overview of how the organization meets the Scheme requirements.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.11
+
+Hazard control and measures for preventing crosscontamination (All Food Chain Categories)
+
+Summary:
+a) Food chain category BIII, C and I: Where packaging is used to impart or provide a functional effect on food (e.g., shelf-life extension), detail what packaging is being used and whether this has been assessed as part of the hazard analysis. Reference applicable measures taken.
+b) Food chain category C0 only: Provide an overview of the inspection process at lairage and/or at evisceration to ensure animals are fit for human consumption where applicable.
+c) Food chain category D only: Reference the procedure that addresses this requirement. Provide an overview of the formulated products and the relevant customer and legislative requirements. Detail which ingredients/additives are used that contain components that can have adverse animal health impact(s), and how these are controlled.
+d) All food chain categories, excluding FII: Provide an overview of the foreign matter management in place including reference to the risk assessment to determine the need for and type of foreign body detection equipment and the procedure for the management and use of the equipment. Where the risk assessment deems no foreign body detection equipment is necessary, reference the justification that was maintained as documented evidence. Detail whether the site has procedures in place for management of breakages (metal, ceramic, hard plastic, etc.).
+
+FSSC 22000 Version 6 | April 2023
+
+43 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/Major/
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+Critical
+
+2.5.12
+
+PRP Verification (Food Chain Categories BIII, C, D, G, I & K)
+
+This clause may only be indicated as N/A for FCC A, E, and F
+
+Summary:
+Provide an overview of the site inspections/PRP checks conducted to verify that the site (internal and external), production environment and processing equipment are maintained in a suitable condition to ensure food safety, including the frequency and how findings are addressed.
+Confirmation that the site inspections covered the PRPs required by the relevant PRP standard(s) and whether it served as an input for the internal audit.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.13
+
+Product Design and Development (Food Chain Categories BIII, C, D, E, F, I & K)
+
+This clause may only be indicated as N/A for FCC A, and G
+
+Summary:
+Reference the product design and development procedure. Provide an overview of the process to incorporate new products and changes into the product or manufacturing processes. This shall cover any potential hazards introduced (update to hazard analysis), impact on the process, resource & training, equipment and maintenance and any shelf-life and production trials conducted. Reference any new product developments since the previous audit.
+Detail the process in place for on-going shelf-life verification at a frequency based on risk and provide examples of evidence sampled.
+Where ready-to-cook products are produced and cooking instructions are provided on the product label/packaging, confirm that the organization has conducted validation and reference validations sampled.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.14
+
+Health Status (Food Chain Category D)
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+This clause may not be indicated as N/A for FCC D
+
+NC#
+
+FSSC 22000 Version 6 | April 2023
+
+44 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+Summary:
+Provide an overview of the procedure the organization has in place to monitor the health status of employees, the process for visitors and contractors and if any restrictions apply, including legislative requirements/restrictions.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+2.5.15
+
+Equipment Management (All Food Chain Categories, excluding FII)
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+This clause may only be indicated as N/A for FCC FII
+
+NC#
+
+Summary:
+a) Identify if the organization has commissioned any new equipment or any significant changes to existing equipment since the previous audit. If so, provide an overview of the equipment purchase specifications in place and detail how it meets the requirements of the Scheme including evidence thereof.
+b) Provide an overview of the change management process for new equipment/changes to existing equipment including evidence sampled of successful commissioning, as applicable.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.16
+
+Food loss and waste (All Food Chain Categories, excluding category I)
+
+This clause may only be indicated as N/A for FCC I
+
+Summary: a) Provide an overview of organizations' strategy to reduce food loss and waste, reference the documented policy, and that specific objectives and targets have been set. b) Detail the controls in place to manage donated products and to ensure the products are safe for consumption. c) Detail the controls in place to manage contamination of surplus products or by-products intended for animal feed/food. d) Confirmation that these processes comply with legal requirements and were kept up to date.
+
+FSSC 22000 Version 6 | April 2023
+
+45 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform
+
+Grade If No � detail NC
+
+If N/A � provide Yes No N/A Minor/Major/ justification
+
+Critical
+
+NC#
+
+2.5.17
+
+Communication requirements (All Food Chain Categories)
+
+Summary:
+Detail how the organization has included the communication requirements into their FSMS.
+a) Confirm whether the organization had any serious events* since the previous audit, and if so, reference evidence thereof regarding communication of the serious event to the CB and what suitable measures were implemented; and
+b) Confirm whether the organization had any serious situations** since the previous audit, and if so, reference evidence thereof regarding communication of the serious situation to the CB and what suitable measures were implemented.
+*Serious events that impact the FSMS, legality and/or the integrity of the certification including situations that pose a threat to food safety, or certification integrity.
+**Serious situations where the integrity of the certification was at risk and/or where the Foundation can be brought into disrepute.
+
+FSSC 22000 Additional Requirement
+Clause Requirement
+
+Conform Yes No N/A
+
+Grade
+Minor/major/
+
+If No � detail NC
+If N/A � provide justification
+
+NC#
+
+critical
+
+2.5.18
+
+Requirements for Organizations with Multi-site Certification (Food Chain Category E, F & G)
+
+This clause may not be indicated as N/A for multi-site groups
+
+2.5.18.1 Central Functions
+
+2.5.18.2 Internal Audit Requirements
+
+Summary:
+Centralized Function:
+Provide an overview of the central function and how commitment to the food safety system is managed and ensured across all the sites. Describe how roles and responsibilities have been defined for key roles and whether sufficient resources are available to manage the FSMS.
+Internal Audits:
+Provide an overview of the internal audit program (incl. frequency), confirmation that all sites, the central function and FSMS have been included and audited prior to the certification audit. How are nonconformities addressed and are there any escalation mechanisms in place? Are sufficient numbers of internal auditors available to cover the number of sites and do they meet the internal auditor requirements? Provide examples of competency records checked. Describe the technical review process
+
+FSSC 22000 Version 6 | April 2023
+
+46 of 47
+
+Annex 2 � FSSC 22000 CB Audit Report Requirements
+and whether the technical reviewers meet the competency requirements. How is performance monitoring and calibration of internal auditors and technical reviewers managed?
+
+FSSC 22000 Version 6 | April 2023
+
+47 of 47
+
+
