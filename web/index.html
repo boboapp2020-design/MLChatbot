@@ -726,22 +726,6 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
   </div>
 </div>
 
-<div class="ov" id="ovPin">
-  <div class="modal" style="max-width:380px">
-    <div class="mh"><h3>ใส่ PIN เพื่อเปิดหน้าตั้งค่า</h3><button class="fbtn" data-close>✕</button></div>
-    <div class="mb">
-      <div class="fld">
-        <input type="password" id="pinIn" inputmode="numeric" maxlength="12"
-          autocomplete="off" style="text-align:center;
-          font-size:22px;letter-spacing:9px;font-family:var(--mono)">
-        <small id="pinErr">เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ</small>
-      </div>
-    </div>
-    <div class="mf"><button class="btn s" data-close>ยกเลิก</button>
-      <button class="btn p" id="btnPinGo">ปลดล็อก</button></div>
-  </div>
-</div>
-
 <div class="toast" id="toast"></div>
 
 <script src="../kb/chunks.js"></script>
@@ -1395,7 +1379,7 @@ async function ask(text){
         `ค่าที่ส่งเป็น HTTP header ต้องเป็นตัวอักษรอังกฤษและตัวเลขเท่านั้น `+
         `แต่ค่าที่บันทึกไว้มีตัวอักษรไทยหรืออักขระที่มองไม่เห็นปนมา\n\n`+
         `**วิธีแก้**\n`+
-        `1. เปิดตั้งค่า (รหัส 1302)\n`+
+        `1. กดปุ่มเฟืองเพื่อเปิดหน้าตั้งค่า\n`+
         `2. ลบค่าในช่องนั้นให้หมด กด Ctrl+A แล้ว Delete\n`+
         `3. คัดลอกใหม่ด้วย**ปุ่ม copy** ของผู้ให้บริการ อย่าลากเลือกด้วยเมาส์\n`+
         `4. กดบันทึก — ถ้ายังมีอักขระเสีย ระบบจะเตือนทันที`;
@@ -1975,38 +1959,9 @@ on('#btnTheme','click',()=>{CFG.theme=CFG.theme==='dark'?'light':'dark';saveCfg(
 on('#btnPal','click',openPal);
 on('#btnShowAll','click',()=>{showAll=!showAll;renderRooms()});
 on('#btnClear','click',()=>{ROOMS[CFG.room]=[];saveRooms();renderRooms();renderRoom();toast(T('cleared'))});
-/* ══════════════════════════════════════════════════════════════════
-   รหัสผ่านหน้าตั้งค่า
-   ------------------------------------------------------------------
-   กดปุ่มเฟือง -> ต้องใส่รหัสก่อนถึงจะเปิดหน้าตั้งค่าได้
-   จุดประสงค์: ให้คนอื่นใช้แชทได้ แต่เปลี่ยน API key ไม่ได้
-
-   เก็บเป็นค่าแฮชไม่ใช่ตัวเลขตรงๆ เปิดดูซอร์สจะไม่เห็นรหัสโดยตรง
-   (แต่ผู้ที่ตั้งใจจริงยังหาทางข้ามได้ เพราะโค้ดทั้งหมดอยู่ในเบราว์เซอร์
-    ถ้าต้องการกันจริงต้องย้าย key ไปฝั่งเซิร์ฟเวอร์ = โหมด Supabase)
-   ══════════════════════════════════════════════════════════════════ */
-const PIN_SALT='mlx-expert-ai-v1:';
-const PIN_HASH='3e436baec04575f71781f866c3b3c1ec50c70660d62382205b0f464e525a78fa';
-// ไม่จำสถานะปลดล็อกไว้เลย — ปิดหน้าตั้งค่าแล้วเปิดใหม่ต้องใส่รหัสทุกครั้ง
-let pinFails=0, pinLockUntil=0;
-
-async function hashPin(pin){
-  const data=new TextEncoder().encode(PIN_SALT+pin);
-  if(crypto?.subtle?.digest){
-    const buf=await crypto.subtle.digest('SHA-256',data);
-    return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
-  }
-  // WebCrypto ใช้ได้เฉพาะ https / localhost / file
-  // ถ้าเปิดผ่าน http ธรรมดาจะไม่มี crypto.subtle จึงต้องมีทางสำรอง
-  let h=2166136261;
-  for(const b of data){h^=b;h=Math.imul(h,16777619)}
-  return 'fnv'+(h>>>0).toString(16);
-}
-// ต้องเป็นค่าคงที่ที่คำนวณไว้ล่วงหน้า ห้ามคำนวณจากรหัสจริงตอนรัน
-// ไม่งั้นตัวเลขรหัสจะโผล่อยู่ในซอร์สโค้ดให้เห็นตรงๆ (เคยพลาดมาแล้ว)
-const PIN_HASH_FNV='fnv9a57337a';
-
-// เปิดหน้าตั้งค่าจริงๆ (เรียกหลังผ่าน PIN แล้ว)
+/* หน้าตั้งค่าเปิดได้เลย ไม่มีรหัสผ่าน
+   ผู้ใช้ตั้งใจให้คนอื่นทดลองใช้ และตั้งเป็นผู้ให้บริการแบบฟรีไว้แล้ว
+   key ตัวจริงอยู่ฝั่งเซิร์ฟเวอร์ (Supabase secrets) ไม่ได้อยู่ในเบราว์เซอร์ */
 function openCfg(){
   $$('input[name=mode]').forEach(r=>{r.checked=r.value===CFG.mode;r.closest('.opt').classList.toggle('on',r.checked)});
   const ps=$('#cfgProv');
@@ -2014,26 +1969,6 @@ function openCfg(){
   provSel=CFG.provider;ps.value=provSel;renderProv();
   $('#cfgUrl').value=CFG.url;$('#cfgAnon').value=CFG.anon;
   toggleGroups(CFG.mode);$('#ov').classList.add('on');
-}
-
-async function tryUnlock(){
-  const err=$('#pinErr'),val=$('#pinIn').value.trim();
-  const wait=Math.ceil((pinLockUntil-Date.now())/1000);
-  if(wait>0){err.style.color='var(--bad)';
-    err.textContent=`ใส่ผิดหลายครั้ง — รออีก ${wait} วินาที`;return}
-  if(!val){err.style.color='var(--bad)';err.textContent='ยังไม่ได้ใส่ PIN';return}
-  const h=await hashPin(val);
-  if(h===PIN_HASH||h===PIN_HASH_FNV){
-    pinFails=0;
-    $('#pinIn').value='';$('#ovPin').classList.remove('on');
-    openCfg();
-  }else{
-    pinFails++;$('#pinIn').value='';
-    err.style.color='var(--bad)';
-    if(pinFails>=5){pinLockUntil=Date.now()+60000;pinFails=0;
-      err.textContent='ใส่ผิด 5 ครั้ง — ล็อก 60 วินาที';
-    }else err.textContent=`PIN ไม่ถูกต้อง (ผิด ${pinFails}/5 ครั้ง)`;
-  }
 }
 
 /* ── หน้าตั้งค่าฝั่งผู้ให้บริการ ────────────────────────────────────── */
@@ -2070,15 +2005,7 @@ function renderProv(){
     'เพื่อดึงรายการจริงจากผู้ให้บริการ แล้วกด "ทดสอบ" ก่อนใช้';
 }
 
-on('#btnCfg','click',()=>{
-  $('#pinIn').value='';
-  $('#pinErr').style.color='';
-  $('#pinErr').textContent='เฉพาะผู้ดูแลระบบเท่านั้น — คนอื่นใช้แชทได้ตามปกติ';
-  $('#ovPin').classList.add('on');
-  setTimeout(()=>$('#pinIn').focus(),80);
-});
-on('#btnPinGo','click',tryUnlock);
-on('#pinIn','keydown',e=>{if(e.key==='Enter'){e.preventDefault();tryUnlock()}});
+on('#btnCfg','click',openCfg);
 
 on('#cfgProv','change',e=>{
   // เก็บสิ่งที่พิมพ์ไว้ของเจ้าเดิมก่อนสลับ ไม่งั้นพิมพ์ key แล้วสลับไปมาจะหาย

@@ -161,7 +161,7 @@ supabase secrets set LLM_PROVIDER=gemini LLM_API_KEY=AIzaxxxxx
 
 ## ขั้นที่ 6 — ตั้งค่าในแอป
 
-1. เปิดเว็บ → กดปุ่มเฟือง → ใส่รหัส **1302**
+1. เปิดเว็บ → กดปุ่มเฟือง (หน้าตั้งค่าเปิดได้เลย ไม่มีรหัสผ่าน)
 2. เลือก **Production — ผ่าน Supabase**
 3. ใส่ค่า 2 ตัวจากหน้า Supabase → **Settings → API**
 
