@@ -912,9 +912,26 @@ const STARTERS={
    STATE
    ══════════════════════════════════════════════════════════════════ */
 const KB=window.SUGAR_KB||[];
-const CFG=Object.assign({mode:'offline',provider:'anthropic',keys:{},models:{},customBase:'',
-  url:'',anon:'',lang:'th',theme:'light',room:'cane'},
-  JSON.parse(localStorage.getItem('mlx_cfg')||'{}'));
+
+/* ── เซิร์ฟเวอร์กลางของโรงงาน ────────────────────────────────────────
+   ฝังไว้เพื่อให้เปิดเครื่องไหนก็ใช้ได้ทันที ไม่ต้องตั้งค่าอะไรก่อน
+   ค่าสองตัวนี้ออกแบบมาให้เปิดเผยได้ — anon key ถูกคุมด้วย RLS ฝั่งฐานข้อมูล
+   และ key ของโมเดลไม่ได้อยู่ตรงนี้ แต่อยู่ใน Supabase Secrets ฝั่งเซิร์ฟเวอร์
+   ผู้ใช้ยังแก้เป็นเซิร์ฟเวอร์ของตัวเองได้ในหน้าตั้งค่า */
+const HOST_URL  = 'https://ratnpnqbqurtnlhitttw.supabase.co';
+const HOST_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhdG5wbnFicXVydG5saGl0dHR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUyOTU0OTAsImV4cCI6MjEwMDg3MTQ5MH0.po4M9c3HM-1Jt8ViY_8HAe5Wv-bfrRFFXiTo86ja55g';
+
+const SAVED_CFG=JSON.parse(localStorage.getItem('mlx_cfg')||'{}');
+const CFG=Object.assign({mode:'supabase',provider:'anthropic',keys:{},models:{},customBase:'',
+  url:HOST_URL,anon:HOST_ANON,lang:'th',theme:'light',room:'cane'},SAVED_CFG);
+
+/* เครื่องที่เคยเปิดแอปรุ่นก่อนจะมี mlx_cfg ค้างอยู่ที่ยังชี้ไปโหมด demo
+   หรือมีช่อง url/anon ว่าง ถ้าไม่เติมให้ คนกลุ่มนี้จะยังต้องตั้งค่าเองอยู่ดี
+   เติมเฉพาะช่องที่ว่าง ไม่ทับของใครที่ตั้งเซิร์ฟเวอร์ตัวเองไว้แล้ว */
+if(!CFG.url)  CFG.url  = HOST_URL;
+if(!CFG.anon) CFG.anon = HOST_ANON;
+if(CFG.mode==='offline' && !SAVED_CFG.chosenMode) CFG.mode='supabase';
+
 // ย้ายค่าเดิมสมัยที่รองรับ Anthropic เจ้าเดียว ไม่งั้นผู้ใช้เก่าต้องใส่ key ใหม่
 if(CFG.anthropic){CFG.keys.anthropic=CFG.keys.anthropic||CFG.anthropic;delete CFG.anthropic}
 if(CFG.model){CFG.models.anthropic=CFG.models.anthropic||CFG.model;delete CFG.model}
@@ -2055,6 +2072,8 @@ on('#btnTest','click',async e=>{
 
 on('#btnSave','click',()=>{
   CFG.mode=$('input[name=mode]:checked')?.value||'offline';
+  // จำไว้ว่าผู้ใช้เลือกโหมดเองแล้ว รอบหน้าจะได้ไม่ถูกดันกลับไปโหมดเซิร์ฟเวอร์กลาง
+  CFG.chosenMode=true;
   CFG.provider=provSel;
   // API key ห้ามมีอักขระนอก ASCII เพราะจะส่งเป็น HTTP header
   // ล้างช่องว่างและอักขระที่มองไม่เห็นทิ้ง แล้วเตือนถ้ายังมีตัวที่ใช้ไม่ได้เหลือ
