@@ -80,6 +80,12 @@ if ($logoFile) {
   Write-Host "  ไม่พบ LOGO.png ที่รากโปรเจกต์ — ใช้โลโก้ตัวอักษรเดิม" -ForegroundColor DarkGray
 }
 
+# ── ประทับเลขรุ่น ────────────────────────────────────────────────────
+# ใช้ตรวจว่าเบราว์เซอร์โหลดไฟล์ล่าสุดหรือยังใช้ของเก่าที่ค้างใน cache
+$build = Get-Date -Format 'yyMMdd.HHmm'
+$html = $html -replace '(<b id="buildVer">)[^<]*(</b>)', "`${1}$build`${2}"
+Write-Host "  เลขรุ่น: $build" -ForegroundColor Cyan
+
 $pattern = '<script src="\.\./kb/chunks\.js"></script>\s*<script src="\.\./kb/personas\.js"></script>'
 if ($html -notmatch $pattern) {
   Write-Host "`nไม่พบแท็ก <script src=...> ที่คาดไว้ใน web\index.html" -ForegroundColor Red

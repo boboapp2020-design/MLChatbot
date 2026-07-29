@@ -494,6 +494,8 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
   border:1px solid var(--line);outline:none;font-size:13.2px;transition:.15s}
 .fld input:focus,.fld select:focus{border-color:var(--ac);background:var(--surface);box-shadow:0 0 0 3px var(--acg)}
 .fld input[type=password]{font-family:var(--mono)}
+.verline{padding:0 22px 6px;font-size:10.5px;color:var(--tx3);font-family:var(--mono);text-align:right}
+.verline b{color:var(--tx2);font-weight:700}
 .btn-row{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
 .btn-row .btn{flex:1;min-width:150px}
 .opts{display:flex;flex-direction:column;gap:9px}
@@ -740,6 +742,9 @@ html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
       </div>
 
     </div>
+    <!-- เลขรุ่นไว้ตรวจว่าเบราว์เซอร์ใช้ไฟล์ล่าสุดหรือของเก่าที่ค้างใน cache
+         เคยเสียเวลาไล่บั๊กที่แก้ไปแล้วเพราะเครื่องผู้ใช้ยังรันโค้ดเก่าอยู่ -->
+    <div class="verline">รุ่น <b id="buildVer">dev</b></div>
     <div class="mf"><button class="btn s" data-close>ยกเลิก</button><button class="btn p" id="btnSave">บันทึก</button></div>
   </div>
 </div>
