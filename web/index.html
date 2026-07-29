@@ -104,10 +104,24 @@ svg{display:block}
    แล้วซ่อนชื่อแอปที่เขียนซ้ำข้างๆ ไม่ให้อ่านซ้ำสองรอบ */
 .logo:has(img:not([hidden])){width:76px;height:76px;background:none;box-shadow:none;overflow:visible}
 .logo:has(img:not([hidden])) b,.logo:has(img:not([hidden])) .leaf{display:none}
-.brand:has(.logo img:not([hidden])) .brand-tx h1{display:none}
-.brand:has(.logo img:not([hidden])) .brand-tx p{font-size:12px;line-height:1.45}
 .brand-tx h1{font-size:15.5px;font-weight:750;letter-spacing:-.3px;line-height:1.2}
 .brand-tx p{font-size:11px;color:var(--tx3);margin-top:1px}
+.tag-en{display:none}
+
+/* เมื่อมีรูปโลโก้จริง: วางโลโก้ไว้ด้านบนแล้วข้อความอยู่ใต้
+   วางเรียงข้างกันเหลือที่ให้ข้อความแค่ 131px ตัวหนังสือไทยจึงต้องเล็กจนอ่านยาก
+   วางซ้อนแล้วได้เต็มความกว้าง 266px ขยายตัวหนังสือได้สบาย */
+.brand:has(.logo img:not([hidden])){flex-direction:column;gap:7px;padding:14px 14px 12px;text-align:center}
+.brand:has(.logo img:not([hidden])) .logo{width:72px;height:72px}
+.brand:has(.logo img:not([hidden])) .brand-tx h1{display:none}   /* ชื่อแอปอยู่ในรูปแล้ว */
+.brand:has(.logo img:not([hidden])) .brand-tx p{
+  font-size:15px;font-weight:700;color:var(--tx);margin-top:0;line-height:1.35;letter-spacing:-.2px}
+.brand:has(.logo img:not([hidden])) .tag-en{
+  display:block;font-size:11.5px;font-weight:600;color:var(--tx3);
+  margin-top:3px;letter-spacing:.3px}
+/* แอปเป็นอังกฤษอยู่แล้ว ไม่ต้องมีบรรทัดอังกฤษซ้ำ
+   ต้องเขียนเจาะจงเท่ากฎด้านบน ไม่งั้นโดนทับ (กฎที่มี :has ได้ค่าเจาะจงสูงกว่า) */
+html[lang="en"] .brand:has(.logo img:not([hidden])) .tag-en{display:none}
 
 .searchbox{margin:2px 16px 8px;position:relative}
 .searchbox input{
@@ -551,7 +565,12 @@ svg{display:block}
       <div class="logo"><img id="logoImg" alt="ML Expert AI" src="" hidden><b>ML</b>
         <svg class="leaf" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 4 4 8 4 13c0 3 2 6 5 7 0-6 2-10 6-13-2 4-3 8-3 13 4-1 8-5 8-11 0-3-3-6-8-7z"/></svg>
       </div>
-      <div class="brand-tx"><h1>ML Expert AI</h1><p data-i18n="tagline">ผู้ช่วยอัจฉริยะโรงงานน้ำตาล</p></div>
+      <div class="brand-tx">
+        <h1>ML Expert AI</h1>
+        <p data-i18n="tagline">ผู้ช่วยอัจฉริยะโรงงานน้ำตาล</p>
+        <!-- บรรทัดอังกฤษคงที่ ซ่อนอัตโนมัติเมื่อสลับแอปเป็นอังกฤษ (จะซ้ำกับบรรทัดบน) -->
+        <span class="tag-en">Sugar Factory Intelligence</span>
+      </div>
     </div>
 
     <div class="searchbox">
