@@ -1779,6 +1779,12 @@ async function askSupabase(q,el){
       force_module:CFG.room})});   // ห้องนี้เลือกผู้เชี่ยวชาญไว้แล้ว ไม่ต้องให้ router เดาใหม่
   if(!res.ok) throw new Error(`Edge Function ${res.status} — ${(await res.text()).slice(0,260)}`);
   const bodySlot=el.querySelector('.slot-body');
+  // สร้างช่องข้อความตอนมีเนื้อหาจริงเท่านั้น ก่อนหน้านั้นปล่อยให้จุดกะพริบทำงานไป
+  const prose=()=>{
+    let p=bodySlot.querySelector('.prose');
+    if(!p){ bodySlot.innerHTML='<div class="prose"></div>'; p=bodySlot.firstElementChild }
+    return p;
+  };
   // อย่าเขียนชื่อโมเดลตายตัว — ฝั่งเซิร์ฟเวอร์เปลี่ยนผู้ให้บริการได้
   // เคยเขียน 'Opus 5' ไว้แล้วป้ายแสดงผิดเมื่อสลับไปใช้ Gemini
   let answer='',meta={module:CFG.room,model:'Supabase'};
@@ -1799,20 +1805,32 @@ async function askSupabase(q,el){
             retrieved:d.retrieved,sources:d.citations?new Set(d.citations.map(c=>c.doc_code)).size:0}};
         el.querySelector('.slot-trace').innerHTML=traceHTML(meta.trace);
         $('#'+el.id+'-mt').textContent=meta.model;
-        bodySlot.innerHTML='<div class="prose"></div>';
+        // ห้ามล้างช่องคำตอบให้ว่างตรงนี้ — ระหว่าง meta กับ delta ตัวแรก
+        // โมเดลยังอ่านเอกสารอยู่ กินเวลาหลายสิบวินาที ถ้าล้างทิ้งผู้ใช้จะเห็น
+        // การ์ดเปล่าและนึกว่าระบบพัง (เจอมาแล้วจริง) ให้คงจุดกะพริบไว้
+        // แล้วเปลี่ยนข้อความเป็นบอกว่ากำลังทำอะไรอยู่แทน
+        const th=bodySlot.querySelector('.think span');
+        if(th) th.textContent=`กำลังเรียบเรียงคำตอบจาก ${d.retrieved||0} เอกสาร…`;
       }else if(ev==='delta'){
         // ถ้า event ไม่มีฟิลด์ text การบวกตรงๆ จะได้คำว่า "undefined"
         // ไปแทรกกลางคำตอบ ซึ่งผู้ใช้เห็นแล้วงงว่ามาจากไหน (เจอมาแล้วจริง)
         if(typeof d.text!=='string'){ console.warn('[ML] delta ไม่มีข้อความ:',d); continue }
         answer+=d.text;
-        (bodySlot.querySelector('.prose')||bodySlot).innerHTML=md(answer)+'<span class="caret"></span>';
+        prose().innerHTML=md(answer)+'<span class="caret"></span>';
         scrollDown();
       }else if(ev==='done'){
         meta.latency=d.latency_ms;
-        const pr=bodySlot.querySelector('.prose');if(pr) pr.innerHTML=md(answer);
+        prose().innerHTML=md(answer)||'<p style="color:var(--tx3)">เซิร์ฟเวอร์ไม่ได้ส่งคำตอบกลับมา ลองถามใหม่อีกครั้ง</p>';
         el.querySelector('.slot-refs').innerHTML=refsHTML(meta.citations,meta.confidence);
       }
     }
+  }
+  // สตรีมอาจถูกตัดกลางคันโดยที่ไม่มี error (เน็ตหลุด พร็อกซีตัดการเชื่อมต่อ)
+  // ถ้าไม่ดักไว้ การ์ดจะค้างอยู่แบบว่างเปล่าตลอดไป ผู้ใช้ไม่รู้ว่าเกิดอะไรขึ้น
+  if(!answer.trim()){
+    prose().innerHTML=md('**การเชื่อมต่อขาดก่อนได้คำตอบ**\n\n'+
+      'ระบบค้นเอกสารเจอแล้วแต่ข้อความตอบส่งมาไม่ครบ '+
+      'มักเกิดจากสัญญาณเน็ตหลุดระหว่างรอ ลองถามใหม่อีกครั้งได้เลย');
   }
   bindAll(el);
   return {text:answer,meta};
