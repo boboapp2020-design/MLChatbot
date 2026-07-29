@@ -15,7 +15,8 @@ param(
   [string] $In  = 'logo app.png',
   [string] $Out = 'LOGO.png',
   [int]    $Size = 256,
-  [int]    $Tol  = 90     # greenness ขั้นต่ำที่ถือว่าเป็นพื้นหลัง
+  [int]    $Tol  = 90,    # greenness ขั้นต่ำที่ถือว่าเป็นพื้นหลัง (ใช้กับฉากเขียว)
+  [int]    $FlatTol = 26  # ระยะห่างจากสีมุมภาพที่ยังถือว่าเป็นพื้นหลัง (ใช้กับพื้นทึบ)
 )
 
 $ErrorActionPreference = 'Stop'
@@ -49,6 +50,28 @@ function Greenness([int]$i) {
   return $gr - [Math]::Max($r, $b)
 }
 
+# ── เดาสีพื้นหลังจากมุมบนซ้าย ────────────────────────────────────────
+# โลโก้รุ่นแรกใช้ฉากเขียว รุ่นใหม่พื้นขาว ถ้าฝังเกณฑ์ "เขียว" ไว้ตายตัว
+# พอผู้ใช้ส่งไฟล์พื้นขาวมาสคริปต์จะไม่ตัดอะไรเลย เลยวัดจากมุมภาพแทน
+$bgB = $buf[0]; $bgG = $buf[1]; $bgR = $buf[2]
+$bgIsGreen = ($bgG - [Math]::Max($bgR, $bgB)) -ge 60
+Write-Host ("สีพื้นหลังที่ตรวจพบ: R=$bgR G=$bgG B=$bgB " +
+            $(if ($bgIsGreen) { '(ฉากเขียว)' } else { '(พื้นทึบ)' })) -ForegroundColor Cyan
+
+# ระยะห่างจากสีพื้นหลัง — ใช้ได้กับพื้นสีอะไรก็ได้ ไม่ผูกกับเขียว
+function BgDistance([int]$i) {
+  $db = [Math]::Abs([int]$buf[$i]   - $bgB)
+  $dg = [Math]::Abs([int]$buf[$i+1] - $bgG)
+  $dr = [Math]::Abs([int]$buf[$i+2] - $bgR)
+  return [Math]::Max($dr, [Math]::Max($dg, $db))
+}
+
+# คืนค่า $true เมื่อพิกเซลนี้ถือเป็นพื้นหลัง
+function IsBackground([int]$i) {
+  if ($bgIsGreen) { return (Greenness $i) -ge $Tol }
+  return (BgDistance $i) -le $FlatTol
+}
+
 # ── ไล่ระบายจากขอบ ───────────────────────────────────────────────────
 $visited = New-Object 'bool[]' ($w * $h)
 # ต้องใส่เครื่องหมายคำพูดรอบชื่อชนิดที่มี [] ไม่งั้น PowerShell อ่าน Stack[int]
@@ -72,7 +95,7 @@ while ($stack.Count -gt 0) {
   $visited[$p] = $true
   $py = [Math]::Floor($p / $w); $px = $p - ($py * $w)
   $i = ($py * $data.Stride) + ($px * 4)
-  if ((Greenness $i) -lt $Tol) { continue }
+  if (-not (IsBackground $i)) { continue }
   $buf[$i+3] = 0                                    # โปร่งใส
   $removed++
   if ($px -gt 0)      { $stack.Push($p - 1) }

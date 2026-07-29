@@ -484,6 +484,8 @@ $SupportMap  = @(
   # แล้วห้องคุณภาพจะยังว่างเหมือนเดิม
   @{ File='IQA-เช็คลิสต์ตรวจติดตามภายใน.txt'; Module='foodsafety'; Type='CHECKLIST'; Force=$true
      Title='เช็คลิสต์ตรวจติดตามภายใน 21 แผนก (ของโรงงาน)'; Code='IQA-CL' }
+  @{ File='IQA-คู่มือตรวจ-FSSC22000-v6.txt'; Module='foodsafety'; Type='MANUAL'; Force=$true
+     Title='คู่มือตรวจ FSSC 22000 v6 ข้อ 2.5 (สิ่งที่ต้องมี ต้องถาม ต้องขอดู)'; Code='IQA-FSSC' }
   @{ File='IQA-เกณฑ์ตัดสินผลตรวจ.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
      Title='เกณฑ์ตัดสินผลตรวจ C/NC/B ตาม ISO 19011:2018'; Code='IQA-JUDGE' }
   @{ File='IQA-บทเรียนจากรายงานตรวจจริง.txt'; Module='foodsafety'; Type='RECORD'; Force=$true

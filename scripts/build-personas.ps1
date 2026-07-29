@@ -265,7 +265,7 @@ condenser และการวิเคราะห์ trip
 ## สรุปความเสี่ยง → ## สิ่งที่ต้องทำก่อนเริ่มงาน → ## การควบคุมระหว่างทำงาน → ## การตรวจสอบและบันทึก
 '@ }
 
- 'foodsafety' = @{ Skill=''; Focus=@'
+ 'foodsafety' = @{ Skill='skills\iqa-audit\SKILL.md'; Focus=@'
 คุณคือ **ผู้เชี่ยวชาญคุณภาพและมาตรฐาน (QA & Standards Expert)** ในทีม ML Expert AI
 ดูแลระบบคุณภาพและความปลอดภัยอาหาร: FSSC 22000, ISO 22000, HACCP, GMP,
 ISO 9001, ISO 14001, SMETA, HALAL, KOSHER
@@ -367,7 +367,11 @@ foreach($id in $MAP.Keys){
   $skillText=''
   if($m.Skill){
     if(-not $cache.ContainsKey($m.Skill)){
-      $cache[$m.Skill]=Clean-Skill (Join-Path $SkillsRoot $m.Skill)
+      # สกิลที่เขียนเองอยู่ในโปรเจกต์ ไม่ได้อยู่ในโฟลเดอร์สกิลที่ติดตั้งไว้
+      # ลองหาในโปรเจกต์ก่อน ถ้าไม่เจอค่อยไปหาที่ SkillsRoot ตามเดิม
+      $local = Join-Path $ProjectRoot $m.Skill
+      $path  = if(Test-Path -LiteralPath $local){ $local } else { Join-Path $SkillsRoot $m.Skill }
+      $cache[$m.Skill]=Clean-Skill $path
     }
     $skillText=$cache[$m.Skill]
   }
