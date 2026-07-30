@@ -123,6 +123,18 @@ $FileMap = @(
   # สกิลจัดซื้อ — ห้องจัดซื้อ/คลังเดิมมีความรู้ของตัวเองแค่ 14 ท่อน ต้องยืมจากคนอื่นทุกคำถาม
   @{ Path='procurement-management\SKILL.md';                  Module='warehouse';   Type='BOOK';     Title='งานจัดซื้อ PR-PO และการบริหารผู้ขาย';            Code='PROC-FRAME' }
 
+  # สกิลระบบคุณภาพ — เอกสารระบบจริงของโรงงาน (ML-QP/ML-SP/ML-WI/ML-FM)
+  # Force ทุกไฟล์ เพราะเนื้อหาพูดถึงหม้อเคี่ยว ลูกหีบ คลัง ฯลฯ เต็มไปหมด
+  # ถ้าปล่อยให้ keyword ตัดสิน ขั้นตอน CAPA จะกระเด็นไปอยู่ห้องผลิต
+  @{ Path='quality-standards-brain\SKILL.md';                 Module='foodsafety'; Type='BOOK';   Force=$true
+     Title='กรอบงานระบบคุณภาพและความปลอดภัยอาหารของโรงงาน';   Code='QS-FRAME' }
+  @{ Path='quality-standards-brain\references\core-procedures.md'; Module='foodsafety'; Type='MANUAL'; Force=$true
+     Title='ขั้นตอนปฏิบัติหลัก — ควบคุมเอกสาร NC product CAPA IQA (ของโรงงาน)'; Code='ML-CORE' }
+  @{ Path='quality-standards-brain\references\haccp-risk.md';      Module='foodsafety'; Type='MANUAL'; Force=$true
+     Title='HACCP และการประเมินความเสี่ยง — CCP/OPRP ของโรงงาน';   Code='ML-HACCP' }
+  @{ Path='quality-standards-brain\references\fssc-programmes.md'; Module='foodsafety'; Type='MANUAL'; Force=$true
+     Title='โปรแกรมสนับสนุน FSSC 22000 v6 — Food Fraud EMP MOC Food Loss'; Code='ML-FSSC' }
+
   @{ Path='motor-expert\SKILL.md';                            Module='maintenance'; Type='BOOK';     Title='กรอบการวินิจฉัยมอเตอร์และระบบไฟฟ้า';             Code='MTR-FRAME' }
   @{ Path='motor-expert\references\failure-modes.md';         Module='maintenance'; Type='MANUAL';   Title='รูปแบบความเสียหายของมอเตอร์';                    Code='MTR-FAIL' }
   @{ Path='motor-expert\references\standards-thresholds.md';  Module='maintenance'; Type='STANDARD'; Title='เกณฑ์มาตรฐานการสั่นและฉนวน (ISO/NEMA/IEEE)';     Code='MTR-STD' }

@@ -42,7 +42,8 @@ Write-Host "Skills root: $SkillsRoot" -ForegroundColor Cyan
 # =====================================================================
 $DropHeadings = @(
   'knowledge base','ไฟล์อ้างอิง','เครื่องมือ','tools','ความสัมพันธ์กับสกิลอื่น',
-  'ทำงานร่วมกับสกิลอื่น','data analysis protocol','สkill','reading guide',
+  'ทำงานร่วมกับสกิลอื่น','ทำงานร่วมกับ skill','ความสัมพันธ์กับ skill',
+  'data analysis protocol','สkill','reading guide',
   'source 1','source 2','source 3'
 )
 # บรรทัดที่มีคำเหล่านี้ให้ตัดทิ้ง (อ้างถึงไฟล์/เครื่องมือที่แอปไม่มี)
@@ -265,12 +266,28 @@ condenser และการวิเคราะห์ trip
 ## สรุปความเสี่ยง → ## สิ่งที่ต้องทำก่อนเริ่มงาน → ## การควบคุมระหว่างทำงาน → ## การตรวจสอบและบันทึก
 '@ }
 
- 'foodsafety' = @{ Skill='skills\iqa-audit\SKILL.md'; Focus=@'
+ 'foodsafety' = @{ Skill=@('skills\iqa-audit\SKILL.md','quality-standards-brain\SKILL.md'); Focus=@'
 คุณคือ **ผู้เชี่ยวชาญคุณภาพและมาตรฐาน (QA & Standards Expert)** ในทีม ML Expert AI
 ดูแลระบบคุณภาพและความปลอดภัยอาหาร: FSSC 22000, ISO 22000, HACCP, GMP,
 ISO 9001, ISO 14001, SMETA, HALAL, KOSHER
 
+คุณสวมหมวกสองใบ ต้องแยกให้ออกว่าผู้ใช้ต้องการใบไหน:
+1. **ผู้ตรวจประเมินภายใน (Lead Auditor)** — "ตรวจแล้วผ่านไหม" วางแผนตรวจ ตั้งคำถาม
+   ขอหลักฐาน ตัดสิน C/NC/B ตรวจทาน Finding ที่เขียนมาแล้ว
+2. **ผู้จัดการระบบมาตรฐาน (QMR / Food Safety Team Leader)** — "ระบบทำงานยังไง /
+   เกิดเรื่องนี้แล้วต้องทำอะไรต่อ" เส้นทาง CAR/NCR/Hold ค่าวิกฤต CCP ผู้รับผิดชอบแต่ละขั้น
+
 หลักการทำงาน:
+- **อ้างรหัสเอกสารของโรงงานเสมอเมื่อคลังมีให้** (เช่น ML-QP-1620-003 ข้อ 6.1.4,
+  ML-FM-1600-011) ไม่ใช่แค่บอกว่า "ตามขั้นตอนของบริษัท" — ผู้ใช้ต้องเปิดเอกสารจริงต่อได้
+- **แยกให้ขาดระหว่าง "เอกสารของโรงงานเขียนไว้แบบนี้" กับ "มาตรฐานสากลแนะนำแบบนี้"**
+  ถ้าคลังไม่มีเรื่องที่ถาม ให้บอกว่า "ไม่พบในเอกสารของโรงงาน" ก่อน แล้วค่อยเสนอแนวทาง
+  ตาม ISO/FSSC แยกย่อหน้า — ห้ามปนกันจนดูเหมือนเป็นกฎของบริษัทเอง
+- **เมทริกซ์ความเสี่ยงมี 4 ชุด ห้ามหยิบสลับกัน** — TACCP ใช้ 4×4 (Likelihood×Severity),
+  VACCP ใช้ O+D สเกล 0–10, QMS ทั่วไปใช้ 5×5, HACCP ใช้ decision tree
+  ก่อนให้คะแนนต้องบอกก่อนว่ากำลังประเมินด้านไหน
+- **CCP บางจุดใช้กับผลิตภัณฑ์บางตัวเท่านั้น** (CCP 1B และ 1.1P เป็นของ DCR)
+  ทุกคำตอบเรื่อง CCP ต้องระบุว่าใช้กับ DCR / VHP / White Sugar ตัวไหน
 - ตอบข้อกำหนดต้องอ้าง "ข้อ/clause ที่ระบุได้" จากเอกสารในคลังเสมอ ห้ามอ้างจากความจำ
   ถ้าคลังไม่มี clause นั้น ให้บอกตรงๆ ว่าต้องเปิดมาตรฐานฉบับจริง
 - งาน CAR/NC ต้องแยกให้ชัด 3 ชั้น: correction (แก้เฉพาะหน้า) →
@@ -280,6 +297,11 @@ ISO 9001, ISO 14001, SMETA, HALAL, KOSHER
   ไม่ใช่หยุดที่ "พนักงานประมาท"
 - แยก "ข้อกำหนดของมาตรฐาน" (บังคับ) ออกจาก "แนวปฏิบัติที่ดี" (ไม่บังคับ) ให้ชัด
 - ประเด็นความปลอดภัยผู้บริโภคมาก่อนความสะดวกในการปฏิบัติเสมอ
+- **การอนุมัติเป็นของคน ไม่ใช่ของคุณ** — CAR/NCR/MOC และการตัดสิน
+  Hold/Reject/Rework/accept-as-is ให้เสนอทางเลือกพร้อมเงื่อนไขว่าเลือกทางไหนเมื่อไร
+  แล้วบอกว่าใครเป็นผู้มีอำนาจลงนามตามผังในเอกสาร ห้ามตัดสินแทน
+- เรื่องการเรียกคืนผลิตภัณฑ์ (recall/withdrawal, ML-QP-1610-001) ยังไม่มีในคลัง
+  ถ้าถูกถามให้บอกตรงๆ แล้วส่งต่อผู้รับผิดชอบจริงทันที ห้ามแต่งขั้นตอนขึ้นเอง
 
 รูปแบบคำตอบเมื่อตอบเรื่อง NC/CAR:
 ## ประเด็นที่พบ → ## ข้อกำหนดที่เกี่ยวข้อง → ## Correction / Corrective Action → ## หลักฐานที่ต้องเตรียม
@@ -364,17 +386,21 @@ $cache=@{}
 $personas=[ordered]@{}
 foreach($id in $MAP.Keys){
   $m=$MAP[$id]
+  # บางห้องต้องใช้มากกว่าหนึ่งสกิล เช่นห้องคุณภาพที่ต้องทั้ง "ตรวจ" และ "ดูแลระบบ"
+  # จึงรับได้ทั้งสตริงเดี่ยวและอาร์เรย์
   $skillText=''
-  if($m.Skill){
-    if(-not $cache.ContainsKey($m.Skill)){
+  $chunks=@()
+  foreach($sk in @($m.Skill | Where-Object { $_ })){
+    if(-not $cache.ContainsKey($sk)){
       # สกิลที่เขียนเองอยู่ในโปรเจกต์ ไม่ได้อยู่ในโฟลเดอร์สกิลที่ติดตั้งไว้
       # ลองหาในโปรเจกต์ก่อน ถ้าไม่เจอค่อยไปหาที่ SkillsRoot ตามเดิม
-      $local = Join-Path $ProjectRoot $m.Skill
-      $path  = if(Test-Path -LiteralPath $local){ $local } else { Join-Path $SkillsRoot $m.Skill }
-      $cache[$m.Skill]=Clean-Skill $path
+      $local = Join-Path $ProjectRoot $sk
+      $path  = if(Test-Path -LiteralPath $local){ $local } else { Join-Path $SkillsRoot $sk }
+      $cache[$sk]=Clean-Skill $path
     }
-    $skillText=$cache[$m.Skill]
+    if($cache[$sk]){ $chunks += $cache[$sk] }
   }
+  if($chunks.Count){ $skillText = ($chunks -join "`n`n") }
   $parts=@($m.Focus.Trim())
   if($skillText){
     $parts += "`n━━━ วิธีคิดและกรอบการทำงานของสาขานี้ ━━━`n`n$skillText"
@@ -434,7 +460,8 @@ $sw.Close()
 
 Write-Host "`n─────── persona ที่สร้าง ───────" -ForegroundColor Green
 foreach($id in $personas.Keys){
-  $src=if($MAP[$id].Skill){Split-Path $MAP[$id].Skill -Leaf}else{'(เขียนเฉพาะทาง)'}
+  $sk=@($MAP[$id].Skill | Where-Object { $_ })
+  $src=if($sk.Count){ (($sk | ForEach-Object { Split-Path (Split-Path $_ -Parent) -Leaf }) -join ' + ') }else{'(เขียนเฉพาะทาง)'}
   Write-Host ("  {0,-14} {1,6:N0} ตัวอักษร   จาก {2}" -f $id,$personas[$id].Length,$src)
 }
 Write-Host "`nไฟล์ที่สร้าง:" -ForegroundColor Cyan
