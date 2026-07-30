@@ -16,7 +16,8 @@ param(
   [string] $Out = 'LOGO.png',
   [int]    $Size = 256,
   [int]    $Tol  = 90,    # greenness ขั้นต่ำที่ถือว่าเป็นพื้นหลัง (ใช้กับฉากเขียว)
-  [int]    $FlatTol = 26  # ระยะห่างจากสีมุมภาพที่ยังถือว่าเป็นพื้นหลัง (ใช้กับพื้นทึบ)
+  [int]    $FlatTol = 26, # ระยะห่างจากสีมุมภาพที่ยังถือว่าเป็นพื้นหลัง (ใช้กับพื้นทึบ)
+  [int]    $LocalTol = 10 # ระยะห่างจาก "พิกเซลที่เดินมา" ที่ยังถือว่าเป็นพื้นหลังเดียวกัน
 )
 
 $ErrorActionPreference = 'Stop'
@@ -66,10 +67,25 @@ function BgDistance([int]$i) {
   return [Math]::Max($dr, [Math]::Max($dg, $db))
 }
 
+# ระยะห่างจากสีของพิกเซลที่ไล่ระบายมาถึงจุดนี้
+# โลโก้บางแบบพื้นหลังไม่ได้สีเดียว แต่ไล่เฉดจากขาวไปฟ้าอ่อน (เงาเรืองแสงใต้ตัวหุ่น)
+# ถ้าวัดจากสีมุมภาพอย่างเดียวจะตัดเฉพาะส่วนขาว เหลือคราบฟ้าเป็นสี่เหลี่ยมรอบโลโก้
+# จึงเทียบกับ "เพื่อนบ้านที่เดินมา" ด้วย — เฉดที่ค่อยๆ เปลี่ยนจะไล่ตามไปได้
+# ส่วนขอบโลโก้ที่สีกระโดดแรงในไม่กี่พิกเซลจะหยุด ไม่ทะลุเข้าไปกินตัวโลโก้
+function RefDistance([int]$i, [int]$rb, [int]$rg, [int]$rr) {
+  $db = [Math]::Abs([int]$buf[$i]   - $rb)
+  $dg = [Math]::Abs([int]$buf[$i+1] - $rg)
+  $dr = [Math]::Abs([int]$buf[$i+2] - $rr)
+  return [Math]::Max($dr, [Math]::Max($dg, $db))
+}
+
 # คืนค่า $true เมื่อพิกเซลนี้ถือเป็นพื้นหลัง
-function IsBackground([int]$i) {
+# $ref = สีของพิกเซลก่อนหน้าแบบแพ็ก (b<<16|g<<8|r) ส่ง -1 มาถ้าเป็นจุดเริ่มที่ขอบภาพ
+function IsBackground([int]$i, [int]$ref) {
   if ($bgIsGreen) { return (Greenness $i) -ge $Tol }
-  return (BgDistance $i) -le $FlatTol
+  if ((BgDistance $i) -le $FlatTol) { return $true }
+  if ($ref -lt 0) { return $false }
+  return (RefDistance $i ($ref -shr 16) (($ref -shr 8) -band 255) ($ref -band 255)) -le $LocalTol
 }
 
 # ── ไล่ระบายจากขอบ ───────────────────────────────────────────────────
@@ -77,31 +93,34 @@ $visited = New-Object 'bool[]' ($w * $h)
 # ต้องใส่เครื่องหมายคำพูดรอบชื่อชนิดที่มี [] ไม่งั้น PowerShell อ่าน Stack[int]
 # เป็นการ "เข้าถึงสมาชิกลำดับที่ int ของ Stack" แล้วพังด้วย error ที่ชี้ไปคนละที่
 $stack = New-Object 'System.Collections.Generic.Stack[int]'
+# สีของพิกเซลที่เดินมา เก็บคู่ขนานกับ $stack (แพ็กเป็น b<<16|g<<8|r)
+$refs  = New-Object 'System.Collections.Generic.Stack[int]'
 
 $lastX = $w - 1; $lastY = $h - 1
 for ($x = 0; $x -lt $w; $x++) {
-  $stack.Push($x)                    # แถวบน
-  $stack.Push($lastY * $w + $x)      # แถวล่าง
+  $stack.Push($x);               $refs.Push(-1)   # แถวบน
+  $stack.Push($lastY * $w + $x); $refs.Push(-1)   # แถวล่าง
 }
 for ($y = 0; $y -lt $h; $y++) {
-  $stack.Push($y * $w)               # คอลัมน์ซ้าย
-  $stack.Push($y * $w + $lastX)      # คอลัมน์ขวา
+  $stack.Push($y * $w);          $refs.Push(-1)   # คอลัมน์ซ้าย
+  $stack.Push($y * $w + $lastX); $refs.Push(-1)   # คอลัมน์ขวา
 }
 
 $removed = 0
 while ($stack.Count -gt 0) {
-  $p = $stack.Pop()
+  $p = $stack.Pop(); $ref = $refs.Pop()
   if ($visited[$p]) { continue }
   $visited[$p] = $true
   $py = [Math]::Floor($p / $w); $px = $p - ($py * $w)
   $i = ($py * $data.Stride) + ($px * 4)
-  if (-not (IsBackground $i)) { continue }
+  if (-not (IsBackground $i $ref)) { continue }
+  $me = ([int]$buf[$i] -shl 16) -bor ([int]$buf[$i+1] -shl 8) -bor [int]$buf[$i+2]
   $buf[$i+3] = 0                                    # โปร่งใส
   $removed++
-  if ($px -gt 0)      { $stack.Push($p - 1) }
-  if ($px -lt $w - 1) { $stack.Push($p + 1) }
-  if ($py -gt 0)      { $stack.Push($p - $w) }
-  if ($py -lt $h - 1) { $stack.Push($p + $w) }
+  if ($px -gt 0)      { $stack.Push($p - 1);  $refs.Push($me) }
+  if ($px -lt $w - 1) { $stack.Push($p + 1);  $refs.Push($me) }
+  if ($py -gt 0)      { $stack.Push($p - $w); $refs.Push($me) }
+  if ($py -lt $h - 1) { $stack.Push($p + $w); $refs.Push($me) }
 }
 Write-Host ("ลบพื้นหลัง: {0:N0} พิกเซล ({1:N1}%)" -f $removed, ($removed / ($w*$h) * 100)) -ForegroundColor DarkGray
 
