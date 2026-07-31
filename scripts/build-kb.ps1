@@ -62,12 +62,12 @@ $FileMap = @(
   @{ Path='cane-brain\references\pests-weeds.md';             Module='cane';        Type='BOOK';     Title='แมลงศัตรูอ้อยและวัชพืช';                        Code='CANE-PEST' }
   @{ Path='cane-brain\references\downstream-economics.md';    Module='cane';        Type='BOOK';     Title='ความสุกแก่ CCS การเก็บเกี่ยว และเศรษฐศาสตร์อ้อย'; Code='CANE-ECON' }
 
-  @{ Path='sugar-brain\SKILL.md';                             Module='dashboard';   Type='BOOK';     Title='กรอบการวิเคราะห์กระบวนการผลิตน้ำตาล';            Code='SUG-FRAME' }
+  @{ Path='sugar-brain\SKILL.md';                             Module='factory';   Type='BOOK';     Title='กรอบการวิเคราะห์กระบวนการผลิตน้ำตาล';            Code='SUG-FRAME' }
   # ไฟล์นี้ครอบคลุมทุกสถานีในโรงงาน จึงไม่ให้ bias กับโมดูลใด — ปล่อยให้ keyword ตัดสินรายหัวข้อ
-  @{ Path='sugar-brain\references\peter-rein-knowledge.md';   Module='crushing';    Type='BOOK';     Title='Peter Rein — Cane Sugar Engineering';           Code='REIN-2007'; NoBias=$true }
-  @{ Path='sugar-brain\references\benchmarks.md';             Module='dashboard';   Type='STANDARD'; Title='ค่าเปรียบเทียบมาตรฐานระดับโลก (Benchmarks)';      Code='BENCH-WC' }
-  @{ Path='sugar-brain\references\production-data-guide.md';  Module='dashboard';   Type='MANUAL';   Title='คู่มือข้อมูลการผลิตและ KPI';                      Code='PROD-DATA' }
-  @{ Path='sugar-brain\references\smart-factory.md';          Module='dashboard';   Type='MANUAL';   Title='Smart Factory และการวิเคราะห์เชิงคาดการณ์';       Code='SMART-FAC' }
+  @{ Path='sugar-brain\references\peter-rein-knowledge.md';   Module='factory';    Type='BOOK';     Title='Peter Rein — Cane Sugar Engineering';           Code='REIN-2007'; NoBias=$true }
+  @{ Path='sugar-brain\references\benchmarks.md';             Module='factory';   Type='STANDARD'; Title='ค่าเปรียบเทียบมาตรฐานระดับโลก (Benchmarks)';      Code='BENCH-WC' }
+  @{ Path='sugar-brain\references\production-data-guide.md';  Module='factory';   Type='MANUAL';   Title='คู่มือข้อมูลการผลิตและ KPI';                      Code='PROD-DATA' }
+  @{ Path='sugar-brain\references\smart-factory.md';          Module='factory';   Type='MANUAL';   Title='Smart Factory และการวิเคราะห์เชิงคาดการณ์';       Code='SMART-FAC' }
 
   @{ Path='steam-brain\SKILL.md';                             Module='powerplant';  Type='BOOK';     Title='ระบบไอน้ำและพลังงานในโรงงานน้ำตาล';              Code='STM-FRAME' }
   @{ Path='steam-brain\references\boiler.md';                 Module='powerplant';  Type='MANUAL';   Title='หม้อไอน้ำ — หลักการและการเดินเครื่อง';           Code='STM-BOIL' }
@@ -77,20 +77,20 @@ $FileMap = @(
   @{ Path='steam-brain\references\turbine-cogen.md';          Module='powerplant';  Type='MANUAL';   Title='กังหันไอน้ำและระบบผลิตไฟฟ้าร่วม';                Code='STM-TURB' }
   @{ Path='steam-brain\references\power-plant-cycles.md';     Module='powerplant';  Type='BOOK';     Title='วัฏจักรโรงไฟฟ้าไอน้ำ';                          Code='STM-CYCLE' }
   @{ Path='steam-brain\references\safety-law-inspection.md';  Module='safety';      Type='STANDARD'; Title='ความปลอดภัยและการตรวจสอบตามกฎหมาย';              Code='STM-SAFE' }
-  @{ Path='steam-brain\references\sugar-factory-steam.md';    Module='evaporation'; Type='MANUAL';   Title='สมดุลไอน้ำในโรงงานน้ำตาล';                       Code='STM-SUG' }
-  @{ Path='steam-brain\references\condensate-flash.md';       Module='evaporation'; Type='MANUAL';   Title='คอนเดนเสทและไอแฟลช';                            Code='STM-COND' }
-  @{ Path='steam-brain\references\distribution-traps.md';     Module='evaporation'; Type='MANUAL';   Title='ระบบจ่ายไอน้ำและกับดักไอน้ำ';                    Code='STM-TRAP' }
-  @{ Path='steam-brain\references\calculations.md';           Module='evaporation'; Type='MANUAL';   Title='สูตรคำนวณระบบไอน้ำ';                            Code='STM-CALC' }
+  @{ Path='steam-brain\references\sugar-factory-steam.md';    Module='factory'; Type='MANUAL';   Title='สมดุลไอน้ำในโรงงานน้ำตาล';                       Code='STM-SUG' }
+  @{ Path='steam-brain\references\condensate-flash.md';       Module='factory'; Type='MANUAL';   Title='คอนเดนเสทและไอแฟลช';                            Code='STM-COND' }
+  @{ Path='steam-brain\references\distribution-traps.md';     Module='factory'; Type='MANUAL';   Title='ระบบจ่ายไอน้ำและกับดักไอน้ำ';                    Code='STM-TRAP' }
+  @{ Path='steam-brain\references\calculations.md';           Module='factory'; Type='MANUAL';   Title='สูตรคำนวณระบบไอน้ำ';                            Code='STM-CALC' }
 
   # สกิลนักวิเคราะห์ข้อมูล — ห้องนี้เดิมมีแค่ 57 ท่อน และไม่มีนิยาม KPI ที่ใช้อ้างอิงได้
-  @{ Path='sugar-intelligence\SKILL.md';                      Module='dashboard';   Type='BOOK';     Title='กรอบการวิเคราะห์ข้อมูลโรงงานน้ำตาล';             Code='SI-FRAME' }
-  @{ Path='sugar-intelligence\references\kpi.md';             Module='dashboard';   Type='STANDARD'; Title='KPI โรงงานน้ำตาล — นิยาม เป้าหมาย และการตีความ';  Code='SI-KPI' }
-  @{ Path='sugar-intelligence\references\rootcause.md';       Module='dashboard';   Type='MANUAL';   Title='การหาสาเหตุรากด้วยข้อมูล (สมดุลซูโครส/5 Why)';   Code='SI-RCA' }
-  @{ Path='sugar-intelligence\references\statistics.md';      Module='dashboard';   Type='MANUAL';   Title='สถิติอุตสาหกรรมและแผนภูมิควบคุม (SPC)';          Code='SI-STAT' }
-  @{ Path='sugar-intelligence\references\plausibility.md';    Module='dashboard';   Type='MANUAL';   Title='ตรวจความสมเหตุสมผลของข้อมูลก่อนวิเคราะห์';       Code='SI-CHECK' }
-  @{ Path='sugar-intelligence\references\economics.md';       Module='dashboard';   Type='MANUAL';   Title='การตีมูลค่าเป็นเงินและจัดลำดับความสำคัญ';        Code='SI-ECON' }
-  @{ Path='sugar-intelligence\references\datasources.md';     Module='dashboard';   Type='MANUAL';   Title='การอ่านข้อมูลจากระบบต่างๆ ในโรงงาน';             Code='SI-DATA' }
-  @{ Path='sugar-intelligence\references\ml.md';              Module='dashboard';   Type='MANUAL';   Title='Machine Learning กับข้อมูลโรงงานน้ำตาล';         Code='SI-ML' }
+  @{ Path='sugar-intelligence\SKILL.md';                      Module='factory';   Type='BOOK';     Title='กรอบการวิเคราะห์ข้อมูลโรงงานน้ำตาล';             Code='SI-FRAME' }
+  @{ Path='sugar-intelligence\references\kpi.md';             Module='factory';   Type='STANDARD'; Title='KPI โรงงานน้ำตาล — นิยาม เป้าหมาย และการตีความ';  Code='SI-KPI' }
+  @{ Path='sugar-intelligence\references\rootcause.md';       Module='factory';   Type='MANUAL';   Title='การหาสาเหตุรากด้วยข้อมูล (สมดุลซูโครส/5 Why)';   Code='SI-RCA' }
+  @{ Path='sugar-intelligence\references\statistics.md';      Module='factory';   Type='MANUAL';   Title='สถิติอุตสาหกรรมและแผนภูมิควบคุม (SPC)';          Code='SI-STAT' }
+  @{ Path='sugar-intelligence\references\plausibility.md';    Module='factory';   Type='MANUAL';   Title='ตรวจความสมเหตุสมผลของข้อมูลก่อนวิเคราะห์';       Code='SI-CHECK' }
+  @{ Path='sugar-intelligence\references\economics.md';       Module='factory';   Type='MANUAL';   Title='การตีมูลค่าเป็นเงินและจัดลำดับความสำคัญ';        Code='SI-ECON' }
+  @{ Path='sugar-intelligence\references\datasources.md';     Module='factory';   Type='MANUAL';   Title='การอ่านข้อมูลจากระบบต่างๆ ในโรงงาน';             Code='SI-DATA' }
+  @{ Path='sugar-intelligence\references\ml.md';              Module='factory';   Type='MANUAL';   Title='Machine Learning กับข้อมูลโรงงานน้ำตาล';         Code='SI-ML' }
 
   # สกิล HSE — ห้องความปลอดภัยเดิมมีความรู้ของตัวเองแค่ 28 ท่อน และยืมมาจากสกิลอื่นเกือบหมด
   @{ Path='hse-brain\SKILL.md';                               Module='safety';      Type='BOOK';     Title='กรอบงานความปลอดภัย อาชีวอนามัย และสิ่งแวดล้อม';  Code='HSE-FRAME' }
@@ -121,7 +121,7 @@ $FileMap = @(
   @{ Path='sugar-qc-brain\references\cheat-sheet.md';         Module='quality';     Type='FAQ';      Title='สรุปค่ามาตรฐานและ pattern วินิจฉัย';             Code='QC-CHEAT' }
 
   # สกิลจัดซื้อ — ห้องจัดซื้อ/คลังเดิมมีความรู้ของตัวเองแค่ 14 ท่อน ต้องยืมจากคนอื่นทุกคำถาม
-  @{ Path='procurement-management\SKILL.md';                  Module='warehouse';   Type='BOOK';     Title='งานจัดซื้อ PR-PO และการบริหารผู้ขาย';            Code='PROC-FRAME' }
+  @{ Path='procurement-management\SKILL.md';                  Module='factory';   Type='BOOK';     Title='งานจัดซื้อ PR-PO และการบริหารผู้ขาย';            Code='PROC-FRAME' }
 
   # สกิลระบบคุณภาพ — เอกสารระบบจริงของโรงงาน (ML-QP/ML-SP/ML-WI/ML-FM)
   # Force ทุกไฟล์ เพราะเนื้อหาพูดถึงหม้อเคี่ยว ลูกหีบ คลัง ฯลฯ เต็มไปหมด
@@ -135,11 +135,11 @@ $FileMap = @(
   @{ Path='quality-standards-brain\references\fssc-programmes.md'; Module='foodsafety'; Type='MANUAL'; Force=$true
      Title='โปรแกรมสนับสนุน FSSC 22000 v6 — Food Fraud EMP MOC Food Loss'; Code='ML-FSSC' }
 
-  @{ Path='motor-expert\SKILL.md';                            Module='maintenance'; Type='BOOK';     Title='กรอบการวินิจฉัยมอเตอร์และระบบไฟฟ้า';             Code='MTR-FRAME' }
-  @{ Path='motor-expert\references\failure-modes.md';         Module='maintenance'; Type='MANUAL';   Title='รูปแบบความเสียหายของมอเตอร์';                    Code='MTR-FAIL' }
-  @{ Path='motor-expert\references\standards-thresholds.md';  Module='maintenance'; Type='STANDARD'; Title='เกณฑ์มาตรฐานการสั่นและฉนวน (ISO/NEMA/IEEE)';     Code='MTR-STD' }
-  @{ Path='motor-expert\references\transformer-power-supply.md'; Module='maintenance'; Type='MANUAL'; Title='หม้อแปลงและระบบจ่ายไฟ';                       Code='MTR-TRF' }
-  @{ Path='motor-expert\references\training-data-guide.md';   Module='maintenance'; Type='MANUAL';   Title='ข้อมูลสำหรับวิเคราะห์เชิงคาดการณ์';              Code='MTR-DATA' }
+  @{ Path='motor-expert\SKILL.md';                            Module='factory'; Type='BOOK';     Title='กรอบการวินิจฉัยมอเตอร์และระบบไฟฟ้า';             Code='MTR-FRAME' }
+  @{ Path='motor-expert\references\failure-modes.md';         Module='factory'; Type='MANUAL';   Title='รูปแบบความเสียหายของมอเตอร์';                    Code='MTR-FAIL' }
+  @{ Path='motor-expert\references\standards-thresholds.md';  Module='factory'; Type='STANDARD'; Title='เกณฑ์มาตรฐานการสั่นและฉนวน (ISO/NEMA/IEEE)';     Code='MTR-STD' }
+  @{ Path='motor-expert\references\transformer-power-supply.md'; Module='factory'; Type='MANUAL'; Title='หม้อแปลงและระบบจ่ายไฟ';                       Code='MTR-TRF' }
+  @{ Path='motor-expert\references\training-data-guide.md';   Module='factory'; Type='MANUAL';   Title='ข้อมูลสำหรับวิเคราะห์เชิงคาดการณ์';              Code='MTR-DATA' }
 )
 
 
@@ -148,22 +148,39 @@ $FileMap = @(
 # =====================================================================
 $ModuleKeywords = @{
   'cane'          = @('อ้อย','พันธุ์','ปลูก','ไว้ตอ','ตอ','ปุ๋ย','ดิน','โรค','แมลง','วัชพืช','แปลง','ไร่','เก็บเกี่ยว','ratoon','variety','soil','fertilizer','disease','pest','yield','harvest','CCS','ความสุกแก่')
-  'crushing'      = @('ลูกหีบ','หีบ','mill','milling','tandem','shredder','knife','ใบมีด','imbibition','น้ำอิ่ม','extraction','bagasse','ชานอ้อย','fiber','preparation index','PI','roll','hydraulic','cane carrier','การเตรียมอ้อย')
-  'clarification' = @('clarifier','clarification','ทำใส','ปูน','lime','liming','pH','flocculant','mud','ตะกอน','filter press','sulphitation','defecation','turbidity','mixed juice','น้ำอ้อยรวม','juice heater','settling')
-  'evaporation'   = @('evaporator','evaporation','ระเหย','multiple effect','steam economy','vapour','vapor bleeding','scale','ตะกรัน','condensate','คอนเดนเสท','BPE','boiling point elevation','syrup','ไซรัป','heat transfer','HTC','steam trap','กับดักไอน้ำ','flash')
-  'panboiling'    = @('vacuum pan','หม้อเคี่ยว','เคี่ยว','strike','seed','graining','crystal','ผลึก','supersaturation','false grain','massecuite','mother liquor','crystallizer','crystallization','การตกผลึก','exhaustion')
-  'centrifugal'   = @('centrifugal','ปั่น','เครื่องปั่น','basket','ตะแกรง','screen','wash water','น้ำล้าง','purging','molasses','กากน้ำตาล','crystal breakage','spinning','cycle time','affination')
+
+  # ห้อง "โรงงาน" รวมทุกสถานีในกระบวนการผลิต + งานบำรุงรักษา คลัง และการวิเคราะห์ข้อมูล
+  # (เดิมแยกเป็น 8 ห้อง: หีบ ทำใส ระเหย เคี่ยว ปั่น บำรุงรักษา คลัง วิเคราะห์ข้อมูล)
+  'factory'       = @(
+    # เตรียมอ้อยและการหีบ
+    'ลูกหีบ','หีบ','mill','milling','tandem','shredder','knife','ใบมีด','imbibition','น้ำอิ่ม','extraction','bagasse','ชานอ้อย','fiber','preparation index','roll','hydraulic','cane carrier','การเตรียมอ้อย',
+    # ทำใส
+    'clarifier','clarification','ทำใส','ปูน','lime','liming','flocculant','mud','ตะกอน','filter press','sulphitation','defecation','turbidity','mixed juice','น้ำอ้อยรวม','juice heater','settling',
+    # ระเหย
+    'evaporator','evaporation','ระเหย','multiple effect','steam economy','vapour','vapor bleeding','scale','ตะกรัน','condensate','คอนเดนเสท','BPE','boiling point elevation','syrup','ไซรัป','heat transfer','steam trap','กับดักไอน้ำ',
+    # หม้อเคี่ยวและการตกผลึก
+    'vacuum pan','หม้อเคี่ยว','เคี่ยว','strike','graining','crystal','ผลึก','supersaturation','false grain','massecuite','mother liquor','crystallizer','crystallization','การตกผลึก','exhaustion',
+    # การปั่น
+    'centrifugal','ปั่น','เครื่องปั่น','basket','ตะแกรง','wash water','น้ำล้าง','purging','molasses','กากน้ำตาล','crystal breakage','affination',
+    # บำรุงรักษาเครื่องจักร
+    'bearing','แบริ่ง','vibration','การสั่น','alignment','ตั้งศูนย์','lubrication','หล่อลื่น','gearbox','เกียร์','pump','ปั๊ม','motor','มอเตอร์','cavitation','thermography','megger','transformer','หม้อแปลง','ISO 10816','ซ่อมบำรุง','preventive','predictive',
+    # คลังและจัดซื้อ
+    'warehouse','คลัง','inventory','สต็อก','FIFO','FEFO','storage','การจัดเก็บ','pallet','กระสอบ','stock take','shelf life','fumigation','จัดซื้อ','procurement','ผู้ขาย','vendor','purchase order','วัตถุดิบ',
+    # KPI และการวิเคราะห์ข้อมูล
+    'KPI','OEE','recovery','BHR','benchmark','daily report','รายงานประจำวัน','trend','แนวโน้ม','anomaly','undetermined loss','time efficiency','availability','downtime','steam % cane'
+  )
+
   'quality'       = @('ICUMSA','Pol','Brix','Purity','ความบริสุทธิ์','สี','color','ash','เถ้า','moisture','ความชื้น','reducing sugar','conductivity','มอก','spec','สเปก','dextran','starch','SO2','แล็บ','laboratory','particle size','grain size','caking')
   'powerplant'    = @('boiler','หม้อไอน้ำ','turbine','กังหัน','generator','superheater','economizer','deaerator','feed water','น้ำป้อน','blowdown','excess air','ไอเสีย','flue gas','GCV','cogeneration','trip','safety valve','condenser','โรงไฟฟ้า')
-  'maintenance'   = @('bearing','แบริ่ง','vibration','การสั่น','alignment','ตั้งศูนย์','lubrication','หล่อลื่น','gearbox','เกียร์','pump','ปั๊ม','motor','มอเตอร์','cavitation','thermography','insulation','megger','transformer','หม้อแปลง','ISO 10816','NEMA','ซ่อมบำรุง','preventive','predictive')
   'foodsafety'    = @('FSSC','ISO 22000','ISO22000','HACCP','GMP','PRP','OPRP','audit','ตรวจประเมิน','CAR','corrective action','CCP','traceability','recall','allergen','foreign matter','ความปลอดภัยอาหาร','risk assessment','ISO 9001','มาตรฐาน','ควบคุมคุณภาพ')
-  'warehouse'     = @('warehouse','คลัง','inventory','สต็อก','FIFO','FEFO','storage','การจัดเก็บ','pallet','กระสอบ','barcode','stock take','shelf life','fumigation','จัดซื้อ','procurement','ผู้ขาย','vendor','purchase order','วัตถุดิบ')
-  'dashboard'     = @('KPI','OEE','recovery','BHR','benchmark','dashboard','daily report','รายงานประจำวัน','trend','แนวโน้ม','anomaly','forecast','undetermined loss','time efficiency','availability','downtime','steam % cane','executive summary')
-
-  # ── ผู้เชี่ยวชาญใหม่ตาม ICON.png ──────────────────────────────────
   'etreatment'    = @('บำบัดน้ำเสีย','wastewater','น้ำทิ้ง','BOD','COD','บ่อบำบัด','สิ่งแวดล้อม','environment','effluent','กากตะกอนน้ำเสีย','aeration','เติมอากาศ','บ่อผึ่ง','คุณภาพน้ำทิ้ง','มลพิษ','การระบายน้ำ','recycle water','น้ำหมุนเวียน')
-  'safety'        = @('ความปลอดภัย','safety','อุบัติเหตุ','accident','PPE','อุปกรณ์ป้องกัน','LOTO','lockout','tagout','confined space','ที่อับอากาศ','safety valve','วาล์วนิรภัย','ตรวจสอบตามกฎหมาย','กฎหมาย','ใบอนุญาต','อาชีวอนามัย','occupational','ดับเพลิง','fire','เซฟตี้','JSA','งานเสี่ยง','permit to work')
+  # ตัดคำว่า "กฎหมาย" ลอยๆ ออก เพราะห้องกฎหมายลาวใช้คำนั้นเป็นหลัก
+  # ห้องความปลอดภัยยังจับได้จาก "ตรวจสอบตามกฎหมาย" ซึ่งเจาะจงกว่า
+  'safety'        = @('ความปลอดภัย','safety','อุบัติเหตุ','accident','PPE','อุปกรณ์ป้องกัน','LOTO','lockout','tagout','confined space','ที่อับอากาศ','safety valve','วาล์วนิรภัย','ตรวจสอบตามกฎหมาย','อาชีวอนามัย','occupational','ดับเพลิง','fire','เซฟตี้','JSA','งานเสี่ยง','permit to work')
   'hr'            = @('บุคลากร','พนักงาน','HR','human resource','ทรัพยากรบุคคล','สวัสดิการ','ฝึกอบรม','training','ประเมินผล','แรงงาน','กฎหมายแรงงาน','สรรหา','recruitment','โครงสร้างองค์กร','กะทำงาน','shift','OT','ค่าจ้าง','competency','สมรรถนะ')
+  # ห้องกฎหมาย สปป.ลาว — ยังไม่มีเอกสารในคลัง รอผู้ใช้วางไฟล์
+  # เลี่ยงคำอังกฤษกว้างๆ อย่าง law/legal เพราะจะไปดูดเนื้อหาภาษาอังกฤษของห้องอื่น
+  'law'           = @('กฎหมายลาว','สปป.ลาว','ลาว','Lao PDR','เวียงจันทน์','ดำรัส','พระราชกฤษฎีกา','กฎหมายว่าด้วย','รัฐบาลลาว','สัมปทาน','ใบอนุญาตลงทุน','ส่งเสริมการลงทุน','ภาษี','อากร','ศุลกากร','นำเข้าส่งออก','วีซ่า','ใบอนุญาตทำงาน','นิติกรรม','สัญญา','ข้อพิพาท','ที่ดิน','วิสาหกิจ')
 }
 
 
@@ -485,7 +502,7 @@ $SupportMap  = @(
   # เว็บความรู้ที่ทีมทำเอง — เนื้อหาไทยผสมอังกฤษ ครอบคลุมทุกสถานี
   # เป็น Markdown แล้ว (fetch-web.ps1 แปลงหัวข้อให้) จึงไม่ตั้ง Plain
   # NoBias เพราะครอบคลุมหลายสถานี ให้ keyword ตัดสินรายหัวข้อ
-  @{ File='MLSugartech.txt'; Module='dashboard'; Type='BOOK'; NoBias=$true
+  @{ File='MLSugartech.txt'; Module='factory'; Type='BOOK'; NoBias=$true
      Title='ML SugarTech — คลังความรู้วิศวกรรมน้ำตาล'; Code='MLST' }
 
   # ── งานตรวจติดตามภายใน (IQA) — เอกสารจริงของโรงงาน ──────────────
@@ -512,7 +529,7 @@ $SupportMap  = @(
      Title='โปรแกรมพื้นฐานด้านสุขลักษณะ (PRPs/GHPs)'; Code='PRP' }
 )
 if ($IncludeRein) {
-  $SupportMap += @{ File='Peter Rein - Cane sugar enginnering.txt'; Module='crushing'; Type='BOOK'
+  $SupportMap += @{ File='Peter Rein - Cane sugar enginnering.txt'; Module='factory'; Type='BOOK'
      Plain=$true; NoBias=$true; Title='Peter Rein — Cane Sugar Engineering (ฉบับเต็ม)'; Code='REIN-FULL' }
 }
 
@@ -541,7 +558,7 @@ foreach ($f in $auto) {
   $latin = [regex]::Matches($base,'[A-Za-z0-9]+') | ForEach-Object { $_.Value }
   $code = if ($latin) { (($latin -join '-').ToUpper()) } else { "DOC-$autoNo" }
   if ($code.Length -gt 14) { $code = $code.Substring(0,14).Trim('-') }
-  $SupportMap += @{ File=$f.Name; Module='dashboard'; Type='DOC'; Plain=$true; NoBias=$true
+  $SupportMap += @{ File=$f.Name; Module='factory'; Type='DOC'; Plain=$true; NoBias=$true
                     Title=$base; Code=$code }
   Write-Host ("  พบเอกสารใหม่ที่ยังไม่ได้ลงทะเบียน: {0}  (code {1})" -f $f.Name, $code) -ForegroundColor Cyan
 }

@@ -751,26 +751,18 @@ window.addEventListener('error', ev=>{
 });
 
 /* ══════════════════════════════════════════════════════════════════
-   ICON SET — ไอคอนเส้น 15 ตัวตาม ICON.png
+   ICON SET — ไอคอนเส้น 9 ห้อง
    ══════════════════════════════════════════════════════════════════ */
 /* stroke-width 2 ให้เส้นคมกว่า 1.8 เพราะตกลงบนเส้น pixel พอดีที่ขนาด 18-24px */
 const S=(p,f)=>`<svg viewBox="0 0 24 24" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
 const ICONS={
   /* ต้นอ้อย */
   cane:S('<path d="M12 21V9"/><path d="M12 12C12 8 9 5 5 5c0 4 3 7 7 7z"/><path d="M12 10c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M9 21h6"/>'),
-  /* เฟือง (การหีบ) */
-  crushing:S('<circle cx="9.5" cy="9.5" r="3.2"/><path d="M9.5 3.4v1.6M9.5 14v1.6M3.4 9.5h1.6M14 9.5h1.6M5.2 5.2l1.1 1.1M12.7 12.7l1.1 1.1M13.8 5.2l-1.1 1.1M6.3 12.7l-1.1 1.1"/><circle cx="16.5" cy="16.5" r="2.4"/><path d="M16.5 12.6v1.2M16.5 19.2v1.2M12.6 16.5h1.2M19.2 16.5h1.2"/>'),
-  /* หม้อต้ม + ไอ (การต้มน้ำอ้อย) */
-  clarification:S('<path d="M4 11h16v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M2 11h20"/><path d="M9 7c0-1 1-1.4 1-2.4S9 3 9 3M13 7c0-1 1-1.4 1-2.4S13 3 13 3M17 7c0-1 1-1.4 1-2.4S17 3 17 3"/>'),
-  /* ถังระเหย */
-  evaporation:S('<rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6h6v2"/><path d="M4 12h2M18 12h2M4 16h2M18 16h2"/><path d="M10 3.5c0-.8.8-1 .8-1.8M14 3.5c0-.8.8-1 .8-1.8"/>'),
-  /* หม้อเคี่ยว */
-  panboiling:S('<path d="M5 10h14v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M19 12h2v3h-2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 3.5V2"/>'),
-  /* ใบพัดปั่น */
-  centrifugal:S('<circle cx="12" cy="12" r="8.5"/><path d="M12 12c0-3.5 2-5.5 5-5.5-1 3-2.5 5-5 5.5z"/><path d="M12 12c-3.5 0-5.5-2-5.5-5 3 1 5 2.5 5.5 5z"/><path d="M12 12c0 3.5-2 5.5-5 5.5 1-3 2.5-5 5-5.5z"/><path d="M12 12c3.5 0 5.5 2 5.5 5-3-1-5-2.5-5.5-5z"/>'),
+  /* โรงงาน — อาคารโรงงาน + ปล่อง (ห้องรวมกระบวนการผลิต) */
+  factory:S('<path d="M3 20.5h18"/><path d="M3 20.5V10l5.5 3.2V10L14 13.2V20.5"/><path d="M14 20.5V6.5h4.5l.8 14"/><path d="M6 17h1.5M10.5 17H12M16 17h1.5"/>'),
   /* ฟลาสก์ (ห้องแล็บ) */
   quality:S('<path d="M9.5 3v5.5L4.6 17a2.2 2.2 0 0 0 1.9 3.3h11a2.2 2.2 0 0 0 1.9-3.3L14.5 8.5V3"/><path d="M8.5 3h7"/><path d="M7.2 14h9.6"/>'),
-  /* ใบไม้ + หยดน้ำ (บำบัดน้ำ) */
+  /* ใบไม้ + หยดน้ำ (สิ่งแวดล้อม) */
   etreatment:S('<path d="M20 4C10 4 4 9 4 16c0 2.2 1.3 4 4 4 8 0 12-6 12-16z"/><path d="M8 20c1.5-5 4.5-8.5 9-11"/>'),
   /* สายฟ้า (โรงไฟฟ้า) */
   powerplant:S('<path d="M13.5 2 4 13.5h6.5L10 22l9.5-11.5H13z"/>'),
@@ -778,42 +770,28 @@ const ICONS={
   safety:S('<path d="M12 2.5 4.5 5.6v6c0 4.6 3.1 8.8 7.5 10 4.4-1.2 7.5-5.4 7.5-10v-6z"/><path d="m9 12 2.2 2.2L15.4 10"/>'),
   /* คลิปบอร์ด + เช็ก (คุณภาพ & มาตรฐาน) */
   foodsafety:S('<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4"/><path d="m8.6 10.5 1.4 1.4 2.6-2.6M8.6 15.5l1.4 1.4 2.6-2.6"/><path d="M15 10.5h1.6M15 15.5h1.6"/>'),
-  /* ประแจ (บำรุงรักษา) */
-  maintenance:S('<path d="M15.5 3.5a5.5 5.5 0 0 0-5 7.7L3.6 18a2 2 0 0 0 2.8 2.8l6.8-6.9a5.5 5.5 0 0 0 6.9-7.4l-3 3-2.9-.8-.8-2.9 3-3a5.5 5.5 0 0 0-1-.3z"/>'),
-  /* รถเข็น (จัดซื้อ & คลัง) */
-  warehouse:S('<circle cx="9.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/><path d="M2.5 3.5h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.3a1.6 1.6 0 0 0 1.6-1.3L21 7.5H6"/>'),
   /* กลุ่มคน (HR) */
   hr:S('<circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9.5" r="2.4"/><path d="M16 14.4a5 5 0 0 1 5.5 4.6"/>'),
-  /* กราฟแท่ง + ลูกศร (วิเคราะห์ข้อมูล) */
-  dashboard:S('<path d="M3.5 20.5h17"/><rect x="5" y="12" width="3.2" height="7" rx="1"/><rect x="10.4" y="9" width="3.2" height="10" rx="1"/><rect x="15.8" y="5" width="3.2" height="14" rx="1"/><path d="m5 8 4-4 3 2.5L20 2"/><path d="M16.5 2H20v3.4"/>'),
+  /* ตาชั่ง (กฎหมาย) */
+  law:S('<path d="M12 3.5v17"/><path d="M7 20.5h10"/><path d="M4.5 7h15"/><path d="M8 7 5 13.5h6z"/><path d="M5 13.5a3 3 0 0 0 6 0"/><path d="M16 7l-3 6.5h6z"/><path d="M13 13.5a3 3 0 0 0 6 0"/>'),
 };
 
 /* ══════════════════════════════════════════════════════════════════
-   ผู้เชี่ยวชาญ 15 คน (ตาม ICON.png)
+   ผู้เชี่ยวชาญ 9 ห้อง (ตามโฟลเดอร์ Support Document\expert *)
    ══════════════════════════════════════════════════════════════════ */
 const MODULES=[
  {id:'cane',th:'ผู้เชี่ยวชาญอ้อย',en:'Cane Expert',lo:'ຜູ້ຊ່ຽວຊານອ້ອຍ',c:'#22c55e',bg:'#dcfce7',
   dTh:'ให้คำแนะนำการปลูกอ้อยและการจัดการไร่',dEn:'Cane planting and farm management',
   kw:['อ้อย','พันธุ์','ปลูก','ตอ','ไว้ตอ','ปุ๋ย','ดิน','โรค','แมลง','วัชพืช','แปลง','ไร่','เก็บเกี่ยว','ccs','ความหวาน','ตันต่อไร่','ไฟไหม้','ใบอ้อย','ratoon','variety','soil','fertilizer','disease','pest','yield','harvest','ความสุกแก่','ท่อนพันธุ์','งอก']},
- {id:'crushing',th:'การหีบอ้อย',en:'Milling Expert',lo:'ການຫີບອ້ອຍ',c:'#3b82f6',bg:'#dbeafe',
-  dTh:'เชี่ยวชาญกระบวนการหีบและการสกัดน้ำอ้อย',dEn:'Milling and juice extraction',
-  kw:['หีบ','ลูกหีบ','mill','milling','tandem','ใบมีด','knife','shredder','imbibition','น้ำอิ่ม','extraction','ชานอ้อย','bagasse','fiber','preparation index','pi','roll','hydraulic','แรงดัน','carrier','อุดตัน','choke','สกัด']},
- {id:'clarification',th:'การต้มน้ำอ้อย',en:'Boiling Expert',lo:'ການຕົ້ມນ້ຳອ້ອຍ',c:'#38bdf8',bg:'#e0f2fe',
-  dTh:'ควบคุมคุณภาพน้ำอ้อยและการตกตะกอน',dEn:'Juice quality control and clarification',
-  kw:['ทำใส','clarifier','clarification','ปูน','lime','ph','flocculant','โพลิเมอร์','mud','ตะกอน','filter press','sulphitation','defecation','turbidity','ขุ่น','น้ำอ้อยรวม','mixed juice','juice heater','settling','ตกตะกอน','ล้น','overflow','ต้มน้ำอ้อย']},
- {id:'evaporation',th:'การระเหย',en:'Evaporation Expert',lo:'ການລະເຫີຍ',c:'#8b5cf6',bg:'#ede9fe',
-  dTh:'เชี่ยวชาญหม้อต้มระเหยและการเข้มข้น',dEn:'Evaporator operation and concentration',
-  kw:['ระเหย','evaporator','mee','multiple effect','steam economy','ไอน้ำ','vapour','vapor','bleeding','scale','ตะกรัน','condensate','คอนเดนเสท','vacuum','สุญญากาศ','brix','ไซรัป','syrup','heat transfer','htc','bpe','แฟลช','flash','กับดักไอน้ำ','trap']},
- {id:'panboiling',th:'หม้อเคี่ยว',en:'Vacuum Pan Expert',lo:'ໝໍ້ຕົ້ມ',c:'#f43f5e',bg:'#ffe4e6',
-  dTh:'ควบคุมการเคี่ยวและคุณภาพน้ำเชื่อม',dEn:'Pan boiling and syrup quality',
-  kw:['หม้อเคี่ยว','เคี่ยว','vacuum pan','strike','seed','เชื้อ','graining','ผลึก','crystal','ตกผลึก','supersaturation','false grain','ผลึกปลอม','massecuite','แม่เหลว','mother liquor','crystallizer','exhaustion','boiling curve']},
- {id:'centrifugal',th:'การปั่น',en:'Centrifuge Expert',lo:'ການປັ່ນ',c:'#f97316',bg:'#ffedd5',
-  dTh:'เชี่ยวชาญการปั่นน้ำตาลและการลดความชื้น',dEn:'Centrifuging and moisture reduction',
-  kw:['ปั่น','centrifugal','เครื่องปั่น','basket','ตะกร้า','ตะแกรง','screen','wash water','น้ำล้าง','steam wash','purging','molasses','กากน้ำตาล','ผลึกแตก','breakage','cycle time','affination','น้ำตาลชื้น']},
+ /* ห้องรวมของกระบวนการผลิตทั้งสาย — เดิมแยกเป็น หีบ/ทำใส/ระเหย/เคี่ยว/ปั่น
+    รวมงานบำรุงรักษาเครื่องจักร คลังสินค้า และการวิเคราะห์ข้อมูลการผลิตไว้ด้วย */
+ {id:'factory',th:'โรงงาน',en:'Factory Expert',lo:'ໂຮງງານ',c:'#3b82f6',bg:'#dbeafe',
+  dTh:'กระบวนการผลิตน้ำตาลทั้งสาย เครื่องจักร และประสิทธิภาพ',dEn:'Sugar process, machinery and performance',
+  kw:['หีบ','ลูกหีบ','mill','milling','tandem','ใบมีด','shredder','imbibition','extraction','ชานอ้อย','bagasse','fiber','preparation index','ทำใส','clarifier','clarification','ปูน','lime','flocculant','ตะกอน','mud','filter press','turbidity','น้ำอ้อยรวม','mixed juice','ระเหย','evaporator','multiple effect','steam economy','ตะกรัน','scale','condensate','คอนเดนเสท','ไซรัป','syrup','หม้อเคี่ยว','เคี่ยว','vacuum pan','strike','ผลึก','crystal','ตกผลึก','supersaturation','false grain','massecuite','ปั่น','centrifugal','เครื่องปั่น','น้ำล้าง','wash water','purging','molasses','กากน้ำตาล','แบริ่ง','bearing','vibration','การสั่น','alignment','หล่อลื่น','เกียร์','ปั๊ม','pump','มอเตอร์','motor','ซ่อมบำรุง','maintenance','คลัง','warehouse','สต็อก','fifo','จัดซื้อ','procurement','วัตถุดิบ','kpi','oee','recovery','bhr','benchmark','รายงานประจำวัน','downtime','undetermined']},
  {id:'quality',th:'ห้องปฏิบัติการ',en:'Lab & Analysis Expert',lo:'ຫ້ອງທົດລອງ',c:'#14b8a6',bg:'#ccfbf1',
   dTh:'วิเคราะห์คุณภาพน้ำตาลและวัตถุดิบ',dEn:'Sugar and raw material analysis',
   kw:['คุณภาพ','แล็บ','lab','pol','brix','purity','ความบริสุทธิ์','สี','color','icumsa','ความชื้น','moisture','เถ้า','ash','conductivity','reducing','รีดิวซ์','มอก','spec','สเปก','dextran','starch','so2','ซัลเฟอร์','grain size','particle','caking','จับตัวเป็นก้อน','ผลวิเคราะห์','ปฏิบัติการ']},
- {id:'etreatment',th:'ระบบบำบัดน้ำ',en:'E-Treatment Expert',lo:'ລະບົບບຳບັດນ້ຳ',c:'#4ade80',bg:'#dcfce7',
+ {id:'etreatment',th:'สิ่งแวดล้อม',en:'Environment Expert',lo:'ສິ່ງແວດລ້ອມ',c:'#4ade80',bg:'#dcfce7',
   dTh:'ดูแลระบบบำบัดน้ำเสียและสิ่งแวดล้อม',dEn:'Wastewater treatment and environment',
   kw:['บำบัดน้ำเสีย','wastewater','น้ำทิ้ง','bod','cod','บ่อบำบัด','สิ่งแวดล้อม','environment','effluent','aeration','เติมอากาศ','บ่อผึ่ง','คุณภาพน้ำทิ้ง','มลพิษ','recycle water','น้ำหมุนเวียน','iso14001']},
  {id:'powerplant',th:'โรงไฟฟ้าชีวมวล',en:'Power Plant Expert',lo:'ໂຮງໄຟຟ້າຊີວະມວນ',c:'#eab308',bg:'#fef9c3',
@@ -825,18 +803,12 @@ const MODULES=[
  {id:'foodsafety',th:'คุณภาพ & มาตรฐาน',en:'QA & Standards Expert',lo:'ຄຸນນະພາບ & ມາດຕະຖານ',c:'#7c3aed',bg:'#ede9fe',
   dTh:'ระบบคุณภาพ มาตรฐาน และการตรวจติดตาม',dEn:'Quality systems, standards and audits',
   kw:['fssc','iso22000','iso 22000','iso9001','iso14001','haccp','prp','oprp','gmp','smeta','halal','kosher','audit','ตรวจประเมิน','car','ncr','ข้อบกพร่อง','corrective','ccp','จุดวิกฤต','traceability','สอบกลับ','recall','เรียกคืน','allergen','สิ่งแปลกปลอม','ความปลอดภัยอาหาร','มาตรฐาน']},
- {id:'maintenance',th:'บำรุงรักษาเครื่องจักร',en:'Maintenance Expert',lo:'ບຳລຸງຮັກສາເຄື່ອງຈັກ',c:'#3b82f6',bg:'#dbeafe',
-  dTh:'ให้คำแนะนำการบำรุงรักษาและแก้ไขปัญหาเครื่องจักร',dEn:'Machinery maintenance and troubleshooting',
-  kw:['ซ่อมบำรุง','maintenance','แบริ่ง','bearing','vibration','การสั่น','alignment','ตั้งศูนย์','หล่อลื่น','lubrication','เกียร์','gearbox','ปั๊ม','pump','มอเตอร์','motor','cavitation','overload','thermography','insulation','megger','หม้อแปลง','transformer','pm','predictive','ร้อน','เสียงดัง','oil analysis']},
- {id:'warehouse',th:'จัดซื้อ & คลังสินค้า',en:'Procurement Expert',lo:'ຈັດຊື້ & ຄັງສິນຄ້າ',c:'#f97316',bg:'#ffedd5',
-  dTh:'จัดการจัดซื้อ วัตถุดิบ และคลังสินค้า',dEn:'Procurement, materials and warehouse',
-  kw:['คลัง','warehouse','สต็อก','stock','inventory','จัดเก็บ','storage','fifo','fefo','บาร์โค้ด','barcode','pallet','กระสอบ','stock take','ตรวจนับ','shelf life','aging','ระบายอากาศ','fumigation','จัดซื้อ','procurement','ผู้ขาย','vendor','purchase order','วัตถุดิบ']},
  {id:'hr',th:'ทรัพยากรบุคคล',en:'HR Expert',lo:'ຊັບພະຍາກອນບຸກຄົນ',c:'#22c55e',bg:'#dcfce7',
   dTh:'กฎหมายแรงงาน พัฒนาบุคลากร และสวัสดิการ',dEn:'Labour law, people development, welfare',
   kw:['บุคลากร','พนักงาน','hr','human resource','ทรัพยากรบุคคล','สวัสดิการ','ฝึกอบรม','training','ประเมินผล','แรงงาน','กฎหมายแรงงาน','สรรหา','recruitment','โครงสร้างองค์กร','กะทำงาน','shift','ot','ค่าจ้าง','competency','สมรรถนะ']},
- {id:'dashboard',th:'การวิเคราะห์ข้อมูล',en:'Data & BI Expert',lo:'ການວິເຄາະຂໍ້ມູນ',c:'#8b5cf6',bg:'#ede9fe',
-  dTh:'วิเคราะห์ข้อมูลและสร้างรายงานเชิงลึก',dEn:'Data analysis and reporting',
-  kw:['kpi','oee','recovery','bhr','benchmark','เทียบ','dashboard','รายงาน','daily report','แนวโน้ม','trend','anomaly','ผิดปกติ','forecast','พยากรณ์','undetermined','สูญเสีย','downtime','time efficiency','availability','steam % cane','สรุปผู้บริหาร','ประสิทธิภาพรวม','วิเคราะห์ข้อมูล']},
+ {id:'law',th:'กฎหมาย',en:'Lao Law Expert',lo:'ກົດໝາຍ',c:'#6366f1',bg:'#e0e7ff',
+  dTh:'กฎหมายและระเบียบของ สปป.ลาว ที่เกี่ยวกับโรงงาน',dEn:'Lao PDR law and regulations for the mill',
+  kw:['กฎหมาย','กฎหมายลาว','สปป.ลาว','ลาว','lao','เวียงจันทน์','ดำรัส','พระราชกฤษฎีกา','กฎหมายว่าด้วย','รัฐบาลลาว','สัมปทาน','ใบอนุญาต','ลงทุน','ส่งเสริมการลงทุน','ภาษี','อากร','ศุลกากร','นำเข้า','ส่งออก','วีซ่า','ใบอนุญาตทำงาน','นิติกรรม','สัญญา','ข้อพิพาท','ที่ดิน','วิสาหกิจ','ระเบียบ']},
 ];
 
 const I18N={
@@ -878,16 +850,8 @@ const I18N={
 const STARTERS={
  cane:{th:['CCS ต่ำกว่าปีที่แล้ว สาเหตุที่เป็นไปได้','โรคใบขาวระบาดทั้งแปลง จัดการยังไง','ไว้ตอปีที่ 3 คุ้มไหม'],
    en:['CCS lower than last season — possible causes?','White leaf disease across the plot','Is a third ratoon worth keeping?']},
- crushing:{th:['Extraction ต่ำกว่าเป้า ควรไล่ตรวจอะไรก่อน','imbibition % fiber ควรตั้งเท่าไร','Pol % bagasse สูง แก้ยังไง'],
-   en:['Extraction below target — what to check first?','What imbibition % fiber should I run?','Pol % bagasse is high — how to fix?']},
- clarification:{th:['clarifier ตกตะกอนไม่ดี น้ำใสขุ่น','pH น้ำอ้อยคุมไม่นิ่ง','mud loss สูงผิดปกติ'],
-   en:['Poor settling, cloudy clear juice','Juice pH keeps drifting','Mud loss unusually high']},
- evaporation:{th:['Steam economy ต่ำ ตรวจอะไรก่อน','ตะกรันใน evaporator สังเกตจากอะไร','สุญญากาศไม่ดี ผลกระทบอะไรบ้าง'],
-   en:['Low steam economy — where to start?','How do I detect evaporator scaling?','Poor vacuum — what are the effects?']},
- panboiling:{th:['เกิด false grain ในหม้อเคี่ยว แก้ยังไง','ผลึกโตช้า strike time ยาว','คุม supersaturation ยังไง'],
-   en:['False grain in the pan — how to fix?','Slow crystal growth, long strike','How do I control supersaturation?']},
- centrifugal:{th:['น้ำตาลชื้นหลังปั่น','สีน้ำตาลสูงหลังปั่น เพิ่มน้ำล้างดีไหม','ผลึกแตกจากอะไรได้บ้าง'],
-   en:['Wet sugar after purging','High colour after centrifuging','What causes crystal breakage?']},
+ factory:{th:['Extraction ต่ำกว่าเป้า ควรไล่ตรวจอะไรก่อน','เกิด false grain ในหม้อเคี่ยว แก้ยังไง','ทำไม recovery ต่ำ'],
+   en:['Extraction below target — what to check first?','False grain in the pan — how to fix?','Why is recovery low?']},
  quality:{th:['สีน้ำตาลสูงขึ้น แต่ Pol ปกติ','ความชื้นเกินสเปก ตรวจจุดไหน','ค่า ash สูง มาจากไหนได้บ้าง'],
    en:['Colour rising but Pol normal','Moisture out of spec — where to check?','High ash — where does it come from?']},
  etreatment:{th:['ค่า BOD น้ำทิ้งเกินมาตรฐาน','ระบบเติมอากาศควรตั้งเท่าไร','ลดภาระ BOD จากต้นทางยังไง'],
@@ -898,14 +862,10 @@ const STARTERS={
    en:['Confined space entry — what is required?','LOTO before mill maintenance','Investigating an accident to real root cause']},
  foodsafety:{th:['เขียน CAR จาก NC ยังไงให้ผ่าน','CCP กับ OPRP ต่างกันยังไง','เตรียม audit FSSC 22000'],
    en:['How to write a CAR that passes','CCP vs OPRP — what is the difference?','Preparing for an FSSC 22000 audit']},
- maintenance:{th:['แบริ่งปั๊มร้อนผิดปกติ วินิจฉัยยังไง','vibration มอเตอร์สูง เกิน ISO 10816 ไหม','ปั๊มเกิด cavitation แก้ยังไง'],
-   en:['Pump bearing running hot — how to diagnose?','High motor vibration vs ISO 10816','Pump cavitation — how to fix?']},
- warehouse:{th:['น้ำตาลจับตัวเป็นก้อนในคลัง','ทำ FIFO ให้บังคับได้จริงยังไง','ควบคุมความชื้นในคลังยังไง'],
-   en:['Sugar caking in the warehouse','How to enforce FIFO in practice','Controlling warehouse humidity']},
  hr:{th:['จัดกะช่วงหีบให้ถูกกฎหมายแรงงานยังไง','วางแผนฝึกอบรมช่วงนอกฤดู','ประเมินสมรรถนะพนักงานเดินเครื่อง'],
    en:['Legal shift planning during crushing season','Off-season training plan','Assessing operator competency']},
- dashboard:{th:['ทำไม recovery ต่ำ','undetermined loss สูงผิดปกติ','สรุปผลผลิตให้ผู้บริหาร'],
-   en:['Why is recovery low?','Undetermined loss unusually high','Executive summary of production']},
+ law:{th:['กฎหมายแรงงาน สปป.ลาว กำหนดชั่วโมงทำงานไว้ยังไง','ต่อใบอนุญาตลงทุนต้องใช้เอกสารอะไร','นำเข้าเครื่องจักรต้องเสียอากรไหม'],
+   en:['Working hours under Lao labour law','Documents to renew an investment licence','Import duty on machinery']},
 };
 
 /* ══════════════════════════════════════════════════════════════════
@@ -948,7 +908,7 @@ const mod=id=>MODULES.find(m=>m.id===id);
 const modName=m=>CFG.lang==='en'?m.en:CFG.lang==='lo'?(m.lo||m.th):m.th;
 const modDesc=m=>CFG.lang==='en'?m.dEn:m.dTh;
 const room=()=>ROOMS[CFG.room]||(ROOMS[CFG.room]=[]);
-const iconOf=(m,size)=>`<span style="color:${m.c};display:grid;place-items:center;width:100%;height:100%">${ICONS[m.id]||ICONS.dashboard}</span>`;
+const iconOf=(m,size)=>`<span style="color:${m.c};display:grid;place-items:center;width:100%;height:100%">${ICONS[m.id]||ICONS.factory}</span>`;
 const hhmm=ts=>{const d=new Date(ts||Date.now());return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
 
 /* ══════════════════════════════════════════════════════════════════

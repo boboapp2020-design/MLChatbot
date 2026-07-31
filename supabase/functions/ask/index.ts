@@ -291,7 +291,7 @@ ${catalog}
   // กันกรณีโมเดลคืนชื่อโมดูลที่ไม่มีจริง
   const valid = new Set(modules.map((m) => m.id));
   parsed.modules = (parsed.modules ?? []).filter((m) => valid.has(m));
-  if (parsed.modules.length === 0) parsed.modules = ['dashboard'];
+  if (parsed.modules.length === 0) parsed.modules = ['factory'];
   if (!parsed.queries?.length) parsed.queries = [question];
   // โมเดลเก่าหรือคำตอบที่ไม่มีฟิลด์นี้ ให้ถือว่าอยู่ในขอบเขต แล้วไปตกที่ด่านความมั่นใจแทน
   if (typeof parsed.in_scope !== 'boolean') parsed.in_scope = true;
@@ -555,7 +555,7 @@ Deno.serve(async (req) => {
     } catch (e) {
       console.error('router ล้ม ใช้คำถามดิบแทน:', e);
       router = {
-        intent: question, modules: fixed ? [fixed] : ['dashboard'],
+        intent: question, modules: fixed ? [fixed] : ['factory'],
         department: null, process: null, equipment: null, doc_types: [],
         queries: [question], complexity: 'moderate', needs_kb: true, in_scope: true,
       };
