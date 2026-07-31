@@ -238,6 +238,13 @@ alter table kb_documents enable row level security;
 alter table kb_chunks    enable row level security;
 
 -- อ่านได้ทุกคน (anon) — เขียนได้เฉพาะ service_role
+-- Postgres ไม่มี create policy if not exists จึงต้อง drop ก่อนทุกครั้ง
+-- ไม่งั้นการรันไฟล์นี้ซ้ำบนฐานข้อมูลที่ตั้งไว้แล้วจะล้มที่บรรทัดนี้
+-- (เคยทำให้ db push ทั้งชุดหยุดตั้งแต่ไฟล์แรก คลังความรู้เลยค้างเป็นของเก่า)
+drop policy if exists "read modules"   on modules;
+drop policy if exists "read documents" on kb_documents;
+drop policy if exists "read chunks"    on kb_chunks;
+
 create policy "read modules"   on modules      for select using (true);
 create policy "read documents" on kb_documents for select using (true);
 create policy "read chunks"    on kb_chunks    for select using (true);
