@@ -535,6 +535,23 @@ $SupportMap  = @(
      Title='FSSC 22000 version 6 — ภาคผนวก 2'; Code='FSSC-ANX2' }
   @{ File='GHPs-PRP-โปรแกรมพื้นฐาน.txt'; Module='foodsafety'; Type='STANDARD'; Force=$true
      Title='โปรแกรมพื้นฐานด้านสุขลักษณะ (PRPs/GHPs)'; Code='PRP' }
+
+  # ── รายงานตรวจประเมินจากผู้รับรองภายนอก (LRQA) ปี 2026 ──────────────
+  # ฉบับเต็มจากไฟล์ต้นทางของโรงงาน ไม่ใช่สรุปที่เขียนต่อ
+  # มี NC ทุกข้อพร้อมหลักฐานที่ผู้ตรวจเห็นจริง คำต่อคำ + การตรวจสอบ CCP/OPRP
+  # ผ่าน scripts\scrub-names.ps1 ลบชื่อบุคคลออกแล้ว เพราะเว็บเปิดสาธารณะ
+  @{ File='FSSC-รายงานตรวจ-LRQA-2026-ฉบับเต็ม.txt'; Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
+     Title='รายงานตรวจ FSSC 22000 v6 โดย LRQA ปี 2026 (ฉบับเต็ม)'; Code='LRQA-FSSC' }
+  @{ File='GHP-HACCP-รายงานตรวจ-LRQA-2026.txt'; Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
+     Title='รายงานตรวจ GHP และ HACCP Codex 2022 โดย LRQA ปี 2026'; Code='LRQA-GHP' }
+  @{ File='ISO9001-รายงานตรวจ-LRQA-2026.txt'; Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
+     Title='รายงานตรวจ ISO 9001:2015 โดย LRQA ปี 2026'; Code='LRQA-ISO' }
+
+  # ── ขั้นตอนปฏิบัติที่ต้นฉบับเป็น .docx (สกัดด้วย scripts\docx-to-text.ps1) ──
+  @{ File='ML-QP-1600-009 การจัดการการสูญเสียและของเสียอาหาร.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ML-QP-1600-009 การจัดการการสูญเสียและของเสียอาหาร Rev.00'; Code='ML-FLW' }
+  @{ File='ML-WI-1600-002 การป้องกันการปลอมปนอาหาร.txt'; Module='foodsafety'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-1600-002 การป้องกันการปลอมปนอาหาร (Food Fraud) Rev.03'; Code='ML-FFRAUD' }
 )
 if ($IncludeRein) {
   $SupportMap += @{ File='Peter Rein - Cane sugar enginnering.txt'; Module='factory'; Type='BOOK'

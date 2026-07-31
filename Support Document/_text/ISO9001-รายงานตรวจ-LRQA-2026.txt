@@ -1,0 +1,1593 @@
+Audit Report
+No. 111, Unit 10, Kenghet Village, Xaybouly District,Savannakhet Province, , Lao
+People`s Democratic republic
+Client address:
+ISO 9001:2015
+Audit criteria:
+Audit team:
+[ผู้ปฏิบัติงาน] BGK Thailand
+LRQA office:
+LRQA reference: BGK6011879 / 7245588
+Audit dates: 24-March-2026 - 26-March-2026
+Reporting date: 31-March-2026
+Report for: Mitr Lao Sugar Co., Ltd.
+Visit type: Certificate Renewal
+HIDDEN TEXT TO MARK THE BEGINNING OF THE TABLE OF CONTENTS
+Contents Page
+01. Executive report 3
+02. Audit findings 5
+03. Audit summary 14
+04. Next visit details 34
+05. Attendees 35
+06. Report considerations 37
+07. Additional information 39
+08. Appendix 40
+BGK6011879_APP_QMS_CR_MtrLaoSugar.docx
+Attachments:
+This report was presented to and accepted by:
+Name: [ผู้ปฏิบัติงาน]
+Job title: Head of Quality Management
+01. Executive report
+Based on the audit outcome the Audit Team recommends the ISO 9001:2015 certification of Mitr Lao Sugar Co.,
+Ltd. for the agreed scope.
+The management system was audited remotely and found to be implemented effectively, meeting ISO9001:2015
+and stakeholder requirements. Certification is recommended to continue, with evidence confirming closure of
+previous issues and robust compliance controls.
+The Audit Team Leader confirms the contractual arrangements for ISO 9001:2015 require amendment and that the
+next visit may not proceed before the necessary amendments are made in the contract. Details are recorded in this
+report.
+Continual improvement:
+There is clear evidence of ongoing continual improvement, particularly in KPI monitoring, supplier evaluation,
+inventory accuracy, preventive maintenance, and calibration control. The system remains effective in delivering
+desired outcomes, though certain KPIs in procurement satisfaction and maintenance results are being targeted for
+corrective action.
+Audit outcome:
+Visit audit objective:
+This was a Certificate Renewal visit, conducted against objectives previously notified to the client. The objectives of
+the next visit, including any applicable visit specific objective (theme / focus), are confirmed in the audit plan
+attached to this report.
+This visit was to audit the compliance of the management system of Mitr Lao Sugar Co., Ltd. against ISO 9001:
+2015 as defined in the audit planning documentation. The outcome of the visit is recorded below.
+This is the Certificate renewal visit for review implemented and maintained the Quality management System ISO
+9001:2015.
+Assessment team confirmed that the organization has implemented and maintained Quality management system
+and continue improvement in compliance with ISO9001:2015 acceptable.
+Result for this visit :
+- 3 previous NC have been accepted and closed
+- No Major Non conformity in this visit.
+- 1 Minor Non conformity in this visit.
+- 4 Opportunities for improvement in this visit.
+Company name : Mitr Lao Sugar Co., Ltd.
+Scope: Manufacture of Raw Sugar and Very High Pol Sugar.
+Address : No. 111, Unit 10, Kenghet Village, Xaybouly District, Savannakhet Province, Lao People`s Democratic
+republic
+Accreditation: UKAS
+Next visit Surveillance = 3.5 manday / 12 months
+Report: BGK6011879/7245588 - 31-March-2026 Page 3
+Areas for senior management attention
+Management should ensure continued focus on improving procurement satisfaction KPIs, complete closure of
+document non-conformities, and address maintenance results that did not meet target. No critical non-conformities
+requiring immediate management action were detected. However in this visit found 1 minor non-conformity and 4
+OFI as below;
+1. Sale: Procedure ML-QP4140-001 rev 03 (28/2/2015) Customer order handling should be updated due to use
+“List of sale order in SAP” instead of ML-FM-4140-001 Order receiving form.
+2. Complaint management: The effectiveness of preventive action/improvement action raised form customer
+complaint should be followed up.
+3. Internal audit: The organization could review the internal audit checklist to include consideration of management
+of change in relevant departments to ensure the effectiveness of the internal audit.
+4. Maintenance/ Utility/Calibration: The organization could update the machine and instrument list after the
+commissioning of the new machine in order to expand production capacity and enhance the effectiveness of the
+preventive maintenance and calibration processes.
+Report: BGK6011879/7245588 - 31-March-2026 Page 4
+02. Audit findings
+Where scheme requirement differs to the standard definition below, the scheme definition will take preference
+Major Nonconformity
+The absence of, or the failure to implement and maintain, one or more management system elements, or a situation which would, on the basis
+of the available objective evidence, raise significant doubt of the management to achieve: The policy, objectives or public commitments of the
+organisation, compliance with the applicable regulatory requirements, conformance to applicable customer requirements, conformance with the
+audit criteria deliverables.
+Minor Nonconformity
+A finding indicative of a weakness in the implemented and maintained system, which has not significantly impacted on the capability of the
+management system or put at risk the system deliverables, but needs to be addressed to assure the future capability of the system.
+Audit criteria (clause) ISO 9001:2015 ( 10.2.1 )
+6653912_SBCRPQ02
+Reference
+number
+Issue date 26-March-2025
+Minor NC
+Grade
+Process / aspect Production (DCR/VHP)
+Closed
+Status
+No. 111, Unit 10, Kenghet Village,Savannakhet Province,LA
+Location(s)
+Statement of non conformity No evidence action were found when parameter over control range
+at crystallization process
+Evidence Found crystallization process record in ML-FM-3220-003 for organic
+sugar during 14-16/1/2025 record the % purity drop were 17.3 -13.6
+without any action taken evidence found. (The control range of %
+purity drop in the quality plan of organic sugar (ML-FM-1600-001)
+defined > 20)
+Proposed correction, corrective action
+and timescales
+Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+Root Cause:
+During the organic sugar production period, a total of 836 tons of
+off-spec organic sugar were dissolved and reintroduced into the
+process as syrup. This resulted in higher-than-control purity levels,
+preventing the required purity drop and negatively impacting
+crystallization efficiency.
+Requirement Nonconformity and corrective action
+10.2.1 When a nonconformity occurs, including any arising from
+complaints, the organization shall: a) react to the nonconformity and,
+as applicable: 1) take action to control and correct it; 2) deal with the
+consequences; b) evaluate the need for action to eliminate the
+cause(s) of the nonconformity, in order that it does not recur or
+occur elsewhere, by: 1) reviewing and analysing the nonconformity;
+2) determining the causes of the nonconformity; 3) determining if
+similar nonconformities exist, or could potentially occur; c)
+implement any action needed; d) review the effectiveness of any
+corrective action taken; e) update risks and opportunities determined
+during planning, if necessary; f) make changes to the quality
+management system, if necessary. Corrective actions shall be
+appropriate to the effects of the nonconformities encountered.
+Report: BGK6011879/7245588 - 31-March-2026 Page 5
+Proposed correction, corrective action
+and timescales
+Correction:
+• Optimize the seed ratio to suit process conditions
+• Perform back mol to reduce mol purity (specifically during periods
+when dissolved sugar is mixed into syrup), resulting in an increased
+purity drop
+Corrective Action:
+• Supervisors regularly monitor and review control parameter results,
+provide feedback to the team, and initiate immediate corrective
+actions when targets are not met
+• Shift supervisors monitor laboratory analysis results (reported via
+Line) according to the sampling frequency to ensure compliance
+with control limits. If results are out of specification, corrective
+actions shall be taken in the next batch, and samples shall be re-
+analyzed for verification
+• It is proposed that management establish separate control targets
+for:
+1. Production from pure syrup
+2. Production from syrup mixed with dissolved sugar
+Responsible person: [ผู้ปฏิบัติงาน]
+Correction Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+• Optimize the seed ratio to suit process conditions
+• Perform back mol to reduce mol purity (specifically during periods
+when dissolved sugar is mixed into syrup), resulting in an increased
+purity drop
+Root cause analysis Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+During the organic sugar production period, a total of 836 tons of off-
+spec organic sugar were dissolved and reintroduced into the
+process as syrup. This resulted in higher-than-control purity levels,
+preventing the required purity drop and negatively impacting
+crystallization efficiency.
+Corrective action Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+• Supervisors regularly monitor and review control parameter results,
+provide feedback to the team, and initiate immediate corrective
+actions when targets are not met
+• Shift supervisors monitor laboratory analysis results (reported via
+Line) according to the sampling frequency to ensure compliance
+with control limits. If results are out of specification, corrective
+actions shall be taken in the next batch, and samples shall be re-
+analyzed for verification
+• It is proposed that management establish separate control targets
+for:
+Report: BGK6011879/7245588 - 31-March-2026 Page 6
+Corrective action 1. Production from pure syrup
+2. Production from syrup mixed with dissolved sugar
+Verify the record Organic A-Massecuite date 6/1/26
+Brix of of specification 93 actual 91.7 action by Stirring blade monitor
+at 40 A
+Date of closure 25-March-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6011879/7245588 - 31-March-2026 Page 7
+Audit criteria (clause) ISO 9001:2015 ( 8.7.2[';p[ )
+6653912_SBCRPQ03
+Reference
+number
+Issue date 26-March-2025
+Minor NC
+Grade
+Process / aspect Quality and Laboratory
+Closed
+Status
+No. 111, Unit 10, Kenghet Village,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Incomplete evidence of action taken for nonconformity product
+Evidence It was not found record to describes the actions taken and the
+authorized person deciding that action for nonconformity product
+1.QC : As sampling NCR in eSmart NCR no. ML -NCR-PRO-
+013/2025 raised for sediment organic strike no. 0448 date 12/1/2025
+was got the sedimented value 262 ppm (over standard<200)
+2.Packing : Found summary packing report for DCR sugar in 50 kg-
+bag , which packing during 5-28 Feb 2025 , totally 86 damaged
+bags
+Proposed correction, corrective action
+and timescales
+Auditor Name: [ผู้ปฏิบัติงาน]
+Root Cause:
+The analysis indicated that the existing procedure does not clearly
+define responsibilities and decision-making authority for handling
+non-conforming products in certain cases (e.g., excessive sediment
+and damaged packaging). As a result, operators lack clear guidance
+for documenting disposition and obtaining proper approval in
+accordance with requirements.
+Correction :
+The procedure for handling non-conforming products has been
+revised.
+Corrective Action:
+Documents have been reviewed and updated to ensure they are
+current and in compliance with applicable requirements.
+Responsible person : Mr.[ผู้ปฏิบัติงาน]
+Correction Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+The procedure for handling non-conforming products has been
+revised.
+Procedure Nonconforming product procedure ML-QP-1620-003 rev
+05 (20/3/26)
+the sediment organic strike 0488 after adjust process follow effective
+of action 0452-0459 within controlled limit
+All NC product will be re-process as per note 25/1/2025
+Requirement 8.7.2 The organization shall retain documented information that:
+a) describes the nonconformity;
+b) describes the actions taken;
+c) describes any concessions obtained;
+d) identifies the authority deciding the action in respect of the
+nonconformity.
+Report: BGK6011879/7245588 - 31-March-2026 Page 8
+Root cause analysis Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+The analysis indicated that the existing procedure does not clearly
+define responsibilities and decision-making authority for handling
+non-conforming products in certain cases (e.g., excessive sediment
+and damaged packaging). As a result, operators lack clear guidance
+for documenting disposition and obtaining proper approval in
+accordance with requirements
+Corrective action Auditor Name: [ผู้ปฏิบัติงาน] (Verified on
+25/03/2026)
+Documents have been reviewed and updated to ensure they are
+current and in compliance with applicable requirements.
+Revised Severity of the quality problem ML-SP-1610-007 rev 05
+date 11/11/2025 add the method to handle with product (reduce
+grad, mixed with other, follow ML-QP-1620-002) and responsibility
+Date of closure 25-March-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6011879/7245588 - 31-March-2026 Page 9
+Audit criteria (clause) ISO 9001:2015 ( 7.5.2 )
+6653912_SBCRPQ01
+Reference
+number
+Issue date 26-March-2025
+Minor NC
+Grade
+Process / aspect Quality and Laboratory
+Closed
+Status
+No. 111, Unit 10, Kenghet Village,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Some control parameters in different documents are not consistent
+Evidence Refer the Quality plan and related documents , it was found the
+some of quality control parameter were not align such as
+1. Found Quality plan (Raw sugar) ML-FM-1600-001 date
+27/11/2024 defined to check and record “Purity drop and %brix
+mixed juice” parameter every 2 hrs but in the sampling plan (ML-
+FM-1630-043) date 19/11/2024 and actual practice defined to check
+every 4 hrs.
+2. Refer to the quality plan of organic sugar (ML-FM-1600-001) date
+11/1/2025 , found some parameter such as “% turbidity of clarify
+juice of organic sugar” defined to control < 10 but actual control is
+<30 (including the actual record in ML-FM-3210-002 were over 10)
+Proposed correction, corrective action
+and timescales
+Auditor Name: [ผู้ปฏิบัติงาน]
+Root Cause :
+This was caused by the review and update of the Quality Plan (ML-
+FM-1600-001) and the annual sampling plan; however,
+communication among QC, QA, and Production was not clearly
+established, resulting in inconsistent implementation.
+Correction : The Quality Plan (ML-FM-1600-001) and sampling plan
+have been reviewed and updated to ensure suitability and alignment
+with actual operational records.
+Corrective Action :
+• Review and revise documents ML-FM-1600-001 and ML-FM-1630-
+043 to ensure consistency
+• Conduct a joint meeting between Production and Quality
+Assurance to define appropriate and practical parameters
+• Communicate and instruct operators to strictly follow the defined
+parameters
+Responsible person : Mr.[ผู้ปฏิบัติงาน]
+Correction Auditor Name: [ผู้ปฏิบัติงาน] (verified on
+25/03/2026)
+The Quality Plan (ML-FM-1600-001) and sampling plan have been
+reviewed and updated to ensure suitability and alignment with actual
+Requirement Creating and updating When creating and updating documented
+information, the organization shall ensure appropriate:
+a) identification and description (e.g. a title, date, author, or
+reference number);
+b) format (e.g. language, software version, graphics) and media (e.
+g. paper, electronic);
+c) review and approval for suitability and adequacy
+Report: BGK6011879/7245588 - 31-March-2026 Page 10
+Correction operational records.
+Root cause analysis Auditor Name: [ผู้ปฏิบัติงาน] (verified on
+25/03/2026)
+This was caused by the review and update of the Quality Plan (ML-
+FM-1600-001) and the annual sampling plan; however,
+communication among QC, QA, and Production was not clearly
+established, resulting in inconsistent implementation.
+Corrective action Auditor Name: [ผู้ปฏิบัติงาน] (verified on
+25/03/2026)
+• Review and revise documents ML-FM-1600-001 and ML-FM-1630-
+043 to ensure consistency
+• Conduct a joint meeting between Production and Quality
+Assurance to define appropriate and practical parameters
+• Communicate and instruct operators to strictly follow the defined
+parameters
+Updated quality control plan ML-FM-1600-001 (Raw sugar) (Sum)
+Rev02 date 25/02/2026 Frequency %Brix Mixed Juice, Purity Drop
+check every 4 hours
+Update Quality control plan ML-FM-1600-001(Organic sugar) Rev
+01 date 25/2/2026 Clarified juice % Turbidity less than 30
+Sampling Plan revision 2 25/2/2026 (SUM) ML-FM-1630-043
+frequency every 4 hours
+Base on review sampling record during audit found completed
+Date of closure 25-March-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6011879/7245588 - 31-March-2026 Page 11
+Audit criteria (clause) ISO 9001:2015 ( 8.5.1 )
+7245588_SBCSKS01
+Reference
+number
+Issue date 25-March-2026
+Minor NC
+Grade
+Process / aspect Production
+New
+Status
+No. 111, Unit 10, Kenghet Village,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Found production process is not effectively controlled.
+Evidence There were not write in red color and no correction action defined in
+the remark column that required when quality control points were out
+of specification. As per evaporation process record below,
+1. ML-FM-3210-001 (Heater temperature record) date 20/3/26 and
+21/3/26 Mixed juice Temperature record shown 99 degree C that out
+of specification at 100–105 degree C.
+2. ML-FM-3210-001 (Heater temperature record) date 21/3/26 and
+date 24/3/26 pH Lime saccharate record shown 12.89,12.96 that out
+of specification at 11.0-12.5.
+3. ML-FM-3210-002 (Clarification record) date 24/3/26 Turbidity of
+clarified juice record shown 19.5,13.2,17.9 that out of specification at
+less than 10.
+4. ML-FM-3210-002 (Clarification record) date 24/3/26 %Pol of Filter
+Requirement Control of production and service provision The organization shall
+implement production and service provision under controlled
+conditions. Controlled conditions shall include, as applicable: a) the
+availability of documented information that defines: 1) the
+characteristics of the products to be produced, the services to be
+provided, or the activities to be performed; 2) the results to be
+achieved; b) the availability and use of suitable monitoring and
+measuring resources; c) the implementation of monitoring and
+measurement activities at appropriate stages to verify that criteria for
+control of processes or outputs, and acceptance criteria for products
+and services, have been met; d) the use of suitable infrastructure
+and environment for the operation of processes; e) the appointment
+of competent persons, including any required qualification; f) the
+validation, and periodic revalidation, of the ability to achieve planned
+results of the processes for production and service provision, where
+the resulting output cannot be verified by subsequent monitoring or
+measurement; g) the implementation of actions to prevent human
+error; h) the implementation of release, delivery and post-delivery
+activities.
+Report: BGK6011879/7245588 - 31-March-2026 Page 12
+Evidence cake record shown 1.67,1.73,1.58 that out of specification at less
+than 1.2.
+5. ML-FM-3210-003 (Evaporation record) date 21/3/26,22/3/26,
+24/3/26 % brix of Raw syrup record shown 60.72,57.93,60.2 that out
+of specification at 62-70.
+Proposed correction, corrective action
+and timescales
+Root Cause :
+Personnel lacked awareness of non-conformance handling
+protocols. Furthermore, the Work Instructions (WI) did not explicitly
+define visual recording standards (e.g., use of red ink) for out-of-
+specification results.
+Correction :
+Rectified the identified records by documenting the causes and
+corrective actions taken. Immediate implementation of using red ink
+or circling out-of-spec values to ensure clear visual identification.
+Corrective action:
+Conducted retraining on recording standards, revised the Work
+Instructions (WI) to include clear non-conformance reporting steps,
+and established a mandatory supervisor review of all log sheets per
+shift.
+Responsibility Person: Mr. [ผู้ปฏิบัติงาน]
+Correction
+Root cause analysis
+Corrective action
+Date of closure
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6011879/7245588 - 31-March-2026 Page 13
+03. Audit summary
+[ผู้ปฏิบัติงาน]
+Auditor:
+QMS Mandatory Elements
+Audit of:
+Auditee(s): Managing Director, Mr.[ผู้ปฏิบัติงาน],
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+- 3 previous NC have been accepted and closed
+-Interview MD: Strategic planning, customer focus, feedback, policy, objective, resource
+Management is the plant manager can explain their role and responsibility in management system ,by define and
+review Quality policy, follow up with committee about QMS performance , give advice , support, and review Quality
+performance in meeting. The performance of sugar process have been increased such as ,NG product, Yield,
+customer feedback. And next plan focus to improve the efficiency of machine.
+- Announcement, issued on 24 July 2025 for QMR :K. [ผู้ปฏิบัติงาน] K. Role, responsibility of top management and
+management team are defined in Management manual and company announcement. Top management (MD)
+assign Factory manager to be QMR the responsibility and authority of Management system.
+- Quality manual (ML-QM-001, rev 10) effective date 3/1/2022 exclusion 8.3 Design due to no design on product
+only technology apply and 8.5.3 Customer property as no customer property Scope of the management system is
+defined in the management manual such as boundary ,organization ,state the types of products and services
+covered and justification for any requirement of this International Standard (8.3 design). The processes have been
+identified and detail the interaction of process such as Production control process, production process ,sale
+process ,purchasing process). Including explanation and document reference in each requirement of ISO9001:
+2015
+- Organization chart date 16/01/23
+- Quality Policy approved 28/12/2021. Policy was established and announced by MD the detail is appropriate to the
+purpose and context of the organization and covers commitment to produce the quality product to meet the
+customer requirement, and commitment to continual improvement. It was communicated to employees and
+interested parties.
+- Procedure Management of change: ML-QP-1600-006 Re.01, 18/02/2023 that was considering quality, FSSC,
+Environment, machine, process, training according to new process, manpower, validation, laboratory.
+- Change review: There has expanded capacity to 8,000 ton/day and installed new machine i.e. milling M.C,
+conveyor site, evaporation pan 3 sets, boiling pan 3 sets, boiler 80 ton, turbine generator 1 set and warehouse 1
+building.
+- Verified Change Request (ML-FM-1600-013) such as
+- New Crystallization for batch vacuum pan (BVP) size 55m3 (A5) and 60 m3 (A6) including training record on
+11/11/2025, training material from vendor and revised WI,
+- New centrifugal pan 30T/hr, bucket elevator and sugar conveyor 35 T/hr.
+- Change in the system were documented and implement to control changes for operation as procedure defined.
+- Business context Mitr Lao, 6/1/2025
+- Strength: Cane procurement, contract farmer, high CCS, organic certified, new technology, Export to Vietnam ,
+certified Standard: FSSC 22000, ISO9001, Organic, Kosher, Halal
+- Weakness: DCR color not meet market, organic market knowledge, update standard ,
+- Opportunity: Demand from Vietnam market, package
+- Risk: weak Currency , Material cost import from Thailand , climate change effect to amount of cane not achieved
+- Work instruction: ML-WI-1600-003 Re.01, 10/09/2020 for Risk and Opportunity analysis
+-Reviewed KRI-risk and opportunity profile of Mitr Lao of year 2025: Medium RM -> cane, financial, climate change,
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 14
+Antidumping & Circumvention convention, PIP (Performance improvement program)
+- Reviewed R&O process (ML-FM-1620-025) and Process approach (ML-FM-1620-026) of each process such as
+sale &marketing, Quality control and Laboratory, Maintenance and etc. latest in Jan’2026
+- Interested parties requirement evaluation, risk evaluation and action need.
+- Employee requirement communication, carry path
+- Supplier requirement purchase policy,
+- Customer requirement quality and safety product , prices, delivery ,consider climate change effect to delivery
+- Subcontractor communication policy, same standard
+- Government/ community comply legal
+-Strategic: Increase Cane procurement, Cost production reduction example improvement process, loss control,
+increase production of electricity, maintain market (Europe) increase new market (organic product)
+-Risk and opportunity assessment commodity prices, health and safety, marketing, raw material, HRD, HRM,
+Integrity, financial, compliance, competitor, distribution , regulatory change, unplanned shutdown. Evaluation
+Likelihood and Impact , the highly risk will action and medium and low will be monitored
+- High risk: Commodity price action sale volume action by expand Vietnam marketing, organic product in Asia
+Market
+- Medium risk: Raw material CCS, Yield , HRD, competition action by Cane monitoring , prices monitoring
+- Low risk: Distribution, Product efficiency % Loss , % Cane Yield %CSS Yield,
+- Understanding context of organization is defined with risk management analysis in. To determine internal from
+each process and external issues such as politic, social, technology, economy, environment, regulation. Internal
+issues such as that may have impact to organization purpose, its strategic direction ,Quality performance. The KPI
+and action plan have been established based on risks and opportunity in each issues and defined responsible
+parties and evaluation methods
+-Understanding the needs and expectation of interested parties have been defined by considering the effect on the
+organization’s ability to consistently provide products and services that meet customer and applicable legal
+requirement such as top management , Customers , supplier, Regulators ,employee , government ,bank . All the
+needs and expectation has been consider to implement and define the KPI and action plan.
+-Action to address risks and opportunities: committee has determined risks and opportunities, related to its internal
+&external issues, need and expectation of Interested partied ,each process , product conformity , customer
+satisfaction. Actions have been taken follow to objective and action plan.
+Objective year of 2024/2025 and 2025/2026
+- Tons cane milling >90%, result 87% and target in 2025/2026 >90%
+- Percentage of burnt cane <10%, result 5.24% and target in 2025/2026 <10%
+- YTD of CCS control >14.6%, result 13.70% and target in 2025/2026 >14.6%
+- Yield (% 96 Pol 10 CCS ) > 97%, result 96.87% and target in 2025/2026 > 93%
+- Customer satisfaction > 90%, result 93.11% and target in 2025/2026 > 90%
+- Training on plan 95%, result 100% and target in 2025/2026 >95%
+- Reject relate to from food safety <0.2%, result 0.014% and target in 2025/2026 <0.15%
+KPI and action plan were set at company and departmental level and each process , by considering on policy,
+conformity of products and process, customer satisfaction, management decision ,risk &opportunity, which clear its
+target and indicator. The action have been clearly defined for activities, responsibility ,resource& budget and time
+frame. Monthly monitoring and report have been done. The progress of objective, and programs are monthly
+summarized and report to management team.
+Management review
+- Procedure of Management review: ML-SP-1620-003 Re.03
+- Yearly management review, Management review was conducted on 4 February 2026 (performance review period
+Nov 2023- Oct 2024). Attend by MD (K.Atiporn), QMR, FSST leader, related manager.
+Report: BGK6011879/7245588 - 31-March-2026 Page 15
+- Review inputs and outputs are covers quality policy, objective, change internal and external issue, (no change in
+legal in Lao and related oversea country), GMP change to GHP organization provide training and
+certified, customer satisfaction 88.92%, complaint 1 items, interested party feedback example employee, Company
+objective and department KPI performance, internal audit June2024, external audit, vendor performance cane
+farmer, chemical, Fair & fast etc risk and opportunity, resources, improvement, customer feedback, change
+management, internal audit, etc. The record was maintained
+- Management review have been set once a year. The review input was presented such as Nonconformity, Audit
+result, customer complaint, customer satisfaction ,process monitoring ,product monitoring, follow up comment from
+last meeting ,change of context last reviewed on 27 Dec 2025, risk and opportunity ,supplier performance ,resource
+need ,no change effect to QMS ,opportunity for improvement etc. and considered by management team as QMS
+requirement. The outputs of the management review was recorded and included the decisions and actions.
+Total main customer 13 customers in Vietnam, EU and Laos.
+Internal audit
+- Procedure: Internal audit (ML-QP-1620-002 Re.03 effective date 13/1/2023): once a year
+- Internal audit plan (ML-FM-1620-020) for 22 departments was conducted during 09-30/06/2025
+- Verified Internal audit report (ML-FM-1620-008) and internal audit checklist (ML-FM1620-007) of Top
+management, QM, Production: Evaporation, QA /Lab, Logistic
+- Total 8 CAR and 6 OBS, all closed (e-smart) and verified NC and corrective action such as ML-CAR-020/2025
+and ML-CAR-026/2025.
+- Verified qualification of internal auditor as training record in course of Internal audit ISO9001 and announcement
+of Internal auditor ISO9001 no. ML31/2020
+The procedure have been established to define the frequency, methods, responsibilities, planning requirements,
+audit criteria and reporting. The internal audit have been planned 1 times a year by considering quality importance
+of the processes concerned, changes affecting the organization, and the results of previous audits. It was included
+all processes. Reviewed qualification of internal auditor found to be properly carried out by qualified internal
+assessor.
+-The NC noted from the audit were issued CAR and monitoring result, operational control, complaint, deviation of
+process and product were issued CAR. Reviewed this CAR and NCR as sampling found to have been effectively
+implemented corrective action and effectively followed up.
+Use of logo: No use of LRQA logo and UKAS Mark.
+OFI: The organization could clearly define an internal audit checklist for considering management of change in the
+relevant departments.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 16
+[ผู้ปฏิบัติงาน]
+Auditor:
+Purchasing and Outsource Control
+Audit of:
+Auditee(s): Ms.Kaikeo, Mr.[ผู้ปฏิบัติงาน]
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+- Verified risks and opportunities assessment that was reviewed on 18/03/2026 that has medium level as integrity
+and not clearly defined specification of PR. The action plan has control by ethics of procurement and clarified TOR
+& specification.
+- KPI (Nov24-Oct25)
+o Lead time from PR to PO within 15 days not less than 95%, result achieve
+o Lead time from PR to PO within 30 days (HQ) not less than 95%, result 100%
+o Lead time from PO to receive within 15 days not less than 95%, result achieve
+o Lead time from PO to receive within 30 days (HQ), result 100%
+o CAR closed target 100%, result meet target
+o Satisfaction of procurement process not less than 80%, result not achieved and taken corrective action to commit
+contract with vendor for provide raw material on-time.
+o New vendor target 10 per year, result meet target
+- Process approach and Risk and opportunity example purchasing, selection, document etc.
+o Procedure of Procurement: ML-QP-4000-001 Re.16, 14/10/2025 that was conducted procurement process via
+ERP.
+o Approved vendor list (AVL: ML-SP-4123-001) was updated on 28/01/2026
+- Review Purchase order and Purchase requisition
+o PR. 1610006825, PO 11012278, Max floc 917, Q’ty 1,000 kg, Vendor code no. 300124 Chemical Engineering
+Co. Ltd
+o PR. 1610006828, PO 11012288 (17/02/2026), CaO Calcium Hydroxide 90%, Q’ty 270,000 kg, Sutakan PCL.
+o PR. 11012114, PO 11012278, PP bag ML size 1,000 kg, Q’ty 2,840 EA, Vava Pack Co. Ltd
+o PR. 1610006796, PO.11012216, Caustic soda (NaOH) 50%, Q’ty 180,000 kg, Vendor code no. 300087 Zenon
+inter Co.,Ltd.
+o PR no. 1630025318, PO no.108039678 for spare part of Bearing swing crane 2 EA, Vendor code no.123169
+[ผู้ปฏิบัติงาน].
+- Evaluation of New vender registration (MP-FM-9200-026) via Mitrphol Procurement system that was considered
+on document system, stock, QC, packaging label, certify system, product sample, delivery, credit term, ISO9001,
+ISO1400, ISO45001 and ISO26000 Certified and Governance & Transparency issue. Sampling new vendor i.e.
+Union Chemical Industry Co.,Ltd. (Chemical and PPE) and Vendor code no. 124419 (Rental machine and
+equipment).
+- Yearly Evaluation of performance vendor (ML-FM-4123-018) that considers on time delivery, quantity delivery
+replacement goods, communication, warrantee, product quality and service quality, after sale service, technical
+support, corrective action with NCR or complaint, material following BOQ and following EHS regulations. Sampling
+performance vendor i.e. Chemical Engineering Co. Ltd, Sutakan PCL. (Conducted by HQ via yearly self-
+assessment), Vava Pack Co. Ltd., Xenon inter Co.,Ltd. and Vendor code no.123169.
+The organization has evaluated and select suppliers based on ability to supply product. The criteria for selection
+and re-evaluation were established and carried out. The purchasing process are carried out as per procedure. The
+purchased material was described in purchase order as well.
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 17
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน]
+Auditor:
+Material Storage and Incoming
+Audit of:
+Auditee(s): Mr.[ผู้ปฏิบัติงาน]
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+R/M Receiving and storage
+- Verified risks and opportunities assessment that was reviewed on 18/03/2026 that has medium level as goods
+receive was damage, contaminated material and no COA, non FIFO control that was controlled by holding material
+and arrange material by FIFO and labelling.
+- KPI (Nov’25-Feb’26)
+o Stock control enough production process 100%, result achieve
+o Stock accuracy specification against with PR 100%, result achieve
+o Stock requisition 100%, result achieve
+o CAR closed 100%, result achieve
+- ML-WI-4120-001 Re.07 effective date 15/01/2024 Receiving and storage material and considering contamination
+and specification of raw material that was controlled by Truck inspection (ML-FM-4120-013) consider cleanness,
+pest, allergen and packaging, Chemical & Lime Receiving (ML-FM-1610-023), Packaging inspection (ML-SP-1610-
+003) and Inventory control by SAP. Moreover, Raw material inspection was conducted by QA laboratory for
+analysis content
+- Chemical for process, plant water, packaging (bag/small bag) storage on pallet with identification label.
+- Material receives by check quantity, packing condition and receiving in SAP system
+o Verified SAP system to monitor material stock, location storage, and receiving record. Sampling material Max floc
+917, CaO Calcium Hydroxide 90%, Jumbo PP bag ML022 size 1,000 kg and Caustic soda (NaOH) 50%
+o Max floc 917, Q’ty 1,000 kg, Lot no. CK5226 Thai Chemical & Engineering Co. Ltd, Received 12/02/2026, INV,
+6901-IR453, Packing list, Chemical & Lime Receiving (ML-FM-1610-023) and Truck inspection (ML-FM-4120-013)
+Truck no. 70-1847, expiry date on 23/12/2027
+o CaO Calcium Hydroxide 90%, Q’ty 32,020 kg, Lot no. 02/03/2026, Sutakan PCL., Received on 06/03/2026,
+Invoice no. EIL69020007, Weight bill, COA, Chemical & Lime Receiving (ML-FM-1610-023) and Truck inspection
+(ML-FM-4120-013) truck no. 70-2665/2272, expiry date 01/05/2026.
+o Jumbo PP bag ML022 size 1,000 kg, Q’ty 2,840 EA, Lot no. 161225, Vava Pack Co. Ltd, Received on
+08/01/2026, INV no. VSII2512-00006, Packing list, and Truck inspection (ML-FM-4120-013) truck no. 70-1056
+o Caustic soda (NaOH) 50%, Q’ty 30,000 kg x 2 trucks, Lot no. 155/02, Xenon inter Co.,Ltd. Received on
+26/02/2026, INV no. IV6900732, weigh bill, COA, Chemical & Lime Receiving (ML-FM-1610-023) and Truck
+inspection (ML-FM-4120-013) truck no. 71-4276/72, expiry date 12/02/2027.
+Verified Material storage inspection of packaging room and chemical room
+- ML-FM-4120-012 Weekly Pest control and Rat glue station (16 location) in Feb’2026.
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 18
+- ML-FM-1020-005 Weekly Pest monitoring record in Feb’2026.
+- ML-FM-1600-002 Daily Cleaning record in Feb’2026.
+- ML-FM-1600-007 check glass, plastic and fluorescent lamp that verified record on 19/02/2026
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน]
+Auditor:
+Warehouse and Delivery Process
+Audit of:
+Auditee(s): Mr.[ผู้ปฏิบัติงาน], Mr.Pokham
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+Warehouse
+- Total 4 W/H and on-process construction new VHP warehouse (4,000 ton) include Warehouse 1 (VHP)
+Warehouse 2,3,4 (sack bag of DCR, NCS, Organic)
+- Verified risks and opportunities assessment that was reviewed on 02/01/2026 for considering on Receiving Cane,
+DCR (Raw sugar) & VHP Storage VHP, DCR, delivery VHP and DCR that has medium level as quality of product,
+contaminated product from pest & lubricant from conveyor, inaccuracy of weighting, packaging damage, damage
+from delivery (rain, FIFO), Molasse leakage, document control that was controlled by Cane smile program & RFID,
+inspection FG incoming, Pest control, Forklift driver control & PM machine, access control, delivery inspection &
+FIFO, molasse tanks inspection and document inspection by relevant department
+- KPI (Nov’2025-Feb’2026)
+o Stock accuracy > 99.5%, result 100%
+o Damage product from storage <0.05%, result 0
+o Logistic control of Sugar & Molass (Quality, Quantity and On-time Delivery) >95%, result 100%
+- Verified Procedure and Work instructions
+o ML-QP-4300-001 Re.03, 15/01/2018 Warehouse control
+o ML-WI-4110-001 Re.03, 17/09/2020 Sugar receiving and movement
+o ML-SP-1610-006 Re.09, Net weight of each Product category
+o ML-WI-4110-005 Re.01, 11/12/2015 Sugar Product Delivery
+- Sugar Delivery which included Sugar & Molass Delivery inspection (ML-FM-4110-008) that consider cleanliness,
+personal hygiene driver, no alcohol, no smoking in loading area and following food safety and EHS company’s
+regulation. And Quality inspection of Sugar (ML-FM-1610-012) Cleanness, allergen, contaminated pest/chemical
+and etc.
+- Verified Sugar receiving report (ML-FM-4110-001) on 23/03/2026 that was defined sugar weight of each category
+Product: Raw sugar, VHP and Molass and category of packaging, the detail input from centrifugal section, packing
+section, QA section, Warehouse and Finance. And input data from receipt W/O no. 4900395312 to SAP system.
+- Weekly Pest control inspection (ML-FM-4110-027), Verified record on 07/03/2026 cover 4 W/H.
+- Daily warehouse control and inspection (ML-MF-4110-027) cover 4 W/H that includes category of product &
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 19
+packaging, cleanness, leakage, pest monitoring and height of Sugar stockpile yard and humidity & temperature
+indoor and outdoor
+Delivery
+- Organic cane Sugar size 1000 kg, on 14/03/2024, Customer code no. 303116 Andean Life BV, SO no.
+1744902235, Q’ty 60 ton, Truck inspection before loading (ML-FM-4110-008), weigh bill (FM-4110-006) including
+average per pack. D/O no. 2728009703, Surveyor checking weight by third party, Booking vessel no. 267164002
+ETA 02/05/2026, Packing list (ML-FM-4110-005) define lot number and quantity packaging, Product quality
+inspection for release and truck (ML-FM-1610-012) defined define lot number and quantity packaging, Product
+quality inspection for release and truck (ML-FM-1610-012) defined cleanness, truck floor, pest control, allergen and
+caking.
+- Raw Sugar (DCR) size 50 kg, on 24/03/2024, Customer code no. OTF001 HaMihn one member Co.,Ltd., SO no.
+1744902257, Q’ty 47 ton, Truck inspection before loading (ML-FM-4110-008), weigh bill (FM-4110-006) including
+average per pack. D/O no. 2728009827, Surveyor checking weight by third party, Booking vessel no. 267164002
+ETA 02/05/2026, Packing list (ML-FM-4110-005) define lot number and quantity packaging, Product quality
+inspection for release and truck (ML-FM-1610-012) defined define lot number and quantity packaging, Product
+quality inspection for release and truck (ML-FM-1610-012) defined cleanness, truck floor, pest control, allergen and
+caking.
+- VHP sugar size 1000 kg, on 24/03/2024, Customer code no. 303072 Viet Life Trading and Service, SO no.
+1744902256, Q’ty 46 ton, Truck inspection before loading (ML-FM-4110-008), weigh bill (FM-4110-006) including
+average per pack. D/O no. 2728009823, Packing list (ML-FM-4110-005) define lot number and quantity packaging,
+Product quality inspection for release and truck (ML-FM-1610-012) defined cleanness, truck floor, pest control,
+allergen and caking.
+The receiving and issued product was under control as seen warehouse stock report and related weight record.
+Storage condition and pest control system was established and found consistence implemented.
+Product delivery and related documents was completely provided. Process approach, risk and opportunity, KPI was
+monitored and effectively implemented.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 20
+[ผู้ปฏิบัติงาน]
+Auditor:
+Maintenance & Utility
+Audit of:
+Auditee(s): Mr.Phomma, Mr.[ผู้ปฏิบัติงาน], Mr.[ผู้ปฏิบัติงาน], Mr.Phaimany, Mr.Soudsavanh
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+- Verified risks and opportunities assessment that was reviewed on 05/03/2026 for consideration on shortage of
+hand tool, breakdown of machine, electrical and utility
+•KPI of Power generation
+- %Break down for organic sugar 0%, result =0
+- %Break down for general sugar 0.32%(8hrs), Result = 0
+- Risk and opportunity: (ML-FM-1620-025 ,026) of electrical generation and electrical distribution
+- Turbine generator (TG) no. 1-4 and Turbine generator no. 5 (New in Y2025), verified maintenance report in Jun-
+Jul’2025 for Turbine generator (TG) no. 1-4
+- Daily TG machine checksheet (ML-FM-3301-001) of Turbine generator no.1, 2, 3 and 4 considering pressure
+steam, temperature, bearing temperature, air temperature and oil tank on 24/03/2026 (no.1, 3,4 and 5) and
+10/03/2026 (no.2). TG2 has stopped operation since 10/03/2026 that found some vibrating some part of generator;
+however, it was not affected of production.
+•KPI of Steam generation
+- %Boiler breakdown <0.34 % (8hrs) during cane milling period, result not achieved
+- % Boiler Breakdown 0 in organic cane milling period, result not achieved
+- Risk and opportunity: breakdown of boiler operation, PM of boiler
+- Verified Boiler operation record (ML-FM-3120-001) every 1 hour sampling Boiler no. 1,2,3 on 25/03/2026, and PM
+plan, verified PM record of Boiler no. 2 in July’2025 i.e. IDF fan, motor, bearing, belt and conveyor of bagasse and
+ash.
+- Verified new boiler no. 3 (80 ton) operation and merging new DCS operation system for 3 boilers and turbine
+generator and training record on 06/11/2025 and waiting commissioning phase in Y2026.
+•KPI of Electrical system
+- Breakdown hour <2.7 hrs, result 0
+- Risk and opportunity of electrical maintenance and breakdown
+- Breakdown 95 mins of milling no.1 from trip of power board; extend the corrective actions to prevent recurrence to
+another milling machine.
+- PM plan for Electrical system 2026/2027
+- PM transformers (9 unit) were planned in Sep-Oct’2026 (every 2 years), the latest PM for transformers no. 4, 5
+and 6 on 11-12 June 2024 by external provider.
+- Daily Electrical system monitoring considers thermoscan and electric current (ML-FM-3320-002) on 17/02/2026 i.
+e. EV-MO-003 (Evaporation motor pump), BP-MP-A003 (Remelting motor pump)
+•KPI Mechanic & Water treatment
+- % breakdown <2.67 hrs, result 0
+- Hardness of soft water < 0 ppm, result 0
+Water treatment: ML-WI-3130-002 Re.00, 04/04/2017
+Filtered water (Sanitary & Process): Raw water-> Storage pond-> Chemical dosing (PAC, Maxfloc, NaOH) ->
+Sedimentation -> Storage tank-> Sand filter-> Filtered water tank -> Chemical dosing (NaOCl) -> Use water
+Soft water (Cooling tower & Boiler): Raw water-> Storage pond-> Chemical dosing (PAC, Maxfloc, NaOH) ->
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 21
+Sedimentation -> Storage tank-> Sand filter-> Resin filter -> Soft water tank
+- Verified Water treatment operation (ML-FM-3130-008) on 22/03/2026 i.e. Diff. Pressure of sand filter & Backwash,
+Regenerate resin filter, chemical dosing, water volume, soft water analysis by internal laboratory (pH, Hardness,
+TDS)
+- The latest PM of water treatment system on 24/10/2025 and changed resin Y2024
+- Verified PM plan and history PM record for pump at evaporation pan, remelting pump no.2,
+- PM record in ML-FM-3000-006 was defined spare part usage and spare part control via SAP system
+- Air compressor 4 units -> Daily check for monitoring temperature, pressure , operation hours ->ML-FM-3130-010
+that was sampling verified on 24/03/2026.
+KPI was established and monitoring every monthly. Machine and equipment was conducted preventive
+maintenance on plan e.g. daily, weekly, monthly. Preventive maintenance process was carried out and maintained
+system at defined interval. Records were maintained and compliance. Machine in production line/water treatment /
+electrical generation / boiler /air compressor / MDB /transformer have been checked as maintenance plan. Spare
+part was stock and controlled.
+OFI
+- The organization could update the machine and instrument list after the commissioning of the new machine in
+order to expand production capacity and enhance the effectiveness of the preventive maintenance and calibration
+processes
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน]
+Auditor:
+Calibration (Instrument in process)
+Audit of:
+Auditee(s): Mr.Phomma
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+•KPI Instrument: % breakdown from DCS system <2.67 hrs (0.097%), result 0.41 hr. and taken corrective action to
+separate main breaker to redundant.
+- Procedure: Calibration control, ML-QP-3330-007 Re.01, 18/05/2020
+- WI: Method and Acceptance criteria: ML-WI-3330-002 Re.06, 25/03/2021
+- Master instrument list (ML-FM-3330-001) and waiting for the commissioning of a new machine for updating
+instrument list
+- Calibration plan (ML-FM-3330-001)
+- Thermocouple of Evaporation pan: EV-TT-002 and : EV-TT -003
+- Pressure transmitter Boiling pan A3 and B1: BP-PT-003 and BP-PT-004 calibrated on 23/06/2025
+- pH transmitter at Evaporation: EV-PH-001 calibrated on 14/03/2026
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 22
+- Blix meter at Boiling pan: BP-BX-005 and BP-BX-006 internal validation on 15/03/2026 and external calibrated
+on 15/12/2025.
+- Weighting in-line 02: CF-WI-003 calibrated on 04/03/2026
+- Checkweight 50 kg: LG-WI-008 internal calibrated on 11/03/2026 and yearly calibrated by external on
+05/12/2025
+- Weighting Balance (Sugar Truck scale 80 ton) internal validated on 16/02/2026 and yearly calibrated by external
+on 05/12/2025
+- Thermometer and Humidity at WH2 calibrated on 26/08/2025 (every 2 years)
+- Master: Standard weight (SC-W-011 to SC-W-020) calibrated on 30/10/2025 (every 3 years)
+- Master: Dry block (SC-T-001) calibrated on 26/03/2024 (every 3 years)
+All equipment is register in Calibration master list which defined acceptance tolerance, frequency. The status of
+calibration identified on calibration sticker.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน]
+Auditor:
+Document and record control
+Audit of:
+Auditee(s): Mr.[ผู้ปฏิบัติงาน]
+This process was assessed by remote assessment through the ICT system (Microsoft team)
+Document was implemented and maintained by e-Smart ISO system including registration, revise, retain and
+obsolete.
+• Procedure: Document and record control ML-QP-1620-01 Re.05, 16/05/2018
+• Define record retention period in record master list (ML-FM-1620-001) almost kept 4 year
+• DAR no. DAR-ML-004/2026 to Revised Procedure no.ML-QP-4000-001 Re.17, 17/01/2026 for Procurement
+process
+• DAR no. DAR-ML-013/2026 to Registered WI no. ML-WI-3110-013 Re.00, 14/03/2026 for Maintenance Milling
+equipment
+• DAR no. DAR-ML-050/2025 to Revised Support document no. ML-SP-1610-006 Re.09, 14/01/2025 for Standard
+sugar weighting
+• DAR no. DAR-ML-023/2025 to Revised Form no. ML-FM-1630-038 Re.04, 25/02/2025 Daily report of water
+analysis
+• External document such as Laos’ Legislation of Goods in packaging, ML-SP-1630-061, 27/01/2025
+• KPI:
+- DAR register 100%, result not achieved and has action follow up
+- Follow up NC 100% from internal & external, result not achieved and has action follow up
+- Zero Major NC from external party, achieved
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 23
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน] Auditor:
+Sale and marketing and Contract review/customer
+satisfaction /customer feedback /Complaint
+management
+Audit of:
+Auditee(s):
+[ผู้ปฏิบัติงาน]: Marketing officer
+[ผู้ปฏิบัติงาน] S: QA section head
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+Sale and marketing and Contract review/customer satisfaction /customer feedback:
+• ML-QP4140-001 rev 03 (28/2/2015) Customer order handling
+• Process approach review (ML-FM-1620-025), Risk and opportunity (ML-FM-1620-026) date 4/2/25,
+documents, distributor evaluation, order handling, legal compliance
+• ML-FM-4140-008 Sale plan 2026 for NCS sugar, DCR sugar, organic, VHP, Molasses approved by QMR
+• Customer contract no. MLS2026/004 Viet Life Trading and Services Joint Stock company November
+14,2025 product Raw Sugar, VHP type 15,000-ton, pack 1 ton contract details Quality, Quantity, Packing,
+specification, documents, payment, delivery (ship plan from Dec 2025 –March 2026) etc. (Polarization, color,
+Moisture etc.) (EXW EX-work)
+• Customer contract no. MLS2026/001 Customer Andean Life BV (Netherlands) November 22,2025 product
+Organic Cane Sugar quantity 1000-ton, pack 1 ton details quality, quantity, packing, specification, documents,
+payment, delivery (ship plan Feb-Oct 2026) etc. (Polarization, color, Moisture etc.) (FOB).
+• Delivery record for Sale document number 1744902255 date 23/3/26 product Raw Sugar 336-ton Viet
+Life Trading and Services, commercial invoice no. MLS2026/021C
+• List of sale order in SAP defined customer, product, quantity, invoice, SO,
+• Delivery record for Sale document number 1744902165 date 31/1/2026 Product 20-ton (20 bag) Ship to
+Spain, product Organic Cane Sugar Commercial invoice no. MLS2026/008 Customer Andean Life BV
+• List of sale order in SAP S/4HAHA2023
+• Delivery record for Sale document number 1742952674 date 7/3/2026
+• Invoice no. DOM-MLS 2026/091 date 7/3/26 customer Nangmoo
+NCS (1KGx25) 1200 bag (Seno), NCS (0.5x50) 700 bag (Seno), etc. delivery date 10,13,16,18/3/2026
+• Customer satisfaction survey Year 2025, survey on packaging, quality, and service total 13 customer
+average score 93.11 %.
+• KPI (year 2026)
+o Customer satisfaction survey target not less than 90%, year 2025 = 93.11%
+o Complaint not more than 2 case/year, result 1 case in Feb 2026
+o Sale volume target not less than 90%, result Jan= 48% Feb= 70.8 % due to No DCR production and
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 24
+customer require VHP, action done when start production to expedite shipment follow contract
+o CAR closed on time 100%, result No NC
+Sale plan was set up for sale in each month and each type of product NCS sugar, DCR sugar, organic, VHP,
+Molasses
+The contract was provided for details of product, quality, quantity, packing, specification, documents, payment,
+legal, delivery (shipment period). The product requirement, specification was clearly defined in contract.
+Receiving order for shipment by telephone, fax, mail and record in list of sale in SAP. Customer order has reviewed
+the requirements related to the product such as quality, packing, delivery before Sale order release. If any change
+will update in record and contract as well.
+Sale order was issued for internal communication. The record of review was maintained. The organization has
+monitor information relating to customer perception by using survey to evaluate the product and service
+performance.
+Customer satisfaction was carried out as per procedure. Feedback was analysis as well.
+Process approach, risk and opportunity, KPI was monitored and effectively implement.
+Complaint management:
+• ML-QP4140-001 Complaint procedure
+• Complaint record is in ML-FM-4140-010 in 2025 (5 case) 2026 (1 case)
+• Customer Complaint Receive Log (ML-FM-4140-010) year 2026
+• Date 5/2/26 e-mail (customer Viet Haus) Product Organic PO BE205451 /Contract no. MLS2025/011
+Client Biova Gmbh / Product damage from moist 25 kg Lot no. 0463 140225, 0527 190125 container
+YMMU1295011
+• Root cause form Thermal shock action by desiccant bag in container. This is agreed with customer to
+improve in next sale contract. Therefore, this should be followed up effectiveness of action in next sale contract.
+• Customer log year 2025
+• Date 5/12/2025 Mitsui&CO., Ltd Lot 0508 production 17/1/25 Dark-colored fibers on the filter fabric.
+• Date 21/12/2025 ED&F Man Ingredients container no. YMMU1259884 Lot no. 0531190125 (Caking) Root
+cause form Thermal shock action verifies moisture content during loading and their-party audit. Preventive by use
+desiccant bag in container. This is agreed with customer to improve in next sale contract. Therefore, this should be
+followed up effectiveness of action in next sale contract.
+• Date 27/11/2025 Viet Haus container YMMU1192060 found Insect
+The complaint handling according procedure, investigation and take corrective and preventive action.
+All audited processes were fully complied.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 25
+[ผู้ปฏิบัติงาน] Auditor:
+Cane procurement /Production planning
+Audit of:
+Auditee(s):
+Mr.Khanthakone P: Sugarcane farm service officer
+Mr.Surapong: Centrifugal section head
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+Cane procurement:
+• Procedure ML-QP-6000-001 rev 02 (22/7/2018) Planting and maintaining sugarcane.
+• KPI
+o CCS >13.80, YTD 14.72 (P1-P7)
+o Cane Quantity of fresh sugarcane >97% YTD 95.54 (P1-P7) due to Burnt cane
+o Cane receiving as plan <90, result plan (P1-P7 period 10/12/250-15/3/26) = 77.71% Emphasize to
+farmers the importance of cutting sugarcane fresh, leaving short stubble, and harvesting all the sugarcane from the
+field.
+o Cane receiving plan (Own farm 1-4) Promotion farm (CF1-CF9) total 720,000 ton
+o Cane receiving 1/12/25-18/3/26 total 655,520 ton actual 552813.20 ton 84.33%
+• Plan Cane Milling December 10/12/25-25/3/25 approved Director of Sugarcane
+• Cane incoming receipt 24/3/26 Bill number CR2526MLO/35755
+• Cutting order HO2526ML002/6454 date 23/3/26, weight record 28 ton (ทองคูน)
+• Cane incoming receipt 23/3/26 Bill number CR 2526ML0/3577 (ห้าววหวาง)
+• Cutting order HO2526ML007/6430 date 22/3/26, weight 30.47 ton
+• Contract 00203/10/2023 legal, responsibility, quantity to rai, quality
+• Farmer evaluation year 2024/2025 total 2,149 farm grad A+ to -F
+Sugar cane planning was found implemented related to QMS. The Objective have been implemented and
+maintained. The planning by receiving target from management, number of operations in milling period, marketing
+forecast before prepare daily cane receiving plan which divided to each zone. update of actual amount cane
+receiving. For zone which not achieved target, it plans to improve by management team meeting. There was
+contract with Farmer and Farmer evaluation was done action base on results of each grad.
+Production planning:
+• Yearly plan 2025/2026 plan for each period P1 unit P8 (10-15 Dec until 16-24 Mar)
+• Tons cane crushed, hours open, hours to stop, Mechanical efficiency, % Pol cane, C.C.S, total sugar for
+VHP, DCR, Organic
+• In general, of Production planning has been planned by receiving cane planning and order from marketing
+by yearly, production capacity was reviewed before issuing and communicate to all concern. Production period plan
+is communicated to all concerned for confirmation. The product’s quantity will be updated when production and
+quality checking completed.
+Objective evidence, process controls reviewed and comments:
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 26
+[ผู้ปฏิบัติงาน] Auditor:
+Production &QC (Raw Sugar/VHP)
+Audit of:
+Auditee(s):
+[ผู้ปฏิบัติงาน] X.: Milling section head,
+[ผู้ปฏิบัติงาน] S.: Clarification &Evaporation officer,
+[ผู้ปฏิบัติงาน] S: Vaccum pan officer, Mr.Surapong P. Centrifugal section head , [ผู้ปฏิบัติงาน] S: QA section head
+[ผู้ปฏิบัติงาน] P.: Special business unit manager
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+• Process risk and opportunity for process approach of Extraction, Clarification &Evaporation, Crystallization
+and Centrifugal process and packing process last updated in Feb-Mar 2025
+• ML-SP-3000-001 Mitrlao Process flow R.16 date 15/1/2026 Process flow Raw Sugar production
+(DCR/VHP/Organic)
+• Quality plan (Raw Sugar) rev 02 date 25/2/2026
+• Raw sugar production: Extraction process (Milling) (Input: Sugar Cane, Output: Mixed Juice)
+• KPI: (P1-P7)
+o Extraction pol >97% , result 96.58-97.22
+o Moisture content less than 48 % result 42.74-48.35
+o Hours stop milling hours less than 8, result 1.17-7.75 a due to Motor Trip action remove cane and restart
+• Milling quality control record date 20-24/3/2026 Cane, Frist mill Mix juice (% brix, % pol, pH, Purity drop,
+(every 4 hr.), Last mill mix juice, Bagasses (%Moisture Bagasses, %Pol)
+• DCS date 24/3/26 – temperature process water, set up mill speed, motor 400 rpm
+• Raw sugar production: Clarification &Evaporation, (Input: Mixed juice, Output: Raw Syrup)
+• KPI (P1-P7)
+o %Turbidity of clarified juice target less than 10, result (9.96-16.97%) due to low quantity of Mixed juice
+action done by clean Heater to increase temperature
+o Loss in Filterer cake target less than 0.31, result (0.48-0.66) due to low quantity of Mixed juice action
+clean Heater to increase temperature
+o %Break down target zero, result almost achieved, except P2 heater problem action shut down and repair
+o Sugar content in water less than 300ppm, results not achieved action done clean of water trough
+• ML-FM-3210-001 (Heater Temperature control) date 20-24/3/2026 Record Temperature control for each
+heater control temperature, brix, pH of mixed juice tank, Control heater temperature 100-105 degree C
+• Record Clarification, Filter pot RVF; 24/3/26 (19.5,13.2,17.9) action due to temperature not reach target
+and low capability, Poor sedimentation.
+• ML-FM-3210-002 (Clarification record) date 21-24/3/26 control Turbidity of clarified juice, %Pol of Filter
+cake
+• ML-FM-3210-003 (Evaporation record) date 21/3/26-24/3/26 control % brix of Raw syrup record
+• Found production process is not effectively controlled. There were not write in red color and no correction
+action defined in the remark column that required when quality control points were out of specification, therefore
+minor NCR was raised.
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 27
+• Raw sugar production: Vacuum pan- Crystallization, (Input: Raw syrup, Output: Massecuite)
+• KPI
+o %Brix A-Massecuite more than 93% P1-P7, result 92.24-93.03 action adjust temperature pressure
+o Purity drop of A-Massecuite target more than 20 ,result 19.56-22.27 action control % seed ratio
+• A-Massecuite vacuum pan record (ML-FM-3220-003) date 20-24/3/26
+Strike 1728-1675 (50 ton)
+Control material ratio seed A, Surup, control start and end time, vacuum, temperature (specification more than 63-
+degree 45 minute)
+When out of control the action was defined in record example date 24/3/26 Brix and Purity drop not meet controlled
+due to use B-magma action increase motor speed, Hot water time increase 5-10 minute.
+• B-Massecuite vacuum pan record (ML-FM-3220-005) date 23-25/3/2026 strike 735-747 control &brix and
+purity, crystal content, check per day Monitoring vacuum and temperature, In case of brix out of control due to
+motor trip Action done by monitoring DCS
+• C-Massecuite vacuum pan record (ML-FM-3220-005) date 22-23/3/2026 strike 511-521 control &brix and
+purity, crystal content, check per day Monitoring vacuum and temperature, Low Purity drop action done by addition
+slurry
+• Raw sugar production: and Centrifugal process (Input: Massecuite), Output: Raw Sugar)
+• ML-FM-3230-001 Centrifugal process Sugar A record, DCR type 24/3/25 (Strike 1736-1742)
+• Control hot water temperature at more than 80-degree, water spray, spinning, Rotary dryer, blower, check
+weight
+• Control product sediment, color, pol, moisture, temperature
+• Strike 1728 found dark spot down grad to VHP
+• Strike 1734-1736 down grad to VHP due to weight validation
+• ML-FM-3230-001 Centrifugal process Sugar A record, VHP type
+Date 31/1/2026 Strike 718-729
+• KPI
+• % moisture VHP target not more than 0.18 P1-P3, result 0.11-0.19 due to start line adjust process
+• % moisture DCR target not more than 0.10 result P2, P5-P7 0.07-0.1
+• Purity raise VHP DCR target not more than 1.5 result (-.44)-0.31
+• Packing VHP/DCR
+• ML-FM-4130-011 Sugar Delivery Note date 21/3/26 pack 1000 kg. total 390 Ton VHP type
+• ML-FM-4130-012 Packing record 21/3/26 1000 kg 390 bag VHP type
+• ML-FM-4130-011 Sugar Delivery Note date 21/3/26 pack 50 kg (8580 bag), 1000 kg (139 bag) DCR type
+• ML-FM-4130-012 Packing record 21/3/26 DCR pack 1000 kg. Refer strike no. 1679
+• ML-FM-4130-004 Packing record 21/3/26 DCR pack 50 kg Record Lot number example 1691210326 etc.
+Process approach and process risk was addressed in Process risk assessment of production process as well.
+Review the site KPIs and its analysis result for Production found well monitored and take corrective action in case
+not achieve target.
+Verify process control and product quality control for Raw sugar against with Quality plan and related work
+instruction generally are under controlled.
+Base on review OJT record found operator are trained all related work instruction as well.
+The process(es) were found to be non-compliant from the sample taken and non-conformity reported.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 28
+[ผู้ปฏิบัติงาน] Auditor:
+QA and Laboratory
+Audit of:
+Auditee(s): [ผู้ปฏิบัติงาน] S: QA section head
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+Quality control:
+• ML-FM-1620-026 Process approach risk analysis Feb 2026 covers analysis of DCR, organic sugar, VHP,
+Incoming material and packaging, In-process analysis
+• Quality plan (Raw Sugar) rev 02 date 25/2/2026
+• ML-WI-1630-004 Sugar analysis rev 1 effective date 6/11/2020, pH (ICUMSA Method GS1/2/3/4/7/8
+(1994), % Pol (GS1/2/3/9-1 (2011), %RS, Moisture (GS2/1/3-15 ICUMSA Method), Color (GS1/3-7) , Conductivity
+Ash (GS1/3/4/7/8-13)
+• ML-FM-1630-011 Analysis sugar date 20/3/26 -24/3/26 Strike 1663-1741 defined Grade DCR and VHP,
+product temp, each strike check %pol, color, % moisture, Daily check %Ash , %RS , size (MA),
+• ML-FM-1630-012 Sediment check every strike
+• Product test according COA against contract and product specification.
+• COA no. 005/2026 date 14/2/2026, 1000 kg (total 100 ton) (Organic cane sugar customer Andean Life
+BV, Lot number 0230, 0231, 0225, 0228,0226 production date 5-6/1/2026 color, polarization, moisture, invest
+sugar, target M.A, Conductivity Ash, Sediment specification of Mitr lao sugars ML-SP-1610-019 rev 8 Organic
+sugar
+• COA no. 028/2026 date 24/3/2026 Customer Vite Life Trading and service joint stock company S/O
+1744902256 284 Ton Pack 100 kg, Lot number 240326, 200326, 220326,190326 production date 19,20,22,24
+/3/26 Check color, polarization, moisture, invest sugar, target M.A, Conductivity Ash, Sediment specification of
+Mitr lao sugars ML-SP-1610-001 rev 12 Raw Sugar (VHP)
+• COA no. 008/2026 date 24/3/26 Customer Ha Minh One member company Limited
+SO. 1744902257 DCR sugar such as Lot 1453090326 Check color, polarization, moisture, invest sugar, target M.
+A, Conductivity Ash, Sediment specification of Mitr lao sugars ML-SP-1610-001 rev 12 Golden granulated Sugar
+(DCR)
+Calibration:
+• ML-SP-1630-004 rev 00 Calibration interpretation
+• ML-SP-1630-003 Master equipment list and calibration plan year 2025
+• Calibration record
+o Polarimeter ML-LAB-117 calibrate 26/8/25 due 26/8/26 (Global Dynamics)
+o UV-Vis Spectrometer ML-LAB-108 calibrate 9/9/25 due date 9/9/26 (Analytical technology)
+o Moisture Balance ML-LAB-14 calibrate 30/8/25 due date 30/8/26 (My Lab scale)
+Incoming material:
+• Procedure ML-WI-1610-001 rev 03
+1. Max floc 917, Q’ty 1,000 kg, Lot no. CK5226 Thai Chemical & Engineering Co. Ltd, Received 12/02/2026,
+INV, 6901-IR453
+Receiving record (ML-FM-1610-023) pass specification check COA dry content, moisture, pH, viscosity Lot no.
+CK5226 compare with specification ML-SP-1610-011 rev 07
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 29
+2. CaO Calcium oxide 90%, Q’ty 32,780 kg, Lot no. 02/03/2026, Sutakan PCL., Received on 05/03/2026,
+Invoice no. EIL69020007
+Receiving record (ML-FM-1610-023) pass specification check COA color, %cao, MgO, etc compare with
+specification ML-SP-1610-011 rev 07
+3. Jumbo PP bag ML022 size 1,000 kg, Q’ty 2,840 EA, Lot no. 20/11/25 VINH Plastic and bag joint stock
+company, received on 12/12/25, COA dimension, strength, compare supplier specification packaging.
+4. Caustic soda (NaOH) 50%, Lot no. 189/12, Xenon inter Co.,Ltd. Received on 19/12/25 (30 ton)
+Receiving record (ML-FM-1610-023) pass specification COA check SG, sodium hydroxide, heavy metal compares
+with specification ML-SP-1610-011 rev 07
+5. PP bag 25 kg. lot B025-55900 qty. 39000 bag VAVA packaging co. ltd receiving date 17/12/25 check
+dimensions, artwork, Woven threads sampling follow AQL, compare with specification of Mitrlao packaging
+Nonconforming product control:
+• ML-QP-1620-003 rev04 Nonconforming product control
+• ML-NCR-PRO-034/2026 date 25/3/26 DCR strike 1701 Test B back color over control limit action reduce
+grad to VHP
+• ML-NCR-PRO-035/2026 date 25/3/26 DCR strike 1702 Test B back color over control limit action reduce
+grad to VHP
+• KPI: Nov25-Feb 26
+o Repeatability of test more than 90%, result achieve 100%
+o Customer satisfaction (internal customer) not less than 85%, achieve 91.67-96.89%
+o Complaint not more than 2 time per year, result = not achieve, 4 cases
+o Complaint (food safety) zero per year, result = achieve
+o Reject product from customer more than 2 time per year, result =0
+Review quality analysis for final inspection were complied with product specification, control plan and customer
+contract.
+All instrument and measuring equipment was calibrated according to calibration plan.
+Review of sample of latest calibration for example equipment found all calibration results are passed acceptable
+limit. All records were demonstrated effective control include traceability to appropriate national standard. All
+equipment is register in Calibration master list which defined acceptance tolerance, frequency. The status of
+calibration identified on calibration sticker.
+Nonconforming product control was carried out as per procedure as seen NCR report.
+Process approach, risk and opportunity, KPI was monitored and effectively implemented.
+All audited processes were fully complied.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 30
+[ผู้ปฏิบัติงาน] Auditor:
+HR/Training and organization Knowledge
+Audit of:
+Auditee(s): Ms.[ผู้ปฏิบัติงาน] S: HR section head, Ms.Orlaphin: HR officer
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+• ML-FM-1620-026 Process approach risk analysis March 2026 cover recruitment, training, Operator
+Hygienic
+• KPI of Nov 2025- Oct2026, result Nov25-Feb26
+o Training as plan 100%, result 100%
+o % Attendant training >95%, result 100%
+o Recruitment within 60 day (monthly) 100% result 100%
+o Recruitment within 30 day (daily) 100% result 100%
+o Recruitment within 15-day (seasoning) results 100%
+o Closed CAR 100%, result 100%
+• Procedure for recruitment and training ML-QP-1100-001 rev 05 date 13/02/2023
+• Sampling review Manpower request (ML-FM-1100-002) for evaporation office request date 1/6/24 Officer
+level 4, 1 person, Interview evaluation 1/6/24, Contract date16/6/24., Functional company, Attitude probation
+evaluation within 30 and 60 days)
+• Job description (ML-FM-1000-001), health checkup date 5/6/24-Orientation training 17/6/24, OJT training
+need (ML-FM-1200-001), OJT training record (ML-FM-1200-02) employee no. 30742 ([ผู้ปฏิบัติงาน])
+• Sampling review Manpower request (ML-FM-1100-002) for evaporation officer request date 20/1/26, 2-
+person, Interview evaluation 20/1/26, Contract date 24/1/26., Employee no. 25883 (Latsamee) OJT 26/1/26
+• JD Vacuum pan- Crystallization Operator /JD centrifugal operator / JD store section head
+• The organization knowledge has been described in training course such as product and process
+knowledge and procedure &instruction which have been trained to operator as on the training program. Reviewed
+on the job
+• Organization structure, roles, responsibilities and authorities have been clearly assigned by Management
+team and HR. The role and responsibility is define in each announcement and procedure and Job Description-
+Training and awareness procedure were set process for training and competence for all functional and core
+competency
+• Training need determine the necessary competence of person(s) doing work under its control that affects
+its process and product performance and its ability to fulfil its operation, compliance legal. on the basis of
+appropriate education, training or experience.
+• The organization knowledge has been described in training course such as product and process
+knowledge and
+procedure &instruction which have been trained to operator as on the training program.
+• Training plan year 2026 approved 10/3/26 . Reviewed training attendance and evaluation, certificate have
+been kept and demonstrated the competency of employee
+• OJT training need of QA department, Production department
+• OJT record ML-FM-1200-002 was follow OJT training need and evaluation shown pass
+• Employee no. 25498 ([ผู้ปฏิบัติงาน] Malai) Quality analysist OJT record January 2025
+• Employee no. 25503 ([ผู้ปฏิบัติงาน]) Quality analysist OJT record January 2024, December 2025
+• Employee no. 31356 ([ผู้ปฏิบัติงาน]) Quality analysist OJT record November 2025
+Objective evidence, process controls reviewed and comments:
+Report: BGK6011879/7245588 - 31-March-2026 Page 31
+• Employee no. 19238 (Ampaiporn) Quality analysist Leader OJT record November 2025
+• Employee no. 27982 (Sithong) (production) OJT record December2024
+• Employee no. 25883 (Latsamee) (production) OJT record January 2026
+• Training plan 2025-2026
+• Training date 9/7/2024 FSSC 22000 version 6
+• Training date 20-21/1/26 Management and maintenance of sugarcane
+The new employee and subcontractor are trained and competence including subcontractors who work under
+control have been trained orientation program and training matrix defined. After Training the evaluation was
+recorded.
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+[ผู้ปฏิบัติงาน] Auditor:
+IT
+Audit of:
+Auditee(s):
+[ผู้ปฏิบัติงาน] P: IT,
+[ผู้ปฏิบัติงาน] T :IT
+This process was assessed by remote assessment thru ICT system (Microsoft team)
+• ML-FM-1620-026 Process approach risk analysis March 2026 cover repair , support, network monitoring
+• ML-WI-4050-002 rev 02 Back up
+• ML-WI-4050-003 rev 03 Repair service
+• JD of IT
+• KPI Nov-Jan 2026
+o Repair service within 60-minute target not less than 85%, result 100%
+o Repair service with Format within 180 minuet targets not less 90%, result 100%
+o Back up server not less than 90% result 100%
+o PM on plan 90%, result 100%
+• Repair service request
+o 21/1/26 Install new operation
+o 3/1/26 Install driver printer
+o 7/1/26 Clean software
+• Daily Back up Database Server record Jan 2026 cover Canecost, CaneLao, Stock, CBS, HR, SFHR,
+Store
+• Hardware maintenance service from Vendor, monitoring shown in HP Dashboard total 112 device
+Objective evidence, process controls reviewed and comments:
+The process(es) were found to be compliant from the sample taken.
+Evaluation and conclusions:
+Report: BGK6011879/7245588 - 31-March-2026 Page 32
+Report: BGK6011879/7245588 - 31-March-2026 Page 33
+04. Next visit details
+Standard(s) / Scheme(s) ISO 9001:2015 Visit type Surveillance 1
+Audit days 3.50 DAY Due date June, 2027
+Team
+Site Audit
+days
+Delivery
+Method
+Remote
+Effort
+Activity codes
+No. 111, Unit 10, Kenghet Village,Savannakhet
+Province,LA
+3.50
+DAY
+Onsite 0 DAY EA03,009001
+Report: BGK6011879/7245588 - 31-March-2026 Page 34
+Name Role
+Attended opening
+meeting
+Attended closing
+meeting
+[ผู้ปฏิบัติงาน] Factory Manager Y Y
+[ผู้ปฏิบัติงาน] Production Assistant
+Manager
+Y Y
+[ผู้ปฏิบัติงาน] Head of Quality Assurance
+Centre
+Y Y
+[ผู้ปฏิบัติงาน] Head of Warehouse and
+Balance
+Y Y
+[ผู้ปฏิบัติงาน] Head of Evaporator Y Y
+[ผู้ปฏิบัติงาน] Head of Milling Y Y
+[ผู้ปฏิบัติงาน] Vaccuum pan officer Y Y
+[ผู้ปฏิบัติงาน] Head of Store Y Y
+[ผู้ปฏิบัติงาน] Head of Mechanical
+Maintenance
+Y Y
+[ผู้ปฏิบัติงาน] Act.Head of QA/QC Y Y
+[ผู้ปฏิบัติงาน] Milling officer Y Y
+[ผู้ปฏิบัติงาน] Evaporator officer Y Y
+[ผู้ปฏิบัติงาน] Head of HR Y Y
+[ผู้ปฏิบัติงาน] Mechanical Maintenance
+officer
+Y Y
+[ผู้ปฏิบัติงาน] Electric maintenance
+officer
+Y Y
+05. Attendees
+Report: BGK6011879/7245588 - 31-March-2026 Page 35
+Name Role
+Attended opening
+meeting
+Attended closing
+meeting
+[ผู้ปฏิบัติงาน] Quality Management
+Officer
+Y Y
+[ผู้ปฏิบัติงาน] Head of Quality
+Management
+Y Y
+Report: BGK6011879/7245588 - 31-March-2026 Page 36
+Question Confirmation Auditor comment
+With regard to the requirements of
+LRMS03-04-07 Use of ICT for Auditing
+Purposes - Risks & Opportunities. Has the
+organisation the ability to access and
+present information, images or video from
+relevant locations to undertake an
+effective remote assessment?
+Yes No comments
+Please confirm in the comments the ICT
+tools agreed with the client for audits e.g.
+Microsoft TEAMS, SKYPE, LRQA
+REMOTE, WECHAT, Other...
+Yes The client demonstrated adequate ICT
+capability, stable communication tools,
+and full availability of digital records (MS
+Teams, screen sharing, electronic
+records). The nature of the audited
+processes allowed effective evidence
+verification through screen sharing and
+real time document review. Therefore, the
+use of ICT did not impact the effectiveness
+or integrity of the audit.
+Where the audit is a stage One or a focus
+(Certification Renewal Planning) Visit, will
+the amount of remote audit time for the
+next certification period be greater than
+50% of the total audit time?
+No No comments
+Please confirm that legal and statutory
+controls were reviewed and were effective.
+Yes No comments
+Confirmation of the management system's
+conformity to the requirements of the
+standard, capability, and effectiveness to
+deliver the objectives of the organization
+and stakeholders.
+Yes No comments
+Has there been any deviation from the
+original audit plan or any significant issues
+impacting on the audit programme?
+No No comments
+Have there been any significant changes,
+since the last audit, that affect the
+continued appropriateness of: the scope
+of certification, the management system,
+effective workforce numbers, related to the
+activities/products/services of the
+organisation?
+No No comments
+06. Report considerations
+Report: BGK6011879/7245588 - 31-March-2026 Page 37
+Question Confirmation Auditor comment
+Are there any unresolved issues from the
+audit between the client and the audit
+team?
+No No comments
+Was the organisation effectively
+controlling the use of the certification
+documents, marks and not misleading in
+their (online) certification statements?
+Yes No comments
+Were the stated objectives of the audit
+fulfilled?
+Yes No comments
+Where the audit is for OHS, have the
+relevant OHS responsibility holders been
+involved in the audit and their details
+included in the list of meeting attendees?
+NA Not an OHS audit.
+Where the organisation operates a Night
+Shift, can all processes be effectively
+audited during normal office hours?
+Yes No audit of Night Shift required.
+Where the visit is for OHS and Night Shift
+activities are undertaken, confirm that a
+Night Shift audit has been planned.
+A: Not an OHS Audit No comments
+Where remote audit activities were
+undertaken with the use of ICT, were
+these effective and delivered the audit
+objectives?
+Yes No comments
+Were operational processes audited
+remotely and using video livestreaming? If
+yes, please confirm that a comment was
+made in the relevant process table to
+confirm the effectiveness of the audit
+activity.
+No The client demonstrated adequate ICT
+capability, stable communication tools,
+and full availability of digital records (MS
+Teams, screen sharing, electronic
+records). The nature of the audited
+processes allowed effective evidence
+verification through screen sharing and
+real time document review. No high risk
+activities requiring physical site
+observation were identified. Therefore, the
+use of ICT did not impact the effectiveness
+or integrity of the audit.
+Report: BGK6011879/7245588 - 31-March-2026 Page 38
+07. Additional information
+LRQA Observation Legal entity
+Notification to client of an opportunity for improvement in
+observed current practices, or a positive aspect worthy
+of a special mention observed. The requirements of the
+Standard(s) are met, follow up not mandatory for client
+or LRQA. Will be recorded in the audit summary table
+applicable to the area being assessed and highlighted in
+the executive summary where relevant.
+The accredited legal entity and client facing office that
+has provided the assessment service in this report is
+referenced in the applicable agreement for this service.
+Confidentiality
+We will treat the contents of this report, together with
+any notes made during the visit, in the strictest
+confidence and will not disclose them to any third party
+without written client consent, except as required by the
+accreditation authorities.
+Sampling
+The audit process relies on taking a sample of the
+activities of the business. This is not statistically based
+but uses representative examples. Not all of the detailed
+nature of a business may be sampled so, if no issues
+are raised in a particular process, it does not necessarily
+mean that there are no issues, and if issues are raised,
+it does not necessarily mean that these are the only
+issues.
+Generic audit objectives and team
+responsibilities
+The generic audit objectives and team responsibilities
+are included in the Client Information Note ‘Assessment
+Process’ included on our website www.lrqa.com. Any
+visit specific objectives for the next visit will be recorded
+in the report of the previous visit and will be addressed
+through the visit plan for that visit. The assessment
+standard and roles of the audit team are defined in the
+assessment visit confirmation sent to the client.
+Furthermore, on the website there are Client Information
+Notes available for the various visit types.
+Audit Criteria
+The audit criteria consist of the assessment standard
+and the client’s management system processes and
+documentation.
+LRQA Group Limited, its affiliates and subsidiaries and their respective officers, employees or agents are, individually and collectively, referred to in this clause as
+'LRQA'. LRQA assumes no responsibility and shall not be liable to any person for any loss, damage or expense caused by reliance on the information or advice in this
+document or howsoever provided, unless that person has signed a contract with the relevant LRQA entity for the provision of this information or advice and in that case
+any responsibility or liability is exclusively on the terms and conditions set out in that contract. LRQA retains ownership of this report.
+Report: BGK6011879/7245588 - 31-March-2026 Page 39
+08. Appendix
+Report: BGK6011879/7245588 - 31-March-2026 Page 40
+ARTForm 08/23
+APP & AP Combined
+Report: «OfficeCode»«LRQA_Ref»/«Audit_Ref» -
+«SAVEDATE»
+Page 1 of 4
+1. Audit Programme
+Both the audit programme and the plan are dynamic and must be in line with the developments in the certified organisation and activities. Last
+minute changes are possible with valid reasons. The final selection will be made after review by the audit team of e.g. management system and
+actual performance. Prior to the closing meeting the audit team will (re)confirm the programme and identify any changes. The audit criteria
+consist of the requirements of the standard and the management system of the client.
+Audit Type CR SV1 Focus visit CR
+Due Date Mar26 Mar27 Mar28 Mar29
+Start Date 24/03/2026 TBC TBC
+End Date 26/03/2026
+Audit Days 6 3.5 3.5
+Onsite Audit Days 0
+Remote Audit Days 6
+Process / topic Y = Yes
+completed
+X =
+proposed
+Opening/Closing meeting Y X X X
+Changes to organization or
+context
+Y X X X
+Management Review Y X X X
+Internal Audits Y X X X
+Continual Improvement Y X X X
+Management of change Y X X X
+Corrective action management Y X X X
+Customer satisfaction &
+Complaint Management
+Y X X X
+Use of Logo
+(LRQA & Accreditation Marks)
+Y X X X
+Performance against the client
+management system objective
+Y X X X
+Reporting and Follow Up open
+issues
+Y X X X
+Management elements Y X
+Production (Raw Sugar/VHP) Y X X X
+QA/Lab Y X X X
+Maintenance Y X X
+Utility Y X X
+Warehouse and delivery Y X X
+Material Storage and incoming Y X X
+Purchasing and outsource control Y X X
+Sale and marketing and Contract
+review/customer satisfaction
+/customer feedback
+Y X X
+HR/training, organizational
+knowledge
+Y X X
+Cane procurement Y X X
+Production planning Y X X
+Documented information/IT Y X X
+Calibration Y X X
+Review, Preview & Planning
+(Focus Visit Activity)
+Y X X
+ARTForm 08/23
+APP & AP Combined
+Report: «OfficeCode»«LRQA_Ref»/«Audit_Ref» -
+«SAVEDATE»
+Page 2 of 4
+2. Audit Plan for Certificate Renewal
+(Date: 24/03/2026 - Day 1, Location: Savannakhet, Loa, Delivery: Remote)
+09:00 Introductory meeting with management to explain the scope of the audit, audit methodology, method of reporting and to
+discuss the organisation (approx.30 min).
+09:05 LRQA team briefing for a team of two or more auditor(s) or expert(s).
+<[ผู้ปฏิบัติงาน] C.> (Team Leader) <[ผู้ปฏิบัติงาน] K.> (Team Member)
+09:30 - Discussion of all outstanding issues from previous audits.
+- Interview Top Management / Leadership commitment
+- Context of the organization
+- Risk and opportunity
+- Management of change
+- Policy
+- Scope /Manual
+- Recourse, Role, Responsibility, Accountability
+- Communication
+- Sale and marketing and Contract review/customer
+satisfaction /customer feedback
+- Complaint management
+12:00 Lunch. Lunch.
+13:00 - Objective target and programme including Continual
+Improvement
+- Management Review
+- Internal Audits
+- NC Corrective action
+- Use of logo
+- Cane procurement
+- Production planning
+15.00 Report writing and follow up of open issues. Report writing and follow up of open issues.
+16.30 Feedback Feedback
+17.00 Close of the audit day. Close of the audit day.
+(Date: 25/03/2026 - Day 2, Location: Savannakhet, Loa, Delivery: Remote)
+<[ผู้ปฏิบัติงาน] C.> (Team Leader) <[ผู้ปฏิบัติงาน] K.> (Team Member)
+9.00 - Purchasing and outsource control
+- Material Storage and incoming
+Production &QC (Raw Sugar/VHP)
+Follow up 3 NC
+12:00 Lunch. Lunch.
+13:00 Warehouse and delivery Continue
+16:00 Report writing and follow up of open issues. Report writing and follow up of open issues.
+16:30 Feedback Feedback
+17:00 Close of the audit day. Close of the audit day.
+(Date: 26/03/2026 - Day 3, Location: Savannakhet, Loa, Delivery: Remote)
+<[ผู้ปฏิบัติงาน] C.> (Team Leader) <[ผู้ปฏิบัติงาน] K.> (Team Member)
+ARTForm 08/23
+APP & AP Combined
+Report: «OfficeCode»«LRQA_Ref»/«Audit_Ref» -
+«SAVEDATE»
+Page 3 of 4
+09:00 Maintenance QA and laboratory
+12:00 Lunch. Lunch.
+13:00 - Utility
+- Calibration
+- HR/training, organizational knowledge
+-Documented information /IT
+16:00 Report writing and follow up of open issues. Report writing and follow up of open issues.
+16:30 Prepare for final report Prepare for final report
+17:00 Closing meeting Closing meeting
+3. Audit Plan of Next visit (SV1)
+(Date Day 1), Location: Savannakhet, Loa, Delivery: Remote/Onsite)
+09:00 Introductory meeting with management to explain the scope of the audit, audit methodology, method of
+reporting and to discuss the organisation (approx.30 min).
+09:30 - Discussion of all outstanding issues from previous audits.
+- Interview Top Management / Leadership commitment
+- Context of the organization
+- Risk and opportunity
+- Management of change
+- Policy
+- Scope /Manual
+- Recourse, Role, Responsibility, Accountability
+12:00 Lunch.
+13:00 - Objective target and programme including Continual Improvement
+- Management Review
+- Internal Audits
+- NC Corrective action
+- Use of logo
+14:30 - Sale and marketing and Contract review/customer satisfaction /customer feedback
+- Complaint management
+15:30 Report writing and follow up of open issues.
+16.30 Feedback
+17.00 Close of the audit day.
+(Date Day 2), Location: Savannakhet, Loa, Delivery: Remote/Onsite)
+09:00 Production & QC (Raw Sugar/VHP)
+12:00 Lunch.
+13:00 Continue
+14:30 QA and laboratory
+ARTForm 08/23
+APP & AP Combined
+Report: «OfficeCode»«LRQA_Ref»/«Audit_Ref» -
+«SAVEDATE»
+Page 4 of 4
+15:30 Report writing and follow up of open issues.
+16.30 Feedback
+17.00 Close of the audit day.
+(Date Day 3), Location: Savannakhet, Loa, Delivery: Remote/Onsite)
+09:00 Warehouse and delivery
+10:30 Material Storage and incoming
+12:00 Lunch.
+13:00 Purchasing and outsource control
+14:30 Calibration
+15:30 Report writing and follow up of open issues.
+16.30 Feedback
+17.00 Close of the audit day.
+(Date Day 4), Location: Savannakhet, Loa, Delivery: Remote/Onsite)
+09:00 HR/training, organizational knowledge
+10:00 Documented information /IT
+11:00 Report writing and follow up of open issues.
+11.30 Feedback
+12:00 Close of the audit day.
+Note: Information on the objectives and activities of the various audits can be found in the Client Information Notes included in the report or on our
+website www.lrqa.com. Furthermore, on our website there is information available for various other topics like logo use, feedback, complaints, audit
+process, etcetera. The audit criteria and team members date and locations are also stated on the front page of the report. The audit criteria consist of the
+requirements of the standard and the management system of the client. Scope of certification and roles and responsibilities of the audit team members are
+expressed in the audit program /plan, job notes, client portal, certificate, etcetera.

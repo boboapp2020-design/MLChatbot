@@ -1,0 +1,900 @@
+-904875-8951000 | AUDIT TYPE : SURVEILLANCE | -3670306227648Food Safety Management System Certification
+00Food Safety Management System Certification
+28225758825230Version 6 | April 2023
+00Version 6 | April 2023
+
+-2784848523335www.fssc.com
+00www.fssc.com
+
+Checklist version number: | 6.0.0 | IAR issue number: | 6.1 | Organization details
+Organization Profile
+Registered legal name | Mitr Lao Sugar Co., Ltd. | Legal or official company registration number | Area license: 090-12 date 17/12/2006 (40 years), Factory license: 0810 | COID | LAO-1-9228-145713 | Location | No. 111, Unit 10, Kenghet Village, Xaybouly District Savannakhet Province, Lao People's Democratic Republic | Technical contact name* | [ผู้ปฏิบัติงาน] | Technical contact Email* | surasakna@mitrphol.com | Commercial contact name* | [ผู้ปฏิบัติงาน] | Commercial contact Email* | surasakna@mitrphol.com | General description of the audited organization | Mitr Lao Sugar was established and started production in 2006 in Savannakhet province, Laos. Main Product is raw cane sugar for direct consumption (DCR) and for further process (VHP). Mitr Lao Sugar is one of factory in Mitr Phol Group which has head office in Bangkok, Thailand producing sugar from cane. However, by organization structure and distance limitation, this factory manages independently in every function. Capacity of the factory approx. 8,000 tons/ day. There are 2 HACCP study and 1 production line for product 1 kg, 25-50 kg and 1 ton. The site have been certified ISO9001:2015, Halal, Bonsucro and Organic certified. There is no outsource process. | Seasonal activities (Y/N) | ☒Yes ☒No | Seasonal activities
+(If Yes, add description) | Cane season during December till April | Significant changes since last audit* | Increase capacity from 5,000 tons fresh cane per day to 8,000 tons fresh cane per day. Increase 3 Evaporations, 2 crystallize 55 m3 (A-massecuite), 3 new cane dumpers, conveyor and motor of mill 1 and mill 5 and 1 boiler. | Head office (where applicable)
+Head Office applicable* | ☐Yes ☒No | Registered legal name | Please enter text | Location | Please enter text | Date of Head Office audit | Please select a date from the calendar dropdown | Duration of Head Office audit/s in hours | Please enter a number Hours | Please enter a number Minutes | Number of sites | Please enter a numeric value only | Reduction applied (max 20%)* | ☐Yes ☐No | Description of Head Office functions | Please enter text | Off-site activities (where applicable)
+Off-site activities applicable* | ☐Yes ☒No | Site name | Please enter text | Location | Please enter text | Date of Off-site activity audit | Please select a date from the calendar dropdown | Duration of off-site audit/s in hours | Please enter a number Hours | Please enter a number Minutes | Activities at location/s | Please enter text | Multi-Sites (where applicable)
+Multi-Site certification applicable | ☐Yes ☒No | Registered legal name of the Group | Please enter text | Legal or official company registration number | Please enter text | Location of multi-site organization | Please enter text | Date of Central Functions audit | Please select a date from the calendar dropdown | Duration of Central Functions audit | Please enter a number Hours | Please enter a number Minutes | Overview of Central Functions | Please enter text | Number of sites in the group | Please enter a numeric value only | List of sites included, with addresses, date/s of audit and activity (scope) | To be added in an Addendum to this report | Audit details
+CB Name (if different from main CB) | LRQA (Thailand) | CB office location (if different from main CB) | Please enter text | Accreditation* | UKAS | Audit language | Thai | Audit objectives | Reference ISO 22003-1: 2022 – 9.3.2 | Audit criteria* | ☒ FSSC 22000 Additional Requirements (Version 6.0)
+☒ ISO 22000:2018 Food Safety Management Systems
+☒ ISO/TS 22002-1:2009 – Food Manufacturing
+☐ ISO/TS 22002-2:2013 - Catering
+☐ ISO/TS 22002-4:2013 - Food Packaging Manufacturing
+☐ ISO/TS 22002-5:2019 - Transport & Storage
+☐ ISO/TS 22002-6:2016 - Feed & Animal Food Production
+☐ BSI/PAS 221:2013 Food Retail | Announced/Unannounced* | ☒Announced ☐Unannounced | Audit complexity* | ☒Combined/integrated with another standards.
+☐ Standalone FSSC | Audit complexity details | HACCP/GHP | Verification of effectiveness of corrective actions previous nonconformities* | ☒Yes ☐No | Audit delivery* | ☒Onsite ☐Full Remote ☒ICT | Audit start date* | 26/1/2026 | Audit end date* | 28/1/2026 | Total audit duration in hours* | 40 Hours | 0 Minutes | Deviation from audit duration* | ☒Yes ☐No | Deviation from audit duration justification | Add 1 Manday of GHP_HACCP | Product recalls (food safety) since the previous audit* | ☐Yes ☒No | Detail on Product recalls since the previous audit | Please complete if YES was selected in previous question | Product withdrawals (food safety) since the previous audit* | ☐Yes ☒No | Detail on Product withdrawals since the previous audit | Please complete if YES was selected in previous question | Addendums included as part of the audit | ☐Yes ☒No | Addendum/s included | ☐ FSMA ☐ Costco Module ☐ HAVI GQSR | Audit scope
+Food Chain Category* | ☐ BIII | ☐ E | ☐ C0 | ☐ FI | ☐ CI | ☐ FII | ☐ CII | ☐ G | ☐ CIII | ☐ I | ☒ CIV | ☐ K | ☐ D | Scope statement* | Manufacture of Raw sugar for Direct Consumption and for Further Processing | Exclusions* | ☐Yes ☒No | Exclusion detail (if applicable) | Please complete if YES was selected in the previous question. | Verification of the scope statement* | ☒Yes ☐No | Scope statement remark
+(If verification No, add description) | Please complete if NO was selected in the previous question | Audit program and plan
+Deviation from audit program* | ☐Yes ☒No | Deviation from audit program remark* | Please complete if YES was selected in previous question | Deviation from audit plan* | ☐Yes ☒No | Deviation from audit plan remark* | Please complete if YES was selected in the previous question | ICT audit approach/ full remote used due to a Serious Event (Only if delivery of the audit is ICT approach or full remote) | ☐Yes ☒No | Serious event justification (If ICT approach set to Yes) | Please select from the dropdown | Serious event justification explanation (If ICT approach set to Yes) | Click or tap here to enter text. | Audit team
+Name* | Auditor number* | Function* | Delivery* | Date* | Hours* | Minutes* | [ผู้ปฏิบัติงาน] | 465635 | Lead Auditor | Onsite | 25/1/2026 | 4 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 465635 | Lead Auditor | Onsite | 26/1/2026 | 9 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 461678 | Auditor | Remote | 26/1/2026 | 5 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 465635 | Lead Auditor | Onsite | 27/1/2026 | 9 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 461678 | Auditor | Remote | 27/1/2026 | 9 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 465635 | Lead Auditor | Onsite | 28/1/2026 | 6 Hours | 0 Minutes | [ผู้ปฏิบัติงาน] | 461678 | Auditor | Remote | 28/1/2026 | 6 Hours | 0 Minutes | Note: The table shall be completed per audit date and per audit team member in the case of an audit team and reflect the actual audit time. Where an auditor is being witnessed, the role of lead auditor, and witness shall be assigned, resulting in two entries in the audit team table above.
+Where the time differs from the audit plan, the justification shall be recorded under deviation from audit plan section – REF _Ref132966697 \r \h \* MERGEFORMAT 2.2 REF _Ref132966711 \h \* MERGEFORMAT Audit program and plan.
+Previous audit
+Audit details previous audit
+Audit type | ☐Stage 1 ☐Stage 2 ☒Surveillance ☐Recertification
+☐Transition | Announced / Unannounced | ☒Announced ☐Unannounced | Audit start date | 20/1/2025 | Audit date end | 24/1/2025 | CB conducting previous audit if different to current CB | Please enter text | Actions taken on NCs raised at previous audit | Corrective action of all NCs is implemented properly as seen improvement of food defense, food fraud, warehouse management, environment control, etc. all NCs are closed, no repeat NC opened in this audit. | Audit results
+Executive summary
+Audit summary | An overall effective FSMS is in place. Programs are well managed. The management system is capable of meeting applicable requirements, food safety objectives and expected outcomes. This is evidenced by: Effective periodic (management) meetings and reviews, which provide the site with a clear overview of its performance. Top management is actively involved in the FSMS. • Overall strong PDCA cycles, especially regarding internal audits and complaint management. Thorough root cause analyses are carried out which allows the site to apply effective corrective actions and drive continuous improvement. • Good control of CCPs and OPRPs was demonstrated by personnel and through (monitoring) records. PRPs are implemented generally effectively. Production areas were clean and tidy. Objectives are monitored closely and are being achieved. •Management reviews are effective in assessing FSMS performance. Internal audit program is effective in identifying nonconformances and opportunities for improvement. Detailed audit reports are in place. | Confirmation that audit objectives have been fulfilled* | ☒Yes ☐No | Unresolved issues | Please complete if No was selected in previous question | Summary of audit findings
+# Critical nonconformities* | 0 | # Major nonconformities* | 0 | # Minor nonconformities* | 9 | Nonconformities
+Number (#) | Requirement
+Reference
+(Standard) | Clause Number | Grade | NC statement
+(incl. objective evidence) | Acceptance of correction, CAP, and evidence
+(auditor and date) | 1 | FSSC 22000 Additional Requirements | 2.5.2 | Minor | Partial non-conformity for claim on product label. Sampling the organic DCR (Direct consumption raw sugar) product packed in jumbo bag size 1,000 kgs lot number 0515, production date on 18 November 2025 shipped to the customer named “Anden Life B.V.” for 26 tons, invoice no. ML82025/062. It was found that the products were identified/ labelled by paper tag containing the detail of EU, USDA, Japanese and Korean organic certification status. The company has maintained the EU and USDA organic certification with valid certificates. However, Japanese and Korean organic certifications were no longer. The certificates were expired. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 2 | FSSC 22000 Additional Requirements | 2.5.8 | Minor | Partial non-conformity for Food safety culture plan. There was documented food safety culture plan existed. However, the objective was not yet defined resulting to the performance measurement is not possible. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 3 | FSSC 22000 Additional Requirements | 2.5.11 | Minor | Hazard control equipment was not fully controlled. Magnetics are used for foreign body detection of sugar before packing, this magnet was not checked magnet strength to know efficiency of equipment, also not found record to clean magnet as plan every 2 hours. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 4 | FSSC 22000 Additional Requirements | 2.5.13 | Minor | Partial non-conformity for product shelf-life assessment. There was no evidence of on-going shelf-life assessment for the organic DCR (direct consumption raw sugar) product packed in multilayer paper bag size 25 kgs and VHP (Very high pol raw sugar). Also, there have been the on-going shelf-life assessments for DCR products packed in PP bag (50 kgs and 1,000 kgs) & plastic bag (500 g. and 1 kg), and VHP product packed in PP bag (1,000 kgs). However, there was no evidence of microbiological testing (TPC) as required by the documented supporting document for product shelf-life assessment (ML-SP-1630036, Rev. 4, effective date on 5 December 2023 (required to be tested annually until end of shelf life). | 19/2/2026
+[ผู้ปฏิบัติงาน] | 5 | ISO 22000:2018 Food Safety Management Systems | 6.3 | Minor | Partial non-conformity for change control. There was change of material regarding product packaging for organic natural cane sugar (packing size 25 kgs) from PP plastic bag to be a multilayer paper bag due to the EU customer requirement. However, there was no change control record existed as required by the change control procedure ML-QP-1600-006, Rev. 9, effective date on 18 November 2025. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 6 | ISO 22000:2018 Food Safety Management Systems | 8.3 | Minor | Partial Insufficient of lot identification Lot identification of DCR 1 kg was defined MFG date, strike number, and shift packing of jumbo bag, but it was not sufficient to know repacking date in case many repacking dates and may not know lot of packaging. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 7 | ISO 22000:2018 Food Safety Management Systems | 8.5.1.5.1 | Minor | Partial insufficient of flow diagram. Flow diagram was not updated i.e. magnetic after cane shredding (before milling), metal detector of 1 kg packing, filter air of sugar drier, DCR off spec from sugar screening 30 mesh (to VHP). | 19/2/2026
+[ผู้ปฏิบัติงาน] | 8 | ISO 22000:2018 Food Safety Management Systems | 8.7 | Minor | Calibration was not fully implemented.1. Calibration of small packing machine was not covered 500 g.2. Weight scale of 1x25 kg was calibrated at 50 kg only, not covered at 25 kg.3. Not found calibration of temperature of A massecuite A5 and A6. | 19/2/2026
+[ผู้ปฏิบัติงาน] | 9 | ISO/TS 22002-1: 2009 – Food Manufacturing | 8.2 | Minor | Equipment was not fully in suitable maintenance.1.Rubber squeezing was used to squeeze the scale on screen 60 mesh, it was contact to hot raw syrup, found it was damaged.2. Sugar after centrifugal was opened to conveyor before sent to dryer, the conveyor was not properly covering to prevent contamination. | 19/2/2026
+[ผู้ปฏิบัติงาน] | Note: Root Cause Analysis, Correction and Corrective Action Plan to be recorded on the Nonconformity record supplied to the client and uploaded to the FSSC Assurance Platform. | Audit recommendation(*)
+Audit Recommendation* | ☒ (Re-)Certification granted
+☐ Certification maintained
+☐ No Certification granted
+☐ Certification suspended
+☐ Certification withdrawn | Audit duration(*)
+On-site audit time calculation – refer Table B.1 in ISO 22003-1: 2022 and V6 Part 3, clause 4.3, 5.2 and 5.3 | Audit preparation time in hours* | 2 Hours | 0 Minutes | Audit reporting time in hours* | 8 Hours | 0 Minutes | Existing Management system certification in place (Y/N)* | ☐Yes ☒No | Detail of existing Management system certification in place (Name of scheme or standard) | Please complete if YES was selected in previous question | Number of HACCP studies* (linked to product groups) | 2 | Number of employees used in the audit duration calculation (FTEs)* | 156 | Number of shifts* | 1 | Description of activities per shift if different from main shift | Please enter text | Note: The audit duration calculation shall be uploaded to the FSSC Assurance Platform, in addition to the data entered above.
+
+Checklists
+FSSC 22000 - Additional Requirements
+FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.1 | Management of Services and Purchased Materials | 2.5.1 | Management of Services and Purchased Materials | ☒ | ☐ | Summary:
+Testing:
+Internal site testing includes: color, polarization, grain size.
+External site testing includes: pathogens (Salmonella, E. coli), mycotoxins and heavy metals/residues
+External laboratories used: Central laboratory Khon Kaen Thailand (all accredited to ISO 17025)
+Competency/capability for unaccredited lab is met through: Proficiency testing programs. Successful results were shown (see evidence seen below).
+
+Procurement under emergency situations:
+The site procurement procedure regarding emergency situations is documented. No emergency suppliers were used since the previous audit.
+
+Product specifications:
+Product specifications (raw material and finished product) are reviewed yearly by Quality control department to ensure continued compliance with food safety, quality, legal and customer requirements.
+
+Category C0 only:
+Description on prohibited substances (e.g. pharmaceuticals, veterinary medicines, heavy metals, and pesticides) in animals/fish/seafood: N/A
+
+Category I only:
+Recycled packaging material: Not applicable.
+
+The following evidence was reviewed:
+Lab proficiency test: Compare lab analysis with Mitr Kalasin Sugar (MKS), found test VHP on 30/12/2025 for Color (ICUMSA), %Pol, and Moisture, found result shown accepted.
+Laboratory of Mitr Kalasin Sugar (MPK) has certified ISO17025 for color, polarization, moisture, conductivity ash, particle size, TSAI of final molasse, and pH of wastewater as certificate 0217 (23-LB0244) by TISI valid 14/06/2028.
+
+External Laboratory: Central Laboratory Thailand (Khonkaen) -ISO17025 - accredited number 1096/49 valid 23/02/2027.
+
+Procurement procedure emergency situations: MP-QP-9200-001, Rev. 40, effective date on 30 May 2024. In case of emergency purchasing, supplier must send testing report of material to verify before purchase, however there is no emergency purchasing since last audit.
+
+Specifications: ML-SP-1610-001 rev.12 date 12/09/2024 (spec VHP and DCR sugar)
+DCR: color, polarization, moisture, reducing sugar, MA, sediment, conductivity ash, sulphur dioxide, Arsenic, lead, copper, pesticide, herbicide, pathogenic bacteria, coliform, E. coil.
+Specification of chemical ML-SP-1610-011 rev.07 date 31/03/2023 (Cao, flocculent, PEG 400)
+Specification of packaging ML-SP-1610-003 rev.09 date 09/01/2025 (jumbo bag and paper bag)
+
+Quality plan ML-FM-1600-001 date 03/01/2026.
+- Sugar – every strike – sampling FG before weight to WH – to test temp, pol, color, moisture to separate VHP and DCR by quality of (Pol DCR >99.0), color DCR 400-800, VHP <2,000, moisture DCR <0.2, VHP <0.3% as report ML-FM-1630-011 and sediment ML-FM-1630-012 (DCR <150 ppm), rusty (DCR not found size >3 mm) and test B (yellow <500 pcs/5 kg and black grain <10 pcs/5 kg). | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.2 | Product Labelling and Printed Materials | 2.5.2 | Product Labelling and Printed Materials | ☐ | ☒ | Minor | Partial non-conformity for claim on product label
+
+Sampling the organic DCR (Direct consumption raw sugar) product packed in jumbo bag size 1,000 kgs lot number 0515, production date on 18 November 2025 shipped to the customer named “Anden Life B.V.” for 26 tons, invoice no. ML82025/062. It was found that the products were identified/ labelled by paper tag containing the detail of EU, USDA, Japanese and Korean organic certification status. The company has maintained the EU and USDA organic certification with valid certificates. However, Japanese and Korean organic certifications were no longer. The certificates were expired. | 1 | Summary:
+Labelling:
+Labelling is approved by: QA and Marketing Department. Responsibilities have been defined. Product specifications are in place. Samples have been taken, which were compared with the final product label (see evidence below).
+Based on samples seen, labels are correct and accurate, meeting both legislative and customer requirements and requirements around allergen labelling. An effective system is in place.
+The following products have been processed and packed;
+DCR (direct consumption raw sugar) packed in 25 kgs paper bag
+DCR (direct consumption raw sugar) packed in 50 kgs PP bag
+DCR (direct consumption raw sugar) packed in 1000 kgs PP jumbo bag
+DCR product packed in plastic PE bag 500 g.
+DCR product packed in plastic PE bag 1 kg
+VHP (Very high pol raw sugar) packed in 1000 kgs PP jumbo bag
+The details of label could be seen through the printed PP bag or sticker placed on PP bag/paper bag. For the product packed in jumbo bag, the detail of label can see through ID tag in company own format. The details of label/tag have included to the following information;
+Producer name and address
+Country of origin
+Product name
+Product weight
+Lot number
+Importer name
+Production date
+Best before date
+
+Claims:
+The following claims are made: Organic, Halal and Kosher
+The company has maintained the EU and USDA organic certification with valid certificates issued by Certify Body named “BioAgricert” as following details;
+EU Organic certificate no. LA-BIO-132.418-0000014.2025-01 valid till 15 October 2026
+USDA organic certificate no. 8690014656 valid till 2 July 2026
+The scope of certification covers to DCR (direct consumption raw sugar).
+The company has produced the organic DCR (direct consumption raw sugar) packed in 25 kgs paper bag (supplied to EU customers) and 1,000 kgs PP jumbo bag (supplied to both EU and Vietnam customers).
+
+The company has also certifications for Halal and Kosher as following certificates;
+Halal certificate no. B832/2554 valid till 22 May 2026
+Kosher certificate valid till 31 December 2026
+However, Japanese and Korean organic certifications were no longer as both certificates were expired.
+
+Evidence of validations and verifications: The new label design is responsible by QA and marketing team. The parameters to be considered are composition, nutrition, claims and product weight. The artwork of label is required to be approved by QA manager. The product testing on nutrition and any claims are required to be done to validate the detail of label. For day to day operation, as a verification, there is a system in place to inspect the product label done by QA inspectors at the beginning of daily operation, any changes and at the end of daily production.
+
+The following evidence was reviewed:
+Procedures: There is documented work instruction for label approval (ML-WI-4140-001, Rev. 2, effective date on 22 November 2025. The detail of label is required to ensure it meets the regulation requirements.
+Labelling and claim samples:
+DCR (Direct consumption raw sugar) product packed in jumbo bag size 1,000 kgs lot number 0515, production date on 18 November 2025 shipped to the customer named “Anden Life B.V.” for 26 tons, invoice no. ML82025/062. It was found that the products were identified/ labelled by paper tag containing the detail of EU, USDA, Japanese and Korean organic certification status.
+Cane sugar light golden organic (packing size 25 kgs) packed in multilayer paper , production date on 6 January 2026, claim EU organic and USDA organic, supplied to customer named “Do it organic B.V., Netherland, lot 233 for 600 bags
+Artwork of DCR product packed in plastic PE bag 500 g.
+Artwork of DCR product packed in plastic PE bag 1 kg | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.3 | Food Defense | 2.5.3 | Food defense | ☒ | ☐ | 2.5.3.1 | Threat assessment | ☒ | ☐ | 2.5.3.2 | Plan | ☒ | ☐ | Summary:
+Food defence threat assessment is documented using a defined methodology.
+Assessment is based on: the FDA food defence builder. Both internal and external potential threats are addressed, including site access, visitors, secure packaging (tamper proof seals), shipping, etc.
+Any relevant legislation (e.g., Food Defense Acts) and the organization’s conformance to it: No relevant legislation. The site assess risk and have mitigation measures.
+Notable examples of significant threats include: disgruntled employee, visitor, driver, contractor.
+Appropriate mitigation measures are developed and implemented, which include: employee screen, access control, finger scan at packing room and server, observe behavior, CCTV, security guard, light, computer password, utility, supplier reliability.
+
+The plan is kept up to date. The food defense plan is effectively implemented.
+
+The following evidence was reviewed:
+Procedures: ML-QP-1600-005 rev.04 date 13/02/25 Food Defense
+Records: Food defense risk assessment FM-ML-1600-011 on 15/01/2026 – all area is low risk.
+On site audit: Chemical room, Warehouse, Processing area. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.4 | Food Fraud Mitigation | 2.5.4 | Food Fraud mitigation | ☒ | ☐ | 2.5.4.1 | Vulnerability assessment | ☒ | ☐ | 2.5.4.2 | Plan | ☒ | ☐ | Summary:
+A risk-based food fraud vulnerability assessment has been conducted and is documented using a defined methodology.
+Potential vulnerabilities have been identified, taking into consideration economic vulnerability, historical data, supplier relationship, etc. This is done in sufficient detail.
+
+Notable examples of significant vulnerabilities include: material fraud.
+Appropriate mitigation measures are developed and implemented, which include: supplier control, COA, incoming inspection.
+
+The plan is kept up to date. The food fraud plan is effectively implemented.
+
+The following evidence was reviewed:
+Procedures: ML-WI-1600-002 rev.03 date 11/02/25
+Details samples taken: Material vulnerability assessment ML-FM-1600-012 updated 09/01/2026, no new material, low risk of fraud. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.5 | Logo Use | 2.5.5 | Logo use | ☒ | ☐ | Summary:
+No logo (i.e. FSSC, UKAS, LRQA) use identified during audit. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.6 | Management of Allergens | 2.5.6 | Management of allergens | ☒ | ☐ | Summary:
+The allergen management plan is defined. An allergen list of all allergens handled including for raw materials and finished products is maintained.
+
+Allergens handled on site are: Sulfite in lime.
+Risk assessment covers all potential sources, including cross contamination.
+Measures used to prevent cross-contamination include: Lime storage separated
+There are no allergens on-site that are out of scope.
+
+Validation and verification of control measures, including testing (where necessary):
+Calculation of lime quantity used, finished product is not over 10 ppm.
+No precautionary or warning labels are used.
+Last review of the management allergen plan including trending of verification date: 14/1/25
+
+Allergens are managed effectively.
+
+The following evidence was reviewed:
+Allergen management plan: ML-SP-1610-018 rev. 03 20/1/2021 Allergen management
+Allergen risk assessment is in HACCP analysis
+There is only sulfite in Lime – control cross contamination.
+Validation/verification/test results: Test report yearly by external laboratory date 26/1/24, SO2 less than 10 ppm. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.7 | Environmental Monitoring (Only for categories BIII, C, I & K) | 2.5.7 | Environmental monitoring | ☒ | ☐ | Summary:
+Environmental monitoring program is specified in a documented procedure. The program is risk-based, covering the relevant pathogen, spoilage, and indicator organisms.
+The sampling program monitors for: TPC, Coliforms, E. coli.
+Swabs are performed on a defined frequency based on location. Results have been reviewed.
+The program provides evidence that the organization collects and analyses data of the environmental monitoring activities.
+Date of last annual review of the environmental monitoring program: 13/02/2025
+The environmental monitoring program, as reviewed, is effectively implemented.
+
+The following evidence was reviewed:
+Environmental monitoring program procedure: ML-QP-1600-007 rev.02 date 13/02/2025 to classify 4 zones of packing room
+Zone 1: Hand, filling head, packaging, sugar pipe, magnet, air test
+Zone 2: conveyor, packing machine, protective cloth, sewing machine, weight scale,
+Zone 3: air conditioner, wall, metal detector, shelve, hand washing
+Zone 4: changing room, document room.
+
+Swab zone 1= 2 samples every 15 days, zone 2 = 4 samples every 15 days, zone 3 = 3 samples every month, and zone 4 = 1 sample every month. Air test in packing room = 2 samples every 15 days (TPC only).
+
+Details sampled records: Swab test/ Air test Jan-Dec 2025, Jan 2026. Last swab on 20/01/2026
+Swab test TPC <100 CFU/25 cm2, Air test TPC <50 CFU/15 min, E. coli (ND), Coliforms (ND) ML-FM-1630-029. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.8 | Food safety and Quality Culture | 2.5.8 | Food Safety and Quality Culture | ☐ | ☒ | Minor | Partial non-conformity for Food safety culture plan.
+
+There was documented food safety culture plan existed. However, the objective was not yet defined resulting to the performance measurement is not possible. | 2 | Summary:
+Food safety and quality culture objectives have been established by senior management and have been effectively implemented. Elements of communication, training, employee feedback and engagement and performance measurements are addressed.
+
+The food safety and quality culture plan is documented in: Rev. 2025
+Targets was not set up and timelines have been defined for the general training provided as the action plan.
+
+How culture objectives are addressed within the organization:
+Food safety and quality culture aspects are communicated through various channels (policy, induction programs, newsletters). An annual food safety training is provided. Feedback from personnel on shop floor demonstrates that personnel are actively involved in safeguarding food safety and quality. Production performance and food safety issues are shown through dashboards and pre-start up meetings. Results are discussed during management reviews. The site food safety and quality culture is emphasized from top down and found to be effective.
+There was the latest survey in the worker’s feedback done in Sep 2025 as the planned annual plan. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.9 | Quality Control | 2.5.9 | Quality Control | ☒ | ☐ | Summary:
+The site quality policy is referenced in: Policy date 28/12/2021 by Managing Director [ผู้ปฏิบัติงาน] for quality and food safety management
+Measurable quality objectives have been defined.
+
+KPI: Sugar cane supplied quantity, Yield, conversion cost, food safety complaint, quality of sugar (pol, moisture, sediment).
+
+Quality control parameters have been defined for finished product specifications. Examples have been verified during the audit for Brix, Pol, Sediment, Moisture
+
+Product release procedures are effectively implemented. Results from on-site quality lab testing (colour, polarization) are captured in LIMS and evaluated by QC. Results were seen.
+Quality control results are included as input to the management review.
+
+Internal audit program includes quality aspects: audit checklist at production and QC.
+Key documentation reviewed including quality control procedures and records for unit, weight and volume control: sampling check weight per bag by QC every hour, auto check weight for 25, 50 kg.
+
+Line start-up and change-over procedures:
+Site has effective controls in place to ensure labelling and packaging from the previous run have been removed (pre start-up checklist)
+
+The following evidence was reviewed:
+Quality plan ML-FM-1600-001 date 03/01/2026.
+- Sugar – every strike – sampling FG before weight to WH – to test temp, pol, color, moisture to separate VHP and DCR by quality of (Pol DCR >99.0), color DCR 400-800, VHP <2,000, moisture DCR <0.2, VHP <0.3% as report ML-FM-1630-011 and sediment ML-FM-1630-012 (DCR <150 ppm), rusty (DCR not found size >3 mm) and test B (yellow <500 pcs/5 kg and black grain <10 pcs/5 kg)
+
+Weight control
+- Jumbo bag 100% manual weight after packing, for pack size 50 kg – auto pack with auto reject – weight checker, for 1 k – auto pack, manual count 25 bags, pass check weigher
+- Weight per bag and lot number checking – size 500g and 1 kg sampling 50 bags per hour – ML-FM-1600-008, size 25,50 kg sampling 20 bags per hour – ML-FM-1610-025.
+
+Line clearance – check in Daily cleaning inspection and shift transfer report. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.10 | Transport, Storage and Warehousing | 2.5.10 | Transport, Storage and Warehousing | ☒ | ☐ | Summary:
+Stock rotation system is in place according to FIFO/FEFO principles. ERP-system in place which allows for effective management of warehouse and expiry dates. No issues observed regarding this aspect. The warehouse management system is effective.
+
+Transport tankers are not used.
+
+Category C0 only:
+Post-slaughter requirements: N/A
+
+The following evidence was reviewed:
+There are 4 WH of FG – WH1 = raw sugar VHP on the floor, WH 2 = DCR sugar, WH2 = DCR sugar. And WH 4 = organic and DCR sugar, all are in ambient temperature.
+There are 1 store of chemical, 1 store of packaging, and 1 store of maintenance spare part, all are in ambient and locked.
+Stock control: SAP program, with lot identification and FIFO/FEFO control
+Sampling check stock of Maxfloc 917 and PEG 400. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.11 | Hazard Control and Measures for Preventing Cross-contamination | 2.5.11 | Hazard Control and Measures for preventing cross-contamination | ☐ | ☒ | Minor | Hazard control equipment was not fully controlled. Magnetics are used for foreign body detection of sugar before packing, this magnet was not checked magnet strength to know efficiency of equipment, also not found record to clean magnet as plan every 2 hours. | 3 | Summary:
+No packaging is used to impart or provide a functional effect on food.
+
+Category C0 only:
+Inspection process: N/A
+
+Category D only:
+Feed ingredients/additives: Not applicable.
+
+Foreign matter management:
+A documented risk assessment deems foreign body equipment is necessary.
+Foreign body detection equipment and procedures are required as determine through the site risk assessment:
+Metal detection is controlled as CCP.
+Filters: in evaporation process. This is checked at the start and end of each run by the operator and verified by the operator.
+Sieve: there is an inline sieve before packing.
+
+Documented procedures are not in place for the management and use of the equipment listed above.
+
+Management of breakages:
+No containers are in use. No products packed into glass/brittle containers. Breakages and potential physical contamination is managed through PRP inspections, maintenance program, and a breakage inspection log. Examples were seen. No issues noted
+
+Specific management of breakage procedures are in place for: Glass control procedure
+
+The following evidence was reviewed:
+Foreign matter risk assessment: Hazard analysis
+ML-SP-1600-033 rev.00 15/02/2025 Hazard control to prevent contamination
+Procedures for the management and use of foreign body equipment:
+ML-WI-1610-008 rev.00 date 30/1/2023 Metal detector
+ML-WI-1610-005 rev.03 date 29/05/2023 (Rusty in sugar)
+CCP and OPRP monitoring report during Dec 25 – Jan 26
+Magnetic at cane milling – clean daily ML-FM-3110-025
+Magnetic at centrifugal – every 2 hours ML-FM-3230-014 | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.12 | PRP Verification (Food Chain Categories BIII, C, D, G, I & K) | 2.5.12 | PRP Verification | ☒ | ☐ | Summary:
+Monthly site inspections/PRP checks are performed by K. Patcharee/ Hygienist conform defined sampling criteria.
+The program is risk based and linked to ISO22002-1 and serves as an input for the internal audit. Inspection records have been reviewed.
+
+The following evidence was reviewed;
+Procedure: MP-SP-8013-022 Rev.8
+The program is risk based and linked to ISO22002-1 and serves as an input for the internal audit. Inspection records have been reviewed.
+
+Performance is measured based on a scoring system. Since January 2025, the site demonstrates a consistent mark of 90% achieving its KPI. Follow-up actions are demonstrable in case of deviations. Good system in place.
+
+The following evidence was reviewed;
+Procedure: PRP verification plan
+Hygiene audit (GMP audit) has been done monthly and implemented. Records were in place and demonstrated hygiene performance including fabrication, building and equipment.
+
+Records: Sampling the reports in in Aug- Dec 2025, there were reported findings in every month, corrective action was followed up and records were in place. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.13 | Product Design and Development (Food Chain Categories BIII, C, D, E, F, I & K) | 2.5.13 | Product Design and Development | ☐ | ☒ | Minor | Partial non-conformity for product shelf-life assessment. There was no evidence of on-going shelf-life assessment for the organic DCR (direct consumption raw sugar) product packed in multilayer paper bag size 25 kgs and VHP (Very high pol raw sugar). Also, there have been the on-going shelf-life assessments for DCR products packed in PP bag (50 kgs and 1,000 kgs) & plastic bag (500 g. and 1 kg), and VHP product packed in PP bag (1,000 kgs). However, there was no evidence of microbiological testing (TPC) as required by the documented supporting document for product shelf-life assessment (ML-SP-1630036, Rev. 4, effective date on 5 December 2023 (required to be tested annually until end of shelf life). | 4 | Summary:
+Reference to product and design and development procedure(s): MP-QP-1600-007 rev.10, 14 December 2022
+
+Procedures cover: a review of any potential hazards introduced (HACCP review and sign off), impact on the process, resource & training, equipment and maintenance and any shelf-life and production trials to be conducted. There is a process of defining the product brief and agreeing the brief with external customers.
+
+New product developments since the previous audit include: Direct consumption raw sugar (DCR) packed in paper bag size 25 kgs- developed to be packed in the new packaging regarding multilayer paper bag.
+
+The changes have been incorporated into the manufacturing process in a controlled manner, following the above mentioned procedures.
+
+Shelf-life verification:
+Shelf-life trials follow documented protocols that reflect appropriate conditions. The process is the same for existing products. No accelerated shelf life is used. Results are recorded. Pathogens are not supported by the products and shelf life is monitored for quality and not for food safety products. The testing has been done by their own in-house laboratory. The sensory tests have been also included. The chemical and physical parameters were included in the test; product colour, moisture and Polarimeter.
+
+Product shelf life; at ambient temperature
+VHP in PP jumbo bag
+Shelf life 3 years
+
+Non-organic DCR in PP bag packed size 500g, 1 kg, 50 kg and 1,000 kgs
+Shelf life 3 for non-organic product
+
+Organic DCR in Paper bag packed size 25 kgs and in PP jumbo bag packed size 1,000 kgs
+Shelf life 2 years
+
+Cooking instructions:
+No ready-to-cook products are produced that require cooking instructions.
+
+Product development is not managed fully effectively (see findings log).
+
+The following evidence was reviewed:
+Records: The system to study the legislation of destination countries has been done properly. QA department has responsible to the product design and together with HACCP team for updating in any new materials. They have a questionnaire to check the specific materials for new raw materials. The suppliers are needed to submit all evidences concerning. The shelf-life trails has been done with the chemical test and organoleptic test. The result is an evidence to ensure the safety of product shelf life. The on-going shelf life study has been maintained with the records. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.14 | Health Status (Food Chain Category D) | 2.5.14 | Health Status | ☒ | ☐ | Summary:
+Overview of the procedure the organization has in place to monitor the health status of employees, the process for visitors and contractors and if any restrictions apply, including legislative requirements/restrictions: not applicable for FSSC Food | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.15 | Equipment Management (All Food Chain Categories, excluding FII) | 2.5.15 | Equipment Management | ☒ | ☐ | Summary:
+Equipment purchased / significant changes to existing equipment since previous audit: 3 Evaporations, 2 crystallize 55 m3 (A-massecuite), 3 new cane dumper, conveyor and motor of mill 1 and mill 5
+
+A documented purchase specification is in place, which addresses hygienic design, applicable legal and customer requirements, and the intended use of the equipment, including product handled.
+
+Purchase specifications reviewed for: Contract with supplier and project document
+Supplier meets the purchase specification.
+A management of change process is established and was effectively followed for this change.
+The changes have been incorporated into the manufacturing process in a controlled manner. A separate project was launched for the installation of the new Cane dumper, Evaporation, A-massecuite.
+
+The following evidence was reviewed:
+Management of change procedure: ML-QP-1600-006
+
+Evaporation 3 units (heat surface 2100 m2, 1600 m2, and 1000 m2) – specification (contract 013/07/2025 with KM Tech on 14/05/2025), commissioning 4 times on 17/09/2025, 02/10/2025, 15/11/2025 and 28/12/2025 (first use on 24/12/2025) – Smart Pay. MOC on 23/12/2025 as ML-FM-1600-013 to revised operation procedure and maintenance program.
+2 crystallize (A-massecuite) – capacity 55 m3 – specification (contract 008/07/2025 with Real Soluplus on 26/05/2025), commissioning 4 times on 09/08/2025,14/10/2025 and 01/12/2025 (first use on 13/01/2026 A5, and 14/01/2026 A6) – Smart Pay, now during final commissioning. MOC on 23/12/2025 as ML-FM-1600-013 to review HACCP, CCP, calibration, operation procedure and maintenance program.
+3 dumpers / conveyor and motor of mill 1 and mill 5 – specification (contract 021/08/2025 with Real Soluplus on 06/05/2025), commissioning 4 times on 30/09/2025, 17/10/2025, 04/12/2025 and 23/12/2025 (first use on 10/12/2025) – Smart Pay. MOC on 10/10/2025 as ML-FM-1600-013 to revised operation procedure and maintenance program.
+
+ML-QP-1600-006 Rev.01 date 18/01/2023 Management of change procedure,
+ML-FM-1600-013 (MOC Form)
+ML-FM-3000-023 (Commissioning report) | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.16 | Food Loss and Waste (All Food Chain Categories, excluding category I) | 2.5.16 | Food Loss and Waste | ☒ | ☐ | Summary:
+The organization food loss and waste policy is documented in: documented procedure (ML-QP-1600-009, Rev. 0, effective date on 15 December 2025.
+Specific objectives and targets have been set: The loss and waste has been set up with the target at 16.54% and deployed to be the following loss in operation such as;
+Loss in bagasse 3%
+Loss in filter cake 0.34%
+Loss in final Molasse 7.87%%
+Undetermined loss 3.92%
+
+The monitoring result has been existed daily. The trend is not in good since there were several new machines installed in this year operation and the set up and adjustment still be in progress to reduce the loss in process.
+
+There are no products donated or sent to non-profit organizations.
+
+There are no surplus products or by-products intended as animal feed/food.
+
+The processes described above comply with legal requirements and are kept up to date.
+
+The following evidence was reviewed:
+Procedure for control of waste and lost is documented and maintained. The company has been also certified to ISO 14000 with the valid certificate.
+The records of waste quantities have been maintained and monthly verified and analyzed to see the trend with cost evaluation. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.17 | Communication Requirements | 2.5.17 | Communication Requirements | ☒ | ☐ | Summary:
+The site is aware of notifying LRQA within 3 working days of the commencement of serious events/situations through the LRQA website (contact us section) and has included these requirements into their FSMS.
+
+Serious events since the previous audit: None
+Evidence of communication: N/A
+Suitable measures were taken: N/A
+
+The following evidence was reviewed:
+The communication procedure has been documented and maintained.
+The communication plan has been revised with as required by the documented procedure of communication (ML-QP-11600-004, Rev. 2, effective date on 13 January 2023). The documented communication plan is included to the fraudulent activities, corruption and computer hacking.
+
+The product recall and withdrawal procedure has included to notification process to CB. The contact list is documented. | FSSC 22000 - Additional Requirements | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 2.5.18 | Requirements for Organizations with Multi-site Certification (Food Chain Category E, F & G) | 2.5.18. | Requirements for Organizations with Multi-site Certification | ☐ | ☐ | 2.5.18.1 | Central Function | ☐ | ☐ | 2.5.18.2 | Internal Audit Requirements | ☐ | ☐ | Summary:
+Not applicable. | ISO 22000:2018 - Food Safety Management Systems
+ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 4 | Context of the organization | 4.1 | Understanding the organization and its context | ☒ | ☐ | 4.2 | Understanding the needs and expectations of interested parties | ☒ | ☐ | 4.3 | Determining the scope of the food safety management system | ☒ | ☐ | 4.4 | Food safety management system | ☒ | ☐ | Summary:
+Relevant internal and external issues have been determined using a SWOT analysis.
+Examples include: limited raw material, energy price, consumer health trends, tax, storage affected from climate change.
+
+Interested parties (i.e. stakeholders) with their relevant requirements are included in the stakeholder’s analysis and relevant to the organization’s purpose. This is reviewed during the management review and updated annually.
+
+Relevant climate change issue(s) and/or climate change requirements of interested parties: too much rain causes harvest difficulties, storage condition of product to preventing the product caking, the white leaf sugar cane disease in plantation.
+
+The site stays up to date on statutory, regulatory and customer requirements through: Compliance system, and operation meeting
+Significant legislative changes since previous audit: N/A
+No governmental or regulatory inspections or actions have occurred since the last visit.
+
+The context of the organization has been determined in an effective manner.
+
+The following evidence was reviewed:
+Context of the organization: Quality Manual ML-QM-001, Rev.10, effective date on 3 January 2022.
+
+Climate change is included in the documented risk & opportunity assessment record in latest revision 6 January 2026. The effect from climate change to their business is the raining season period change and the sugar cane white leaf disease. There were the mitigation plans regarding the change in sugar can variety changes to resistance in the disease and the promoting in planting the sugar cane in Lao to the farmers. The mitigation plans have been maintained. They are acceptable.
+
+Needs and expectations of interested parties: Sustainability policy from government policy.
+Legislation:
+Thai Industrial Standard (TIS) no. 56-2560 for refined sugar (moisture, colour polarization, and purity)
+Codex STAN for contaminant no. 193-1995 (Heavy metal)
+RECOMMENDED METHODS OF SAMPLING FOR THE DETERMINATION OF PESTICIDE RESIDUES FOR COMPLIANCE WITH MRLS CAC/GL 33-1999
+Lao sugar 67-2008, Codex Stan 212-1999 | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 5 | Leadership | 5.1 | Leadership and commitment | ☒ | ☐ | 5.2 | Policy | ☒ | ☐ | 5.2.1 | Establishing the food safety policy | ☒ | ☐ | 5.2.2 | Communicating the food safety policy | ☒ | ☐ | 5.3 | Organizational roles, responsibilities and authorities | ☒ | ☐ | 5.3.1 | Top management shall ensure that responsibilities and authorities for relevant roles are assigned, communicated and understood within the organization | ☒ | ☐ | 5.3.2 | The food safety team leader shall be responsible for: a) - d) | ☒ | ☐ | 5.3.3 | All persons shall have responsibility to report problem(s) with regards to the FSMS to identified person(s) | ☒ | ☐ | Summary:
+Summary:
+Top management demonstrates leadership and commitment to the FSMS. This is evidenced by the supply of sufficient resources and engagement with all aspects of the FSMS.
+
+The food safety policy is documented covering relevant food safety aspects and signed by Mr. [ผู้ปฏิบัติงาน] (Managing Director). Policy is communicated (i.e. displayed in key areas and part of induction program new employees), understood and applied at all levels within the organization.
+
+Responsibilities and authorities for relevant roles have been established in the food safety manual. The food safety team leader is. Team meetings (HACCP) are held monthly. Meeting minutes have been reviewed. Outcomes regarding effectiveness and suitability of the FSMS are reported to top management.
+
+Effective leadership and commitment has been demonstrated. Interview with top management took place with the following auditees: Mr. [ผู้ปฏิบัติงาน]/ Managing Director
+
+The following evidence was reviewed:
+Food safety policy: Policy date 28/12/2021
+Minutes of team meetings: Plant meeting Nov – Dec 2025
+This is cane sugar processing plant established since 2005 and the operation has been started since 2008 with existing production capacity at 8,000 tons per day with 2,000 tons increasement from last year capacity. There were new equipment and machines additionally installed to increase the capacity in 2025. This year crop (2025/2026), the milling operation was started on 10 December 2025. 75 % of sugar cane has been supplied by the sugar cane farmer in Lao and 25% has been supplied by the company own farms with 10,000 hectares as planting area.
+
+Food safety team as announced on Mor Lor 03/2026 date 24/01/2026 by [ผู้ปฏิบัติงาน] (Managing Director), total 22 persons, Tao [ผู้ปฏิบัติงาน] (QA manager) is FSTL. There are 3 new members [ผู้ปฏิบัติงาน] (Lab), [ผู้ปฏิบัติงาน] (Crystallization), Tao BoonHung (Packing), – all are trained FSSC since 09/07/2024 | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 6 | Planning | 6.1 | Actions to address risks and opportunities | ☒ | ☐ | 6.1.1 | When planning for the FSMS, the organization shall consider the issues referred to in 4.1 and the requirements in 4.2 and 4.3 and determine the risks and opportunities that need to be addressed to: a) - d) | ☒ | ☐ | 6.1.2 | The organization shall plan: a) - b) | ☒ | ☐ | 6.1.3 | The actions taken by the organization to address risks and opportunities shall be proportionate to: a) - c) | ☒ | ☐ | 6.2 | Objectives of the food safety management system and planning to achieve them | ☒ | ☐ | 6.2.1 | The organization shall establish objectives for the FSMS at relevant functions and levels. The objectives of the FSMS shall: a) - f) | ☒ | ☐ | 6.2.2 | When planning how to achieve its objectives for the FSMS, the organization shall determine: a) - e) | ☒ | ☐ | 6.3 | Planning of changes | ☐ | ☒ | Minor | Partial non-conformity for change control.
+
+There was change of material regarding product packaging for organic natural cane sugar (packing size 25 kgs) from PP plastic bag to be a multilayer paper bag due to the EU customer requirement. However, there was no change control record existed as required by the change control procedure ML-QP-1600-006, Rev. 9, effective date on 18 November 2025. | 5 | Summary:
+The site has a Risk & Opportunities Matrix that uses a SWOT analysis to identify and categorize risk and opportunities. Action plans to address the identified risks and opportunities have been established. Actions are implemented into the FSMS processes. Effectiveness of those actions is evaluated during management meetings.
+
+The objectives of the FSMS have been established conform 6.2.1 and are SMART. Notable examples include:
+Sugar cane supplied quantity, Yield, conversion cost, food safety complaint
+
+An effective objective monitoring and review process is in place. The organization is achieving established targets.
+
+A management of change procedure is available.
+Significant changes since previous audit: the production capacity has been upgraded to be at 8,000 tons per day with an increase of 2,000 tons increasement from last year capacity. There were additional new equipment and machines installed to increase the capacity in 2025. This year crop (2025/2026), the milling operation started on 10 December 2025. 75 % of sugar cane has been supplied by the sugar cane farmer in Lao and 25% has been supplied by the company own farms with 10,000 hectares as planting area.
+The organization effectively applies the change process when implementing (significant) changes, taking into account the PDCA principles.
+Planning for the FSMS is done in an effective manner.
+
+The following evidence was reviewed:
+Risks & Opportunities: Rev. 6 January 2025
+FSMS objectives: food safety complaint zero and quality complaint 2 cases
+Management of change: MP-QP-1600-006 procedure, Rev. 1, effective date on 18 November 2025. Checklist in the information system. There were 19 change records in 2025 (2 changes in manpower and 17 change in machines). The company has one change in material regarding the product packaging of organic products. However, this change was not recorded. | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 7 | Support | 7.1 | Resources | ☒ | ☐ | 7.1.1 | General | ☒ | ☐ | 7.1.2 | People | ☒ | ☐ | 7.1.3 | Infrastructure | ☒ | ☐ | 7.1.4 | Work environment | ☒ | ☐ | 7.1.5 | Externally developed elements of the FSMS | ☒ | ☐ | 7.1.6 | Control of externally provided processes, products or services | ☒ | ☐ | 7.2 | Competence | ☒ | ☐ | 7.3 | Awareness | ☒ | ☐ | 7.4 | Communication | ☒ | ☐ | 7.4.1 | General | ☒ | ☐ | 7.4.2 | External communication | ☒ | ☐ | 7.4.3 | Internal communication | ☒ | ☐ | 7.5 | Documented information | ☒ | ☐ | 7.5.1 | General | ☒ | ☐ | 7.5.2 | Creating and updating | ☒ | ☐ | 7.5.3 | Control of documented information | ☒ | ☐ | 7.5.3.1 | Documented information required by the FSMS and by this document shall be controlled to ensure: a) - b) | ☒ | ☐ | 7.5.3.2 | For the control of documented information, the organization shall address the following activities as applicable: a) - d) | ☒ | ☐ | Summary:
+Sufficient resources are available to maintain and improve the FSMS in an effective manner.
+Use of an external expert: N/A.
+Employee competency requirements are detailed in a competence matrix, job descriptions, etc. A training plan is established. Employees were found to be competent to perform assigned roles. The food safety team is multi-disciplinary and has the right expertise. The food safety team leader meets the job description requirements.
+
+The following externally provided elements, processes (including outsourced processes), products or services are present:
+Externally provided elements: Transport, pest control, equipment maintenance, security system and external labs for testing and calibration
+Outsourced processes: N/A
+
+Management of external providers, including criteria, is described in various documents (e.g. SLAs). Samples have been taken (see below under evidence reviewed). Performance evaluation is done annually. Results are provided as input for management reviews. An effective system is in place.
+
+Effective internal and external communication was demonstrated. Besides HACCP meetings, monthly meetings are held by the director, QC and production manager following a fixed agenda which addresses food safety aspects, status of objectives and progress of projects.
+
+Documented FSMS is electronically available. Requirements regarding control of documented information are defined in a procedure. Access control is well managed. It meets the expectations of this standard. No issues observed during the audit regarding uncontrolled documents.
+
+The following evidence was reviewed:
+Competency (matrix): documented job qualification
+Training plan: annual training plan 2025 and 2026; food safety awareness, pest control, hygiene requirements, allergen and site security plan. Training programs are established and schedule as yearly and OJT by each area. Job description for each position is established. Some position was verified such as Production worker at CCP step & OPRP steps and cleaning worker. Medical screening has been implemented and maintained for new staff. Orientation program has been provided for new staff and records have been existed.
+Employee competency records: Sampling the job description, training needs of and training record of production workers as following;
+[ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+[ผู้ปฏิบัติงาน] (Seasonal worker at metal detector operator)
+[ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+[ผู้ปฏิบัติงาน] (Production worker at evaporating process)
+[ผู้ปฏิบัติงาน] (Head of production section)
+[ผู้ปฏิบัติงาน] (Production worker at OPRP step ;filtering process)
+
+The annual training plan has been established and maintained.
+Annual refresh training of food safety awareness has been provided annually. The latest training was done on 12 September 2025.
+The plant disease training was put in the annual training plan provided by external party.
+
+; the personal files have been kept by the HR department with the hard copy. The technical background, education evidence and training records have been kept and competency matrix is documented.
+
+Food safety team (leader) competency: Mr. [ผู้ปฏิบัติงาน] (QA manager) has been designated. HACCP team is multidisciplinary team, Production, QA, Engineer, Purchasing, warehouse and HR. The HACCP team was trained by consultants. The latest training was provided for 2 days training course done on 09 July 2024. The team members have technical knowledge as their education background. The HACCP team competent can be acceptable. There is no new HACCP team member since last FSSC audit.
+
+Communication (internal/external): email, meeting, app Line.
+Documented information :
+Procedure of control of supplier is documented and maintained (MP-QP-9200-001, Rev. 40, effective date on 30 May 2024). Once a year: latest evaluation was done in 2025. The annual evaluation of supplier’ performance has been maintained with the records. The Approved Vendor List (AVL) has been reviewed annually and documented in Rev. 12 January 2026 (MP-SP-9200-002, Rev. 32).
+
+The raw materials have been inspected in every delivery with the mentioned criteria in the raw material specifications. Some of criteria can be inspected by company inspectors/ testing methods and some of criteria has been verified by COA from suppliers and external annual testing result by external laboratory.
+Sugar cane is supplied by the company own sugar cane farms (25%) with 10,000 hectares as planting area and the contracted farmers & contractors (75%). The control at the farms has been done by Agricultural section. The pesticide, herbicide, fungicide and fertilizer have been used, controlled and complied with the regulations. The application records of chemicals can be traced back from the Cane MIS application system. The testing of pesticide and herbicide residue in raw material has been done randomly. The target of sugar cane tonnage is set up at 1 million tons for this season crop (2025/2026).
+For other materials such as processing aids and product packaging etc, they have been supplied by general suppliers from Thailand and Vietnam. There is the annual supplier evaluation based on the incoming inspection result.
+
+Sampling the suppliers as following;
+Celebrite (manufacture in Thailand) (paper bag 25 kgs); FSSC 22000 certified)
+Vinh Plastic and bag joint Stock Company (manufacture in Vietnam) ; Migration test was reported on 5 March 2024
+Golden Lime public Co., Ltd (Soda Lime)
+Thai Chemical & Engineering (Flocculant)
+Mr. [ผู้ปฏิบัติงาน] (Sugar cane farmer)- under contractor named “ [ผู้ปฏิบัติงาน]” . Farmer no. ET312001006
+
+The approved vendor list has included to these suppliers and also there were annual evaluations of supplier performance as required by the documented procedure.
+
+Onsite audit at supplier’s sites have been planned to be done annually. Sampling the supplier audit result for Vavapack (Supplied PP Jumbo bag and PP plastic bag packing size 50 kgs) on 3 July 2025. The result was reported at 88.10% with 13 audit findings were issued and followed in correction and corrective actions from supplier systematically. The qualification of auditors were acceptable.
+
+There has been the control of service suppliers; the documented service contract. The annual evaluation of suppliers’ performance has been maintained with the records. Sampling the following suppliers, the evaluation records existed
+Security guard: Savan Security Service Co., Ltd
+Testing Lab: Central lab
+Calibration lab: Analytical Technology
+Product transportation: Fair & Fast | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | If a clause is N/A, provide a justification | 8 | Operation | 8.1 | Operational planning and control | ☒ | ☐ | 8.2 | Prerequisite programmes (PRPs) | ☒ | ☐ | 8.2.1 | The organization shall establish, implement, maintain and update PRPs to facilitate the prevention and/or reduction of contaminants (incl food safety hazards) in the products, product processing and work environment | ☒ | ☐ | 8.2.2 | The PRPs shall be: a) - d) | ☒ | ☐ | 8.2.3 | When selecting and/or establishing PRPs, the organization shall ensure that applicable statutory, regulatory and mutually agreed customer requirements are identified. The organization should consider: a) - b) | ☒ | ☐ | 8.2.4 | When establishing PRPs the organization shall consider: a) - l) | ☒ | ☐ | 8.3 | Traceability system | ☐ | ☒ | Minor | Partial Insufficient of lot identification
+Lot identification of DCR 1 kg was defined MFG date, strike number, and shift packing of jumbo bag, but it was not sufficient to know repacking date in case many repacking dates and may not know lot of packaging. | 6 | 8.4 | Emergency preparedness and response | ☒ | ☐ | 8.4.1 | General | ☒ | ☐ | 8.4.2 | Handling of emergencies and incidents | ☒ | ☐ | 8.5 | Hazard control | ☒ | ☐ | 8.5.1 | Preliminary steps to enable hazard analysis | ☒ | ☐ | 8.5.1.1 | General | ☒ | ☐ | 8.5.1.2 | Characteristics of raw materials, ingredients and product contact materials | ☒ | ☐ | 8.5.1.3 | Characteristics of products | ☒ | ☐ | 8.5.1.4 | Intended use | ☒ | ☐ | 8.5.1.5 | Flow diagrams and description of processes | ☒ | ☐ | 8.5.1.5.1 | Preparation of the flow diagrams | ☐ | ☒ | Minor | Partial insufficient of flow diagram.
+Flow diagram was not updated i.e. magnetic after cane shredding (before milling), metal detector of 1 kg packing, filter air of sugar drier, DCR off spec from sugar screening 30 mesh (to VHP). | 7 | 8.5.1.5.2 | On-site confirmation of the flow diagrams | ☒ | ☐ | 8.5.1.5.3 | Description of processes and process environment | ☒ | ☐ | 8.5.2 | Hazard analysis | ☒ | ☐ | 8.5.2.1 | General | ☒ | ☐ | 8.5.2.2 | Hazard identification and determination of acceptable levels | ☒ | ☐ | 8.5.2.2.1 | The organization shall identify and document all food safety hazards that are reasonably expected to occur in relation to the type of product, type of process and process environment. The identification shall be based on: a) -e) | ☒ | ☐ | 8.5.2.2.2 | The organization shall identify step(s) (e.g. receiving raw materials, processing, distribution and delivery) at which each food safety hazard can be present, be introduced, increase of persist. When identifying hazards the organization shall consider: a) - c) | ☒ | ☐ | 8.5.2.2.3 | The organization shall determine the acceptable level in the product of each food safety hazard identified, whenever possible. When determining acceptable levels, the organization shall: a) - c) | ☒ | ☐ | 8.5.2.3 | Hazard assessment | ☒ | ☐ | 8.5.2.4 | Selection and categorization of control measure(s) | ☒ | ☐ | 8.5.2.4.1 | Based on the hazard assessment, the organization shall select an appropriate control measure or combination of control measures that will be capable of preventing or reducing the identified significant food safety hazard to defined acceptable levels | ☒ | ☐ | 8.5.2.4.2 | In addition, for each control measure, the systematic approach shall include an assessment of the feasibility of: a) - c) | ☒ | ☐ | 8.5.3 | Validation of control measure(s) and combination of control measures | ☒ | ☐ | 8.5.4 | Hazard control plan (HACCP/OPRP plan) | ☒ | ☐ | This clause may be indicated as N/A where there are no CCP(s) or OPRP(s) | 8.5.4.1 | General | ☒ | ☐ | 8.5.4.2 | Determination of critical limits and action criteria | ☒ | ☐ | 8.5.4.3 | Monitoring systems at CCPs and for OPRPs | ☒ | ☐ | 8.5.4.4 | Actions when critical limits or action criteria are not met | ☒ | ☐ | 8.5.4.5 | Implementation of the hazard control plan | ☒ | ☐ | 8.6 | Updating the information specifying the PRPs and the hazard control plan | ☒ | ☐ | 8.7 | Control of monitoring and measuring | ☐ | ☒ | Minor | Calibration was not fully implemented.
+1. Calibration of small packing machine was not covered 500 g.
+2. Weight scale of 1x25 kg was calibrated at 50 kg only, not covered 25 kg.
+3. Not found calibration of temperature of A massecuite A5 and A6. | 8 | 8.8 | Verification related to PRPs and the hazard control plan | ☒ | ☐ | 8.8.1 | Verification | ☒ | ☐ | 8.8.2 | Analysis of results of verification activities | ☒ | ☐ | 8.9 | Control of product and process nonconformities | ☒ | ☐ | 8.9.1 | General | ☒ | ☐ | 8.9.2 | Corrections | ☒ | ☐ | 8.9.2.1 | The organization shall ensure that when critical limits at CCPs and/or action criteria for OPRPs are not met, the products affected are identified and controlled with regard to their use and release | ☒ | ☐ | 8.9.2.2 | When critical limits at CCPs are not met, affected products shall be identified and handled as potentially unsafe products (see 8.9.4) | ☒ | ☐ | 8.9.2.3 | Where action criteria for an OPRP are not met, the following shall be carried out: a) - c) | ☒ | ☐ | 8.9.2.4 | Documented information shall be retained to describe corrections made on nonconforming products and processes, including a) - c) | ☒ | ☐ | 8.9.3 | Corrective actions | ☒ | ☐ | 8.9.4 | Handling of potentially unsafe products | ☒ | ☐ | 8.9.4.1 | General | ☒ | ☐ | 8.9.4.2 | Evaluation for release | ☒ | ☐ | 8.9.4.3 | Disposition of nonconforming products | ☒ | ☐ | 8.9.5 | Withdrawal/recall | ☒ | ☐ | Summary:
+Operational planning and control:
+PRPs are appropriate for the scope of approval and generally effectively implemented across the site. Details are reflected in the PRP checklist. Actions determined in 6.1 are addressed appropriately.
+
+Traceability system:
+Traceability testing by organization is done yearly.
+Last test was conducted on 25/01/26 for product DCR sugar 1 kg lot 0935 15022025.
+
+A traceability exercise was successfully conducted by the auditor during this audit for product: DCR sugar organic 25 kg in paper bag. Reviewed mass balance and relevant documents. Satisfactory outcome noted. Speed of completion was in accordance with the organizations procedures.
+
+Emergency preparedness and response:
+An emergency preparedness and response procedure is in place, which addresses the management of interruptions of essential services. No emergency situations have occurred since the last audit. Procedure is tested annually. Last test was conducted on 18/11/25.
+
+Hazard control:
+Product descriptions are described in: ML-SP-1600-006 Rev.07 date 10/01/2022
+Flow charts are included and last updated on: 15/01/2026.
+They are revised accordingly following changes to processes. Preliminary information is collected, maintained and updated effectively, including intended use and vulnerable groups.
+All relevant types of hazards have been considered and include: physical, microbiological, chemical hazards and allergens.
+
+Hazard assessment is based on probability (category 1-4) and severity (category 1-4). Risks identified as Minor are considered significant and are further analysed through a decision tree. Out of the decision tree the following CCP/OPRP have been determined:
+
+Auditor verification of CCP(s) and OPRP(s)* | CCP#/ OPRP# | Description of process step: | Critical limits or action criteria | Monitoring procedure, correction, and corrective action | CCP1 | Crystallization | 63℃ for 45 minutes | Monitoring: check temp/time every strike.
+Correction: adjust temperature, hold product.
+Corrective action: investigating the root cause and take action at root cause. | CCP2 | Magnet | 9000 gauss | Monitoring: check magnet every strike.
+Correction: hold product, fix the magnet.
+Corrective action: investigating the root cause and take action at root cause | CCP3 | Metal detector | 2.5 Fe, 3.0 Non-Fe, 3.0 SuS | Monitoring: test piece tested every 8 hours.
+Correction: fixed metal detector and re-passing again the product through the metal detector
+Corrective action: investigating the root cause and take action at root cause. | OPRP1 | Cloth filter 60 mesh | No leak /damaged | Monitoring: check filter every 2 hours.
+Correction: change / fix the filter.
+Corrective action: investigating the root cause and take action at root cause. | All CCPs/OPRPs have been validated and the effectiveness there-of (see documented evidence seen below). Based on live demonstrations and records checked, CCPs and OPRPs are in control conform the work instructions (see list of records seen below).
+Calibration records have been reviewed. The process of calibration is managed effectively.
+
+Verification related to PRPs and the hazard control plan:
+PRPs and hazard control plan verification activities are carried out conform a documented verification planning that defines the purpose, method, frequencies and responsibilities for the verification activities. Several testing results were seen including results of end products samples. See documented evidence reviewed below.
+
+Control of product and process nonconformities:
+Procedures are followed accordingly in case critical limits have not been met.
+Since the last audit this occurred none.
+Examples of nonconforming products that have occurred since the last audit: N/A
+
+An effective Recall/Withdrawal system is in place. For further details on recalls, see ISO/TS 22002-1 checklist (clause 15).
+
+Operational planning and control is managed in an effective manner.
+
+The following evidence was reviewed:
+PRP overview: from site tour, PRP could be maintained.
+Emergency situation procedure: ML-WI-1020-002 rev. 05 date 12/3/2023 for fire, flood, disruption of water, disruption of electricity, transportation accident, food defense, sabotage. Last test for fire evacuation on 18/11/2025. Emergency contact list is in ML-WI-1020-002 rev.06 dated 13/12/2025.
+
+Traceability procedure: ML-SP-1600-002 rev. 0 date 14/02/2012
+Traceability testing was done yearly, last on 25/01/2026, DCR sugar 1 kg lot 0935 MFG 15/02/2025, Packing 13-15 May 2025, delivery on 25 December 2025 to local customer 19 tons and on 20 January 2026 to local consumer 20 tons.
+Trace back to lot of packaging (film lot 20/03/2025 supplier S&S), repack from sugar lot 15/02/2025, slurry seed PEG lot D210N10001 (receive on 09/12/2023), Max floc lot 447002 (14/12/2024 from Engineer Cheme), Cao lot 18/01/2025 supplier Lime Master), cane on 15/02/2025.
+
+A traceability exercise was successfully conducted by the auditor during this audit for product: DCR sugar organic 25 kg in paper bag, delivery on 27/01/2026 to Netherlands in container TCKU2042752 total 1,000 bag (25,000 kg), there are 2 lots of 0223 for 440 bags, and lot 242 for 560 bags, traceback to lot of sugar strike 233 MFG 06/01/2026 and 242 MFG 07/01/2026, found it was packed on 06-07/01/2026 of lot 233 = 1,120 x 25 kg = 28 tons and lot 242 = 1,280 x25 = 32 tons, use brown paper bag lot MC0397-25 (received on 09/09/2025 from Celebrite), total 2,400 bags, crystallization on 07/01/2025 – used slurry seed (use organic virgin coconut oil lot 12/12/2025 from Merit food products – cert organic 10002 (ACO Certification valid 31/12/2025), use Cao lot 19/12/2025 from Golden Lime (Lime Master), Fresh cane from 4 farmers (Khoun, Mitr Lao Farm Zone10, Lerdphathai, Soyphet) who has certify for Organic (in Farm list) – Bio Agri Cert LA-BIO-132.418-0000014.2025.001 valid 15/10/2026 (cane sugar, cane molasse, cane jaggery, and cane molasses for feed).
+
+Hazard control:
+Product description ML-SP-1600-006 Rev.07 date 10/01/2022
+DCR: shelf life 3 years, moisture <0.2%, packed size 0.5, 1 kg in LLDPE, and 50 Kg in HDPE PP woven, intended use for direct consumption
+VHP: shelf life 3 years, packed in Jumbo bag 1000 kg for further processing
+Refer to ML67-2008, Codex 212-1999, ML-SP-1610-001 (specification of ML sugars)
+
+Raw material description: ML-SP-1600-006 Rev.07 date 10/01/2022 for Fresh cane, chemical Cao, Flocculent, PEG 400 (poly glycerol) - ML-SP-1610-001 (specification of chemical), and packaging (paper bag 25 kg, LLDPE film, HDPE inner bag) - ML-SP-1610-003 (specification of packaging)
+
+Flow diagram ML-SP-3000-001 Rev.16 date 15/01/2026
+Fresh cane > squeezing > filter > evaporation > filter (CCP) > crystallization (CCP) > centrifugal >drying > magnet > send to silo / packing in jumbo bag > packing > metal detector > storage
+HACCP analysis ML-SP-1600-012 Rev.12 date 21/12/2024 – TOR is defined, risk assessment by likelihood of occurrence and likelihood of severity (4x4), to classify to Sa, Mi, Ma, and Cr, if significant level minor, go to Q1-Q5 for categorize to CCP and OPRP.
+
+CCP and OPRP Plan ML-SP-1600-011.
+CCP1 – Vacuum pan >63C >45 min
+CCP2 – Magnet at sizing >9000 gauss, no metal >3 mm
+CCP3 – Metal detector Fe 2.5, Non-Fe 3.0, SUS 3.0 mm
+OPRP1 – Screening at Raw syrup before vacuum pan 60 mesh
+
+Validation records:
+CCP1B: Vacuum temp and time, validate on strike 253 date 22/01/2025
+TRKK68/01391 (DCR massecuite before) and TRKK68/01392 (DCR massecuite after) date 31/01/2025 for C. perfringens, S. aureus, Salmonella, E. coli, Coliforms, Streptococcus spp.
+CCP2P: Magnet (after sizing before packing), validated on 30/12/2025 by add metal 3 mm 10 pcs in sugar and check trapping on magnet, found 100% trapped.
+CCP3: Metal detector line 50 kg on 28/11/25, to test 5 repeats, Metal detector 1000 kg (MD 3 on 28/11/2025 and MD 4 on 27/11/2025).
+OPRP1: Filter validated on 09/12/2025 by check condition of filter before start working.
+Production control records: VHP sugar produced 25/01/2026; record of extraction, evaporation, crystallization, centrifuge, packing.
+CCP(s) and OPRP(s) records: ML-FM-3220-003 Crystallization record, ML-FM-3230-014 Magnet record, Metal detector record ML-FM-1610-041, Filter cloth record ML-FM-3210-003.
+
+Verification records including test results of end products samples:
+-ML-SP-1600-007 rev.10 date 25/4/2024 Verification procedure.
+
+Product testing
+- Sugar – every strike – sampling FG before weight to WH – to test temp, pol, color, moisture to separate VHP and DCR by quality of (Pol DCR >99.0), color DCR 400-800, VHP <2,000, moisture DCR <0.2, VHP <0.3% as report ML-FM-1630-011 and sediment ML-FM-1630-012 (DCR <150 ppm), rusty (DCR not found size >3 mm) and test B (yellow <500 pcs/5 kg and black grain <10 pcs/5 kg) – Quality plan ML-FM-1600-001 date 03/01/2026.
+-DCR sugar strike 0271 as report TRKK68/01772 date 10/02/2025 for Heavy metal : As, Cd, Cu, Fe, Pb, Hg, C. Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color, conductivity, pol, RS, Sediment (Insoluble matter) 28.6 ppm, AW (0.45), glyphosate, AMPA, SO2, etc., report TRKK68/01570 date 06/02/2025 for pesticide 4 groups, report TRKK68/01684 date 07/02/2025 for nutrition (energy, moisture, carbohydrate, fat), report TRKK68/0174=56 date 10/02/2025 for gluten, report TRKK68/014397 date 31/01/2025 for APC, mesophilic bacteria, yeast and mold, report TRKK68/01787 date 10/02/2025 for grain size MA 0.87 mm, CV (29.31%)
+-VHP sugar strike 0056 as report TRKK68/01771 date 10/02/2025 for Heavy metal : As, Cu, Pb, C. Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color, conductivity, pol, RS, AW (0.50).
+
+Calibration records:
+Calibration procedure ML-QP-3330-007 rev01 18/5/2020.
+Calibration was done both internal and external service, internal calibration operator Promma has trained for calibration
+Calibration list is in ML-FM-3330-0003 updated on 24/12/2024
+Seen calibration report
+- RTD BP-TT-001, 2, 3, 18 (A1-A4) – CCP Crystallization every year on 20/06/2025
+- RTD EV-TT-001, 002, 003 evaporation – every year on 05/06/2025
+- Standard Temperature Block Calibrator CTC-650B serial no. 675309-01183 (every 3 years) on date 26/3/2024 by UniThai Group (Lab 0058)
+- DCS timer with Navy Thai monthly, last on 10/01/2026 (ML-FM-3330-010).
+- Load cell 50 kg, packing – once a week, last on 19/01/2026 ML-FM-4130-017
+- Load cell 1 kg, packing – twice a week, last on 05/01/2026 ML-FM-4130-017
+- Weight scale 1000 kg, check weight 50 kg – every month, last on 22/01/2026 (ML-FM-3300-008)
+- Weight scale 1kgx25 – every month, last on 22/01/2026 (ML-FM-3300-008) use 25 cal 50
+- Check weight 50 kg – yearly calibrated 05/12/2025 by Lao Standard.
+- Master standard weight 0.5-500 kg – on 30/10/2025 (every 3-5 years)
+- Metal detector – packing 1000 kg – tube metal detector, and 50 kg – tunnel on 27/11/2025 by Mettler Toledo
+
+Lab equipment
+Weight scale 1 kg – ML-LAB-100, ML-LAB-105 – 30/08/2025 by Quality Calibration
+Digital balance – ML-LAB-02, ML-LAB-04 – 30/08/2025 by Quality Calibration (Accredited Calibration 0471)
+Conductivity meter ML-LAB-08, 09 on 30/08/2025 by Quality Calibration
+pH meter ML-LAB-20, 21 on 30/08/2025 by Quality Calibration
+Spectrophotometer ML-LAB-26, 108, 116 on 09/09/2025 by Analytical Technology (Accredited Calibration 0359)
+Refractometer ML-LAB-111 on 09/09/2025 by Analytical Technology
+Polarimeter ML-LAB-117 on 26/08/2025 by Global Dynamic (Thailand) (Accredited Calibration 0471)
+Moisture Analyzer ML-LAB-14, 107 on 30/08/2025 by Quality Calibration
+Incubator 35C ML-LAB-23 on 30/08/2025 by Quality Calibration
+Autoclave ML-LAB-40 on 30/08/2025 by Quality Calibration
+
+Nonconforming products: ML-QP-1620-003 rev.10 date 26/01/2023. Normally nonconforming products will be quality issues i.e. purity, sediment of organic DCR. NC products will remelt to reprocess. Year 2025-2026 – there was no NC product to remelt. | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 9 | Performance evaluation | 9.1 | Monitoring, measurement, analysis and evaluation | ☒ | ☐ | 9.1.1 | General | ☒ | ☐ | 9.1.2 | Analysis and evaluation | ☒ | ☐ | 9.2 | Internal audit | ☒ | ☐ | 9.2.1 | The organization shall conduct internal audits at planned intervals to provide information on whether the FSMS conforms to: a) - b) | ☒ | ☐ | 9.2.2 | The organization shall a) - g) | ☒ | ☐ | 9.3 | Management review | ☒ | ☐ | 9.3.1 | General | ☒ | ☐ | 9.3.2 | Management review input | ☒ | ☐ | 9.3.3 | Management review output | ☒ | ☐ | Summary:
+A monitoring and measurement plan has been determined to assess FSMS performance, including several KPIs. Results are analysed and evaluated accordingly and retained as documented information. Results are reported to top management through management reviews.
+
+Internal audits are carried out once a year conform a risk-based audit programme, in accordance with 9.2.1 (a). Audit criteria cover the elements of ISO22000, ISO/TS 22002-1 and additional FSSC requirements. Internal auditors were found to be competent and impartial. Several reports were reviewed during the audit. Minor deviations had been identified. Corrective actions resulting from internal audits are dealt with effectively.
+
+Management reviews are conducted: annually.
+Last review was conducted on: 27/12/25.
+Minutes are available that address the requirements of 9.3.2 and 9.3.3. Documented information is retained as evidence of the results of the management review. No significant issues were raised.
+The site concludes to have an effective FSMS in place. As an output of the review new objectives had been defined (see chapter 6). FSMS performance is evaluated effectively.
+
+The following evidence was reviewed:
+Monitoring and measurement data/information: KPI monitoring records for following KPI;
+Customer complaint 2 cases per year
+Breakdown at milling process 8 hours
+10 New vendors
+Rejected product 0.2%
+Internal audit reports sampled: MP-QP-8013-006 Rev. 39 effective date on 18/6/24 Internal audit. Audit plan Aug 25 and Jan 26 (MP-FM-8013-007), Checklist production, QC, warehouse, purchasing, maintenance. Total 6 Minor NCs were issued in IQA 2025/2026. all of them still be pending and not yet closed but still be in timeline.
+Internal auditor training records: 22-23 July 2024 trained by external trainer.
+Management review: Minutes of management meeting 27/12/25.
+Sampling the internal auditor named “Mr. [ผู้ปฏิบัติงาน]” who performed the audit at production - syrup heating process . He is independent from the audited area and competency has been supported at the training of internal auditor skills and FSSC 22000 requirement version 6 with training certificates. | ISO 22000:2018 - Food Safety Management Systems | Conform | Grade | If No – detail NC | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | If a clause is N/A, provide a justification | 10 | Improvement | 10.1 | Nonconformity and corrective action | ☒ | ☐ | 10.1.1 | When a nonconformity occurs, the organization shall: a) - e) | ☒ | ☐ | 10.1.2 | The organization shall retain documented information as evidence of: a) - b) | ☒ | ☐ | 10.2 | Continual improvement | ☒ | ☐ | 10.3 | Update of the food management system | ☒ | ☐ | Summary:
+A central log (E-Smart ISO) is used for recording nonconformities and management of corrective actions detailing timelines and action owners. This includes complaint management.
+Complaints since the previous audit: no food safety complaint, 3 quality complaints on product melting and caking. No significant trends were identified.
+Based on the samples taken, effective follow-up is done addressing root causes into sufficient depth. PDCA principles are followed accordingly.
+
+Information is gathered from periodic management meetings, HACCP meetings and annual management reviews regarding the need for updates to the FSMS.
+There are numerous examples of the site initiating continuous improvement, including: improvement in productivity of planting by change the sugar cane variety as the existing veriety (Khonkan 3 to be Uoothong 5, Mitre Pol 618, Mitr Pol 504) and also improvement in loss in operation and the operation capacity upgrading to be 8,000 tons sugar cane per day.
+
+The organization is effectively improving its FSMS.
+
+The following evidence was reviewed:
+Nonconformity / Complaint samples: packaging damage and wrong security seal numbers identified on the delivery records shared to the customer.
+Complaint management procedure: MP-QP-8600-002 Rev.10 23/11/24 | ISO/TS 22002-1:2009 - Food Manufacturing
+ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 4 | Construction and layout of buildings | 4.1 | General requirements | ☒ | ☐ | 4.2 | Environment | ☒ | ☐ | 4.3 | Locations of establishments | ☒ | ☐ | Summary:
+Plant located in: an industrial area in a rural environment. Site boundaries are clearly identified. Premises is fenced off with gate access to the facility.
+Types of buildings include: production facility, storage building, offices, laboratory and maintenance workshop.
+Good condition of constructions noted. No risks have been identified related to the external environment. Site area is properly maintained. This section meets the requirements of the ISO/TS 22002-1.
+
+The following evidence was reviewed:
+From site tour, construction and layout were appropriate with sugar production. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 5 | Layout of premises and workspace | 5.1 | General requirements | ☒ | ☐ | 5.2 | Internal design, layout and traffic patterns | ☒ | ☐ | 5.3 | Internal structures and fittings | ☒ | ☐ | 5.4 | Location of equipment | ☒ | ☐ | 5.5 | Laboratory facilities | ☒ | ☐ | 5.6 | Temporary or mobile premises and vending machines | ☒ | ☐ | 5.7 | Storage of food, packaging materials, ingredients and non-food chemicals | ☒ | ☐ | Summary:
+Internal design, layout, equipment and traffic patterns are found to be adequate. No standing water (i.e. insufficient drains) and risks regarding external openings have been observed during the audit. Internal structures and fittings are overall well maintained.
+Laboratory facilities are present on-site and segregated from production areas. Chemical and Microbiological tests are conducted. Risks are controlled effectively. There are no temporary mobile structures or vending machines used.
+Storage of raw materials, packaging materials, ingredients and non-food chemicals, and finished product is effectively managed. Pallets are used, with limited use of wooden pallets for the storage. Control measures are in place. No further issues observed. This section does not fully meet the requirements of ISO/TS 22002-1 (see findings log).
+For temperature control regarding chilled/frozen storage areas refer to chapter 16.
+
+The following evidence was reviewed:
+Layout with traffic patterns of materials, products and workers: ML-SP-1100-008 Rev.0
+GMP and Hygiene Zone: ML-QP-1600-001 | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 6 | Utilities – air, water, energy | 6.1 | General requirements | ☒ | ☐ | 6.2 | Water supply | ☒ | ☐ | 6.3 | Boiler chemicals | ☒ | ☐ | 6.4 | Air quality and ventilation | ☒ | ☐ | 6.5 | Compressed air and other gases | ☒ | ☐ | 6.6 | Lighting | ☒ | ☐ | Summary:
+In-house treated water (potable) is supplied and used as a product ingredient. Records of analysis have been reviewed. Quality and microbiological specifications for water have been defined and requirements are met. There is no use of steam or ice direct contact to sugar but condensate water is direct contact. Boiler chemicals are used, safe and stored away appropriately.
+
+Air is direct product contact at sugar drier (ambient air with filter). Specific air and humidity control is not needed. Compressed air is used, filtered and oil free. Air systems are maintained and managed effectively (including filter replacement). Adequate ventilation is in place. Gas is not used. Adequate lighting provided to facilitate hygienic operations. Light fixtures are suitably protected. Utilities are not managed fully effectively (see findings log).
+
+The following evidence was reviewed:
+For sugar process, Soft water is used in boilers to generate steam for heating process, no steam direct contact to product, cane heating will generate condensate water that is used as ingredient (to dissolve sugar in cane) at sugar milling, centrifugal (to wash color), remelt sugar, and chemical preparation (CaO, Maxfloc)
+Treated water is also used for chemical preparation (CaO, Maxfloc)
+
+Condensate water is yearly test as report TRKK68/01378 date 31/01/2025
+Treated water is yearly test as report TRKK68/01377 date 31/01/2025
+Test include heavy metal (Al, Hg, Pb, As, Cu, Cd, Hg, F, Ca, Ba, Fe, Cr, Mg), ABS, Phenol, Microbial and pathogens, Cyanide, H2S, hardness, TDS, pH, turbid, etc.
+
+Boiler chemical: Polytreat SRB (sodium hexametaphosphate and sodium polyacrylate) – 21CFR FDA 173.301 and MCC-N (Mixture of Morpholine and cyclohexylamine) – 21 CFR FDA 173.310.
+
+Water: ML-WI-3130-002 rev.0 water treatment process.
+Source from Surface water. Process = Water add PAC, Polymer, NaOH, Chlorine > Sediment > Storage > Sand filter > Treated water (filtrated water) add chlorine (process water, hand washing) > Softener (Boiler and Cooling tower).
+
+Water treatment:
+Diff pressure of inlet and outlet water <1 bar, if >1 bar, it will be backwash of sand filter until water clear, normally backwash every shift, use time 25 min. Regenerate of softener will do every 2000 m3, quality of soft water is checked every 12 hours for pH, hardness, and TDS – report of backwash and regenerate resin was found in ML-FM-3130-008.
+Chemical use – PAC, polymer, NaOH – record in ML-FM-3130-008.
+
+Water testing record:
+Raw water – pH, TDS%, %T = every 15 days, Filtrated water – pH, TDS, Chloride, %T = daily
+Water supply – pH and free chlorine (>0.2 ppm) = weekly (at hand washing of packing), last on 15/01/2026.
+Report in ML-FM-1630-038
+
+For boiler / cooling
+Soft water – pH, TDS, hardness (0), 2 times a day (10:00, 22:00)
+Feed water boiler = pH, TDE, hardness every 8 hours
+Boiler water = pH, TDS, Alkaline every 4 hours
+Report in ML-FM-1630-013
+Condensate is daily check at evaporation to test Sugar content ML-FM-1630-013.
+
+Air: Air filter at sugar dryer, prefilter EU G3 (frame 24 pcs), it was weekly cleaning of air filter by water washing, last on 19/01/2025 (ML-FM-1600-002) with condition inspection, last change in year 2019.
+
+Temperature & humidity records: Check at packing room every 8 hours ML-FM-4130-020.
+Chlorine: Chlorine usage – daily record in Excel, Water supply is tested pH and free chlorine (>0.2 ppm) weekly (at hand washing of packing), last on 15/01/2026 (0.22 ppm). | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 7 | Waste disposal | 7.1 | General requirements | ☒ | ☐ | 7.2 | Containers for waste and inedible or hazardous substances | ☒ | ☐ | 7.3 | Waste management and removal | ☒ | ☐ | 7.4 | Drains and drainage | ☒ | ☐ | Summary:
+Waste is categorized in: General, Recycled, Hazardous, Infected, and By-product.
+Containers are clearly identified, lidded and foot operated. No issues observed regarding 7.2. Waste is collected and discarded by a licensed waste collection company. Contract has been reviewed for Sawan EMC. No accumulation of waste observed during the audit.
+Trademarked wasted materials are destroyed on site before removal. Records of destruction are being retained. Drains are suitable and appropriate for the size of the premises. No internal drains present. Drains flow directly into main sewers and are appropriate for the size of the premises.
+The waste management program is managed in an effective manner.
+
+The following evidence was reviewed:
+Waste collection records: ML-WI-1010-005 rev.01 22/2/2023 Waste management
+General waste > landfill at Mitr Lao, Recycle, Infected and Hazardous > Sawan EMC
+Waste disposal registration with Agricultural and Environmental Department: EMCG230410220
+Destruction records: Hazardous manifest record on 16/12/2025 (in website)
+Waste collection report: ML-FM-1010-027 (from each section to waste room).
+Logo destroy report: ML-FM-1010-028 (Packing) | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 8 | Equipment suitability, cleaning and maintenance | 8.1 | General requirements | ☒ | ☐ | 8.2 | Hygienic design | ☐ | ☒ | Minor | Equipment was not fully in suitable maintenance.
+
+1.Rubber squeezing was used to squeeze the scale on screen 60 mesh, it was contact to hot raw syrup, found it was damaged.
+2. Sugar after centrifugal was opened to conveyor before sent to dryer, the conveyor was not properly covering to prevent contamination. | 9 | 8.3 | Product contact surfaces | ☒ | ☐ | 8.4 | Temperature control and monitoring equipment | ☒ | ☐ | 8.5 | Cleaning plant, utensils and equipment | ☒ | ☐ | 8.6 | Preventive and corrective maintenance | ☒ | ☐ | Summary:
+(Food contact) equipment is found to be suitable and meets the principles of hygienic design. Food contact materials, as sampled, are food grade. The cleaning program regarding equipment and utensils is documented.
+Preventive and corrective maintenance program is managed through Excel sheet.
+All devices used to monitor and/or control food safety are included, including: filter, magnet, metal detector. Samples of maintenance work have been reviewed.
+Corrective maintenance is carried out accordingly. Process of releasing maintained equipment back to production is well managed. Post-maintenance cleaning procedures are in place. Samples have been reviewed, including training of maintenance personnel (see below). Lubricants are food grade. For details about the calibration program see ISO22000:2018 chapter 8.
+An effective maintenance program is in place.
+
+The following evidence was reviewed:
+Maintenance procedure ML-QP-3100-001 rev.12 date 15/02/2025
+Food contact materials/equipment specifications: stainless steel
+Overview cleaning program equipment/utensils:
+ML-FM-1600-002 Cleaning record of Evaporation process.
+Maintenance records: Maintenance yearly season during April –October 2025 – ML-FM-3000-009 is details of maintenance work as seen Mechanical – pump system for milling, Evaporation, Crystallization, Centrifugal, water treatment, cooling, air compressor, and Wastewater) start on 31/03/2025 to 01/11/2025, Milling – start 31/03/2025 to 31/10/2025,
+Post-maintenance procedures and samples:
+PM during milling season – Every 30 days, last on 01-02/01/2026 for cleaning and lubricant
+PM yearly - Maintenance records in 2025/2026 – (progress of work weekly report ML-FM-3000-012
+PM of centrifugal – weekly lubricant as ML-FM-3230-004 – used food grade grease at suspension head, discharger, and basket valve of Centrifugal A
+
+Training of maintenance personnel: Training program of year 2025
+Training of outsourced maintenance: KM Tech on 22/07/2025, Real Soluplus on 24/07/2025.
+
+Specification(s): Grease used at equipment that may incidentally contact with food: NEVASTANE XMF 2 meets NSF 146188, type H1 and Kosher (used at centrifugal machine and packing machine) and NEVATANE XS320 NSF 147141 (used at cane milling machine). | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 9 | Management of purchased materials | 9.1 | General requirements | ☒ | ☐ | 9.2 | Selection and management of suppliers | ☒ | ☐ | 9.3 | Incoming material requirements (raw/ingredients/ packaging) | ☒ | ☐ | Summary:
+The site supplier approval process is documented. Procedure distinguishes between new and trusted suppliers and is risk based. Several supportive documents are in place to support this process. Acceptance forms are in place. In case of absence of GFSI certificate, audits are conducted prior to accepting materials for production.
+Samples have been taken of: as following; .
+
+Celebrite (manufacture in Thailand) (paper bag 25 kgs); FSSC 22000 certified)
+Vinh Plastic and bag joint Stock Company (manufacture in Vietnam) ; Migration test was reported on 5 March 2024
+Golden Lime public Co., Ltd (Soda Lime)
+Thai Chemical & Engineering (Flocculant)
+Mr. [ผู้ปฏิบัติงาน] (Sugar cane farmer)- under contractor named “ [ผู้ปฏิบัติงาน]” . Farmer no. ET312001006
+
+Process is in control. Supplier performance evaluation is reviewed annually. Suppliers are rated on quality, service, delivery and communication. All graded satisfactory in the past year.
+
+Verification method regarding incoming materials is defined, including delivery vehicle inspection and incoming materials inspection requirements. Deliveries are visually checked for product integrity, labelling and cleanliness. Based on risk assessment, food safety hazards are controlled through COAs, internal analysis etc. Samples have been taken (see below). No issues observed. Process is managed effectively. Non-conforming products are handled under a documented procedure to prevent unintended use. No bulk receiving lines are present. An effective system is in place.
+
+The following evidence was reviewed:
+Procedure of control of supplier is documented and maintained (MP-QP-9200-001, Rev. 40, effective date on 30 May 2024). Once a year: latest evaluation was done in 2025. The annual evaluation of supplier’ performance has been maintained with the records. The Approved Vendor List (AVL) has been reviewed annually and documented in Rev. 12 January 2026 (MP-SP-9200-002, Rev. 32).
+
+The raw materials have been inspected in every delivery with the mentioned criteria in the raw material specifications. Some of criteria can be inspected by company inspectors/ testing methods and some of criteria has been verified by COA from suppliers and external annual testing result by external laboratory.
+
+Sugar cane is supplied by the company own sugar cane farms (25%) with 10,000 hectares as planting area and the contracted farmers & contractors (75%). The control at the farms has been done by Agricultural section. The pesticide, herbicide, fungicide and fertilizer have been used, controlled and complied with the regulations. The application records of chemicals can be traced back from the Cane MIS application system. The testing of pesticide and herbicide residue in raw material has been done randomly. The target of sugar cane tonnage is set up at 1 million tons for this season crop (2025/2026).
+
+For other materials such as processing aids and product packaging etc, they have been supplied by general suppliers from Thailand and Vietnam. There is the annual supplier evaluation based on the incoming inspection result.
+
+Sampling the suppliers as following;
+Celebrite (manufacture in Thailand) (paper bag 25 kgs); FSSC 22000 certified)
+Vinh Plastic and bag joint Stock Company (manufacture in Vietnam) ; Migration test was reported on 5 March 2024
+Golden Lime public Co., Ltd (Soda Lime)
+Thai Chemical & Engineering (Flocculant)
+Mr. [ผู้ปฏิบัติงาน] (Sugar cane farmer)- under contractor named “ [ผู้ปฏิบัติงาน]” . Farmer no. ET312001006
+It was found that the approved vendor list has included to these suppliers and also there were annual evaluations of supplier performance as required by the documented procedure.
+Onsite audit at supplier’s sites have been planned to be done annually. Sampling the supplier audit result for Vavapack (Supplied PP Jumbo bag and PP plastic bag packing size 50 kgs ) on 3 July 2025. The result was reported at 88.10% with 13 audit findings were issued and followed in correction and corrective actions from supplier systematically. The qualification of auditors were acceptable.
+
+There have been the control of service suppliers; the documented service contract. The annual evaluation of supplier’ performance has been maintained with the records. Sampling the following suppliers, the evaluation records were existed
+Security guard: Savan Security Service Co., Ltd
+Testing Lab: Central lab
+Calibration lab: Analytical Technology
+Product transportation: Fair & Fast
+
+Verification method/program documented in:
+ML-WI-1610-001 rev.03 date 08/93/2025 – Incoming inspection
+Vehicle of material is checked for cleanliness, pest, allergen, covering, and condition of material by store, record in ML-FM-4120-013.
+Verification monitoring records seen (COAs, internal lab results):
+- PEG 400 – received date 15/02/2025, ML-FM-1610-023, COA of purity, viscosity, water content on 22/01/2025 - ALS BK2537701-AJ date 31/10/2025 for heavy metal (As, Cd, Pb, Hg)
+- Maxfloc 917 – received on 24/11/2024, COA of dry content, moisture, pH, viscosity on 20/11/2025 – ALS BK 2537713-AX date 20/11/2025 for heavy metal (As, Cd, Pb, Hg)
+- Cao – received date 19/12/2025 - Intertek report MTP/2025/06757 date 16/12/2025 (As, Pb, Cu. Hg, total heavy metal), report in ML-FM-1630-017
+- Plastic film 500 g LLDPE from S&S Film on 11/07/2025, found COA date 30/06/2025 (tensile strength, dimension, seal strength) ML-FM-1610-002 – Intertek BKKH25001898 date 03/03/2025, BKKH25001910 date 24/02/2025
+- PP bag 50 kg on 24/01/2025 from Vava Pack - ML-FM-1610-002 – SGS 6254391 date 20/06/2025, SGS BKKHL250000014 date 06/01/2025, SGS BKKHL24000460 date 19/12/2024 (micro)
+- Brown paper bag with PE on 09/09/2025 from Celebrite ML-FM-1610-023 – SGS 6124787 date 04/02/2025 and SGS 6104434 date 14/01/2025 (micro).
+- Jumbo bag with PE liner on 06/01/2026 from Vinh Plastic and Bags Joint Stock – Quatest 3 report KT3-00290AHD4/2 date 25/02/2024 for heavy metal and migration.
+
+Documented procedure non-conforming materials: ML-QP-4000-001 rev15 3/7/24 Purchasing procedure. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 10 | Measures for prevention of cross contamination | 10.1 | General requirements | ☒ | ☐ | 10.2 | Microbiological cross contamination | ☒ | ☐ | 10.3 | Allergen management | ☒ | ☐ | 10.4 | Physical contamination | ☒ | ☐ | Summary:
+Microbiological cross-contamination:
+Areas with potential microbial contamination sources and a dedicated zone: N/A
+Sharps control consists of prohibition of snap-off blades in production. Cutting blades on equipment are not present.
+Regarding allergen management, foreign matter management, PRP verifications and environmental monitoring, see detailed summaries in the FSSC additional requirements checklist.
+
+The following evidence was reviewed:
+GMP procedure: ML-QP-1600-001 rev.02
+Zoning plan: Glass/hard plastic control: list and map of each area, inspection by each own area ML-SP-3000-003 (Glass layout), Checklist – ML-FM-1600-007 – check daily for packing and check weekly for other.
+Knife policy: There is knife and scissors used in packing room, also 3 needles of sewing machine – all is daily checked and record in ML-FM-1600-007.
+Allergen management plan: ML-SP-1610-018 rev. 03 20/1/2021 Allergen management
+Allergen risk assessment is in HACCP analysis
+There is only sulfite in Lime – control cross contamination.
+Validation/verification/test results: Test report yearly by external laboratory date 26/1/24, SO2 less than 10 ppm. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 11 | Cleaning and sanitizing | 11.1 | General requirements | ☒ | ☐ | 11.2 | Cleaning and sanitizing agents and tools | ☒ | ☐ | 11.3 | Cleaning and sanitizing programmes | ☒ | ☐ | 11.4 | Cleaning in place (CIP) systems | ☒ | ☐ | 11.5 | Monitoring sanitation effectiveness | ☒ | ☐ | Summary:
+Cleaning and sanitizing programmes are established. The document(s), as reviewed, specify the elements as described in 11.3. Both manual and automatic cleaning is done, which includes cleaning of: Evaporator, filler.
+Cleaning activities are carried out by the operator of each section.
+Cleaning agent specifications are in place. Food grade cleaning chemicals are used in accordance with the manufacturer’s instructions. Verification of cleaning is done through visual inspections and pre-/post-operation inspections.
+CIP systems are installed at CIP station area for each production line ie evaporator. Parameters are defined. Systems are monitored and well managed. Cleaning programs are managed in an effective manner.
+
+The following evidence was reviewed:
+Cleaning program documents: ML-QP-1600-001 Rev.02 (GMP)
+Cleaning agent specifications: Sodium hydroxide
+Cleaning reports/records reviewed: ML-FM-1600-002 cleaning record, Evaporation, Crystallization, Packing in Jan 2026.
+CIP system parameters defined in MP-WI-3210-007 (NaOH 49.5%, 90-100C, 6-8 hours, rinse off and check pH and %NaOH, record in CIP of Evaporation (ML-FM-3210-004 and NaOH testing ML-FM-1630-033). CIP was done every 30 days, seen last CIP on 30/12/25 to 03/01/2026 for all tanks. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 12 | Pest control | 12.1 | General requirements | ☒ | ☐ | 12.2 | Pest control programs | ☒ | ☐ | 12.3 | Preventing access | ☒ | ☐ | 12.4 | Harborage and infestations | ☒ | ☐ | 12.5 | Monitoring and detection | ☒ | ☐ | 12.6 | Eradication | ☒ | ☐ | Summary:
+Pest control service performed by internal.
+A procedure is in place specifying the following target pests: rodents, flies, crawling insects, birds.
+A map of traps and detectors is available and accurate.
+Inspection: twice a month. Inspection reports have been reviewed. PDCA principles are followed accordingly.
+Annual evaluation report shows few pest activity with action.
+Competency of persons involved in pest control program has been reviewed.
+Approved chemicals are used. No eradication measures have been taken since the last audit and no significant pest activity trends have been identified. Buildings are suitably proofed.
+The pest control program, as reviewed, is managed in an effective manner.
+
+The following evidence was reviewed:
+Procedure(s): GMP procedure: ML-QP-1600-001 rev.02
+Traps/detectors map and Inspection report: ML-FM-4120-012 (Store – 4 mouse glue baits at chemical store 5 mouse glue baits at PKG store), ML-FM-4110-027 (WH – 20 mouse glue traps in 4 WH), ML-FM-4130-007 (Packing – 4 mouse glue traps and 3 insect lights).
+
+There is no pest control chemical used in the site (as requirement of organic)
+Daily inspection report – ML-FM-1020-005 (each area)
+Inspection reports: ML-FM-4130-006 (number of insects in the insect light), change glue board every week (Monday), record number of insect.
+Annual evaluation report: summary report 2025-2026.
+Trend data: Trend of insects, Trend of mice in glue trap year 2025-2026 – no mouse in year 2025. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 13 | Personnel hygiene and employee facilities | 13.1 | General requirements | ☒ | ☐ | 13.2 | Personnel hygiene facilities and toilets | ☒ | ☐ | 13.3 | Staff canteens and designated eating areas | ☒ | ☐ | 13.4 | Workwear and protective clothing | ☒ | ☐ | 13.5 | Health status | ☒ | ☐ | 13.6 | Illness and injuries | ☒ | ☐ | 13.7 | Personal cleanliness | ☒ | ☐ | 13.8 | Personal behaviour | ☒ | ☐ | Summary:
+Staff canteens and consumption areas are segregated from production areas. Hygienic conditions are maintained.
+Catering facilities on site: managed effectively and controls are in place for storage, cooking and holding incl. temperature. No issues observed during the audit.
+Changing rooms are located close to production facilities and found to be clean and tidy.
+Work wear of personnel includes: suitable, protective clothing (coats, hair nets, etc.). No Specific requirements apply for high-risk areas.
+Laundering of clothing is done by: internal Mitr Lao on a daily basis. Laundered cloths are used for each shift.
+Reporting of illness and injuries which might cause a risk to food safety must be reported according to the company hygiene rules. Adequate handwashing/sanitizing and toilet facilities are in place. The site personal behaviour policy complies with 13.8. Visitors to the site are required to complete a (health) questionnaire prior to entrance. This section meets the requirements of the ISO/TS 22002-1.
+
+The following evidence was reviewed:
+Site entrance (Heath questionnaire): ML-FM-1600-009
+Personal behavior policy: ML-QP-1600-001 GMP practices 7.2.1
+Daily personal hygiene inspection at Packing ML-FM-4130-014
+Swab test of hand and protective cloth – as per EMP plan, found test of hand swab and gown for TPC, Coliforms, E. coli – ML-FM-1630-029, last on 20/01/2026.
+Health report before start work: [ผู้ปฏิบัติงาน] (crystallization) on 30/11/2025, [ผู้ปฏิบัติงาน] (crystallization) on 20/11/2025, [ผู้ปฏิบัติงาน] (packing) on 28/11/2025, and [ผู้ปฏิบัติงาน] (packing) on 08/11/2025 for Salmonella Widal test, TB test, KOPA, and chest X-ray by Seno International Hospital.
+Yearly health check by CGH Hospital on 18/08/2026 for total 441 persons, for Physical Examination, chest X-ray, HBs Ag, HBs Ab, Anti HAV IgM, blood test, urine test, stool culture (packing), this checkup include canteen staff ([ผู้ปฏิบัติงาน], [ผู้ปฏิบัติงาน]), found all is normal. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 14 | Rework | 14.1 | General requirements | ☒ | ☐ | 14.2 | Storage. identification and traceability | ☒ | ☐ | 14.3 | Rework usage | ☒ | ☐ | Summary:
+Rework is used (sugar quality off-spec) and included in the hazard assessment. Handling of rework is done under controlled conditions with approval by QA department and recorded on batch reports. Traceability is maintained. An effective Rework system is in place.
+
+The following evidence was reviewed:
+Rework procedure: Nonconforming products: ML-QP-1620-003 rev.10 date 26/01/2023. Normally nonconforming products will be quality issues i.e. purity, sediment of organic DCR. NC products will remelt to reprocess. Year 2025-2026 – there was no NC product to remelt.
+
+Traceability records: Off spec sugar approval (ML-FM-4110-018), melting report (ML-FM-3300-004), vacuum pan report ML-FM-220-011, and lot identification of rework. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 15 | Product recall procedures | 15.1 | General requirements | ☒ | ☐ | 15.2 | Product recall requirements | ☒ | ☐ | Summary:
+No actual recalls/withdrawals related to food safety have occurred. The site Recall procedure is defined. A list of key contacts is maintained and up to date. Last mock recall test was conducted on 25/01/2026. No improvements have been required as result of the outcome.
+
+The following evidence was reviewed:
+Recall procedure: ML-QP-1610-001 rev. 03 date 13/01/2018 Recall procedure
+Managing director ([ผู้ปฏิบัติงาน]) is authorized person to recall product. Emergency contact list is in procedure for food safety team and management team.
+Records: Mock recall 25/01/2026, DCR sugar 1 kg lot 0935 MFG 15/02/2025, Packing 13-15 May 2025, delivery on 25 December 2025 to local customer 19 tons and on 20 January 2026 to local consumer 20 tons, in case found woven bag scrap in sugar, recall by Sales. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 16 | Warehousing | 16.1 | General requirements | ☒ | ☐ | 16.2 | Warehousing requirements | ☒ | ☐ | 16.3 | Vehicles, conveyances and containers | ☒ | ☐ | Summary:
+Warehouse contains only ambient stable (sugar). Storage spaces, as observed, are maintained in hygienic conditions. Temperatures and humidity are not required. Chemicals and (raw) materials are stored separately from finished products. No diesel powdered fork-lift trucks are operated.
+
+Goods are transported by trucks and bulk tankers. Transportation requirements including condition of vehicles are specified in service contracts. Contractors T&T Import Export, [ผู้ปฏิบัติงาน] Transport are used for the transportation of: Sugar. Trucks and trailers are visually inspected before loading. Cleaning between loads records are retained. Bulk containers are not used. Vehicles/conveyances/containers used are found to be clean and overall in good state of repair. This section meets the requirements of the ISO/TS 22002-1.
+See summary in section 2.5.10 for the stock rotation program and details.
+
+The following evidence was reviewed:
+There are 4 WH of FG – WH1 = raw sugar VHP on the floor, WH 2 = DCR sugar, WH2 = DCR sugar. And WH 4 = organic and DCR sugar, all are in ambient temperature.
+There are 1 store of chemical, 1 store of packaging, and 1 store of maintenance spare part, all are in ambient and locked.
+Stock control: SAP program, with lot identification and FIFO/FEFO control
+Sampling check stock of Maxfloc 917 and PEG 400.
+
+Transportation requirements: Contract 005/12/24 Nissha Transport
+Transportation records (temperature/cleaning between loads):
+Delivery vehicle inspection records: ML-FM-4110-008 Vehicle check by security and ML-FM-1610-012 check vehicle and product every cloth pallet as seen loading of
+Date 13/01/2026 – DCR 50 kg lot 1103 2502 25 (MFG 25/02/2025) total 940 bags (47,000 kg), truck number Bor Kor 1999 / Bor Kor 2411, to Vietnam (SO1744902141), weight report ML-FM-4110-006, lot of sugar was recorded every cloth pallet in ML-FM-1610-012.
+Date 23/01/2026 – DCR Organic 1000 kg lot 0249070126 (MFG 07/01/2026), total 20 bags (20,000 kg), truck number 70-1767 / 70-1768, container number MRKU721764522G1, Agent seal number TH1254337-UST12306, included container inspection by surveyor (Cotecna) and seal surveyor TH250279. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 17 | Product information/consumer awareness | 17.1 | Product information and consumer awareness | ☒ | ☐ | Summary:
+Production information/awareness is effectively communicated to customers through recipes, finished product specifications and site website.
+See summary in section 2.5.2 for the complete program and details. | ISO/TS 22002-1:2009 - Food Manufacturing | Conform | Grade | If No – detail NC
+If a clause is N/A, provide a justification | NC# | Clause | Requirement | Yes | No | Minor/Major/ Critical | 18 | Food defense, biovigilance and bioterrorism | 18.1 | General requirements | ☒ | ☐ | 18.2 | Access controls | ☒ | ☐ | Summary:
+Site premises is fenced off. Various access controls are in place, i.e. locked doors, electronic card key access, CCTVs. No breaches have been reported or observed during the audit. Site is well secured.
+See summary in section 2.5.3 for the complete program and details.

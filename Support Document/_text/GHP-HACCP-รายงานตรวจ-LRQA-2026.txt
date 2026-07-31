@@ -1,0 +1,1779 @@
+Audit Report
+No. 111, Unit 10, Kenghet Village, Xaybouly District,Savannakhet Province, , Lao
+People`s Democratic republic
+Client address:
+GOOD HYGIENE PRACTICES (2022),
+HACCP Codex Alimentarius 2022
+Audit criteria:
+Audit team:
+[ผู้ปฏิบัติงาน] BGK Thailand
+LRQA office:
+LRQA reference: BGK6018308 / 7242254
+Audit dates: 25-January-2026 - 26-January-2026
+Reporting date: 31-January-2026
+Report for: Mitr Lao Sugar Co., Ltd.
+Visit type: Certificate Renewal
+HIDDEN TEXT TO MARK THE BEGINNING OF THE TABLE OF CONTENTS
+Contents Page
+01. Executive report 3
+02. Audit findings 4
+03. Audit summary 12
+04. Next visit details 13
+05. Approval details 14
+06. Attendees 15
+07. Additional information 16
+08. Appendix 17
+P1175_HACCP 2022_Report_Certificate Renew - Mitr Lao 2026.docx
+FSSC_V6_Detailed_Auditplan_template_for 2 auditors_v1.1_Mitr Lao (FSSC and HG 6 MD).doc
+BGK6018308_APP_Audit Program Plan_Mitr Lao 2026.docx
+Attachments:
+This report was presented to and accepted by:
+Name: [ผู้ปฏิบัติงาน]
+Job title: Quality Management
+01. Executive report
+Based on the audit outcome the Audit Team recommends the GOOD HYGIENE PRACTICES (2022), HACCP
+Codex Alimentarius 2022 certification of Mitr Lao Sugar Co., Ltd. for the agreed scope.
+Based on the audit outcome the Audit Team recommends the GOOD HYGIENE PRACTICES (2022), HACCP
+Codex Alimentarius 2022 certification of Mitr Lao Sugar Co., Ltd. for the agreed scope. Food safety/ hygiene
+system has been implemented and maintained. Previous Minor NCs were verified and closed. Two new Minor NCs
+were issued. Corrective action plan was provided, reviewed and accepted. Effectiveness of corrective action will be
+verified form closure in next visit.
+Continual improvement:
+Cleaning
+Audit outcome:
+Areas for senior management attention
+Maintenance and Calibration
+Visit audit objective:
+This was a Certificate Renewal visit, conducted against objectives previously notified to the client. The objectives of
+the next visit, including any applicable visit specific objective (theme / focus), are confirmed in the audit plan
+attached to this report.
+Report: BGK6018308/7242254 - 31-January-2026 Page 3
+02. Audit findings
+Where scheme requirement differs to the standard definition below, the scheme definition will take preference
+Major Nonconformity
+The absence of, or the failure to implement and maintain, one or more management system elements, or a situation which would, on the basis
+of the available objective evidence, raise significant doubt of the management to achieve: The policy, objectives or public commitments of the
+organisation, compliance with the applicable regulatory requirements, conformance to applicable customer requirements, conformance with the
+audit criteria deliverables.
+Minor Nonconformity
+A finding indicative of a weakness in the implemented and maintained system, which has not significantly impacted on the capability of the
+management system or put at risk the system deliverables, but needs to be addressed to assure the future capability of the system.
+Audit criteria (clause) GOOD HYGIENE PRACTICES
+(2022) ( GHP 5.1.1 )
+6556700_BGKPSY03
+Reference
+number
+Issue date 24-January-2025
+Minor NC
+Grade
+Process / aspect Maintenance
+Closed
+Status
+No. 111, Unit 10,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Partial ineffective on maintenance
+Evidence It was seen maintenance activities during production in the area of
+Crystallization. There was no evidence that the maintenance
+personnel has been trained in the product hazards associated with
+their activities. There is no risk assessment of contamination in the
+area from maintenance activities.
+Proposed correction, corrective action
+and timescales
+Root Cause: No risk assessment has been conducted for
+maintenance activities during the production process, nor has
+training been provided to employees or contractors involved. This is
+due to the absence of formalized documentation for the process.
+Correction: Conduct a risk assessment of maintenance activities and
+establish it as a guideline in the operational manual. Additionally,
+provide training for relevant personnel and maintain training records.
+Corrective Action: Ensure compliance through GHP line inspections
+or internal audits.
+Person Responsible: Mr.[ผู้ปฏิบัติงาน]
+Correction Correction was reviewed and closed as seen outsourced engineer
+training record, no risk of engineer work to the process.
+[ผู้ปฏิบัติงาน] W 26/01/2026.
+Root cause analysis Root cause was reviewed and accepted - why why analysis - No risk
+assessment has been conducted for maintenance activities
+[ผู้ปฏิบัติงาน] W. 26/01/2026.
+Corrective action Corrective action was reviewed and closed as seen outsourced
+engineer were trained by Safety officer (Real Solution and KM Tech)
+Requirement Attention should be paid to hygiene during cleaning and
+maintenance operations so as not to compromise food safety and
+suitability. Cleaning products suitable for food contact surfaces
+should be used in food preparation and storage areas.
+Report: BGK6018308/7242254 - 31-January-2026 Page 4
+Corrective action in July 2025.
+[ผู้ปฏิบัติงาน] W 26/01/2026
+Date of closure 26-January-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6018308/7242254 - 31-January-2026 Page 5
+Audit criteria (clause) GOOD HYGIENE PRACTICES
+(2022) ( GHP 3.2.7 )
+6556700_BGKPSY02
+Reference
+number
+Issue date 24-January-2025
+Minor NC
+Grade
+Process / aspect Product storage
+Closed
+Status
+No. 111, Unit 10,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Partial ineffective on product handling in packing room.
+Evidence Product DCR 1 kg lot 22/12/24 in woven sack in the middle of
+packing room has no identification if it is normal product or NC
+product. The product kept in packing room where is not designed for
+product storage.
+Proposed correction, corrective action
+and timescales
+Root Cause: Packed sugar that was not yet filled to capacity was
+temporarily stored for further filling. However, employees did not
+recognize the need for labeling due to the absence of a clearly
+defined operational guideline
+Correction: Label stored sugar and place it in the warehouse.
+Retrieve it when needed for repackaging into smaller units.
+Corrective Action: Develop a standard operating procedure (SOP)
+for this process, provide training for relevant personnel, and ensure
+compliance through internal audits.
+Person Responsible: Ms. [ผู้ปฏิบัติงาน]
+Correction Correction was reviewed and accepted, tag is clear identify for sugar
+in packing room.
+[ผู้ปฏิบัติงาน] W. 26/01/2026.
+Root cause analysis Root cause was reviewed and accepted - why why analysis -
+normally no sugar in packing, no training.
+[ผู้ปฏิบัติงาน] W 26/01/2026.
+Corrective action Corrective action was reviewed and closed as seen product in
+packing room are with clearly tag.
+[ผู้ปฏิบัติงาน] W. 26/12/2026.
+Date of closure 26-January-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Requirement 3.2.7 Storage
+Adequate and, where necessary, separate facilities for the safe and
+hygienic storage of food products, food ingredients, food packaging
+materials and non-food chemicals (including cleaning materials,
+lubricants, fuels), should be provided. Storage should allow for
+segregation of raw and cooked foods or allergenic and non-
+allergenic food.
+Report: BGK6018308/7242254 - 31-January-2026 Page 6
+Audit criteria (clause) GOOD HYGIENE PRACTICES
+(2022) ( GHP 3.2.5 )
+6556700_BGKPSY01
+Reference
+number
+Issue date 24-January-2025
+Minor NC
+Grade
+Process / aspect Air control
+Closed
+Status
+No. 111, Unit 10,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Partial ineffective on air control
+Evidence There is no record of temperature and humidity for packing room.
+Proposed correction, corrective action
+and timescales
+Root Cause: No formally documented standard exists for controlling
+temperature and humidity in the packaging room
+Correction: Install temperature monitoring devices and maintain
+systematic data recording.
+Corrective Action: Establish a standardized manual for temperature
+and humidity control, incorporating verification procedures,
+maintenance protocols, and corrective actions for deviations beyond
+specified limits.
+Person Responsible: Ms. [ผู้ปฏิบัติงาน]
+Correction Correction was reviewed and closed as seen report to check
+temperature and %RH, also equipment in packing room.
+[ผู้ปฏิบัติงาน] W 26/01/2026.
+Root cause analysis Root cause analysis is accepted - why why analysis - no plan to
+check.
+[ผู้ปฏิบัติงาน] W. 26/01/2026
+Corrective action Corrective action was reviewed and closed as seen Temperature &
+humidity records: plant to check at packing room every 8 hours ML-
+Requirement 3.2.5 Air quality and ventilation
+Adequate means of natural or mechanical ventilation should be
+provided, in particular to:
+minimize air-borne contamination of food, for example, from
+aerosols and condensation droplets;
+help control ambient temperatures;
+control odours which might affect the suitability of food; and
+control humidity to ensure the safety and suitability of food (e.g.
+to prevent an increase in moisture of dried foods that would allow
+growth of microorganisms and production of toxic metabolites).
+Ventilation systems should be designed and constructed so that air
+does not flow from contaminated areas to clean areas; the systems
+should be easy to maintain and clean.
+Report: BGK6018308/7242254 - 31-January-2026 Page 7
+Corrective action FM-4130-020.
+[ผู้ปฏิบัติงาน] W. 26/01/2026.
+Date of closure 26-January-2026
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6018308/7242254 - 31-January-2026 Page 8
+Audit criteria (clause) GOOD HYGIENE PRACTICES
+(2022) ( GHP 14.1 )
+7242254_SBCRWT01
+Reference
+number
+Issue date 28-January-2026
+Minor NC
+Grade
+Process / aspect Packing
+Open
+Status
+No. 111, Unit 10,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Partial Insufficient of lot identification.
+Evidence Lot identification of DCR 1 kg was defined MFG date, strike number,
+and shift packing of jumbo bag, but it was not sufficient to know
+repacking date in case many repacking dates and may not know lot
+of packaging.
+Proposed correction, corrective action
+and timescales
+Root cause
+The organization’s traceability system design did not define the
+repacking process as a new lot-creation point, and no traceability
+risk assessment was conducted for scenarios involving multiple
+repacking activities. As a result, the lot identification system was not
+able to clearly identify the repacking date or fully link the relevant
+packaging lots in accordance with ISO 22000 clause 8.3
+Correction
+The organization will record the repacking date and the packaging
+lot information on the packaging containers for DCR 1 kg products
+that are currently in process and in inventory, in order to ensure full
+traceability of the repacking lots.
+Corrective action
+• The organization will improve the lot identification method for
+products subject to repacking by incorporating the repacking date
+and the relevant packaging lot information into the lot identification
+system.
+• The organization will revise the repacking WI/SOP to clearly define
+the procedures for identifying and recording lot identification
+information.
+•The organization will communicate and provide training to relevant
+personnel involved in the repacking process to ensure compliance
+with the revised lot identification system.
+•The organization will establish verification activities for lot
+identification records after repacking to confirm that the traceability
+system is fully effective.
+Correction
+Root cause analysis
+Requirement 14.1 Lot identification and traceability
+Lot identification or other identification strategies are essential in
+product recall and also help effective stock rotation. Each container
+of food should be permanently marked to identify the producer and
+the lot. The General Standard for the Labelling of Pre-packaged
+Foods (CXS 1-1985)7 applies.
+Report: BGK6018308/7242254 - 31-January-2026 Page 9
+Corrective action
+Date of closure
+LRQA has reviewed and verified the
+implementation of actions taken.
+Report: BGK6018308/7242254 - 31-January-2026 Page 10
+Audit criteria (clause) HACCP Codex Alimentarius 2022 (
+HACCP 19.4 )
+7242254_SBCRWT02
+Reference
+number
+Issue date 28-January-2026
+Minor NC
+Grade
+Process / aspect HACCP
+New
+Status
+No. 111, Unit 10,Savannakhet Province,LA
+Location(s)
+Statement of non conformity Partial insufficient of flow diagram.
+Evidence Flow diagram was not updated i.e. magnetic after cane shredding
+(before milling), metal detector of 1 kg packing, filter air of sugar
+drier, DCR off spec from sugar screening 30 mesh (to VHP).
+Proposed correction, corrective action
+and timescales
+Root cause
+Although the preparation and review of the flow diagram are defined
+within the change management system, clear and practical
+mechanisms for follow-up and verification have not been established
+to ensure that the flow diagram is consistently updated whenever
+control equipment is added or product flow routes are changed. As a
+result, the controlled document does not fully reflect the actual
+production process.
+Correction
+The flow diagram has been updated to accurately reflect the actual
+production process and has been verified against on-site operations
+Corrective action
+The organization will enhance the change management process by
+requiring the review and on-site verification of the flow diagram prior
+to the closure of any change.
+Correction
+Root cause analysis
+Corrective action
+Date of closure
+LRQA has reviewed and verified the
+implementation of actions taken.
+Requirement 19.4 Construct flow diagram (Step 4)
+A flow diagram that covers all steps in the production of a specific
+product, including any applicable rework, should be constructed.
+The same flow diagram may be used
+for a number of products that are manufactured using similar
+processing steps. The flow diagram should indicate all inputs,
+including those of ingredients and food contact materials, water, and
+air.
+Report: BGK6018308/7242254 - 31-January-2026 Page 11
+03. Audit summary
+[ผู้ปฏิบัติงาน] Auditor:
+GHP-HACCP 2022
+Audit of:
+Auditee(s): Mr.Phukhong - FSTL
+This visit, audit was conducted as onsite audit that integrate audit with FSSC V.6 Food.
+Detail of audit, see HACCP report (P1175). In general, the function has demonstrated the implementation and
+effectiveness of GHP and HACCP system.
+There were 2 non-conformities raised in this audit.
+Objective evidence, process controls reviewed and comments:
+The process(es) were found to be non-compliant from the sample taken and non-conformity reported.
+Evaluation and conclusions:
+Report: BGK6018308/7242254 - 31-January-2026 Page 12
+04. Next visit details
+Standard(s) / Scheme(s)
+GOOD HYGIENE
+PRACTICES (2022)
+Visit type Surveillance 1
+Audit days 0.50 DAY Due date March, 2027
+Team
+Site Audit
+days
+Delivery
+Method
+Remote
+Effort
+Activity codes
+No. 111, Unit 10,Savannakhet Province,LA 0.50
+DAY
+Onsite 0 DAY EA03
+Standard(s) / Scheme(s)
+HACCP Codex Alimentarius
+2022
+Visit type Surveillance 1
+Audit days 0.50 DAY Due date March, 2027
+Team
+Site Audit
+days
+Delivery
+Method
+Remote
+Effort
+Activity codes
+No. 111, Unit 10,Savannakhet Province,LA 0.50
+DAY
+Onsite 0 DAY 0033,EA03
+Report: BGK6018308/7242254 - 31-January-2026 Page 13
+05. Approval details
+Product Site Status
+GOOD HYGIENE PRACTICES
+(2022)
+No. 111, Unit 10,Savannakhet Province,LA Approved
+It is confirmed that all sites and scopes as detailed in the contract for GOOD HYGIENE PRACTICES (2022),
+HACCP Codex Alimentarius 2022 are approved, or are being recommended for approval at this visit or remain
+unapproved, apart from any new approvals, suspensions and withdrawals shown below.
+Report: BGK6018308/7242254 - 31-January-2026 Page 14
+Name Role
+Attended opening
+meeting
+Attended closing
+meeting
+[ผู้ปฏิบัติงาน] Quality Management Y Y
+Khamtan S. Quality Analysis Y Y
+Oraphin K. HR Y Y
+Somkhong S Production Y Y
+[ผู้ปฏิบัติงาน] S Maintenance Y Y
+06. Attendees
+Report: BGK6018308/7242254 - 31-January-2026 Page 15
+07. Additional information
+LRQA Observation Legal entity
+Notification to client of an opportunity for improvement in
+observed current practices, or a positive aspect worthy
+of a special mention observed. The requirements of the
+Standard(s) are met, follow up not mandatory for client
+or LRQA. Will be recorded in the audit summary table
+applicable to the area being assessed and highlighted in
+the executive summary where relevant.
+The accredited legal entity and client facing office that
+has provided the assessment service in this report is
+referenced in the applicable agreement for this service.
+Confidentiality
+We will treat the contents of this report, together with
+any notes made during the visit, in the strictest
+confidence and will not disclose them to any third party
+without written client consent, except as required by the
+accreditation authorities.
+Sampling
+The audit process relies on taking a sample of the
+activities of the business. This is not statistically based
+but uses representative examples. Not all of the detailed
+nature of a business may be sampled so, if no issues
+are raised in a particular process, it does not necessarily
+mean that there are no issues, and if issues are raised,
+it does not necessarily mean that these are the only
+issues.
+Generic audit objectives and team
+responsibilities
+The generic audit objectives and team responsibilities
+are included in the Client Information Note ‘Assessment
+Process’ included on our website www.lrqa.com. Any
+visit specific objectives for the next visit will be recorded
+in the report of the previous visit and will be addressed
+through the visit plan for that visit. The assessment
+standard and roles of the audit team are defined in the
+assessment visit confirmation sent to the client.
+Furthermore, on the website there are Client Information
+Notes available for the various visit types.
+Audit Criteria
+The audit criteria consist of the assessment standard
+and the client’s management system processes and
+documentation.
+LRQA Group Limited, its affiliates and subsidiaries and their respective officers, employees or agents are, individually and collectively, referred to in this clause as
+'LRQA'. LRQA assumes no responsibility and shall not be liable to any person for any loss, damage or expense caused by reliance on the information or advice in this
+document or howsoever provided, unless that person has signed a contract with the relevant LRQA entity for the provision of this information or advice and in that case
+any responsibility or liability is exclusively on the terms and conditions set out in that contract. LRQA retains ownership of this report.
+Report: BGK6018308/7242254 - 31-January-2026 Page 16
+08. Appendix
+Report: BGK6018308/7242254 - 31-January-2026 Page 17
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Chapter One - Good Hygiene Practices
+General / Organisation – give a description of the activities of the company, company profile, like
+organization chart, place in the food chain, working in shifts, size of organization etc.
+Mitr Lao Sugar was established and started production in 2006 in Savannakhet province, Laos. Main
+Product is raw cane sugar for direct consumption (DCR) and for further process (VHP). Mitr Lao Sugar is
+one of factory in Mitr Phol Group which has head office in Bangkok, Thailand producing sugar from cane.
+However, by organization structure and distance limitation, this factory manages independently in every
+function. Capacity of the factory approx. 5,000 ton/ day. There are 2 HACCP study and 1 production line
+for product 1 kg, 50 kg and 1 ton. The site have been certified ISO9001:2015, Halal, Kosher and Organic
+certified. There is no outsource process.
+1. Introduction and control of food hazards
+The development, implementation and maintenance of GHPs conditions and activities that are
+necessary to support the production of safe and suitable food at all stages of the food chain from primary
+production through to handling of the final product.
+PRPs are appropriate for the scope of approval and generally effectively implemented across the site.
+Details are reflected in the PRP checklist. Hazard has been analysed on every process and come out with
+CCP and OPRP monitoring plan as details in HACCP system part in the report.
+2. Primary production
+For primary production assess whether the food is safe and suitable for its intended use. Where
+necessary, this will include:
+- an assessment of the suitability of water used where it may pose a hazard, for example, crop irrigation,
+rinsing activities, etc.
+− avoiding the use of areas where the environment poses a threat to the safety of food (e.g.
+contaminated sites);
+− controlling contaminants, pests and diseases of animals and plants, to the extent practicable, to
+minimize the threat to food safety (e.g. appropriate use of pesticides and veterinary drugs);
+− adopting practices and measures to ensure food is produced under appropriately hygienic conditions
+(e.g. cleaning and maintaining harvest equipment, rinsing, hygienic milking practices).
+The site supplier approval process is documented. Procedure distinguishes between new and trusted
+suppliers and is risk based. Several supportive documents are in place to support this process.
+Acceptance forms are in place. In case of absence of GFSI certificate, audits are conducted prior to
+accepting materials for production.
+Samples have been taken of: Lime Master, Engineering Cheme, Vava pack,
+Procedure of control of supplier is documented and maintained (MP-QP-9200-001, Rev. 40, effective date
+on 30 May 2024). Once a year: latest evaluation was done in 2025. The annual evaluation of supplier’
+performance has been maintained with the records. The Approved Vendor List (AVL) has been reviewed
+annually and documented in Rev. 12 January 2026 (MP-SP-9200-002, Rev. 32).
+The raw materials have been inspected in every delivery with the mentioned criteria in the raw material
+specifications. Some of criteria can be inspected by company inspectors/ testing methods and some of
+criteria has been verified by COA from suppliers and external annual testing result by external laboratory.
+Sugar cane is supplied by the company own sugar cane farms (25%) with 10,000 hectares as planting
+area and the contracted farmers & contractors (75%). The control at the farms has been done by
+Agricultural section. The pesticide, herbicide, fungicide and fertilizer have been used, controlled and
+complied with the regulations. The application records of chemicals can be traced back from the Cane
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+MIS application system. The testing of pesticide and herbicide residue in raw material has been done
+randomly. The target of sugar cane tonnage is set up at 1 million tons for this season crop (2025/2026).
+For other materials such as processing aids and product packaging etc, they have been supplied by
+general suppliers from Thailand and Vietnam. There is the annual supplier evaluation based on the
+incoming inspection result.
+Sampling the suppliers as following;
+• Celebrite (manufacture in Thailand) (paper bag 25 kgs); FSSC 22000 certified)
+• Vinh Plastic and bag joint Stock Company (manufacture in Vietnam) ; Migration test was reported on 5
+March 2024
+• Golden Lime public Co., Ltd (Soda Lime)
+• Thai Chemical & Engineering (Flocculant)
+• Mr. [ผู้ปฏิบัติงาน] (Sugar cane farmer)- under contractor named “ [ผู้ปฏิบัติงาน]” . Farmer no.
+ET312001006
+It was found that the approved vendor list has included to these suppliers and also there were annual
+evaluations of supplier performance as required by the documented procedure.
+Onsite audit at supplier’s sites have been planned to be done annually. Sampling the supplier audit result
+for Vavapack (Supplied PP Jumbo bag and PP plastic bag packing size 50 kg) on 3 July 2025. The result
+was reported at 88.10% with 13 audit findings were issued and followed in correction and corrective
+actions from supplier systematically. The qualification of auditors were acceptable.
+Verification method/program documented in:
+ML-WI-1610-001 rev.03 date 08/93/2025 – Incoming inspection
+Vehicle of material is checked for cleanliness, pest, allergen, covering, and condition of material by store,
+record in ML-FM-4120-013.
+Verification monitoring records seen (COAs, internal lab results):
+- PEG 400 – received date 15/02/2025, ML-FM-1610-023, COA of purity, viscosity, water content on
+22/01/2025 - ALS BK2537701-AJ date 31/10/2025 for heavy metal (As, Cd, Pb, Hg)
+- Maxfloc 917 – received on 24/11/2024, COA of dry content, moisture, pH, viscosity on 20/11/2025 – ALS
+BK 2537713-AX date 20/11/2025 for heavy metal (As, Cd, Pb, Hg)
+- Cao – received date 19/12/2025 - Intertek report MTP/2025/06757 date 16/12/2025 (As, Pb, Cu. Hg,
+total heavy metal), report in ML-FM-1630-017
+- Plastic film 500 g LLDPE from S&S Film on 11/07/2025, found COA date 30/06/2025 (tensile strength,
+dimension, seal strength) ML-FM-1610-002 – Intertek BKKH25001898 date 03/03/2025, BKKH25001910
+date 24/02/2025
+- PP bag 50 kg on 24/01/2025 from Vava Pack - ML-FM-1610-002 – SGS 6254391 date 20/06/2025, SGS
+BKKHL250000014 date 06/01/2025, SGS BKKHL24000460 date 19/12/2024 (micro)
+- Brown paper bag with PE on 09/09/2025 from Celebrite ML-FM-1610-023 – SGS 6124787 date
+04/02/2025 and SGS 6104434 date 14/01/2025 (micro).
+- Jumbo bag with PE liner on 06/01/2026 from Vinh Plastic and Bags Joint Stock – Quatest 3 report KT3-
+00290AHD4/2 date 25/02/2024 for heavy metal and migration.
+Documented procedure non-conforming materials: ML-QP-4000-001 rev15 3/7/24 Purchasing procedure
+3. Establishment - Design of facilities and equipment
+Depending on the nature of the operations and the associated risks, assess whether the premises,
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+equipment and facilities location, design and construction that:
+• contamination is minimized;
+• design and layout permit appropriate maintenance, cleaning and disinfection and minimize airborne
+contamination;
+• surfaces and materials, in particular those in contact with food, are non-toxic for their intended use;
+• where appropriate, suitable facilities are available for temperature, humidity and other controls;
+• there is effective protection against pest access and harbourage; and
+• there are sufficient and appropriate washroom facilities for personnel
+Plant located in private area. Site boundaries are clearly identified. Premises is fenced off with gate
+access to the facility. Types of buildings include production facility, storage building, offices, laboratory
+and maintenance workshop. Good condition of constructions noted. No risks have been identified related
+to the external environment. Site area is properly maintained.
+Internal design, layout, equipment and traffic patterns are found to be adequate. No standing water (i.e.
+insufficient drains) and risks regarding external openings have been observed during the audit. Laboratory
+facilities are present on-site and segregated from production areas. Storage of food, packaging materials,
+ingredients and non-food chemicals is effectively managed.
+4. Training and competency
+Assess all those engaged in food operations who come directly or indirectly into contact with food should
+have sufficient understanding of food hygiene to ensure they have competence appropriate to the
+operations they are to perform
+Competency (matrix): documented job qualification
+Training plan: annual training plan 2025 and 2026; food safety awareness, pest control, hygiene
+requirements, allergen and site security plan. Training programs are established and schedule as yearly
+and OJT by each area. Job description for each position is established. Some position was verified such
+as Production worker at CCP step & OPRP steps and cleaning worker. Medical screening has been
+implemented and maintained for new staff. Orientation program has been provided for new staff and
+records have been existed.
+Employee competency records: Sampling the job description, training needs of and training record of
+production workers as following;
+•[ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+•[ผู้ปฏิบัติงาน] (Seasonal worker at metal detector operator)
+•[ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+•[ผู้ปฏิบัติงาน] (Production worker at evaporating process)
+•[ผู้ปฏิบัติงาน] (Head of production section)
+•[ผู้ปฏิบัติงาน] (Production worker at OPRP step; filtering process)
+The annual training plan has been established and maintained.
+Annual refresh training of food safety awareness has been provided annually. The latest training was
+done on 12 September 2025.
+The plant disease training was put in the annual training plan provided by external party.
+; the personal files have been kept by the HR department with the hard copy. The technical background,
+education evidence and training records have been kept and competency matrix is documented.
+Food safety team (leader) competency: Mr. [ผู้ปฏิบัติงาน] (QA manager) has been
+designated. HACCP team is multidisciplinary team, Production, QA, Engineer, Purchasing, warehouse
+and HR. The HACCP team was trained by consultants. The latest training was provided for 2 days training
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+course done on 09 July 2024. The team members have technical knowledge as their education
+background. The HACCP team competent can be acceptable. There is no new HACCP team member
+since last FSSC audit.
+5. Establishment maintenance, cleaning and disinfection and pest control
+Assess whether the establish systems are effective:
+• appropriate establishment maintenance;
+• cleanliness and, when necessary, adequate disinfection;
+• pest control;
+• waste management
+Cleaning and sanitizing programmes are established. The document(s), as reviewed, specify the
+elements as described in 11.3. Both manual and automatic cleaning is done, which includes cleaning of:
+Evaporator, filler.
+Cleaning activities are carried out by the operator of each section.
+Cleaning agent specifications are in place. Food grade cleaning chemicals are used in accordance with
+the manufacturer’s instructions. Verification of cleaning is done through visual inspections and pre-/post-
+operation inspections.
+CIP systems are installed at CIP station area for each production line ie evaporator. Parameters are
+defined. Systems are monitored and well managed. Cleaning programs are managed in an effective
+manner.
+The following evidence was reviewed:
+Cleaning program documents: ML-QP-1600-001 Rev.02 (GMP)
+Cleaning agent specifications: Sodium hydroxide
+Cleaning reports/records reviewed: ML-FM-1600-002 cleaning record, Evaporation, Crystallization,
+Packing in Jan 2026.
+CIP system parameters defined in MP-WI-3210-007 (NaOH 49.5%, 90-100C, 6-8 hours, rinse off and
+check pH and %NaOH, record in CIP of Evaporation (ML-FM-3210-004 and NaOH testing ML-FM-1630-
+033). CIP was done every 30 days, seen last CIP on 30/12/25 to 03/01/2026 for all tanks.
+6. Establishment: personal hygiene
+Assess those who come directly or indirectly into contact with food:
+• maintain appropriate personal health;
+• maintain an appropriate degree of personal cleanliness; and
+• behave and operate in an appropriate manner.
+Staff canteens and consumption areas are segregated from production areas. Hygienic conditions are
+maintained. Catering facilities on site: managed effectively and controls are in place for storage, cooking
+and holding incl. temperature. No issues observed during the audit.
+Changing rooms are located close to production facilities and found to be clean and tidy.
+Work wear of personnel includes: suitable, protective clothing (coats, hair nets, etc.). No Specific
+requirements apply for high-risk areas.
+Laundering of clothing is done by internal Mitr Lao on a daily basis. Laundered cloths are used for each
+shift.
+Reporting of illness and injuries which might cause a risk to food safety must be reported according to the
+company hygiene rules. Adequate handwashing/sanitizing and toilet facilities are in place. The site
+personal behaviour policy complies with 13.8. Visitors to the site are required to complete a (health)
+questionnaire prior to entrance. This section meets the requirements of the ISO/TS 22002-1.
+The following evidence was reviewed:
+Site entrance (Heath questionnaire): ML-FM-1600-009
+Personal behaviour policy: ML-QP-1600-001 GMP practices 7.2.1
+Daily personal hygiene inspection at Packing ML-FM-4130-014
+Swab test of hand and protective cloth – as per EMP plan, found test of hand swab and gown for TPC,
+Coliforms, E. coli – ML-FM-1630-029, last on 20/01/2026.
+Health report before start work: [ผู้ปฏิบัติงาน] (crystallization) on 30/11/2025, [ผู้ปฏิบัติงาน] (crystallization) on
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+20/11/2025, [ผู้ปฏิบัติงาน] (packing) on 28/11/2025, and [ผู้ปฏิบัติงาน] (packing) on 08/11/2025 for
+Salmonella Widal test, TB test, KOPA, and chest X-ray by Seno International Hospital.
+Yearly health check by CGH Hospital on 18/08/2026 for total 441 persons, for Physical Examination,
+chest X-ray, HBs Ag, HBs Ab, Anti HAV IgM, blood test, urine test, stool culture (packing), this checkup
+include canteen staff ([ผู้ปฏิบัติงาน], [ผู้ปฏิบัติงาน]), found all is normal.
+7. Control of Operations
+Assess the food produce is safe and suitable for human consumption on:
+• formulating design requirements with respect to raw materials and other ingredients,
+composition/formulation, production, processing, distribution, and consumer use to be met as
+appropriate to the food business;
+• designing, implementing, monitoring and reviewing effective control systems as appropriate to the
+food business.
+Hazard control:
+Product description ML-SP-1600-006 Rev.07 date 10/01/2022
+DCR: shelf life 3 years, moisture <0.2%, packed size 0.5, 1 kg in LLDPE, and 50 Kg in HDPE PP woven,
+intended use for direct consumption
+VHP: shelf life 3 years, packed in Jumbo bag 1000 kg for further processing
+Refer to ML67-2008, Codex 212-1999, ML-SP-1610-001 (specification of ML sugars)
+Raw material description: ML-SP-1600-006 Rev.07 date 10/01/2022 for Fresh cane, chemical Cao,
+Flocculent, PEG 400 (poly glycerol) - ML-SP-1610-001 (specification of chemical), and packaging (paper
+bag 25 kg, LLDPE film, HDPE inner bag) - ML-SP-1610-003 (specification of packaging)
+Flow diagram ML-SP-3000-001 Rev.16 date 15/01/2026,
+HACCP analysis ML-SP-1600-012 Rev.12 date 21/12/2024 – TOR is defined, risk assessment by likelihood
+of occurrence and likelihood of severity (4x4), to classify to Sa, Mi, Ma, and Cr, if significant level minor,
+go to Q1-Q5 for categorize to CCP and OPRP.
+CCP and OPRP Plan ML-SP-1600-011.
+CCP1 – Vacuum pan >63C >45 min
+CCP2 – Magnet at sizing >9000 gauss, no metal >3 mm
+CCP3 – Metal detector Fe 2.5, Non-Fe 3.0, SUS 3.0 mm
+OPRP1 – Screening at Raw syrup before vacuum pan 60 mesh
+Validation records:
+CCP1B: Vacuum temp and time, validate on strike 253 date 22/01/2025
+TRKK68/01391 (DCR massecuite before) and TRKK68/01392 (DCR massecuite after) date 31/01/2025 for
+C. perfringens, S. aureus, Salmonella, E. coli, Coliforms, Streptococcus spp.
+CCCP2P: Magnet (after sizing before packing), validated on 30/12/2025 by add metal 3 mm 10 pcs in
+sugar and check trapping on magnet, found 100% trapped.
+CCP3: Metal detector line 50 kg on 28/11/25, to test 5 repeats, Metal detector 1000 kg (MD 3 on
+28/11/2025 and MD 4 on 27/11/2025).
+OPRP1: Filter validated on 09/12/2025 by check condition of filter before start working.
+Production control records: VHP sugar produced 25/01/2026; record of extraction, evaporation,
+crystallization, centrifuge, packing.
+CCP(s) and OPRP(s) records: ML-FM-3220-003 Crystallization record, ML-FM-3230-014 Magnet record,
+Metal detector record ML-FM-1610-041, Filter cloth record ML-FM-3210-003.
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Verification records including test results of end products samples:
+-ML-SP-1600-007 rev.10 date 25/4/2024 Verification procedure.
+Product testing
+- Sugar – every strike – sampling FG before weight to WH – to test temp, pol, color, moisture to separate
+VHP and DCR by quality of (Pol DCR >99.0), color DCR 400-800, VHP <2,000, moisture DCR <0.2, VHP
+<0.3% as report ML-FM-1630-011 and sediment ML-FM-1630-012 (DCR <150 ppm), rusty (DCR not found
+size >3 mm) and test B (yellow <500 pcs/5 kg and black grain <10 pcs/5 kg) – Quality plan ML-FM-1600-
+001 date 03/01/2026.
+-DCR sugar strike 0271 as report TRKK68/01772 date 10/02/2025 for Heavy metal : As, Cd, Cu, Fe, Pb, Hg,
+C. Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color,
+conductivity, pol, RS, Sediment (Insoluble matter) 28.6 ppm, AW (0.45), glyphosate, AMPA, SO2, etc.,
+report TRKK68/01570 date 06/02/2025 for pesticide 4 groups, report TRKK68/01684 date 07/02/2025
+for nutrition (energy, moisture, carbohydrate, fat), report TRKK68/0174=56 date 10/02/2025 for gluten,
+report TRKK68/014397 date 31/01/2025 for APC, mesophilic bacteria, yeast and mold, report
+TRKK68/01787 date 10/02/2025 for grain size MA 0.87 mm, CV (29.31%)
+-VHP sugar strike 0056 as report TRKK68/01771 date 10/02/2025 for Heavy metal : As, Cu, Pb, C.
+Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color,
+conductivity, pol, RS, AW (0.50).
+Microbiological cross-contamination:
+Areas with potential microbial contamination sources and a dedicated zone: N/A
+Sharps control consists of prohibition of snap-off blades in production. Cutting blades on equipment are
+not present.
+Regarding allergen management, foreign matter management, PRP verifications and environmental
+monitoring, see detailed summaries in the FSSC additional requirements checklist.
+The following evidence was reviewed:
+GMP procedure: ML-QP-1600-001 rev.02
+Zoning plan: Glass/hard plastic control: list and map of each area, inspection by each own area ML-SP-
+3000-003 (Glass layout), Checklist – ML-FM-1600-007 – check daily for packing and check weekly for
+other.
+Knife policy: There is knife and scissors used in packing room, also 3 needles of sewing machine – all is
+daily checked and record in ML-FM-1600-007.
+Allergen management plan: ML-SP-1610-018 rev. 03 20/1/2021 Allergen management
+Allergen risk assessment is in HACCP analysis
+There is only sulfite in Lime – control cross contamination.
+Validation/verification/test results: Test report yearly by external laboratory date 26/1/24, SO2 less than
+10 ppm.
+In-house treated water (potable) is supplied and used as a product ingredient. Records of analysis have
+been reviewed. Quality and microbiological specifications for water have been defined and requirements
+are met. There is no use of steam or ice direct contact to sugar but condensate water is direct contact.
+Boiler chemicals are used, safe and stored away appropriately.
+Air is direct product contact at sugar drier (ambient air with filter). Specific air and humidity control is
+not needed. Compressed air is used, filtered and oil free. Air systems are maintained and managed
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+effectively (including filter replacement). Adequate ventilation is in place. Gas is not used. Adequate
+lighting provided to facilitate hygienic operations. Light fixtures are suitably protected. Utilities are not
+managed fully effectively (see findings log).
+The following evidence was reviewed:
+For sugar process, Soft water is used in boilers to generate steam for heating process, no steam direct
+contact to product, cane heating will generate condensate water that is used as ingredient (to dissolve
+sugar in cane) at sugar milling, centrifugal (to wash color), remelt sugar, and chemical preparation (CaO,
+Maxfloc)
+Treated water is also used for chemical preparation (CaO, Maxfloc)
+Condensate water is yearly test as report TRKK68/01378 date 31/01/2025
+Treated water is yearly test as report TRKK68/01377 date 31/01/2025
+Test include heavy metal (Al, Hg, Pb, As, Cu, Cd, Hg, F, Ca, Ba, Fe, Cr, Mg), ABS, Phenol, Microbial and
+pathogens, Cyanide, H2S, hardness, TDS, pH, turbid, etc.
+Boiler chemical: Polytreat SRB (sodium hexametaphosphate and sodium polyacrylate) – 21CFR FDA
+173.301 and MCC-N (Mixture of Morpholine and cyclohexylamine) – 21 CFR FDA 173.310.
+Water: ML-WI-3130-002 rev.0 water treatment process.
+Source from Surface water. Process = Water add PAC, Polymer, NaOH, Chlorine > Sediment > Storage >
+Sand filter > Treated water (filtrated water) add chlorine (process water, hand washing) > Softener
+(Boiler and Cooling tower).
+Water treatment:
+Diff pressure of inlet and outlet water <1 bar, if >1 bar, it will be backwash of sand filter until water clear,
+normally backwash every shift, use time 25 min. Regenerate of softener will do every 2000 m3, quality of
+soft water is checked every 12 hours for pH, hardness, and TDS – report of backwash and regenerate
+resin was found in ML-FM-3130-008.
+Chemical use – PAC, polymer, NaOH – record in ML-FM-3130-008.
+Water testing record:
+Raw water – pH, TDS%, %T = every 15 days, Filtrated water – pH, TDS, Chloride, %T = daily
+Water supply – pH and free chlorine (>0.2 ppm) = weekly (at hand washing of packing), last on
+15/01/2026.
+Report in ML-FM-1630-038
+For boiler / cooling
+Soft water – pH, TDS, hardness (0), 2 times a day (10:00, 22:00)
+Feed water boiler = pH, TDE, hardness every 8 hours
+Boiler water = pH, TDS, Alkaline every 4 hours
+Report in ML-FM-1630-013
+Condensate is daily check at evaporation to test Sugar content ML-FM-1630-013.
+Air: Air filter at sugar dryer, prefilter EU G3 (frame 24 pcs), it was weekly cleaning of air filter by water
+washing, last on 19/01/2025 (ML-FM-1600-002) with condition inspection, last change in year 2019.
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Temperature & humidity records: Check at packing room every 8 hours ML-FM-4130-020.
+Chlorine: Chlorine usage – daily record in Excel, Water supply is tested pH and free chlorine (>0.2 ppm)
+weekly (at hand washing of packing), last on 15/01/2026 (0.22 ppm).
+8. Product information and consumer awareness
+Assess appropriate information about food where necessary should ensure that:
+• adequate and accessible information is available to the next FBO in the food chain or the consumer to
+enable them to handle, store, process, prepare and display the product safely and correctly;
+• consumers can identify allergens present in foods; and
+• the lot or batch can be easily identified and removed/returned if necessary.
+Consumers should be given enough information on food hygiene to enable them to:
+• be aware of the importance of reading and understanding the label;
+• make informed choices appropriate to the individual, including about allergens; and
+• prevent contamination and growth or survival of foodborne pathogens by storing, preparing and
+using food correctly.
+Labelling is approved by: QA and Marketing Department. Responsibilities have been defined. Product
+specifications are in place. Samples have been taken, which were compared with the final product label
+(see evidence below).
+Based on samples seen, labels are correct and accurate, meeting both legislative and customer
+requirements and requirements around allergen labelling. An effective system is in place.
+The following products have been processed and packed;
+•DCR (direct consumption raw sugar) packed in 25 kgs paper bag
+•DCR (direct consumption raw sugar) packed in 50 kgs PP bag
+•DCR (direct consumption raw sugar) packed in 1000 kgs PP jumbo bag
+•DCR product packed in plastic PE bag 500 g.
+•DCR product packed in plastic PE bag 1 kg
+•VHP (Very high pol raw sugar) packed in 1000 kgs PP jumbo bag
+The details of label could be seen through the printed PP bag or sticker placed on PP bag/paper bag. For
+the product packed in jumbo bag, the detail of label can see through ID tag in company own format. The
+details of label/tag have included to the following information;
+•Producer name and address
+•Country of origin
+•Product name
+•Product weight
+•Lot number
+•Importer name
+•Production date
+•Best before date
+Claims:
+The following claims are made: Organic, Halal and Kosher
+The company has maintained the EU and USDA organic certification with valid certificates issued by
+Certify Body named “BioAgricert” as following details;
+•EU Organic certificate no. LA-BIO-132.418-0000014.2025-01 valid till 15 October 2026
+•USDA organic certificate no. 8690014656 valid till 2 July 2026
+The scope of certification covers to DCR (direct consumption raw sugar).
+The company has produced the organic DCR (direct consumption raw sugar) packed in 25 kgs paper bag
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+(supplied to EU customers) and 1,000 kgs PP jumbo bag (supplied to both EU and Vietnam customers).
+The company has also certifications for Halal and Kosher as following certificates;
+•Halal certificate no. B832/2554 valid till 22 May 2026
+•Kosher certificate valid till 31 December 2026
+However, Japanese and Korean organic certifications were no longer as both certificates were expired.
+Evidence of validations and verifications: The new label design is responsible by QA and marketing team.
+The parameters to be considered are composition, nutrition, claims and product weight. The artwork of
+label is required to be approved by QA manager. The product testing on nutrition and any claims are
+required to be done to validate the detail of label. For day to day operation, as a verification, there is a
+system in place to inspect the product label done by QA inspectors at the beginning of daily operation,
+any changes and at the end of daily production.
+The following evidence was reviewed:
+Procedures: There is documented work instruction for label approval (ML-WI-4140-001, Rev. 2, effective
+date on 22 November 2025. The detail of label is required to ensure it meets the regulation
+requirements.
+Labelling and claim samples:
+•DCR (Direct consumption raw sugar) product packed in jumbo bag size 1,000 kgs lot number 0515,
+production date on 18 November 2025 shipped to the customer named “Anden Life B.V.” for 26 tons,
+invoice no. ML82025/062. It was found that the products were identified/ labelled by paper tag
+containing the detail of EU, USDA, Japanese and Korean organic certification status.
+•Cane sugar light golden organic (packing size 25 kgs) packed in multilayer paper , production date on 6
+January 2026, claim EU organic and USDA organic, supplied to customer named “Do it organic B.V.,
+Netherland, lot 233 for 600 bags
+•Artwork of DCR product packed in plastic PE bag 500 g.
+•Artwork of DCR product packed in plastic PE bag 1 kg
+Traceability procedure: ML-SP-1600-002 rev. 0 date 14/02/2012
+Traceability testing was done yearly, last on 25/01/2026, DCR sugar 1 kg lot 0935 MFG 15/02/2025,
+Packing 13-15 May 2025, delivery on 25 December 2025 to local customer 19 tons and on 20 January
+2026 to local consumer 20 tons.
+Trace back to lot of packaging (film lot 20/03/2025 supplier S&S), repack from sugar lot 15/02/2025,
+slurry seed PEG lot D210N10001 (receive on 09/12/2023), Max floc lot 447002 (14/12/2024 from
+Engineer Cheme), Cao lot 18/01/2025 supplier Lime Master), cane on 15/02/2025.
+Minor NC 14.1
+Partial Insufficient of lot identification
+Lot identification of DCR 1 kg was defined MFG date, strike number, and shift packing of jumbo bag, but
+it was not sufficient to know repacking date in case many repacking dates and may not know lot of
+packaging.
+9. Transportation
+Assess during transportation, measures should be taken where necessary to:
+• protect food from potential sources of contamination, including allergen cross- contact;
+• protect food from damage likely to render the food unsuitable for consumption; and
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+• provide an environment which effectively controls the growth of pathogenic or spoilage
+microorganisms and the production of toxins in food.
+Warehouse contains only ambient stable (sugar). Storage spaces, as observed, are maintained in
+hygienic conditions. Temperatures and humidity are not required. Chemicals and (raw) materials are
+stored separately from finished products. No diesel powdered fork-lift trucks are operated.
+Goods are transported by trucks and bulk tankers. Transportation requirements including condition of
+vehicles are specified in service contracts. Contractors T&T Import Export, [ผู้ปฏิบัติงาน] Transport are
+used for the transportation of: Sugar. Trucks and trailers are visually inspected before loading. Cleaning
+between loads records are retained. Bulk containers are not used. Vehicles/conveyances/containers used
+are found to be clean and overall in good state of repair. This section meets the requirements of the
+ISO/TS 22002-1.
+See summary in section 2.5.10 for the stock rotation program and details.
+The following evidence was reviewed:
+There are 4 WH of FG – WH1 = raw sugar VHP on the floor, WH 2 = DCR sugar, WH2 = DCR sugar. And
+WH 4 = organic and DCR sugar, all are in ambient temperature.
+There are 1 store of chemical, 1 store of packaging, and 1 store of maintenance spare part, all are in
+ambient and locked.
+Stock control: SAP program, with lot identification and FIFO/FEFO control
+Sampling check stock of Maxfloc 917 and PEG 400.
+Transportation requirements: Contract 005/12/24 Nissha Transport
+Transportation records (temperature/cleaning between loads):
+Delivery vehicle inspection records: ML-FM-4110-008 Vehicle check by security and ML-FM-1610-012
+check vehicle and product every cloth pallet as seen loading of
+Date 13/01/2026 – DCR 50 kg lot 1103 2502 25 (MFG 25/02/2025) total 940 bags (47,000 kg), truck
+number Bor Kor 1999 / Bor Kor 2411, to Vietnam (SO1744902141), weight report ML-FM-4110-006, lot of
+sugar was recorded every cloth pallet in ML-FM-1610-012.
+Date 23/01/2026 – DCR Organic 1000 kg lot 0249070126 (MFG 07/01/2026), total 20 bags (20,000 kg),
+truck number 70-1767 / 70-1768, container number MRKU721764522G1, Agent seal number
+TH1254337-UST12306, included container inspection by surveyor (Cotecna) and seal surveyor
+TH250279.
+Chapter Two - Hazard Analysis and Critical Control Point (HACCP) System
+Assemble HACCP Team and Identify Scope (Step 1)
+Assess whether appropriate knowledge and expertise are available for the development of an effective
+HACCP system. Multidisciplinary HACCP Team is established, and responsibilities assigned. Whether the
+scope of the HACCP system and applicable prerequisite programmes are identified
+Food safety team as announced on Mor Lor 03/2026 date 24/01/2026 by [ผู้ปฏิบัติงาน] (Managing
+Director), total 22 persons, Tao [ผู้ปฏิบัติงาน] (QA manager) is FSTL. There are 3 new
+members [ผู้ปฏิบัติงาน] (Lab), [ผู้ปฏิบัติงาน] (Crystallization), Tao BoonHung (Packing), – all are trained
+FSSC since 09/07/2024.
+Describe product (Step 2)
+Assess full description of the product, ingredients, processing technology/ methodologies etc is done. Limits
+for food additives, regulatory microbiological criteria, maximum allowed veterinary medicines residues,
+and times and temperatures for heat treatments prescribed by competent authorities are specified.
+Product description ML-SP-1600-006 Rev.07 date 10/01/2022
+DCR: shelf life 3 years, moisture <0.2%, packed size 0.5, 1 kg in LLDPE, and 50 Kg in HDPE PP woven,
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+intended use for direct consumption
+VHP: shelf life 3 years, packed in Jumbo bag 1000 kg for further processing
+Refer to ML67-2008, Codex 212-1999, ML-SP-1610-001 (specification of ML sugars)
+Identify intended use and users (Step 3)
+Assess whether the use intended by the FBO and the expected uses of the product by the next FBO in the
+food chain or the consumer is described. Vulnerable groups of the population considered
+Direct consumption sugar, raw sugar delivered to industrial sector for further process.
+Construct flow diagram (Step 4)
+Assess whether the flow diagram covers all steps in the production and including rework. Flow diagrams
+are clear, accurate and sufficiently detailed to the extent needed to conduct the hazard analysis
+Flow diagram ML-SP-3000-001 Rev.16 date 15/01/2026
+Fresh cane > squeezing > filter > evaporation > filter (CCP) > crystallization (CCP) > centrifugal >drying >
+magnet > send to silo / packing in jumbo bag > packing > metal detector > storage
+On-site confirmation of flow diagram (Step 5)
+Assess whether onsite confirmation covers all stages and hours of operation, done by persons with
+sufficient knowledge of processing operation and flow diagrams are amended where appropriate.
+Flow diagram ML-SP-3000-001 Rev.16 date 15/01/2026
+Fresh cane > squeezing > filter > evaporation > filter (CCP) > crystallization (CCP) > centrifugal >drying >
+magnet > send to silo / packing in jumbo bag > packing > metal detector > storage
+Minor NC 19.4:
+Partial insufficient of flow diagram.
+Flow diagram was not updated i.e. magnetic after cane shredding (before milling), metal detector of 1 kg
+packing, filter air of sugar drier, DCR off spec from sugar screening 30 mesh (to VHP).
+List all potential hazards that are likely to occur and associated with each step, conduct a hazard analysis to
+identify the significant hazards, and consider any measures to control identified hazards (Step 6/ Principle 1)
+Assess whether all potential hazards are identified and evaluated to determine the significant hazards.
+Hazards are specific, and Control measures are considered for all hazards. Control measures are designed
+to prevent or eliminate hazards or reduce them to an acceptable level.
+Hazard assessment is based on probability and severity. Risks identified as satisfaction, minor, major are
+considered significant and are further analysed through a decision tree. Out of the decision tree the
+following CCP/OPRP have been determined:
+HACCP analysis ML-SP-1600-012. Hazard is identified for Physical, Chemical, Radiological,
+Microbiological, and Allergen Hazard, do risk assessment, Minor hazard is controlled by PRP and major
+HACCP hazard is decision to control by CCP/ OPRP by answer Q1-Q5.
+Determine the Critical Control Points (Step 7/ Principle 2)
+Assess whether Critical Control points are determined for hazards identified as significant as of the result of
+a hazard analysis. To identify a CCP, whether a decision tree and CCP worksheet tools that can be used in
+the determination of a CCP are as per Annex IV – Tools to determine the critical control points (CCPs)
+elaborated in CXC 1-1969 revision 2022 (i.e. Step 7 – Principle 2).
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+If no control measures exist at any step for an identified significant hazard, whether the product or process
+is modified.
+Hazard is identified for Physical, Chemical, Radiological, Microbiological, and Allergen Hazard, do risk
+assessment, Minor hazard is controlled by PRP and major hazard is decision to control by CCP/ OPRP by
+answer Q1-Q5. HACCP and OPRP Plan ML-SP-1600-011.
+Establish validated critical limits for each CCP (Step 8/ Principle 3)
+Assess whether Critical limits are established, measurable or observable. Critical limits are scientifically
+validated. Critical limits are based on existing literature, regulations or guidance from competent authorities,
+or studies carried out by a third party
+CCP and OPRP Plan ML-SP-1600-011.
+CCP1 – Vacuum pan >63C >45 min
+CCP2 – Magnet at sizing >9000 gauss, no metal >3 mm
+CCP3 – Metal detector Fe 2.5, Non-Fe 3.0, SUS 3.0 mm
+OPRP1 – Screening at Raw syrup before vacuum pan 60 mesh
+Establish a Monitoring System for Each CCP (Step 9/ Principle 4)
+Assess whether Monitoring procedures are established including method and frequency. Monitoring of CCP
+is continuous. Personnel are trained. Monitoring data is evaluated. Records are maintained.
+CCP1 Crystallization 63℃ for 45minutes Monitoring: check temp/time every strike.
+CCP2 Magnet 9000 gauss Monitoring: check magnet every strike.
+CCP3 Metal detector 2.5 Fe, 3.0 Non-Fe, 3.0 SuS Monitoring: test piece tested every 8 hours.
+OPRP1 Cloth filter No leak Monitoring: check filter every 2 hours.
+Establish corrective actions (Step 10/ Principle 5)
+Assess whether specific written corrective actions developed for each CCP. Food that is potentially unsafe
+is handled appropriately and does not reach consumers. Details of the corrective actions, including the
+cause of the deviation and product disposition procedures, is documented in the HACCP records. Periodic
+review of corrective actions is undertaken to identify trends and to ensure corrective actions are effective.
+CCP1 Crystallization 63℃ for 45minutes Monitoring: check temp/time every strike.
+Correction: adjust temperature, hold product.
+Corrective action: investigating the root cause and take corrective action at root cause.
+CCP2 Magnet 9000 gauss Monitoring: check magnet every strike.
+Correction: hold product, fix the magnet.
+Corrective action: investigating the root cause and take corrective action at root cause
+CCP3 Metal detector 2.5 Fe, 3.0 Non-Fe, 3.0 SuS Monitoring: test piece tested every 8 hours.
+Correction: fixed metal detector and re-passing again the product through the metal detector
+Corrective action: investigating the root cause and take corrective action at root cause.
+OPRP1 Cloth filter No leakMonitoring: check filter every 2 hours.
+Correction: fix the filter.
+Corrective action: investigating the root cause and take corrective action at root cause.
+Validation of the HACCP Plan and Verification Procedures (Step 11/ Principle 6)
+Assess whether Validation of control measures and their critical limits is performed during the development
+of the HACCP plan. Any changes having a potential impact on food safety requires a review of the HACCP
+system and revalidation of the HACCP plan
+Assess whether verification procedures are established. Verification, which includes observations, auditing
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+(internal and external), calibration, sampling and testing, and records review, is used to determine if the
+HACCP system is working correctly and as planned. Verification is carried out by someone other than the
+person who is responsible for performing the monitoring and corrective actions. Review of the HACCP
+system confirms that the appropriate significant hazards have been identified, that control measures and
+critical limits are adequate to control the hazards, that monitoring, and verification activities are occurring in
+accordance with the plan and are capable of identifying deviations, and that corrective actions are
+appropriate for deviations that have occurred
+Validation records:
+CCP1B: Vacuum temp and time, validate on strike 253 date 22/01/2025
+TRKK68/01391 (DCR massecuite before) and TRKK68/01392 (DCR massecuite after) date 31/01/2025 for C.
+perfringens, S. aureus, Salmonella, E. coli, Coliforms, Streptococcus spp.
+CCP2P: Magnet (after sizing before packing), validated on 30/12/2025 by add metal 3 mm 10 pcs in sugar
+and check trapping on magnet, found 100% trapped.
+CCP3: Metal detector line 50 kg on 28/11/25, to test 5 repeats, Metal detector 1000 kg (MD 3 on
+28/11/2025 and MD 4 on 27/11/2025).
+OPRP1: Filter validated on 09/12/2025 by check condition of filter before start working.
+Production control records: VHP sugar produced 25/01/2026; record of extraction, evaporation,
+crystallization, centrifuge, packing.
+CCP(s) and OPRP(s) records: ML-FM-3220-003 Crystallization record, ML-FM-3230-014 Magnet record,
+Metal detector record ML-FM-1610-041, Filter cloth record ML-FM-3210-003.
+Verification records including test results of end products samples:
+-ML-SP-1600-007 rev.10 date 25/4/2024 Verification procedure.
+Product testing
+- Sugar – every strike – sampling FG before weight to WH – to test temp, pol, color, moisture to separate
+VHP and DCR by quality of (Pol DCR >99.0), color DCR 400-800, VHP <2,000, moisture DCR <0.2, VHP <0.3%
+as report ML-FM-1630-011 and sediment ML-FM-1630-012 (DCR <150 ppm), rusty (DCR not found size >3
+mm) and test B (yellow <500 pcs/5 kg and black grain <10 pcs/5 kg) – Quality plan ML-FM-1600-001 date
+03/01/2026.
+-DCR sugar strike 0271 as report TRKK68/01772 date 10/02/2025 for Heavy metal : As, Cd, Cu, Fe, Pb, Hg,
+C. Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color,
+conductivity, pol, RS, Sediment (Insoluble matter) 28.6 ppm, AW (0.45), glyphosate, AMPA, SO2, etc.,
+report TRKK68/01570 date 06/02/2025 for pesticide 4 groups, report TRKK68/01684 date 07/02/2025 for
+nutrition (energy, moisture, carbohydrate, fat), report TRKK68/0174=56 date 10/02/2025 for gluten,
+report TRKK68/014397 date 31/01/2025 for APC, mesophilic bacteria, yeast and mold, report
+TRKK68/01787 date 10/02/2025 for grain size MA 0.87 mm, CV (29.31%)
+-VHP sugar strike 0056 as report TRKK68/01771 date 10/02/2025 for Heavy metal : As, Cu, Pb, C.
+Perfringens, Coliform, E. coli, Salmonella spp., S. aureus, Streptococcus spp., moisture, color, conductivity,
+pol, RS, AW (0.50).
+Calibration records:
+Calibration procedure ML-QP-3330-007 rev01 18/5/2020.
+Calibration was done both internal and external service, internal calibration operator Promma has trained
+for calibration
+Calibration list is in ML-FM-3330-0003 updated on 24/12/2024
+Seen calibration report
+- RTD BP-TT-001, 2, 3, 18 (A1-A4) – CCP Crystallization every year on 20/06/2025
+- RTD EV-TT-001, 002, 003 evaporation – every year on 05/06/2025
+- Standard Temperature Block Calibrator CTC-650B serial no. 675309-01183 (every 3 years) on date
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+26/3/2024 by UniThai Group (Lab 0058)
+- DCS timer with Navy Thai monthly, last on 10/01/2026 (ML-FM-3330-010).
+- Load cell 50 kg, packing – once a week, last on 19/01/2026 ML-FM-4130-017
+- Load cell 1 kg, packing – twice a week, last on 05/01/2026 ML-FM-4130-017
+- Weight scale 1000 kg, check weight 50 kg – every month, last on 22/01/2026 (ML-FM-3300-008)
+- Weight scale 1kgx25 – every month, last on 22/01/2026 (ML-FM-3300-008) use 25 cal 50
+- Check weight 50 kg – yearly calibrated 05/12/2025 by Lao Standard.
+- Master standard weight 0.5-500 kg – on 30/10/2025 (every 3-5 years)
+- Metal detector – packing 1000 kg – tube metal detector, and 50 kg – tunnel on 27/11/2025 by Mettler
+Toledo
+Lab equipment
+Weight scale 1 kg – ML-LAB-100, ML-LAB-105 – 30/08/2025 by Quality Calibration
+Digital balance – ML-LAB-02, ML-LAB-04 – 30/08/2025 by Quality Calibration (Accredited Calibration 0471)
+Conductivity meter ML-LAB-08, 09 on 30/08/2025 by Quality Calibration
+pH meter ML-LAB-20, 21 on 30/08/2025 by Quality Calibration
+Spectrophotometer ML-LAB-26, 108, 116 on 09/09/2025 by Analytical Technology (Accredited Calibration
+0359)
+Refractometer ML-LAB-111 on 09/09/2025 by Analytical Technology
+Polarimeter ML-LAB-117 on 26/08/2025 by Global Dynamic (Thailand) (Accredited Calibration 0471)
+Moisture Analyzer ML-LAB-14, 107 on 30/08/2025 by Quality Calibration
+Incubator 35C ML-LAB-23 on 30/08/2025 by Quality Calibration
+Autoclave ML-LAB-40 on 30/08/2025 by Quality Calibration
+Nonconforming products: ML-QP-1620-003 rev.10 date 26/01/2023. Normally nonconforming products
+will be quality issues i.e. purity, sediment of organic DCR. NC products will remelt to reprocess. Year 2025-
+2026 – there was no NC product to remelt.
+Establish Documentation and Record Keeping (Step 12/ Principle 7)
+Assess whether HACCP Procedures are documented. Documentation and record keeping is appropriate
+Record-keeping system is effective and communicated to personnel
+Documented FSMS is electronically available. Requirements regarding control of documented information
+are defined in a procedure. Access control is well managed. It meets the expectations of this standard. No
+issues observed during the audit regarding uncontrolled documents. Documented information: Procedure
+document control ML-QP-1620-001 rev05 16/5/18
+Training
+Assess whether working instructions and procedures is developed which define the tasks of the operating
+personnel in charge of each Critical Control Point. Training programmes are designed to address the
+concepts at a level appropriate for the knowledge and skill level of the personnel being trained and
+reviewed periodically and updated where necessary. Retraining is done as part of corrective actions for
+deviations
+Training plan: annual training plan 2025 and 2026; food safety awareness, pest control, hygiene
+requirements, allergen and site security plan. Training programs are established and schedule as yearly
+and OJT by each area. Job description for each position is established. Some position was verified such as
+Production worker at CCP step & OPRP steps and cleaning worker. Medical screening has been
+implemented and maintained for new staff. Orientation program has been provided for new staff and
+records have been existed.
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Employee competency records: Sampling the job description, training needs of and training record of
+production workers as following;
+• [ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+• [ผู้ปฏิบัติงาน] (Seasonal worker at metal detector operator)
+• [ผู้ปฏิบัติงาน] (QA inspector at metal detector operator)
+• [ผู้ปฏิบัติงาน] (Production worker at evaporating process)
+• [ผู้ปฏิบัติงาน] (Head of production section)
+• [ผู้ปฏิบัติงาน] (Production worker at OPRP step ;filtering process)
+The annual training plan has been established and maintained.
+Annual refresh training of food safety awareness has been provided annually. The latest training was done
+on 12 September 2025.
+Checklist HACCP 2022
+NC Report number
+Reference: Codex Alimentarius, General Principle of Food Hygiene CXC 1-
+1969 (rev 2022)
+Assessment
+Ok ?
+Implementation
+Ok ?
+Specify -Major /Minor
+If requirement is not
+applicable, enter NA
+Chapter 1 – Good Hygiene Practices
+1 Introduction and control of food hazards
+☒ ☒
+2 Primary production
+2.1 Environmental control ☒ ☒
+2.2 Hygienic production ☒ ☒
+2.3 Handling, storage and transport ☒ ☒
+2.4 Cleaning, maintenance and personal hygiene ☒ ☒
+3 Establishment - Design of facilities and equipment
+3.1 Location and structures ☒ ☒
+3.1.1 Location of establishment ☒ ☒
+3.1.2 Design and layout of food establishment ☒ ☒
+3.1.3 Internal structures and fittings ☒ ☒
+3.1.4 Temporary/mobile food establishments and vending machines ☒ ☒
+3.2 Facilities ☒ ☒
+3.2.1 Drainage and waste disposal facilities ☒ ☒
+3.2.2 Cleaning facilities ☒ ☒
+3.2.3 Personnel hygiene facilities and toilets ☒ ☒
+3.2.4 Temperature ☒ ☒
+3.2.5 Air quality and ventilation ☒ ☒
+3.2.6 Lighting ☒ ☒
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Checklist HACCP 2022
+Reference: Codex Alimentarius, General Principle of Food Hygiene CXC 1-
+1969 (rev 2022)
+Assessment
+Ok ?
+Implementation
+Ok ?
+NC Report number
+Specify -Major /Minor
+If requirement is not
+applicable, enter NA
+3.2.7 Storage ☒ ☒
+3.3 Equipment ☒ ☒
+3.3.1 General ☒ ☒
+3.3.2 Food control and monitoring equipment ☒ ☒
+4 Training and competency
+4.1 Awareness and Responsibilities ☒ ☒
+4.2 Training Programmes ☒ ☒
+4.3 Instruction and Supervision ☒ ☒
+4.4 Refresher Training ☒ ☒
+5 Establishment maintenance, cleaning and disinfection and pest control
+5.1 Maintenance and cleaning ☒ ☒
+5.1.1 General ☒ ☒
+5.1.2 Cleaning and disinfection methods and procedures ☒ ☒
+5.1.3 Monitoring of Effectiveness ☒ ☒
+5.2 Pest control systems ☒ ☒
+5.2.1 General ☒ ☒
+5.2.2 Prevention ☒ ☒
+5.2.3 Harbourage and infestation ☒ ☒
+5.2.4 Monitoring and detection ☒ ☒
+5.2.5 Control of pest infestation ☒ ☒
+5.3 Waste management ☒ ☒
+5.3.1 General ☒ ☒
+6 Establishment: personal hygiene
+6.1 Health status ☒ ☒
+6.2 Illness and injuries ☒ ☒
+6.3 Personal cleanliness ☒ ☒
+6.4 Personal behaviour ☒ ☒
+6.5 Visitors and other persons from outside the establishment ☒ ☒
+7 Control of Operations
+7.1 Description of products and processes ☒ ☒
+7.1.1 Product description ☒ ☒
+7.1.2 Process description ☒ ☒
+7.1.3 Consideration of the effectiveness of GHPs ☒ ☒
+7.1.4 Monitoring and corrective action ☒ ☒
+7.1.5 Verification ☒ ☒
+7.2 Key aspects of GHPs ☒ ☒
+7.2.1 Time and temperature control ☒ ☒
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Checklist HACCP 2022
+Reference: Codex Alimentarius, General Principle of Food Hygiene CXC 1-
+1969 (rev 2022)
+Assessment
+Ok ?
+Implementation
+Ok ?
+NC Report number
+Specify -Major /Minor
+If requirement is not
+applicable, enter NA
+7.2.2 Specific process steps ☒ ☒
+7.2.3 Microbiological, physical, chemical and allergen specifications ☒ ☒
+7.2.4 Microbiological contamination ☒ ☒
+7.2.5 Physical contamination ☒ ☒
+7.2.6 Chemical contamination ☒ ☒
+7.2.7 Allergen Management ☒ ☒
+7.2.8 Incoming Materials ☒ ☒
+7.2.9 Packaging ☒ ☒
+7.3 Water ☒ ☒
+7.4 Documentation and Records ☒ ☒
+7.5 Recall Procedures - removal from the market of unsafe food ☒ ☒
+8 Product information and consumer awareness
+8.1 Lot Identification and Traceability ☐ ☐ 7242254_SBCRWT01
+8.2 Product information ☒ ☒
+8.3 Product labelling ☒ ☒
+8.4 Consumer education ☒ ☒
+9 Transportation
+9.1 General ☒ ☒
+9.2 Requirements ☒ ☒
+9.3 Use and Maintenance ☒ ☒
+Chapter 2 – Hazard Analysis and Critical Control Point (HACCP) System
+3.1 Assemble HACCP Team and Identify Scope (Step 1) ☒ ☒
+3.2 Describe product (Step 2) ☒ ☒
+3.3 Identify intended use and users (Step 3) ☒ ☒
+3.4 Construct flow diagram (Step 4) ☐ ☐ 7242254_SBCRWT02
+3.5 On-site confirmation of flow diagram (Step 5) ☒ ☒
+3.6
+List all potential hazards that are likely to occur and associated
+with each step, conduct a hazard analysis to identify the
+significant hazards, and consider any measures to control
+identified hazards (Step 6/ Principle 1)
+☒ ☒
+3.7 Determine the Critical Control Points (Step 7/ Principle 2) ☒ ☒
+3.8
+Establish validated critical limits for each CCP (Step 8/ Principle
+3)
+☒ ☒
+3.9 Establish a Monitoring System for Each CCP (Step 9/ Principle 4) ☒ ☒
+3.10 Establish corrective actions (Step 10/ Principle 5) ☒ ☒
+3.11
+Validation of the HACCP Plan and Verification Procedures (Step
+11/ Principle 6)
+☒ ☒
+3.11.1 Validation of the HACCP Plan ☒ ☒
+Hazard Analysis and Critical Control Point (HACCP) System as per General
+Principles of Food Hygiene CXC 1-1969 (2022) Report
+P1175_HACCP 2022 Report Rev 1/ 09 Aug 2024
+Checklist HACCP 2022
+Reference: Codex Alimentarius, General Principle of Food Hygiene CXC 1-
+1969 (rev 2022)
+Assessment
+Ok ?
+Implementation
+Ok ?
+NC Report number
+Specify -Major /Minor
+If requirement is not
+applicable, enter NA
+3.11.2 Verification Procedures ☒ ☒
+3.12
+Establish Documentation and Record Keeping (Step 12/
+Principle 7)
+☒ ☒
+3.13 Training ☒ ☒
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+Customer name: Client no.:
+Mitr Lao Sugar Co., Ltd.
+BGK6018308 / 7242266 FSSC
+BGK6018308/ 7242254 GHP-HACCP
+Assessment standard / module: Visit type:
+FSSC Food
+GHP-
+HACCP
+Certificate renewal
+Assessment criteria:
+Assessment start
+date:
+Assessment
+end date:
+Audit days (on-
+site)
+Standard:
+ISO22000:
+2018
+GHP-HACCP
+2022
+25-1-2026 28-1-2026 6
+PRP-program:
+ISO/TS
+22002-
+1:2009
+Assessment team:
+FSSC
+additional
+requirements:
+FSSC V6
+additional
+requireme
+nts
+[ผู้ปฏิบัติงาน] (Team Leader)
+[ผู้ปฏิบัติงาน], (Team member)
+Site address No. 111, Unit 10, Kenghet Village, Xaybouly District, Savannakhet Province, Lao People`s Democratic
+Republic
+Scope (to be confirmed with the customer):
+Manufacture of Raw sugar for Direct Consumption and for Further Processing.
+Exclusions (when applicable):
+N/A
+Audit Duration per day
+Audit Dates Audit start time
+Lunch Break
+(duration in
+min)
+Audit finish time
+Signature of customer to
+confirm time on site.
+Day 1 (25/01/26) 13:00 - 17:00 (4 Hours)
+Day 2 (26/01/26) 08:30 12:00-13:00 18:30 (14 Hours)
+Day 3 (27/01/26) 08:30 12:00-13:00 18:30 (18 Hours)
+Day 4 (28/01/26) 08:30 12:00-13:00 15:30 (12 Hours)
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+Day 1 [ผู้ปฏิบัติงาน] - Team Leader
+25/01/2026
+13:00-
+13:30
+Introductory meeting with management to explain the scope of the visit, verification of product
+category, assessment methodology, method of reporting and to discuss the company's organisation,
+final check of the audit agenda and changes in the audit-program (approximately 30 minutes).
+The Team Leader will agree a time to meet with top management to discuss policy and objectives for
+the management system.
+Discussion of all outstanding issues from previous visits.
+(The subjects below can be audited on the named department, or elsewhere)
+13:30-
+16:00
+On-site audit of Operation control
+• CCP-ORP Monitoring
+• In-process quality control
+• PRP Internal infrastructure / Hygiene
+control / Cleaning program
+• Measures for Prevention of Cross-
+Contamination [Microbiological Cross-
+Contamination, Physical Contamination
+and Management of Allergen / Rework
+control
+16:00-
+17:00
+o Follow up of missing/requested information
+o Evaluation auditor findings / share information / reporting
+o LRQA team briefing for a team of two or more assessors or technical experts
+17:00 Close, end of Audit Day 1.
+Day 2 [ผู้ปฏิบัติงาน] - Team Leader [ผู้ปฏิบัติงาน] - Team Member
+26/01/2026
+08:30-
+09:00
+For Auditees: Review of findings from previous day. Review of the assessment plan for the day.
+09:00-
+12:00
+Operation control
+• Packing control / Quantity control /
+Labelling control
+Allergen control
+External Area / Staff facilities
+Food defense
+Pest control / Chemical control
+Waste management.
+09:00-
+13:30
+Product development / Shelf-life study
+Product labelling / Artwork Management
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+12:00-
+13:00
+Lunch
+13:00-
+18:00
+HACCP Document and Operation control
+HACCP Study
+Food Safety Team, Material
+Characteristics, Intended Use
+Flow Diagram, Hazard Analysis / Selection
+of Control Measure
+CCP / OPrP Monitoring & Corrective Action
+Validation / Verification, Evaluation of
+Individual Verification Results
+13:00-
+18:00
+-
+18:00-
+18:30
+o Follow up of missing/requested information
+o Evaluation auditor findings / share information / reporting
+o LRQA team briefing for a team of two or more assessors or technical experts
+18:30 Close, end of Audit Day 2.
+Day 3 [ผู้ปฏิบัติงาน] - Team Leader [ผู้ปฏิบัติงาน] - Team Member
+27/01/2026
+08:30-
+09:00
+For Auditees: Review of findings from previous day. Review of the assessment plan for the day.
+09:00-
+12:00
+QC / QA / Quality control
+Incoming inspection / Specification
+Finished product inspection / Packaging
+inspection.
+Environmental monitoring
+09:00-
+12:00
+Top Management Interview Vision, OGSM
+- Q&FS review, CAPA, Analysis of Data &
+Continual improvement
+- Food safety / Quality manual
+- Internal/external issue
+- Need and expectation of interested parties/
+stakeholder needs and expectations
+- Food safety culture plan
+- Process mapping
+- Leadership, Policy & Communication
+- Organization /Roles, responsibility,
+authorization- Planning
+- Risk and Opportunities
+- Objectives, Planning of change
+- Food loss / Food waste
+12:00- Lunch
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+13:00
+13:00-
+18:00
+Traceability and recall
+Food fraud
+Control of NC product
+Personal hygiene / Medical screening
+13:00-
+18:00
+- Internal audit / Management review
+- Complaint / Corrective action
+- Planning of change
+- Communication
+- Document and Record control
+18:00-
+18:30
+o Follow up of missing/requested information
+o Evaluation auditor findings / share information / reporting
+o LRQA team briefing for a team of two or more assessors or technical experts
+18:30 Close, end of Audit Day 3.
+Day 4 [ผู้ปฏิบัติงาน] - Team Leader [ผู้ปฏิบัติงาน] - Team Member
+28/01/2026
+08:30-
+09:00
+For Auditees: Review of findings from previous day. Review of the assessment plan for the day.
+08:30-
+12:00
+Maintenance / Utility
+Equipment management
+08:30-
+12:00
+HR
+- Resources, Organization
+- Competence, Awareness / Training /
+- Knowledge management
+12:00-
+13:00
+Lunch
+13:00-
+14:00
+Calibration 13:00-
+14:00
+Purchasing
+14:00-
+15:00
+o Follow up of missing/requested information, report writing, NC typing time for the auditor,
+preparation closing meeting
+15:00-
+15:30
+Closing meeting with management to present a summary of findings and discusses deviations and non-
+conformities which have been identified. Also certificate awarding is discussed.
+o Corrective action plan to be completed by the organisation and agree the date of forwarding of
+corrective action plan. FSSC requires approval of the corrective action plan within maximum 28
+calendar days.
+15:30 End of audit
+Final reporting: 1.0-day for FSSC 22000
+Remote Review / Follow up < 28 days: 18-2-2026
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+Declaration:
+o No actual or perceived conflict of interest exists, to ensure the impartiality of the audit;
+o The integrity of the audit or the audit process has not been compromised in any way and;
+o The audit was conducted in an ethical manner.
+Site representative Lead Auditor LRQA
+Signed Signed
+Date
+28 January 2026
+Date
+28 January 2026
+Detailed Assessment Plan
+P1104 - Detailed Audit Plan FSSC 22000 V6 v1.1, 18 Sept 2024
+Organization representatives, function and attendance sheet
+Name Function
+Opening
+meeting
+Closing
+meeting
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+☐ ☐
+Audit Program/Plan
+P1104 – APP Program FSSC 22000 V6 V1.1, 30 May 2024
+Audit Programme/Plan (LRQA)
+Both the audit plan and the programme are dynamic and must be in line with the client’s developments. Any (last minute) changes
+are possible with valid reasons like e.g. changes with the client, processes, management review results etc. Prior to the closing
+meeting the audit team should (re)confirm the programme and identify any changes concerning e.g. changes to the management
+system, extent, time or dates of the audit, competences etc.
+Visit Type Cert Renew SV1
+/Unannounced
+Focus
+visit
+CR
+Start Date 25/01/26 Jan 27 Jan 28 Jan 29
+End Date 28/01/26
+Audit Days 5 FSSC +1
+HACCP/GHP
+4 FSSC + 1
+HACCP/GHP
+4 FSSC + 1
+HACCP/GHP
+5 FSSC + 1
+HACCP/GHP
+Separate assessment plan Yes
+Y
+/
+N
+Yes Yes Yes
+Any change in workforce numbers
+That may impact visit duration (if yes
+add new number)
+No
+Y
+/
+N
+No No Y/N
+Process / aspect / theme / location
+Final selection will be determined after review of management elements and actual performance
+Opening meeting X X X X
+Closing meeting X X X X
+Changes to organizational context X X X X
+Management Review X X X X
+Internal Audits X X X X
+Continual Improvement X X X X
+Management of change X X X X
+Corrective action X X X X
+Complaint Management X X X X
+Use of Logo X X X X
+Performance against the client
+management system objective
+X X X X
+*
+Management system
+Management commitment X X X X
+Food safety policy X X X X
+Food safety management system
+planning
+X X X X
+Responsibility and authority X X X X
+Food safety team leader X X X X
+Communication X X X X
+Emergency preparedness and response X X X X
+Human resource X X X X
+Document and record control X X X X
+Updating preliminary information,
+PRPs and HACCP plan
+X X X X
+Verification planning X X X X
+Traceability system X X X X
+Control of non-conformity X X X X
+Validation of control measure
+combination
+X X X X
+Calibration X X X X
+HACCP system X X X X
+Preliminary steps to enable hazard
+analysis
+X X X X
+Hazard analysis X X X X
+OPRP program X X X X
+HACCP plan X X X X
+Information: X X X X
+Regulatory requirement
+Customer requirement
+Product group code of practice:
+Human food and justification of
+exclusion (if have)
+X X X X
+Prerequisite programs – Food
+manufacturing
+X X X X
+Audit Program/Plan
+P1104 – APP Program FSSC 22000 V6 V1.1, 30 May 2024
+Construction and layout of buildings X X X X
+Layout of premises and workplace X X X X
+Utilities – air, water, energy X X X X
+Waste disposal X X X X
+Equipment suitability, cleaning and
+maintenance
+X X X X
+Management of purchased material X X X X
+Prevention of cross contamination X X X X
+Cleaning and sanitizing X X X X
+Pest control X X X X
+Personnel hygiene and employee
+facilities
+X X X X
+Rework X X X X
+Product recall procedure X X X X
+Warehousing X X X X
+Product information / consumer
+awareness
+X X X X
+Food defence, biovigilance and
+bioterrorism
+X X X X
+Additional requirement X X X X
+Management of services and
+purchased materials
+X X X X
+Product labelling X X X X
+Food defense X X X X
+Food fraud mitigation X X X X
+Logo use X X X X
+Management of allergens X X X X
+Environmental monitoring X X X X
+Food Safety and Quality Culture X X X X
+Quality control - X X X
+Storage and warehousing X X X X
+Hazard control and measures for
+preventing cross-contamination
+X X X X
+PRP verification X X X X
+Product development X X X X
+Health status - X X X
+Equipment management X X X X
+Food loss food waste - X X X
+Communication - X X X
+Multisite - X X X
+Previous NC X X X X
+R = Remote
+*Complete the list of organisation (parts), departments and/or processes of the different locations
+Note: if the visit involves more than one team member and/or is more than one day duration, an additional plan detailing the
+activities of each member of the team on each day will be required.
+Audit objectives
+The generic audit objectives and team responsibilities are included in the Client Information Note ‘Assessment Process’. The
+assessment standard and roles of the audit team are defined in the assessment visit confirmation to the client by LRQA. Any
+revised scope will be as agreed in formal correspondence between LRQA and the client or defined in this section of the previous
+LRQA visit report. Where identified above see separate assessment plan (latest issue) for further detail. Any additional observers
+will be as formally communicated to the client in writing. The audit criteria consist of the assessment standard and the client’s
+management system processes and documentation.
+Confidentiality
+Audit Program/Plan
+P1104 – APP Program FSSC 22000 V6 V1.1, 30 May 2024
+We will treat the contents of this report, together with any notes made during the visit, in the strictest confidence and will not
+disclose them to any third party without written client consent, except as required by the accreditation authorities.
+Sampling
+The assessment process relies on taking a sample of the activities of the business. This is not statistically based but uses
+representative examples. Not all of the detailed nature of a business may be sampled so, if no issues are raised in a particular
+process, it does not necessarily mean that there are no issues, and if issues are raised, it does not necessarily mean that these are
+the only issues.
+Legal entity
+The accredited legal entity and client facing office that has provided the assessment service in this report is referenced in the
+applicable agreement for this service.
+Generic audit objectives and team responsibilities
+The generic audit objectives and team responsibilities are included in the Client Information Note ‘Assessment Process’. Any visit
+specific objectives for the next visit will be recorded in the report of the previous visit and will be addressed through the visit plan
+for that visit. The assessment standard and roles of the audit team are defined in the assessment visit confirmation sent to the
+client.
+Areas of concern at stage 1
+If during the stage 1 assessment, the auditor finds areas of concerns which could have a negative impact on the outcome of stage
+2, the assessor will define these as non-conformities in the assessment findings table.
+Audit report considerations
+LRQA Report considerations Y/N/NA
+Reference made
+if Yes
+Ref:
+Have there been any deviations from
+the original assessment plan?
+No
+If yes detail these in the
+Audit Statement section of
+the report along with the
+reasons for the deviations
+Have there been any significant issues
+impacting on the audit programme? No
+If yes detail these in the
+Audit Statement of the
+report and amend the APP
+Have there been any significant
+changes that affect the management
+system of the client since the last audit
+took place?
+No
+If yes detail these within
+the Audit Statement
+section of the report.
+If applicable, has the organization
+implemented effective corrective
+action(s) regarding previously
+identified nonconformities?
+Yes
+Record outcome in the
+findings log against the
+relevant findings.
+Focus Visit only Y/N/NA Reference made if Yes Ref:
+A review over both Surveillance visits
+has been conducted by the auditor
+conform audit plan, including review of
+trends on: complaints, performance
+indicators, system/process
+improvements, lessons learnt.
+N/A
+Provide details in case of
+(significant) issues in
+column on the right.
+Based on site performance review of
+the management system over the
+previous cycle and taking into
+consideration significant (future)
+changes, upcoming projects, business
+strategies, new system
+implementations, etc., will the next
+audit cycle durations be sufficient?
+N/A
+If no, detail reason for
+increase and update
+duration in ATC and APP.
+Audit Program/Plan
+P1104 – APP Program FSSC 22000 V6 V1.1, 30 May 2024
+Are there any specific topics or
+objectives for the coming certification
+cycle to consider?
+N/A
+If yes, update APP
+accordingly.
+Stage 1 only Y/N/NA Reference made if Yes Ref:
+Have there been any changes in/to the
+organization to the extent that
+additional resources are required for the
+Stage 2 visit?
+Choose.
+If yes, create an office
+action with the request to
+plan for appropriate
+resource(s) for the Stage 2
+(i.e. activity code(s))
+Are there any specific planning needs
+to ensure that during Stage 2 all
+processes activities will be assessed?
+Choose.
+If yes, ensure that this is
+detailed/recorded in the
+next visit details (NVD)
