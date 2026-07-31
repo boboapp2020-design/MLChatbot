@@ -134,6 +134,14 @@ $FileMap = @(
      Title='HACCP และการประเมินความเสี่ยง — CCP/OPRP ของโรงงาน';   Code='ML-HACCP' }
   @{ Path='quality-standards-brain\references\fssc-programmes.md'; Module='foodsafety'; Type='MANUAL'; Force=$true
      Title='โปรแกรมสนับสนุน FSSC 22000 v6 — Food Fraud EMP MOC Food Loss'; Code='ML-FSSC' }
+  @{ Path='quality-standards-brain\references\gmp-procedure.md'; Module='foodsafety'; Type='MANUAL'; Force=$true
+     Title='ML-QP-1600-001 การปฏิบัติด้าน GMP Rev.02 — สุขลักษณะ ทำความสะอาด สัตว์พาหะ'; Code='ML-GMP' }
+  @{ Path='quality-standards-brain\references\standards-requirements.md'; Module='foodsafety'; Type='STANDARD'; Force=$true
+     Title='ตัวบทข้อกำหนด ISO 9001 / ISO 22000 / PRP / FSSC Add. (คำแปลของโรงงาน)'; Code='ML-REQ' }
+  @{ Path='quality-standards-brain\references\conformity-criteria.md'; Module='foodsafety'; Type='CHECKLIST'; Force=$true
+     Title='เกณฑ์ตัดสินความสอดคล้อง C/NC และหลักฐานที่ต้องมี 221 ข้อ × 21 หน่วยงาน'; Code='ML-CONF' }
+  @{ Path='quality-standards-brain\references\audit-findings-2026.md'; Module='foodsafety'; Type='RECORD'; Force=$true
+     Title='ผลตรวจ LRQA ปี 2026 — NC ที่ยังเปิด 12 ข้อ ปิดแล้ว 19 ข้อ และประเด็นซ้ำ'; Code='ML-NC26' }
 
   @{ Path='motor-expert\SKILL.md';                            Module='factory'; Type='BOOK';     Title='กรอบการวินิจฉัยมอเตอร์และระบบไฟฟ้า';             Code='MTR-FRAME' }
   @{ Path='motor-expert\references\failure-modes.md';         Module='factory'; Type='MANUAL';   Title='รูปแบบความเสียหายของมอเตอร์';                    Code='MTR-FAIL' }
