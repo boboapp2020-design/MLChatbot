@@ -1,4 +1,4 @@
--- =====================================================================
+﻿-- =====================================================================
 --  ML Expert AI — Database Schema
 --  รันไฟล์นี้ใน Supabase Dashboard → SQL Editor → New query → Run
 -- =====================================================================
@@ -28,7 +28,7 @@ create table if not exists modules (
 -- 2) เอกสารต้นฉบับ
 -- ---------------------------------------------------------------------
 create table if not exists kb_documents (
-  id            uuid primary key default uuid_generate_v4(),
+  id            uuid primary key default gen_random_uuid(),
   module_id     text not null references modules(id) on delete cascade,
   title         text not null,
   doc_type      text not null default 'MANUAL',
@@ -82,7 +82,7 @@ create index if not exists idx_chunks_trgm   on kb_chunks using gin(content gin_
 -- 4) ประวัติการสนทนา + log สำหรับตรวจสอบย้อนหลัง
 -- ---------------------------------------------------------------------
 create table if not exists chat_sessions (
-  id          uuid primary key default uuid_generate_v4(),
+  id          uuid primary key default gen_random_uuid(),
   title       text,
   user_ref    text,
   created_at  timestamptz default now()

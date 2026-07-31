@@ -718,7 +718,7 @@ $sw.WriteLine('')
 
 foreach ($d in $docs) {
   $sw.WriteLine("insert into kb_documents (id, module_id, title, doc_type, doc_code, source_path, lang, metadata) values (")
-  $sw.WriteLine("  uuid_generate_v4(), $(ConvertTo-SqlLiteral $d.Module), $(ConvertTo-SqlLiteral $d.Title),")
+  $sw.WriteLine("  gen_random_uuid(), $(ConvertTo-SqlLiteral $d.Module), $(ConvertTo-SqlLiteral $d.Title),")
   $sw.WriteLine("  $(ConvertTo-SqlLiteral $d.Type), $(ConvertTo-SqlLiteral $d.Code), $(ConvertTo-SqlLiteral $d.Path), 'mixed',")
   $sw.WriteLine("  jsonb_build_object('origin','skill-seed','seed_id',$(ConvertTo-SqlLiteral $d.Id)));")
 }
