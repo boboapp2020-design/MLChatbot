@@ -549,6 +549,12 @@ $SupportMap  = @(
      Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
      Title='Codex CXG 69-2008 แนวทางการตรวจสอบความใช้ได้ของมาตรการควบคุมความปลอดภัยอาหาร (Validation) — FAO/WHO'
      Code='CODEX-VAL' }
+  # หลักการสอบกลับ — สั้นมาก (5 หน้า) และเขียนสำหรับหน่วยงานกำกับ ไม่ใช่โรงงาน
+  # ใช้เป็นฐานหลักการได้ แต่ตอบไม่ได้ว่าโรงงานต้องตั้งรหัส lot ละเอียดแค่ไหน
+  @{ File='Codex-CXG60-2006-หลักการสอบกลับผลิตภัณฑ์.txt'
+     Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='Codex CXG 60-2006 หลักการสอบกลับผลิตภัณฑ์ (Traceability/Product Tracing) — FAO/WHO เขียนสำหรับหน่วยงานกำกับ'
+     Code='CODEX-TRC' }
 
   # ── FSSC 22000 จาก fssc.com (เอกสารสาธารณะของเจ้าของ scheme) ────────
   # Version 7 ประกาศใช้ 1 พ.ค. 2026 โรงงานถือ V6 อยู่ จึงต้องมีทั้งตัวข้อกำหนดใหม่
