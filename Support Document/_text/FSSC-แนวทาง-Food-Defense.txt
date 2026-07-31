@@ -1,0 +1,199 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+Version 2 | July 2023
+GUIDANCE DOCUMENT: FOOD DEFENSE
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 1 of 7
+CONTENTS
+1. BACKGROUND........................................................................................................................2
+2. DEFINITION ............................................................................................................................2
+3. FSSC 22000 SCHEME REQUIREMENTS...................................................................................3
+4. IMPLEMENTATION.................................................................................................................4
+5. FOOD DEFENSE TEAM AND TRAINING.................................................................................5
+6. AUDITING ...............................................................................................................................6
+7. REFERENCES ...........................................................................................................................7
+REVISION HISTORY
+Date Published Issue Changes
+May 2019 1 First publication
+July 2023 2 Updates made in line with Version 6 of the FSSC 22000 Scheme
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 2 of 7
+1. BACKGROUND
+Food defense is a crucial element in protecting your business and consumers from internal and
+external threats. It encompasses a range of potential threats, from relatively common tamper
+hoaxes to less probable terrorist attacks. Searching the web for “product tampering” or “product
+tampering employee” gives numerous examples illustrating that the threat is REAL. Supply chain
+or manufacturing threats can often be mitigated to reduce a wide range of threats. For example,
+putting a locking lid on a vat can reduce a wide range of potential intentional attacks.
+Food Defense Programs shall be developed to reduce the risks from internal and external threats
+to protect your customers.
+The FSSC 22000 Additional Requirements contain a specific requirement on Food Defense.
+Although this topic is addressed in ISO/TS 22002-1:2009 clause 18, the FSSC 22000 Additional
+Requirement 2.5.3 is aligned with GFSI requirements and taken to the management system level,
+making it a part of the management responsibility process.
+2. DEFINITION
+There are many different definitions of food defense which are in nature very similar. Some even
+conflict with the GFSI definition, such as including food fraud within the scope of food defense. It
+is essential to realize that food fraud is a separate topic and a different requirement in the FSSC
+22000 Scheme.
+The GFSI definition of Food Defense is: “The process to ensure the security of food, food
+ingredients, feed, or food packaging from all forms of intentional malicious attack including
+ideologically motivated attack leading to contamination or unsafe product.” (GFSI 2020.1)1.
+Other frequently used definitions are:
+• PAS 96:2017 - Food Defense: procedures adopted to ensure food and drink security and
+supply chains from malicious and ideologically motivated attacks leading to contamination
+or supply disruption (PAS 96:2017)2.
+• FDA (FSMA-Intentional Adulteration Rule): Food Defense is the effort to protect food from
+intentional adulteration from acts intended to cause wide-scale harm to public health,
+including acts of terrorism targeting the food supply (FDA Food Defense fact sheet)3.
+Industry and regulators have developed Food Safety Management Systems based on Hazard
+Analysis Critical Control Point (HACCP) principles which have proven effective against unintended
+food safety hazards. HACCP principles, however, have not been routinely used to detect or
+mitigate deliberate attacks and are therefore not relevant to Food Defense.
+The motivation or root cause for food defense is the intent to cause harm to consumers or
+companies. This is different from the motivation for food fraud which is exclusively for economic
+gain. Therefore, food defense prevention requires a different approach than the control of
+unintentional food safety hazards (HACCP) and food fraud prevention.
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 3 of 7
+Figure 1. Intentional vs. unintentional adulteration9
+3. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited V6:
+2.5.3 FOOD DEFENSE (ALL FOOD CHAIN CATEGORIES)
+2.5.3.1 THREAT ASSESSMENT
+The organization shall:
+a) Conduct and document the food defense threat assessment, based on a
+defined methodology, to identify and evaluate potential threats linked to the
+processes and products within the scope of the organization; and
+b) Develop and implement appropriate mitigation measures for significant
+threats.
+2.5.3.2 PLAN
+a) The organization shall have a documented food defense plan based on the
+threat assessment, specifying the mitigation measures and verification
+procedures.
+b) The food defense plan shall be implemented and supported by the
+organization’s FSMS.
+c) The plan shall comply with applicable legislation, cover the processes and
+products within the organization’s scope, and be kept up to date.
+d) For food chain category FII, in addition to the above, the organization shall
+ensure that its suppliers have a food defense plan in place.
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 4 of 7
+4. IMPLEMENTATION
+To implement the FSSC 22000 Food Defense requirements, a logical, systematic, and risk-based
+approach should be followed. It must be noted that there are many approaches, and FSSC leaves
+the choice to the organization. However, the most widespread methods are TACCP (Threat
+Assessment Critical Control Points; BSI/PAS 96 recommended), CARVER+Shock, and FDA “Food
+Defence Plan Builder” (FDA)4.
+To assist in implementing the clauses of FSSC 22000, the following way of working is
+recommended:
+1) Establish a food defense team;
+2) Conduct a threat assessment (e.g., TACCP), identify and evaluate potential threats linked
+to the processes and products within the scope of the organization;
+3) Define the significant threats;
+4) Identify, select, and implement appropriate mitigation measures for significant threats;
+5) Document the threat assessment, mitigation measures, verification, and incident
+management procedures in a Food Defense Plan supported by the FSMS; and
+6) Develop a practical training and communication strategy and implement the Food Defense
+Plan.
+In relation to mitigation measures, this needs to address both preventative and control measures.
+When determining the scope of your assessment, it is important to realize that the threat level has
+been shown to be at its highest at production facilities4,7. Make sure your site (including staff) is
+covered, but do not limit yourself to your premises only; include the supply chain as well.
+You need to implement a system that logically assesses the threats for which several tools are
+available (e.g., TACCP, CARVER+Shock, FDA Food Defense Plan Builder FDBP4). The tool is up to the
+organization and must be appropriate for their business.
+In essence, the food defense approach aims to answer the following key questions:
+- Who might want to attack us?
+- How might they do it?
+- What is the potential public health impact?
+- How can we prevent this from happening?
+Familiarize yourself with which food processing attributes may make your food a target (e.g., large
+batches or ease of access intend to increase the risk). Include external risks (elsewhere in the
+supply chain) AND internal risks (e.g., site/equipment access, disgruntled employees, etc.).
+It is important to note that every threat identified will NOT automatically be determined to be
+significant and will NOT automatically be required to be addressed by a mitigation measure.
+Identifying as many threats as possible is important so they can be assessed. After repeated or
+severe incidents, a subsequent threat assessment may determine that an additional mitigation
+measure is required.
+When conducting the threat assessment, it is allowed to initially group materials (e.g., similar raw
+materials or similar finished products). A more in-depth analysis may be required when significant
+risks are identified within a group.
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 5 of 7
+When defining a food defense strategy, the potential threats identified shall be assessed for their
+significance. A risk matrix similar to HACCP can be used (e.g., likelihood of occurrence x
+impact/consequence). Other factors such as accessibility, likelihood of detection, and
+recognizability may be used as further indicators. A prevention strategy for the significant risks
+shall be developed and documented. To help identify preventive measures, the FDA has published
+a database with preventive measures for different activities throughout the whole food chain
+(FDA)5.
+The plan shall be integrated into and supported by the organization’s FSMS for all its products. It
+should contain elements such as control measures, verification activities, corrections and
+corrective actions, responsibilities, record keeping, and continuous improvement. In addition, the
+FSMS needs to include the food defense element in policies, internal audits, management reviews,
+etc.
+The effectiveness of control measures and protection against potential threats largely depends on
+people. These may be external (e.g., suppliers) or internal (your associates). Therefore, a training
+and/or communication program is essential.
+In addition, Category FII organizations for brokering and trading must ensure that their suppliers
+have a food defense plan in place. This can be established in several ways, e.g., by having suppliers
+complete a supplier questionnaire confirming whether the supplier has a food defense plan in
+place, as well as requesting a copy of the suppliers’ food defense plan or evidence of the supplier
+having a GFSI-recognized or approved certification in place.
+5. FOOD DEFENSE TEAM AND TRAINING
+The threat assessment is performed by a multidisciplinary team with a wide range of expertise
+(e.g., HR, Security, Quality, IT, Production, Facility Manager). The composition of the food defense
+team will likely differ from that of your HACCP team and food fraud vulnerability assessment team.
+The team’s composition may evolve over time as the understanding of food defense develops, and
+external expertise may be required.
+Training of the team is required. Many trainings are available from a wide range of organizations.
+An example is Food Fraud Prevention Think Tank which provides free web-based courses on food
+defense (Food Defense Threat Audit Guide MOOC= massive open online course)6.
+The FDA provides free online training materials, and although it is US/FDA regulatory compliance
+focused, this training assists in educating the food industry on ways to help protect the food supply
+from deliberate acts of contamination or tampering (FDA)8.
+Note: The FDA training was developed to meet FDA compliance. It is important to note that the
+FDA scope, specifically for the FSMA intentional adulteration rule, is narrower than the GFSI scope.
+Therefore, FSMA-IA compliance does not necessarily equate to GFSI compliance.
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 6 of 7
+Figure 2. Differences between HACCP, TACCP, and VACCP (GFSI)
+6. AUDITING
+Auditors should assess the threat assessment and identification and implementation of mitigation
+measures is adequate by asking the following questions:
+• Is there a team with the correct competencies/knowledge?
+• Has a threat assessment been performed and documented?
+• Are relevant threats identified?
+• Breadth of the threat assessment (has the whole supply chain been assessed and not
+just its own site)?
+• Is there a methodology to determine the significance of threats?
+• When significant threats are identified, is there a documented food defense plan?
+• How are training and communication addressed?
+• Is the performance of the food defense plan evaluated in line with ISO 22000:2018,
+Clause 9 on performance evaluation?
+• Is the analysis regularly reviewed, and is the frequency adequate?
+• Is the emergency response team prepared (ISO 22000:2018 clause 8.4)?
+• Are all of the above effectively implemented through the organization’s FSMS (e.g.,
+records, awareness of people, site security, internal audits, and management reviews)?
+Guidance Document: Food Defense
+FSSC 22000 Version 6 | July 2023 7 of 7
+7. REFERENCES
+1) GFSI Benchmarking Requirements version 2020.1
+2) BSI PAS 96:2017. Guide to protecting and defending food and drink from deliberate attack.
+3) FDA Food Defense fact sheet:
+https://www.fda.gov/downloads/Food/GuidanceRegulation/FSMA/UCM503566.pdf
+4) FDA Food Defense Plan Builder:
+https://www.fda.gov/Food/FoodDefense/ToolsEducationalMaterials/ucm349888.htm
+5) FDA database of mitigation strategies:
+https://www.fda.gov/Food/FoodDefense/ToolsEducationalMaterials/ucm295898.htm
+6) Food Fraud Prevention Think Tank course:
+https://foodfraudpreventionthinktank.com/courses/food-defense-threat-audit-guide-
+mooc-ffpd/
+7) Nina Puhač Bogadi, Mara Banović and Ivona Babić. Food defense system in food industry:
+perspective of the EU countries. Journal of Consumer Protection and Food Safety, March
+2016.
+8) FDA Food Defense Training and Education: https://www.fda.gov/food/food-defense/food-
+defense-training-education
+9) GFSI position on mitigating the public health risk of food fraud, July 2014. Food-Fraud-GFSI-
+Position-Paper.pdf (mygfsi.com)

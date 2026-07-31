@@ -1,0 +1,149 @@
+Version 7 Upgrade Process
+FSSC 22000 Version 7 | May 2026 1 of 4
+REQUIREMENTS V7 UPGRADE PROCESS
+DATE 01 May 2026
+VERSION 1.0
+REVISION HISTORY First issue
+1. INTRODUCTION
+This document provides the requirements for the upgrade process from FSSC 22000 V6 to FSSC
+22000 V7 for Certification Bodies, Accreditation Bodies and Certified Organizations.
+2. FSSC 22000 VERSION 7
+2.1 GENERAL
+The Foundation FSSC published the new Scheme, FSSC 22000 V7 in May 2026 with the following
+requirements for application:
+1) Audits against the FSSC 22000 Scheme V6 are only allowed to be delivered up to 30 April 2027.
+2) Upgrade audits against FSSC 22000 Scheme V7 shall be conducted from 1 May 2027 until 30
+April 2028.
+2.2 REQUIREMENTS FOR CERTIFICATION BODIES (CB)
+2.2.1 GENERAL
+1) The CB shall include in its management system the requirements of FSSC 22000 V7 including
+these transition process requirements.
+2) The CB shall inform their certified organizations within 3 months from the date of publication
+of the new Scheme documents and upgrade requirements for V7.
+3) The CB shall train its personnel involved in the certification process (refer to Part 4, 3.1 (3)
+for details on related personnel) on the new FSSC 22000 Scheme V7 requirements.
+4) Mandatory training(s) provided by the Foundation shall be undertaken and successfully
+completed by auditors and relevant certification personnel, as specified by the Foundation.
+5) All existing V6 qualified auditors shall meet the following requirements and the CB shall have
+evidence to demonstrate compliance with the following Scheme requirements:
+a. Training and successful completion of an exam on all V7 Scheme requirements in
+accordance with the requirements of the Scheme, Part 4, 3.5.1 (3)(f).
+b. Training and successful completion of an exam on ISO 22002-100:2025 and the sector
+specific parts relevant to the (sub)categories the auditor are approved for e.g., ISO 22002-
+1:2025, in accordance with the requirements of the Scheme, Part 4, 3.5.1 (3)(h).
+c. Auditor training records shall be uploaded to the Auditor register under the annual
+training section of the maintenance of competence tab before conducting any audits to
+V7.
+6) Auditors shall be requalified by the CB for the relevant sub(sub)categories defined under
+Part 1, Table 1.1, in accordance with the criteria defined under Part 4, Section 3.5.3 (4). The
+auditor register on the Assurance Platform shall be updated by the 1st of May 2027, and be
+aligned with the requalification against the relevant sub(sub)categories , including uploading
+of the sub(sub)category requalification record to the subcategory tabs. For new auditors the
+Version 7 Upgrade Process
+FSSC 22000 Version 7 | May 2026 2 of 4
+CB shall follow the requirements described in the FSSC 22000 V7 Scheme for initial auditor
+qualification, included under Part 4, Section 3.5.
+2.2.2 AUDITS AND CERTIFICATES
+2.2.2.1 AUDITS
+1) Initial certification audits: both the Stage 1 and Stage 2 audit shall be conducted to Version
+7 when the audit takes place from 1 May 2027 onwards OR conduct the Stage 1 to Version 6
+(when conducted before 1 May 2027) and Stage 2 to Version 7 when conducted on or after
+1 May 2027.
+2) An upgrade audit is a full audit against the new FSSC 22000 V7 requirements and may be
+conducted announced, or unannounced if required to meet the 3-yearly unannounced audit
+requirements.
+3) Audits against the FSSC 22000 Scheme requirements V6 are only allowed at the latest 30
+April 2027.
+4) For upgrade audits utilizing the ICT Audit Approach method, both the remote component
+and the onsite component shall be completed against V7 commencing from 1 May 2027
+onwards. It is not possible to conduct part of the audit to a different Scheme version.
+2.2.2.2 AUDIT DURATION CALCULATION
+1) The audit duration calculation in the Scheme has been updated.
+2) The audit duration calculations for all certified organizations shall be reviewed in line with
+the new audit duration calculation. The CB shall either issue a new contract to V7, or a V7
+addendum to the existing V6 contract shall be issued, taking into account the audit duration
+as per V7. CBs shall also ensure that the V7 contract/addendum addresses all the
+requirements of Part 3, Section 4.4.
+3) The audit duration requirements as per the Scheme V7, Part 3, Section 4.3, 5.2 and 5.3 (as
+applicable) shall be applied for all V7 audits from 1 May 2027. For example, if the organization
+is undergoing an Upgrade audit during a Surveillance audit, the CB shall calculate the
+Surveillance audit duration as per the new V7 Scheme requirements. No additional increase
+in audit duration for the upgrade audit is specified by the Foundation, however, the CB can
+define an increase where deemed necessary.
+2.2.2.3 CERTIFICATES
+1) CBs are required to update the FSSC 22000 certificate of the certified organization following
+the successful completion of the Version 7 upgrade audit process. The Scheme Version 7
+shall be referenced on the certificate, in the audit report, audit plan, audit program, and in
+the FSSC Assurance Platform.
+2) In the case of an Upgrade surveillance audit, the expiry date from the V6 certificate shall be
+maintained.
+3) All upgrade audit packs and V7 certificates are required to be uploaded on the FSSC
+Assurance Platform within 2 months of the last day of the V7 upgrade audit. Therefore, the
+CB shall have completed the V7 upgrade in the Assurance Platform no later than 30 June
+2028.
+4) All remaining V6 certificates will automatically be set to withdrawn in the Assurance Platform
+after 30 June 2028, and will then no longer be visible on the FSSC 22000 public register of
+certified organizations on the FSSC website.
+Version 7 Upgrade Process
+FSSC 22000 Version 7 | May 2026 3 of 4
+2.2.3 LICENSING
+No changes to (sub)category licensing apply for Version 7. Sub(sub)categories only relate to
+auditor competency, not to licensing or accreditation. No new CB applications will be accepted to
+V6 of the Scheme once V7 has been published. New CBs will only be able to apply for an FSSC
+22000 license to V7 from 1 October 2026 onwards.
+2.2.4 ACCREDITATION PROCESS
+The CB is required to extend its current ISO/IEC 17021-1:2015 and ISO 22003-1:2022 accreditation
+scope to include FSSC 22000 V7 before 1 May 2027 and provide the new certificate of accreditation
+as per the requirements in Annex 4 to the Foundation within this timeline. Sub(sub)categories do
+not apply to licensing or the accreditation scope – it only applies to auditor competency.
+The issuance of non-accredited FSSC 22000 Scheme V7 certificates by a CB holding an existing
+accreditation to FSSC 22000 is not allowed by the Foundation.
+The CB shall submit the following to their AB in order for the AB to undertake a document review:
+• The CBs GAP analysis that shall as a minimum cover the Scheme changes in V7;
+• The CBs transition or implementation plan;
+• Relevant documentation for the changes, including evidence of implementation and
+• Any other relevant information deemed necessary by their AB.
+A CB office assessment by the AB is not mandatory for obtaining accreditation to FSSC 22000 V7,
+however, conducting an office assessment is at the discretion of the AB, based on the outcome of
+the ABs document review. An AB witness audit against V7 is not required by The Foundation.
+In principle, the CB shall follow the requirements outlined in this paper, and in case this conflicts
+with AB requirements, the most stringent requirements shall apply. The CB shall seek approval
+from the Foundation to resolve any unclear issues.
+New CBs requiring accreditation
+In the case where a new CB undertakes the initial FSSC 22000 accreditation process, the
+accreditation shall be against V7 of the FSSC 22000 Scheme. The witness audit shall be conducted
+at a V7 audit and is therefore only possible as of 1 May 2027.
+2.3 REQUIREMENTS FOR ACCREDITATION BODIES (AB)
+For FSSC 22000 Scheme version 7, the AB shall assess the CBs following the below:
+1) Conduct a document review of the CBs management system, where the following
+parameters shall be evaluated:
+a. Inclusion of all FSSC 22000 Scheme V7 requirements in the CB management system with
+particular attention to:
+i. FSSC 22000 Scheme V7 and transition process requirements;
+ii. Information communicated to certified organizations about FSSC 22000
+V7;
+iii. Training of all CB personnel, as detailed under 2.2.1 above;
+iv. Re-qualification of auditors for sub(sub)categories, as detailed under 2.2.1
+above.
+Version 7 Upgrade Process
+FSSC 22000 Version 7 | May 2026 4 of 4
+2) The AB shall assess the following during the document review: the CBs GAP analysis (at least
+covering the Scheme changes), transition/implementation plan, relevant documentation for
+the changes including evidence of implementation, and any other relevant information
+deemed necessary by the AB.
+If the document review conducted by the AB is successful, and the AB is able to review the required
+changes and implementation by the CB as a result of the document review, then a CB office
+assessment is not required. If the AB is not able to conduct a successful document review, then an
+office assessment is required.
+An AB witness audit against V7 is not required for CBs with existing accreditation to FSSC 22000
+V6.
+Based on a successful document review and/or office assessment, ABs shall issue a new CB
+accreditation certificate for Scheme Version 7, in accordance with the minimum content as
+referenced in Annex 4.
+During the next scheduled CB surveillance assessment, the AB shall verify the implementation of
+the FSSC 22000 Scheme V7 requirements in the CB management system as part of the regular
+assessment process.
+New CBs requiring accreditation
+In the case where a new CB undertakes the initial FSSC 22000 accreditation process, the
+accreditation shall be against V7 of the FSSC 22000 Scheme. The witness audit shall be conducted
+at a V7 audit and is therefore only possible as of 1 May 2027.

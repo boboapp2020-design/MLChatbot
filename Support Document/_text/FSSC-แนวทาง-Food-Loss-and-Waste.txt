@@ -1,0 +1,841 @@
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | October 2023 0 of 24
+FSSC 22000
+Version 1 | September 2023
+GUIDANCE DOCUMENT: FOOD LOSS AND
+WASTE
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 1 of 24
+CONTENTS
+REVISION HISTORY...........................................................................................................................1
+1. PURPOSE ....................................................................................................................................2
+2. INTRODUCTION.........................................................................................................................2
+3. SCOPE .........................................................................................................................................3
+4. FSSC 22000 SCHEME REQUIREMENTS ......................................................................................4
+5. GUIDANCE FOR IMPLEMENTATION.........................................................................................4
+6. GUIDANCE FOR AUDITORS .......................................................................................................9
+7. REFERENCES...............................................................................................................................9
+8. RELATED INDUSTRY INFORMATION......................................................................................10
+APPENDIX A ..................................................................................................................................111
+REVISION HISTORY
+Date Published Issue Changes
+September 2023 1 First publication
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 2 of 24
+1. PURPOSE
+Guidance Document for organizations on how to implement the FSSC 22000 requirements on food
+loss and waste within their food safety management systems. Whilst reference is made on how to
+implement food loss and waste reduction, this is informative only and designed to assist
+organizations based on existing information available.
+2. INTRODUCTION AND BACKGROUND
+The United Nations General Assembly adopted a set of 17 Sustainable Development Goals (SDGs),
+with SDG 12 looking to ensure sustainable consumption and production patterns. SDG 12.3 calls
+for halving per capita global food waste at the retail and consumer levels and reducing food losses
+along production and supply chains (including postharvest losses) by 2030.
+The mission of FSSC is to provide trust and deliver impact to the consumer goods industry. Our
+goal is to help organizations contribute to the global SDGs and create a better world. The addition
+of food loss and waste as an additional requirement into the FSSC 22000 Scheme supports this
+goal and aims to support organizations in their contributions to meeting the UN Sustainable
+Development Goals (SDGs).
+According to the Champions 12.3 2022 Progress Report1 on SDG 12.3, approximately 8% of all food
+produced in the world is lost at farm level; 14% is lost between the farm gate and the retail sector,
+e.g., manufacturers and producers; and 17% is wasted at the retail, food service, and household
+levels of the food supply chain. This results in significant impacts on human livelihoods and well-
+being, the global economy, and the environment. Over the past few years, events such as war and
+the COVID-19 pandemic have exacerbated food loss and waste by continually disrupting the
+human food supply chain. In addition, ISO has assembled a working group for the purposes of
+“standardization of food loss and waste, providing a framework for food organizations throughout
+the food chain, to work actively and effectively with measuring and reduction of food loss and
+waste” (ISO 2021).
+This progress report1 gives rise to further considerations on how food loss and waste affect us all:
+• Food security: Nearly 1 in 10 people are undernourished (FAO 2018), whilst more than 2
+billion tons of food each year never gets consumed (WWF-UK 2021).
+• Economic costs: Food loss and waste result in more than US$1 trillion in economic losses
+globally per year (Scialabba 2015; WWF-UK 2021).
+• The environment: The production of food that is ultimately lost or wasted requires a land
+area greater than that of China (FAO 2013). Food loss and waste generate about 8–10% of
+global greenhouse gas emissions annually (IPCC 2020). To put this in perspective, if food
+loss and waste were a country, it would be the third-largest greenhouse gas emitter on the
+planet—surpassed only by China and the United States. In fact, reducing food loss and
+waste by half would avoid 1.5 gigatons of carbon dioxide equivalent emissions per year by
+2050, an amount greater than the current energy-related and industry-related emissions
+of Japan (Searchinger et al. 2019).
+Reducing food loss and waste, therefore, can save money for farmers, companies, and
+households; feed more people by wasting less; and reduce the burden on water, land, and the
+climate2.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 3 of 24
+Figure 1 below is the food waste pyramid developed by the UN's Food and Agriculture
+Organization (FAO) which outlines the most preferable solutions to address food loss and waste.
+The ideal solution is prevention and reduction, followed by repurposing and recycling, and lastly,
+recovery and disposal.
+Figure 1: Food waste pyramid3
+3. SCOPE
+This FSSC 22000 Guidance document is meant as a guideline for the food industry to provide
+practical information and guidance on implementing FSSC Additional Requirement 2.5.16 Food
+Loss and Waste for All Food Chain Categories, excluding Category I.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 4 of 24
+4. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited against in Version 6
+2.5.16 FOOD LOSS AND WASTE (ALL FOOD CHAIN CATEGORIES,
+EXCLUDING I)
+In addition to clause 8 of ISO 22000:2018, the organization shall:
+a) Have a documented policy and objectives detailing the organization's strategy to reduce
+food loss and waste within their organization and the related supply chain.
+b) Have controls in place to manage products donated to not-for-profit organizations,
+employees, and other organizations, and ensure that these products are safe to consume.
+c) Manage surplus products or by-products intended as animal feed/food to prevent
+contamination of these products.
+d) These processes shall comply with the applicable legislation, be kept up to date, and not
+have a negative impact on food safety.
+5. GUIDANCE FOR IMPLEMENTATION
+5.1 GENERAL GUIDANCE
+The definition of food loss and waste in accordance with the FSSC 22000 Scheme V6, Appendix 1,
+is as follows:
+• Food loss occurs before the food reaches the consumer as a result of issues in the supply
+chain (production, processing, storage, and distribution phases).
+• Food waste refers to food that is fit for consumption but consciously discarded at the
+retail or consumption levels.
+In the context of this document, wherever reference is made to food loss and waste or FLW, the
+organization should only consider food loss, or food waste, or food loss and waste as relevant to
+their operations and direct supply chain.
+In the context of the FSSC 22000 Scheme:
+• Food loss and waste only relates to food – it does not include packaging material wastage.
+Therefore, the weight of packaging material is to be excluded from the measurement of
+food loss and waste. However, edible packaging is considered to be food.
+• Pre-harvest wastage is excluded from the measurement of food loss and waste as farming
+is not covered in the scope of the FSSC 22000 Scheme.
+• Food loss and waste includes both food (including ingredients, additives, drinks, pet food,
+etc.) intended for consumption (human and animal alike) and associated inedible parts
+removed from the food supply chain which is not intended for consumption.
+• The requirement also includes safe and wholesome food rescued/recovered and supplied
+to secondary markets to feed people, e.g., donations to charities. This differs from the
+scope of the food loss and waste inventory report required by the FLW Protocol2, which
+requires that food rescued and donated not be included in the food loss and waste
+quantity accounted for in the FLW inventory report.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 5 of 24
+5.2 DOCUMENTED POLICY AND OBJECTIVES
+In accordance with 2.5.16 (a), the organization shall have a documented policy and objectives
+detailing the organization's strategy to reduce food loss and waste within its organization and the
+related supply chain.
+5.2.1 GUIDANCE FOR ALL ORGANIZATIONS
+In order to establish a basic food loss and waste strategy, an organization can implement the
+following 3-step process1,4 :
+1. Target:
+a) Quantify the food loss and waste currently generated by the organization and the
+supply chain they have control over in order to establish a baseline/base year quantity.
+To do this, the organization should:
+§ Establish the scope of their food loss and waste by:
+• Identifying all the types of food loss and waste generated in each step
+in the production process (e.g., procurement, processing, packing,
+storage, distribution, etc.) as well as the steps in their supply chain that
+are within their control.
+§ Establish the time period over which to quantify the current food loss and
+waste.
+§ Calculate and quantify the current food loss and waste for each type of food
+waste the organization generates. The organization determines the
+quantification unit to be used, e.g., weight in kilograms (kg), volume in liters (L),
+relevant currency, and environmental impact, e.g., percentage of greenhouse
+gas emissions.
+§ Determine the current processes in place to manage the food loss and waste
+generated by the organization based on a defined methodology.
+§ Investigate the root causes of current food loss and waste and determine how
+this can be addressed.
+b) Establish a prevention plan including the organization's food loss and waste objectives:
+§ Decide which types of food loss and waste generated by the organization will
+be focus areas, based on 1.a) above, taking into account the type, quantity, and
+value of the food loss and/or waste.
+§ Set objectives and targets for these types of food loss and waste:
+• Short-term, e.g., annual/quarterly
+• Long-term, e.g., over 5 or 10 years
+The objectives and targets set may be internally established by the
+organization or based on regulations or industry associations’ targets. An
+organization should take into consideration whether their government or
+local authority has set standards or targets relating to the reduction of
+food loss and waste and aim to align with that to the extent possible.
+§ Define actions to be taken to reduce the food loss and waste per type,
+including responsibilities for implementing these actions, resources required,
+timeframes for completion, FSMS updates needed, etc.
+The actions implemented should look to:
+i. Prevent food loss and waste from occurring,
+ii. Rescue food for donation,
+iii. Redistribute to other destinations; refer to Figure 12.
+Note: The intent is to move waste up the hierarchy. E.g., waste
+currently sent to a disposal destination should be investigated to
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 6 of 24
+determine whether there are solutions to move this waste up to
+recovery, recycling, or optimization destinations.
+2. Measure:
+a) Define monitoring procedures to measure food loss and waste against the
+baseline/year at defined regular intervals and to determine the causes of the food loss
+and waste.
+b) Monitor and measure food loss and waste at defined intervals by using a defined
+methodology suitable to the organization.
+c) Monitor the current destination of the food loss and waste to move food loss and
+waste up the food and drink material hierarchy (Figure 1).
+d) Evaluate the results to determine whether the objective and target have been
+achieved.
+3. Act:
+a) Where it has been identified that the target has not been met, the organization needs
+to investigate and determine the causes for the target not being met and then
+implement suitable actions to address this.
+b) Where it has been identified that the target has been met, the organization should still
+evaluate the current quantity of food loss and waste, as well as the destination of the
+food loss and waste, to determine whether further reductions are possible and
+whether another feasible destination could have a larger sustainable impact.
+In addition to the above-mentioned, in accordance with 2.5.16 (d), the strategy implemented shall
+comply with the applicable legislation, be kept up to date, and not have a negative impact on food
+safety.
+Documented information is to be available to support targets and objectives established and the
+resulting measurement and monitoring. The review of the food loss and waste targets and
+objectives should be considered in the management review process.
+Organizations should look at ways to improve efficiencies to reduce the amount of product that
+needs to be downgraded, e.g., put measures in place to assess the amount of product having to
+be downgraded or sent to waste and see what target could be set to reduce this.
+Where products do not meet quality parameters in line with their finished product specifications,
+the organization should look for alternative markets in order to prevent the products from being
+disposed of, thereby reducing food loss and waste.
+Organizations should also look to review the established shelf life of their products to establish
+whether the shelf life is still correct or whether the shelf life of products could be increased whilst
+still being safe for consumption. This would assist in reducing food loss and waste by not
+discarding products that are still safe for consumption. Effective stock rotation, e.g., FIFO and FEFO,
+is also vital in reducing food loss and waste.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 7 of 24
+Further detailed guidance, based on the FLW Protocol’s food loss and waste accounting and
+reporting standard2 (FLWARS), is summarized under Appendix A, in line with the figure below.
+Figure 2: Overview of steps in the food loss and waste accounting and reporting standard2
+The FLW Protocol’s measurement tool is an example of a measurement tool that can be utilized
+by organizations; other measurement tools are also available. It is up to the organization to decide
+on an appropriate method and measurement tool that is suitable for their operations.
+5.2.2 SPECIFIC GUIDANCE FOR ORGANIZATIONS OTHER THAN
+FOOD/FEED MANUFACTURERS
+In addition to 5.2.1 above, the following also applies:
+5.2.2.1 FOOD CHAIN CATEGORY E ORGANIZATIONS – CATERING AND FOOD
+SERVICE:
+For sub-category E organizations, the strategy implemented by the organization should consider
+effective inventory management (including correct ordering and stock control), training on recipe
+management, menu construction to take into account multi-use ingredients (used in more than
+one dish), taking seasonality into account, effective portion control, etc. Organizations can also
+look to educate their customers and create awareness of food loss and waste.
+5.2.2.2 FOOD CHAIN CATEGORY F ORGANIZATIONS – TRADING, RETAIL,
+WHOLESALE AND E-COMMERCE:
+For sub-category FI organizations, Retailers and Wholesalers, the objectives and targets they set
+should also look to educate their customers and create awareness of food loss and waste to assist
+in a reduction of food loss and waste at the consumer household level, e.g., via marketing and
+awareness campaigns.
+For sub-category FII organizations, Brokers and Traders, as they do not physically handle any
+product, the objectives and targets they establish as part of their food loss and waste strategy
+need to relate to the suppliers in their food supply chain. Sub-category FII organizations should
+assist their suppliers with implementing food loss and waste strategies within their food supply
+chain. This can be undertaken when establishing their supplier agreement with their suppliers.
+5.2.2.3 FOOD CHAIN CATEGORY G ORGANIZATIONS – TRANSPORT AND STORAGE:
+For category G organizations, as they do not manufacture any product, the objectives and targets
+they establish as part of their food loss and waste strategy should relate to the controls they
+implement to maintain the shelf-life of the product during transport and storage, so as to prevent
+wastage, as well as to implement effective stock rotation systems taking FEFO (first-expired-first-
+out) and FIFO (first-in-first-out) principles into account. Organizations should also look to minimize
+damages resulting in product disposal, by considering moving damaged foodstuffs up the food
+and drink material hierarchy (Figure 1), where it does not pose a food safety risk.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 8 of 24
+5.2.2.4 FOOD CHAIN CATEGORY K ORGANIZATIONS – PRODUCTION OF
+BIO/CHEMICALS:
+In relation to additional requirement 2.5.16 on food loss and waste, Category K organizations
+would still need to show how they meet the requirement for 2.5.16 (a) & (d). The requirements for
+2.5.16 (b) and (c) may not be applicable, depending on the operations of the organization.
+The organization would need to have a documented policy and objectives detailing the
+organization's strategy to reduce food loss and waste within their organization and the related
+supply chain.
+In general, where category K organizations have products that do not meet specifications, these
+out-of-specification products would likely not be wasted but downgraded to other technical
+grades, thereby preventing wastage. If the organization has certain products that cannot be
+downgraded, then the organization should investigate to see if there is any other use for the
+product outside of the industries the organization already works in, to see if it can be used in
+another manner to prevent it from having to be disposed of. The overall intent of the food loss
+and waste requirement is to have organizations assess their overall food loss and waste and see
+whether there are alternative avenues to prevent the wastage of useable material and see
+whether an alternative destination (as per Figure 1) can be established.
+In addition, the organization should look at ways to improve efficiencies to reduce the amount of
+product that needs to be downgraded, e.g., put measures in place to assess the amount of product
+having to be downgraded or sent to waste and see what target could be set to reduce this.
+5.3 MANAGEMENT OF DONATED PRODUCTS
+In accordance with 2.5.16 (b), the organization shall have controls in place to manage products
+donated to not-for-profit organizations, employees, and other organizations; and ensure that
+these products are safe to consume.
+Where an organization has surplus product or products that do not meet quality specifications,
+and they intend to rescue this product and donate it to not-for-profit organizations such as
+charities and food banks, or to employees, or other organizations, then they need to ensure that
+they implement suitable controls to manage these products and ensure that these products are
+still safe for consumption.
+The controls implemented by the organization shall take into account the applicable legislation
+and shall not have a negative impact on the food safety of the donated products. Some of the
+controls to be implemented by the organization include maintaining the products under the
+correct storage conditions and ensuring that the traceability of the products is being maintained.
+If the product to be rescued and donated is a customer-branded product, then the organization
+should first obtain agreement from the customer before donating this product.
+5.4 MANAGEMENT OF SURPLUS PRODUCTS OR BY-PRODUCTS
+In accordance with 2.5.16 (c), the organization shall manage surplus products or by-products
+intended as animal feed/food to prevent contamination of these products.
+Surplus products or by-products intended as animal feed/food need to be stored separately from
+waste to prevent contamination of these products and traceability maintained. In accordance with
+2.5.16 (d), the products shall be managed and comply with the applicable legislation.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 9 of 24
+If the surplus product is a customer-branded product, it shall be managed in accordance with
+customer requirements.
+6. GUIDANCE FOR AUDITORS
+The following is a non-exhaustive list of questions that an auditor can use to assess the FSSC
+Additional Requirement 2.5.16:
+• Has a policy and objectives, with measurable and time-bound targets, been established
+for food loss and waste?
+• Have the objectives been met, and if not, were suitable actions taken? This would not apply
+in the first year of establishing the policy and objectives.
+• Does the organization donate products, and if so, are there controls in place, including
+controls to ensure the food safety of these donated products?
+• Does the organization produce surplus products or by-products intended as animal
+feed/food, and if so, are there controls in place to prevent contamination of these
+products?
+• Are legal requirements and food safety taken into consideration when establishing the
+policy and objectives, including any controls established?
+Auditors need to verify that the necessary documented information is available.
+7. REFERENCES
+1. Champions 12.3. SDG Target 12.3 on Food Loss and Waste: 2022 Progress Report. URL:
+Champions 12.3
+2. FLW Protocol. Food Loss and Waste Accounting and Reporting Standard, V1.0, 2016. URL:
+Food Loss and Waste Protocol
+3. UNEP, FAO. Prevention and Reduction of Food and Drink Waste in Businesses and
+Households: Guidance for Governments, Local Authorities, Businesses and Other
+Organizations. Version 1.0. URL: UNEP
+4. BV. Food Waste Management System - A Holistic Approach to Reduce Food Loss and Waste
+Whitepaper. June 2022. URL: Bureau Veritas
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 10 of 24
+8. RELATED INDUSTRY INFORMATION
+The references below are not an exhaustive list, are for information purposes only, and may not
+apply to all organizations. The requirements of the Scheme shall be adhered to in all cases.
+• Champions 12.3. URL: Home | Champions 12.3 (champions123.org)
+• Commission for Environmental Cooperation. URL : Case Studies on Food Loss and Waste
+in North America (cec.org)
+• European Union Guidelines on food donation. URL: EUR-Lex - 52017XC1025(01) - EN -
+EUR-Lex (europa.eu)
+• European Union Guidelines for the feed use of food no longer intended for human
+consumption. URL: EUR-Lex - 52018XC0416(01) - EN - EUR-Lex (europa.eu)
+• European Consumer Food Waste Forum. URL: European Consumer Food Waste Forum |
+Knowledge for policy (europa.eu)
+• EU Platform on Food Losses and Food Waste. URL: EU Platform on Food Losses and Food
+Waste (europa.eu).
+• EU Food Loss and Waste Prevention Hub: European Food Loss and Waste Prevention
+Hub - Explore the Member States Initiatives (europa.eu)
+• EU Guidance on Best Before and Use By Dates to prevent food waste. URL:
+fw_lib_best_before_en.pdf (europa.eu)
+• EU Farm to Fork Strategy. URL: Farm to Fork Strategy (europa.eu)
+• EU Food Waste. URL: Food Waste (europa.eu)
+• Interreg Europe. URL: interregeurope.eu/find-policy-solutions/policy-briefs/food-waste
+• ReFED. URL: Resources and Guides | ReFED
+• Stop Food Waste Australia. URL: Australian Food Pact - To Reduce Food Waste in
+Australia (stopfoodwaste.com.au)
+• The Consumer Goods Forum, Case Study Booklet on Food Waste. URL: Environmental-
+Sustainability-Food-Waste-Booklet-2018.pdf (theconsumergoodsforum.com)
+• Together Against Food Waste. URL: Together Against Food Waste
+(samentegenvoedselverspilling.nl)
+• UNEP, FAO. Prevention and reduction of food and drink waste in businesses and
+household – Guidance for governments, local authorities, businesses and other
+organizations, Version 1.0. URL: Prevention and Reduction of Food and Drink Waste in
+Businesses and Households: Guidance for Governments, Local Authorities, Businesses
+and Other Organisations. Version 1.0 (unep.org)
+• UN Global Compact. No time to lose (Food). URL: Report: Food Loss on the Table - UN
+Global Compact Network Netherlands (gcnetherlands.nl)
+• WRAP. Food Waste Reduction Roadmap. URL: Food Waste Reduction Roadmap | WRAP
+• WRAP. Guidance for Food Retail operations. URL: Food Retail operations | WRAP
+• WRAP. Guidance for the Dairy Sector. URL: Dairy processing | WRAP
+• WRAP. Guidance for the Meat Sector. URL: Meat processing | WRAP
+• WRAP. Guidance for the Fresh Produce Sector. URL: Fresh produce | WRAP
+• WRI. URL: Reducing Food Loss and Waste: Setting a Global Action Agenda
+• WRI. URL: Reducing Food Loss and Waste: Ten Interventions to Scale Impact
+• WUR. URL: The effect of date marking terminology of products with a long shelf life on
+food discarding behaviour of consumers
+• WUR. URL: Date marking related visual cues can reduce food waste - WUR
+• WUR. URL: Wageningen researchers take a journey into the world’s food systems in
+search of losses, waste and ways to solve them - WUR
+• WWF-US. URL: No Food Left Behind | Pages | WWF (worldwildlife.org)
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 11 of 24
+APPENDIX A
+The Food Loss & Waste Protocol (FLW Protocol) has developed the Food Loss and Waste Accounting and Reporting Standard for quantifying food and/or
+associated inedible parts removed from the food supply chain. The below is a condensed summary of this standard, to assist organizations in quantifying
+and reporting on their food loss and waste2.
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Define goals Establish the rationale or goal of quantifying Food Loss and Waste for your
+organization.
+• Goals may relate to food security, economic performance, environmental
+impact, or a combination thereof.
+• Mandatory goal: mandatory policy or regulation established by a government
+or another authority.
+• Voluntary goal: Organization adopts FLW reduction goals as part of a voluntary
+commitment either undertaken alone or as part of a consortium e.g., the
+United Nations has set a voluntary target as part of the SDGs. Likewise, an
+organization may also set its own corporate FLW reduction goal and apply it to
+themselves as well as their supply chain. Industry associations may also set
+goals for their members. The CGF set a target of halving food waste with its
+retail and manufacturing operations members by 2025, in addition to
+contributing to the UN SDGs by 2030.
+Part I: Overview
+Section 3 – Goals of quantifying
+food loss and waste
+Review accounting and
+reporting principles
+Principles for account and reporting include relevance, completeness, consistency,
+transparency and accuracy.
+Part I: Overview
+Section 5 – Principles of FLW
+accounting and reporting
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 12 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Establish scope This may either be established by the organization, or by an external party (industry
+association, government, or intergovernmental body, etc.)
+• Timeframe: the period of time for which the inventory results are being reported.
+• Material type(s): the materials that are included in the inventory (food only,
+inedible parts only, or both). Packaging materials are excluded.
+• Destination(s): where FLW goes when removed from the food supply chain. Refer
+to Figure 1 and Table 1.
+• Boundary: the food category (the types of food reported on), lifecycle stage (the
+stages in the food supply chain being reported on), geography (geographic borders
+being reported on), and organization (organizational units being reported on).
+Refer to table 1 and table 2 on the following pages.
+Part II: Main requirements,
+Section 6 – Establishing the
+scope of a food loss and waste
+inventory
+TABLE 1: DESTINATION TYPES2
+DESTINATION DEFINITION
+Animal feed Diverting material from the food supply chain (directly or after processing) to animals. This excludes crops
+intentionally grown for bioenergy, animal feed, seed, or industrial use.
+Bio-based
+materials/biochemical
+processing
+Converting material into industrial products. Examples include creating ﬁbers for packaging material; creating
+bioplastics (e.g., polylactic acid); making “traditional” materials such as leather or feathers (e.g., for pillows); and
+rendering fat, oil, or grease into a raw material to make products such as soaps, biodiesel, or cosmetics.
+“Biochemical processing” does not refer to anaerobic digestion or production of bioethanol through
+fermentation.
+Co-digestion/anaerobic
+digestion
+Breaking down material via bacteria in the absence of oxygen. This process generates biogas and nutrient-rich
+matter. Co-digestion refers to the simultaneous anaerobic digestion of FLW and other organic material in one
+digester. This destination includes fermentation (converting carbohydrates, such as glucose, fructose, and
+sucrose, via microbes, into alcohols in the absence of oxygen to create products such as biofuels).
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 13 of 24
+DESTINATION DEFINITION
+Composting/aerobic processes Breaking down material via bacteria in oxygen-rich environments. Composting refers to the production of
+organic material (via aerobic processes) that can be used as a soil amendment.
+Controlled combustion Sending material to a facility that is speciﬁcally designed for combustion in a controlled manner, which may
+include some form of energy recovery (this may also be referred to as incineration).
+Land application Spreading, spraying, injecting, or incorporating organic material onto or below the surface of the land to enhance
+soil quality.
+Landfill Sending material to an area of land or an excavated site that is speciﬁcally designed and built to receive wastes.
+Not harvested/plowed-in Leaving crops that were ready for harvest in the ﬁeld or tilling them into the soil.
+Refuse/discards/litter Abandoning material on land or disposing of it in the sea. This includes open dumps (i.e., uncovered, unlined),
+open burn (i.e., not in a controlled facility), the portion of harvested crops eaten by pests, and ﬁsh discards (the
+portion of total catch that is thrown away or slipped).
+Sewer/wastewater treatment Sending material down the sewer (with or without prior treatment), including that which may go to a facility
+designed to treat wastewater.
+Other Sending material to a destination that is diﬀerent from the 10 listed above. This destination should be described.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 14 of 24
+TABLE 2: EXAMPLES OF GOALS AND RELATED INVENTORY SCOPE2
+ORGANIZATION
+TYPE
+GOAL TYPE EXAMPLE GOAL
+MATERIAL
+TYPE
+DESTINATION TIME-FRAME BOUNDARY
+Retailer Economic Reduce food loss
+and waste going
+to landﬁll by 50%
+by 2030 in order
+to reduce tipping
+fee costs.
+Food and
+associated
+inedible
+parts
+Landﬁll Annual • Food category: All food categories
+• Geography: All countries in which
+retailer operates
+• Lifecycle stage: Retail (ISIC 4721
+and 4722)
+• Organization: All 500 stores
+managed by the retailer
+Food
+manufacturer
+Environmental Work with
+suppliers in
+three provinces
+to reduce on-
+farm food loss
+and waste of
+potatoes by 30%.
+Food and
+associated
+inedible
+parts
+All Annual
+(quantified
+during harvest
+season and
+scaled up)
+• Food category: Potatoes
+• Geography: Selected provinces
+• Lifecycle stage: Growing of
+vegetables and melons, roots and
+tubers (ISIC 0113)
+• Organization: All 20 farms
+supplying food manufacturer
+through dedicated purchasing
+contracts
+Soft drink
+manufacturer
+Economic Reduce
+quantities of
+product lost in
+wash water
+during batch
+change-over by
+10% by using
+new technology.
+Food Sewer/
+wastewater
+treatment
+Monthly
+(to rapidly assess
+the effective-
+ness of the new
+technology)
+• Food category: soft drinks
+• Geography: All locations of
+processing plants
+• Lifecycle stage: All economic
+sectors producing FLW
+(household, retail, catering/food
+service, manufacturing)
+• Organization: All 100
+manufacturing plants
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 15 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Decide how to
+quantify
+Establish quantification method:
+a) Assess existing data to determine if the data needed is already available, reliable, and
+for the related scope. You should identify the source and scope of the available data.
+b) If no existing data is available or available data is not adequate, you should undertake a
+new quantification. Describe the quantification method(s) to be used, and whether it
+will be a measurement or an approximation, or inference by calculation.
+c) The method selected should take into consideration:
+• Level of accuracy desired
+• Degree of access to the food loss and waste
+• Resources available
+• Practical aspects
+• Goals of quantification beyond the determination of the amount of food loss and
+waste
+Part II: Main Requirements,
+Section 7 – Deciding how to
+quantify food loss and waste
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 16 of 24
+TABLE 3: METHODS OF QUANTIFYING FOOD LOSS AND WASTE USING MEASUREMENT OR APPROXIMATION2
+MEASUREMENT OR
+APPROXIMATION
+METHODS DEFINITION
+Direct weighing Using a measuring device to determine the weight of FLW.
+Counting
+Assessing the number of items that make up FLW and using the result to determine the weight;
+includes using scanner data and “visual scales”. Visual scales are practical pictorial aids used in
+agricultural contexts, typically to help assess the diﬀerent levels of damage by pests to stored
+crops.
+Assessing volume Assessing the physical space occupied by FLW and using the result to determine the weight.
+Waste composition
+analysis
+Physically separating FLW from other material to determine its weight and composition.
+Records
+Using individual pieces of data that have been written down or saved, and that are often routinely
+collected for reasons other than quantifying FLW (e.g., waste transfer receipts or warehouse record
+books).
+Diaries Maintaining a daily log of FLW and other information.
+Surveys
+Gathering data on FLW quantities or other information (e.g., attitudes, beliefs, self-reported
+behaviors) from a large number of individuals or entities through a set of structured questions.
+TABLE 4: METHODS OF QUANTIFYING FOOD LOSS AND WASTE USING INFERENCE BY CALCULATION2
+INFERENCE BY
+CALCULATION
+METHODS DEFINITION
+Mass balance
+Measuring inputs (e.g., ingredients at a factory site, grain going into a silo) and outputs (e.g.,
+products made, grain shipped to market) alongside changes in levels of stock and changes to the
+weight of food during processing.
+Modeling
+Using a mathematical approach based on the interaction of multiple factors that inﬂuence the
+generation of FLW.
+Proxy data
+Using FLW data that are outside the scope of an entity’s FLW inventory (e.g., older data, FLW data
+from another country or company) to infer quantities of FLW within the scope of the entity’s
+inventory.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 17 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Gather and analyze
+data, and calculate
+inventory results
+• An organization should gather and analyze the data, as well as establish the causes
+of FLW, to establish effective food loss and waste reduction strategies.
+• Considerations should be given to whether the organization will measure all the food
+loss and waste that occurs or whether the organization will undertake sampling and
+scale up the data.
+• In relation to sampling and scale-up, an organization may decide to collect data on
+the amount of food loss and waste from only a sample set. Thereafter, the data may
+be scaled up to generate an estimate of the total food loss and waste.
+• When utilizing sampling and scaling up, an organization should distinguish between
+the period of time when the sample data was collected and the timeframe for which
+the inventory results are being reported, e.g.,
+o Sampled six - one-week periods with specific dates, and then used this sample
+data and scaled it up to represent 12 months of data. In this case, the reported
+inventory timeframe would be 12 months.
+• Factors should be considered when using the sampling and scale-up method,
+including accounting for the differences in food loss and waste generated over a
+period of time, e.g., different seasons in the year.
+• If an organization quantifies the material types separately, then it should determine
+the approach used to separate the materials, the specific conversion factors used,
+and the source of these factors.
+Part III: Other Requirements
+and Recommendations Section
+8 – Collecting, calculating, and
+analyzing data; Section 10 –
+Coordinating the analysis of
+multiple food loss and waste
+inventories; Appendix A, and
+Appendix B
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 18 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Figure 3: Approaches for quantifying material type separately2.
+Weight of packaging should also be excluded from the food loss and waste calculation.
+Figure 4: Approaches for excluding the weight of packaging from food loss and waste2.
+An organization should also consider whether they need to analysis and coordinate food
+loss and waste inventory results across several inventories.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 19 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Determine causes
+of food loss and
+waste
+Organizations should also determine the causes of food loss and waste, and the drivers
+behind it. Identifying the causes and determining the drivers can assist organizations in
+reducing food loss and waste.
+TABLE 5: CAUSES AND DRIVERS OF FOOD LOSS AND WASTE BY STAGE IN THE FOOD SUPPLY CHAIN2
+STAGE CAUSES DRIVERS
+PRODUCTION • Spillage
+• Cosmetic damage
+• Damage from pests or animals
+• Not harvested
+• Premature or delayed harvesting
+• Poor harvesting technique
+• Lack of access to market or processing facilities
+• Poor access to pesticides, inadequate fencing
+• Price volatility resulting in commodity price too low to cover harvest cost
+• Product speciﬁcations (e.g., size, cosmetic standards)
+HANDLING AND
+STORAGE
+• Spillage
+• Cosmetic damage
+• Damage from pests or animals
+• Rejected from market
+• Unable to reach market
+• Unable to sell due to quality or size
+• Spoilage
+• Improper drying of grains leading to fungal infection
+• Inappropriate choice of storage containers
+• Lack of storage facilities, including lack of cold storage
+• Rough handling of products during loading and unloading
+• Poor conditions during transport
+• Delays at docks or national borders for inspection
+PROCESSING • Spillage
+• Trimming during processing
+• Rejected from market
+• Contamination on the processing line
+• Errors in processing, resulting in defects
+• Improper packaging
+• Product speciﬁcations (e.g., size, cosmetic standards)
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 20 of 24
+STAGE CAUSES DRIVERS
+DISTRIBUTION
+AND MARKET
+• Product recall
+• Cooked improperly
+• Food cooked but not eaten
+• Cosmetic damage
+• Spoilage
+• Past use/sell-by date
+• Regular replenishment of stocks, leading consumers to select most recent
+products
+• Food prepared but not served
+• Portion/package sizes too large
+• Failure in demand forecasting
+• Lack of system for food donation
+CONSUMPTION • Product recall
+• Cooked improperly
+• Food cooked but not eaten
+• Cosmetic damage
+• Spoilage
+• Past use/sell-by date
+• Large pack sizes containing more than the consumer uses
+• Inadequate planning before shopping
+• Confusion over date labels on packaging
+• Lack of cooking knowledge
+• Inadequate storage
+• Sub-optimal storage of food
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Assess uncertainty Organizations should assess and report on the degree of uncertainty in respect of the food
+loss and waste calculated. The degree of uncertainty describes the likely difference
+between the estimated food loss and waste quantified and the actual true amount of food
+loss and waste.
+Part III: Other Requirements
+and Recommendations, Section
+9 – Assessing uncertainty
+Perform review to
+verify the accuracy
+and consistency of
+the results
+An organization should perform a review to provide assurance of the results prior to
+reporting on food loss and waste publicly. This may include undertaking a peer review,
+establishing verification procedures, undertaking validation, implementing quality
+assurance and quality control procedures, and conducting an audit. This review may be
+undertaken internally, or externally by competent third parties. The assurers should be
+independent of the food loss and waste inventory and reporting process and have no
+conflicts of interest.
+Part III: Other Requirements
+and Recommendations, Section
+12 – Review and Assurance
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 21 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Report FLW
+inventory
+Table 5 describes the items to be included in the food loss and waste inventory report. Part III: Other Requirements
+and Recommendations, Section
+13 – Reporting
+TABLE 6: SUMMARY OF ITEMS TO BE INCLUDED IN THE FLW INVENTORY REPORT2
+REPORTING SECTION ITEMS TO BE INCLUDED
+General Information • Name of entity about which information is being reported
+• Contact information
+• The unit of quantiﬁcation (expressed as weight)
+• Date inventory prepared
+• For subsequent inventories, a link to previous inventory reports and description of any methodological changes.
+Scope • Timeframe (including start and end date)
+• Material type (food, associated inedible parts, or both)
+o If food or associated inedible parts removed from the food supply chain are accounted for separately:
+§ Sources or frameworks used to categorize a material as food or as inedible parts (including
+assumptions used to deﬁne whether or not material was “intended” for human consumption)
+§ Approach used to calculate the separate amounts and, if applicable, all conversion factors used
+and their sources
+• Destination(s) and path(s) (paths only required if destination is unknown)
+• Boundary, namely food category(ies), lifecycle stage(s), geography, organization (including source of classiﬁcation
+used)
+Conﬁrmation of the following:
+• Exclusion of packaging and any other non-FLW material (and its weight);
+• Reported weight of FLW reﬂecting the state in which it was generated, that is, before water was added or
+before the intrinsic water weight of FLW was reduced;
+• Exclusion of pre-harvest losses.
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 22 of 24
+REPORTING SECTION ITEMS TO BE INCLUDED
+Describe approaches used if calculations were needed to separate the weight of FLW from non-FLW materials, or to
+estimate the original weight of FLW.
+Inventory Results Total amount of production (in a deﬁned quantiﬁcation unit)
+Total amount of FLW (in a deﬁned quantiﬁcation unit)
+The amount broken down by:
+• Material type (total of “food and associated inedible parts,” or separately by material type)
+• Destination (if known) or total FLW by path if destination unknown.
+Deciding how to quantify
+FLW
+Describe the quantiﬁcation method(s) used. If existing studies or data are used, identify the source and scope.
+Data collection,
+calculation, and analysis
+If sampling and scaling of data are undertaken, describe the approach and calculations used as well as the period of
+time over which sample data was collected (including start and end dates).
+Assessing uncertainty Provide a qualitative description and/or quantitative assessment of the uncertainty around FLW inventory results.
+If assurance is
+undertaken
+Create an assurance statement including:
+• Whether the assurance was ﬁrst or third party
+• The assurance opinion
+• A summary of the assurance process
+• The relevant competencies of the assurance providers
+• An explanation of any potential conﬂicts of interest
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 23 of 24
+REPORTING SECTION ITEMS TO BE INCLUDED
+If the amount of FLW is
+tracked over time and a
+reduction target set
+• Base year
+• Scope of the target (where relevant, include reduction target and completion date) and whether all or only some
+of the FLW inventory results will be tracked over time. If only some of the inventory results are being tracked,
+explain why.
+• Recalculation of the base FLW inventory when signiﬁcant changes in the quantiﬁcation method or assumptions
+occur.
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+Set target and track
+over time
+An organization should select a base year, monitor performance, and make adjustments to
+the base year calculation as needed.
+• Now that the organization has determined their food loss and waste inventory, an
+organization can set a reduction target (objective) for food loss and waste. In order to
+set this target, the organization should:
+o Select a base year. The amount of food loss and waste generated in the base
+year can be compared with the amount generated at the end of the target
+period to determine whether the target has been achieved or not.
+o Identify the scope of the target (preferably aligned with the scope of the
+inventory).
+o Choose a target. When deciding on a target the following should be considered:
+§ Target type: absolute target (specific amount e.g., reduce FLW by 15 000
+tons from 2024 to 2030) vs relative targets (comparison with another
+metric e.g., a national government sets a target of reducing FLW by 50 %
+per capita from 2023 levels by 2030).
+§ Target completion date: The date should be expressed in the same unit
+of time as was used to set the base year e.g., 12-month period. An
+organization should have both short term and long-term targets.
+§ Target level: Either set internally or by an external party such as
+National Government or industry association.
+o Monitoring performance against targets: An organization should develop a FLW
+monitoring plan. The following should be taken into consideration:
+Part III: Other Requirements
+and Recommendations, Section
+14 – Setting targets and tracking
+changes over time
+Guidance Document: Food Loss and Waste
+FSSC 22000 Version 6 | September 2023 24 of 24
+STEP GUIDANCE/ADDITIONAL DETAIL REFERENCE IN FLWARS2
+§ Quantification frequency: Minimum at the start and end of the target
+period.
+§ Ensuring consistency of scope and reducing uncertainty by choosing a
+quantification method that provides a high degree of accuracy, using a
+robust sampling approach to minimize uncertainties.
+§ Ensuring consistency of the quantification method.
+o Recalculating base year food loss and waste when significant changes occur
+such as structural changes to the organization e.g., mergers; changes to the
+scope of the inventory; changes in calculation methodologies, significant errors
+identified; changes in boundaries; and changes in conversion factors. An
+organization can also establish their most recent years results as their base
+year if it is not in conflict with their reduction goals or targets.
+Quantifying and reporting the weight of food rescued2
+Although the Food Loss and Waste Accounting and Reporting Standard focuses on material no longer in the food supply chain, and therefore food
+rescued or transferred from one part of the food supply chain to another is outside the scope of this Standard, the Standard still includes guidelines
+for quantifying and reporting the weight of food rescued. Refer to Appendix E of the Food Loss and Waste Accounting and Reporting Standard for
+further guidance2.

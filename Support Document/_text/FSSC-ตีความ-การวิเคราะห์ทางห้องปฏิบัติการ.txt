@@ -1,0 +1,352 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+Version 1 | June 2024
+SCHEME INTERPRETATION ARTICLE: LABORATORY
+ANALYSIS FOR CRITICAL FOOD SAFETY
+PARAMETERS
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 1 of 9
+TABLE OF CONTENTS
+1. INTRODUCTION ...............................................................................................................................2
+2. FSSC 22000 SCHEME REQUIREMENTS ..........................................................................................2
+3. INTERPRETATION.............................................................................................................................3
+3.1 GENERAL INTERPRETATION........................................................................................................3
+3.2 APPLICABLE REQUIREMENTS OF ISO/IEC 17025:2017 RELEVANT TO LABORATORIES .......3
+3.3 APPLICABLE REQUIREMENTS OF ISO/IEC 17025:2017 RELEVANT TO ORGANIZATIONS.....7
+4. DEFINITIONS.....................................................................................................................................8
+5. REFERENCES.....................................................................................................................................9
+REVISION HISTORY
+Date Published Issue Changes
+June 2024 1 First publication
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 2 of 9
+1. INTRODUCTION
+In accordance with the FSSC 22000 Scheme V6, Part 2, Section 2.2, the Foundation publishes
+interpretation articles related to Scheme requirements that include further clarification on
+requirements and the application and/or implementation thereof. Certification Bodies and
+Certified Organizations need to adhere to these interpretation articles, and it is the responsibility
+of the FSSC 22000 contact person to keep up to date with the interpretation articles and
+communicate it to the relevant parties within the CB or to Certified organizations, as applicable.
+This Scheme Interpretation Article on Additional Requirement 2.5.1 (a) is in place to provide further
+clarification on the laboratory analysis requirements and the implementation thereof.
+FSSC 22000 additional requirement 2.5.1 (a) on laboratory analysis of parameters critical to food
+safety, is applicable to all food chain categories.
+This additional requirement was updated as BoS decision #4 within the Version 6 Board of
+Stakeholders Decision List, published in March 2024. The update was made to align with GFSI
+benchmarking requirements and is applicable to all Version 6 audits as of 1 April 2024.
+2. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited - Version 6.
+Amended by BoS Decision # 4 of the Version 6 BoS Decision List.
+2.5.1 MANAGEMENT OF SERVICES AND PURCHASED MATERIALS (ALL
+FOOD CHAIN CATEGORIES)
+a) In addition to clause 7.1.6 of ISO 22000:2018, the organization shall ensure that where
+laboratory analysis is used for the verification and/or validation of parameters critical to food
+safety, these shall be conducted by a competent laboratory (including both internal and
+external laboratories as applicable) that has the capability to produce precise and repeatable
+test results using validated test methods and best practices (e.g. successful participation in
+proficiency testing programs, regulatory approved programs or accreditation to international
+standards such as ISO/IEC 17025). The analyses shall be performed in accordance with the
+applicable requirements of ISO/IEC 17025.
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 3 of 9
+3. INTERPRETATION
+3.1 GENERAL INTERPRETATION
+• This requirement is not requiring the laboratory to be accredited, however, that the
+laboratory used shall operate in accordance with the applicable requirements of ISO/IEC
+17025 when performing analyses for parameters critical to food safety.
+• Organizations that utilize unaccredited laboratories should have a copy of the latest
+version of ISO/IEC 17025 available.
+• Where the laboratory holds accreditation to ISO/IEC 17025, and the organization has a
+valid copy of the accreditation certificate, covering the test methods for the specific scope,
+then this requirement is considered to be met. Where the laboratory holds accreditation
+to ISO/IEC 17025, however, not for the required test methods, then the requirements
+included within this Scheme Interpretation Article still apply.
+3.2 APPLICABLE REQUIREMENTS OF ISO/IEC 17025:2017
+RELEVANT TO LABORATORIES
+3.2.1 IMPARTIALITY, CONFIDENTIALITY, RESPONSIBILITY, AND
+AUTHORITY
+• The laboratory shall implement and maintain procedures to ensure that impartiality and
+confidentiality is met, for the analysis of parameters critical to food safety. The laboratory
+shall not allow commercial, financial or other pressures to compromise impartiality.
+• The laboratory shall specify the responsibility, authority and interrelationship of all
+personnel who manage, perform or verify work affecting the results of laboratory
+analyses. Documentation includes job descriptions, organizational structure, etc.
+3.2.2 RESOURCES
+• The laboratory shall have available the personnel, facilities, equipment, systems and
+support services necessary to manage and perform its laboratory activities.
+• The laboratory shall ensure that the personnel have the competence to perform
+laboratory activities for which they are responsible and to evaluate the significance of
+deviations/noncompliance’s observed.
+• The facilities and environmental conditions shall be suitable for the laboratory activities
+and not adversely affect the validity of testing results.
+• The laboratory shall have access to equipment (including, but not limited to, measuring
+instruments, software, measurement standards, reference materials, reference data,
+reagents, consumables or auxiliary apparatus) that is required for the correct performance
+of laboratory activities and that can influence the results. The equipment used for
+measurement shall be capable of achieving the measurement accuracy and/or
+measurement uncertainty required to provide a valid result. The requirements of ISO
+22000:2018 clause 8.7 apply.
+3.2.3 SELECTION AND VERIFICATION OF TEST METHODS
+• The laboratory shall use appropriate methods and procedures (recognized international
+or country specific methods) for all laboratory analyses.
+• All methods, procedures and supporting documentation, such as instructions, standards,
+manuals and reference data relevant to the laboratory activities, shall be kept up to date
+and be readily available to relevant personnel.
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 4 of 9
+• The laboratory shall ensure that it uses the latest valid version of a test method.
+• International, regional or national standards or other recognized specifications that
+contain sufficient and concise information on how to perform laboratory activities do not
+need to be supplemented or rewritten as internal procedures if these standards are
+written in a way that they can be used by the operating personnel in a laboratory. Where
+necessary, the laboratory shall provide additional documentation for optional steps in the
+method or additional details.
+• The laboratory shall verify that it can properly perform methods before introducing them
+by ensuring that it can achieve the required performance. Records of the verification shall
+be retained. If the method is revised, verification shall be repeated to the extent necessary.
+3.2.4 VALIDATION OF TEST METHODS
+• The laboratory shall validate non-standard methods, laboratory-developed methods and
+standard methods used outside their intended scope or otherwise modified. The
+validation shall be as extensive as is necessary to meet the needs of the given application
+or field of application. Validation should also consider procedures for sampling, handling
+and transportation of samples.
+• The techniques used for method validation can be one of, or a combination of, the
+following:
+a. Calibration or evaluation of bias and precision using reference standards
+or reference materials.
+b. Systematic assessment of the factors influencing the result.
+c. Testing method robustness through variation of controlled parameters,
+such as incubator temperature, volume dispensed.
+d. Comparison of results achieved with other validated methods.
+e. Interlaboratory comparisons.
+f. Evaluation of measurement uncertainty of the results based on an
+understanding of the theoretical principles of the method and practical
+experience of the performance of the sampling or test method.
+• When changes are made to a validated test method, the influence of such changes shall
+be determined and where they impact the initial validation, a new test method validation
+shall be performed.
+• The performance characteristics of validated methods, as assessed for the intended use,
+shall be relevant to the organization’s needs and consistent with specified requirements.
+• Performance characteristics can include, but are not limited to, measurement range,
+accuracy, measurement uncertainty of the results, limit of detection, limit of quantification,
+selectivity of the method, linearity, repeatability or reproducibility, robustness against
+external influences or cross-sensitivity against interference from the matrix of the sample,
+and bias.
+• The laboratory shall retain records of the validation.
+3.2.5 SAMPLING INCL. HANDLING OF SAMPLES
+• The laboratory shall have a sampling plan and method when it carries out sampling. The
+sampling method shall address the factors to be controlled to ensure the validity of testing
+results. The sampling plan and method shall be available at the site where sampling is
+undertaken. Sampling plans shall, whenever possible, be based on appropriate statistical
+methods.
+• The sampling method shall describe the selection of samples or sites; the sampling plan;
+and the preparation and treatment of sample(s).
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 5 of 9
+• The laboratory shall retain records of sampling data that forms part of the testing that is
+undertaken.
+• The laboratory shall have a procedure for the transportation, receipt, handling, protection,
+storage, retention, and disposal of test samples. Precautions shall be taken to avoid
+deterioration, contamination, loss or damage to the sample during handling,
+transportation, storage/waiting, and preparation for testing.
+• The laboratory shall have a system for the traceability of test samples. Traceability shall be
+retained while the sample is under the responsibility of the laboratory.
+• Upon receipt of the test sample, deviations from specified conditions shall be recorded,
+and actions taken where deviations are noted.
+• When items need to be stored or conditioned under specified environmental conditions,
+these conditions shall be maintained, monitored and recorded.
+3.2.6 ENSURING THE VALIDITY OF THE RESULTS
+The laboratory shall have a procedure for monitoring the validity of results, including undertaking
+trending. The resulting data shall be recorded in such a way that trends are detectable and, where
+practicable, statistical techniques shall be applied to review the results. This monitoring shall be
+planned and reviewed and shall include the following, where appropriate, but not limited to:
+a) Use of reference materials or quality control materials. Use of alternative
+instrumentation that has been calibrated to provide traceable results.
+b) Functional check(s) of measuring and testing equipment.
+c) Use of check or working standards with control charts, where applicable.
+d) Intermediate checks on measuring equipment.
+e) Replicate tests using the same or different methods.
+f) Retesting of retained samples.
+g) Correlation of results for different characteristics of a sample.
+h) Review of reported results.
+i) Intralaboratory comparisons; and
+j) Testing of blind sample(s).
+The laboratory shall monitor its performance by comparison with results of other laboratories.
+This monitoring shall be planned and reviewed and shall include, but not limited to, the following:
+a) Participation in proficiency testing; (Refer to ISO/IEC 17043 for additional information on
+proficiency tests and proficiency testing providers). Note: In relation to the frequency of
+the proficiency testing, it is recommended that the laboratory participates in proficiency
+testing annually, with all test methods covered over a four (4) year period.
+b) Participation in interlaboratory comparisons other than proficiency testing, where
+proficiency testing is not available.
+Data from monitoring activities shall be analysed, used to control and, if applicable, improve the
+laboratory's activities. If the results of the analysis of data from monitoring activities are found to
+be outside pre-defined criteria, appropriate action shall be taken to prevent incorrect results from
+being reported.
+3.2.7 DOCUMENTED INFORMATION AND REPORTING OF RESULTS
+The laboratory shall document its procedures to the extent necessary to ensure the consistent
+application of its laboratory activities and the validity of the results. The laboratory shall have
+processes in place to control data and information management.
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 6 of 9
+Results shall be reviewed and authorized prior to release. The laboratory shall demonstrate that
+the records of the testing results for the parameters critical to food safety have been verified and
+maintained.
+The results shall be provided accurately, clearly, unambiguously and objectively, usually in a report
+format, and shall include all the information agreed with the organization and necessary for the
+interpretation of the results and all information required by the method used. All issued reports
+shall be retained as documented information.
+Each report shall include the following information, where applicable:
+• The name and address of the laboratory.
+• Confirmation of whether it was analyzed internally, or if outsourced, confirmation of who
+conducted the analysis. The report shall clearly identify when results are from outsourced
+providers.
+• Traceability identification of the report (unless this is internal analysis), and the samples
+tested.
+• The name and contact information of the organization requesting the testing (unless this
+is internal analysis).
+• Identification of the method used.
+• A clear and unambiguous description of the sample, and, when necessary, the condition
+of the sample, location of sampling, method of sampling, sampling plan, and the
+environmental conditions during sampling.
+• The date of receipt of the product and the date sampling was undertaken.
+• The date(s) the laboratory analysis(es) were performed.
+• The date the report was issued.
+• It may also include a statement to the effect that the results relate only to the samples
+tested.
+• The results with, where appropriate, the units of measurement.
+• Additions to, deviations, or exclusions from the method.
+• For internal laboratories, the name(s) of the persons conducting the analysis(es) and of
+those authorizing/verifying the report.
+• For external laboratories, the identification of the person(s) authorizing/verifying the
+report.
+• Information on specific test conditions, such as environmental conditions.
+• A statement of conformity with requirements or specifications may be included.
+• The measurement uncertainty presented in the same unit as that of the measurand or in
+a term relative to the measurand (e.g. percent) when:
+o It is relevant to the validity or application of the test results.
+o The measurement uncertainty affects conformity to a specification limit.
+• Information required to evaluate measurement uncertainty for testing.
+• Any further comments, opinions and interpretations as deemed necessary by the
+laboratory and/or organization.
+3.2.8 MANAGEMENT OF NONCONFORMITIES
+The laboratory shall have a nonconformity management process in place when any aspect of its
+laboratory activities or results do not conform to procedures or the agreed requirements of the
+organization (e.g. equipment or environmental conditions are out of specified limits, results of
+monitoring fail to meet specified criteria). The requirements of ISO 22000:2018 clause 10.1 shall
+be met. In addition, the impact of nonconformities on previous results shall be considered.
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 7 of 9
+3.3 APPLICABLE REQUIREMENTS OF ISO/IEC 17025:2017
+RELEVANT TO ORGANIZATIONS
+3.3.1 ONSITE/INTERNAL LABORATORIES
+In addition to the requirements included within the relevant section of ISO 22000:2018, the
+applicable sector specific PRP standard, and the additional requirement 2.5.1 (a) of Part 2 of the
+FSSC 22000 Scheme, the organization shall adhere to Section 3.2 of this Scheme Interpretation
+Article. The laboratory shall be included in the FSMS of the organization and be included in the
+internal audit and management review.
+3.3.2 EXTERNAL LABORATORY SERVICE PROVIDERS
+In accordance with ISO 22000:2018 clause 7.1.6, the organization is required to implement suitable
+controls for external service providers, which includes laboratories undertaking analysis for
+parameters critical to food safety. The organization shall undertake the following in relation to
+external service providers:
+• Establish and apply criteria for the evaluation, selection, monitoring of performance and
+re- evaluation of external service providers.
+• Ensure adequate communication of requirements to the external provider(s).
+• Ensure that externally provided services do not adversely affect the organization's ability
+to consistently meet the requirements of the FSMS.
+• Retain documented information of these activities and any necessary actions as a result
+of the evaluations and re-evaluations.
+This shall include, but is not limited to, the organization having to undertake the following:
+• Develop and implement a procedure for laboratory analysis for parameters critical to food
+safety, addressing requirements of ISO 22000:2018 clause 7.1.6, and FSSC 22000
+Additional Requirement 2.5.1(a); as well as a signed service level agreement with the
+laboratory.
+• For external laboratories that have valid accreditation to ISO/IEC 17025, no additional
+evidence to meet the requirement of ISO/IEC 17025 is needed, other than confirmation
+that the test methods are accredited for the specific scope. The organization needs to
+retain the accreditation certificate and schedule as documented information.
+• For external laboratories that do not have accreditation to ISO/IEC 17025, or the
+accreditation does not include the required test method(s), then the service level
+agreement shall at least define the following for the non-accredited test methods: the
+testing parameters, agreed test methods (incl. verification and validation thereof),
+sampling protocol, successful participation in proficiency testing programs, regulatory
+approved programs, etc.
+• The organization shall also ensure that the following is implemented, in relation to the
+activities that are not covered by the laboratories ISO/IEC 17025 accreditation scope:
+o Have the laboratory complete a laboratory specific questionnaire/assessment
+every year, to confirm the applicable requirements of ISO/IEC 17025 are being met;
+or,
+o Undergoes a second- or third-party audit at least once every three years e.g., a
+laboratory audit undertaken by the organization itself, or by a third party. This
+audit shall cover the requirements of Section 3.2 of this Scheme Interpretation
+Article, to ensure it covers the applicable requirements of ISO/IEC 17025. The
+auditor shall have the relevant competency to undertake the audit.
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 8 of 9
+4. DEFINITIONS
+COMPETENT LABORATORY
+A laboratory that has the capability to produce precise, repeatable accurate test results using
+validated test methods and best practices (e.g. successful participation in proficiency testing
+programs, regulatory approved programs or accreditation to international standards).
+(GFSI Benchmarking Requirements, V2020.1)
+IMPARTIALITY
+Presence of objectivity.
+Note 1 to entry: Objectivity means that conflicts of interest do not exist, or are resolved so as not
+to adversely influence subsequent activities of the laboratory.
+Note 2 to entry: Other terms that are useful in conveying the element of impartiality include
+“freedom from conflict of interests”, “freedom from bias”, “lack of prejudice”, “neutrality”,
+“fairness”, “open-mindedness”, “even-handedness”, “detachment”, “balance”.
+(ISO/IEC 17025:2017)
+INTERLABORATORY COMPARISON
+Organization, performance and evaluation of measurements or tests on the same or similar items
+by two or more laboratories in accordance with predetermined conditions.
+(ISO/IEC 17025:2017)
+INTRALABORATORY COMPARISON
+Organization, performance and evaluation of measurements or tests on the same or similar items
+within the same laboratory in accordance with predetermined conditions.
+(ISO/IEC 17025:2017)
+LABORATORY
+Body that performs one or more of the following activities:
+— testing;
+— calibration;
+— sampling, associated with subsequent testing or calibration
+Note 1 to entry: “laboratory activities” refer to the three above-mentioned activities.
+(ISO/IEC 17025:2017)
+Scheme Interpretation Article: Laboratory analysis for critical food safety parameters
+FSSC 22000 Version 6 | June 2024 9 of 9
+PARAMETERS CRITICAL TO FOOD SAFETY
+OPRPs, CCPs; as well as PRPs that can have a direct impact on food safety such as environmental
+monitoring, verification of allergens, the analysis of key ingredient(s)/raw material(s), and/or the
+analysis of finished product(s) related to significant hazards identified.
+Note 1: Additional Requirement 2.5.1 (a) only applies to parameters critical to food safety; it does
+not apply to quality related parameters. However, the requirements of the Scheme, Part 2, 2.5.9
+(b) apply to quality related parameters.
+PROFICIENCY TESTING
+Evaluation of participant performance against pre-established criteria by means of interlaboratory
+comparisons.
+(ISO/IEC 17025:2017)
+VALIDATION, AS REFERENCED IN 2.5.1 (A)
+Obtaining evidence that a control measure (or combination of control measures) will be capable
+of effectively controlling the significant food safety hazard.
+Note 1 to entry: Validation is performed at the time a control measure combination is designed,
+or whenever changes are made to the implemented control measures.
+Note 2 to entry: Distinctions are made in this document between the terms validation, monitoring
+and verification:
+— validation is applied prior to an activity and provides information about the capability
+to deliver intended results;
+— monitoring is applied during an activity and provides information for action within a
+specified time frame;
+— verification is applied after an activity and provides information for confirmation of
+conformity.
+(ISO 22000:2018)
+VERIFICATION, AS REFERENCED IN 2.5.1 (A)
+Confirmation, through the provision of objective evidence, that specified requirements have been
+fulfilled (ISO 22000:2018).
+Note 2 of the definition for validation also applies to the definition of verification.
+For the definition of validation and verification in the context of the verification and
+validation of test methods, please refer to the definitions within ISO/IEC 17025.
+5. REFERENCES
+1. GFSI Benchmarking requirements, Version 2020.1
+2. ISO 22000:2018
+3. ISO/IEC 17025:2017

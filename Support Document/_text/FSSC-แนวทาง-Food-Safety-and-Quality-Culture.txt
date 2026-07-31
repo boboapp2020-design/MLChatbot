@@ -1,0 +1,641 @@
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 0 of 19
+FSSC 22000
+Version 2 | July 2023
+GUIDANCE DOCUMENT: FOOD SAFETY AND
+QUALITY CULTURE
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 1 of 19
+CONTENTS
+REVISION HISTORY...........................................................................................................................1
+1. INTRODUCTION.........................................................................................................................2
+2. GFSI REQUIREMENT ..................................................................................................................2
+3. FSSC 22000 ADDITIONAL REQUIREMENT 2.5.8 .......................................................................2
+4. GFSI GUIDING QUESTIONS .......................................................................................................3
+5. FSSC 22000 GUIDANCE..............................................................................................................3
+6. GUIDANCE FOR IMPLEMENTING FOOD SAFETY AND QUALITY CULTURE............................4
+7. ADDITIONAL GUIDANCE BASED ON PAS 320: DEVELOPING AND SUSTAINING A MATURE
+FOOD SAFETY CULTURE GUIDE .....................................................................................................17
+8. REFERENCES.............................................................................................................................19
+REVISION HISTORY
+Date Published Issue Changes
+November 2020 1 First publication
+July 2023 2 Updates made in line with Version 6 of the FSSC 22000 Scheme and
+to include reference to PAS 320:2023.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 2 of 19
+1. INTRODUCTION
+GFSI defines food safety culture as “shared values, beliefs and norms that affect mindset and
+behavior toward food safety in, across and throughout an organization” (GFSI 2020.1).
+The definition derives from existing literature on organizational and food safety culture and is
+made practical and applicable through the group’s work.
+A mature food safety culture is one in which the company vision and mission have been broken
+down into the finer details of expectations for every department and person throughout the
+organization.
+2. GFSI REQUIREMENT
+The GFSI benchmarking document contains the following requirement that shall be implemented
+by GFSI-approved Certification Program Owners (CPO) and audited onsite.
+Requirement: Evidence of the senior management’s commitment to establish, implement,
+maintain, and continuously improve the Food Safety Management System
+shall be provided. This shall include elements of food safety culture, at a
+minimum consisting of:
+• Communication,
+• Training,
+• Feedback from employees and
+• Performance measurement on food safety-related activities.
+3. FSSC 22000 ADDITIONAL REQUIREMENT 2.5.8
+Included in FSSC 22000 Version 6, under Part 2 of the Scheme, is the additional requirement 2.5.8
+on Food Safety and Quality Culture. This requirement is applicable to all food chain categories.
+The requirement is aligned with the requirement of GFSI. The additional requirement 2.5.8
+indicates:
+a) In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organization’s
+commitment to cultivating a positive food safety and quality culture, senior management shall
+establish, implement, and maintain a food safety and quality culture objective(s) as part of the
+management system. The following elements shall be addressed as a minimum:
+• Communication,
+• Training,
+• Employee feedback and engagement, and
+• Performance measurement of defined activities covering all sections of the
+organization’s impact on food safety and quality.
+b) The objective(s) shall be supported by a documented food safety and quality culture plan, with
+targets and timelines included in the management review and continuous improvement
+processes of the management system.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 3 of 19
+4. GFSI GUIDING QUESTIONS
+GFSI has drafted a set of guiding questions that could be used when auditing an organization
+against a GFSI-approved certification Scheme.
+5. FSSC 22000 GUIDANCE
+This FSSC 22000 guidance document includes guidance for auditors and organizations on
+assessing food safety and quality culture within their organization in accordance with the FSSC
+22000 Additional Requirement 2.5.8 as well as how the GFSI guiding questions link to ISO
+22000:2018 and the overall FSMS.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 4 of 19
+6. GUIDANCE FOR IMPLEMENTING FOOD SAFETY AND QUALITY CULTURE
+FSSC 22000 VERSION 6 ADDITIONAL REQUIREMENT 2.5.8
+In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organization’s commitment to cultivating a positive food safety and
+quality culture, senior management shall establish, implement, and maintain a food safety and quality culture objective(s) as part of the management
+system. The following elements shall be addressed as a minimum:
+• Communication,
+• Training,
+• Employee feedback and engagement, and
+• Performance measurement of defined activities covering all sections of the organization impacting food safety and quality.
+GUIDANCE ON AUDITING THE COMMUNICATION ELEMENT
+• Senior management can demonstrate their engagement with food safety by establishing expectations for every department and person
+throughout the organization with regard to food safety and quality culture, e.g., establish whether this is included within job descriptions.
+• Verify how food safety and quality culture aspects are communicated throughout the organization, e.g., establish if the organization has a
+communication policy and communication matrix.
+• Verify how top management has verified that all staff, e.g., understand food safety and quality culture expectations, verify whether this is included
+within induction and annual training for personnel, and whether it included an assessment of personnel’s understanding.
+• Interview personnel on the shop floor to determine whether employees know their responsibilities and what they are accountable for in relation
+to food safety and quality-related tasks. Verify how personnel receive feedback on production performance and food safety/quality issues, e.g.,
+verify if there are weekly or monthly production meetings and include feedback on production performance and food safety/quality issues.
+• Assess during interviews with top management whether they can explain the organization’s food safety and quality expectations and how they
+are used in the decision-making processes.
+• Assess during interviews with the shop floor to which level personnel are informed on food safety and quality expectations. E.g., check the level
+of comfort and ease with which the auditee explains or responds when asked about the expectations, such as whether they know what to do
+when a non-conformance occurs. Can they describe for their section/area of work what non-conformance is?
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 5 of 19
+• Assess the capability of top management to react to, e.g., customer complaints or supplier issues, in a timely and effective manner whilst ensuring
+the right decisions are made. This can be assessed during the interview with top management as well as when sampling customer complaints
+and corrective actions.
+• Assess whether food safety and quality-related expectations are communicated in a language understood by the personnel on the shop floor.
+E.g., Look out for examples of translated materials either posted on the walls where employees work or other areas such as the canteen walls.
+• Verify that training material is available and translations are in the local language and sample and examine answer sheets if written tests are
+used for verification of competence.
+COMMUNICATION
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+How do your senior leaders
+engage with food safety?
+Clause 5.1, d)
+Top management shall demonstrate leadership and commitment
+with respect to the FSMS by communicating the importance of
+effective food safety management and conforming to the FSMS
+requirements, applicable statutory and regulatory requirements,
+and mutually agreed-on customer requirements related to food
+safety.
+Assessment of this ISO 22000 clause shall
+also include the expectations for every
+department and person throughout the
+organization with regard to food safety
+culture.
+How is your messaging used to
+communicate food safety
+expectations to all employees?
+Clause 5.2.2, a) and b)
+The food safety policy shall be:
+a) be available and maintained as documented information;
+b) be communicated, understood, and applied at all levels
+within the organization;
+Assessment of this ISO 22000 clause shall
+also include a detailed assessment of
+how food safety culture aspects are
+communicated throughout the
+organization.
+Is your company’s vision and
+mission clearly expressed so
+that all staff understands both?
+Clause 5.2.2, b)
+The food safety policy shall be communicated, understood, and
+applied at all levels within the organization;
+Assessment of this ISO 22000 clause shall
+also include how top management has
+verified that all staff understands food
+safety culture expectations.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 6 of 19
+COMMUNICATION
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+Are you confident that all
+employees know their
+responsibilities and are held
+accountable for their food
+safety-related tasks and that
+accountabilities are well-
+connected?
+Clause 5.3.1
+Top management shall ensure that the responsibilities and
+authorities for relevant roles are assigned, communicated, and
+understood within the organization.
+Clause 7.4.3
+The organization shall establish, implement, and maintain an
+effective system for communicating issues having an impact
+on food safety. To maintain the effectiveness of the FSMS, the
+organization shall ensure that the food safety team is informed
+in a timely manner of changes in the following: a) – m).
+The assessment shall be included in the
+interview with personnel on the shop floor.
+Look for evidence that feedback personnel
+receives on production performance and food
+safety issues.
+Can you articulate your
+company’s food safety
+expectations and how they are
+applied to every decision?
+Clause 4.2
+To ensure that the organization has the ability to consistently
+provide products and services that meet applicable statutory,
+regulatory, and customer requirements with regard to food
+safety, the organization shall determine:
+c) the interested parties that are relevant to the FSMS;
+d) the relevant requirements of the interested parties of
+the FSMS.
+The organization shall identify, review and update information
+related to the interested parties and their requirements.
+Clause 6.2
+The organization shall establish objectives for the FSMS at
+relevant functions and levels.
+This shall be addressed when interviewing top
+management.
+Also, check when interviewing personnel at the
+shop floor to assess to which level personnel is
+informed on food safety expectations.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 7 of 19
+COMMUNICATION
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+Does your strategy enable you
+to respond quickly and
+effectively, with appropriate
+oversight, to ensure the right
+decisions are made?
+Clause 4.1
+The organization shall determine external and internal issues that
+are relevant to its purpose and that affect its ability to achieve the
+intended result(s) of its FSMS.
+The organization shall identify, review and update information
+related to these external and internal issues.
+Clause 6.3
+When the organization determines the need for changes to the
+FSMS, including personnel changes, the changes shall be carried out
+and communicated in a planned manner.
+The organization shall consider:
+e) the purpose of the changes and their potential
+consequences;
+f) the continued integrity of the FSMS;
+g) the availability of resources to effectively implement the
+changes;
+h) the allocation or re-allocation of responsibilities and
+authorities.
+Clause 9.3
+Top management shall review the organization’s FSMS at planned
+intervals to ensure its continuing suitability, adequacy, and
+effectiveness.
+The top management decision-making
+process determines this and should be
+addressed during an interview with top
+management. Specifically, look at the
+capability of top management to react to,
+e.g., customer complaints or supplier
+issues.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 8 of 19
+Can you identify examples of
+where using industry
+intelligence has helped identify
+potential hazards or risks to
+your business?
+Clause 4.1
+The organization shall determine external and internal issues that
+are relevant to its purpose and that affect its ability to achieve the
+intended result(s) of its FSMS.
+The organization shall identify, review and update information
+related to these external and internal issues.
+Specifically, address NOTE 2 to this clause
+when interviewing top management.
+Industry intelligence is also part of
+understanding the context.
+FSSC 22000 VERSION 6 ADDITIONAL REQUIREMENT 2.5.8
+In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organization’s commitment to cultivating a positive food safety and
+quality culture, senior management shall establish, implement, and maintain a food safety and quality culture objective(s) as part of the management
+system. The following elements shall be addressed as a minimum:
+• Communication,
+• Training,
+• Employee feedback and engagement, and
+• Performance measurement of defined activities covering all sections of the organization impacting on food safety and quality.
+GUIDANCE ON AUDITING THE TRAINING ELEMENT
+• Assess the overall training program of the organization, including the content, e.g., evaluate the ’organization's training procedure, training
+matrix, and records of training, and determine whether it addressed relevant topics.
+• Assessment of competency during the interview of personnel on the shop floor. E.g., Check for level of comfort in having a conversation on
+the topic directed at any person along the production line, not just the team leaders or Supervisors.
+• Verify evidence that personnel have participated in food safety training, including whether personnel undertaking activities related to CCPs
+and OPRPs have been trained in this regard and whether they were assessed and found competent. E.g., request retained evidence of
+training such as attendance registers and written tests/signed-off records of on-the-task observation and allow sufficient time to stand and
+observe employees at work during production and look out for good practices. This also applies to training on quality control parameters.
+• Verify that the organization’s training program addresses hazard and risk management controls in personnel’s area of work and what actions
+would be taken in the case they were not adhered to. Evaluate documented evidence that this training was undertaken.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 9 of 19
+TRAINING
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+When was your last food
+safety training, and what did
+you learn?
+Clause 7.2, b)
+The organization shall ensure that these persons, including the food
+safety team and those responsible for the operation of the hazard
+control plan, are competent on the basis of appropriate education,
+training, and/or experience.
+Assess the overall training program of the
+organization.
+The assessment shall also be included in
+the interview with personnel on the shop
+floor. Look for evidence that personnel
+have participated in food safety training.
+How do you educate staff to
+understand why the hazard
+and risk management controls
+in their areas are so important,
+and what would be the
+consequences of not following
+them?
+Clause 7.3
+The organization shall ensure that all relevant persons doing work
+under the organization’s control shall be aware of their individual
+contribution to the effectiveness of the FSMS, including the benefits
+of improved food safety performance and the implications of not
+conforming with the FSMS requirements.
+This should be addressed in the
+organization’s training program. Assess
+the content of the training program and
+training.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 10 of 19
+FSSC 22000 VERSION 6 ADDITIONAL REQUIREMENT 2.5.8
+In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organization’s commitment to cultivating a positive food safety and
+quality culture, senior management shall establish, implement, and maintain a food safety and quality culture objective(s) as part of the management
+system. The following elements shall be addressed as a minimum:
+• Communication,
+• Training,
+• Employee feedback and engagement, and
+• Performance measurement of defined activities covering all sections of the organization impacting on food safety and quality.
+GUIDANCE ON AUDITING THE FEEDBACK FROM EMPLOYEES’ ELEMENT
+• Assess when last the organization raised a food safety or quality concern whilst interviewing the food safety team (leader) and/or personnel
+on the shop floor. E.g., Refer to their defined process for internal communication regarding food safety and quality issues and use it to check
+if it is followed, confirm the target recipients and what feedback was received from them.
+• Assess the specific food safety and quality concerns raised by personnel and how this has been managed by the food safety team and top
+management, including a review of documented evidence. Determine whether the organization has a confidential reporting system in place
+for employees to communicate these issues in a confidential manner. E.g., Check for what platforms have been set up by the organization
+to ensure open lines of communication through online chatting platforms created specifically for food safety-related issues, anonymous tip-
+off email or telephone numbers for employees to use, and so on.
+• Assess how personnel contribute to food safety and quality in the organization whilst interviewing personnel on the shop floor. E.g., ask
+personnel how they communicate suggestions, whom they speak to, and when.
+• Assess whether personnel are actively involved in safeguarding food safety. E.g., taking pride in their own workspace, taking accountability
+for themselves and one another, and looking out for following rules set per department or area of work by observing during the audit.
+• Observe whether personnel are committed and adhere to the food safety and quality expectations of the organization whilst on the shop
+floor, e.g., observe employees entering the facility and assess whether they have followed the correct entering procedures, including hand
+washing and proper wearing of PPE.
+• Assess whether the FSMS documentation is designed to support employees’ food safety and quality decisions and behaviors. E.g., check that
+instructions are available and clear in a simple step-by-step guide/format and check that the latest updated information is made available at
+the point of use.
+• Assess whether personnel are included in the design and improvement of food safety and quality-related protocols and instructions. Verify
+that the food safety team is involved in this and whether the food safety team and top management include personnel in this process. Assess
+how their feedback is received and evaluated.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 11 of 19
+• Assess how protocols and instructions are validated on the shop floor.
+FEEDBACK FROM EMPLOYEES
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+When was the last time you or
+someone on your team raised
+a food safety concern?
+Clause 5.3.3
+All persons shall have the responsibility to report the
+problem(s) with regard to the FSMS to identified person(s).
+The assessment shall be done when
+interviewing the food safety team (leader)
+and/or personnel on the shop floor. Look
+specifically for food safety concerns raised by
+personnel and how the food safety team and
+top management have managed this.
+How do you contribute to food
+safety in your organization?
+Clause 7.3, c)
+The organization shall ensure that all relevant persons doing
+work under the organization’s control shall be aware of their
+individual contribution to the effectiveness of the FSMS,
+including the benefits of improved food safety performance.
+The assessment shall be included in the
+interview with personnel on the shop floor.
+Look for evidence that personnel are actively
+involved in safeguarding food safety.
+To what level are people
+committed and acting in
+accordance with food safety
+expectations?
+Clause 7.1.2
+The organization shall ensure that the persons necessary to
+operate and maintain an effective FSMS are competent (see
+7.2).
+The assessment shall be done by interviewing
+personnel on the shop floor. Look for evidence
+that personnel are actively involved in
+safeguarding food safety.
+Is your documentation
+designed to support
+employees’ food safety
+decisions and behaviors?
+Clause 7.5.1, b)
+The organization’s FSMS shall include documented information
+determined by the organization as being necessary for the
+effectiveness of the FSMS;
+Specifically, address the NOTE to this clause
+when assessing.
+NOTE: The extent of documented information
+for an FSMS can differ from one organization to
+another due to:
+• the size of the organization and its type of
+activities, processes, products, and services;
+• the complexity of processes and their
+interactions;
+the competence of persons.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 12 of 19
+FEEDBACK FROM EMPLOYEES
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+Are employees engaged in the
+design and improvement of
+food safety-related protocols
+and instructions?
+Clause 5.3.2
+The food safety team leader shall be responsible for:
+i) ensuring the FSMS is established, implemented,
+maintained, and updated;
+j) managing and organizing the work of the food safety
+team;
+k) ensuring relevant training and competencies for the
+food safety team (see 7.2);
+l) reporting to top management on the effectiveness and
+suitability of the FSMS.
+In principle, personnel are represented by the
+food safety team.
+Look for evidence of how the food safety team
+and top management involve personnel or
+personnel representative group when
+developing protocols and instructions.
+How are protocols and instructions validated
+on the shop floor?
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 13 of 19
+FSSC 22000 VERSION 6 ADDITIONAL REQUIREMENT 2.5.8
+In accordance with and in addition to clause 5.1 of ISO 22000:2018, as part of the organization’s commitment to cultivating a positive food safety and
+quality culture, senior management shall establish, implement, and maintain a food safety and quality culture objective(s) as part of the management
+system. The following elements shall be addressed as a minimum:
+• Communication,
+• Training,
+• Employee feedback and engagement, and
+• Performance measurement of defined activities covering all sections of the organization impacting on food safety and
+quality.
+GUIDANCE ON AUDITING THE PERFORMANCE MEASUREMENT ELEMENT
+• Assess how the organization’s food safety and quality performance is measured, e.g., are food safety and quality performance targets
+established and monitored?
+• Assessment shall be included in the interview with personnel on the shop floor, e.g., check to see if departmental targets have been set,
+ask how they are monitored and how often they are reported on, and request evidence.
+• Verify how personnel receive feedback on production performance and food safety/quality issues, e.g., an overall company dashboard
+clearly showing the food safety/quality performance.
+• Assess how top management evaluates food safety/quality performance. E.g., a personnel survey that is executed periodically, specifically
+related to food safety/quality, including the food safety and quality culture of the organization.
+• Assess how complaints and nonconformance issues are managed by the organization and top management, including a review of corrective
+action reports. E.g., check to see if trends of similar complaints are identified and select a few reports to follow the trail of what actions have
+been taken, verify the level of cause analysis and sufficiency of actions taken to correct each of the issues, verify the effectiveness of the
+actions taken by asking if any further complaints or non-conformances of similar nature have been received.
+• Assess how increased productivity affects the food safety and quality culture of the organization. E.g., are there more NCs during peak
+production?
+• Evaluate how the organization plans for changes and manages changes, including reviewing documented evidence thereof. Assess the
+capability of top management to react to, e.g., customer complaints or supplier issues, by sampling customer complaints and non-
+conformances.
+• Evaluate how the organization implements changes based on trending results, e.g., verify the output from management reviews.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 14 of 19
+• Assess the organization’s management of near misses and the actions taken from near misses to drive continuous improvement, e.g., where
+trended data indicates the results are nearing an unacceptable level, what action is taken by the organization prior to the limit being
+exceeded?
+PERFORMANCE MEASUREMENT ON FOOD SAFETY-RELATED ACTIVITIES
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+How is your food safety performance
+measured?
+Clause 9.1.2
+The organization shall analyze and evaluate
+appropriate data and information arising from
+monitoring and measurement, including the
+results of verification activities related to PRPs
+and the hazard control plan (see 8.8 and 8.5.4),
+internal audits (see 9.2), and external audits.
+Clause 9.3.2
+Management review input.
+The assessment shall be included in the
+interview with personnel on the shop floor.
+Look for evidence as to which feedback
+personnel receive on production performance
+and food safety issues. E.g., an overall
+company dashboard clearly showing the food
+safety performance.
+Also, assess how top management evaluates
+food safety performance. E.g., a personnel
+survey that is executed periodically.
+How do you anticipate, manage, and respond
+to change, learn from the past, and prepare for
+the future?
+Clause 6.1.1
+When planning for the FSMS, the organization
+shall consider the issues referred to in 4.1 and
+the requirements referred to in 4.2 and 4.3 and
+determine the risks and opportunities that
+need to be addressed to:
+m) give assurance that the FSMS can
+achieve its intended result(s);
+n) enhance desirable effects;
+o) prevent or reduce undesired effects;
+achieve continual improvement.
+The top management decision-making process
+determines this and should be addressed
+during the interview with top management.
+Specifically, look at the capability of top
+management to react to, e.g., customer
+complaints or supplier issues.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 15 of 19
+PERFORMANCE MEASUREMENT ON FOOD SAFETY-RELATED ACTIVITIES
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+How does what you measure (e.g., customer
+complaints, compliance to procedures,
+productivity, etc.) influence your food safety
+culture?
+Are your measurements related to
+volume/efficiency at the expense of food safety
+measures?
+Clause 9.1.2
+The organization shall analyze and evaluate
+appropriate data and information arising from
+monitoring and measurement, including the
+results of verification activities related to PRPs
+and the hazard control plan (see 8.8 and 8.5.4),
+internal audits (see 9.2), and external audits.
+Clause 10.2
+The organization shall continually improve the
+suitability, adequacy, and effectiveness of the
+FSMS.
+Top management shall ensure that the
+organization continually improves the
+effectiveness of the FSMS through the use of
+communication (see 7.4), management review
+(see 9.3), internal audit (see 9.2), analysis of
+results of verification activities (see 8.8.2),
+validation of control measure(s) and
+combination(s) of control measure(s) (see
+8.5.3), corrective actions (see 8.9.3) and FSMS
+updating (see 10.3).
+Assess how the organization and top
+management manage complaints and non-
+conformance issues.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 16 of 19
+PERFORMANCE MEASUREMENT ON FOOD SAFETY-RELATED ACTIVITIES
+GFSI GUIDING QUESTION ISO 22000:2018 GUIDANCE
+How do you review your “near-misses” and use
+this information to drive improvements in your
+food safety system?
+Clause 8.9.1
+The organization shall ensure that data derived
+from the monitoring of OPRPs and at CCPs are
+evaluated by designated persons who are
+competent and have the authority to initiate
+corrections and corrective actions.
+Clause 10.3
+Top management shall ensure that the FSMS is
+continually updated. To achieve this, the food
+safety team shall evaluate the FSMS at planned
+intervals. The team shall consider whether it is
+necessary to review the hazard analysis (see
+8.5.2), the established hazard control plan (see
+8.5.4), and the established PRPs (see 8.2). The
+updating activities shall be based on:
+p) input from communication, external as
+well as internal (see 7.4);
+q) input from other information
+concerning the suitability, adequacy,
+and effectiveness of the FSMS;
+r) output from the analysis of results of
+verification activities (see 9.1.2);
+s) output from management review (see
+9.3).
+System updating activities shall be retained as
+documented information and reported as input
+to the management review (see 9.3).
+Also included is the management of near misses
+in the assessment of this clause.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 17 of 19
+7. ADDITIONAL GUIDANCE BASED ON PAS 320:
+DEVELOPING AND SUSTAINING A MATURE FOOD
+SAFETY CULTURE GUIDE
+The British Standards Institution (BSI) has developed a publicly available standard for use as
+guidance and advisory recommendations that provide further clarity for implementing food safety
+and quality culture.
+Below are aspects to consider as established by PAS 3203, however, in addition, the below also
+indicates where these aspects can be integrated within your FSMS via cross-reference to the
+relevant ISO 22000:2018 clauses and the inclusion of quality:
+• Understanding the fundamentals of a food safety (and quality) culture and the context of
+the organization: (Integrate with clause 4 of ISO 22000:2018)
+- Defining the concept of a food safety (and quality) culture
+- Establishing the relationship between food safety (and quality) culture and the
+organizational culture
+- Understanding the organization’s internal and external issues
+• Establishing the governance for a food safety (and quality) culture: (Integrate with clause 5
+of ISO 22000:2018)
+- Top management commitment, accountability, and consistency;
+- Defining the organization’s vision, mission, and values;
+- Establishing the policy for a food safety (and quality) culture;
+- Establishing and managing organizational structure, responsibilities,
+accountabilities, and authorities.
+• Understanding the organization’s food safety (and quality) culture: (Integrate with clause 4
+of ISO 22000:2018)
+- Determining the current maturity level of the organization’s food safety (and
+quality) culture,
+- Determining the desired food safety (and quality) culture.
+• Designing a strategic change plan to achieve the desired food safety (and quality) culture:
+(Integrate with clause 6 of ISO 22000:2018)
+- Identifying the drivers of change,
+- Establishing the organization’s readiness to drive change to achieve the desired
+food safety (and quality) culture,
+- Mapping the needs, behaviors, expectations, and changes to the existing FSMS
+against the culture maturity gaps,
+- Determining food safety (and quality) risks and opportunities,
+- Setting priorities for positive food safety (and quality) culture change,
+- Establishing a change plan for the organization’s food safety (and quality) culture.
+• Preparing the key functions towards a food safety (and quality) culture: (Integrate with
+clause 7 of ISO 22000:2018)
+- Resources,
+- Developing competence and awareness,
+- Communicating and nudging,
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 18 of 19
+- Documentation.
+• Embedding the change plan of the organization’s food safety (and quality) culture into the
+existing FSMS: (Integrate with clause 8.1 of ISO 22000:2018)
+- Managing and embedding change
+- Managing disruptions and crises
+• Evaluating the performance of the organization’s food safety (and quality) culture:
+(Integrate with clause 9 of ISO 22000:2018)
+- Monitoring and measuring
+- Verifying
+- Analyzing, evaluating, and reporting
+- Management review
+• Sustaining the continual improvement of the organization’s food safety (and quality)
+culture: (Integrate with clause 10 of ISO 22000:2018)
+- Continual improvement
+- Reporting near misses
+- Applying interventions
+- Recognizing people and celebrating gains
+- Updating
+Figure 1 – PDCA (Plan-Do-Check-Act) cycle for Food Safety Culture3
+PAS 320 is freely available for download from the BSI website.
+Guidance Document: Food Safety and Quality Culture
+FSSC 22000 Version 6 | July 2023 19 of 19
+8. REFERENCES
+1. FSSC 22000 V6 Additional requirement
+2. ISO 22000:2018 Food safety management systems – Requirements for any organization in the
+food chain
+3. PAS 320:2023 Developing and sustaining a mature food safety culture – Guide.

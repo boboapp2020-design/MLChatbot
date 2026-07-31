@@ -1,0 +1,284 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+FOOD SAFETY MANAGEMENT
+SYSTEM CERTIFICATION
+Version 1 | October 2023
+SCHEME INTERPRETATION ARTICLE:
+QUALITY CONTROL
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 1 of 8
+CONTENTS
+REVISION HISTORY..........................................................................................................................1
+1. INTRODUCTION.........................................................................................................................2
+2. FSSC 22000 SCHEME REQUIREMENTS ......................................................................................3
+3. INTERPRETATION OF ADDITIONAL REQUIREMENT 2.5.9 ......................................................3
+4. GUIDANCE ON ADDITIONAL REQUIREMENT 2.5.9 .................................................................6
+5. REFERENCES...............................................................................................................................8
+REVISION HISTORY
+Date Published Issue Changes
+October 2023 1 First publication
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 2 of 8
+1 INTRODUCTION
+In accordance with the FSSC 22000 Scheme V6, Part 2, Section 2.2, the Foundation publishes
+interpretation articles related to Scheme requirements that include further clarification on
+requirements and the application and/or implementation thereof. Certification Bodies and
+Certified Organizations need to adhere to these interpretation articles, and it is the responsibility
+of the FSSC 22000 contact person to keep up to date with the interpretation articles and
+communicate it to the relevant parties within the CB or to Certified organizations, as applicable.
+This Scheme Interpretation Article on Additional Requirement 2.5.9 is in place to provide further
+clarification on the quality control requirements and the implementation thereof.
+The quality control requirement is applicable to all food chain categories and includes basic quality
+control requirements. It was added to the Scheme as a result of the output of the FSSC 22000 V6
+development survey; and due to quality control being closely linked to food safety in a
+manufacturing environment.
+Whilst the Foundation has included the requirement for a quality policy with objectives, it is not
+designed to replace a full ISO 9001 quality management system certification but rather to focus
+on the synergies and add value to the FSSC 22000 audit.
+ISO 9000:2015 includes the following as the fundamental concept of quality:
+“An organization focused on quality promotes a culture that results in the behavior, attitudes, activities,
+and processes that deliver value through fulfilling the needs and expectations of customers and other
+interested parties. The quality of an organization's products and services is determined by the ability to
+satisfy customers and the intended and unintended impact on relevant interested parties. The quality of
+products and services includes not only their intended function and performance but also their
+perceived value and benefit to the customer”.
+The following are relevant definitions as per ISO 9000:2015:
+• Quality control is defined as being part of quality management focused on quality
+requirements.
+• Quality is defined as the degree to which a set of inherent characteristics of an object
+(product, service, process) fulfills requirements.
+• Characteristic is defined as a distinguishing feature. A characteristic can be inherent or
+assigned and can be qualitative or quantitative. There are various classes of
+characteristics.
+In the context of the Scheme, quality characteristics may include, however, is not limited to:
+• Physical
+• Chemical (e.g., pH, acidity, Brix)
+• Microbiological
+• Functional
+• Composition (e.g., proportion of ingredients)
+• Sensory/organoleptic, e.g., related to texture, mouthfeel, flavor (taste and aroma),
+appearance (color), etc.
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 3 of 8
+2 FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited - Version 6.
+2.5.9 QUALITY CONTROL (ALL FOOD CHAIN CATEGORIES)
+a. The organization shall:
+i. In addition to, and aligned with, clauses 5.2 and 6.2 of ISO 22000:2018, establish,
+implement, and maintain a quality policy and quality objectives.
+ii. Establish, implement, and maintain quality parameters in line with finished product
+specifications for all products and/or product groups within the scope of certification,
+including product release that addresses quality control and testing.
+iii. In addition to, and aligned with, clauses 9.1 and 9.3 of ISO 22000:2018, undertake
+analysis and evaluation of the results of the quality control parameters, as defined
+under 2.5.9 (a)(ii) above, and include it as an input for the management review; and
+iv. In addition to, and aligned with, clause 9.2 of ISO 22000:2018, include quality elements
+as defined in this clause within the scope of the internal audit.
+b. Quantity control procedures, including for unit, weight, and volume, shall be established, and
+implemented to ensure products meet the applicable customer and legal requirements. This
+shall include a program for calibration and verification of equipment used for quality and
+quantity control.
+c. Line start-up and change-over procedures shall be established and implemented to ensure
+products, including packaging and labeling, meet applicable customer and legal requirements.
+This shall include having controls in place to ensure labeling and packaging from the previous
+run have been removed from the line.
+3 INTERPRETATION OF ADDITIONAL REQUIREMENT
+2.5.9
+The information included under Chapter 3 of this article is considered to be Scheme Interpretation
+and, therefore, in accordance with Scheme V6, Part 2, Section 2.2, shall be adhered to and
+implemented by (certified) organizations and audited against by CB auditors.
+In accordance with 2.5.9 (a)(i), the organization shall establish, implement, and maintain a quality
+policy. The quality policy shall be consistent with the overall policy of the organization, be aligned
+with the organization's vision and mission, and provide a framework for the setting of quality
+objectives3.
+The quality policy must:
+• Be appropriate to the purpose and the context of the organization and support its strategic
+direction,
+• Provide a framework for setting quality objectives,
+• Be communicated, understood, and applied within the organization,
+• Be available to relevant interested parties, as appropriate2.
+It is not required for an organization to have a separate quality policy; it is possible to integrate it
+into the food safety policy, for example, as long as it is clearly defined and distinguishable.
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 4 of 8
+In accordance with 2.5.9 (a)(i), the organization shall establish, implement, and maintain quality
+objectives. Objectives are the results the organization wants to achieve. Quality objectives are
+(specific) objectives related to quality; they are generally based on the organization's quality policy.
+Quality objectives are also generally specified for relevant functions, levels, and processes in the
+organization3.
+The organization shall set quality objectives that are SMART:
+• Specific
+• Measurable
+• Attainable
+• Realistic, and
+• Time-bound
+These quality objectives shall be reviewed for suitability at regular intervals, such as during the
+food safety team meetings, etc., and shall be included in the management review.
+In accordance with 2.5.9 (a)(ii), the organization shall establish, implement, and maintain quality
+parameters in line with finished product specifications for all products and/or product groups
+within the scope of certification, including product release that addresses quality control and
+testing.
+Quality parameters in the context of the Scheme are the related quality characteristics of the
+product. In order to implement this requirement, the organization shall:
+• Identify and list all final products manufactured by the site.
+• Ensure each product specification is established and up to date and includes quality
+parameters as applicable to each product or product group. An organization may decide
+to detail the quality parameters in a separate document, which is acceptable as long as the
+quality parameters have been identified and established for all products and/or product
+groups.
+• An example of quality parameters to be included within a specification for a jam or sauce
+product may include:
+o Sensory (e.g., flavor, aroma, color, etc.)
+o Brix
+o pH
+o Viscosity/consistency
+o Weight
+The quality parameters for all products are to be monitored by the organization, and the
+organization shall establish monitoring procedures, including method, frequency of monitoring,
+responsible person, documented evidence to be maintained, action to be taken in the case of out-
+of-specification results, etc.
+In relation to product release, in addition to organizations needing to have relevant food safety
+parameters in place, they also need to have relevant quality parameters in place that are used to
+establish that a product can be released. This does not require an organization to have a separate
+product release document; however, the organization does need to have parameters in place that
+they check during the production process OR at the end of the product's production before the
+product is released.
+Note: This may be of a sampling nature; it does not require that all individual products are checked
+prior to release. This requirement also does not require that all products be put on hold or blocked
+prior to release.
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 5 of 8
+Although requirement 2.5.9 specifically relates to quality parameters relating to finished products,
+if a raw material has an impact on the quality of the finished product, then the organization would
+still be required to manage this as well; the organization still needs to manage their raw materials
+in accordance with their raw material specifications as defined under FSSC 22000 Additional
+Requirement 2.5.1 (d) including compliance to quality specifications for raw materials.
+The organization also needs to ensure that the control of monitoring and measuring devices that
+are used to check the above quality parameters are included in the calibration and maintenance
+schedules as applicable; refer to 2.5.9 (b) below for further details.
+Specific requirements for Category F (Trading, Retail, Wholesale, and E-Commerce), and Category
+G organizations (Transport and Storage), include ensuring temperature and humidity control
+specifications are adhered to, where relevant. This also applies to retailers and wholesalers who
+store and transport products requiring temperature control and for traders and brokers in relation
+to the management of third-party logistic service providers' service level agreements. In addition,
+effective stock rotation shall be implemented to ensure FIFO (First-In-First-Out) and FEFO (First-
+Expired-First-Out) principles are adhered to. CoAs (Certificates of Acceptability) and CoCs
+(Certificates of Conformity), including quality parameters, shall also be available for batches/lots
+of products that are traded and brokered (category FII organizations only).
+In accordance with 2.5.9 (a)(iii), the organization shall undertake analysis and evaluation of the
+results of quality control parameters, as defined under 2.5.9 (a)(ii), and include it as an input
+for management review.
+The organization's process for analysis and evaluation of results from monitoring and measuring
+activities includes the results of the performance of quality parameters. The organization
+determines the frequency of analysis, i.e., weekly or monthly, depending on the product, related
+processes, and customer requirements as applicable.
+The recorded results of the analysis and evaluation shall be included as input to the management
+review process. Therefore, the requirements of ISO 22000:2018 clause 9.3 shall also apply, and
+the outputs managed as per ISO 22000:2018 clause 9.3.3.
+In accordance with 2.5.9 (a)(iv), the organization shall include quality elements as defined in clause
+2.5.9 within the scope of the internal audit. The requirements of ISO 22000:2018 clause 9.2 shall
+therefore apply to this requirement. Including that the internal audit program must include the
+quality control elements as per 2.5.9 and shall be undertaken at a frequency based on the
+importance of the processes concerned, changes in the FSMS (related to quality), and the results
+of monitoring, measurement, 2.5.9 (a)(iii), and previous audits.
+In accordance with 2.5.9 (b), quantity control procedures, including for unit, weight, and volume,
+shall be established, and implemented to ensure products meet the applicable customer and legal
+requirements. This shall include a program for calibration and verification of equipment used
+for quality and quantity control.
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 6 of 8
+Organizations need to:
+• Identify the method to be used for checking the quantity (unit, weight, and volume) and
+determine the frequency of these quantity control checks.
+• Establish if there are applicable customer and legal requirements relating to
+product quantity applicable to products produced. Documented evidence needs to be
+maintained when the organization undertakes the quantity control checks.
+• The quantity control procedures shall detail the legal requirements (if applicable),
+frequency of testing, responsible person, method used, and action to be taken in the case
+of out-of-specification results, etc.
+• Establish a program for calibration and verification of equipment and devices used
+for quantity control and quality control. Equipment for quality control and quantity
+control may include measuring scales or devices, pH meters, refractometers,
+consistometers, viscosity meters, vernier calipers, online level inspectors, graduated
+cylinders, etc. The program needs to meet the requirements of clause 8.7 of ISO
+22000:2018.
+In accordance with 2.5.9 (c), line start-up and change-over procedures shall be established and
+implemented to ensure products, including packaging and labeling, meet applicable customer and
+legal requirements. This shall include having controls in place to ensure labeling and packaging
+from the previous run have been removed from the line.
+To ensure that final products meet applicable customer and regulatory requirements, the
+organization shall create procedure(s) for verification of line clearance between change-over of
+products. Records of line clearance shall be maintained to ensure labeling and packaging from the
+previous run have been removed from the line, prior to commencing with the next run, and that
+the correct labeling and packaging are being allocated to the next run. These records shall be
+signed off to verify that the line is ready for the next product/batch to be packed and as
+confirmation that all previous product packaging and labeling have been removed before
+changing to the next run.
+4 GUIDANCE ON ADDITIONAL REQUIREMENT 2.5.9
+4.1 GUIDANCE FOR (CERTIFIED) ORGANIZATIONS
+Unlike Chapter 3 of this Scheme Interpretation Article, the following is to be treated as guidance
+only. In accordance with 2.5.9 (c), the following may be considered as guidance for
+implementation:
+• An organization should establish a process for issuing packaging and labeling to packing
+lines for current products being packed. This can be in the form of packaging material
+issuing, which is controlled and signed out by an authorized person from the packaging
+stores and accepted by the line leader/packing operator or quality controller for the
+packing line on which packaging will be used. The amount of packaging and labeling issued
+can be reconciled with the amount of packaging and labeling returned versus the number
+of products packed. Any deviations should be investigated, and necessary action taken.
+• Where an organization produces products in specific batch sizes, the organization should
+establish a procedure to ensure that the number of labels or packaging material items
+issued is issued per batch size, i.e., the exact quantity required to pack the manufactured
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 7 of 8
+product quantity or as close to this as possible. Example: issue 5000 x 200 g jars and 5000
+metal caps to fill 1000 kg batch of powdered vanilla chai tea. This ensures that only the
+packaging for immediate use will be issued, and no, or minimal packaging returns should
+be expected.
+• An organization can create packaging specifications for each product to be packed; this
+can include photographs of each component required for the final packaged product. In
+the example of the powdered chai tea above, this could include a photograph of the jar
+with dimensions, the lid clearly showing the color and size, which is to be confirmed during
+issuing, and the product label – a sample of which can be used in the specification, and the
+example of the date code method used. The organization can keep the packing
+specification at points of use for operators to reference prior to packing.
+• Recommend that checks should be done at the beginning of packing, during packing, e.g.,
+hourly, every 30 minutes, etc., and at the end of the run. A check should also be conducted
+when changing/adding different batches of packaging and labeling materials during
+packing.
+• Where organizations produce similar products with different allergen profiles, extra
+attention needs to be paid to the correct packaging/labeling being issued to the line.
+• The organization should also implement control procedures that only allow specific
+authorized individuals to make changes to variable data printed online, e.g., best before
+date and batch number; and provide for regular checking of information correctness and
+readability.
+4.2 GUIDANCE FOR AUDITORS
+The following is a non-exhaustive list of questions that an auditor can use to assess the FSSC
+Additional Requirement 2.5.9:
+• Has a quality policy been established?
+• Has the policy been communicated?
+• Are quality objectives set by the certified organization?
+• Have all quality objectives been met? If not, what actions has the organization
+implemented regarding unmet objectives?
+• Have quality control parameters for product or product groups been established within
+finished product specifications as well as product release criteria?
+• Are records of quality control check results maintained and available for review?
+• Are results trended, analyzed, and evaluated? And have they been used as input into the
+management review?
+• What are the outputs relating to the trends, including continuous improvements planned?
+• Has the internal audit program been updated to include the quality control elements of
+this additional requirement?
+• Has the quantity control procedures and calibration/verification program for equipment
+used for quality and quantity control been established?
+• Have the line start-up and change-over procedures been established, and are records
+available for review?
+• Are all the above effectively included and implemented through the organization's FSMS
+(e.g., records, awareness of people, internal audits, management reviews)?
+Scheme Interpretation Article: Quality Control
+FSSC 22000 Version 6 | October 2023 8 of 8
+5 REFERENCES
+1. ISO 22000:2018 - Food safety management systems — Requirements for any organization in
+the food chain. URL: ISO 22000:2018
+2. ISO 9001:2015 - Quality management systems – Requirements. URL: ISO 9001:2015
+3. ISO 9000:2015 - Quality management systems – Fundamentals and vocabulary. URL: ISO
+9000:2015

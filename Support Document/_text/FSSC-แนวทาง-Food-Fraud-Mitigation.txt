@@ -1,0 +1,335 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+Version 2 | July 2023
+GUIDANCE DOCUMENT: FOOD FRAUD
+MITIGATION
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 1 of 10
+CONTENTS
+REVISION HISTORY...........................................................................................................................1
+1. BACKGROUND ...........................................................................................................................2
+2. DEFINITION................................................................................................................................2
+3. FSSC 22000 SCHEME REQUIREMENTS ......................................................................................3
+4. IMPLEMENTATION ....................................................................................................................4
+5. FOOD FRAUD PREVENTION TEAM AND TRAINING ................................................................6
+6. AUDITING...................................................................................................................................7
+7. REFERENCES...............................................................................................................................8
+APPENDIX 1 TYPES OF FOOD FRAUD – DEFINITIONS AND EXAMPLES ........................................9
+REVISION HISTORY
+Date Published Issue Changes
+May 2019 1 First publication
+July 2023 2 Updates made in line with Version 6 of the FSSC 22000 Scheme
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 2 of 10
+1. BACKGROUND
+The relevance of food fraud has grown over the last years, not in the least following several food
+scandals that have led to reduced consumer confidence in the Food Industry.
+Although the driver of the food fraud act (cause) may be economic gain, it may nevertheless result
+in a food safety risk. Such a risk is very often caused by negligence or lack of knowledge by
+fraudsters. For the consumer, food fraud-related risks can be1:
+a) Direct Food Safety risks: the consumer is put in immediate danger (e.g., the addition of
+melamine to milk powder that results in an acutely toxic exposure; hiding of substances
+resulting in undeclared allergens);
+b) Indirect Food Safety risks: the consumer is put at risk through long-term exposure (e.g.,
+elevated levels of heavy metals in food supplements causing harm – or lack of benefit –
+over a more extended period of time)
+c) Technical food fraud risk: there is no direct or indirect food safety risk (e.g.,
+misrepresentation of country-of-origin information). However, this indicates that material
+traceability may have been compromised, and the company is no longer able to guarantee
+the safety of its food products.
+For food manufacturers, the economic impact can be high (e.g., recall, loss of sales, cost of
+rebuilding reputation, etc.). Additionally, consumer trust is essential, not only for companies but
+for the food industry (sectors) as a whole.
+The FSSC 22000 Scheme contains an additional requirement, 2.5.4, on food fraud mitigation,
+including a food fraud vulnerability assessment applicable to all products, in line with GFSI
+requirements.
+2. DEFINITION
+The definition that FSSC uses is based on the definition included within the GFSI Benchmarking
+Requirement 2020.1.
+Food fraud definition: A collective term encompassing the deliberate and intentional substitution,
+addition, tampering, or misrepresentation of food, food ingredients, feed, food packaging or labeling,
+product information, or false or misleading statements made about a product for economic gain that
+could impact consumer health (GFSI 2020.1).
+Food defense differs from food fraud in that the motivation is not economic gain but an intent to
+cause harm to consumers or companies from an ideologically or behaviorally motivated
+background. The damage could be economic, public health, or terror. Since there are different
+motivations for food defense than for food fraud, food fraud requires a different approach.
+Food fraud is at least as old as ancient Rome and will never be eliminated entirely. The actions
+taken shall minimize the vulnerability of food fraud by reducing opportunities for fraudsters.
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 3 of 10
+Figure 1. Intentional vs. unintentional adulteration2
+3. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited V6.
+2.5.4 FOOD FRAUD MITIGATION (ALL FOOD CHAIN CATEGORIES)
+2.5.4.1 VULNERABILITY ASSESSMENT
+The organization shall:
+a) Conduct and document the food fraud vulnerability assessment, based on a defined
+methodology, to identify and assess potential vulnerabilities; and
+b) Develop and implement appropriate mitigation measures for significant vulnerabilities.
+The assessment shall cover the processes and products within the organization’s scope.
+2.5.4.2 PLAN
+a) The organization shall have a documented food fraud mitigation plan based on the output
+of the vulnerability assessment, specifying the mitigation measures and verification
+procedures.
+b) The food fraud mitigation plan shall be implemented and supported by the organization’s
+FSMS.
+c) The plan shall comply with the applicable legislation, cover the processes and products
+within the scope of the organization, and be kept up to date.
+d) For food chain category FII, in addition to the above, the organization shall ensure that its
+suppliers have a food fraud mitigation plan in place.
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 4 of 10
+4. IMPLEMENTATION
+To assist in implementing the FSSC 22000 food fraud mitigation requirements, the following way
+of working is recommended:
+1) Establish a food fraud mitigation team;
+2) Conduct a food fraud vulnerability assessment (FFVA) identifying potential vulnerabilities
+linked to the processes and products within the scope of the organization;
+3) Define the significant vulnerabilities;
+4) Identify, select, and implement appropriate mitigation measures for the significant
+vulnerabilities;
+5) Document the vulnerability assessment, mitigation measures, verification, and incident
+management procedures in a Food Fraud Mitigation Plan supported by the FSMS; and
+6) Develop an effective training and communication strategy and implement the Food Fraud
+Prevention Plan.
+In relation to mitigation measures, this needs to address both preventative and control measures.
+Note: address all types of food fraud defined by GFSI (substitution, addition, tampering, or
+misrepresentation of food, food ingredients, feed, food packaging or labeling, product
+information, or false or misleading statements made about a product) as well as unapproved
+enhancements, misbranding, counterfeiting, stolen goods or others; address all products from
+incoming goods (e.g., raw materials, packaging materials) to outgoing goods (e.g. (semi) finished
+product). See Appendix 1 for more information.
+It is important to note that every vulnerability identified will NOT automatically be determined to
+be significant and will NOT automatically be required to be addressed by a mitigation measure.
+Identifying as many vulnerabilities as possible is important so they can be assessed.
+Also, bear in mind that vulnerabilities and their related severity can change over time, including
+when significant changes occur in the organization and the industry. For example, horsemeat in
+beef was not initially considered to be a vulnerability that required a control measure. It is,
+therefore, essential to conduct a regular review of the assessment to ensure that it is still relevant
+and that the mitigation measures are appropriate.
+When conducting a Food Fraud Vulnerability Assessment, several factors shall be taken into
+account, such as:
+• Economic vulnerability (how economically attractive is fraud?)
+• Historical data (has it happened, or are there current developments/cases in the
+related industry?)
+• Detectability (e.g., how easy to detect, routine screening present?)
+• Access to raw materials, packaging materials, and finished products in the supply
+chain.
+• Relationship with supplier (e.g., long relationship or spot-buying)
+• Certification through an independent sector-specific control system for fraud and
+authenticity (e.g., chain of custody certification)
+• Complexity of the supply chain (e.g., length, origins, and where the product is
+substantially changed/processed)
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 5 of 10
+Many more aspects may be taken into account as deemed appropriate. A number of tools have
+been developed to assist companies in setting up an FFVA; one of them is SSAFE3, this tool is freely
+available. The GFSI Board endorses this SSAFE vulnerability assessment tool. HorizonScan is also
+another helpful tool that can be utilized8.
+Supplier certification (forward and backward) by sector-specific control systems, which are
+specialized to prevent or mitigate food fraud, can substitute their own analytical routine screening.
+An example is supplier certification via a voluntary control scheme in the sector of fruit and
+vegetable juices and purees4 and chain of custody certification in the seafood industry.
+Supply chain mapping, including factors such as socioeconomics, behavioral, geo-political, and
+historical data, is a valuable tool to use. Very often, food fraud prevention (or elements thereof)
+must be addressed at the business organization level rather than at the site level only.
+The key to assessing the vulnerabilities is: “think like a criminal.”
+When conducting the FFVA, it is allowed to group materials to start with (e.g., similar raw materials
+or similar finished products). When significant vulnerabilities are identified within a group, more
+in-depth analysis may be required.
+When defining a mitigation strategy, the potential vulnerabilities identified shall be assessed for
+their significance. A risk matrix similar to HACCP can be used (e.g., likelihood of occurrence x
+consequences). Profitability is a key factor in the likelihood of occurrence. ISO 31000 could also be
+a valuable document to consider when undertaking a risk assessment. A mitigation strategy for
+the significant vulnerabilities shall be developed and documented.
+The plan shall be integrated into and supported by the organization’s FSMS for all its products
+meaning that it shall contain system elements such as training, internal audits, management
+review, etc., as well as operational control measures, verification activities, corrections, and
+corrective actions, responsibilities, record keeping, verification activities, and continuous
+improvement.
+Examples of verification activities include origin/label verification, testing, supplier audits, third-
+party certification against a GFSI-recognized or approved certification, and specification
+management. In addition, the FSMS needs the inclusion of the food fraud mitigation element in
+policies, internal audits, management reviews, etc.
+In addition, Category FII organizations need to ensure that their suppliers have a food fraud
+mitigation plan in place. This can be established by having suppliers complete a supplier
+questionnaire confirming whether the supplier has a food fraud mitigation plan in place, as well
+as requesting a copy of the supplier’s food fraud mitigation plan or evidence of the supplier having
+a GFSI-recognized or approved certification in place.
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 6 of 10
+Figure 2. Differences between HACCP, TACCP, and VACCP (GFSI)
+5. FOOD FRAUD PREVENTION TEAM AND TRAINING
+The Food Fraud Vulnerability Assessment is performed by a multidisciplinary team with a wide
+range of expertise (e.g., Security, Legal, Purchasing, Production, Research & Development,
+Regulatory Affairs, Quality). The composition of the food fraud mitigation team is likely to be
+different from that of your HACCP team and Food Defense Threat Assessment team. The
+composition of the team may evolve over time as the understanding of the food fraud opportunity
+evolves. External expertise may be required.
+Training of the team is required. Many training options are available, an example being Food Fraud
+Prevention Think Tank which provides free web-based courses on food fraud prevention (Food
+Fraud Prevention – Core Training – MOOC = massive open online course)5.
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 7 of 10
+6. AUDITING
+Food fraud poses a significant risk, and it is important that around the globe, the food industry
+takes action. Auditors should assess the food fraud vulnerability assessment and identification
+and verify that the implementation of mitigation measures is adequate. This can be achieved by
+asking the following questions for example, but not limited to:
+• Is there a team with the correct competencies/knowledge?
+• Has a vulnerability assessment been performed and documented?
+• Are all types of vulnerabilities covered (substitution, addition, tampering, or
+misrepresentation of food, food ingredients, feed, food packaging or labeling, product
+information, or false or misleading statements made about a product)?
+• Depth of the vulnerability assessment (historical data including consideration of current
+developments or cases in related industries, economic motivations, detectability, etc.)?
+• Breadth of the vulnerability assessment (all materials covered)?
+• Is there a methodology to determine the significance of vulnerabilities?
+• When significant vulnerabilities are identified, is there a written food fraud mitigation plan?
+• Is the performance of the food fraud mitigation plan evaluated in line with ISO
+22000:2018 Clause 9 on Performance Evaluation?
+• Is the analysis regularly reviewed, and is the frequency adequate?
+• Is the Emergency Response Team prepared (ISO 22000:2018 paragraph 8.4)?
+• Is all of the above effectively included and implemented through the organization’s FSMS
+(e.g., Records, awareness of people, internal audits, management reviews)?
+For further information, please review the documents on the following site:
+https://foodfraudpreventionthinktank.com/primers/ as well as the GFSI Food Fraud Technical
+Document Food-Fraud-GFSI-Technical-Document.pdf (mygfsi.com)
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 8 of 10
+7. REFERENCES
+1) John Spink and Douglas C. Moyer. Defining the public health threat of food fraud. Journal of
+Food Science Vol 76, Nr 9, 2011 p R157-R163
+2) GFSI position on mitigating the public health risk of food fraud, July 2014. Food-Fraud-GFSI-
+Position-Paper.pdf (mygfsi.com)
+3) SSAFE http://www.ssafe-food.org/our-projects/?proj=365#
+4) The Voluntary Control System of SGF International e.v.: https://www.sgf.org/voluntary-
+control-system
+5) Food Fraud Prevention Think Tank courses: https://foodfraudpreventionthinktank.com/food-
+fraud-prevention-academy/
+6) PWC: https://www.pwc.nl/en/publicaties/food-fraud-vulnerability-assessment.html
+7) Spink, Fortin, et al. Food Fraud Prevention: Policy, Strategy, and Decision-Making –
+Implementation Steps for a Government Agency or Industry. Chimia International Journal for
+Chemistry, vol 70, Nr 5, 2016 p 320-328:
+https://chimia.ch/chimia/article/download/2016_320/1084/11739
+8) Fera – HorizonScan: https://horizon-scan.fera.co.uk/
+9) GFSI – Tackling food fraud through food safety management systems. May 2018. Food-Fraud-
+GFSI-Technical-Document.pdf (mygfsi.com)
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 9 of 10
+APPENDIX 1 TYPES OF FOOD FRAUD – DEFINITIONS AND
+EXAMPLES
+(PWC6; Spink, Fortin, et al.7)
+GFSI (1) Type
+of Food Fraud
+Definition from SSAFE
+(2)
+Examples from GFSI FFTT (3) General Type
+of Food Fraud
+Dilution The process of mixing a
+liquid ingredient with a
+high value with a liquid
+of a lower value.
+• Watered down products
+using non-potable / unsafe
+water
+• Olive oil diluted with
+potentially toxic tea tree oil
+Adulterant-
+substance
+(Adulterant)
+Substitution The process of replacing
+an ingredient or part of
+a product of high value
+with another ingredient
+or part of a product of
+lower value.
+• Sunflower oil partially
+substituted with mineral oil
+• Hydrolyzed leather protein
+in milk
+Adulterant-
+substance or
+Tampering
+Concealment The process of hiding
+the low quality of a food
+ingredient(s) or product.
+• Poultry injected with
+hormones to conceal the
+disease
+• Harmful food coloring
+applied to fresh fruit to
+cover defects
+Adulterant-
+substance or
+Tampering
+Unapproved
+enhancements
+The process of adding
+unknown and
+undeclared materials to
+food products in order
+to enhance their quality
+attributes.
+• Melamine added to
+enhance protein value
+• Use of unauthorized
+additives (Sudan dyes in
+spices)
+Adulterant-
+substance or
+Tampering
+Mislabeling The process of placing
+false claims on
+packaging for economic
+gain.
+• Expiry, provenance (unsafe
+origin)
+• Toxic Japanese star anise
+labeled as Chinese star
+anise
+• Mislabeled recycled
+cooking oil
+Tampering
+Grey market
+production/
+theft/diversion
+Outside scope of SSAFE
+tool.
+• Sale of excess unreported
+products
+• Product allocated for the
+US market appearing in
+Korea
+Over-run,
+Theft, or
+Diversion (4)
+Guidance Document: Food Fraud Mitigation
+FSSC 22000 Version 6 | July 2023 10 of 10
+GFSI (1) Type
+of Food Fraud
+Definition from SSAFE
+(2)
+Examples from GFSI FFTT (3) General Type
+of Food Fraud
+Counterfeiting The process of copying
+the brand name,
+packaging concept,
+recipe, processing
+method, etc. of food
+products for economic
+gain.
+• Copies of popular foods not
+produced with acceptable
+safety assurances
+• Counterfeit chocolate bars
+Counterfeiting
+Notes:
+(1) GFSI – Global Food Safety Initiative
+(2) SSAFE – Safe Secure and Affordable Food For Everyone
+(3) GFSI FFTT – Global Food Safety Initiative: Food Fraud Think Tank
+(4) Grey Market – a market employing irregular but not illegal methods; Theft – something
+stolen; Diversion/ Parallel Trade – the act or an instance of diverting, straying from a course,
+activity, or use
+Figure 3. GFSI types of food fraud9

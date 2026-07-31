@@ -1,0 +1,516 @@
+Adopted 2008. Editorial amendments 2013.
+GUIDELINES FOR THE VALIDATION OF FOOD SAFETY CONTROL MEASURES
+CAC/GL 69 - 2008
+I. INTRODUCTION
+The control of hazards potentially associated with foods typically involves the application of control measures in the food
+chain, from primary production, through processing, to consumption. In the current environment of systems-based food
+safety controls that provide flexibility with the selection of control measures, validation of these control measures acquires
+increased importance. It is through the validation process that one demonstrates that the selected control measures are
+actually capable, on a consistent basis, of achieving the intended level of hazard control.
+It is important to make a clear distinction between the role of industry1 and the role of the competent authority in validating
+control measures. Industry is responsible for validation of control measures, while the competent authority ensures that
+industry has effective systems for validation and that control measures are appropriately validated. Governments may
+provide guidance to industry on how to conduct validation studies and how validated control measures may be
+implemented. Governments or international organizations may also conduct validation studies in support of risk
+management decisions or provide information on control measures considered to be validated, especially where the
+resources are not available to conduct such studies (e.g. small and less-developed businesses).
+These guidelines present information on the concept and nature of validation, tasks prior to validation, the validation
+process, and the need for re-validation. These guidelines also address the difference between validation, monitoring and
+verification. Annex I provides examples of validation scenarios which are for purpose of illustration only and which do not
+represent actual validation of control measures and which do not have global application.
+II. SCOPE
+These guidelines apply to validation of control measures at any stage of the food chain2. These guidelines are intended as
+guidance to industry and governments on the validation of individual control measures, a limited combination of control
+measures, or sets of control measure combinations forming a food safety control system (e.g. HACCP, GHP).
+The tools, techniques, and statistical principles that would be used to validate specific food safety control measures are
+beyond the scope of the current document. Advice on specific applications should be acquired from scientific
+organizations, competent authorities, process control experts or related sources of scientific expertise that can provide the
+specific principles and best practices upon which the validation of a specific control measure should be based.
+III. DEFINITIONS3
+Control Measure: Any action and activity that can be used to prevent or eliminate a food safety hazard or reduce it to an
+acceptable level.4
+Food Safety Control System: The combination of control measures that, when taken as whole, ensures that food is safe
+for its intended use.
+Monitoring: The act of conducting a planned sequence of observations or measurements of control parameters to assess
+whether a control measure is under control.5
+Validation: Obtaining evidence that a control measure or combination of control measures, if properly implemented, is
+capable of controlling the hazard to a specified outcome.6
+1 For the purposes of this document, it is understood that industry includes all relevant sectors associated with the production, storage
+and handling of food, from primary production through retail and food service level (adapted from Working Principles for Risk Analysis
+for Application in the Framework of Codex Alimentarius and taken from Principles and Guidelines for the Conduct of Microbiological
+Risk Management (CAC/GL 63-2007).
+2 The focus of this document is the validation of elements of a food safety control system; however, the recommendations in this
+document also may be applied in the validation of other food hygiene measures.
+3 In many cases, existing definitions such as those contained in the SPS Agreement, the General Principles of Food Hygiene, HACCP
+Annex and the CCFH Risk Management document, were suitable for use in this document. In other cases, where a definition was too
+limiting outside of its original context (e.g. some HACCP Annex definitions), another definition was developed that was more suitable for
+use within the context of these guidelines.
+4 General Principles of Food Hygiene (CAC/RCP 1-1969), HACCP Annex.
+5 Derived from the General Principles of Food Hygiene (CAC/RCP 1-1969), HACCP Annex, but was modified to apply to all control
+measures, whether or not a HACCP system is employed.
+6 Ibid.
+CAC/GL 69 – 2008 2
+Verification: The application of methods, procedures, tests and other evaluations, in addition to monitoring, to determine
+whether a control measure is or has been operating as intended.7
+IV. CONCEPT AND NATURE OF VALIDATION
+Validation focuses on the collection and evaluation of scientific, technical and observational information to determine
+whether control measures are capable of achieving their specified purpose in terms of hazard control. Validation involves
+measuring performance against a desired food safety outcome or target, in respect of a required level of hazard control.8
+Validation is performed at the time a control measure or a food safety control system is designed, or when changes indicate
+the need for re-validation (see section VII). Validation of control measures is, whenever possible, performed before their full
+implementation.
+Interrelationships among Validation, Monitoring and Verification
+There is often confusion among the concepts of validation, monitoring and verification. Validation of control measures as
+described in this document is different from monitoring and verification, which both take place after the validated control
+measures have been implemented. Monitoring and verification are the tools used to check whether the control measures
+are being adhered to and to demonstrate that they are operating as intended.
+- Monitoring of control measures is the on-going collection of information at the step the control measure is
+applied. The information establishes that the measure is functioning as intended, i.e., within established limits.
+Monitoring activities are typically focused on “real-time” measurements and on the performance of a specific
+control measure.
+- Verification is an ongoing activity used to determine that the control measures have been implemented as
+intended. Verification occurs during or after operation of a control measure through a variety of activities, including
+observation of monitoring activities and review of records to confirm that implementation of control measures is
+according to design.
+The following example for uncooked fermented sausages illustrates the interrelationship of validation, verification and
+monitoring:
+- Validation: The competent authority established the need for control measure(s) that achieve a specified log
+reduction in pathogenic Escherichia coli. The validation process indicated that industry could consistently achieve
+a specified log reduction through ensuring a specific decrease in pH during fermentation and a specific decrease
+in water activity during maturation, coupled with ensuring that the raw materials have less than a specified level of
+pathogenic E. coli based on statistically-based microbiological testing.
+- Monitoring: Measuring pH drop during fermentation and weight loss (or water activity) during maturation.
+- Verification: Periodic process control testing for pathogenic E. coli to verify that incoming levels in the raw
+materials are within specification and that fermentation and maturation achieve the intended outcome in the semi-
+finished or finished product. Examination of monitoring records to check for continuous control over time.
+V. TASKS PRIOR TO VALIDATION OF CONTROL MEASURES
+Prior to the validation of control measures by the food establishment, it is important to complete certain tasks so that
+validation can be accomplished effectively and efficiently. The following tasks could be carried out either independently or
+in conjunction with the establishment of GHPs, HACCP, etc.
+Tasks prior to validation include:
+a) Identify the hazards that are intended to be controlled in the commodity and/or environment concerned, taking into
+account all relevant information, including information from a risk assessment if available.
+b) Identify the food safety outcome required.
+The food safety outcome can be determined in a number of ways. Industry should determine if there are existing food
+safety outcomes or targets, established by the competent authority, relevant to the intended use of the food. In the
+absence of food safety outcomes or targets established by the competent authority, targets should be identified by
+industry, as appropriate. Industry may also set stricter targets than those set by the competent authority.
+c) Identify the measures that are to be validated, taking into account:
+ The importance of the control measure in achieving control of the hazard to a specified outcome. Examples
+might include:
+o Heat treatment step in a canning process
+7 Ibid.
+8 See Principles and Guidelines for the Conduct of Microbiological Risk Management (CAC/GL 63-2007) and Principles and Guidelines
+for the Establishment and Application of Microbiological Criteria Related to Foods (CAC/GL 21-1997).
+CAC/GL 69 – 2008 3
+o Cooling to a specified temperature within a specific timeframe
+ Whether the control measure has already been validated
+Identify whether the control measure has previously been validated in a way that is applicable and appropriate to the
+food business (e.g. a control measure required by a competent authority or validated by a competent authority or
+other national or international organization) or whether its performance is so well established for the application under
+consideration that further validation is not necessary. In either case, a food business operator must ensure that the
+conditions (e.g. raw materials, relevant hazards, combinations of control measures, intended use, and distribution and
+consumption patterns) in their particular operation do not differ from the conditions under which the control measure
+was previously validated.
+ Priority of validation
+Considering that food safety outcomes are often dependent on multiple control measures, prioritization of validation
+activities may be necessary and may take into account:
+o Adverse health effect: The higher the potential for an adverse health effect from a hazard, the
+more attention should be paid to assuring that the set of control measures selected is effective.
+Consideration should be given to the size of the population and the age/sex of groups most at risk.
+o Historical experience: For many food production and processing scenarios, there is extensive
+history that specific measures used to control food borne hazards are effective. If little or no
+experience exists with respect to the performance of a control measure in controlling a particular
+hazard within a specified context, it becomes more important that validation be undertaken.
+In certain instances, these historical data may obviate the need to conduct validations. However, it
+is important to avoid assuming that a food production or processing system is safe based solely on
+historical experience. All relevant current information should be considered when evaluating the
+adequacy of historical information, as it may be outdated. For example, sampling and testing
+procedures used to obtain the original data may be insufficient in the context of current operating
+procedures. New strains of microbial pathogens may now exist that do not behave in the same
+manner as the strains of pathogens or surrogate microorganisms used for determining early food
+control processes. New epidemiological and/or clinical information may indicate that the control
+measures used in the past were less effective than previously thought.
+o Other factors/constraints
+ Ability to monitor and verify the control measure
+ In prioritizing control measures for validation, consideration should be given to the
+amenability of the control measure to monitoring and/or verification after
+implementation.
+ Control measures that are of such a nature that it is not feasible to determine their
+quantitative effect on specific hazards may not always be considered priority for
+validation. Examples of such control measures include air locks to minimize cross
+contamination, hand washing procedures, and several other basic hygiene practices
+described in the General Principles of Food Hygiene (CAC/RCP 1-1969).
+ Scientific and technical feasibility
+ In prioritizing control measures for validation, consideration should be given to any
+scientific and/or technical challenges to validating the measure. This would include
+consideration of the variability associated with the control measure being validated,
+the food being considered, and the hazards being controlled.
+ Resources
+ Validation activities may be resource intensive. Particular validation activities, such
+as experimental trials, process capability studies, surveys, mathematical modelling,
+product or environmental sampling and analytical testing, particularly when applied in
+an appropriate statistical fashion, require significant resources. The extent to which
+sufficient resources are available and such activities can be undertaken will place
+limits on the ability to develop and validate food safety control measures. Necessary
+assistance (e.g. development of guidelines for industry, training and technical
+assistance), particularly to small and less-developed businesses, provided by
+national and international organizations could help to perform validation of food
+safety control measures.
+VI. THE VALIDATION PROCESS
+A range of approaches to validation are available. The precise approach will depend, among other things, on the nature of
+the hazard, the nature of the raw ingredients and product, the type of control measures or food safety control system
+selected to control the hazard, and the intended stringency of control of the hazard.
+Approaches for validating control measures
+The following approaches to validation may be used individually or in combination, as appropriate. These are presented in
+no particular order.
+CAC/GL 69 – 2008 4
+ Reference to scientific or technical literature, previous validation studies or historical knowledge of the performance of
+the control measure. Scientific or technical information needed to validate control measures may, in many instances,
+be available from many sources. These include scientific literature, government guidance, guidelines on GHP and
+HACCP control measures with a known history of good performance validated by competent authorities or
+independent scientific authorities, international standards or guidelines (e.g. Codex Alimentarius), and validation
+studies from industry and/or equipment manufacturers. However, if relying on such knowledge, care should be taken
+to ensure that the conditions of application in a food safety control system are consistent with those identified in the
+scientific information examined. For certain well-established processes (e.g. time and temperature combinations for
+milk pasteurization), it may be sufficient to acquire only the data on the conditions or attributes specific for the
+operation in question.
+ Scientifically valid experimental data that demonstrate the adequacy of the control measure. Laboratory
+challenge testing designed to mimic process conditions and industrial or pilot plant trials of particular aspects of a food
+processing system are validation techniques that are used commonly, particularly in food processing unit operations.
+Quantitative demonstration and documentation of appropriate log reduction of a specified pathogen by a specific
+microbiocidal process is an example of validation of a control measure by experimental trials. If the risk from a hazard
+is associated with growth of the pathogen to unacceptable numbers, then the conditions (e.g. product formulation,
+processing parameters, packaging or conditions of storage and distribution) that prevent the growth of the pathogen
+may need to be validated and documented using appropriately designed experimental trials. For example, if water
+activity must be controlled in a product to prevent growth of Staphylococcus aureus, then validation can be achieved
+by demonstrating that the water activity of the product under expected conditions of storage and distribution will be
+equal to or less than the specified water activity.
+Scale up of laboratory-based experimental trials in a pilot plant is helpful in ensuring that the trials properly reflect
+actual processing parameters and conditions. However, this almost always requires the availability of appropriate
+non-pathogenic surrogate microorganisms, as viable pathogenic microorganisms should not be purposefully
+introduced into a food production facility. When surrogate microorganisms are used, validation should cover the
+appropriateness of the surrogates. Validation may have to be limited to a laboratory/pilot plant if there are no
+appropriate surrogate microorganisms available that can be used to acquire data under actual production conditions.
+Additional safety margins may be required to account for the uncertainty or variability of the control measure or
+combination of control measures in achieving the desired level of control when implemented in a full scale operation.
+ Collection of data during operating conditions in the whole food operation. When this approach is used,
+biological, chemical or physical data relating to the hazards of concern are collected for a specified period (e.g. 3-6
+weeks of full scale production) during operating conditions representative of the whole food operation, including
+periods where production is increased, e.g. holiday rush. For example, when the food safety control system is
+contingent upon the use of good veterinary or agricultural practices in the field or good hygienic practices in the
+processing establishment, it may be necessary to validate these measures through the use of intermediate/finished
+product and/or environmental sampling and testing. Sampling should be based on the use of appropriate sampling
+techniques, sampling plans and testing methodology. Data collected should be sufficient for the statistical analyses
+required.
+ Mathematical modelling. Mathematical modelling is a means of mathematically integrating scientific data on how
+factors affecting the performance of a control measure or combination of control measures affect their ability to
+achieve the intended food safety outcome. Mathematical models, such as pathogen growth models to assess the
+impact of changes in pH and water activity on the control of pathogen growth or the use of z-value models to
+determine alternative thermal processing conditions, are used extensively by industry. This can also include the use
+of risk-based models that examine the impact of a control measure or combination of control measures further along
+the food chain. Effective use of mathematical modelling typically requires that a model be appropriately validated for a
+specific food application. This may require additional testing. Validation based on the use of mathematical modelling
+should take into consideration the uncertainty/variability limits associated with the models’ predictions.
+ Surveys. Surveys can be used to validate control measures, as appropriate, in conjunction with other approaches to
+demonstrate the expected level of control of hazards can be achieved. For example, an evaluation of consumers’
+understanding of information on the label prior to or during the design of a label can be considered a validation
+approach for labelling as a control measure.9 Care should be taken to ensure that statistically valid surveys or other
+activity provide data that are accurate and appropriate for use by an individual food business operator or competent
+authority.
+Steps Involved in the Validation Process
+After completing the tasks needed prior to validation, the process of validating control measures includes the following
+steps:
+ Decide on the approach or combination of approaches.
+ Define the parameters and decision criteria10 that will demonstrate that a control measure or combination of
+control measures, if properly implemented, is capable of consistently controlling the hazard to the specified
+outcome.
+ Assemble relevant validation information and conduct the studies where needed.
+9 Note that surveys carried out after the product is in the market place to assess whether consumers are following the instructions is a
+verification activity.
+10 Decision criteria should take into account the uncertainty and variability associated with the validation methodology and the
+performance of the control measure or combination of control measures.
+CAC/GL 69 – 2008 5
+ Analyze the results.
+ Document and review the validation.
+Results of a validation will either demonstrate that a control measure or combination of control measures,
+ is capable of controlling the hazard to the specified outcome if properly implemented, and thus, could be
+implemented, or
+ is not capable of controlling the hazard to the specified outcome and should not be implemented.
+The latter may lead to re-evaluation of product formulation, process parameters, or other appropriate decisions/actions.
+Information gained in the validation process may be useful in designing verification and monitoring procedures. For
+example, if a control measure or combination of control measures produces a reduction of a pathogen well in excess of the
+reduction needed for hazard control, it may be possible to decrease the frequency of verification e.g. frequency of
+microbiological testing of end product.
+VII. NEED FOR RE-VALIDATION
+There are many changes that could lead to a need to re-validate a control measure or combination of control measures.
+Examples include:
+ System failure: If monitoring or verification identifies failures for which a process deviation cause cannot be identified,
+re-validation may be needed. Non-compliance with monitoring or verification criteria may indicate a need for a change
+in the parameters (i.e., the selection and specification of the control measures) on which the design of the food safety
+control system is based. A system failure may also result from an inadequate hazard analysis and may require re-
+validation.
+ Process changes: The introduction in the food safety control system of a new control measure, technology or a piece
+of equipment that is likely to have a decisive impact on the control of the hazard may necessitate that the system or
+parts of it be re-validated. Similarly, changes made in product formulation or the application of current control
+measures (e.g. time/temperature changes) may result in the need for re-validation of control measures.
+ New scientific or regulatory information: Re-validation may be needed if the hazard associated with a food or
+ingredient changes as a result of (i) higher concentrations of hazards than originally encountered and accounted for in
+the design, (ii) a change in response of a hazard to control (e.g. adaptation), (iii) emergence of a previously
+unidentified hazard, (iv) new information indicating that the hazard is not being controlled to the level specified (e.g.
+new epidemiological findings or new validated and internationally accepted analytical technologies ) or (v) a new food
+safety outcome.
+CAC/GL 69 – 2008 6
+ANNEX I
+EXAMPLES OF VALIDATION OF FOOD SAFETY CONTROL MEASURES
+This Annex contains examples of several approaches to validating control measures or combinations of control measures.
+All of the examples described below are for purposes of illustration only, do not represent actual validation scenarios in a
+global sense and should not be replicated as presented. . Also, the examples below are presented in a specific format only
+for consistency and this format is not intended to be a general model for validation.
+In the examples below, it is assumed that the control measures have not been previously validated, that they have a
+decisive impact on the control of the specific hazard, and that they have been prioritized for validation.
+EXAMPLE ONE: VALIDATION OF POST-HARVEST DEHYDRATION TO PREVENT AFLATOXIN
+CONTAMINATION OF TREE NUTS11
+1. Pre-validation Tasks.
+a. Hazard: Aflatoxin contamination has been identified as a hazard that is reasonably likely to occur in tree
+nuts. Its control requires applications of measures both pre-harvest and post-harvest. Post-harvest
+measures are focused on rendering the tree nuts incapable of supporting continued aflatoxin production
+by Aspergillus spp.
+b. Food safety outcome required: The recognized international standard for aflatoxin B1
+is 20 μg/kg.
+However, to take into account process and analytical uncertainties, the food safety outcome is set at 10
+μg/kg
+c. Control measure to be validated: Post-harvest dehydration of tree nuts
+2. Approach: There are sufficient scientific data in the literature to allow the control measure to be validated without
+the need for additional studies.
+3. Parameters and Decision Criteria:
+a. Parameters:
+i. Aflatoxin-producing Aspergillus spp. cannot grow and synthesize the toxins when the water
+activity of the product falls below 0.70.12
+ii. The amount of aflatoxin that is produced post-harvest is dependent on the speed that tree nuts
+can be dehydrated and the rate at which the mould can grow. The scientific literature suggests
+that germination of the spores and initiation of toxin synthesis can occur with 24 to 48 hours of
+exposure of post-harvest tree nuts to a moist environment.
+iii. The level of aflatoxin B1
+present in post-harvest tree nuts will also be dependent on the levels
+present prior to the initiation of dehydration.
+b. Decision Criteria:
+i. A post-harvest dehydration control measure will be validated if
+1. The water activity in lots of tree nuts being treated can be consistently reduced to
+<0.70 within 24 hours,
+2. After dehydration there is an absence of “wet spots” that have a water activity ≥ 0.70
+in the lot.
+3. The level of aflatoxin B1
+in the tree nuts after a water activity <0.70 has been attained
+does not exceed 10 μg/kg.
+4. The treatment includes appropriate packaging/storage of the dried tree nuts
+4. Assemble relevant validation information and conduct the studies where needed.
+a. Confirm incoming level of aflatoxin under a variety of harvest conditions
+b. Obtain scientific references documenting that aflatoxin-producing Aspergillus spp. cannot synthesize the
+toxins when the water activity of the product falls below 0. 70.
+c. Obtain information to support that toxin production is not likely to occur if tree nuts are dried to this water
+activity in 24 to 48 hours; this may include use of mathematical models for the rate of growth and toxin
+production by Aspergillus species.
+d. Determine that the technology to be used will consistently produce tree nuts that have water activity
+levels < 0.70 within 24 h.
+The available scientific literature and related scientific data relating water activity levels to aflatoxin
+production in tree nuts should be reviewed to determine their pertinence to the specific procedures being
+11 The values used in the example are for illustration purposes only and shall not be considered as guidance in any way.
+12 Code of Practice for the Prevention and Reduction of Aflatoxin Contamination in Tree Nuts (CAC/RCP 59-2005).
+CAC/GL 69 – 2008 7
+employed by the business operator. If there is uncertainty about the applicability of the scientific literature,
+acquisition of additional analytical data may be required. At a minimum, data on the water activity of tree
+nuts after 24 hours drying should be obtained.
+5. Analyze the results.
+a. Data acquired by the business operator on the ability of the dehydration technology employed by the
+operator to consistently achieve the dehydration outcomes should be analyzed to ensure key operating
+parameters of the equipment are being followed and are achieving the expected water activity within the
+expected timeframe in this specific operation.
+b. As appropriate, statistical analyses should be performed to assess the variability in the processes.
+6. Document and review the validation.
+All analyses, data, and decisions should be documented.
+7. Conclusion
+a. Data indicate that if the incoming level of aflatoxin B1
+in the untreated tree nuts is < 1 μg/kg, then the
+levels after dehydration can be appropriately controlled and thus the control measure can be
+implemented.
+b. Storage/packaging conditions must be adequate to maintain the desired water activity of the dried tree
+nuts.
+c. These data can be used to establish a program of monitoring for water activity levels, and periodic
+analysis of the dehydrated tree nuts for aflatoxin B1
+.
+EXAMPLE TWO: MEETING A PERFORMANCE OBJECTIVE FOR VERO-TOXIN PRODUCING ESCHERICHIA
+COLI IN A HARD RAW MILK CHEESE
+1. Pre-validation Tasks:
+a. Hazard: Vero-toxin producing Escherichia coli (VTEC) in hard raw milk cheese.
+b. Food Safety Outcome: A performance objective (PO) of <0.001 cfu VTEC/g at the end of production.
+c. Control Measure: A combination of control measures (level of the pathogen in the raw milk, time/temperature
+during processing, pH, water activity) contribute to the level of VTEC at the end of production, which includes a
+defined ripening period under specified conditions.
+2. Approach: Use of scientifically valid experimental data to demonstrate the adequacy of the control measures
+3. Parameters and Decision Criteria: The combination of control measures will be considered validated as achieving the
+PO13 if the calculated geometric mean (x) + 3 standard deviations (σ) level of VTEC at the end of production (ripening) is <
+0.001 cfu/g (-3 log10
+(cfu/g))
+4. Assemble relevant validation information:
+a. the level (e.g. geometric mean (x) + 3σ) of the pathogen in the raw milk is estimated, using microbiological testing of
+the milk
+b. a model of the manufacturing process (time, temperature, pH, water activity) based on data collected from production
+(e.g. experimental production), including the possible variation in the process
+c. growth/reduction rates during the manufacturing process are identified from literature, other sources, or from
+experimental trials if necessary
+d. the changes in hazard levels that are reasonably likely to occur during processing steps (i.e. those steps that are
+technologically needed to manufacture the product)
+e. Initial selection of the manufacturing process that is likely to simultaneously yield the desired level of VTEC control and
+the desired product quality—this will identify the control measures required (time, temperature, pH, water activity).
+5. Design an experimental study that mimics the selected process:
+a. Raw milk of the same status as intended for production is spiked with levels of VTEC (mixture of relevant strains,
+isolated from milk) that can be measured throughout the process
+b. The cheese is manufactured (pilot scale) and samples are taken for analysis at relevant points needed to validate the
+initial model.
+c. All parameters specifying the process are monitored during the trial to ensure comparability with full scale production
+6. Analyze the results
+a. Data on the end product
+b. Data relating to the model and the process used
+7. Document and review the validation
+13 Ibid
+CAC/GL 69 – 2008 8
+Documentation should include:
+a. result of literature research
+b. results of the experimental study
+c. statistical analysis of raw data and analytical results
+d. description of the various models
+e. rationale for selecting the scenario for experimental trial (control measures and processing steps)
+f. data on VTEC strains used for spiking
+g. documentation of the variability in process
+8. Conclusion
+The PO can be met under the following conditions:
+a. That the process parameters (time, temperature and pH profiles during cheese making) are within tolerance under
+monitoring and are not changed
+b. That the raw milk does not exceed xx cfu/g
+c. That the cheese is ripened for a minimum of yy days prior to release.
+EXAMPLE THREE: VALIDATION OF CLEANING AND DISINFECTING PROTOCOLS (Sanitation Standard
+Operating Procedures, SSOPs)
+1. Pre-validation Tasks
+a. Hazard(s): Generic microbial contaminants
+b. Food Safety Outcome: Effective sanitation of food-contact surfaces as demonstrated by compliance with
+microbiological criteria.
+c. Control Measure(s): Cleaning and disinfection protocols (SSOPs) within a facility
+2. Approach: Collection of scientific data.
+3. Parameters and Decision Criteria: SSOPs will be considered to be validated if, after implementation of cleaning and
+disinfection protocols, food contact surfaces meet microbiological criteria established for aerobic plate counts or other
+indicator microorganisms as appropriate.
+4. Assemble the relevant validation information
+a. SSOPs will be implemented as intended for 3-4 weeks of operation.
+b. Microbiological testing of food contact surfaces will be conducted after cleaning and disinfection protocols have
+been used at the end of each day’s production.
+5. Analyze the results
+a. Compare results obtained at the end of each day’s production to the established microbiological criteria.
+b. Conduct appropriate statistical analyses to determine the variability in efficacy of the cleaning and disinfection
+procedures.
+6. Document and review the validation
+a. Data from implementation of SSOPs should be documented.
+b. All data from food contact surface testing should be documented.
+7. Conclusion
+If review and analysis of the validation results indicate that the SSOPs are capable of consistently delivering results that
+comply with the established microbiological criteria during 3-4 weeks of the validation period, then the cleaning and
+disinfection protocols can be considered validated.
+This same protocol with a reduced rate of testing can be used as an ongoing verification activity that the SSOPs are being
+implemented properly.
+EXAMPLE FOUR: CONTROL OF METAL FRAGMENTS
+1. Pre-validation Tasks:
+a. Hazard: Metal fragments
+b. Food Safety Outcome: Less than 1 metal fragment over 2 mm in 100,000 kg of product.
+c. Control Measure: Introduction of a sieve into a production line
+2. Approach: Collection of data during normal operation.
+CAC/GL 69 – 2008 9
+3. Parameters and Decision Criteria:
+Control measure will be considered validated if a metal detector indicates that production with the sieve will allow < 1 metal
+fragment ≥ 2 mm in 100,000 kg of final product. Operational data will be collected for one month and reviewed to
+determine the size of any metal pieces in products rejected by the metal detector.
+4. Assemble relevant validation information.
+a. Determine the size of metal fragments in products rejected by the metal detector.
+b. Ensure that the metal detector is sensitive enough and calibrated to detect metal pieces of 2 mm or more in the
+specific product.
+c. Ensure that the sieve remains intact during normal operations.
+5. Analyze the results
+Determine the rate at which the sieve allowed fragments of 2 mm or more in the final product.
+6. Document and review the validation
+a. Document all findings from the metal detector.
+b. Document the integrity of the sieve and the sensitivity and calibration of the metal detector.
+7. Conclusion
+a. Control measure can be implemented if data indicate that production with the sieve will allow < 1 metal fragment ≥
+2 mm in 100,000 kg of final product.
+b. Validation will likely provide information on monitoring needed to ensure that sieve remains intact.
+c. The metal detector can be used after the validation as an ongoing verification activity to ensure that the sieve is
+controlling the hazard as intended.
+EXAMPLE FIVE: VALIDATION BY A COMPETENT AUTHORITY (NEW ZEALAND) OF MEAT INSPECTION
+PROCEDURES FOR TAENIA SAGINATA14
+1. Pre-validation Tasks:
+a. Hazard: Cysts of Taenia saginata in slaughtered cattle.
+b. Food safety outcome: No increase in risks to consumers
+c. Control Measure: A new post-mortem inspection procedure for the identification and removal of cysts. Post
+mortem inspection is the only available control measure. Traditional inspection involves slicing of a large number
+of tissues (and also results in a high degree of microbiological cross-contamination). The new inspection package
+would limit slicing to a minimum.
+2. Approach: Experimental trial and mathematical modelling
+3. Parameters and Decision Criteria
+a. The food safety outcome is no decrease in the current level of consumer protection, i.e. mean rate of 1.1 cases of
+infection per year in the total population per year.
+b. The decision criterion for validation is that any difference in non-detection rate at post mortem inspection does not
+result in a decrease in the current level of consumer protection.
+c. The decision criteria included consideration of probability distributions generated by the model.
+4. Assemble information and conduct studies
+Detailed experimental trials to determine non-detection rates for the traditional and the alternative inspection measures, and
+mathematical modelling to determine impact on the chosen food safety outcome
+5. Analyze the results
+The food safety outcome of the new control measure was presented as a frequency distribution and a mean value was
+chosen for purposes of comparison. The level of consumer protection was estimated to be a mean rate of 1.3 cases of
+infection in the total New Zealand population per year. Given the uncertainty in the biological system, primarily related to
+the very low sensitivity of any type of post mortem inspection (less than 25%) and the extremely low prevalence of Taenia
+saginata in New Zealand, this result met the decision criteria for validation.
+Note: This validation process would likely not give the same result in a country with a moderate to high level of infection in
+the slaughter population.
+6. Document and review
+a. Document the methodology for the experimental trials and the results
+14 This example is documented in Van der Logt, P., Hathaway, S. C. and Vose, D. (1997): Risk assessment model for human infection
+with the cestode Taenia saginata. Journal of Food Protection 60:1110-1119.
+CAC/GL 69 – 2008 10
+b. Document the development of the mathematical model and its validation.
+c. Document the results of the modelling.
+7. Conclusion: The new inspection package results in the same level of consumer protection as the old inspection package
+that involved considerably more slicing.
+EXAMPLE SIX: VALIDATION OF A SAFE-HANDLING LABEL FOR TABLE EGGS
+1. Pre-validation Tasks:
+a. Hazard: Salmonella Enteritidis (SE) in table eggs (shell eggs).
+b. Food Safety Outcome: Reduced frequency of consumption of eggs contaminated with SE.
+c. Control Measure: Labelling (one control measure among several beginning at primary production (on-farm
+practices) through consumer use (cooking, storage temperatures)). The label will state: “To avoid illness,
+refrigerate eggs at 5ºC (41ºF) and cook eggs until the yolk is firm.”
+2. Approach: A representative survey of consumers
+3. Parameters and Decision Criteria:
+a. A risk assessment has shown that, in concert with control measures elsewhere in the food chain, the number of
+servings of eggs contaminated with SE will be significantly reduced if there is a 25% increase in the number of
+consumers that store table eggs at 5ºC (41ºF) and cook eggs until the yolks are firm.
+b. The control measure (label) will be considered validated if a specified percentage of the population understands
+the label (i.e., having read it, they can state what they would do if following the label instructions) and indicates
+that they plan to follow the instructions.
+4. Assemble relevant validation information:
+a. Identify target demographic for survey
+b. Design a statistically-valid survey to determine
+ Current consumer practices
+ Whether the label is understandable
+ Whether consumers plan to change their current practices, if necessary, based on the label instructions.
+5. Analyze the results:
+a. Determine the percentage of the population that is not currently following the practices described on the label.
+b. Determine the percentage of the population that understands the label instructions.
+c. Determine the percentage of the population that indicates that they plan to change their current practice and
+follow the label instructions.
+6. Document and review the validation:
+a. Document the development of the survey
+b. Document the identification of the target demographics for the survey
+c. Document the survey results
+7. Conclusion
+The control measure can be implemented because data indicated that because of the label instructions more than 25% of
+the population plan to change their current practice and begin refrigerating eggs at 5ºC (41ºF) and, when appropriate,
+cooking eggs until the yolk is firm.

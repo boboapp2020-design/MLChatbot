@@ -1,0 +1,438 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+Version 1 | September 2023
+GUIDANCE DOCUMENT: EQUIPMENT
+MANAGEMENT
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 1 of 12
+CONTENTS
+REVISION HISTORY...........................................................................................................................1
+1. PURPOSE ....................................................................................................................................2
+2. INTRODUCTION.........................................................................................................................2
+3. SCOPE .........................................................................................................................................3
+4. FSSC 22000 SCHEME REQUIREMENTS ......................................................................................3
+5. GUIDANCE FOR IMPLEMENTATION.........................................................................................3
+5.1 General Guidance................................................................................................................................3
+5.2 Purchase Specification ........................................................................................................................4
+5.3 Risk-based Change Management Process ........................................................................................5
+5.4 Additional Guidance............................................................................................................................8
+6. GUIDANCE FOR AUDITORS .....................................................................................................11
+7. REFERENCES.............................................................................................................................12
+8. RELATED INDUSTRY INFORMATION......................................................................................12
+REVISION HISTORY
+Date Published Issue Changes
+September 2023 1 First publication
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 2 of 12
+1. PURPOSE
+Guidance Document to assist FSSC 22000 certified organizations on how to implement equipment
+management in their food safety management systems.
+2. INTRODUCTION
+FSSC 22000 additional requirement 2.5.15 on equipment management is applicable to all food
+chain categories, except subcategory FII on brokering and trading.
+The definition of equipment as per GFSI (v2020.1) is as follows:
+Machines and equipment (including their parts and components necessary to link them together, and
+their services and utensils necessary for their operation), feed and food transport systems to bring
+ingredients/packaging to them, together with food storage and display units to allow the processing and
+retail of food, feed and packaging materials in GFSI scopes of recognitions.
+The equipment management requirement included within the Scheme has been incorporated to
+ensure hygienic design has been taken into consideration at the purchasing stage, as well as to
+ensure that the associated risks of new equipment or changes to existing equipment have been
+considered within the organization's FSMS.
+Hygienic design is a design that minimizes the risk of contributing to the microbiological, chemical,
+and physical contamination of food. It ensures the equipment accommodates and withstands the
+cleaning, sanitizing, and inspection processes involved. The equipment's hygienic design enables
+it to hold up against high temperature and high-pressure washdown, including, where applicable,
+exposure to cleaning chemicals depending on the industry3.
+Good hygienic design of equipment can have a significant impact on the safety of the food to be
+consumed, and if done incorrectly, it would have adverse effects on the people who consume the
+final products and the brand integrity of the manufacturing organizations.
+Principles of hygienic design include1:
+• Accessibility
+• Cleanability
+• Drainability
+• Material compatibility
+• Segregation
+• Surface and Geometry
+EHEDG (The European Hygienic Engineering and Design Group), the European Committee for
+Standardization (CE), NAMI (The North America Meat Institute), 3-A SSI, etc., are some of the
+agencies that provide support and guidance for industry in relation to hygienic design of
+equipment.
+Some of these organizations also provide hygienic design training courses based on recognized
+training programs, e.g., EHEDG, 3-A SSI1.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 3 of 12
+GFSI also identifies equipment hygienic design to be of importance in the food industry and has
+specific requirements for Category JI and JII organizations1. Although the FSSC 22000 Scheme does
+not cover Category JI and JII, some of these requirements identified by GFSI for the hygienic design
+of equipment is a valuable source of information for organizations to consider when implementing
+the FSSC 22000 Additional Requirement 2.5.15 on Equipment Management.
+3. SCOPE
+This FSSC 22000 Guidance document is meant as a guideline for the food industry to provide
+practical information and guidance on implementing FSSC 22000 Additional Requirement 2.5.15
+Equipment Management for All Food Chain Categories, excluding FII.
+4. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – Requirements for organizations to be audited in Version 6
+2.5.15 EQUIPMENT MANAGEMENT (ALL FOOD CHAIN CATEGORIES, EXCLUDING FII)
+In addition to clause 8.2.4 of ISO 22000:2018, the organization shall:
+a) Have a documented purchase specification in place, which addresses the hygienic design,
+applicable legal and customer requirements, and the intended use of the equipment,
+including the product handled. The supplier shall provide evidence of meeting the
+purchase specification prior to installation.
+b) Establish and implement a risk-based change management process for new equipment
+and/or any changes to existing equipment, which shall be adequately documented,
+including evidence of successful commissioning. Possible effects on existing systems shall
+be assessed, and adequate control measures determined and implemented.
+5. GUIDANCE FOR IMPLEMENTATION
+5.1 GENERAL GUIDANCE
+In the context of the FSSC 22000 Scheme:
+• This requirement relates to significant changes to equipment, which can affect its hygienic
+design. It does not cover maintenance-related activities such as changing a fuse or
+replacing a fraying conveyor belt. This is addressed under the maintenance section of the
+relevant PRP sector-specific standard, such as clause 8.6 of ISO/TS 22002-1. Whereas
+modifications such as installing an additional conveyor belt to an existing line for the
+purpose of speeding up production would be considered a significant change that would
+require a review of the design of the existing line, and therefore a hygienic design risk
+assessment would be required. Another example would be installing a stainless-steel tray
+beneath a conveyor belt that transfers bread rolls from the cooling line to a packing
+machine to minimize the build-up of product crumbs beneath the packing line.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 4 of 12
+• The equipment management requirement would not directly impact on existing
+equipment except when there are significant changes to the equipment. In this case, the
+organization would need to assess the impact on the process and system to ensure
+adequate control measures have been implemented to address any hazards and food
+safety.
+• Purchasing second-hand equipment would be seen as "new" equipment, and therefore
+the organization would need to make sure that hygienic design has been considered as
+part of the purchase specification and the requirements of this clause would apply.
+• The organization is not required to assess its current existing equipment against this
+requirement, unless existing equipment undergoes significant change; however, it is
+important to note that hazards and associated risks relating to current equipment would
+still need to be addressed within the hazard analysis under clause 8.5 of ISO 22000:2018.
+5.2 PURCHASE SPECIFICATION
+In accordance with 2.5.15 (a), an organization shall have a documented purchase specification
+in place that addresses the hygienic design, applicable legal and customer requirements, and the
+intended use of the equipment, including the product handled.
+It is important for food safety management that expectations and interpretations of needs,
+capabilities, and intended use are clear during the development, realization, or handover of food
+processing equipment when it is newly purchased from the manufacturer.
+In accordance with the requirement, the organization needs to document a purchase specification
+for each piece of equipment prior to purchasing the equipment. This specification needs to
+address the specific hygienic design parameters for the specific type of equipment being
+ordered/manufactured.
+The intended use of the equipment must be specified, including the product handled, e.g., burger
+patty packing machine or corn chip fryer, etc. To establish the purchase specification, the
+organization should conduct an equipment design risk assessment that takes into account the
+intended use of the equipment, food safety hazard identification, and evaluation (risk
+assessment).
+Once the intended use is known, and the risks related to the type of products to be packed or
+manufactured have been identified based on the outcome of the risk assessment, the hygienic
+design principles required to ensure food safety should then be adopted/specified within the
+purchase specification. Where there are specific customer and legal requirements, these must be
+incorporated in the purchase specification as well.
+The design of the equipment must ensure that the equipment is suitable for the intended use and
+that (potential) contamination of the product is minimized. This can include features such as see-
+through covers over the burger patty forming line to minimize handling of the products by the
+operator or a fail-safe lid for the fryer to control/limit opening and closing while the frying process
+is taking place. Recognized hygienic design standards for the specific industry should be
+considered. The specification must be documented and implemented every time new equipment
+is planned to be purchased.
+Organizations should also include a requirement in the purchase specification that the equipment
+manufacturers have the responsibility of informing the organization of any food safety risks that
+could not be eliminated by hygienic design and also of providing the organization with an
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 5 of 12
+instruction manual covering information needed for hygienic safe operation within the limits of
+use of the respective equipment. This includes but is not limited to:
+• Instructions regarding limitations and operational use
+• Instructions regarding technical measures (e.g., control or inspection devices)
+• Instructions regarding disassembling for inspection, cleaning, and maintenance
+• Instructions for cleaning1
+For changes to existing equipment or even equipment custom-made by the Certified
+Organization's own engineers or maintenance technicians, specifications can be written by using
+the expertise from different departments that form part of the Food Safety Team, or if the
+expertise does not exist within the company's own personnel, the assistance of external experts
+can be used.
+Items to consider, for example, can include the hygienic design of the materials used for the
+construction of the equipment, i.e., stainless steel, smooth and continuous edges where welding
+is done, fasteners are to be avoided in or above the product contact zone, rounding of piping and
+ductwork instead of sharp bends and corners to prevent dead ends in enclosed fittings, mounting
+on legs/ wheels to facilitate cleaning and sanitation around the piece of equipment, ease of
+disassembly for deep clean purposes, etc.
+A service-level agreement should be drawn up between the supplier/manufacturer and the
+purchasing organization.
+In accordance with 2.5.15 (a), the supplier shall provide evidence of meeting the purchase
+specification prior to installation.
+The equipment manufacturer/supplier must provide evidence of meeting the purchase
+specification(s) and the requirements set out therein, including any customer and regulatory
+requirements, e.g., the manufacturer's manual can be compared to the purchase specification and
+evidence of this review maintained.
+5.3 RISK-BASED CHANGE MANAGEMENT PROCESS
+In accordance with 2.5.15 (b), an organization shall establish and implement a risk-based change
+management process for new equipment and/or any changes to existing equipment, which shall
+be adequately documented, including evidence of successful commissioning.
+The objective of change control is to handle changes in such a manner that the impact on food
+safety by a change is foreseen and not missed and that the correct mitigation actions and control
+measures are executed.
+Change control consists of the organization undertaking a risk assessment, determining risk
+mitigation based on hygienic design principles as well as documenting the changes1. The Food
+Safety Team should ensure that the relevant managers are aware of these requirements in order
+to ensure that the change management process is followed.
+Installation and commissioning phase1:
+• Installation: During installation, check that the correct equipment has been received and
+has been installed according to the approved specification. For equipment that has been
+prefabricated (assembled and/or assigned) at the equipment suppliers' site, a factory-
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 6 of 12
+acceptance test (FAT) should be performed by the purchasing organization at the
+supplier's site prior to delivery at the purchasing organization.
+• Commissioning: After installation and before use at the organization's premises, it should
+be verified that all functional (operational) parameters and specifications, limits, and
+tolerances detailed in the purchase specification and user manual/guide can be met to
+achieve the required hygienic performance. A site-acceptance test (SAT) should be done
+after the equipment components are installed and commissioned at the organization and
+typically includes functional testing.
+• The organization should conduct a validation study to confirm that newly installed
+equipment functions as designed according to the manual/guide. This should include food
+safety, quality, cleanability aspects, and cleaning validation activities. The validation, which
+may have been initiated and planned prior to equipment being built, should be completed
+as part of the process qualification, taking into consideration the planned or projected
+usage in production.
+Although it is separate from the FSSC 22000 additional requirement, it recommended that existing
+equipment, which has not previously been evaluated in respect of their hygiene-related
+performance, should undergo hygienic design risk assessments and a retrospective cleaning
+validation based on historical data1. In this context, based on the risk assessment, the organization
+should undertake a cleaning validation of the equipment if they have not done so already to
+determine whether the cleaning is appropriate or whether changes to the cleaning program
+should be made to ensure hygienic operation.
+When implementing this requirement related to the management of equipment changes, clause
+6.3 of ISO 22000:2018 has to be considered. Organizations should incorporate the risk-based
+change management process for equipment into the change management process currently in
+place as part of the FSMS. The change should be documented according to the existing process,
+keeping note of the requirements of clause 6.3 for retained evidence.
+An example of a documented change summary can include the indication of owner/ requester,
+the due date or target date for installation and/ or commissioning, the required resources for
+commissioning in terms of personnel, time, and capex, as well as the status (in progress or
+complete). The team should hold a review meeting to facilitate the review of the change progress
+until completed.
+In accordance with 2.5.15 (b), possible effects on existing systems shall be assessed, and adequate
+control measures determined and implemented.
+The organization needs to assess the impact of the changes/modifications to equipment and
+determine whether the change in equipment changes or increases the risk relating to existing
+hazards identified in the hazard analysis or whether new hazards are introduced. If so, the
+organization needs to evaluate the current control measures and amend them if needed, e.g.,
+increase the frequency of monitoring, etc., or establish additional control measures.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 7 of 12
+The organization should look to undertake the following (as applicable) if changes to equipment
+are planned:
+• Update the hazard analysis.
+• Update the cleaning and sanitation program (procedures, cleaning schedules, records,
+etc.). Establish whether outsourced services are required or whether cleaning and
+sanitation can be done internally.
+• Update the maintenance program (procedures, maintenance schedules, equipment
+checks, etc.) and establish whether outsourced services are required or whether
+maintenance and servicing can be done internally.
+• Update production records, if necessary.
+• Review and update the environmental monitoring program.
+• Review and update the allergen management program, if applicable.
+• Review and update the training program, and train relevant personnel on updated
+procedures.
+• Update any other relevant verification activities.
+• Determine if additional resources are needed and whether they will be available should
+breakdowns or faulty operations be experienced with the equipment.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 8 of 12
+5.4 ADDITIONAL GUIDANCE
+The below are steps to follow when implementing this additional requirement, based on the
+EHEDG Whitepaper1 developed in conjunction with GFSI:
+Element Guidance for implementation
+Hygienic design
+process
+• Establish a multi-disciplinary team to assess the hygienic design and
+risk assessment of new equipment. The team should be competent in:
+o Food safety and quality, including microbiology and allergen
+expertise.
+o Hygienic design requirements and principles for equipment
+and facilities
+o Hygienic engineering/maintenance
+o Product and process requirements and conditions
+o Operational and functional considerations that could aﬀect
+hygienic design (e.g., cleaning method, operating conditions,
+possible future applications, etc.)
+o Interpretation of technical engineering drawings and PI&D
+o Legal requirements and industry standards
+o Hazard analysis and risk assessment methods
+o Cleaning & disinfection
+• Evaluate the hygienic design and suitability of the equipment
+throughout the life cycle of the equipment from the design concept
+through construction, purchasing, and during use until the end of the
+equipment's intended life.
+In relation to the lifecycle evaluation of equipment, the EHEDG White Paper
+provides further details on activities related to hygienic design, including
+the design phase, installation and commissioning phase, and operational
+use.
+As part of the purchase speciﬁcation, the organization may require that the
+supplier conﬁrms the equipment is in compliance with hygienic design
+criteria and the suitability for cleaning by certiﬁcation according to
+recognized standards (e.g., EHEDG-procedures) carried out by authorized
+Certiﬁcation Bodies.
+The supplier should also evaluate hygienic design based on the
+requirements of ISO 14159 and/or EN 1672-2.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 9 of 12
+Element Guidance for implementation
+Risk assessment • Undertake a documented hygienic design risk assessment for food
+safety hazards on new equipment. This risk assessment should
+address the intended use, food safety hazard identification and
+evaluation (risk assessment).
+o A hygienic design risk assessment is specific to an application (e.g.,
+product, process, procedures, location) and can be seen as
+complementary to other existing risk assessments.
+o Intended use is determined by the product and process
+requirements, operating modes, cleaning processes, end users,
+etc.
+o Food safety hazards (biological, chemical, physical) and the
+contamination mechanisms (ingress, accumulation, growth) that
+should be considered and controlled during operational use.
+o Evaluation (risk assessment) considers the severity or impact of the
+food safety hazard and the likelihood or probability that the food
+safety hazard occurs.
+• Hygienic design principles are used to eliminate or mitigate the
+hazards and reduce or eliminate the risks identified.
+• Review the hygienic design risk assessment when a change to the
+equipment, product or process is made, or other hazards arise.
+Recommend to also review at a minimum frequency as defined by
+applicable laws and regulations.
+EHEDG has established a hygienic design risk management guideline that
+can be used for new and existing equipment.
+Intended use • Describe the intended use of the equipment, as a specification for the
+intended purchase of the new equipment.
+• The following should be taken into consideration when establishing
+the intended use:
+o Product
+o Process
+o Operating modes
+o Cleaning
+o Value chain
+o Vulnerability of end users
+o Machine users
+o Life cycle
+o Environment
+o Laws and regulations
+Refer to the EHEDG White Paper for further guidance on these elements to
+be considered.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 10 of 12
+Element Guidance for implementation
+Hygienic design
+principles
+Hygienic design principles are the basic design aspects and methods used
+to eliminate, reduce or mitigate biological, chemical and physical food
+safety hazards, as well as negative inﬂuences on product quality. An
+organization should adopt appropriate hygienic design principles such as:
+• Equipment should be of a cleanable design, to meet all cleaning
+objectives.
+• Equipment should be designed and constructed to avoid favorable
+growth conditions (for microorganisms, pests and their harborage),
+appropriate to their intended use.
+• Equipment should be designed to prevent contamination appropriate
+to their intended use.
+• Wherever relevant, recognized hygienic design standards/guidance
+should be consulted for the design and construction of equipment,
+appropriate for their intended use.
+• Appropriate hygienic design principles should be adopted for the
+installation of new equipment at sites handling food.
+• Hygienic design principles should be adopted to ensure the
+maintenance of the hygienic performance of the equipment,
+appropriate for their intended use.
+• Appropriate measures (with frequencies) should be speciﬁed,
+undertaken accordingly and documented to mitigate any remaining
+food safety risks identiﬁed in the hygienic design risk assessment
+following equipment construction, purchase and installation.
+The EHEDG White Paper1 provides further detail on these hygienic design
+principles.
+Legislation Establish whether there are any legal requirements for the hygienic design
+of equipment, that the equipment needs to comply with in the country of
+installation.
+Purchasing and
+supplier
+performance
+Establish, implement and maintain a procedure to ensure that the newly
+purchased equipment will meet the hygienic design specification.
+Change
+Management
+Undertake and document change control, to evaluate the impacts of any
+changes/modiﬁcations on equipment hygienic design.
+Product
+contamination
+risk and
+segregation
+Establish procedures to ensure that following purchasing and installation,
+equipment is cleaned/commissioned by the organization before they are
+used for the processing of food. Organizations should verify the efficiency
+of the cleaning performed before starting any food production. Cleaning
+needs to be recorded and verified.
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 11 of 12
+Element Guidance for implementation
+Training Establish, implement and maintain procedures to ensure:
+• All employees and contractors involved in building and equipment
+evaluation, speciﬁcation, purchase, maintenance and hygienic
+design are trained in hygienic design principles appropriate to
+their tasks and to the hygienic design requirements of the
+equipment for its intended use.
+• All employees and contractors involved in equipment installation,
+undertaken at a site handling food are trained in food safety
+principles appropriate to their task.
+Transport Manufactured equipment should be stored and transported to the ﬁnal
+customer in a manner that prevents contamination of the equipment
+which may aﬀect food safety.
+6. GUIDANCE FOR AUDITORS
+The following is a non-exhaustive list of questions that an auditor can use to assess the FSSC
+Additional Requirement 2.5.15:
+• Are the purchase requirements established and known for all new equipment?
+• Is there supporting documentation available for review, such as purchase specifications,
+commissioning reports, equipment user manuals, certification documents, etc., to confirm
+the hygienic design of the equipment and successful commissioning?
+• Does it address the hygienic design of the equipment, the products handled, and the
+legal/customer requirements?
+• Has the intended use been clearly identified, and the risks related to the equipment
+determined?
+• Has a risk-based change-management process for new equipment or changes to existing
+equipment been established?
+• Have the relevant updates been made to the FSMS based on the changes made to
+equipment? E.g., cleaning and maintenance schedules updated, environmental
+monitoring program updated, evidence of training available?
+Guidance Document: Equipment Management
+FSSC 22000 Version 6 | September 2023 12 of 12
+7. REFERENCES
+1. EHEDG White Paper on GFSI Hygienic Design Scopes JI & JII October 2022. URL: EHEDG
+2. ISO 22000:2018 - Food safety management systems — Requirements for any organization
+in the food chain. URL: ISO 22000:2018 - Food safety management systems —
+Requirements for any organization in the food chain
+3. International Food Safety & Quality Network. URL: Food Safety with Hygienically
+Constructed Equipment Built to Sanitary Design - IFSQN
+4. GFSI Benchmarking Requirements (v2020.1). URL: GFSI
+8. RELATED INDUSTRY INFORMATION
+The references below are not an exhaustive list and are for information purposes only, and may
+not apply to all organizations. The requirements of the Scheme shall be adhered to in all cases.
+• EHEDG, The European Hygienic Engineering and Design Group. URL: EHEDG. Examples of
+some of the guideline documents established by EHEDG include:
+o Guideline Doc. 32:2005 Materials of construction for equipment in contact with
+food
+o Guideline Doc. 35:2006 Hygienic welding of stainless-steel tubing in the food
+processing industry
+o Guideline Doc. 44:2014 Hygienic Design Principles for Food Factories
+o Guideline Doc. 8:2018 Hygienic Design Principles
+o Guideline Doc. 50:2019 Hygienic Design Requirements for CIP Installations
+o Guideline Doc. 55:2020 Hygienic Design Requirements for Bakery Equipment
+• The European Committee for Standardization. URL: CEN-CENELEC
+• FDA, The US Food and Drug Administration. URL: U.S. Food and Drug Administration
+• NAMI, The North American Meat Institute. URL: North American Meat Institute
+• The International Organization for Standardization (ISO), ISO 14159:2002. URL: ISO
+14159:2002 - Safety of machinery — Hygiene requirements for the design of machinery
+• BS EN 1672-2:2020. Food processing machinery. Basic concepts – Hygiene and cleanability
+requirements. URL: BS EN 1672-2:2020
+• Codex Alimentarius CXC 1-1969:2020. URL: CXC 1-1969 General Principles of Food Hygiene.

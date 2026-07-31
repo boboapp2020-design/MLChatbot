@@ -544,6 +544,37 @@ $SupportMap  = @(
      Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
      Title='Codex GHP หลักการทั่วไปด้านสุขลักษณะอาหาร CXC 1-1969 (rev. 2022) — FAO/WHO 2023, CC BY-NC-SA 3.0 IGO'
      Code='CODEX-GHP' }
+  # การ validate มาตรการควบคุม — ผู้ตรวจ LRQA เข้าตรวจเรื่องนี้ทุกรอบ
+  @{ File='Codex-CXG69-2008-การตรวจสอบความใช้ได้ของมาตรการควบคุม.txt'
+     Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='Codex CXG 69-2008 แนวทางการตรวจสอบความใช้ได้ของมาตรการควบคุมความปลอดภัยอาหาร (Validation) — FAO/WHO'
+     Code='CODEX-VAL' }
+
+  # ── FSSC 22000 จาก fssc.com (เอกสารสาธารณะของเจ้าของ scheme) ────────
+  # Version 7 ประกาศใช้ 1 พ.ค. 2026 โรงงานถือ V6 อยู่ จึงต้องมีทั้งตัวข้อกำหนดใหม่
+  # และขั้นตอนการอัปเกรด เพื่อให้ห้องนี้ตอบได้ว่าต้องเตรียมอะไรก่อน Surveillance 2027
+  @{ File='FSSC22000-v7-ข้อกำหนดฉบับเต็ม.txt'; Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='FSSC 22000 Version 7 — ข้อกำหนดฉบับเต็ม (ประกาศใช้ 1 พ.ค. 2026)'; Code='FSSC-V7' }
+  @{ File='FSSC22000-v7-ขั้นตอนการอัปเกรดจาก-v6.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 — ขั้นตอนการอัปเกรดจาก Version 6 เป็น Version 7'; Code='FSSC-UPG' }
+
+  # เอกสารแนวทางของ FSSC — แต่ละฉบับผูกกับโปรแกรมที่โรงงานมีขั้นตอนของตัวเองอยู่แล้ว
+  @{ File='FSSC-แนวทาง-Environmental-Monitoring.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Environmental Monitoring (คู่กับ ML-QP-1600-007)'; Code='FSSC-G-EMP' }
+  @{ File='FSSC-แนวทาง-Equipment-Management.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Equipment Management (คู่กับ NC ข้อ 8.2 ที่ยังเปิดค้าง)'; Code='FSSC-G-EQP' }
+  @{ File='FSSC-แนวทาง-Food-Defense.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Food Defense (คู่กับ ML-QP-1600-005)'; Code='FSSC-G-DEF' }
+  @{ File='FSSC-แนวทาง-Food-Fraud-Mitigation.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Food Fraud Mitigation (คู่กับ ML-WI-1600-002)'; Code='FSSC-G-FRD' }
+  @{ File='FSSC-แนวทาง-Food-Loss-and-Waste.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Food Loss and Waste (คู่กับ ML-QP-1600-009)'; Code='FSSC-G-FLW' }
+  @{ File='FSSC-แนวทาง-Food-Safety-and-Quality-Culture.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='FSSC 22000 แนวทาง Food Safety and Quality Culture (คู่กับ NC วัฒนธรรมความปลอดภัยอาหารที่ยังเปิดค้าง)'; Code='FSSC-G-CUL' }
+  @{ File='FSSC-ตีความ-การวิเคราะห์ทางห้องปฏิบัติการ.txt'; Module='foodsafety'; Type='FAQ'; Plain=$true; Force=$true
+     Title='FSSC 22000 บทตีความ — การวิเคราะห์ทางห้องปฏิบัติการสำหรับพารามิเตอร์วิกฤต'; Code='FSSC-I-LAB' }
+  @{ File='FSSC-ตีความ-การควบคุมคุณภาพ.txt'; Module='foodsafety'; Type='FAQ'; Plain=$true; Force=$true
+     Title='FSSC 22000 บทตีความ — การควบคุมคุณภาพ (Quality Control)'; Code='FSSC-I-QC' }
 
   # ── รายงานตรวจประเมินจากผู้รับรองภายนอก (LRQA) ปี 2026 ──────────────
   # ฉบับเต็มจากไฟล์ต้นทางของโรงงาน ไม่ใช่สรุปที่เขียนต่อ

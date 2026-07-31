@@ -1,0 +1,291 @@
+[Geef de tekst op] [Geef de tekst op] [Geef de tekst op]
+FSSC 22000
+Version 2 | July 2023
+GUIDANCE DOCUMENT: ENVIRONMENTAL
+MONITORING
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 1 of 9
+CONTENTS
+REVISION HISTORY...........................................................................................................................1
+1. PURPOSE ....................................................................................................................................2
+2. INTRODUCTION.........................................................................................................................2
+3. SCOPE .........................................................................................................................................3
+4. FSSC 22000 SCHEME REQUIREMENTS ......................................................................................3
+5. GUIDANCE FOR IMPLEMENTATION.........................................................................................3
+6. GUIDANCE FOR AUDITORS .......................................................................................................8
+7. REFERENCES...............................................................................................................................8
+8. RELATED INDUSTRY INFORMATION........................................................................................9
+REVISION HISTORY
+Date Published Issue Changes
+October 2022 1 First publication
+July 2023 2 Updates made in line with Version 6 of the FSSC 22000 Scheme
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 2 of 9
+1. PURPOSE
+Guidance Document for FSSC 22000 certified organizations on how to implement environmental
+monitoring in their food safety management systems.
+2. INTRODUCTION
+It is a valid observation that there have been a substantial number of foodborne illness outbreaks
+from poor environmental controls and hygienic practices worldwide. Codex Alimentarius made
+several recommendations to authorities to include environmental monitoring as part of their
+regulatory activities with an emphasis on the criticality of enhanced control of sanitation, including
+appropriate use of environmental monitoring.
+An environmental monitoring program verifies the effectiveness of the overall hygienic practices
+in facilities and provides the necessary information to prevent possible microbial contamination
+of food products. Therefore, it is instrumental in ensuring food safety at the facility level. It also
+identifies potential risks in open product areas that can lead to the production of non-conforming
+products, customer or consumer complaints, or even an incident.
+GFSI Benchmarking Requirements v2020.1 (June 2020) requires Environmental monitoring to be
+included within the content of standards that the GFSI benchmarks. The GFSI requirement is as
+follows:
+A risk-based approach shall be in place to define the microbiological environmental monitoring
+program, which shall be established, implemented, and maintained to reduce the risk of food
+contamination.
+After a site has conducted validation of its cleaning and sanitation programs, it is crucial to
+implement effective environmental monitoring to assist with verifying the effectiveness of the
+cleaning and sanitation program with the removal of microbiological hazards. Additional benefits
+of having a successfully implemented environmental monitoring program, in addition to
+verification, include but are not limited to the following:
+a. Provision of data on the overall effectiveness of the sanitary program, personnel
+practices, and operational procedures
+b. Provision of data about indicator organisms, spoilage organisms, and pathogens, thus
+supporting the prevention of outbreaks
+c. Identify potential routes of contamination
+d. Prevention of possible microbial contamination by identifying and responding to
+adverse trends
+e. Understanding the microbiological ecology of the organization’s processing
+environment
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 3 of 9
+3. SCOPE
+This FSSC 22000 Guidance document is meant as a guideline for the food industry to provide
+practical information and guidance on implementing FSSC Additional Requirement 2.5.7
+Environmental Monitoring for Food Chain Categories BIII, C, I, and K, in line with the GFSI
+requirements.
+4. FSSC 22000 SCHEME REQUIREMENTS
+Part 2 – requirements for organizations to be audited V6.
+2.5.7 ENVIRONMENTAL MONITORING (FOOD CHAIN CATEGORIES BIII, C, I & K)
+The organization shall have in place:
+a) A risk-based environmental monitoring program for the relevant pathogens, spoilage,
+and indicator organisms;
+b) A documented procedure for the evaluation of the effectiveness of all controls on
+preventing contamination from the manufacturing environment, and this shall
+include, at a minimum, the evaluation of microbiological controls present; and shall
+comply with legal and customer requirements.
+c) Data on the environmental monitoring activities, including regular trend analysis; and
+d) The environmental monitoring program shall be reviewed for continued effectiveness
+and suitability, at least annually and more often if required, including when the
+following triggers occur:
+i. Significant changes related to products, processes, or legislation;
+ii. When no positive testing results have been obtained over an extended period
+of time;
+iii. Trend in out-of-specification microbiological results, related to both
+intermediate and finished products, linked to environmental monitoring;
+iv. A repeat detection of pathogens during routine environmental monitoring; and
+v. When there are alerts, recalls, or withdrawals relating to product/s produced by
+the organization.
+5. GUIDANCE FOR IMPLEMENTATION
+5.1 ENVIRONMENTAL MONITORING PROGRAM
+Organizations should consider the following when implementing their environmental monitoring
+program:
+1) Create a team (made up of multidisciplinary members with a background in microbiology, food
+safety, specific production processes of the organization, maintenance/equipment design,
+etc.).
+2) Conduct the risk assessment to build an environmental monitoring program that meets the
+specific needs of your organization:
+a. Define relevant microbiological hazards, including relevant pathogen, spoilage, and/or
+indicator organisms.
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 4 of 9
+• More details on potential microorganisms of concern are detailed in Table 1. The
+nature of the microorganism should be considered, including the ability to
+survive/grow in certain conditions. These can include pathogens, spoilage
+organisms, and indicator organisms.
+• As an organization, the specific hazards that may be relevant to your production
+environment, including specific hazards of concern linked to the type of product
+produced, should be considered. As an example, a facility producing ready-to-eat
+(RTE) chilled products likely needs to consider including sampling for Listeria
+monocytogenes and Listeria spp. within its cooling units and drains. The hazard
+analysis, as required by clause 8.5 of ISO 22000:2018, is a useful source of
+information as to your microorganisms of concern.
+TABLE 1: POTENTIAL MICROORGANISMS OF CONCERN
+(NON-EXHAUSTIVE LIST)
+Note: the below-mentioned microorganisms are provided as an example. The organization needs to
+have sufficient justification to support its identification of microorganisms of concern.
+Pathogens
+Salmonella spp
+Listeria monocytogenes
+(Commonly found in wet or cool/chilled environments and in drains)
+Staphylococcus aureus
+(Commonly linked to food handlers, e.g., personnel hands)
+Spoilage organisms
+Yeast and molds
+(Air plate testing)
+Indicator organisms
+Coliforms
+Escherichia coli
+(Associated with contaminated water and areas where fecal contamination may occur, such as
+personnel hands)
+Enterobacteriaceae
+Aerobic Plate Count
+Lactic Acid Bacteria (LAB)
+Listeria spp.
+Pseudomonas spp.
+The introduction of hazards to the production environment can occur via the following
+routes, examples: Raw materials, pests, water, air supply, and cross-contamination from external
+sources, as well as via employees.
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 5 of 9
+b) Define environmental monitoring sampling zones of risk related to the different
+hazards. Note: The environmental monitoring sampling zones are different from hygienic
+zoning. Hygienic zoning should be considered a prerequisite to the environmental
+monitoring program. Hygienic zoning is the division of a food manufacturing facility into
+different areas to avoid food contamination risks. Areas are designated based on risk and
+can include non-production areas (e.g., offices), basic GMP areas (e.g., raw material
+storage), and the primary pathogen control area (PPCA) where processed RTE product is
+exposed to the environment prior to packaging. Hygienic zones should not be confused with
+environmental monitoring sampling zones, which are used to designate target areas for
+environmental sampling (i.e., Zones 1-4).1
+ZONE 1: Product contact surfaces (Direct contact) (e.g., slicers, peelers, fillers, hoppers, screens,
+conveyor belts, air blowers, employee hands, knives, racks, worktables)
+ZONE 2: Non-food contact surfaces in close proximity to food and food contact surfaces
+(Indirect contact) (e.g., processing equipment exterior and framework, refrigeration/cooling
+units, equipment control panels, switches)
+ZONE 3: More remote non-food contact surfaces located in or near the processing areas
+(Close proximity) (e.g., forklifts, hand trucks, carts, wheels, air return covers, hoses, walls, floors,
+drains)
+ZONE 4: Non-food contact surfaces outside of the processing areas (General areas) (E.g.,
+locker rooms, cafeterias, entry/access ways, loading bays, finished product storage areas,
+maintenance areas)
+Figure 1. Zone concept in relation to risk1
+ZONE
+1
+ZONE
+2
+ZONE
+3
+ZONE
+4
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 6 of 9
+c) Define suitable sampling protocols:
+i. Sample types: such as swabs, water samples, and air plates. Protein swabs
+and ATP swabs may also be used for the verification of cleaning.
+ii. Sampling tools: such as dry or wet cotton swabs, sponge swabs, RODAC
+plates, and air samplers.
+iii. Sampling techniques (including which surface size to consider)
+iv. Sample location/sites: based on the zones listed on the previous page.
+v. Test methods: could be rapid or laboratory-based; requirements of FSSC
+Additional Requirement 2.5.1(a) apply.
+d) Define appropriate monitoring frequencies for routine sampling. As an example,
+facilities that typically produce food products supporting pathogens’ growth would
+require higher frequencies.
+e) Define when sampling is conducted:
+• Before cleaning (post-production after disassembly and initial rinse, but before
+application of cleaning chemicals)
+• After cleaning and sanitation
+• Pre-production
+• During production
+When sampling is taken, it is dependent on the intent of the sampling and needs to
+be determined by the organization.
+f) Define appropriate methods for sample collection, storage, and transport, to ensure
+the integrity of the sample is maintained prior to analysis.
+g) Define action limits, (proposed) corrective actions, and responsibilities should any out-
+of-specification results be detected. This should link to the organization’s corrective
+action/nonconformity management system. Investigative sampling may also be used
+as part of root cause analysis.
+h) The environmental monitoring program should also consider additional sampling,
+over and above routine sampling, in the case of extraordinary circumstances, such as
+during construction and as a follow-up due to a positive test result.
+i) Conduct trending of the results obtained from the environmental monitoring program
+and implement necessary action to address the results of the trends identified.
+3) Once the environmental monitoring program is established, it is important that it is subjected
+to regular review, at least annually, as well as when triggers occur as per the FSSC 22000
+additional requirement 2.5.7. In relation to 2.5.7 (d)(ii), consistent negative results may be due
+to false negatives being obtained. False negatives can be due to, for example, incorrect testing
+method(s) or sampling technique(s). It is, therefore, important to review your environmental
+monitoring program when consistent negative results are obtained over an extended period
+of time.
+4) Document required procedures and training programs to ensure the principles and role of
+environmental monitoring are understood across the workforce and any relevant rules are
+adhered to.
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 7 of 9
+Additional considerations when developing your environmental monitoring program:
+• Legal requirements shall always be adhered to within the environmental monitoring
+program. When establishing the acceptable levels and action limits for their environmental
+monitoring program, an organization would need to consult the relevant countries’
+legislation; consider reviewing relevant standards, codes of practice, and guidelines, as
+well as industry best practices and customer requirements, whilst taking into
+consideration the type of product produced by the site.
+• The risk assessment undertaken by the organization shall be used to determine the extent
+of the environmental monitoring program required, and therefore one organization’s
+environmental monitoring program may be more extensive than that of another, based
+on the outcome of the risk assessment.
+- As an example, the outcome of a risk assessment for a cannery may require
+substantially less environmental monitoring than that of a facility that
+manufactures ready-to-eat salads. This is due to canned products undergoing
+commercial sterilization and due to the enclosed nature of the manufacturing
+process. Therefore, microbial contamination from the environment is less likely
+than in an open production environment.
+- However, even though less environmental monitoring may be required in certain
+cases based on risk, the basic hygiene requirements as per the relevant sector-
+specific PRP standard still apply and needs to be verified in accordance with clause
+8.8.1 of ISO 22000:2018.
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 8 of 9
+6. GUIDANCE FOR AUDITORS
+The following is a non-exhaustive list of questions that an auditor can use to assess the FSSC
+Additional Requirement 2.5.7:
+• Is there a team with the correct competencies/knowledge?
+• Has an environmental monitoring program been developed based on a risk assessment,
+and is it documented? Does the risk assessment consider relevant microorganisms?
+• Are sampling points determined and documented (e.g., on a site map)?
+• Is the sampling frequency determined based on risk and inclusive of trends from the
+previous period?
+• Is there a verification system present in line with ISO 22000 paragraph 8.8?
+• Is the program regularly reviewed, and is the frequency adequate?
+• Are all the above effectively included and implemented through the organization’s FSMS
+(e.g., records, awareness of people, internal audits, management reviews)?
+7. REFERENCES
+1. Cornell University and 3M. Environmental monitoring handbook for the food and beverage
+industry, 1st Edition. URL: environmental-monitoring-handbook.pdf (3m.com)
+2. Codex Alimentarius Commission. Guidelines on the application of general principles of
+food hygiene to the control of Listeria monocytogenes in foods CAC/GL 61 – 2007.
+URL: https://www.fao.org/input/download/standards/10740/CXG_061e.pdf
+3. World Health Organization Factsheets (Microorganisms). URL: https://www.who.int/news-
+room/fact-sheets
+4. Ellin Doyle M. “Microbial Food Spoilage — Losses and Control Strategies.” July 2007. Food
+Research Institute, University of Wisconsin–Madison.
+Guidance Document: Environmental Monitoring
+FSSC 22000 Version 6 | July 2023 9 of 9
+8. RELATED INDUSTRY INFORMATION
+The below references are not an exhaustive list and are for information purposes only and may
+not apply to all organizations. The requirements of the Scheme shall be adhered to in all cases.
+• Codex Alimentarius Commission. CXC 1-1969 – General principles of food hygiene, 2022.
+URL: CXC 1-1969
+• ICMSF. Microorganisms in Foods 7 Microbiological Testing in Food Safety Management,
+Chapter 12. URL: International Commission for the Microbiological Specifications of
+Foods (ICMSF).
+• ISO 18593:2018 - Microbiology of the food chain - horizontal methods for surface
+sampling. URL: ISO - International Organization for Standardization
+• FDA. Control of Listeria monocytogenes in Ready-To-Eat Foods: Guidance for Industry,
+Draft Guidance. URL: https://www.fda.gov/regulatory-information/search-fda-guidance-
+documents/draft-guidance-industry-control-listeria-monocytogenes-ready-eat-foods
+• (EC) No 2073/2005 – Microbiological criteria for foodstuffs. URL:
+CL2005R2073EN0050050.0001_cp 1..1 (europa.eu)
+• Health Canada. Policy on Listeria monocytogenes in ready-to-eat foods, 2023. URL:
+https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-
+guidelines/policies/listeria-monocytogenes-ready-eat-foods.html
+• GMA, The Association of Food, Beverage, and Consumer Products Companies. Control of
+Salmonella in low-moisture foods guidance document, 2009. URL: GMA. 2009. Control of
+Salmonella in low-moisture foods guidance document
+• GMA, The Association of Food, Beverage, and Consumer Products Companies. Listeria
+monocytogenes Guidance on Environmental Monitoring and Corrective Actions in At-risk
+Foods, 2014. URL: GMA. 2014. Listeria monocytogenes Guidance on Environmental
+Monitoring and Corrective Actions in At-risk Foods.
+• Almonds Board of California. Pathogen environmental monitoring program (PEM). URL:
+https://www.almonds.com/sites/default/files/pem_book.pdf
+• International Journal of Food Microbiology. Processing Environment Monitoring in Low
+Moisture Food Production Facilities: Are we looking for the right microorganisms?
+Volume 356 (2021). URL: sciencedirectassets.com
