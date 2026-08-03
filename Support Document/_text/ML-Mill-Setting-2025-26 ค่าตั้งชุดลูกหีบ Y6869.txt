@@ -1,0 +1,92 @@
+MILL SETTING DESIGN SHEET — MITRLAO MILL TANDEM ฤดูการผลิต Y6869 (2025/26)
+เอกสารภายใน ML 27082025 R0 · Issued 7-Aug-25 · Approved by Technic 20-Aug-25 · Released 20-Aug-25
+ผู้จัดทำ/ตรวจ/อนุมัติ: S.Piyasarn (Checked, Verified), L.Chaiyut (Approved)
+แผ่นออกแบบเทียบ 2 ชุด: ML Design Data กับ Technical Engineering Design Data (ชุดลูกหีบ No.1-No.5)
+
+อัตราการหีบออกแบบ (Cane crushing): 7,990 ตันต่อวัน (TCD) · %Fiber ออกแบบ 13.5
+
+ความเร็วและอัตราทด (Mill Speed & Ratio)
+Mill Top roller speed: ML Design 340 ทุกชุด · Technical Design 340 ทุกชุด
+Speed Ratio PF : TOP = 1.30 ทุกชุด (ทั้งสองชุดข้อมูล)
+Hydraulic Lift of Top roller: ML 14.14 ทุกชุด · Technical 14.00 ทุกชุด
+Mill apex angle (Top roller angle): ML 13.41 องศา ทุกชุด · Technical 13.22 องศา ทุกชุด
+ความเร็วรอบลูกหีบจริง (rpm): ML 4.65 / 4.70 / 4.78 / 4.83 / 3.90 · Technical 5.20 / 5.50 / 5.45 / 5.45 / 4.60
+
+ต้นกำลังและเกียร์ (Prime mover & Gear)
+Mill drive prime mover: DC Motor ทุกชุด
+Install mill motor: 750 kW ต่อชุด (ทั้ง 5 ชุด ทั้งสองชุดข้อมูล)
+Motor mill drive max speed: 1000 rpm
+Reduction gear / Planetary gear mill ratio: 119.96 / 119.96 / 120.50 / 120.50 / 119.96
+Set mill motor speed (rpm): 624 / 660 / 663 / 663 / 552 (ML) · 624 / 660 / 657 / 657 / 552 (Technical)
+Mill motor speed / Max speed (%): 62.38 / 65.98 / 66.27 / 66.27 / 55.18
+PF drive prime mover: AC Motor · Install PF motor 350 kW · max speed 1000 rpm · gear ratio 115.33
+PF motor speed: 777 rpm (77.67%) และ 687 rpm (68.71%)
+ประเภทชุดป้อน: HDPF HDPF LDPF LDPF HDPF (ML) · HDPF HDPF LDPF LDPF HDPF (Technical)
+
+ขนาด (Lengths)
+Mill roller length: 1829 mm ทุกชุด
+Pressure chute length: 1250 / 1250 / 750 / 750 / 1250 mm
+Feed hopper length (Height): 2000 mm ทุกชุด
+Under feed sprocket (UFR SPROCKET): 23 / 23 / 21 / 21 / 23 ฟัน
+BPF SPROCKET: 30 / 30 / 23 / 23 / 30 ฟัน
+Pinion Teeth: TPF 18, BPF 18, TOP 19/18/18/18/18, FEED 18, DELIVERY 18
+
+เส้นผ่านศูนย์กลางลูกหีบด้านนอก (Roller outside diameter)
+UFR 975 mm · TPF 975 mm · BPF 970-975 mm · TOP 975 mm · FEED 920-975 mm · DELIVERY 970-975 mm
+Grooving depth: 58 mm (ชุดหลัก) และ 42 mm (บางตำแหน่ง)
+
+PF Roll Linear Speed (at Dm) — m/min ชุดที่ 1-5
+UFR 20.1 / 20.1 / 17.7 / 16.8 / 16.0
+TPF 19.7 / 18.3 / 16.2 / 16.2 / 17.6
+BPF 19.8 / 20.6 / 16.2 / 16.2 / 17.6
+TOP 15.4 / 16.3 / 15.5 / 16.0 / 13.5
+FEED 16.2 / 16.1 / 15.0 / 15.0 / 12.8
+DELIVERY 16.2 / 15.6 / 15.0 / 15.1 / 13.0
+Diff Of Linear Speed (%Slip speed) — UNF:PFA 1.02/1.10/1.10/1.04/0.91 times, PFB:PFA 1.01/0.97/1.10/1.04/0.91 times
+FEED:TOP 0.3 / 11.4 / 0.0 / 0.0 / 0.0 % · DEL:TOP 5.3 / -1.7 / -3.3 / -6.7 / -5.9 %
+
+Vertical Feed Chute Setting
+Vert. feed chute setting @base: 920 / 920 / 860 / 920 / 920 mm
+Optimum Chute Setting: 785 / 747 / 785 / 746 / 715 mm
+Max Recommend Chute Setting: 990 / 875 / 785 / 785 / 1000 mm
+Feed hopper compaction (kg/m3): 52.0 / 56.0 / 58.0 / 60.0 / 62.0
+Vertical chute contact angle: 47.4 / 47.2 / 47.0 / 46.0 / 45.6 องศา
+
+UFR Setting และ Compactions (kg/m3)
+UF compaction: 79.4 / 76.8 / 90.6 / 90.6 / 92.9 (ML) · 79.4 / 76.8 / 88.2 / 88.2 / 92.9 (Technical)
+PF nip (A1): 280 / 290 / 292 / 299 / 365 (ML) · 212 / 208 / 155 / 173 / 333 (Technical)
+Feed nip (A2): 370 / 400 / 410 / 420 / 520 (ML) · 317 / 333 / 309 / 345 / 500 (Technical)
+Delivery nip (A3): 650 / 720 / 800 / 840 / 880 (ML) · 540 / 600 / 680 / 760 / 850 (Technical)
+Volumetric ratio: 1.32 / 1.38 / 1.40 / 1.40 / 1.42 (ML) · 1.50 / 1.60 / 2.00 / 2.00 / 1.50 (Technical)
+Mill ratio: 1.85 / 1.85 / 1.77 / 1.79 / 1.96 (ML) · 1.70 / 1.80 / 2.20 / 2.20 / 1.70 (Technical)
+
+Work Opening (mm)
+PF work opening (A1): 89 / 97 / 106 / 103 / 81 (ML) · 104 / 107 / 173 / 155 / 74 (Technical)
+Feed work opening (A2): 86 / 79 / 79 / 74 / 74 (ML) · 86 / 80 / 92 / 81 / 66 (Technical)
+Delivery work opening (A3): 49 / 44 / 40 / 37 / 44 (ML) · 51 / 45 / 42 / 37 / 38 (Technical)
+
+Set Opening (mm)
+PF (A1): 31 / 39 / 48 / 45 / 23 (ML) · 46 / 49 / 115 / 97 / 16 (Technical)
+FEED (A2): 22 / 15 / 31 / 26 / 26 (ML) · 24 / 26 / 45 / 34 / 19 (Technical)
+DELIVERY (A3): -15 / -4 / -8 / -11 / -4 (ML) · -12 / -1 / -5 / -10 / -8 (Technical)
+
+Pressure Feed Chute Setting
+PF Chute inlet setting (T): 219 / 209 / 280 / 262 / 187 mm (ML) · 212 / 215 / 281 / 263 / 182 (Technical)
+PF Chute outlet setting (R): 291 / 281 / 320 / 305 / 259 mm (ML) · 284 / 287 / 321 / 306 / 254 (Technical)
+PF Chute Root to Root set opening: 50 mm ทุกชุด
+PF Chute Compaction inlet (T): 140 / 154 / 153 / 155 / 198 kg/m3 (ML) · 117 / 118 / 112 / 120 / 153 (Technical)
+PF Chute Compaction outlet (R): 128 / 140 / 141 / 145 / 168 kg/m3 (ML) · 126 / 120 / 118 / 119 / 160 (Technical)
+PF Chute Compaction drop: -12.0 / -14.0 / -12.0 / -10.0 / -30.0 kg/m3 (ML) · -8.4 / -1.8 / -5.9 / 0.9 / -6.9 (Technical)
+PF Chute inlet contact angle (X): 15.9 / 12.0 / 20.5 / 20.8 / 7.0 องศา (ML) · 19.5 / 20.2 / 22.3 / 22.3 / 19.4 (Technical)
+PF Chute outlet contact angle (Y): 37.1 / 37.1 / 43.6 / 42.9 / 36.7 องศา (ML) · 37.8 / 39.6 / 42.4 / 41.8 / 37.7 (Technical)
+
+Trash Plate Setting
+Trash plate divergence: 3.30 / 3.30 / 3.05 / 3.30 / 3.30 องศา (เท่ากันทั้งสองชุดข้อมูล)
+Trash plate work opening: 57.7 / 57.7 / 53.3 / 57.7 / 57.7 mm/m
+Trash plate TOE setting (B1): 240 / 250 / 280 / 280 / 230 mm (ML) · 240 / 250 / 290 / 290 / 230 (Technical)
+Trash plate HEEL / Actual Effectiveness: 249 / 213 / 234 / 211 / 206 mm (ML) · 249 / 221 / 235 / 212 / 206 (Technical)
+Setting between TPF & UFR / Optimum UF Setting: ดูค่ารายชุดในเอกสารต้นฉบับ
+Pinion Meshing Details — Root clearance Top to Bottom: 19 mm ทุกชุด
+Top & Feed center distance (C1): 141 / 127 / 120 / 112 / 123 mm (ML) · 141 / 127 / 121 / 113 / 123 (Technical)
+
+หมายเหตุการใช้งาน: แผ่นนี้เป็นค่าออกแบบสำหรับฤดู 2025/26 ใช้เทียบกับค่าตั้งจริงหน้างานเพื่อวินิจฉัยปัญหา extraction, slip speed, chute compaction และการปรับ Mill Setting ตาม ML-FM-3110-019 (ดู ML-WI-3110-010 ข้อ 6 การแก้ไข 1st Mill Extraction ต่ำกว่าค่าควบคุม)

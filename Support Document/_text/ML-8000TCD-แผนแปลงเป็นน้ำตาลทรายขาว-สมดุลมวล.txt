@@ -1,0 +1,50 @@
+# แผนแปลงโรงงานเป็น White Sugar 8,000 TCD (ML_8000TCD_White Sugar_230726.xlsx)
+
+การศึกษาสมดุลมวล (Solid/Mass Balance) สำหรับผลิตน้ำตาลทรายขาว 8,000 TCD ของมิตรลาว
+ไฟล์: `Support Document/expert โรงงาน/ML_8000TCD_White Sugar_230726.xlsx` (6 ชีต)
+
+## โครงชีต
+
+1. **Balance_B_Mol_อ้อย_0.90_W** — สมดุลกรณีส่ง B-Molasses ไปโรงเอทานอล
+2. **Balance_F_Mol_อ้อย_0.90** — สมดุลกรณีส่ง Final Molasses (C-Mol) ไปเอทานอล
+3. **Vacuum Pan_Normal** — โหลดหม้อเคี่ยวแบบปกติ
+4. **Vacuum Pan_ReduSyrup** — กรณีลดน้ำเชื่อม
+5. **Purg_C_B_HighPurity_A-Seed** — ปั่น C/B แบบ high purity เป็นฐาน A-Seed
+6. **Vacuum Pan_DoblePrugeA** — โครงการ Double Purge A
+
+## สมมุติฐานหลัก (ฐานอ้อย 900,000 ตัน/ฤดู หรือ 8,000 TCD)
+
+- Mixed Juice: Pol 13.97, Purity 84.56, Brix 16.52 · Clarified Juice Purity 84.08
+- Raw Syrup: Pol ~55, Purity 84.3–85, Brix 65
+- Raw/White Sugar: Pol 99.60, Purity 99.68 · B-Mol Purity 52–52.5 · Final Mol Purity 33 (Pol 28.05, Brix 85)
+- BG %Cane 26.58 · Pol in BG 1.71 · Fiber %Cane 13.5 · FC %Cane 3.6 (Pol FC 1.62)
+- UD Loss ตามแผน 3.65–4.48 · Loss in Final Mol ~7.95–8.31%
+- **Yield: 131.3 kg/TC (94.5 %CCS) กรณีปกติ · 130.0 kg/TC (93.5 %CCS) กรณีส่งของไปเอทานอล**
+- CCS ฐาน 13.90
+
+## ระบบเคี่ยว-ปั่น (A-B-C with Double Purge / B-Magma footing)
+
+- ฐานเคี่ยว A ใช้ **B-Magma Purity 95 (สัดส่วน 40–50)** + A-Seed/A-Mass ratio 38%
+- A-Mass Purity ~86.6 → A-Sugar 99.3 + A-Mol 65.9 (Purity Drop ~20.7, Crystal Content ~57.6%)
+- B-Mass Purity ~73.9 → B-Sugar 92.5–95 + B-Mol 50 (Purity Drop ~23.9, CC ~46.4%)
+- C-Mass Purity 58 → C-Sugar 86–90 + C-Mol 32–33 (CC ~37.1) → C-Magma Purity 90–91
+
+## โหลดอุปกรณ์ต่อวัน (ที่ 8,000 TCD)
+
+| Massecuite | Brix | Ton/วัน (≈) | m³/TC | หม้อ 50 m³ ที่ต้องใช้ (cycle 4 ชม. = 6 หม้อ/วัน/ลูก) | ML มี | เครื่องปั่น (design m³/d) |
+|---|---|---|---|---|---|---|
+| A-Mass | 93 | 1,810 | 0.150 | 2.8 → ใช้ 4 | 4 | 5 (650) |
+| B-Mass | 95 | 610 | 0.050 | 0.9 → ใช้ 2 | 2 | 4 (500) |
+| C-Mass | 97 | 561 | 0.046 | 0.8 → ใช้ 2 | 2 | 4 (150) |
+| A-Seed | 91 | 703 | 0.059 | 1.1 → 2 | — | — |
+| B-Seed | 91 | 234 | 0.020 | 0.36 → 1 | — | — |
+| C-Seed | 91 | 227 | 0.019 | 0.35 → 1 | — | — |
+
+รวมความต้องการ ~18 หม้อ-cycle/วัน · Water removal ที่หม้อเคี่ยว ~598 t/d, Condensate ~586 t/d
+
+## วิธีใช้ตอบคำถาม
+
+- "ถ้าเปลี่ยนเป็นน้ำตาลขาว yield จะเป็นเท่าไร" → 94.5% CCS ปกติ / 93.5% ถ้าส่ง Mol ไปเอทานอล
+- "หม้อเคี่ยว/หม้อปั่นพอไหม" → ใช้ m³/TC × TCD จริง เทียบจำนวนหม้อ 50 m³
+- "ส่ง B-Mol หรือ C-Mol ไปเอทานอลดีกว่า" → เทียบ SJM (B-Mol case 0.546) + ชวนผู้ใช้ดูราคาน้ำตาลเทียบเอทานอลก่อนสรุป
+- ตัวเลขละเอียดต่อชีตให้เปิดไฟล์จริงด้วย `scripts/xlsx-lib.ps1` ของโปรเจกต์ Chatbot

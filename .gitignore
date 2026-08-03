@@ -10,6 +10,11 @@
 Support Document/*.pdf
 Support Document/*.PDF
 
+# โฟลเดอร์เอกสารต้นฉบับรายห้อง (PDF/XLSX ของโรงงาน) — ใหญ่และเป็นเอกสารควบคุมภายใน
+# ระบบใช้เฉพาะข้อความที่สกัดแล้วใน Support Document/_text/
+# เช่น expert โรงงาน/ อย่างเดียว 272 MB (รวม Peter Rein 130 MB)
+Support Document/expert */
+
 # ── ความลับ ──────────────────────────────────────────────────────────
 # API key ต้องไม่ขึ้น GitHub เด็ดขาด
 .env

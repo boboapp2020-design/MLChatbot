@@ -68,6 +68,10 @@ $FileMap = @(
   @{ Path='sugar-brain\references\benchmarks.md';             Module='factory';   Type='STANDARD'; Title='ค่าเปรียบเทียบมาตรฐานระดับโลก (Benchmarks)';      Code='BENCH-WC' }
   @{ Path='sugar-brain\references\production-data-guide.md';  Module='factory';   Type='MANUAL';   Title='คู่มือข้อมูลการผลิตและ KPI';                      Code='PROD-DATA' }
   @{ Path='sugar-brain\references\smart-factory.md';          Module='factory';   Type='MANUAL';   Title='Smart Factory และการวิเคราะห์เชิงคาดการณ์';       Code='SMART-FAC' }
+  # สรุปค่าควบคุมจริงจาก WI ทุกแผนก — Force เพราะเป็นของโรงงานเรา ไม่ใช่ตำรา
+  # (ตัวเอกสาร WI ฉบับเต็มอยู่ใน Support Document\_text อีกชุดหนึ่ง อันนี้คือดัชนีที่ร้อยข้ามแผนก)
+  @{ Path='sugar-brain\references\ml-factory-operations.md';  Module='factory';   Type='MANUAL';   Force=$true
+     Title='ค่าควบคุมจริงของโรงงานมิตรลาว (สรุปจาก WI ทุกแผนก)';  Code='ML-OPS' }
 
   @{ Path='steam-brain\SKILL.md';                             Module='powerplant';  Type='BOOK';     Title='ระบบไอน้ำและพลังงานในโรงงานน้ำตาล';              Code='STM-FRAME' }
   @{ Path='steam-brain\references\boiler.md';                 Module='powerplant';  Type='MANUAL';   Title='หม้อไอน้ำ — หลักการและการเดินเครื่อง';           Code='STM-BOIL' }
@@ -592,6 +596,66 @@ $SupportMap  = @(
      Title='รายงานตรวจ GHP และ HACCP Codex 2022 โดย LRQA ปี 2026'; Code='LRQA-GHP' }
   @{ File='ISO9001-รายงานตรวจ-LRQA-2026.txt'; Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
      Title='รายงานตรวจ ISO 9001:2015 โดย LRQA ปี 2026'; Code='LRQA-ISO' }
+
+  # ── วิธีปฏิบัติงานจริงของฝ่ายผลิต (WI/SP) — เอกสารควบคุมของโรงงาน ────────
+  # บังคับเข้าห้อง factory ("โรงงาน") ทุกฉบับ เพราะเป็นค่าควบคุมของสถานีผลิต
+  # ถ้าปล่อยให้ keyword ตัดสิน WI หม้อเคี่ยวจะไหลไปห้องปฏิบัติการ (มี Brix/Purity/ICUMSA เต็มไปหมด)
+  # แล้วห้องโรงงานจะเหลือแต่ตำรา ไม่มีค่าควบคุมของเราเอง
+  # ยกเว้น ML-WI-1630-xxx (วิธีวิเคราะห์ของแผนกวิเคราะห์) ที่เป็นงานห้องแล็บโดยตรง
+  @{ File='ML-WI-3110-008 การดำเนินการในการหีบอ้อยด้วยชุดลูกหีบ Rev.03.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3110-008 การดำเนินการในการหีบอ้อยด้วยชุดลูกหีบ Rev.03'; Code='ML-MILL-OP' }
+  @{ File='ML-WI-3110-010 การแก้ไขค่าควบคุมไม่เป็นไปตามเป้าหมาย (ลูกหีบ).txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3110-010 การแก้ไขค่าควบคุมไม่เป็นไปตามเป้าหมาย แผนกลูกหีบ Rev.02 (PI, Pol กาก, ความชื้น, Purity Drop, Brix, 1st Mill Extraction)'; Code='ML-MILL-FIX' }
+  @{ File='ML-SP-3110-003 คู่มือการหีบอ้อยด้วยชุดลูกหีบ.txt'; Module='factory'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ML-SP-3110-003 คู่มือการหีบอ้อยด้วยชุดลูกหีบ Rev.02 (PI 89-91, Purity Drop, Inversion, ตารางความหนาแน่นไฟเบอร์)'; Code='ML-MILL-SP' }
+  @{ File='ML-Mill-Setting-2025-26 ค่าตั้งชุดลูกหีบ Y6869.txt'; Module='factory'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='Mill Setting Design Sheet ฤดู 2025/26 (Y6869) — ค่าตั้งชุดลูกหีบ 5 ชุด ที่ 7,990 TCD'; Code='ML-MILLSET' }
+  @{ File='ML-WI-3210-001ถึง006 ชุดวิธีปฏิบัติงานแผนกหม้อต้ม-ทำใส-ต้มระเหย.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3210-001 ถึง 006 ชุดวิธีปฏิบัติงานแผนกหม้อต้ม (น้ำปูนขาว น้ำยาพักใส Lime saccharate ทำใส หม้อกรอง RVF ต้มน้ำอ้อย)'; Code='ML-CLAR-SET' }
+  @{ File='ML-WI-3210-00123022026 Rev01 การเตรียมน้ำปูนขาว.pdf.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3210-001 การเตรียมน้ำปูนขาว Rev.01 (23/02/2025 — เพิ่มระบบปูนขาวผง Silo)'; Code='ML-LIME' }
+  @{ File='ML-WI -3210-012การจัดการน้ำเชื่อมรั่วไหล.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3210-012 การจัดการน้ำเชื่อมรั่วไหล (ลดรอบหีบ 550 เป็น 450 RPM, บันทึก Sugar content ร่องน้ำ)'; Code='ML-SPILL' }
+  @{ File='ML-SP-3220-005 คู่มือการตั้งค่า Set Point คในการเคี่ยวน้ำตาล 30.04.2023.txt'; Module='factory'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='ML-SP-3220-005 คู่มือการตั้งค่า Set Point ในการเคี่ยวน้ำตาล (Boiling Profile A/B/C ครบ 10 จุด)'; Code='ML-BOILSP' }
+  @{ File='ML-SP-3220-001 คู่มือการเก็บตัวอย่าง 30.04.2023 R.01.txt'; Module='factory'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ML-SP-3220-001 คู่มือการเก็บตัวอย่างน้ำตาล (Massecuite 500-700 cc, Seed 200-400 cc)'; Code='ML-SAMPLE' }
+  @{ File='ML-SP-3220-002 คู่มือการใช้งานควบคุมการเดินรางกวนและถังเชื้อน้ำตาล 30.04.2023 Re.01.txt'; Module='factory'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ML-SP-3220-002 คู่มือการใช้งานรางกวนและถังเชื้อน้ำตาล'; Code='ML-CRYST' }
+  @{ File='ML-WI-3220-001 (เตรียมหม้อ) 30.04.2023 R01.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-001 การเตรียมหม้อเคี่ยว'; Code='ML-PAN-PREP' }
+  @{ File='ML-WI-3220-003 A-Seed 30.04.2023 R02.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-003 การเคี่ยวน้ำตาล A-Seed Rev.02 (เม็ด 0.8-0.9 มม. ที่ 47 ลบ.ม.)'; Code='ML-ASEED' }
+  @{ File='ML-WI-3220-004 การเคี่ยว A-Massecuite Rev09.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-004 การเคี่ยวน้ำตาล A-Massecuite Rev.09 (ระบบ Auto, CCP DCR อุณหภูมิ >63 องศา 45 นาที)'; Code='ML-AMASS' }
+  @{ File='ML-WI-3220-005 B-Seed 30.04.2023 R01.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-005 การเคี่ยวน้ำตาล B-Seed Rev.01'; Code='ML-BSEED' }
+  @{ File='ML-WI-3220-006  B-Mass 30.04.2023 Rev03.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-006 การเคี่ยวน้ำตาล B-Massecuite Rev.03'; Code='ML-BMASS' }
+  @{ File='ML-WI-3220-007 C-Seed 30.04.2023 Rev03.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-007 การเคี่ยวน้ำตาล C-Seed Rev.03'; Code='ML-CSEED' }
+  @{ File='ML-WI-3220-008 C-Mass 30.04.2023 Rev.03.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-008 การเคี่ยวน้ำตาล C-Massecuite Rev.03'; Code='ML-CMASS' }
+  @{ File='ML-WI-3220-009 (Seed in tank) 30.04.2023  R01.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-009 การถ่ายเชื้อลงถัง (Seed in tank)'; Code='ML-SEEDTK' }
+  @{ File='ML-WI-3220-010 (Cutting) 30.04.2023 R01.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-010 การถ่ายเชื้อแบบแบ่งครึ่งระหว่างหม้อ (Cutting)'; Code='ML-CUT' }
+  @{ File='ML-WI-3220-011  (PM) 30.04.2023 R01.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3220-011 การบำรุงรักษาเชิงป้องกันหม้อเคี่ยว (PM)'; Code='ML-PAN-PM' }
+  @{ File='ML-WI-3230-003 การจัดการฝุ่นจาการอบแแห้งน้ำตาลทรายดิบ.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3230-003 การจัดการฝุ่นจากการอบแห้งน้ำตาลทรายดิบ'; Code='ML-DUST' }
+  @{ File='ML-WI-3330-002 การสอบเทียบและทวนสอบเครื่องมือวัด Rev.06.txt'; Module='factory'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-3330-002 การสอบเทียบและทวนสอบเครื่องมือวัด Rev.06'; Code='ML-CALIB' }
+
+  # วิธีวิเคราะห์ของแผนกวิเคราะห์ — เข้าห้องปฏิบัติการ (quality) ไม่ใช่ห้องโรงงาน
+  @{ File='ML-WI-1630-004 วิธีวิเคราะห์น้ำตาล (แผนกวิเคราะห์).txt'; Module='quality'; Type='WI'; Plain=$true; Force=$true
+     Title='ML-WI-1630-004 วิธีวิเคราะห์น้ำตาล Rev.01 (pH, Pol, RS, Moisture, Colour, Cond.Ash, Sediment, MA-CV ตาม ICUMSA)'; Code='ML-LAB-SUG' }
+
+  # ── งานวิเคราะห์การสูญเสียน้ำตาลของโรงงาน ────────────────────────────
+  @{ File='UDL-โครงการลดการสูญเสียน้ำตาล-น้ำตาลที่หายไป.txt'; Module='factory'; Type='RECORD'; Plain=$true; Force=$true
+     Title='โครงการลดการสูญเสียน้ำตาล "น้ำตาลที่หายไป" — UDL 8.02% ฤดู 2025/26 (อนุกรม 12 ฤดู, sugar ในน้ำทิ้ง 4 จุด, downtime)'; Code='ML-UDL' }
+  @{ File='ML-8000TCD-แผนแปลงเป็นน้ำตาลทรายขาว-สมดุลมวล.txt'; Module='factory'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='แผนแปลงโรงงานเป็นน้ำตาลทรายขาว 8,000 TCD — สมดุลมวลและโหลดหม้อเคี่ยว/หม้อปั่น'; Code='ML-8000TCD' }
 
   # ── ขั้นตอนปฏิบัติที่ต้นฉบับเป็น .docx (สกัดด้วย scripts\docx-to-text.ps1) ──
   @{ File='ML-QP-1600-009 การจัดการการสูญเสียและของเสียอาหาร.txt'; Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
