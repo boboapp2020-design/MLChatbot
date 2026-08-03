@@ -68,10 +68,10 @@ $FileMap = @(
   @{ Path='sugar-brain\references\benchmarks.md';             Module='factory';   Type='STANDARD'; Title='ค่าเปรียบเทียบมาตรฐานระดับโลก (Benchmarks)';      Code='BENCH-WC' }
   @{ Path='sugar-brain\references\production-data-guide.md';  Module='factory';   Type='MANUAL';   Title='คู่มือข้อมูลการผลิตและ KPI';                      Code='PROD-DATA' }
   @{ Path='sugar-brain\references\smart-factory.md';          Module='factory';   Type='MANUAL';   Title='Smart Factory และการวิเคราะห์เชิงคาดการณ์';       Code='SMART-FAC' }
-  # สรุปค่าควบคุมจริงจาก WI ทุกแผนก — Force เพราะเป็นของโรงงานเรา ไม่ใช่ตำรา
-  # (ตัวเอกสาร WI ฉบับเต็มอยู่ใน Support Document\_text อีกชุดหนึ่ง อันนี้คือดัชนีที่ร้อยข้ามแผนก)
-  @{ Path='sugar-brain\references\ml-factory-operations.md';  Module='factory';   Type='MANUAL';   Force=$true
-     Title='ค่าควบคุมจริงของโรงงานมิตรลาว (สรุปจาก WI ทุกแผนก)';  Code='ML-OPS' }
+  # หมายเหตุ: สรุปค่าควบคุมข้ามแผนก (ML-OPS) เคยอ่านจาก
+  # sugar-brain\references\ml-factory-operations.md แต่โฟลเดอร์สกิลถูกรีเซ็ตจากภายนอก
+  # เมื่อ 3 ส.ค. 2569 ทำให้ไฟล์หายทั้งไฟล์และคลังหายไป 16 ท่อนเงียบๆ
+  # จึงย้ายเนื้อหามาไว้ใน Support Document\_text ซึ่งอยู่ใน git แล้ว (ดูรายการด้านล่าง)
 
   @{ Path='steam-brain\SKILL.md';                             Module='powerplant';  Type='BOOK';     Title='ระบบไอน้ำและพลังงานในโรงงานน้ำตาล';              Code='STM-FRAME' }
   @{ Path='steam-brain\references\boiler.md';                 Module='powerplant';  Type='MANUAL';   Title='หม้อไอน้ำ — หลักการและการเดินเครื่อง';           Code='STM-BOIL' }
@@ -573,6 +573,26 @@ $SupportMap  = @(
      Title='Codex CXC 80-2020 แนวปฏิบัติการจัดการสารก่อภูมิแพ้ในอาหารสำหรับผู้ประกอบการ (Food Allergen Management) — FAO/WHO, CC BY-NC-SA 3.0 IGO'
      Code='CODEX-ALG' }
 
+  # ── สถิติที่สรุปจากข้อมูลรายวันของโรงงาน (สร้างด้วยสคริปต์ ไม่ได้พิมพ์มือ) ──
+  # build-season-stats.ps1 อ่าน Daily Report รายฤดู 12 ไฟล์
+  # build-daily-stats.ps1  อ่านรายงานหยุดหีบ + น้ำและไฟฟ้า รวมกว่า 600 ไฟล์
+  @{ File='สถิติการผลิตรายฤดู 12 ฤดู (Daily Report 2014-2026).txt'
+     Module='factory'; Type='RECORD'; Plain=$true; Force=$true; KeepAll=$true
+     Title='สถิติการผลิตรายฤดู 12 ฤดู (2014/15-2025/26) — อ้อยเข้าหีบ CCS Recovery UDL BHR Extraction Time Efficiency'
+     Code='ML-SEASON' }
+  @{ File='สถิติหยุดหีบและระบบน้ำไฟฟ้า รายฤดู.txt'
+     Module='factory'; Type='RECORD'; Plain=$true; Force=$true; KeepAll=$true
+     Title='สถิติการหยุดหีบและระบบน้ำ-ไฟฟ้า รายฤดู (ชั่วโมงหยุดแยกประเภท + Pareto แผนกต้นเหตุ + ไอน้ำและไฟฟ้า)'
+     Code='ML-STOPTIME' }
+  @{ File='ค่าควบคุมจริงของโรงงาน สรุปข้ามแผนกจาก WI ทุกแผนก.txt'
+     Module='factory'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ค่าควบคุมจริงของโรงงานมิตรลาว — สรุปข้ามแผนกจาก WI/SP ทุกแผนก (ลูกหีบ ทำใส หม้อต้ม หม้อเคี่ยว หม้อปั่น แล็บ)'
+     Code='ML-OPS' }
+  @{ File='บันทึกข้อสังเกต HACCP — ความไม่สอดคล้องระหว่าง ML-SP-1600-011 กับ -012.txt'
+     Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
+     Title='บันทึกข้อสังเกตสำหรับทีม HACCP — ความไม่สอดคล้องระหว่าง ML-SP-1600-011 Rev.14 กับ ML-SP-1600-012 Rev.12'
+     Code='ML-HACCPGAP' }
+
   # ── ตัวบท HACCP ฉบับเต็ม (คลังเดิมมีแต่สรุปที่จัดโครงไว้ใน ML-HACCP) ──
   # เพิ่มตัวบทเต็มเพื่อให้ยกข้อความรายขั้นตอนมาอ้างได้ตรงคำ
   # ทั้งสามฉบับเป็น Rev. เดียวกับที่สรุปไว้แล้ว ไม่ใช่การอัปเวอร์ชัน
@@ -785,7 +805,10 @@ foreach ($src in $Sources) {
   $dropped = 0
   foreach ($p in $pieces) {
     if ([string]::IsNullOrWhiteSpace($p.Body)) { continue }
-    if (Test-NoiseChunk -Text $p.Body -Head $p.Head) { $dropped++; continue }
+    # KeepAll = เอกสารสถิติที่เนื้อหาคือตัวเลขล้วนโดยธรรมชาติ
+    # ตัวกรองขยะมีกฎ "ตัวเลขหนาแน่นเกิน 18% = ดัชนีท้ายเล่ม" ซึ่งกินตารางสถิติเรียบ
+    # (สถิติรายฤดู 12 ฤดูถูกตัดทิ้งทั้งไฟล์เหลือ 0 ท่อนมาแล้ว)
+    if (-not $entry.KeepAll -and (Test-NoiseChunk -Text $p.Body -Head $p.Head)) { $dropped++; continue }
 
     $section = if ($p.Head) { $p.Head } else { $entry.Title }
 
