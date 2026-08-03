@@ -1,0 +1,921 @@
+Codex Alimentarius — CODE OF PRACTICE ON FOOD ALLERGEN MANAGEMENT FOR FOOD BUSINESS OPERATORS (CXC 80-2020)
+แนวปฏิบัติว่าด้วยการจัดการสารก่อภูมิแพ้ในอาหารสำหรับผู้ประกอบการอาหาร · รับรองปี 2020 (Adopted in 2020)
+เผยแพร่โดย FAO/WHO Codex Alimentarius · https://www.fao.org/fao-who-codexalimentarius/codex-texts/all-standards/en/
+ลิขสิทธิ์ CC BY-NC-SA 3.0 IGO — เผยแพร่ต่อได้เพื่อการไม่แสวงหากำไร ต้องอ้างอิงแหล่งที่มา
+
+บริบทการใช้กับโรงงานน้ำตาลมิตรลาว: น้ำตาลทรายดิบ VHP/DCR และน้ำตาลออร์แกนิกไม่ใช่ผลิตภัณฑ์ที่มีสารก่อภูมิแพ้ในตัวเอง
+แต่ข้อกำหนดนี้ยังใช้กับโรงงานผ่าน 3 ทาง — การปนเปื้อนข้าม (cross-contact) จากวัตถุดิบและสารเคมีที่ใช้ในกระบวนการ,
+การประกาศบนฉลากและเอกสารประกอบการส่งมอบ, และการตอบข้อกำหนดของลูกค้าที่นำน้ำตาลไปเป็นวัตถุดิบต่อ
+FSSC 22000 อ้าง Codex ชุดนี้เป็นฐาน และผู้ตรวจมักถามถึงการประเมินความเสี่ยงสารก่อภูมิแพ้แม้ในโรงงานที่ไม่มีสารก่อภูมิแพ้
+
+อาหาร 8 กลุ่มที่เป็นสาเหตุของภูมิแพ้ส่วนใหญ่ทั่วโลก: ธัญพืชที่มีกลูเตน (ข้าวสาลี ไรย์ บาร์เลย์ โอ๊ต สเปลต์ และสายพันธุ์ผสม),
+สัตว์น้ำเปลือกแข็ง, ไข่, ปลา, ถั่วลิสง, ถั่วเหลือง, นม, ถั่วเปลือกแข็ง (tree nuts) และซัลไฟต์ที่ความเข้มข้นตั้งแต่ 10 mg/kg ขึ้นไป
+
+CODE OF PRACTICE ON FOOD ALLERGEN MANAGEMENT
+FOR FOOD BUSINESS OPERATORS
+CXC 80-2020
+Adopted in 2020.
+CXC 80-2020 2
+INTRODUCTION
+Food allergies, an immune-mediated food hypersensitivity, are an increasing food safety issue globally and have
+emerged as a major public and personal health burden. While food allergies may affect a relatively small proportion
+of the population, an allergic reaction can be severe or potentially fatal. Furthermore, it is increasingly apparent
+that people with food allergies experience a very significant reduction in quality of life, some of which could be
+mitigated by a harmonised approach to the management of allergens in the food chain.
+Allergens are an ongoing food safety concern for consumers suffering from food allergies, those who have people
+with food allergies in their care, food business operators (FBOs), and competent authorities.
+With the increasing health burden posed byfood allergens, comes the expectation that FBOs take steps to accuratelydeclare
+the presence of allergenic ingredients, minimize the risk from, and, where possible, prevent unintended allergen presence
+and that Competent Authorities provide guidance and oversight, where necessary, to FBOs on food allergen complaint
+investigations. FBOs including producers, processors, wholesalers, distributors, importers, exporters, retailers, transporters,
+and food service operators all have a role in managing allergens.
+In a global market, it is crucial that there is harmonized understanding of this issue and of the measures required
+to address it. Allergen management practices should be part of good hygiene practices (GHPs), and, where
+appropriate, HACCP systems, in manufacturing, retail and food service.
+Allergens need to be managed throughout the supply chain and production process. Treatments lethal for
+pathogenic microorganisms, such as heating, high pressure processing, etc. generally do not destroy allergenic
+proteins. Processes that degrade proteins, such as enzymatic or acid hydrolysis, should not be relied upon to
+eliminate or completely destroy allergenic proteins.
+Hazard characterisation
+The allergenic nature of some foods should be identified as a food safety hazard for susceptible individuals. Food
+allergies are caused by an adverse immune reaction (hypersensitivity) to certain food proteins. Allergies to food
+can be classified by their immune mechanism:
+ immunoglobulin E (IgE)-mediated (immediate hypersensitivity),
+ non-IgE mediated (cell-mediated, or delayed hypersensitivity), and
+ mixed IgE and non-IgE mediated.
+IgE-mediated symptoms typically develop within minutes to 1-2 hours of ingesting the food. Non–IgE-mediated
+and mixed IgE- and non–IgE-mediated food allergies present with their symptoms several hours after the ingestion
+of the food. Symptoms of IgE-mediated food allergy may include itching around the mouth, hives, swelling of lips
+and eyes, difficulties in breathing, drop in blood pressure, diarrhoea and, in its most severe form, anaphylaxis; and
+may result in death.
+While many different foods can cause allergic reactions in susceptible individuals, the majority of food allergies on
+a global basis are caused by a variety of proteins in eight foods/ food groups (and derived products). These are1
+ cereals containing gluten (i.e. wheat, rye, barley, oats2, spelt or their hybridized strains)
+ crustaceans;
+ eggs;
+ fish;
+ milk;
+ peanuts;
+ soybeans; and
+ tree nuts
+1 The listed foods, with one exception (i.e. deletion of sulphites), are referred to in the General Standard for the Labelling of
+Prepackaged Foods (CXS 1-1985) as the foods and ingredients known to cause hypersensitivity and that must always be
+declared .
+2 While oats do not contain gluten, they are commonly produced in the same location as gluten-containing cereals such as
+wheat, resulting in allergen cross-contact.
+CXC 80-2020 3
+The most common allergic reactions to tree nuts involve almonds, Brazil nuts, cashews, hazelnuts, macadamias,
+pecans, pistachios and walnuts. In addition, cereal grains such as wheat, barley and rye contain gluten, which can
+cause adverse reactions in persons with Coeliac disease3, as well as those with specific allergies to those cereals.
+While the allergens listed above are the most common, other food allergens such as sesame seeds, buckwheat,
+celery, mustard, molluscs and lupin are recognised as important in many countries. The list of recognised food
+allergens varies among countries and there is the potential for additional major allergens to be identified in the
+future. The controls outlined in this Code of Practice (Code) would be similar for any other allergens, and FBOs
+should apply these as appropriate to their own business requirements and applicable legislation. This includes
+being aware of the food allergens recognised as important in countries they are exporting their product to,
+managing those allergens and ensuring the necessary allergen labels are applied.
+Poor allergen management can result in the presence of varying levels of undeclared and/or unintended allergens
+in food, which may pose a risk if consumed by an individual with an allergy to the food. The doses that provoke
+reactions vary among individuals and are dependent in part on the type of allergen. The risk of allergic reactions
+within a larger proportion of the population suffering from food allergies increases with increasing concentration of
+undeclared allergen.
+Allergen cross-contact can result from a number of factors in processing, preparing and handling foods, some of
+which pose a greater potential for allergen cross-contact than others. The control measures implemented to
+prevent or minimise the likelihood of allergen cross-contact should be based on risk assessment conducted by
+food business operators.
+It is important that FBOs are able to identify the allergenic nature of the foods, including ingredients, and processing
+aids they handle and take steps to manage any potential presence of undeclared allergens.
+Factors contributing to exposure
+A variety of situations may result in the exposure of individuals with a food allergy to undeclared allergens. These
+include (but are not limited to) the following:
+For harvesting, handling, storage and transportation:
+ inadequate or ineffective cleaning of containers, including reusable bags, and transport vehicles;
+ inadvertent inclusion of foreign particulates (e.g. grains, nuts or seeds);
+ inadequate physical separation or storage of commodities with different allergen profiles; and
+ inadequate or a lack of employee training and awareness on managing food allergens including lack of
+understanding of the serious nature of food allergies.
+For packaged food manufacturing facilities:
+ labelling errors (e.g. mistakes during label development, label misprints, outdated labels, lost labels, wrong
+label applied to package, incorrectly translated labels or omitting the declaration of an allergen, product in
+the wrong package);
+ unintentional presence of an allergen due to in-process or post-process allergen cross-contact;
+ inappropriate design of the establishment in terms of separation of areas, location of equipment, traffic
+patterns, and the ventilation system, among others;
+ errors in handling of rework;
+ production sequences (scheduling) that result in the unintentional presence of an allergen from a product
+produced earlier;
+ inadequate or ineffective equipment cleaning/sanitation procedures at product changeover;
+ lack of change management for changes in formulation, ingredient supply and documentation processes;
+ improper use or handling of an allergen-containing ingredient;
+3 Coeliac disease is a serious lifelong illness where the body’s immune system attacks its own tissues when gluten is
+consumed. This causes damage to the lining of the gut and results in the inability of the body to properly absorb nutrients from
+food.
+CXC 80-2020 4
+ undeclared allergen in a supplier ingredient; and
+ inadequate or lack of employee training/education on managing food allergens.
+For retail and food service establishments:
+ failure of the establishment to receive accurate information from supply chain or lack of allergen
+information with ingredients or foods received;
+ failure of the supplier to provide timely notification of ingredient changes;
+ labelling errors for allergenic foods;
+ lack of adequate storage or preparation areas to prevent or minimise the potential for allergen cross-
+contact;
+ inappropriate flow or separation of operations or improper equipment lay-out or utensils;
+ absence of, or inadequate, food preparation and service procedures to avoid allergen cross-contact;
+ inadequate or lack of employee training/education on managing food allergens, including lack of
+understanding of the serious nature of food allergies;
+ inability of FBOs to clearly communicate allergen information to customers;
+ food delivery websites which fail to communicate allergen presence in food items to the consumer, as well
+failure of a delivery service to communicate a consumer’s dietary requirements, with respect to allergens,
+to the FBO preparing the food; and
+ individuals with a food allergy not making their allergies known to food service personnel.
+Allergen cross-contact can occur at many points in the food chain. Potential points where allergen cross-contact
+can occur are outlined in relevant sections within this Code.
+FBO Responsibilities
+FBOs are encouraged to have documented and detailed allergen management policies and procedures specific
+to the food business. Implementing allergen management policies and procedures, and compliance with these:
+ allows a business to demonstrate it is taking all necessary steps to eliminate or reduce the likelihood of
+an allergen being unintentionally present in a food;
+ increases accuracy of allergenic ingredient declarations;
+ provides an opportunity for businesses to demonstrate adequate skills and knowledge in allergen
+management; and
+ reduces the risk to the consumer with a food allergy from the presence of an unintended allergen.
+SECTION I - OBJECTIVES
+This Code provides guidance to FBOs, including primary producers, to develop policies and procedures to identify
+allergens in all areas of food production, preparation and service, and then implement allergen management
+practices, including controls to:
+ prevent or minimise the potential for allergen cross-contact that is of risk to the consumer with a food
+allergy;
+ prevent or minimize the potential for undeclared allergens being present in a food due to errors arising in
+the supply chain;
+ ensure the correct allergen label is applied to prepackaged foods; and
+ ensure that accurate information can be provided to consumers at point of sale when the food is not
+prepackaged.
+The management tools and guidance in this Code are a proactive approach for effectively managing allergens in
+food production, preparation and service and reducing risk for consumers, rather than a reactive response once a
+food safety hazard has been detected in a food.
+CXC 80-2020 5
+Food allergen management also involves allergen labelling. While this Code addresses controls to ensure that the
+correct label is applied during manufacturing of a product or when labelled at retail for the customer, labelling
+requirements for food products are addressed by the General Standard for the Labelling of Prepackaged Foods
+(CXS 1-1985) and the Standard for Foods for Special Dietary Use for Persons Intolerant to Gluten (CXS 118-
+1979).
+SECTION II – SCOPE, USE AND DEFINITIONS
+2.1 Scope
+This Code covers allergen management throughout the supply chain including at primary production, during
+manufacturing, and at retail and food service endpoints. It complements GHP in manufacturing and food
+preparation practices in food service.
+This Code covers IgE-mediated, non IgE-mediated food allergies and other hypersensitivities (e.g. Coeliac
+disease) that can be triggered by small amounts of the offending food allergen (thus requiring attention to GHPs
+in addition to labelling). There are eight foods/food groups (and derived products) that cause the majority of food
+allergies on a global basis, these are cereals containing gluten; crustaceans; eggs; fish; milk; peanuts; soybeans;
+and tree nuts. However, since the complete list of recognised food allergens varies among countries, it is important
+to consider which allergens are applicable when exporting food.
+This Code does not cover hypersensitivities with a non-immunological aetiology such as lactose intolerance and
+sulphite sensitivity. Food intolerance adverse reactions usually result from a non-immune mediated reaction to
+food, such as a lack of an enzyme to process foods effectively (e.g. the absence or deficit of lactase in those with
+lactose intolerance). While intolerances are not explicitly mentioned in the following text, some of the controls
+described here could be applied to protect those with food intolerances.
+2.2 Use
+This Code follows the format of the General Principles of Food Hygiene (CXC 1-1969) and should be used in
+conjunction with it, as well as with other applicable codes and standards such as the General Standard for Labelling
+of Prepackaged Foods (CXS 1-1985) and Code of Hygienic Practice for the Transport of Food in Bulk and Semi-
+packed Food (CXC 47-2001).
+The provisions in this document should be applied as appropriate for the food business (e.g. manufacturing, retail,
+food service), with consideration of the diversity of ingredients, processes, and control measures of the products
+and various degrees of public health risks associated with allergenic ingredients/foods.
+The document has been structured to outline the principles of food allergen management which apply broadly to
+food business operators, as well as identify those which should be specifically applied to retail and food service
+sectors.
+2.3 Definitions
+Refer to definitions in the General Principles of Food Hygiene (CXC 1-1969) and other applicable Codes. In
+addition, for the purpose of this Code, the following expressions have the meaning stated:
+Allergen means an otherwise harmless substance capable of triggering a response that starts in the immune
+system and results in an allergic reaction in certain individuals. In the case of foods, it is a protein which is found
+in food capable of triggering a response in individuals sensitised to it.
+Allergen cross-contact occurs when an allergenic food, or ingredient, is unintentionally incorporated into another
+food that is not intended to contain that allergenic food.
+Allergen profile means the food allergens present via intentional addition as well as those inadvertently present
+(or the absence of any allergens) in a food.
+Food service means a food business or institution that produces, prepares and serves food for direct
+consumption.
+Retail means a food business primarily involved in selling prepackaged or non-prepackaged food directly to
+consumers for off-site or future consumption.
+Rework means clean, unadulterated food that has been removed from processing at any point up to and including
+final packaging for reasons other than insanitary conditions or that has been successfully reconditioned by
+reprocessing and that is suitable for use as food or a food component.
+Visibly clean means having no visible food, debris and other residues.
+CXC 80-2020 6
+SECTION III – PRIMARY PRODUCTION
+This Section is focused on primary production of cultivated commodities where there is a likelihood of allergen
+cross-contact (often referred to as adventitious presence).
+3.1 Environmental hygiene
+Depending on the crop, growers should consider the potential for allergen cross-contact from the growing
+environment. In order to assess the likelihood of allergen cross-contact, growers should know the history of the
+specific growing area (i.e. previous crops), and what other crops are being grown in close proximity. Where the
+adventitious presence of an allergen needs to be managed to ensure the allergen profile of the final food (e.g.
+gluten free), particular crop measures may be needed to remove, to the extent practicable, the physical remains
+of previous crops prior to re-planting.
+3.2 Hygienic production of food sources
+During growing, prevent or minimise the potential for maintenance machinery (e.g. used for weeding) to contain
+other plant material which could result in allergen cross-contact.
+3.3 Handling, storage and transport
+Prior to harvest, inspect equipment used for harvesting of crops to determine if the equipment is clear of visible
+plant debris and signs of previous crops/ food material.
+Harvested commodities should be cleaned to the extent possible using various methods such as sifting via size,
+aeration, and mechanical cleaning to remove foreign allergenic matter where feasible and consistent with
+applicable Codex standards.
+To prevent or minimise the likelihood of allergen cross-contact, storage facilities that hold different commodities
+should be visually inspected and appropriately cleaned. When handling multiple commodities such as
+grains/pulses/seeds ensure that physical segregation is in place to prevent or minimise the potential for allergen
+cross-contact. Having a clear “allergen map” (see Section 5.2.1.1) of the storage facility will show where allergenic
+crops enter and are stored so the potential for allergen cross-contact is managed.
+Where a commodity is bagged, bags should be clean and those used for allergenic commodities should be
+identified (e.g. with different colours). Bags that have been used for an allergenic commodity should not be reused
+for a different commodity. For example, avoid the re-use of jute / canvas bags for non-allergenic commodities if
+they have already been used for allergenic commodities. Where grains or pulses are bagged and stored together,
+store allergens on the bottom shelves so that spillages can be easily managed from the perspective of preventing
+contact with non-allergenic commodities.
+FBOs should ensure storage areas and storage materials designated for allergenic commodities are clearly
+labelled or colour coded to prevent unintentional mix of commodities.
+Transportation of foodstuff should be carried out using a clean transport vehicle that is dry and free of the previous
+load to prevent or minimise the potential for allergen cross-contact. As necessary, transport containers should be
+cleaned before use. At unloading, transport containers containing allergenic commodities should be emptied of all
+cargo and cleaned as appropriate to prevent or minimise the potential for allergen cross-contact of the next load.
+The use of single-use packaging may be a useful option for some transporters. For more detail on transportation
+refer to Section 8.
+3.4 Cleaning, maintenance and personnel hygiene at primary production
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+In addition, FBOs should ensure that the area where commodities are dried is clean and physical barriers are in
+place to prevent spillage and allergen cross-contact. Materials or containers used to lay, hang or bag commodities
+should be cleaned to remove allergenic residue.
+PRINCIPLE:
+Where the introduction of an allergen may adversely affect the allergen profile of food at later stages of the
+food chain, primary production should be managed in a way that reduces the likelihood of introducing such
+allergens.
+CXC 80-2020 7
+SECTION IV – ESTABLISHMENT: DESIGN AND FACILITIES
+4.1 Location
+4.1.1 Establishments
+FBOs producing food at more than one site should consider whether it is feasible to consolidate production,
+processing and storage of products containing specific allergens at one location. Although this may not always be
+feasible, particularly for small businesses, it could be used to limit allergen cross-contact. If dedication of production
+facilities is not possible, the production could be separated in time (see 5.2.1.) or space (separate rooms or lines
+for different allergens) and the establishment may be designed to have a linear flow in the production. Effective
+cleaning procedures, such as those outlined in Section 6, are also important in managing allergen cross-contact.
+4.1.2 Equipment
+4.1.2.1 Manufacturing
+Food manufacturing facilities commonly handle multiple allergens, frequently on the same equipment. Ideally these
+facilities would be designed to use processing lines dedicated to food with specific allergen profiles and where
+feasible, manufacturers should consider the use of dedicated lines, however, this is not feasible in all cases.
+Production sequencing (i.e. separation by time) should be considered as an option, especially for small
+businesses. An analysis of the process, including the equipment design, should be conducted to determine the
+likelihood of allergen cross-contact and whether dedicated processing lines, equipment redesign, or other control
+measures are needed to prevent or minimise allergen cross-contact.
+If separate production lines are used for foods with different allergen profiles (e.g. for foods that do not contain a
+particular allergen and for foods that do), manufacturers should provide sufficient separation to prevent or minimise
+the potential for allergen cross-contact from one line to another based on the food, the process, and the likelihood
+of allergen cross-contact. Manufacturers should eliminate cross-over points or provide a means to contain or shield
+food (e.g. closed pipes, enclosed or covered conveyors) to prevent food spilling from one line to another.
+4.1.2.2 Retail and food service
+Retail and food service operators also commonly handle multiple allergens, frequently on the same equipment.
+They should, where feasible, use equipment dedicated to foods with a particular allergen (e.g. use a separate
+slicer for cheese, which contains milk, and for meats that do not contain milk). Alternatively, equipment should be
+cleaned when switching between foods with different allergen profiles (see Section 6.1).
+4.2 Premises and rooms
+Where feasible, FBOs (manufacturers, as well as retail and food service operators) should consider the need,
+based on the likelihood of allergen cross-contact resulting in a risk to the consumer with a food allergy, to provide
+a dedicated production area within the establishment for the preparation of foods that do not contain allergens, or
+provide dedicated production areas, or use screens to set up temporary segregated areas, for foods with different
+allergen profiles. For example, an establishment that handles shellfish and fish could dedicate separate rooms or
+other areas for handling these foods. One that handles different types of protein powders such as soy protein and
+milk powder could dedicate separate areas for handling these powders. Alternatively, equipment should be
+thoroughly cleaned when switching between different food allergens (see Section 6.1). Where applicable, the
+areas should be appropriately designed such that effective cleaning could be administered to reduce allergen
+cross-contact.
+FBOs should consider having areas to store allergenic ingredients separately from other allergens, as well as
+separate them from non-allergenic ingredients or foods.
+4.2.1 Manufacturing
+Manufacturers should consider providing appropriate barriers (e.g. walls, partitions, curtains) or adequate
+separation (e.g. spacing) between lines, when necessary, to prevent or minimise allergen cross-contact when
+foods with different allergen profiles are processed at the same time.
+PRINCIPLE:
+Establishment design should prevent or minimise the potential for allergen cross-contact with respect to
+delimitation and isolation of areas, location of equipment, process flow, personnel movement and ventilation
+systems.
+CXC 80-2020 8
+When necessary, based on an assessment of risk to the consumer with a food allergy, manufacturers should
+consider designing premises and rooms to ensure appropriate allergen dust removal or hood systems to mitigate
+the likelihood of airborne allergen cross-contact throughout the processing area, especially when powdered
+allergens such as wheat flour, dried milk powder, soy protein, etc. are used. Such controls could be important
+where powders are dumped into mixers, hoppers, or carts to prevent dust settling on surrounding equipment.
+Where dust removal systems are not in place, other controls such as cleaning surrounding areas and equipment
+following dumping could be used to mitigate the likelihood of allergenic proteins in powders being transferred to
+other foods (see Section 5.2.1).
+4.3 Equipment
+4.3.1 Manufacturing
+Equipment, tools, utensils and containers (other than single-use containers and packaging) in contact with foods
+that contain allergens should be designed and constructed to facilitate the effective removal of allergens during
+cleaning. To prevent or minimise the potential for allergen cross-contact, ideally, equipment, tools and utensils
+should be designed or selected so that allergens, especially particulate allergens (e.g. peanuts, tree nuts, sesame
+seeds, crumbs from baked goods), do not get caught in crevices and are difficult to remove by the cleaning
+procedures applied. Welds should be smooth, seals and hoses should not contain cracks, and “dead ends” in
+pipework or other areas where pockets of foods containing allergens can accumulate should be eliminated and
+where elimination is not possible, should be adequately cleaned.
+4.3.2 Retail and Food Service
+Retail and food service operators should use equipment, tools, utensils and containers (other than single-use
+containers and packaging) that have been designed and constructed to ensure that allergens can be easily and
+effectively removed during cleaning.
+4.4 Facilities
+FBOs, including retail and food service, should place hand wash basins in appropriate areas to prevent or minimise
+allergen cross-contact via personnel. Having convenient hand wash basins will encourage personnel to wash
+hands with soap and water between handling foods that have different allergen profiles. FBOs should also
+consider, based on the risk to consumers with food allergies, facilities to enable change of protective clothing,
+especially when personnel are moving from particular areas within the manufacturing facility such as those
+handling powdered allergens.
+SECTION V – CONTROL OF OPERATION
+5.1 Control of food hazards
+FBOs should control allergens by preventing or minimising the potential for allergen cross-contact, by ensuring
+that information identifying the allergens present in foods is clear, correct, and that retail and food service
+establishments are able to communicate the allergens present in the foods they prepare. Controls should be risk-
+based. Information that may be helpful in assessing the likelihood of allergen cross-contact resulting in a risk to
+the consumer with a food allergy includes:
+ allergens present in the facility;
+ allergens that share the same processing line;
+ the nature of the allergen (i.e. whether the food itself is an allergen, derived from an allergen, or the
+allergen is a component in an ingredient);
+ whether allergens are, or may be, present, as notified by the supplier;
+ whether the allergen is a particle, powder, liquid or paste;
+ the processing steps where the allergen is used;
+ ease of preventing allergen cross-contact between processing lines;
+PRINCIPLE:
+The unintentional presence of allergens in food is prevented or minimised by taking preventive measures
+through GHPs and HACCP-based controls at appropriate stages in the operation.
+CXC 80-2020 9
+ ease of cleaning the equipment used to process foods with different allergen profiles; and
+ the maximum amount of an allergen due to allergen cross-contact (if the information is available).
+It is important that FBOs educate and train personnel to have awareness of food allergens and their health impact
+in order to ensure they implement the necessary allergen controls.
+FBOs should:
+ identify any steps in their operations that pose the likelihood of allergen cross-contact, assess the level of
+risk to the consumer with a food allergy at those steps and ascertain the ones that are critical;
+ implement effective allergen management procedures to prevent or minimise allergen cross-contact at
+those steps;
+ monitor, and when appropriate document, allergen management procedures to ensure their continuing
+effectiveness;
+ review allergen management procedures periodically, particularly when the operations change;
+ ensure suppliers are familiar and comply with food allergen specifications;
+ notify customers in a timely manner of any changes to the allergen profile of the product; and
+ ensure personnel are aware of and follow allergen management procedures.
+5.1.1 Manufacturing
+Manufacturers should identify steps in the operation that are critical to ensuring allergens are properly declared,
+including reviewing recipes and labels on compound ingredients, ensuring that the correct ingredients are used,
+and ensuring that the correct product is packed in the correct package (i.e. with the correct label). When reviewing
+recipes, product enhancement processes, such as egg washes on baked products for glossy finish, should also
+be included.
+5.1.2 Retail and food service
+Retail and food service operators should also manage menus, including in-store and on websites, if they contain
+allergen information, to assure content is current and matches the food product.
+5.2 Key aspects of hygiene control systems
+5.2.1 Manufacturing
+5.2.1.1 Minimising allergen cross-contact during processing
+If the same production area is used for foods with different allergen profiles, manufacturers should, where feasible,
+implement production scheduling to separate by time the manufacture of products with different food allergen
+profiles, e.g. process foods that do not contain allergens before foods with allergens. For instance, production
+schedules could be established in some cases whereby products that do not contain allergens are handled at the
+beginning of the schedule and different products containing the same food allergen profile could be run
+sequentially before products with different allergen profiles, to reduce the potential for allergen cross-contact (e.g.
+all frozen desserts containing only milk are run before those containing both milk and egg). Where possible,
+allergenic ingredients should be added as late in the production process as possible, or as far downstream as
+possible in the processing line (e.g. closest to the filling and packaging equipment), to minimise the amount of
+equipment in the production area that comes in contact with the allergen. This will help prevent or minimise
+potential allergen cross-contact and facilitate cleaning.
+Manufacturers should design traffic flow of allergen-containing ingredients and waste, packaging supplies and
+personnel during the manufacture of foods to prevent or minimise the potential for allergen cross-contact. This
+should include consideration for managing the movement of transient people such as managers, quality assurance
+personnel, inspectors, maintenance personnel, and visitors.
+“Allergen mapping” (a diagram that identifies where allergens are stored, handled and prepared on site, overlaid
+with the processes involved) can be useful in identifying areas where controls should be applied to prevent or
+minimise allergen cross-contact.
+Where there is a likelihood of allergen cross-contact by personnel, personnel working on processing lines that
+contain an allergen should be restricted from working simultaneously on lines that do not contain that allergen.
+CXC 80-2020 10
+Manufacturers should consider a system to clearly identify personnel working on lines manufacturing foods
+containing different allergen profiles, e.g. different coloured uniform or hair net.
+Containers and utensils used to hold or transfer foods that contain allergens should, where possible, be dedicated
+to holding a specific allergen and be marked, tagged, or colour-coded to identify the allergen. Where such
+dedication is not possible, effective cleaning procedures should be in place to clean containers and utensils before
+use for a food with a different allergen profile. Disposable liners can also be an effective strategy.
+Manufacturers should provide shielding, permanent and/or temporary partitions, covers, and catch pans to protect
+exposed unpackaged product from allergen cross-contact. Dry ingredients should be physically contained by
+covering specific equipment, such as conveying equipment, hoppers, storage silos, shakers, and size graders.
+Where feasible, manufacturers should dedicate utensils and tools for processing lines with different food allergen
+profiles; these utensils and tools should be distinguishable (e.g. through marking, tagging or colour-coding) to
+prevent or minimise the potential for allergen cross-contact. Similarly, manufacturers could consider duplicating
+certain pieces of equipment (e.g. scales) and dedicating them for specific allergen-containing production runs.
+Manufacturers should not use ingredients for which the allergen profile is unknown, and should never guess or
+assume that an allergen is not present. Allergen-containing ingredients should, if feasible and necessary to prevent
+or minimise the potential for allergen cross-contact, be opened and weighed in designated areas before being
+transferred in covered or closed containers to the processing line.
+When there is a likelihood of allergen cross-contact from the dust of dry ingredients that are, or contain, a food
+allergen, they should be added in a manner that minimises the potential for unintentional dispersion by dust. For
+example, the formation and dispersion of allergen dust can be minimised by adding liquid ingredients to mixers at
+the same time as powders, using dust collection systems (e.g. local exhaust, ventilation systems and/or vacuum
+systems), controlling surrounding dust sources, and/or covering equipment. The use of dry allergens with a
+propensity for dust formation should, where feasible, be scheduled at the end of a production/processing day.
+Manufacturers should evaluate the potential for allergen cross-contact due to cooking media, such as water or oil.
+It may be necessary to use an appropriate method to eliminate any allergen-containing particulate material (for
+example, dedicated cooking media) if it is likely that the risk from allergens cannot be prevented or minimised, e.g.
+in the case where particles could end up in a food with a different allergen profile.
+Spills that contain food allergens should be cleaned up as soon as possible, avoiding further dispersion (e.g. for
+liquids, spill kits could be used or vacuums for dust). Care should be taken not to generate aerosols with high
+pressure washers, or to re-suspend dust using compressed air hoses.
+5.2.1.2 Rework and Work-in-Process
+Rework and Work-in-Process (WIP) that contains allergens should be stored in sturdy containers with secure
+covers in designated, clearly marked areas. The rework or WIP should be appropriately labelled with all food
+allergens specifically highlighted, and properly inventoried and accounted for during storage and when used, to
+prevent or minimise the potential for incorporation into the wrong product.
+Manufacturers should implement a policy for rework to be added back to the same product whenever feasible.
+5.2.1.3 Application of Product Labels
+Manufacturers should implement procedures to ensure that allergen information and labels are accurate (see 5.3
+Incoming Material Requirements) and verify that the correct product labels are used on the production line when
+packaging/labelling products. This could involve manual checks and/or automated checks such as bar code
+recognition or vision inspection systems to ensure the correct packaging is used.
+Labels and labelled containers should be stored in a way that prevents or minimises the potential to pull incorrect
+labels or containers during production. All labels and labelled containers should be removed at the end of the
+production run and returned to their designated storage area.
+Manufacturers should implement procedures to segregate and re-label food products that have been labelled
+incorrectly. If it is not possible to re-label such food, they should have a procedure to destroy the food.
+CXC 80-2020 11
+5.2.1.4 Monitoring and verification
+Regular internal audits of production systems should be conducted to verify that the product formulation, including
+changes to product formulation, matches the records of allergenic ingredient use, that the final product matches
+the ingredients specified on the label, that allergen cross-contact controls are properly implemented and that line
+personnel are appropriately trained.
+There should be a regular review of suppliers to ensure that all ingredients, including multi-component ingredients
+(e.g. sauces, spice mixes), processing aids, or operations, have not changed in a manner that introduces a new
+allergenic ingredient or that results in allergen cross-contact. Occasional product testing for undeclared allergens
+may also be considered as appropriate for verification.
+5.2.1.5 Product development and change
+When developing new products, or changing formulations or ingredient suppliers, manufacturers should consider
+whether it is feasible to use a non-allergenic ingredient to provide the same functionality as an allergenic ingredient
+to avoid introducing a new allergen into the establishment or a processing line.
+Where the introduction of a new allergen into the establishment or a processing line is unavoidable e.g. during
+factory trials or consumer testing, care should be given to avoid allergen cross-contact with existing products.
+Procedures for preventing or minimising allergen cross-contact, as well as relevant HACCP documents, operating
+procedures and associated personnel training, may need to be reviewed and revised to address a new product or
+formulation with a different allergen profile, especially when an allergen new to the production facility is involved.
+Product labels should be designed and verified to match the formulation before the new product or changed
+formulation is produced, and product and label specifications that are no longer used should be destroyed in a
+manner that prevents accidental use. Where there is a change in the formulation which results in a change of
+allergen profile, manufacturers should consider indicating this on the packaging and on their websites for an
+appropriate period, with information such as "new formulation". Consideration could be given to changing
+packaging features such as colour when a new allergen is included in the formulation.
+5.2.2 Retail and Food Service
+Equipment that is used for allergen-containing foods should be marked, tagged, or colour-coded to identify the
+allergen. Where this is not practical, equipment should be cleaned between use for foods with different allergen
+profiles.
+Allergen-containing food that is not in sealed packages, should also be labelled with the allergen and stored
+separate from food that does not contain allergens, or from food with a different allergen profile (e.g. separation
+that prevents physical contact).
+5.2.2.1 Minimising allergen cross-contact during preparation
+Retail and food service personnel should be aware of allergens in the foods provided to customers in order to
+provide appropriate information when a customer indicates they have a food allergy. They should also know and
+understand the likelihood of allergen cross-contact from the processes followed in the preparation of food items.
+Allergen cross-contact during preparation primarily occurs in the following ways:
+ food to food, e.g. by foods touching or one food dripping onto another food;
+ food to hand to food, e.g. handling by cooking personnel, front service personnel or using hands in multiple
+containers of ingredients containing different allergen profiles without washing in between, such as adding
+toppings to pizzas, assembling sandwiches etc.;
+ food to equipment/utensils/surface to food, e.g. sharing of utensils, for example, using a whisk to stir a
+milk-based sauce and then using the same whisk to stir eggs, without thoroughly washing and drying the
+whisk between procedures, or using the same cutting board, griddle/frying pan, or other surface to prepare
+fish and shellfish; and
+ food to cooking media, e.g. shared fryers or boiling vats for cooking food.
+Preparation processes should be designed to prevent or minimise the potential for allergen cross-contact during
+food preparation, e.g. separate equipment and utensils that are used for foods with different allergen profiles,
+dedicate utensils/equipment for allergen-containing products, or clean equipment, utensils and preparation
+surfaces thoroughly between uses for foods with different allergen profiles.
+CXC 80-2020 12
+Retail and food service operators should consider, where feasible, assigning one individual to prepare an
+allergenic food (e.g. deveining prawns/shrimp). Where this is not possible, allergen control procedures should be
+in place between preparation of foods with different allergen profiles (e.g. washing hands, changing disposable
+gloves).
+Containers and tools used to hold or transfer foods that contain allergens should, where possible, be dedicated to
+holding a specific allergen and be marked, tagged, or colour-coded to identify the allergen. Where such dedication
+is not possible, effective cleaning procedures should be in place to clean containers and tools before use for a
+food with a different allergen profile.
+Food preparation operators should only use ingredients listed in the recipe, and not replace one ingredient with
+another unless the ingredient is known not to contain a new or different allergen. To assist with the understanding
+of foods or ingredients of allergenic significance to the FBO, there could be a list of relevant allergens available in
+the kitchen area. Operators should not use foods for which the allergen profile is unknown, and should never guess
+or assume that an allergen is not present.
+FBOs should consider whether it is feasible and necessary to dedicate cooking media, such as water or oil, to
+foods with specific allergen profiles to prevent or minimise allergen cross-contact, for example, not using oil to fry
+both battered / breaded fish and potatoes, as batter / breadcrumb particles could end up in the potatoes. It may
+be necessary to use an appropriate method to eliminate any allergen-containing particulate material present in
+frying oil if it is likely that such particles could end up in food with a different allergen profile.
+Foods displayed for consumer purchase should be protected from allergen cross-contact during display, e.g. by
+wrapping or by separation that could include plastic barriers. Designated serving utensils should be provided to
+handle foods with different allergen profiles, where feasible, and should only be used for that food, or the utensils
+should be cleaned between uses for foods with different allergen profiles.
+Personnel handling product at display and consumer purchase, as well as servers in restaurants and other food
+service operations, should be knowledgeable about the allergens in products; alternatively, the personnel should
+know how to obtain the information about the allergens in products rapidly - especially when the food does not
+contain labelling that identifies the allergens.
+5.2.2.2 Rework
+Rework and WIP should be stored in sturdy containers with secure covers in designated, clearly marked areas.
+The rework or WIP should be appropriately labelled to prevent or minimise the potential for incorporation into the
+wrong product. FBOs should implement a policy for rework to only be added back to the same product whenever
+feasible.
+5.2.2.3 Application of Product Labels
+In retail and food service operations that package and label foods sold directly to consumers, the label or allergen
+information is usually generated and provided on site, and often at the point of purchase. Retail and food service
+operators should implement procedures to ensure that product labels are accurate and the correct product
+labels/information are provided when packaging/labelling products. They should implement procedures to
+segregate, and re-package or re-label products, or destroy food products that have been labelled incorrectly.
+5.2.2.4 Monitoring and verification
+Supervisors of food preparation and service personnel in retail and food service operations should periodically
+verify that personnel are following the procedures established to prevent or minimise the potential for allergen
+cross-contact and inform the consumer about allergens in foods, including applying the appropriate label to
+packaged foods and providing the relevant information with respect to unpackaged foods. Regular review of
+ingredients, recipes, and labels, to ensure accuracy of allergen information should also be undertaken.
+5.2.2.5 Product development and change
+When introducing a new product or recipe with a different allergen profile, procedures for minimising allergen
+cross-contact should to be reviewed and possibly revised. Personnel that handle these foods, in particular those
+who have direct interaction with customers should be made aware of the changes in a timely manner. Allergen
+information on menus and websites should also be updated.
+CXC 80-2020 13
+5.3 Incoming material requirements
+5.3.1 Manufacturing
+Manufacturers should indicate requirements for their suppliers that address allergen controls as appropriate to the
+supplier and the use of the ingredient by the manufacturer.
+Manufacturers should ensure that their suppliers have good allergen management practices to prevent or minimise
+the likelihood of allergen cross-contact between foods with different allergen profiles. Suppliers should also ensure
+that all food allergens, including allergens in ingredients they use to manufacture another product, are listed in
+product information or on the label of the finished product (e.g. milk in a spice blend ingredient used in a food) and
+should have processes in place to manage allergen labelling.
+Manufacturers should have programs in place to assess the allergen control programs of suppliers when
+necessary, e.g. a supplier questionnaire/survey and/or an audit to assess the allergen profile of foods produced
+at the supplier’s site and the supplier’s allergen management plan, including allergen cross-contact controls and
+cleaning programs. A specification sheet, certificate of analysis, or vendor guarantee periodically or with each lot
+can also be useful in addressing a supplier’s control of food allergens, as well as occasional testing for undeclared
+allergens when necessary for verification.
+Manufacturers should have procedures/policies in place for suppliers to notify them, in a timely manner, of any
+changes in the supplier’s operation that could impact the allergen profile of the ingredient from the supplier (e.g. a
+change in formulation affecting the allergen profile or the introduction of a new allergen into the supplier’s
+establishment, particularly if that allergen will be used on the same line as the ingredient provided to the
+manufacturer). Manufacturers should have a procedure/policy for ensuring that any change in supplier is
+accompanied by a review of the product(s) being supplied with respect to that supplier’s allergen control program.
+Incoming foods that are, or that contain, allergens should be labelled to identify the allergens that are present
+using common terms (e.g. ‘milk’ when casein is an ingredient). Manufacturers should review labels on, and
+documents accompanying, shipments of ingredients (including ingredients used in small amounts such as spice
+blends and flavours) to confirm that the ingredient contains only the expected food allergen(s). Particular attention
+should be given to multi-component pre-mixed ingredient packages where allergen information may be difficult to
+locate on the package.
+Manufacturers should inspect ingredients, especially allergen-containing ingredients, upon receipt to ensure that
+the containers are intact and that the contents have not leaked or spread. If containers have leaks, tears, or other
+defects, manufacturers should inspect nearby containers for evidence of allergen cross-contact. Manufacturers
+should reject (or properly dispose of) ingredients when a container is not intact or there is evidence of allergen
+cross-contact, or handle damaged containers in a manner that prevents or minimises the potential for allergen
+cross-contact (e.g. place a damaged container inside another container, or move the contents of the damaged
+container to a different container).
+Manufacturers should clearly identify allergen-containing ingredients using a system that adequately distinguishes
+between ingredients with different food allergen profiles (e.g. tags or colour coding of cases/pallets/bags) to alert
+personnel that these materials are subject to special precautions and handling procedures throughout the
+establishment. The likelihood of allergen cross-contact from processing aids (such as pan-release agents that
+could contain soy) should be assessed to determine if special precautions and handling procedures are needed.
+Secure, closable containers should be used to store allergen-containing ingredients and processing aids.
+Manufacturers should segregate allergen-containing ingredients based on allergen type and from ingredients that
+do not contain allergens e.g. in a dedicated storage room or area of the establishment, or in separate storage bays
+or areas of a storage room. When this is not feasible, ingredients that contain allergens should be stored below
+those that do not contain allergens to prevent or minimise the opportunity for allergen cross-contact in the event
+of a spill or leak.
+5.3.2 Retail and Food Service
+Retail and food service operators should purchase ingredients for which the allergen profile is known, e.g.
+packaged foods that list all ingredients. For example, if a bag of dried porcini mushroom and herb risotto mix does
+not list the contents, then the product should not be used. Sourcing ingredients from the same supplier may prevent
+or minimise changes in the allergen profile of foods supplied.
+CXC 80-2020 14
+Retail and food service operators should:
+ inspect all raw materials/ingredients, especially allergen-containing ingredients, upon receipt to ensure
+that the containers are intact and that the contents have not leaked or spread. If containers have leaks,
+tears, or other defects, operators should inspect nearby containers for evidence of allergen cross-contact;
+ reject (or properly dispose of) ingredients when a container is not intact or there is evidence of allergen
+cross-contact; and
+ handle damaged containers in a manner that prevents or minimises the potential for allergen cross-contact
+(e.g. place a damaged container inside another container, or move the contents of the damaged container
+to a different container).
+Incoming packaged ingredients should be checked to ensure that the correct product was received. The labels of
+incoming packaged ingredients used in the preparation of foods should be reviewed for allergens to ensure
+knowledge about the allergens present in the final prepared food. Retail and food service operators should store
+allergen-containing ingredients in a manner to prevent or minimise the potential for allergen cross-contact e.g.
+store allergen-containing ingredients below those that do not contain allergens.
+5.4 Packaging
+FBOs should have procedures in place to review and approve all proposed product labels of all foods to ensure
+the allergens are declared accurately and that they are updated with any change in the formulation of the product.
+To avoid allergen labelling errors, there should be a procedure for destroying old packaging and labels (and to
+maintain electronic document control of old labels) when recipes/formulations have been changed.
+5.5 Water
+Water that has come in to contact with a food that is or that contains an allergen (e.g. water used for cooking or
+washing) should not be recirculated for use on a food that does not contain that allergen if such use could result
+in allergen cross-contact that could present a risk to consumers with a food allergy.
+Re-use of clean-in-place (CIP) solutions, including rinse water, from washing equipment containing an allergen
+should be avoided if this could result in allergen cross-contact that could present a risk to consumers with a food
+allergy.
+5.6 Management and supervision
+FBO managers and supervisors need to have enough knowledge and understanding of allergen control principles
+and practices to be able to judge the potential for allergen cross-contact and determine the need for new or revised
+procedures to prevent or minimise the presence of undeclared allergens or the need to take corrective action when
+allergen control procedures are not properly implemented.
+5.7 Documentation and records
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+5.7.1 Manufacturing
+Records could include those for:
+ suppliers’ allergen management (e.g. questionnaire, survey and/or an audit to assess the allergen profile
+of foods produced at the supplier’s site and the supplier’s allergen management plan, including allergen
+cross-contact controls and cleaning schedules);
+ suppliers’ allergen information / specification
+ procedures for handling and storage of allergens;
+ label review;
+ label application;
+ scheduling;
+ batching (putting together the ingredients in a food);
+ rework;
+CXC 80-2020 15
+ cleaning (Standard Operating Procedures (SOPs)) and documentation that cleaning has been done);
+ line clearance procedures for label and packaging material removal at changeover;
+ packaging label and print manufacturing records;
+ validation data for allergen cleaning efficacy;
+ verification activities (including any analytical test results for allergens);
+ corrective actions taken;
+ training (personnel trained, type of training, and date of training);
+ SOPs to minimize/prevent allergen cross-contact;
+ Allergen map; and
+ HACCP documentation.
+5.7.2 Retail and Food Service
+Records could include those for:
+ allergenic ingredients associated with each menu item;
+ label printing and application, where feasible;
+ cleaning (SOPs);
+ SOPs for handling orders for customers with food allergies; and
+ training (personnel trained, type of training, and date of training).
+5.8 Recall procedures
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+FBOs should have recall procedures which address food allergens in their food recall plan.
+A traceability/product tracing system should be designed and implemented according to the Principles for
+Traceability/Product Tracing as a Tool Within a Food Inspection and Certification System (CXG 60-2006) to enable
+the withdrawal of products where necessary. Procedures and processes should be in place that facilitate a one-
+step-back and one-step-forward traceability review in the case of a food allergen incident (e.g. an allergic reaction
+to an undeclared allergen).
+5.8.1 Consumer complaints and Resolution
+FBOs should have procedures in place for handling consumer complaints with regard to undeclared allergens in
+foods. The procedures should define the steps to be followed in handling complaints and include complaint
+collection, investigation, analysis, record keeping and reporting to relevant competent authorities where
+appropriate.
+The complaint particulars should be evaluated and a decision made as to what action to take (e.g. recall of product,
+changes in manufacturing or preparation procedures, communicating publicly the details of the food allergen
+incident). The decision on action will consider the potential risk to consumers identified along with the timeliness,
+motivation and plausibility of the complaint. FBOs may need to contact the relevant competent authority for
+assistance in determining the most appropriate course of action.
+The prime objective of an investigation into undeclared allergens in a food is to ensure that public health and safety
+are protected and the incident will not re-occur. The action plan depends on the outcome of the investigation.
+Action should always be taken in a timely manner to ensure further incidents do not occur, and public health and
+safety are protected.
+CXC 80-2020 16
+SECTION VI – ESTABLISHMENT: MAINTENANCE AND SANITATION
+6.1 Maintenance and cleaning
+6.1.1 Manufacturing
+Inspect and remove any hand tools and utensils if they are damaged and not easily cleanable. Where feasible and
+appropriate, consider dedicated tools for specific equipment and/or label or colour code maintenance tools to
+correspond with specific allergens.
+Equipment and preparation areas should be adequately cleaned between manufacturing foods with different
+allergen profiles to prevent or minimise the potential for allergen cross-contact. Cleaning procedures to remove
+allergen residues depend on the nature of the food residue, the equipment, the food contact surface, the nature
+of the cleaning (e.g. dry cleaning or wet cleaning) and the equipment, tools and materials used for cleaning.
+Equipment may need to be disassembled, where feasible, to adequately remove allergen residues. However, if
+some equipment cannot be disassembled, the allergen management program should take this into account. Dust
+socks should be removed and cleaned periodically.
+When wet cleaning, low pressure water hoses should be used instead of high pressure water hoses for removing
+food residues from wet processing areas, since high pressure water hoses could spread and aerosolise food
+allergen residues during cleaning. When removing dry food residue from difficult-to-clean areas, scrapers, brushes
+and vacuum cleaners (that are fit for purpose) should be used, rather than compressed air, since compressed air
+can disperse food allergen residues from one area to another. If compressed air is used because vacuums cannot
+remove such residues and it is not practical to disassemble equipment for cleaning food residue, manufacturers
+should take precautions to contain food residues that are removed by the compressed air. The need to clean the
+ductwork in ventilation systems should be considered, where necessary, when cleaning the processing
+environment to prevent or minimise allergen cross-contact.
+Bins, totes, and containers used for ingredients that are, or contain, a food allergen should be cleaned as soon as
+possible after being emptied to avoid being a source of allergen cross-contact.
+Where feasible, cleaning equipment, tools, cloths, sponges, and cleaning solutions should be designated for foods
+with specific allergen profiles and used in a manner that does not result in allergen cross-contact. For example,
+freshly prepared cleaning solutions should be used rather than reusing cleaning solutions that have been used for
+foods with different allergen profiles to prevent recontamination of surfaces with allergenic food residues.
+6.1.2 Retail and Food Service
+Equipment, utensils, containers and preparation areas should be adequately cleaned (at a minimum visually clean)
+immediately after the preparation, storage, and dispensing of foods to prevent allergen cross-contact. Where
+feasible, cleaning equipment, tools, cloths, sponges, and cleaning solution should be designated for foods with
+specific allergen profiles and used in a manner that does not result in allergen cross-contact. For example, freshly
+prepared cleaning solutions should be used rather than reusing cleaning solutions that have been used for foods
+with different allergen profiles to prevent the recontamination of surfaces with allergenic food residues.
+6.2 Cleaning programmes
+6.2.1 Manufacturing
+Manufacturers should develop cleaning procedures designed to remove food allergens to the extent possible.
+These procedures should specify the equipment, utensil, or area of the establishment to be cleaned; the tools and
+cleaning materials to be used; the sequence of steps to be followed; any disassembly required; the monitoring
+activities; and any actions to be taken if the procedures have not been followed or if food residues have not been
+adequately removed.
+Validation of the cleaning process provides a means of assuring that cleaning processes are adequate to reduce
+or eliminate allergens and thereby prevent or minimise allergen cross-contact. The validation process should be
+specific to the allergen, process and product matrix combination. Cleaning processes should be verified through
+visual observation (checking that equipment is visibly clean) and, where feasible and appropriate, through an
+analytical testing program (refer to Section 6.5 of this Code).
+PRINCIPLE:
+The effective management of food allergens is facilitated by establishing effective maintenance and cleaning
+programs that prevent or minimise the potential for allergen cross-contact.
+CXC 80-2020 17
+Because introducing water into some facilities and equipment can result in microbial problems, some production
+procedures include a “push-through” technique in which the subsequent product, an inert ingredient, such as sugar
+or salt, or an allergenic ingredient, such as wheat flour, that will be an ingredient in the subsequent product is
+pushed through the system to remove food residue. Where the use of allergen testing is feasible and appropriate,
+“push-through” material, or the first product through the line, should be evaluated to demonstrate that a food
+allergen from a previous production run has been adequately removed by this process.
+Manufacturers should develop allergen clean up procedures for the manufacturing line to be followed in the event
+of spills of allergenic ingredients.
+Manufacturers should maintain cleaning records, including any test results, and review them to verify that cleaning
+procedures have been conducted and adequately removed allergens.
+6.2.2 Retail and Food Service
+Retail and food service operators should develop allergen clean up procedures for the food service preparation,
+storage and presentation areas, to be followed in the event of spills involving allergen-containing foods.
+6.3 Pest control systems
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+In addition, pest control systems should not use allergens (e.g. peanut butter, cheese) as bait in traps. It is
+important for FBOs to make pest control service providers aware of concerns about the use of food allergens and
+potential for allergen cross-contact.
+6.4 Waste management
+FBOs should place waste materials that contain food allergens in covered bins, totes, or containers that are
+identified as holding waste and handled in a manner to prevent or minimise the potential for allergen cross-contact.
+6.5 Monitoring effectiveness
+Manufacturers should verify cleaning procedures, where feasible, to demonstrate that if the procedures are
+followed, allergens are effectively removed. Equipment should be inspected after each cleaning to determine
+whether it is visibly clean; this is particularly useful with particulate allergens.
+If a manufacturer uses CIP systems to clean pipe work, equipment and machinery, there should be verification
+that the CIP system is effectively removing allergens (e.g. testing rinse samples or swabs).
+Manufacturers should periodically conduct tests to detect food residues that remain on surfaces after cleaning as
+verification that the cleaning procedures have been appropriately implemented and are effective. Where feasible,
+these tests should include using an allergen‐specific test kit (if one is available for the food allergen(s) of interest
+in the food matrix). Tests should be fit for purpose, i.e. appropriate for the targeted allergen, e.g. a casein (milk
+protein) test should not be used when whey (another milk protein) is the allergen of concern and the test should
+be validated to work with the matrix/food of concern. FBOs should know the limit of detection of the test used and
+the test specificity. If necessary, the FBO should obtain expert advice on interpretation of results (e.g. from the
+test kit supplier or an accredited testing laboratory).
+SECTION VII – ESTABLISHMENT: PERSONAL HYGIENE
+FBOs should consider the potential for allergen cross-contact of products with allergenic materials via food
+handlers. For example, food handlers may become a source for allergen cross-contact if food allergens on their
+skin or clothing are transferred directly to foods. Allergens present as dry products (powders) are more likely to be
+transferred by food handlers than non-volatile liquids containing allergens.
+FBOs should ensure that personnel are trained to wash their hands between handling foods that have different
+allergen profiles, or after having been in contact with other sources of potential allergens. Where gloves are used,
+consider changing regularly to reduce the likelihood of allergen cross-contact.
+PRINCIPLE:
+Personal hygiene practices should prevent or minimize the potential for food handlers to contribute to allergen
+cross-contact.
+CXC 80-2020 18
+7.1 Manufacturing
+Where necessary, food handlers should wear dedicated clothing in areas where specific allergens are handled
+and there is a high likelihood of allergen cross-contact. The wearing of this clothing should be restricted to those
+areas. It may be appropriate to visually identify which personnel work on processing lines with different allergen
+profiles (e.g. different coloured clothing such as smocks or hairnets).
+Personnel should not be permitted to bring food or drink into areas where product, ingredients or primary packaging
+is exposed, as these foods may contain allergens and result in allergen cross-contact.
+7.2 Retail and Food Service
+Where it is not feasible to assign one individual to prepare an allergenic food (e.g. deveining prawns/shrimp),
+ensure that the individual’s hands are thoroughly cleaned; that, if using gloves, the individual changes gloves; and,
+when appropriate, the individual changes outer clothing, before handling another food with a different allergen
+profile.
+SECTION VIII – TRANSPORTATION
+8.1 General
+Foods that are being distributed should be adequately contained or packaged to protect against allergen cross-
+contact.
+The FBO assigning the food to be transported should ensure that the transporter/haulier has clear instructions to
+follow regarding potential allergen cross-contact situations.
+The transporter/haulier should have procedures in place to ensure the integrity of the items they are transporting.
+8.2 Requirements
+Foods should be arranged for transport in such a way that unpackaged products with different allergen profiles
+are transported separately. If this is not possible, consider other means of segregating the foods, such as inserting
+a pallet cover (i.e. big plastic bag used to cover the entire pallet) to reduce the likelihood of allergen cross-contact,
+stacking non-allergenic food on top of allergenic food, or packaging the food using poly bags super sacks, or bags
+with plastic overwrap. Manufacturers should clearly communicate special instructions to their chosen
+transporter/haulier e.g. to not allow mixed transportation of goods, when there is the likelihood of allergen cross-
+contact.
+The food transportation unit4 and associated transport receptacles, should be suitably designed and constructed
+to facilitate inspection and cleaning, refer to the Code of Hygienic Practice for the Transport of Food in Bulk and
+Semi-packed Food (CXC 47-2001).
+The transporter/ haulier should demonstrate a clear understanding of the food they carry and ensure personnel
+can identify and understand potential allergen cross-contact situations.
+8.3 Use and maintenance
+Vehicles such as bulk tankers used to transport liquids (e.g. raw milk, dairy mixes, juices, liquid egg, oil, water)
+must be adequately cleaned between loads to prevent or minimise allergen cross-contact. In some instances,
+dedicated bulk tankers may be best, for example, when transporting dry powders such as wheat flour.
+Food transportation units (including relevant accessories, connections) and load carrying areas should be
+inspected and, if necessary, cleaned to remove any residue of the previous load, to the extent possible, before re-
+loading. The method of cleaning adopted should be appropriate to the type of commodity and type of allergen to
+be loaded in the unit.
+4 Food transportation unit (as outlined in the Code of Hygienic Practice for the Transport of Food in Bulk and Semi-packed
+Food (CXC 47-2001) refers to food transport vehicles or contact receptacles (such as boxes, containers, bins, bulk tanks) in
+vehicles, aircraft, trailers and ships, and other transport receptacles in which food is transported.
+PRINCIPLE:
+Foods containing allergens should be managed during transportation so that allergen cross-contact is
+prevented.
+CXC 80-2020 19
+Carts and trolleys used to transport food within a retail or food service establishment or to customers should be
+kept clean between uses; e.g. a meal of cheese omelette and toast spilled onto a cart and not properly cleaned
+between uses could contaminate a subsequent meal, utensils or cups transported to another customer that has
+allergies to egg, milk or wheat.
+For commercial scale haulage, a record should be made when a vehicle has been inspected, even if cleaning is
+not needed. If feasible, designated vehicles should be used for transporting open or bulk allergenic ingredients
+e.g. raw tree nuts.
+Spillages of foods containing allergens that occur during transportation should be cleaned up as soon as possible
+to ensure that there is no subsequent allergen cross-contact. If any incident occurs during loading, transportation
+or unloading which could result in allergen contamination, the circumstances should be reported to the owner of
+the goods or their customer for their consideration and for them to advise if specific measures are needed.
+SECTION IX –PRODUCT INFORMATION AND CONSUMER AWARENESS
+9.1 Lot identification
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+The General Standard for the Labelling of Prepackaged Foods (CXS 1-1985) applies.
+9.2 Product information
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+9.2.1 Manufacturing
+All food products and ingredients should be accompanied by, or bear adequate information, to ensure other food
+manufacturers or processors and consumers can be informed whether the food is, or contains, an allergen.
+Manufacturers should have procedures in place to ensure that food is labelled appropriately, as per Section 9.3.
+9.2.2 Retail and food service
+All food products and ingredients should be accompanied by or bear adequate information to ensure customers
+can be informed whether a food is, or contains (or may contain), an allergen. Restaurants should ensure that any
+allergen information, both on site (e.g. the menu, over the counter) and online, is current. Similarly, retail operations
+should make sure allergen information they make available, e.g. online, is current and correct and that the
+allergens in any prepackaged products are correctly labelled.
+Front of house personnel that serve food to customers should be knowledgeable about the allergens in menu
+items and preparation practices of the business that may result in allergen cross-contact, or know how to obtain
+this information. Signage, whether within menus or located at the front counter, requesting that customers make
+dietary requirements with respect to allergens known to food service personnel, could also be used. Where the
+food service operators and personnel cannot ensure that a food does not contain an allergen, this should be clearly
+communicated to the customer.
+Self-serve areas where consumers handle unpackaged food products may pose a particular risk for consumers
+with a food allergy due to allergen cross-contact. Provision of information on the likelihood of allergen cross-
+contact, should be considered in these instances (e.g. allergen alert signage or symbol/icons).
+9.3 Labelling
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+The General Standard for the Labelling of Prepackaged Foods (CXS 1-1985) applies.
+The General Standard for the Labelling of Prepackaged Foods (CXS 1-1985) lists the foods and ingredients known
+to cause hypersensitivity that “shall always be declared” on the label.
+9.4 Consumer education
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+PRINCIPLE:
+Consumers should have access to adequate and correct information on the allergenic nature of a food.
+This should ensure that those with allergies can avoid allergenic foods and ingredients.
+CXC 80-2020 20
+SECTION X – TRAINING
+10.1 Awareness and responsibilities
+All personnel involved in the production, manufacture, preparation, handling, distribution, retail and service of foods
+should understand their role in allergen management and the food safety implications of the presence of
+undeclared food allergens. This includes temporary and maintenance personnel.
+10.2 Training programmes
+All relevant personnel in a food business should receive food allergen training as appropriate to their job
+responsibilities, so they can contribute to the measures needed to prevent or minimise the likelihood of allergen
+cross-contact and labelling errors. Training programmes should be reviewed regularly to ensure they are up to
+date and appropriate. All appropriate personnel should be encouraged to report and/or take immediate action, if
+any labelling errors or an undeclared allergen is suspected.
+Training programs should include, as appropriate to the person’s duties:
+ general allergen awareness, including the serious nature and possible health consequences of the
+unintended or undeclared presence of allergens in products from a consumer perspective;
+ awareness of the likelihood of allergen cross-contact identified at each stage of the food supply chain, and
+the preventive measures and documentation procedures applicable in the food business;
+ GHPs, for example, appropriate clothing, hand washing, and minimizing hand contact with foods to prevent
+or minimise allergen cross-contact;
+ hygienic design of facilities and equipment to prevent or minimise allergen cross-contact;
+ cleaning of premises, equipment and tools, including clear between-product cleaning instructions, and its
+importance in preventing or minimising allergen cross-contact;
+ handling of rework materials to prevent or minimise unintended allergens from being incorporated into a
+food;
+ waste management, for example how waste should be handled to prevent or minimise allergen cross-
+contact;
+ situations where potential allergen cross-contact can occur between products, production lines or
+equipment, and prevention measures;
+ procedures for corrective actions when allergen cross-contact or labelling errors are suspected;
+ procedures for managing people traffic patterns around the site to prevent or minimise allergen transfer
+from one area to another, for example people changing production line or site, movement to the
+canteen/break room and of visitors;
+ equipment movement around the site, for example, maintenance tools, carts, food trays, etc. to prevent or
+minimise allergen transfer from one area to another;
+ labelling and the awareness of allergen presence in raw materials, semi-finished goods and finished
+products; and
+ sources of allergen information, e.g. supplier specifications, supplier audit records.
+10.3 Instruction and supervision
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+10.4 Refresher training
+Refer to the General Principles of Food Hygiene (CXC 1-1969).
+PRINCIPLE:
+Personnel engaged in food operations should have sufficient training in food allergen management to
+implement measures to prevent or minimise allergen cross-contact and ensure the correct label with
+appropriate allergen information is applied to food.

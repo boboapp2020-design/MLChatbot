@@ -560,6 +560,19 @@ $SupportMap  = @(
      Title='Codex CXG 60-2006 หลักการสอบกลับผลิตภัณฑ์ (Traceability/Product Tracing) — FAO/WHO เขียนสำหรับหน่วยงานกำกับ'
      Code='CODEX-TRC' }
 
+  # ขั้นตอนเรียกคืน — ผู้ตรวจ FSSC/GHP ขอดูคู่กับ traceability ทุกรอบ
+  # ต้นฉบับเป็น PDF สแกน แกะรูปด้วย scripts\pdf-extract-images.ps1 แล้วอ่านทีละหน้า
+  @{ File='ML-QP-1610-001 การเรียกคืนผลิตภัณฑ์และการถอดถอนผลิตภัณฑ์ Rev.03.txt'
+     Module='foodsafety'; Type='MANUAL'; Plain=$true; Force=$true
+     Title='ML-QP-1610-001 การเรียกคืนผลิตภัณฑ์ และการถอดถอนผลิตภัณฑ์ Rev.03 (เกณฑ์ 30% ของ lot, สอบกลับใน 24 ชม., Mock Recall ปีละ 1 ครั้ง)'
+     Code='ML-RECALL' }
+
+  # Codex สารก่อภูมิแพ้ — น้ำตาลไม่มีสารก่อภูมิแพ้ในตัวเอง แต่ผู้ตรวจถามเรื่องการประเมินความเสี่ยงและ cross-contact เสมอ
+  @{ File='Codex-CXC80-2020-การจัดการสารก่อภูมิแพ้ในอาหาร.txt'
+     Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='Codex CXC 80-2020 แนวปฏิบัติการจัดการสารก่อภูมิแพ้ในอาหารสำหรับผู้ประกอบการ (Food Allergen Management) — FAO/WHO, CC BY-NC-SA 3.0 IGO'
+     Code='CODEX-ALG' }
+
   # ── FSSC 22000 จาก fssc.com (เอกสารสาธารณะของเจ้าของ scheme) ────────
   # Version 7 ประกาศใช้ 1 พ.ค. 2026 โรงงานถือ V6 อยู่ จึงต้องมีทั้งตัวข้อกำหนดใหม่
   # และขั้นตอนการอัปเกรด เพื่อให้ห้องนี้ตอบได้ว่าต้องเตรียมอะไรก่อน Surveillance 2027
