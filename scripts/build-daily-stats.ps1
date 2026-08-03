@@ -22,21 +22,28 @@
 =====================================================================
 #>
 [CmdletBinding()]
-param([string]$SrcRoot = "", [string]$OutFile = "")
+param([string]$SrcRoot = "", [string]$OutFile = "", [string]$OutFile2 = "")
 
 $ErrorActionPreference = 'Stop'
 $OutputEncoding = [Console]::OutputEncoding = [Text.Encoding]::UTF8
 $Root = Split-Path -Parent $PSScriptRoot
 . (Join-Path $PSScriptRoot 'xlsx-lib.ps1')
 
-if (-not $SrcRoot) { $SrcRoot = Join-Path $Root 'Support Document\expert โรงงาน' }
-if (-not $OutFile) { $OutFile = Join-Path $Root 'Support Document\_text\สถิติหยุดหีบและระบบน้ำไฟฟ้า รายฤดู.txt' }
+if (-not $SrcRoot)  { $SrcRoot  = Join-Path $Root 'Support Document\expert โรงงาน' }
+if (-not $OutFile)  { $OutFile  = Join-Path $Root 'Support Document\_text\สถิติการหยุดหีบ รายฤดู.txt' }
+if (-not $OutFile2) { $OutFile2 = Join-Path $Root 'Support Document\_text\สถิติหม้อไอน้ำและระบบไฟฟ้า รายฤดู.txt' }
 
-$sb = New-Object Text.StringBuilder
-function W($t) { [void]$sb.AppendLine($t) }
+# เขียนสองไฟล์แยกกัน เพราะเนื้อหาเป็นของคนละห้อง
+# การหยุดหีบเป็นเรื่องของห้องโรงงาน ส่วนหม้อไอน้ำและไฟฟ้าเป็นของห้องโรงไฟฟ้าชีวมวล
+# รอบแรกเขียนรวมไฟล์เดียวแล้วจัดเข้าห้องโรงงานทั้งก้อน ผลคือคำถาม "หม้อไอน้ำมีกี่ลูก"
+# ในห้องโรงไฟฟ้าไปได้ตำราวิศวกรรมโรงจักรแทนข้อมูลจริงของโรงงาน
+$sb  = New-Object Text.StringBuilder
+$sb2 = New-Object Text.StringBuilder
+function W($t)  { [void]$sb.AppendLine($t) }
+function W2($t) { [void]$sb2.AppendLine($t) }
 
-W 'สถิติการหยุดหีบ และระบบน้ำ-ไฟฟ้า รายฤดู — บริษัท น้ำตาลมิตรลาว จำกัด'
-W 'สรุปจากรายงานรายวันที่โรงงานบันทึกไว้ทุกวันตลอดฤดูการผลิต'
+W 'สถิติการหยุดหีบ รายฤดู — บริษัท น้ำตาลมิตรลาว จำกัด'
+W 'สรุปจากรายงานหยุดหีบ (Stoptime) ที่โรงงานบันทึกไว้ทุกวันตลอดฤดูการผลิต'
 W ("สร้างอัตโนมัติด้วย scripts\build-daily-stats.ps1 เมื่อ {0}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm'))
 W ''
 W 'วิธีคำนวณ: ค่าสะสมของฤดูคือค่าสูงสุดที่พบจากรายงานทุกฉบับในฤดูนั้น'
@@ -115,9 +122,25 @@ foreach ($sd in $seasonDirs) {
   Write-Host " เสร็จ" -ForegroundColor Green
 }
 
-# ════════════ ส่วนที่ 2 — ระบบน้ำและไฟฟ้า ════════════
-W '═══ ส่วนที่ 2 — ระบบน้ำและไฟฟ้า (Boiler / Turbine / เชื้อเพลิง) ═══'
-W ''
+# ════════════ ไฟล์ที่ 2 — หม้อไอน้ำและระบบไฟฟ้า (ห้องโรงไฟฟ้าชีวมวล) ════════════
+W2 'สถิติหม้อไอน้ำและระบบผลิตไฟฟ้า รายฤดู — บริษัท น้ำตาลมิตรลาว จำกัด'
+W2 'โรงไฟฟ้าชีวมวลใช้ชานอ้อยเป็นเชื้อเพลิง ผลิตไอน้ำและไฟฟ้าป้อนกระบวนการผลิตน้ำตาล'
+W2 'และขายไฟส่วนเกินให้ EDL (รัฐวิสาหกิจไฟฟ้าลาว)'
+W2 'สรุปจากรายงานน้ำและไฟฟ้า (Water) ที่โรงงานบันทึกไว้ทุกวันตลอดฤดูการผลิต'
+W2 ("สร้างอัตโนมัติด้วย scripts\build-daily-stats.ps1 เมื่อ {0}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm'))
+W2 ''
+W2 'โรงงานมีหม้อไอน้ำ 3 ลูก (Boiler No.1 / No.2 / No.3) เดินคู่กันตลอดฤดูหีบ'
+W2 'รายงานแต่ละวันวัดไอน้ำที่ผลิตได้รายลูกและรวม อัตราไหลเฉลี่ย ไอน้ำต่อชานอ้อย'
+W2 'ความชื้นเชื้อเพลิงก่อนเข้าเตา น้ำดิบที่ใช้ ไฟฟ้าที่ผลิตได้ ที่ใช้ในกระบวนการ และที่ขายให้ EDL'
+W2 'พร้อมคุณภาพน้ำ 10 จุด (Condenser เข้า-ออก · Feed Water 1-2 · Boiler Water 1-3'
+W2 '· Soft Water · Raw Water · Cooling Tower) วัด pH TDS Hardness Chloride Alkalinity และ Sugar Content'
+W2 ''
+W2 'ค่าควบคุมที่ระบุไว้ในรายงาน: Sugar Content ในน้ำ Condenser < 200 ppm'
+W2 '· คอนเดนเสท EVAP1 < 50 ppm และ EVAP2 < 100 ppm · น้ำร่องระบาย < 300 ppm'
+W2 'หมายเหตุที่โรงงานเขียนไว้เอง: TDS สูงควรดู Blow Down และคุณภาพน้ำ Feed'
+W2 ''
+W2 'วิธีคำนวณ: ค่าสะสมของฤดูคือค่าสูงสุดที่พบจากรายงานทุกฉบับในฤดูนั้น'
+W2 ''
 
 # บล็อก BOILER (label col0 · Todate col4)
 $boilerWant = [ordered]@{
@@ -152,23 +175,32 @@ foreach ($sd in $seasonDirs) {
     }
   }
 
-  W ("ฤดู {0} — จากรายงาน {1} ฉบับ" -f $sd.Name, $files.Count)
+  W2 ("ฤดู {0} — จากรายงาน {1} ฉบับ" -f $sd.Name, $files.Count)
   foreach ($k in $boilerWant.Keys) {
-    if ($m.Contains($k)) { W ("  {0,-42} {1,14:N0}" -f $boilerWant[$k], $m[$k]) }
+    if ($m.Contains($k)) { W2 ("  {0,-42} {1,14:N0}" -f $boilerWant[$k], $m[$k]) }
   }
   foreach ($k in $tgWant.Keys) {
-    if ($m.Contains($k)) { W ("  {0,-42} {1,14:N0}" -f $tgWant[$k], $m[$k]) }
+    if ($m.Contains($k)) { W2 ("  {0,-42} {1,14:N0}" -f $tgWant[$k], $m[$k]) }
   }
-  W ''
+  W2 ''
   Write-Host " เสร็จ" -ForegroundColor Green
 }
 
 W '── วิธีใช้ ──'
-W 'ส่วนที่ 1 ใช้ตอบเรื่องเวลาหยุดหีบและแผนกที่เป็นต้นเหตุบ่อยที่สุด'
+W 'ใช้ตอบเรื่องเวลาหยุดหีบและแผนกที่เป็นต้นเหตุบ่อยที่สุด'
 W 'ใช้คู่กับ "สถิติการผลิตรายฤดู 12 ฤดู" เพื่อโยงชั่วโมงหยุดกับการสูญเสียน้ำตาล (UDL)'
-W 'ส่วนที่ 2 ค่าไอน้ำและน้ำดิบเป็นค่าสะสมของฤดู ส่วนค่าไฟฟ้าเป็นค่าสูงสุดรายวันที่พบในฤดู'
-W 'เพราะรายงานบล็อกไฟฟ้าไม่มีคอลัมน์ค่าสะสมแยกไว้ให้'
-W 'ถ้าต้องการค่ารายวันของวันใดวันหนึ่ง ต้องเปิดไฟล์รายงานของวันนั้นโดยตรง'
+W 'ตัวเลขเป็นค่าสะสมทั้งฤดู ไม่ใช่ค่ารายวัน ถ้าต้องการค่าของวันใดวันหนึ่งต้องเปิดไฟล์รายงานวันนั้นโดยตรง'
+W 'ข้อมูลหม้อไอน้ำและไฟฟ้าแยกอยู่อีกไฟล์ (สถิติหม้อไอน้ำและระบบไฟฟ้า รายฤดู)'
 
-[IO.File]::WriteAllText($OutFile, $sb.ToString(), (New-Object Text.UTF8Encoding($false)))
-Write-Host ("`nเขียนแล้ว: {0}  ({1:N0} KB)" -f $OutFile, ((Get-Item $OutFile).Length/1KB)) -ForegroundColor Cyan
+W2 '── วิธีใช้ ──'
+W2 'ค่าไอน้ำและน้ำดิบเป็นค่าสะสมของฤดู ส่วนค่าไฟฟ้าเป็นค่าสูงสุดรายวันที่พบในฤดู'
+W2 'เพราะรายงานบล็อกไฟฟ้าไม่มีคอลัมน์ค่าสะสมแยกไว้ให้'
+W2 'ถ้าต้องการค่ารายวันของวันใดวันหนึ่ง ต้องเปิดไฟล์รายงานของวันนั้นโดยตรง'
+W2 'คำถามที่ไฟล์นี้ตอบได้ — โรงงานมีหม้อไอน้ำกี่ลูก · ผลิตไอน้ำได้เท่าไรต่อฤดู'
+W2 '· ไอน้ำต่อชานอ้อยเท่าไร · ความชื้นเชื้อเพลิงเป็นอย่างไร · ขายไฟให้ EDL ได้เท่าไร'
+W2 '· ใช้น้ำดิบเท่าไร · เทียบประสิทธิภาพหม้อไอน้ำข้ามฤดู'
+
+[IO.File]::WriteAllText($OutFile,  $sb.ToString(),  (New-Object Text.UTF8Encoding($false)))
+[IO.File]::WriteAllText($OutFile2, $sb2.ToString(), (New-Object Text.UTF8Encoding($false)))
+Write-Host ("`nเขียนแล้ว: {0}  ({1:N0} KB)" -f $OutFile,  ((Get-Item $OutFile).Length/1KB))  -ForegroundColor Cyan
+Write-Host ("เขียนแล้ว: {0}  ({1:N0} KB)"   -f $OutFile2, ((Get-Item $OutFile2).Length/1KB)) -ForegroundColor Cyan
