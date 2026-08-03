@@ -573,6 +573,23 @@ $SupportMap  = @(
      Title='Codex CXC 80-2020 แนวปฏิบัติการจัดการสารก่อภูมิแพ้ในอาหารสำหรับผู้ประกอบการ (Food Allergen Management) — FAO/WHO, CC BY-NC-SA 3.0 IGO'
      Code='CODEX-ALG' }
 
+  # ── ตัวบท HACCP ฉบับเต็ม (คลังเดิมมีแต่สรุปที่จัดโครงไว้ใน ML-HACCP) ──
+  # เพิ่มตัวบทเต็มเพื่อให้ยกข้อความรายขั้นตอนมาอ้างได้ตรงคำ
+  # ทั้งสามฉบับเป็น Rev. เดียวกับที่สรุปไว้แล้ว ไม่ใช่การอัปเวอร์ชัน
+  @{ File='ML-SP-1600-006 รายละเอียดผลิตภัณฑ์และวัตถุประสงค์การใช้ Rev.07.txt'
+     Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='ML-SP-1600-006 การอธิบายรายละเอียดผลิตภัณฑ์และวัตถุประสงค์การใช้ Rev.07 (DCR / VHP / ออร์แกนิก ครบ 14 หัวข้อ)'
+     Code='ML-PRODDESC' }
+  @{ File='ML-SP-1600-011 HACCP และ OPRP PLAN Rev.14.txt'
+     Module='foodsafety'; Type='STANDARD'; Plain=$true; Force=$true
+     Title='ML-SP-1600-011 HACCP และ OPRP PLAN การผลิตน้ำตาลทรายดิบ และ DCR Rev.14 (ตัวบทเต็ม CCP 6 จุด พร้อม CL/AC และการทวนสอบ)'
+     Code='ML-HACCPPLAN' }
+  # ตารางกว้างมาก คอลัมน์สลับตอนสกัด — ใส่คำเตือนไว้หัวไฟล์แล้วว่าห้ามใช้ตัดสิน CCP โดยลำพัง
+  @{ File='ML-SP-1600-012 การวิเคราะห์อันตราย HACCP ANALYSIS Rev.12.txt'
+     Module='foodsafety'; Type='RECORD'; Plain=$true; Force=$true
+     Title='ML-SP-1600-012 การวิเคราะห์อันตรายและการหาจุดวิกฤต (HACCP ANALYSIS) Rev.12 — รายขั้นตอนการผลิตทั้งสาย'
+     Code='ML-HAZAN' }
+
   # ── FSSC 22000 จาก fssc.com (เอกสารสาธารณะของเจ้าของ scheme) ────────
   # Version 7 ประกาศใช้ 1 พ.ค. 2026 โรงงานถือ V6 อยู่ จึงต้องมีทั้งตัวข้อกำหนดใหม่
   # และขั้นตอนการอัปเกรด เพื่อให้ห้องนี้ตอบได้ว่าต้องเตรียมอะไรก่อน Surveillance 2027
