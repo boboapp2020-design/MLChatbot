@@ -148,6 +148,47 @@ foreach ($k in $WANT.Keys) {
   }
 }
 
+# ── สรุปประเด็นเด่นเป็นภาษาไทย ────────────────────────────────────
+# ตารางตัวเลขล้วนค้นเจอยาก เพราะขา n-gram ภาษาไทยไปเข้าเอกสารที่มีข้อความเยอะกว่า
+# (ทดสอบแล้วคำถาม "ฤดูไหน UDL สูงสุด" ไปได้ตำราโรงจักรต้นกำลังแทน)
+# จึงเขียนสรุปเป็นประโยคไทยไว้ด้วย ให้มีคำที่คนถามจริงใช้
+function Best($key, $wantMax) {
+  $best = $null; $bestS = ''
+  foreach ($s in $seasons.Keys) {
+    $v = $seasons[$s][$key]; $n = 0.0
+    if (-not [double]::TryParse([string]$v, [ref]$n)) { continue }
+    if ($null -eq $best -or ($wantMax -and $n -gt $best) -or (-not $wantMax -and $n -lt $best)) { $best = $n; $bestS = $s }
+  }
+  return @{ S = $bestS; V = $best }
+}
+
+W '── สรุปประเด็นเด่นจากสถิติ 12 ฤดู ──'
+W 'ส่วนนี้เขียนขึ้นจากตัวเลขในตารางข้างบนโดยตรง ใช้ตอบคำถามที่ถามหาฤดูที่ดีที่สุดหรือแย่ที่สุด'
+W ''
+$u1 = Best 'UNDETERMINED LOSSES' $true
+$u2 = Best 'UNDETERMINED LOSSES' $false
+W ("การสูญเสียน้ำตาลที่ไม่ทราบสาเหตุ (UDL) สูงที่สุดคือฤดู {0} ที่ {1:N2}% และต่ำที่สุด (ดีที่สุด) คือฤดู {2} ที่ {3:N2}%" -f $u1.S, $u1.V, $u2.S, $u2.V)
+$r1 = Best 'OVERALL RECOVERY' $true
+$r2 = Best 'OVERALL RECOVERY' $false
+W ("Overall Recovery สูงที่สุดคือฤดู {0} ที่ {1:N2}% และต่ำที่สุดคือฤดู {2} ที่ {3:N2}%" -f $r1.S, $r1.V, $r2.S, $r2.V)
+$c1 = Best 'TONS CANE CRUSHED' $true
+W ("ฤดูที่หีบอ้อยได้มากที่สุดคือฤดู {0} ที่ {1:N0} ตัน" -f $c1.S, $c1.V)
+$b1 = Best '% BURNT CANE' $true
+$b2 = Best '% BURNT CANE' $false
+W ("อ้อยไฟไหม้สูงที่สุดคือฤดู {0} ที่ {1:N2}% และต่ำที่สุดคือฤดู {2} ที่ {3:N2}%" -f $b1.S, $b1.V, $b2.S, $b2.V)
+$h1 = Best 'BHR' $true
+$h2 = Best 'BHR' $false
+W ("Boiling House Recovery (BHR) สูงที่สุดคือฤดู {0} ที่ {1:N2}% และต่ำที่สุดคือฤดู {2} ที่ {3:N2}%" -f $h1.S, $h1.V, $h2.S, $h2.V)
+$t1 = Best 'OVERALL TIME EFFICIENCY' $true
+$t2 = Best 'OVERALL TIME EFFICIENCY' $false
+W ("Time Efficiency สูงที่สุดคือฤดู {0} ที่ {1:N2}% และต่ำที่สุดคือฤดู {2} ที่ {3:N2}%" -f $t1.S, $t1.V, $t2.S, $t2.V)
+W ''
+W 'คำถามที่เอกสารนี้ตอบได้ — ปีไหนผลผลิตดีที่สุด · ฤดูไหนน้ำตาลหายมากที่สุด'
+W '· recovery ปีนี้เทียบปีที่แล้วเป็นอย่างไร · แนวโน้ม CCS และอ้อยไฟไหม้ย้อนหลัง 12 ปี'
+W '· BHR และ Extraction ของโรงงานอยู่ระดับไหนเมื่อเทียบข้ามฤดู'
+W '· เปรียบเทียบฤดูการผลิต ปีการผลิต ผลการดำเนินงานรายฤดู สถิติย้อนหลัง'
+W ''
+
 W '── วิธีใช้ ──'
 W 'ใช้ตอบคำถามแนวเทียบฤดู เช่น "ปีนี้ recovery ดีขึ้นหรือแย่ลงกว่าปีที่แล้ว"'
 W '"UDL สูงสุดฤดูไหน" "อ้อยไฟไหม้แนวโน้มเป็นอย่างไร"'
