@@ -303,8 +303,25 @@ ${catalog}
 // =====================================================================
 //  ขั้นที่ 2 — RETRIEVAL (hybrid, กรองด้วยโมดูล)
 // =====================================================================
+// มีคีย์ Voyage ไม่ได้แปลว่าคลังมีเวกเตอร์
+// ตอนนี้คลังยังไม่มี embedding สักท่อน เพราะโควตาฟรีของ Voyage ที่ไม่ผูกบัตร
+// จำกัดไว้ 3 คำขอ/นาที จึง backfill ไม่ไหว
+// ถ้าไม่เช็ก ทุกคำถามจะยิง Voyage 5 ครั้งเพื่อสร้างเวกเตอร์คำถาม
+// แล้วโดน 429 กลับมาทั้งหมด — เสียเวลารอฟรีโดยไม่ได้อะไรเลย
+// เช็กครั้งเดียวต่อ isolate แล้วจำไว้ พอ backfill สำเร็จเมื่อไหร่ isolate ใหม่จะเห็นเอง
+let vectorsReady: Promise<boolean> | null = null;
+function kbHasVectors(): Promise<boolean> {
+  vectorsReady ??= supabase
+    .from('kb_chunks').select('id', { count: 'exact', head: true })
+    .not('embedding', 'is', null)
+    .then(({ count }) => (count ?? 0) > 0)
+    .catch(() => false);
+  return vectorsReady;
+}
+
 async function embed(text: string): Promise<number[] | null> {
   if (!VOYAGE_KEY) return null;   // ไม่มี key -> ใช้ lexical อย่างเดียว
+  if (!await kbHasVectors()) return null;
   try {
     const res = await fetch('https://api.voyageai.com/v1/embeddings', {
       method: 'POST',
@@ -323,7 +340,8 @@ async function embed(text: string): Promise<number[] | null> {
 }
 
 // ค้นด้วยคำค้นเดียว — แยกออกมาเพื่อให้ยิงหลายคำค้นพร้อมกันได้
-async function searchOne(q: string, modules: string[]): Promise<Chunk[]> {
+// modules = null คือค้นทุกห้อง (ใช้ตอน fallback ข้ามห้อง)
+async function searchOne(q: string, modules: string[] | null): Promise<Chunk[]> {
   const vec = await embed(q);
   const { data, error } = await supabase.rpc('hybrid_search', {
     p_query:     q,
@@ -336,6 +354,15 @@ async function searchOne(q: string, modules: string[]): Promise<Chunk[]> {
 }
 
 // รวมผลจากหลายคำค้น — chunk ที่โผล่จากหลายคำค้น = เกี่ยวข้องมากกว่า จึงบวกคะแนนสะสม
+//
+// จำกัดจำนวนท่อนต่อเอกสารด้วย เพราะเอกสารยาวๆ อย่างเช็กลิสต์ 221 ข้อ x 21 หน่วยงาน
+// มีท่อนที่ "คล้ายคำถามพอประมาณ" อยู่เป็นร้อย แล้วกินที่นั่งทั้ง 20 ช่องไปหมด
+// วัดจริงจาก "GHPs คืออะไร" — อ้างอิง 6 ท่อนมาจากเอกสารเดียวกัน 5 ท่อน
+// ส่วน Codex GHP ฉบับเต็มที่มีคำตอบตรงๆ ไม่ติดอันดับเลยสักท่อน
+// เมื่อจำกัดแล้ว rerank จะได้เห็นเอกสารหลายฉบับให้เลือก ไม่ใช่ฉบับเดียวซ้ำๆ
+// และคะแนน agreement (ความสอดคล้องข้ามเอกสาร) ก็สะท้อนความจริงมากขึ้น
+const MAX_PER_DOC = 3;
+
 function mergeHits(lists: Chunk[][]): Chunk[] {
   const seen = new Map<number, Chunk>();
   for (const list of lists) {
@@ -345,9 +372,20 @@ function mergeHits(lists: Chunk[][]): Chunk[] {
       else seen.set(row.chunk_id, { ...row });
     }
   }
-  return [...seen.values()]
-    .sort((a, b) => b.rrf_score - a.rrf_score)
-    .slice(0, RETRIEVE_K);
+
+  const ranked = [...seen.values()].sort((a, b) => b.rrf_score - a.rrf_score);
+
+  const perDoc = new Map<string, number>();
+  const kept: Chunk[] = [];
+  const spill: Chunk[] = [];
+  for (const c of ranked) {
+    const n = perDoc.get(c.doc_code) ?? 0;
+    if (n < MAX_PER_DOC) { perDoc.set(c.doc_code, n + 1); kept.push(c); }
+    else spill.push(c);
+  }
+  // ถ้าคลังห้องนั้นมีเอกสารน้อยจนโควตาเติมไม่เต็ม ให้เอาส่วนที่ตัดไว้กลับมาต่อท้าย
+  // ดีกว่าส่ง context ไปให้ LLM แค่ 5 ท่อนทั้งที่มีของให้อ่านมากกว่านั้น
+  return kept.concat(spill).slice(0, RETRIEVE_K);
 }
 
 async function retrieve(router: RouterResult): Promise<Chunk[]> {
@@ -578,26 +616,47 @@ Deno.serve(async (req) => {
       };
     }
     if (fixed) router.modules = [fixed];
+
+    // router เดาไม่แน่นอน — คำถามเดียวกันบางครั้งได้ needs_kb=true บางครั้ง false
+    // (วัดจริง "ลาคลอดได้กี่วัน" รอบแรกค้นเจอกฎระเบียบบริษัท รอบสองตอบเองเฉยๆ
+    //  แล้วรายงานความมั่นใจ 100% ทั้งที่ไม่ได้เปิดเอกสารสักฉบับ)
+    // ความมั่นใจ 100% ที่ไม่มีหลักฐานรองรับ อันตรายกว่าการตอบไม่ได้
+    // จึงค้นคลังทุกครั้งที่คำถามอยู่ในขอบเขต ปล่อยให้คะแนนหลักฐานเป็นตัวตัดสินเอง
+    // การทักทายที่ค้นแล้วไม่เจออะไรก็ยังตอบได้ตามปกติ แค่ไม่มีเลขอ้างอิงเท่านั้น
+    if (router.in_scope) router.needs_kb = true;
     const tRouter = Date.now();
 
     // ── 2) RETRIEVE + 3) RERANK ──
     let chunks: Chunk[] = [];
+    let crossRoom = false;
     if (router.needs_kb) {
       const [early, lists] = await Promise.all([
         headStart,
         Promise.all(router.queries.slice(0, 4).map((q) => searchOne(q, router.modules))),
       ]);
       chunks = mergeHits([early, ...lists]);
+
+      // ค้นซ้ำข้ามห้องเมื่อห้องที่เปิดอยู่ให้ของไม่พอ
+      // ผู้ใช้ไม่ได้แยกห้องในหัวเวลาถาม — ถามเรื่องความปลอดภัยอาหารในห้องโรงงาน
+      // ก็มีสิทธิ์เกิดขึ้นทุกวัน เดิมระบบล็อกไว้ห้องเดียวแล้วตอบว่าไม่มีข้อมูล
+      // ทั้งที่ห้องข้างๆ มีเอกสารตรงคำถามอยู่
+      // ทำเฉพาะตอนของไม่พอจริง จึงไม่กระทบเวลาตอบของคำถามปกติ
+      const weakSoFar = chunks.length < CONTEXT_K ||
+                        computeConfidence(chunks.slice(0, CONTEXT_K)) < MIN_CONFIDENCE;
+      if (weakSoFar && router.modules.length < (modules as any[]).length) {
+        const wide = await Promise.all(
+          router.queries.slice(0, 4).map((q) => searchOne(q, null)),
+        );
+        chunks = mergeHits([chunks, ...wide]);
+        crossRoom = true;
+      }
+
       chunks = await rerank(question, chunks);
     }
     const tRetrieve = Date.now();
 
-    // นอกขอบเขต = ความมั่นใจศูนย์เสมอ ไม่ว่า router จะบอกว่าต้องใช้คลังหรือไม่
-    // เดิมถ้า needs_kb=false จะได้ 1 ทันทีแล้วไปตอบจากความรู้ทั่วไปโดยไม่มีเอกสาร
-    // ซึ่งขัดกับหลักการของระบบที่ต้องตอบจากคลังของโรงงานเท่านั้น
-    const confidence = !router.in_scope ? 0
-                     : router.needs_kb  ? computeConfidence(chunks)
-                     : 1;
+    // ความมั่นใจมาจากหลักฐานที่ค้นได้เท่านั้น ไม่มีทางลัดให้เต็ม 100 โดยไม่มีเอกสาร
+    const confidence = router.in_scope ? computeConfidence(chunks) : 0;
     const primary    = modules.find((m: any) => m.id === router.modules[0]) as any;
 
     const citations = chunks.map((c, i) => ({
@@ -634,6 +693,7 @@ Deno.serve(async (req) => {
             : null,
           citations,
           confidence,
+          cross_room: crossRoom,
           retrieved: chunks.length,
           // บอกว่าใช้โมเดลอะไรตอบจริง ฝั่งหน้าเว็บเคยเขียนตายตัวว่า Opus 5
           // พอเปลี่ยนผู้ให้บริการเป็น Gemini ป้ายจึงแสดงผิด
@@ -667,8 +727,13 @@ Deno.serve(async (req) => {
           router.complexity, lang, weakEvidence,
         );
 
+        // บอกให้รู้ว่าบางท่อนมาจากห้องอื่น จะได้เขียนกำกับไว้ ไม่ใช่ยกมาเนียนๆ
+        const roomNote = crossRoom
+          ? 'หมายเหตุ: ห้องที่ผู้ใช้เปิดอยู่มีเอกสารตรงคำถามไม่พอ ระบบจึงไปดึงจากห้องอื่นมาด้วย ' +
+            'ถ้าใช้ท่อนจากห้องอื่นให้บอกไว้สั้นๆ ว่ามาจากเอกสารของหน่วยงานใด\n\n'
+          : '';
         const userContent = router.needs_kb
-          ? `เอกสารอ้างอิงจากคลังความรู้:\n\n${buildContext(chunks)}\n\n` +
+          ? `${roomNote}เอกสารอ้างอิงจากคลังความรู้:\n\n${buildContext(chunks)}\n\n` +
             `════════════════════\n\nคำถาม: ${question}`
           : question;
 
