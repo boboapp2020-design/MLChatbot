@@ -39,6 +39,7 @@ const CORS = {
 // รับได้ทั้ง LLM_API_KEY (ชื่อใหม่) และ ANTHROPIC_API_KEY (ของเดิม ไม่ต้องแก้ถ้าใช้ Claude อยู่)
 const LLM_KEY    = Deno.env.get('LLM_API_KEY') ?? Deno.env.get('ANTHROPIC_API_KEY') ?? '';
 const VOYAGE_KEY = Deno.env.get('VOYAGE_API_KEY') ?? '';
+const TAVILY_KEY = Deno.env.get('TAVILY_API_KEY') ?? '';   // ค้นเน็ตเมื่อคลังไม่มีคำตอบ
 
 const supabase = createClient(
   Deno.env.get('SUPABASE_URL')!,
@@ -489,7 +490,7 @@ function computeConfidence(chunks: Chunk[]): number {
 //  ขั้นที่ 5 — ANSWER  (Opus 5, streaming)
 // =====================================================================
 function buildAnswerSystem(persona: string, complexity: string, lang: string,
-                           weakEvidence = false) {
+                           weakEvidence = false, hasWeb = false) {
   const langLine = lang === 'en'
     ? 'Respond in English.'
     : lang === 'lo'
@@ -533,7 +534,18 @@ ${langLine}
 **รอบนี้หลักฐานอ่อน** — เอกสารที่ค้นเจอเกี่ยวข้องไม่มากพอ
 ให้ขึ้นต้นคำตอบด้วยบรรทัดนี้ก่อนเลย
 \`> เอกสารในคลังที่ตรงกับคำถามนี้มีน้อย คำตอบด้านล่างส่วนใหญ่มาจากหลักการทั่วไป\`
-แล้วค่อยตอบตามกติกาข้างบน` : ''}
+แล้วค่อยตอบตามกติกาข้างบน` : ''}${hasWeb ? `
+
+**รอบนี้มีผลค้นจากอินเทอร์เน็ตแนบมาด้วย** (ท่อน [W1] [W2] ...)
+คลังของโรงงานไม่มีคำตอบ ระบบจึงไปค้นเน็ตมาให้ ใช้ได้ตามกติกานี้
+- ให้ขึ้นต้นย่อหน้าที่ใช้ข้อมูลจากเน็ตด้วย
+  \`> ไม่พบในคลังของโรงงาน — ค้นจากอินเทอร์เน็ต:\`
+- อ้างอิงด้วย [W1] [W2] ท้ายประโยค และปิดท้ายคำตอบด้วยรายการลิงก์ต้นทางที่ใช้จริง
+- เชื่อเฉพาะที่ปรากฏในท่อน [W..] เท่านั้น ห้ามเติมข้อมูลจากความจำที่ไม่มีในนั้น
+- ถ้าแหล่งบนเน็ตขัดกันเอง หรือดูไม่น่าเชื่อถือ ให้บอกผู้ใช้ตรงๆ อย่าเลือกมามั่นใจแทน
+- **ยังห้ามเด็ดขาด** — ตัวเลข ค่าควบคุม สเปก เกณฑ์ตัดสิน รหัสเอกสาร ML-xx
+  เลขข้อกำหนด เลขมาตรากฎหมาย ของโรงงาน "ห้ามยกจากเน็ตมาตอบแทนของโรงงาน"
+  เน็ตใช้ได้แค่กับความรู้ทั่วไป/หลักการ/นิยาม ไม่ใช่ค่าปฏิบัติการจริงของ ML` : ''}
 
 **รูปแบบ**
 ${shape}
@@ -555,6 +567,54 @@ function buildContext(chunks: Chunk[]) {
     .map((c, i) =>
       `[${i + 1}] ${c.doc_title} (${c.doc_code}) — ${c.page_ref}\n${c.content}`)
     .join('\n\n════════════════════\n\n');
+}
+
+
+// =====================================================================
+//  ค้นเน็ต — ใช้ต่อเมื่อคลังของโรงงานไม่มีคำตอบ
+//  ---------------------------------------------------------------------
+//  Tavily ออกแบบมาให้ LLM ใช้ คืนเนื้อหาสรุปพร้อม url ต้นทาง
+//  สมัครฟรีไม่ต้องผูกบัตร โควตา 1,000 ครั้ง/เดือน
+//  ถ้าไม่ตั้ง TAVILY_API_KEY ระบบก็ยังทำงานได้ แค่ไม่ค้นเน็ต
+// =====================================================================
+interface WebResult { title: string; url: string; content: string; }
+
+async function webSearch(query: string): Promise<WebResult[]> {
+  if (!TAVILY_KEY) return [];
+  try {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 12000);
+    const res = await fetch('https://api.tavily.com/search', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        api_key:            TAVILY_KEY,
+        query,
+        search_depth:       'basic',
+        max_results:        5,
+        include_answer:     false,
+        // เอียงไปทางแหล่งที่เชื่อถือได้ของวงการน้ำตาล/อาหาร/มาตรฐาน
+        include_domains:    [],
+      }),
+      signal: ctl.signal,
+    }).finally(() => clearTimeout(timer));
+    if (!res.ok) { console.error('tavily', res.status); return []; }
+    const j = await res.json();
+    return (j.results ?? []).map((r: any) => ({
+      title:   r.title ?? '',
+      url:     r.url ?? '',
+      content: (r.content ?? '').slice(0, 1200),
+    }));
+  } catch (e) {
+    console.error('webSearch ล้ม:', (e as Error).message);
+    return [];
+  }
+}
+
+function buildWebContext(results: WebResult[]) {
+  return results
+    .map((r, i) => `[W${i + 1}] ${r.title}\n${r.url}\n${r.content}`)
+    .join('\n\n────────────────\n\n');
 }
 
 
@@ -657,6 +717,15 @@ Deno.serve(async (req) => {
 
     // ความมั่นใจมาจากหลักฐานที่ค้นได้เท่านั้น ไม่มีทางลัดให้เต็ม 100 โดยไม่มีเอกสาร
     const confidence = router.in_scope ? computeConfidence(chunks) : 0;
+
+    // คลังของโรงงานไม่มีคำตอบ (หลักฐานอ่อน) และผู้ใช้เปิดค้นเน็ตไว้ -> ไปหาต่อจากเน็ต
+    // ทำหลังคำนวณ confidence เพราะใช้มันเป็นตัวตัดสินว่าควรค้นเน็ตไหม
+    // ไม่แตะกรณีนอกขอบเขต — คำถามนอกเรื่องโรงงานยังปฏิเสธเหมือนเดิม
+    let webResults: WebResult[] = [];
+    if (router.in_scope && TAVILY_KEY && confidence < MIN_CONFIDENCE) {
+      webResults = await webSearch(question);
+    }
+    const tWeb = Date.now();
     const primary    = modules.find((m: any) => m.id === router.modules[0]) as any;
 
     const citations = chunks.map((c, i) => ({
@@ -694,12 +763,13 @@ Deno.serve(async (req) => {
           citations,
           confidence,
           cross_room: crossRoom,
+          web_sources: webResults.map((r, i) => ({ n: i + 1, title: r.title, url: r.url })),
           retrieved: chunks.length,
           // บอกว่าใช้โมเดลอะไรตอบจริง ฝั่งหน้าเว็บเคยเขียนตายตัวว่า Opus 5
           // พอเปลี่ยนผู้ให้บริการเป็น Gemini ป้ายจึงแสดงผิด
           model:    MODEL_ANSWER,
           provider: PROVIDER,
-          timing: { router_ms: tRouter - t0, retrieval_ms: tRetrieve - tRouter },
+          timing: { router_ms: tRouter - t0, retrieval_ms: tRetrieve - tRouter, web_ms: tWeb - tRetrieve },
         });
 
         // คำถามนอกขอบเขตโรงงาน — ปฏิเสธตั้งแต่ต้น ไม่เรียก LLM เลย
@@ -721,10 +791,11 @@ Deno.serve(async (req) => {
         // ตอนนี้เปลี่ยนเป็นตอบต่อ แต่สั่งให้ติดป้ายบอกที่มาให้ชัด
         // และยังห้ามเดาตัวเลข ค่าควบคุม รหัสเอกสาร หรือเลขข้อกำหนดเหมือนเดิม
         const weakEvidence = router.needs_kb && confidence < MIN_CONFIDENCE;
+        const hasWeb = webResults.length > 0;
 
         const system = buildAnswerSystem(
           primary?.persona ?? 'คุณคือผู้เชี่ยวชาญโรงงานน้ำตาล',
-          router.complexity, lang, weakEvidence,
+          router.complexity, lang, weakEvidence, hasWeb,
         );
 
         // บอกให้รู้ว่าบางท่อนมาจากห้องอื่น จะได้เขียนกำกับไว้ ไม่ใช่ยกมาเนียนๆ
@@ -732,8 +803,14 @@ Deno.serve(async (req) => {
           ? 'หมายเหตุ: ห้องที่ผู้ใช้เปิดอยู่มีเอกสารตรงคำถามไม่พอ ระบบจึงไปดึงจากห้องอื่นมาด้วย ' +
             'ถ้าใช้ท่อนจากห้องอื่นให้บอกไว้สั้นๆ ว่ามาจากเอกสารของหน่วยงานใด\n\n'
           : '';
+        // เมื่อคลังไม่มีคำตอบ แนบผลค้นเน็ตต่อท้าย ให้ LLM ใช้อ้างอิงด้วย [W1] [W2]
+        const webBlock = hasWeb
+          ? `\n\n════════════════════\n\n` +
+            `ผลค้นจากอินเทอร์เน็ต (ใช้เมื่อคลังของโรงงานไม่มีคำตอบ อ้างอิงด้วย [W1] [W2]):\n\n` +
+            buildWebContext(webResults)
+          : '';
         const userContent = router.needs_kb
-          ? `${roomNote}เอกสารอ้างอิงจากคลังความรู้:\n\n${buildContext(chunks)}\n\n` +
+          ? `${roomNote}เอกสารอ้างอิงจากคลังความรู้:\n\n${buildContext(chunks)}${webBlock}\n\n` +
             `════════════════════\n\nคำถาม: ${question}`
           : question;
 
